@@ -34,6 +34,8 @@
     "task.onboarding_landing-sj1z.sourceConnection": "",
     "task.onboarding_landing-sj1z:null$_$dbo.database": "",
     "task.onboarding_landing-sj1z:null$_$dbo.schema": "",
+    "task.onboarding_landing-sj1z:AutoNorthwind$_$dbo.database": "",
+    "task.onboarding_landing-sj1z:AutoNorthwind$_$dbo.schema": "",
     "task.onboarding_storage-sj10.databaseName": "",
     "task.onboarding_storage-sj10.internalSchema": "",
     "task.onboarding_storage-sj10.taskSchema": "",
