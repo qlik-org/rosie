@@ -40,10 +40,22 @@
     "task.onboarding_storage-sj10.internalSchema": "",
     "task.onboarding_storage-sj10.taskSchema": "",
     "task.onboarding_storage-sj10.warehouseName": "",
-    "task.onboarding_storage-sj10:null$_$%.schemaPattern": ""
+    "task.onboarding_storage-sj10:null$_$%.schemaPattern": "",
+    "task.transform-nzm1.databaseName": "",
+    "task.transform-nzm1.internalSchema": "",
+    "task.transform-nzm1.taskSchema": "",
+    "task.transform-nzm1.warehouseName": "",
+    "task.transform-nzm1:null$_$%.schemaPattern": "",
+    "task.data_mart-nzm6.databaseName": "",
+    "task.data_mart-nzm6.internalSchema": "",
+    "task.data_mart-nzm6.taskSchema": "",
+    "task.data_mart-nzm6.warehouseName": "",
+    "task.data_mart-nzm6:null$_$%.schemaPattern": ""
   },
   "idToNameMap": {
     "onboarding_landing-sj1z": "Onboarding_Landing",
-    "onboarding_storage-sj10": "Onboarding_Storage"
+    "onboarding_storage-sj10": "Onboarding_Storage",
+    "transform-nzm1": "Transform",
+    "data_mart-nzm6": "Data mart"
   }
 }
