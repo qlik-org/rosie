@@ -47,10 +47,7 @@
     "task.landing-cbwr.databaseName": "",
     "task.landing-cbwr.taskSchema": "",
     "task.landing-cbwr.sourceConnection": "",
-    "task.landing-cbwr:null$_$dbo.database": "",
     "task.landing-cbwr:null$_$dbo.schema": "",
-    "task.landing-cbwr:AutoNorthwind$_$dbo.database": "",
-    "task.landing-cbwr:AutoNorthwind$_$dbo.schema": "",
     "task.storage-cbwt.databaseName": "",
     "task.storage-cbwt.internalSchema": "",
     "task.storage-cbwt.taskSchema": "",
@@ -65,12 +62,18 @@
     "task.knowledge_mart-cbwf.taskSchema": "",
     "task.knowledge_mart-cbwf.warehouseName": "",
     "task.knowledge_mart-cbwf.maxNumberOfRecords": "",
-    "task.knowledge_mart-cbwf:null$_$%.schemaPattern": ""
+    "task.knowledge_mart-cbwf:null$_$%.schemaPattern": "",
+    "task.data_mart-u1dy.databaseName": "",
+    "task.data_mart-u1dy.internalSchema": "",
+    "task.data_mart-u1dy.taskSchema": "",
+    "task.data_mart-u1dy.warehouseName": "",
+    "task.data_mart-u1dy:null$_$%.schemaPattern": ""
   },
   "idToNameMap": {
     "landing-cbwr": "Landing",
     "storage-cbwt": "Storage",
-    "knowledge_mart-cbwf": "Knowledge mart"
+    "knowledge_mart-cbwf": "Knowledge mart",
+    "data_mart-u1dy": "Data mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {

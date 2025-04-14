@@ -4,8 +4,8 @@
   "type": "LANDING",
   "tableDef": {
     "name": "Shippers",
-    "dbSchema": "{{task.landing-cbwr:AutoNorthwind$_$dbo.schema}}",
-    "dbName": "{{task.landing-cbwr:AutoNorthwind$_$dbo.database}}",
+    "dbSchema": "dbo",
+    "dbName": "AutoNorthwind",
     "columns": [
       {
         "name": "ShipperID",

@@ -8,8 +8,7 @@
       "name": "Order Details",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "landing-cbwr",
-      "schema": "{{task.landing-cbwr:null$_$dbo.schema}}",
-      "database": "{{task.landing-cbwr:null$_$dbo.database}}"
+      "schema": "{{task.landing-cbwr:null$_$dbo.schema}}"
     }
   ]
 }
