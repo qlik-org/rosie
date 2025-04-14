@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-mw1g",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-mw1c"
+  },
+  "targetEntity": {
+    "datasetId": "employees_sql-mw1f",
+    "name": "Employees_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-mw1c"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_Employees_sql_relation",
+  "description": "",
+  "id": "orders_employees_sql_relation-mw1j"
+}
