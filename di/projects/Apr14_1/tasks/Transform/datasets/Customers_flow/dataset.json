@@ -1,0 +1,26 @@
+{
+  "id": "customers_flow-mw1e",
+  "name": "Customers_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-mw09",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-mw07"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "1bef8f07-1820-4bcd-b418-c1bed61fade7",
+    "targetId": "5f1f0cf5-8856-480a-bd8d-3ec84f6bd340",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}

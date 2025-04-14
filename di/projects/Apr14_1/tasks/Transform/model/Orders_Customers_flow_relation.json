@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-mw1g",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-mw1c"
+  },
+  "targetEntity": {
+    "datasetId": "customers_flow-mw1e",
+    "name": "Customers_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-mw1c"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_flow_relation",
+  "description": "",
+  "id": "orders_customers_flow_relation-mw1i"
+}
