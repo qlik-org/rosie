@@ -52,7 +52,6 @@
     "task.storage-cbwt.internalSchema": "",
     "task.storage-cbwt.taskSchema": "",
     "task.storage-cbwt.warehouseName": "",
-    "task.storage-cbwt:null$_$%.schemaPattern": "",
     "task.knowledge_mart-cbwf.databricksVectorSearchEndpoint": "",
     "task.knowledge_mart-cbwf.indexName": "",
     "task.knowledge_mart-cbwf.indexSchema": "",
@@ -62,18 +61,21 @@
     "task.knowledge_mart-cbwf.taskSchema": "",
     "task.knowledge_mart-cbwf.warehouseName": "",
     "task.knowledge_mart-cbwf.maxNumberOfRecords": "",
-    "task.knowledge_mart-cbwf:null$_$%.schemaPattern": "",
     "task.data_mart-u1dy.databaseName": "",
     "task.data_mart-u1dy.internalSchema": "",
     "task.data_mart-u1dy.taskSchema": "",
     "task.data_mart-u1dy.warehouseName": "",
-    "task.data_mart-u1dy:null$_$%.schemaPattern": ""
+    "task.transform-9xu9.databaseName": "",
+    "task.transform-9xu9.internalSchema": "",
+    "task.transform-9xu9.taskSchema": "",
+    "task.transform-9xu9.warehouseName": ""
   },
   "idToNameMap": {
     "landing-cbwr": "Landing",
     "storage-cbwt": "Storage",
     "knowledge_mart-cbwf": "Knowledge mart",
-    "data_mart-u1dy": "Data mart"
+    "data_mart-u1dy": "Data mart",
+    "transform-9xu9": "Transform"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {

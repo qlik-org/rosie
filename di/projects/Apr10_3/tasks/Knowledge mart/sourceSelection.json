@@ -4,7 +4,7 @@
       "sourceProject": "{{ref(project.current.projectId)}}",
       "sourceTask": "storage-cbwt",
       "tablePattern": "%",
-      "schemaPattern": "{{task.knowledge_mart-cbwf:null$_$%.schemaPattern}}",
+      "schemaPattern": "%",
       "type": "TABLE"
     }
   ],

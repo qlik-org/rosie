@@ -4,7 +4,7 @@
       "sourceProject": "{{ref(project.current.projectId)}}",
       "sourceTask": "landing-cbwr",
       "tablePattern": "%",
-      "schemaPattern": "{{task.storage-cbwt:null$_$%.schemaPattern}}",
+      "schemaPattern": "%",
       "type": "TABLE"
     }
   ],
