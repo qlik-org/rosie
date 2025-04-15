@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart-lrlw.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Lib2",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2"
+    },
+    {
+      "name": "Lib2/Lib3",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2$_$Lib3"
+    }
+  ]
+}
