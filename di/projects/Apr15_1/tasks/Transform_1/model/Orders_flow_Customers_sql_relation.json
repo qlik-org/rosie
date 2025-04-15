@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_flow-olcq",
+    "name": "Orders_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-olcb"
+  },
+  "targetEntity": {
+    "datasetId": "customers_sql-olcf",
+    "name": "Customers_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-olcb"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_flow_Customers_sql_relation",
+  "description": "",
+  "id": "orders_flow_customers_sql_relation-olcb"
+}

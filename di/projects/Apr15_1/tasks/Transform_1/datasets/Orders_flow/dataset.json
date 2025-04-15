@@ -1,0 +1,26 @@
+{
+  "id": "orders_flow-olcq",
+  "name": "Orders_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-8q-k",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-8q-f"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "6dc2f8ec-4634-420e-9493-bb1bd46466b8",
+    "targetId": "ca4c3904-039f-4929-9995-f1823e85a19c",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  }
+}
