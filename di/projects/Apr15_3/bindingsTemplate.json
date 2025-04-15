@@ -49,10 +49,17 @@
     "task.file_based_knowledge_mart-lrlw.databricksVectorSearchEndpoint": "",
     "task.file_based_knowledge_mart-lrlw.indexName": "",
     "task.file_based_knowledge_mart-lrlw.warehouseName": "",
-    "task.file_based_knowledge_mart-lrlw.sourceConnection": ""
+    "task.file_based_knowledge_mart-lrlw.sourceConnection": "",
+    "task.file_based_knowledge_mart_1-lrld.vectorDbConnection": "",
+    "task.file_based_knowledge_mart_1-lrld.llmConnection": "",
+    "task.file_based_knowledge_mart_1-lrld.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart_1-lrld.indexName": "",
+    "task.file_based_knowledge_mart_1-lrld.warehouseName": "",
+    "task.file_based_knowledge_mart_1-lrld.sourceConnection": ""
   },
   "idToNameMap": {
-    "file_based_knowledge_mart-lrlw": "File-based knowledge mart"
+    "file_based_knowledge_mart-lrlw": "File-based knowledge mart",
+    "file_based_knowledge_mart_1-lrld": "File-based knowledge mart_1"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
@@ -69,6 +76,10 @@
     "{{id(connection, rosie.Sharepoint)}}": {
       "type": "external_data_provider",
       "kindId": "filesource:sharepoint"
+    },
+    "{{id(connection, rosie.Pinecone)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
     }
   }
 }
