@@ -48,19 +48,29 @@
     "task.onboarding_landing-rx6y.taskSchema": "",
     "task.onboarding_landing-rx6y.sourceConnection": "",
     "task.onboarding_landing-rx6y:null$_$dbo.schema": "",
+    "task.transform-rx69.databaseName": "",
+    "task.transform-rx69.internalSchema": "",
+    "task.transform-rx69.taskSchema": "",
+    "task.transform-rx69.warehouseName": "",
     "task.onboarding_storage-rx6z.databaseName": "",
     "task.onboarding_storage-rx6z.internalSchema": "",
     "task.onboarding_storage-rx6z.taskSchema": "",
     "task.onboarding_storage-rx6z.warehouseName": "",
-    "task.transform-rx69.databaseName": "",
-    "task.transform-rx69.internalSchema": "",
-    "task.transform-rx69.taskSchema": "",
-    "task.transform-rx69.warehouseName": ""
+    "task.knowledge_mart-rx7l.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart-rx7l.indexName": "",
+    "task.knowledge_mart-rx7l.indexSchema": "",
+    "task.knowledge_mart-rx7l.indexDatabase": "",
+    "task.knowledge_mart-rx7l.databaseName": "",
+    "task.knowledge_mart-rx7l.internalSchema": "",
+    "task.knowledge_mart-rx7l.taskSchema": "",
+    "task.knowledge_mart-rx7l.warehouseName": "",
+    "task.knowledge_mart-rx7l.maxNumberOfRecords": ""
   },
   "idToNameMap": {
     "onboarding_landing-rx6y": "Onboarding_Landing",
+    "transform-rx69": "Transform",
     "onboarding_storage-rx6z": "Onboarding_Storage",
-    "transform-rx69": "Transform"
+    "knowledge_mart-rx7l": "Knowledge mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
