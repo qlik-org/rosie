@@ -1,0 +1,188 @@
+{
+  "id": "14f275df-2c0c-4ec0-92af-099713cf972e",
+  "description": "",
+  "name": "Employees_flow",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-rx69"
+  },
+  "createdAt": "2025-04-15T11:54:47.662Z",
+  "createdBy": "67e50dcf15a092cec6d7c590",
+  "updatedAt": "2025-04-15T11:55:03.579Z",
+  "updatedBy": "67e50dcf15a092cec6d7c590",
+  "checksum": "0ca84410-a5b0-40ee-af3a-79682a8dd241",
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "5be44568-a43f-43f7-be79-1ea9fe8c68db",
+        "label": "Employees",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "6344db2a-f017-42c5-8cfe-5e8f9662cae9",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-rx6z",
+              "entityId": "employees-rx62"
+            },
+            "configuration": {
+              "name": "Employees"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "4d63773b-f89a-41ab-9de3-1404a0fc3bdf",
+        "label": "Employees_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "c51dea74-2300-4fc1-a6b1-e1e638601a44",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Employees_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "EmployeeID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "LastName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "FirstName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Title",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "TitleOfCourtesy",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "BirthDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HireDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePhone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Extension",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Photo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Notes",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReportsTo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PhotoPath",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "0cbd7d66-d1fa-4e60-bc63-ccc9d75fc9ab",
+        "sourceHandle": "6344db2a-f017-42c5-8cfe-5e8f9662cae9",
+        "targetHandle": "c51dea74-2300-4fc1-a6b1-e1e638601a44"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
