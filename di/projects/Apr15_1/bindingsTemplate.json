@@ -51,11 +51,26 @@
     "task.storage-8q-f.databaseName": "",
     "task.storage-8q-f.internalSchema": "",
     "task.storage-8q-f.taskSchema": "",
-    "task.storage-8q-f.warehouseName": ""
+    "task.storage-8q-f.warehouseName": "",
+    "task.transform-olbl.databaseName": "",
+    "task.transform-olbl.internalSchema": "",
+    "task.transform-olbl.taskSchema": "",
+    "task.transform-olbl.warehouseName": "",
+    "task.knowledge_mart-olby.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart-olby.indexName": "",
+    "task.knowledge_mart-olby.indexSchema": "",
+    "task.knowledge_mart-olby.indexDatabase": "",
+    "task.knowledge_mart-olby.databaseName": "",
+    "task.knowledge_mart-olby.internalSchema": "",
+    "task.knowledge_mart-olby.taskSchema": "",
+    "task.knowledge_mart-olby.warehouseName": "",
+    "task.knowledge_mart-olby.maxNumberOfRecords": ""
   },
   "idToNameMap": {
     "landing-8q-e": "Landing",
-    "storage-8q-f": "Storage"
+    "storage-8q-f": "Storage",
+    "transform-olbl": "Transform",
+    "knowledge_mart-olby": "Knowledge mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
