@@ -60,12 +60,19 @@
     "task.knowledge_mart-old4.internalSchema": "",
     "task.knowledge_mart-old4.taskSchema": "",
     "task.knowledge_mart-old4.warehouseName": "",
-    "task.knowledge_mart-old4.maxNumberOfRecords": ""
+    "task.knowledge_mart-old4.maxNumberOfRecords": "",
+    "task.file_based_knowledge_mart-oleq.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart-oleq.indexName": "",
+    "task.file_based_knowledge_mart-oleq.indexSchema": "",
+    "task.file_based_knowledge_mart-oleq.indexDatabase": "",
+    "task.file_based_knowledge_mart-oleq.warehouseName": "",
+    "task.file_based_knowledge_mart-oleq.sourceConnection": ""
   },
   "idToNameMap": {
     "onboarding_landing-oldj": "Onboarding_Landing",
     "onboarding_storage-oldk": "Onboarding_Storage",
-    "knowledge_mart-old4": "Knowledge mart"
+    "knowledge_mart-old4": "Knowledge mart",
+    "file_based_knowledge_mart-oleq": "File-based knowledge mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
@@ -81,6 +88,10 @@
     "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
       "type": "external_data_provider",
       "kindId": "llm:Bedrock@1.0.0"
+    },
+    "{{id(connection, rosie.Sharepoint)}}": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
     }
   }
 }
