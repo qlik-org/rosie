@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-oldf",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_2-olc_"
+  },
+  "targetEntity": {
+    "datasetId": "employees_flow-oldc",
+    "name": "employees_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_2-olc_"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_employees_flow_relation",
+  "description": "",
+  "id": "orders_employees_flow_relation-oldj"
+}

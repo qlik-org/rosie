@@ -86,7 +86,20 @@
     "task.knowledge_mart_2-olcv.internalSchema": "",
     "task.knowledge_mart_2-olcv.taskSchema": "",
     "task.knowledge_mart_2-olcv.warehouseName": "",
-    "task.knowledge_mart_2-olcv.maxNumberOfRecords": ""
+    "task.knowledge_mart_2-olcv.maxNumberOfRecords": "",
+    "task.transform_2-olc_.databaseName": "",
+    "task.transform_2-olc_.internalSchema": "",
+    "task.transform_2-olc_.taskSchema": "",
+    "task.transform_2-olc_.warehouseName": "",
+    "task.knowledge_mart_3-oldk.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart_3-oldk.indexName": "",
+    "task.knowledge_mart_3-oldk.indexSchema": "",
+    "task.knowledge_mart_3-oldk.indexDatabase": "",
+    "task.knowledge_mart_3-oldk.databaseName": "",
+    "task.knowledge_mart_3-oldk.internalSchema": "",
+    "task.knowledge_mart_3-oldk.taskSchema": "",
+    "task.knowledge_mart_3-oldk.warehouseName": "",
+    "task.knowledge_mart_3-oldk.maxNumberOfRecords": ""
   },
   "idToNameMap": {
     "landing-8q-e": "Landing",
@@ -95,7 +108,9 @@
     "knowledge_mart-olby": "Knowledge mart",
     "knowledge_mart_1-olbu": "Knowledge mart_1",
     "transform_1-olcb": "Transform_1",
-    "knowledge_mart_2-olcv": "Knowledge mart_2"
+    "knowledge_mart_2-olcv": "Knowledge mart_2",
+    "transform_2-olc_": "Transform_2",
+    "knowledge_mart_3-oldk": "Knowledge mart_3"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
