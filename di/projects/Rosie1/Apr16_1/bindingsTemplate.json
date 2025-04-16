@@ -59,11 +59,28 @@
     "task.file_based_knowledge_mart-wz-i.indexSchema": "",
     "task.file_based_knowledge_mart-wz-i.indexDatabase": "",
     "task.file_based_knowledge_mart-wz-i.warehouseName": "",
-    "task.file_based_knowledge_mart-wz-i.sourceConnection": ""
+    "task.file_based_knowledge_mart-wz-i.sourceConnection": "",
+    "task.knowledge_mart_1-wz-u.vectorDbConnection": "",
+    "task.knowledge_mart_1-wz-u.llmConnection": "",
+    "task.knowledge_mart_1-wz-u.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart_1-wz-u.indexName": "",
+    "task.knowledge_mart_1-wz-u.databaseName": "",
+    "task.knowledge_mart_1-wz-u.internalSchema": "",
+    "task.knowledge_mart_1-wz-u.taskSchema": "",
+    "task.knowledge_mart_1-wz-u.warehouseName": "",
+    "task.knowledge_mart_1-wz-u.maxNumberOfRecords": "",
+    "task.file_based_knowledge_mart_1-wz-2.vectorDbConnection": "",
+    "task.file_based_knowledge_mart_1-wz-2.llmConnection": "",
+    "task.file_based_knowledge_mart_1-wz-2.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart_1-wz-2.indexName": "",
+    "task.file_based_knowledge_mart_1-wz-2.warehouseName": "",
+    "task.file_based_knowledge_mart_1-wz-2.sourceConnection": ""
   },
   "idToNameMap": {
     "knowledge_mart-wz-a": "Knowledge mart",
-    "file_based_knowledge_mart-wz-i": "File-based knowledge mart"
+    "file_based_knowledge_mart-wz-i": "File-based knowledge mart",
+    "knowledge_mart_1-wz-u": "Knowledge mart_1",
+    "file_based_knowledge_mart_1-wz-2": "File-based knowledge mart_1"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
@@ -72,6 +89,18 @@
     "{{id(connection, rosie.Sharepoint)}}": {
       "type": "external_data_provider",
       "kindId": "filesource:sharepoint"
+    },
+    "{{id(connection, rosie.Pinecone)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
+    "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:Bedrock@1.0.0"
+    },
+    "{{id(connection, rosie.Elasticsearch)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Elasticsearch@1.0.0"
     }
   }
 }
