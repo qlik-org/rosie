@@ -44,10 +44,6 @@
     "task-type.fileBasedKnowledgeMart.databaseSelectionMethod": "",
     "task-type.fileBasedKnowledgeMart.warehouseName": "",
     "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
-    "task.landing-w0ar.databaseName": "",
-    "task.landing-w0ar.taskSchema": "",
-    "task.landing-w0ar.sourceConnection": "",
-    "task.landing-w0ar:null$_$dbo.schema": "",
     "task.knowledge_mart_2-w0aq.databricksVectorSearchEndpoint": "",
     "task.knowledge_mart_2-w0aq.indexName": "",
     "task.knowledge_mart_2-w0aq.indexSchema": "",
@@ -57,11 +53,22 @@
     "task.knowledge_mart_2-w0aq.taskSchema": "",
     "task.knowledge_mart_2-w0aq.warehouseName": "",
     "task.knowledge_mart_2-w0aq.maxNumberOfRecords": "",
-    "project.rosie$_$Apr15_1.projectId": ""
+    "project.rosie$_$Apr15_1.projectId": "",
+    "task.landing-w0ar.databaseName": "",
+    "task.landing-w0ar.taskSchema": "",
+    "task.landing-w0ar.sourceConnection": "",
+    "task.landing-w0ar:null$_$dbo.schema": "",
+    "task.file_based_knowledge_mart-w0a6.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart-w0a6.indexName": "",
+    "task.file_based_knowledge_mart-w0a6.indexSchema": "",
+    "task.file_based_knowledge_mart-w0a6.indexDatabase": "",
+    "task.file_based_knowledge_mart-w0a6.warehouseName": "",
+    "task.file_based_knowledge_mart-w0a6.sourceConnection": ""
   },
   "idToNameMap": {
+    "knowledge_mart_2-w0aq": "Knowledge mart_2",
     "landing-w0ar": "Landing",
-    "knowledge_mart_2-w0aq": "Knowledge mart_2"
+    "file_based_knowledge_mart-w0a6": "File-based knowledge mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
@@ -69,6 +76,10 @@
     },
     "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
       "type": "repsrc_mssql"
+    },
+    "{{id(connection, rosie.Sharepoint)}}": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
     }
   }
 }
