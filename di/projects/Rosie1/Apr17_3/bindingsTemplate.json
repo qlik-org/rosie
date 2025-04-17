@@ -60,12 +60,22 @@
     "task.knowledge_mart-08v3.internalSchema": "",
     "task.knowledge_mart-08v3.taskSchema": "",
     "task.knowledge_mart-08v3.warehouseName": "",
-    "task.knowledge_mart-08v3.maxNumberOfRecords": ""
+    "task.knowledge_mart-08v3.maxNumberOfRecords": "",
+    "task.knowledge_mart_1-osek.vectorDbConnection": "",
+    "task.knowledge_mart_1-osek.llmConnection": "",
+    "task.knowledge_mart_1-osek.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart_1-osek.indexName": "",
+    "task.knowledge_mart_1-osek.databaseName": "",
+    "task.knowledge_mart_1-osek.internalSchema": "",
+    "task.knowledge_mart_1-osek.taskSchema": "",
+    "task.knowledge_mart_1-osek.warehouseName": "",
+    "task.knowledge_mart_1-osek.maxNumberOfRecords": ""
   },
   "idToNameMap": {
     "onboarding_landing-08vw": "Onboarding_Landing",
     "onboarding_storage-08vx": "Onboarding_Storage",
-    "knowledge_mart-08v3": "Knowledge mart"
+    "knowledge_mart-08v3": "Knowledge mart",
+    "knowledge_mart_1-osek": "Knowledge mart_1"
   },
   "connectionProperties": {
     "{{id(connection, rula_s.Databricks_Target_r)}}": {
@@ -76,6 +86,14 @@
     },
     "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
       "type": "repsrc_mssql"
+    },
+    "{{id(connection, rosie.Elasticsearch)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Elasticsearch@1.0.0"
+    },
+    "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:Bedrock@1.0.0"
     }
   }
 }
