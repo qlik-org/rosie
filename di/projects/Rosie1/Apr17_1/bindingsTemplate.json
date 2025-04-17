@@ -46,10 +46,6 @@
     "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
     "task-type.fileBasedKnowledgeMart.warehouseName": "",
     "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
-    "task.landing-l7ir.databaseName": "",
-    "task.landing-l7ir.taskSchema": "",
-    "task.landing-l7ir.sourceConnection": "",
-    "task.landing-l7ir:null$_$dbo.schema": "",
     "task.storage-l7is.databaseName": "",
     "task.storage-l7is.internalSchema": "",
     "task.storage-l7is.taskSchema": "",
@@ -63,25 +59,48 @@
     "task.knowledge_mart-l7ib.taskSchema": "",
     "task.knowledge_mart-l7ib.warehouseName": "",
     "task.knowledge_mart-l7ib.maxNumberOfRecords": "",
+    "task.landing-l7ir.databaseName": "",
+    "task.landing-l7ir.taskSchema": "",
+    "task.landing-l7ir.sourceConnection": "",
+    "task.landing-l7ir:null$_$dbo.schema": "",
     "task.file_based_knowledge_mart-l7ij.vectorDbConnection": "",
     "task.file_based_knowledge_mart-l7ij.llmConnection": "",
     "task.file_based_knowledge_mart-l7ij.databricksVectorSearchEndpoint": "",
     "task.file_based_knowledge_mart-l7ij.indexName": "",
     "task.file_based_knowledge_mart-l7ij.warehouseName": "",
-    "task.file_based_knowledge_mart-l7ij.sourceConnection": ""
+    "task.file_based_knowledge_mart-l7ij.sourceConnection": "",
+    "task.transform-l7i0.databaseName": "",
+    "task.transform-l7i0.internalSchema": "",
+    "task.transform-l7i0.taskSchema": "",
+    "task.transform-l7i0.warehouseName": "",
+    "task.knowledge_mart_1-l7i_.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart_1-l7i_.indexName": "",
+    "task.knowledge_mart_1-l7i_.indexSchema": "",
+    "task.knowledge_mart_1-l7i_.indexDatabase": "",
+    "task.knowledge_mart_1-l7i_.databaseName": "",
+    "task.knowledge_mart_1-l7i_.internalSchema": "",
+    "task.knowledge_mart_1-l7i_.taskSchema": "",
+    "task.knowledge_mart_1-l7i_.warehouseName": "",
+    "task.knowledge_mart_1-l7i_.maxNumberOfRecords": "",
+    "task.file_based_knowledge_mart_1-l7jh.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart_1-l7jh.indexName": "",
+    "task.file_based_knowledge_mart_1-l7jh.indexSchema": "",
+    "task.file_based_knowledge_mart_1-l7jh.indexDatabase": "",
+    "task.file_based_knowledge_mart_1-l7jh.warehouseName": "",
+    "task.file_based_knowledge_mart_1-l7jh.sourceConnection": ""
   },
   "idToNameMap": {
-    "landing-l7ir": "Landing",
     "storage-l7is": "Storage",
     "knowledge_mart-l7ib": "Knowledge mart",
-    "file_based_knowledge_mart-l7ij": "File-based knowledge mart"
+    "landing-l7ir": "Landing",
+    "file_based_knowledge_mart-l7ij": "File-based knowledge mart",
+    "transform-l7i0": "Transform",
+    "knowledge_mart_1-l7i_": "Knowledge mart_1",
+    "file_based_knowledge_mart_1-l7jh": "File-based knowledge mart_1"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
       "type": "reptgt_qdisnowflake"
-    },
-    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
-      "type": "repsrc_mssql"
     },
     "{{id(connection, rosie.Elasticsearch)}}": {
       "type": "external_data_provider",
@@ -90,6 +109,9 @@
     "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
       "type": "external_data_provider",
       "kindId": "llm:Bedrock@1.0.0"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
+      "type": "repsrc_mssql"
     },
     "{{id(connection, rosie.Pinecone)}}": {
       "type": "external_data_provider",

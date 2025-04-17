@@ -1,0 +1,27 @@
+{
+  "id": "products_flow-l7i3",
+  "name": "products_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "products-l7iw",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l7is"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "5f87c86f-e47e-499c-a160-27514837f00b",
+    "targetId": "d4f8a207-44d1-47f3-b676-a5db187afbf4",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false
+}
