@@ -87,7 +87,13 @@
     "task.file_based_knowledge_mart_1-l7jh.indexSchema": "",
     "task.file_based_knowledge_mart_1-l7jh.indexDatabase": "",
     "task.file_based_knowledge_mart_1-l7jh.warehouseName": "",
-    "task.file_based_knowledge_mart_1-l7jh.sourceConnection": ""
+    "task.file_based_knowledge_mart_1-l7jh.sourceConnection": "",
+    "task.file_based_knowledge_mart_2-7hsb.vectorDbConnection": "",
+    "task.file_based_knowledge_mart_2-7hsb.llmConnection": "",
+    "task.file_based_knowledge_mart_2-7hsb.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart_2-7hsb.indexName": "",
+    "task.file_based_knowledge_mart_2-7hsb.warehouseName": "",
+    "task.file_based_knowledge_mart_2-7hsb.sourceConnection": ""
   },
   "idToNameMap": {
     "storage-l7is": "Storage",
@@ -96,7 +102,8 @@
     "file_based_knowledge_mart-l7ij": "File-based knowledge mart",
     "transform-l7i0": "Transform",
     "knowledge_mart_1-l7i_": "Knowledge mart_1",
-    "file_based_knowledge_mart_1-l7jh": "File-based knowledge mart_1"
+    "file_based_knowledge_mart_1-l7jh": "File-based knowledge mart_1",
+    "file_based_knowledge_mart_2-7hsb": "File-based knowledge mart_2"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
