@@ -1,0 +1,215 @@
+{
+  "id": "categories-l7ih",
+  "name": "Categories",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "datasetId": "categories-l7iu",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l7is"
+    },
+    {
+      "datasetId": "order_details-l7iv",
+      "name": "Order Details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l7is"
+    },
+    {
+      "datasetId": "suppliers-l7ix",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l7is"
+    },
+    {
+      "datasetId": "products-l7iw",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l7is"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Categories",
+    "columns": [
+      {
+        "name": "CategoryID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": true
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CatName2",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "CatName2-ce04",
+        "flags": "NONE"
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "order_details-l7iv",
+          "name": "Order Details",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "storage-l7is"
+        },
+        "entityRelationshipPath": "products_categories_relation-l7iz$_$order_details_products_relation-l7iy",
+        "dimensionId": "categories_order_details-l7if"
+      },
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "products-l7iw",
+          "name": "Products",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "storage-l7is"
+        },
+        "entityRelationshipPath": "products_categories_relation-l7iz",
+        "dimensionId": "categories_products-l7ig"
+      }
+    ],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "categories-l7iu",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "storage-l7is"
+    },
+    "entityRelationshipPath": [],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "CategoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "CategoryName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Picture",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Picture}",
+            "alias": [
+              {
+                "name": "Picture",
+                "value": "Picture"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CatName2",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "CategoryName"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [
+      "products_categories_relation-l7iz$_$products_suppliers_relation-l7ia",
+      "products_categories_relation-l7iz$_$order_details_products_relation-l7iy",
+      "products_categories_relation-l7iz"
+    ],
+    "subtype": "MODEL_BASED"
+  },
+  "virtualDataset": false
+}

@@ -1,0 +1,103 @@
+{
+  "variables": {
+    "projectName": "",
+    "platformConnection": "",
+    "cloudStagingConnection": "",
+    "project.current.prefixSchema": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.snowflakeExternalVolume": "",
+    "task-type.storage.snowflakeOpenCatalog": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.snowflakeExternalVolume": "",
+    "task-type.transform.snowflakeOpenCatalog": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.snowflakeExternalVolume": "",
+    "task-type.datamart.snowflakeOpenCatalog": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.indexDatabase": "",
+    "task-type.knowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabase": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task.landing-l7ir.databaseName": "",
+    "task.landing-l7ir.taskSchema": "",
+    "task.landing-l7ir.sourceConnection": "",
+    "task.landing-l7ir:null$_$dbo.schema": "",
+    "task.storage-l7is.databaseName": "",
+    "task.storage-l7is.internalSchema": "",
+    "task.storage-l7is.taskSchema": "",
+    "task.storage-l7is.warehouseName": "",
+    "task.knowledge_mart-l7ib.vectorDbConnection": "",
+    "task.knowledge_mart-l7ib.llmConnection": "",
+    "task.knowledge_mart-l7ib.databricksVectorSearchEndpoint": "",
+    "task.knowledge_mart-l7ib.indexName": "",
+    "task.knowledge_mart-l7ib.databaseName": "",
+    "task.knowledge_mart-l7ib.internalSchema": "",
+    "task.knowledge_mart-l7ib.taskSchema": "",
+    "task.knowledge_mart-l7ib.warehouseName": "",
+    "task.knowledge_mart-l7ib.maxNumberOfRecords": "",
+    "task.file_based_knowledge_mart-l7ij.vectorDbConnection": "",
+    "task.file_based_knowledge_mart-l7ij.llmConnection": "",
+    "task.file_based_knowledge_mart-l7ij.databricksVectorSearchEndpoint": "",
+    "task.file_based_knowledge_mart-l7ij.indexName": "",
+    "task.file_based_knowledge_mart-l7ij.warehouseName": "",
+    "task.file_based_knowledge_mart-l7ij.sourceConnection": ""
+  },
+  "idToNameMap": {
+    "landing-l7ir": "Landing",
+    "storage-l7is": "Storage",
+    "knowledge_mart-l7ib": "Knowledge mart",
+    "file_based_knowledge_mart-l7ij": "File-based knowledge mart"
+  },
+  "connectionProperties": {
+    "{{id(connection, rosie.Snowflake_Target)}}": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
+      "type": "repsrc_mssql"
+    },
+    "{{id(connection, rosie.Elasticsearch)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Elasticsearch@1.0.0"
+    },
+    "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:Bedrock@1.0.0"
+    },
+    "{{id(connection, rosie.Pinecone)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
+    "{{id(connection, rosie.Sharepoint)}}": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
+    }
+  }
+}
