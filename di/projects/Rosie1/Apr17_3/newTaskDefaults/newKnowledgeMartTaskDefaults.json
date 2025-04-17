@@ -19,17 +19,17 @@
     "databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}"
   },
   "taskRunSchedule": {
-    "runInterval": 15,
-    "schedulingType": "EVENT_BASED"
+    "runInterval": 45,
+    "schedulingType": "TIME_BASED"
   },
   "vectorDbTargetType": "{{task-type.knowledgeMart.vectorDbTargetType}}",
   "vectorDbConnection": "{{task-type.knowledgeMart.vectorDbConnection}}",
   "llmConnection": "{{task-type.knowledgeMart.llmConnection}}",
   "llmSettings": {
-    "kindId": "llm:Databricks@1.0.0",
+    "kindId": "llm:databricks",
     "parameters": {
-      "embedding_model_serving_endpoint": null,
-      "completion_model_serving_endpoint": null
+      "embedding_model_serving_endpoint": "qqq",
+      "completion_model_serving_endpoint": "www"
     }
   }
 }
