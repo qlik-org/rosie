@@ -1,0 +1,34 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$Apr17_1.projectId}}",
+      "sourceTask": "storage-l7is",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-l7iu"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Apr17_1.projectId}}",
+      "sourceTask": "storage-l7is",
+      "name": "Order Details",
+      "type": "NONE",
+      "sourceTableId": "order_details-l7iv"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Apr17_1.projectId}}",
+      "sourceTask": "storage-l7is",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-l7iw"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$Apr17_1.projectId}}",
+      "sourceTask": "storage-l7is",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-l7ix"
+    }
+  ]
+}
