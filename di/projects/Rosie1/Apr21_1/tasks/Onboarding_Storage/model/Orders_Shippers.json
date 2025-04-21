@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-nsgh",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-nsga"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-nsgk",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-nsga"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-nsgo"
+}

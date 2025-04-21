@@ -1,0 +1,22 @@
+{
+  "id": "region-nsgj",
+  "name": "Region",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-nsf_"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false
+}

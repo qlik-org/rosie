@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employees-nsge",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-nsga"
+  },
+  "targetEntity": {
+    "datasetId": "employees-nsge",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-nsga"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Employees_Employees",
+  "description": "",
+  "id": "employees_employees-nsgp"
+}
