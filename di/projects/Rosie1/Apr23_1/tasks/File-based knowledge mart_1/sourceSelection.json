@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart_1-tabm.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Lib2/Lib3",
+      "type": "DIRECTORY",
+      "sourceTableId": "Lib2$_$Lib3"
+    }
+  ]
+}

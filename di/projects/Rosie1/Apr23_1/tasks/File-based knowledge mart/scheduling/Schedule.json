@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2025-04-23T09:07:10.292Z",
+    "timezone": "Etc/UTC"
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "id": "schedule-tabl",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}
