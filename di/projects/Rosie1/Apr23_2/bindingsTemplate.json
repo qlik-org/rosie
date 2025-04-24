@@ -80,9 +80,6 @@
     "{{id(connection, rosie.Snowflake_Target)}}": {
       "type": "reptgt_qdisnowflake"
     },
-    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
-      "type": "repsrc_mssql"
-    },
     "{{id(connection, rosie.Pinecone)}}": {
       "type": "external_data_provider",
       "kindId": "vectordb:Pinecone@1.0.0"
@@ -90,6 +87,17 @@
     "{{id(connection, rosie.Amazon Bedrock_rosie)}}": {
       "type": "external_data_provider",
       "kindId": "llm:Bedrock@1.0.0"
+    },
+    "{{id(connection, rosie.OpenSearch)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:OpenSearch@1.0.0"
+    },
+    "{{id(connection, rosie.OpenAI)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
+      "type": "repsrc_mssql"
     },
     "{{id(connection, rosie.Sharepoint)}}": {
       "type": "external_data_provider",

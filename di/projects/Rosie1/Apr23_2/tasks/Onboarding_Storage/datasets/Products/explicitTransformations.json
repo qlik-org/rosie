@@ -1,0 +1,40 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "KEEP",
+        "columnName": "CategoryID",
+        "newColumnName": "CategoryID",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "ProductID",
+        "newColumnName": "ProductID",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "products-tacf",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Products",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Products",
+  "id": "products-9g1h",
+  "description": ""
+}

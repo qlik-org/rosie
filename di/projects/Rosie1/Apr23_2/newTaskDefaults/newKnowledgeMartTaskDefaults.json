@@ -10,7 +10,7 @@
     "databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "selectionMethod": "{{task-type.knowledgeMart.databaseSelectionMethod}}"
   },
-  "viewType": "DEFAULT",
+  "viewType": "SECURE_VIEW",
   "indexArtifactsLocation": {
     "databaseSelection": {
       "databaseName": "{{task-type.knowledgeMart.indexDatabase}}",
@@ -19,14 +19,14 @@
     "databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}"
   },
   "taskRunSchedule": {
-    "runInterval": 15,
-    "schedulingType": "EVENT_BASED"
+    "runInterval": 30,
+    "schedulingType": "TIME_BASED"
   },
   "vectorDbTargetType": "{{task-type.knowledgeMart.vectorDbTargetType}}",
   "vectorDbConnection": "{{task-type.knowledgeMart.vectorDbConnection}}",
   "llmConnection": "{{task-type.knowledgeMart.llmConnection}}",
   "llmSettings": {
-    "kindId": "llm:SnowflakeCortex@1.0.0",
+    "kindId": "llm:snowflake",
     "parameters": {
       "embedding_model": "nv-embed-qa-4",
       "completion_model": "mistral-7b"
