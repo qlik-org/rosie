@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-5isz",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "registered_data_storage-5isr"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-5isc",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "registered_data_storage-5isr"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-5isz"
+}

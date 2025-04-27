@@ -1,0 +1,16 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$Mar12_3_storage_1_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_1-5ise",
+      "schema": "{{task.registered_data_1-5ise:ROSIE$_$Mar12_3_storage_1.schema}}",
+      "database": "{{task.registered_data_1-5ise:ROSIE$_$Mar12_3_storage_1.database}}"
+    }
+  ],
+  "virtualDataset": false
+}

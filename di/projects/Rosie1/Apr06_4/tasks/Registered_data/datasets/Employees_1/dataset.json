@@ -1,0 +1,16 @@
+{
+  "id": "employees_1",
+  "name": "Employees_1",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "datasetId": "$registered_data$Apr06_4_landing_employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-5isq",
+      "schema": "{{task.registered_data-5isq:ROSIE$_$Apr06_4_landing.schema}}",
+      "database": "{{task.registered_data-5isq:ROSIE$_$Apr06_4_landing.database}}"
+    }
+  ],
+  "virtualDataset": false
+}

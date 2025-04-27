@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employeeterritories-5isw",
+    "name": "EmployeeTerritories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "registered_data_storage-5isr"
+  },
+  "targetEntity": {
+    "datasetId": "employees-5isv",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "registered_data_storage-5isr"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "EmployeeTerritories_Employees_relation",
+  "description": "",
+  "id": "employeeterritories_employees_relation-5iss"
+}
