@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-wwlo.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Table_1",
+      "schema": "{{task.onboarding_landing-wwlo:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_table_1"
+    }
+  ]
+}
