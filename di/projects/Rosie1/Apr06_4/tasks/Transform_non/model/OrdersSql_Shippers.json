@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_sql-5ipx",
+    "name": "Orders_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-5ipk",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "OrdersSql_Shippers",
+  "description": "",
+  "id": "orderssql_shippers-5ipz"
+}

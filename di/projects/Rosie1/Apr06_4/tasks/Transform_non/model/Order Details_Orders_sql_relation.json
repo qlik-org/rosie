@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "order_details-5ipe",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "targetEntity": {
+    "datasetId": "orders_sql-5ipx",
+    "name": "Orders_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order Details_Orders_sql_relation",
+  "description": "",
+  "id": "order_details_orders_sql_relation-5ips"
+}

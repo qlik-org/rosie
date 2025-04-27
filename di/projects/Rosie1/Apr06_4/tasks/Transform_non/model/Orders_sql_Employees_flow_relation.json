@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_sql-5ipx",
+    "name": "Orders_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "targetEntity": {
+    "datasetId": "employees_flow-5ipw",
+    "name": "Employees_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_sql_Employees_flow_relation",
+  "description": "",
+  "id": "orders_sql_employees_flow_relation-5ipv"
+}

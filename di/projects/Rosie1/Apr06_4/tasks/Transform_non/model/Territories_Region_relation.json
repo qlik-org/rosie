@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "territories-5ipo",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "targetEntity": {
+    "datasetId": "region-5ipi",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_non-5ipt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_Region_relation",
+  "description": "",
+  "id": "territories_region_relation-5ipy"
+}
