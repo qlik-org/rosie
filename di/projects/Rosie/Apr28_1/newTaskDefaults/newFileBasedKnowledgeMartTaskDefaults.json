@@ -1,0 +1,30 @@
+{
+  "taskRuntime": {
+    "tableUpdateConcurrency": 0,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
+      "selectionMethod": "{{task-type.fileBasedKnowledgeMart.warehouseSelectionMethod}}"
+    }
+  },
+  "indexArtifactsLocation": {
+    "databaseSelection": {
+      "databaseName": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
+      "selectionMethod": "{{task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod}}"
+    },
+    "databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}"
+  },
+  "taskRunSchedule": {
+    "runInterval": 45,
+    "schedulingType": "TIME_BASED"
+  },
+  "vectorDbTargetType": "{{task-type.fileBasedKnowledgeMart.vectorDbTargetType}}",
+  "vectorDbConnection": "{{task-type.fileBasedKnowledgeMart.vectorDbConnection}}",
+  "llmConnection": "{{task-type.fileBasedKnowledgeMart.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:OpenAI@1.0.0",
+    "parameters": {
+      "embedding_model": "text-embedding-3-large",
+      "completion_model": "gpt-4o"
+    }
+  }
+}

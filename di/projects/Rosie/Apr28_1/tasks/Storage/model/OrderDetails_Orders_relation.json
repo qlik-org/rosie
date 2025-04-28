@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orderdetails--2hm",
+    "name": "OrderDetails",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage--2hh"
+  },
+  "targetEntity": {
+    "datasetId": "orders--2hn",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage--2hh"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "OrderDetails_Orders_relation",
+  "description": "",
+  "id": "orderdetails_orders_relation--2ht"
+}

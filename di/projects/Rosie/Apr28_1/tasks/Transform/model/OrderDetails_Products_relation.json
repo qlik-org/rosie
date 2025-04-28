@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orderdetails--2ik",
+    "name": "OrderDetails",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "targetEntity": {
+    "datasetId": "products--2im",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "OrderDetails_Products_relation",
+  "description": "",
+  "id": "orderdetails_products_relation--2if"
+}

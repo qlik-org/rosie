@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_flow--2if",
+    "name": "Orders_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "targetEntity": {
+    "datasetId": "employees_sql--2ie",
+    "name": "Employees_SQL",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_flow_Employees_SQL_relation",
+  "description": "",
+  "id": "orders_flow_employees_sql_relation--2ih"
+}

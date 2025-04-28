@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_flow--2if",
+    "name": "Orders_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "targetEntity": {
+    "datasetId": "customers--2ii",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_flow_Customers_relation",
+  "description": "",
+  "id": "orders_flow_customers_relation--2ig"
+}
