@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employees_sql--2ie",
+    "name": "Employees_SQL",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "targetEntity": {
+    "datasetId": "employees_sql--2ie",
+    "name": "Employees_SQL",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--2ic"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "EmployeesSQL_EmployeesSQL",
+  "description": "",
+  "id": "employeessql_employeessql--2il"
+}

@@ -1,0 +1,2842 @@
+{
+  "id": "orderdetails--2iq",
+  "name": "OrderDetails",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "datasetId": "orderdetails--2ik",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "suppliers--2iq",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "categories--2ig",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "products--2im",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "shippers--2io",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "employees_sql--2ie",
+      "name": "Employees_SQL",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "customers--2ii",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    },
+    {
+      "datasetId": "orders_flow--2if",
+      "name": "Orders_flow",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform--2ic"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "OrderDetails",
+    "dbSchema": "Apr28_1knowledge_mart_1",
+    "dbName": "ROSIE",
+    "columns": [
+      {
+        "name": "OrderID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "productid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitPrice",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Quantity",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "quantity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discount",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "FLOAT4"
+        },
+        "id": "discount",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CustomerID",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(5)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$customerid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "EmployeeID",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orderdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RequiredDate",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$requireddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShippedDate",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shippeddate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipVia",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipvia",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Freight",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$freight",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipName",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipAddress",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipaddress",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCity",
+        "ordinal": 15,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipcity",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipRegion",
+        "ordinal": 16,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipregion",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipPostalCode",
+        "ordinal": 17,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shippostalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ShipCountry",
+        "ordinal": 18,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$shipcountry",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ProductName",
+        "ordinal": 19,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orderdetails_products_relation--2if$_$productname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "SupplierID",
+        "ordinal": 20,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderdetails_products_relation--2if$_$supplierid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryID",
+        "ordinal": 21,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "orderdetails_products_relation--2if$_$categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "QuantityPerUnit",
+        "ordinal": 22,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "orderdetails_products_relation--2if$_$quantityperunit",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_UnitPrice",
+        "ordinal": 23,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 19,
+          "scale": 4,
+          "originalTypeFull": "NUMBER(19,4)"
+        },
+        "id": "orderdetails_products_relation--2if$_$unitprice",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsInStock",
+        "ordinal": 24,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "orderdetails_products_relation--2if$_$unitsinstock",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "UnitsOnOrder",
+        "ordinal": 25,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "orderdetails_products_relation--2if$_$unitsonorder",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReorderLevel",
+        "ordinal": 26,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT2",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "SMALLINT"
+        },
+        "id": "orderdetails_products_relation--2if$_$reorderlevel",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Discontinued",
+        "ordinal": 27,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BOOLEAN"
+        },
+        "id": "orderdetails_products_relation--2if$_$discontinued",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_CompanyName",
+        "ordinal": 28,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_CompanyName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactName",
+        "ordinal": 29,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactTitle",
+        "ordinal": 30,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactTitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Address",
+        "ordinal": 31,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_City",
+        "ordinal": 32,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_City",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Region",
+        "ordinal": 33,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_PostalCode",
+        "ordinal": 34,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_PostalCode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Country",
+        "ordinal": 35,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Phone",
+        "ordinal": 36,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Fax",
+        "ordinal": 37,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_LastName",
+        "ordinal": 38,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_LastName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_FirstName",
+        "ordinal": 39,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_FirstName",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Title",
+        "ordinal": 40,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_TitleOfCourtesy",
+        "ordinal": 41,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_TitleOfCourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_BirthDate",
+        "ordinal": 42,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_BirthDate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HireDate",
+        "ordinal": 43,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HireDate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Address",
+        "ordinal": 44,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_City",
+        "ordinal": 45,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Region",
+        "ordinal": 46,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PostalCode",
+        "ordinal": 47,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Country",
+        "ordinal": 48,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HomePhone",
+        "ordinal": 49,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HomePhone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Extension",
+        "ordinal": 50,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Photo",
+        "ordinal": 51,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "BINARY",
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Photo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Notes",
+        "ordinal": 52,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(8388608)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_ReportsTo",
+        "ordinal": 53,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_ReportsTo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PhotoPath",
+        "ordinal": 54,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(255)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PhotoPath",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_CompanyName",
+        "ordinal": 55,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik$_$companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_Phone",
+        "ordinal": 56,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik$_$phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 57,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Description",
+        "ordinal": 58,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$description",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 59,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BLOB",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_CompanyName",
+        "ordinal": 60,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(40)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$companyname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactName",
+        "ordinal": 61,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$contactname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactTitle",
+        "ordinal": 62,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$contacttitle",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Address",
+        "ordinal": 63,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(60)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_City",
+        "ordinal": 64,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Region",
+        "ordinal": 65,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_PostalCode",
+        "ordinal": 66,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Country",
+        "ordinal": 67,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(15)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Phone",
+        "ordinal": 68,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$phone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Fax",
+        "ordinal": 69,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(24)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$fax",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HomePage",
+        "ordinal": 70,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 1073741823,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$homepage",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_LastName",
+        "ordinal": 71,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(20)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_FirstName",
+        "ordinal": 72,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Title",
+        "ordinal": 73,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_TitleOfCourtesy",
+        "ordinal": 74,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_BirthDate",
+        "ordinal": 75,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HireDate",
+        "ordinal": 76,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Address",
+        "ordinal": 77,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 60,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(60)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$address",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_City",
+        "ordinal": 78,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$city",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Region",
+        "ordinal": 79,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$region",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PostalCode",
+        "ordinal": 80,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(10)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$postalcode",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Country",
+        "ordinal": 81,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$country",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HomePhone",
+        "ordinal": 82,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$homephone",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Extension",
+        "ordinal": 83,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$extension",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Photo",
+        "ordinal": 84,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "BINARY",
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$photo",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Notes",
+        "ordinal": 85,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(8388608)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$notes",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_ReportsTo",
+        "ordinal": 86,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PhotoPath",
+        "ordinal": 87,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 255,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(255)"
+        },
+        "id": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$photopath",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "orderdetails--2iq",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "orderdetails--2ik",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform--2ic"
+    },
+    "entityRelationshipPath": [
+      "orderdetails_orders_flow_relation--2ie",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il",
+      "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik",
+      "orderdetails_products_relation--2if",
+      "orderdetails_products_relation--2if$_$products_categories_relation--2ii",
+      "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "OrderID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${OrderID}",
+            "alias": [
+              {
+                "name": "OrderID",
+                "value": "OrderID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${ProductID}",
+            "alias": [
+              {
+                "name": "ProductID",
+                "value": "ProductID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitPrice}",
+            "alias": [
+              {
+                "name": "UnitPrice",
+                "value": "UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Quantity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Quantity}",
+            "alias": [
+              {
+                "name": "Quantity",
+                "value": "Quantity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discount",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discount}",
+            "alias": [
+              {
+                "name": "Discount",
+                "value": "Discount"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CustomerID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CustomerID}",
+            "alias": [
+              {
+                "name": "CustomerID",
+                "value": "orderdetails_orders_flow_relation--2ie$_$CustomerID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "EmployeeID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "orderdetails_orders_flow_relation--2ie$_$EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDate}",
+            "alias": [
+              {
+                "name": "OrderDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$OrderDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RequiredDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RequiredDate}",
+            "alias": [
+              {
+                "name": "RequiredDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$RequiredDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShippedDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShippedDate}",
+            "alias": [
+              {
+                "name": "ShippedDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShippedDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipVia",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipVia}",
+            "alias": [
+              {
+                "name": "ShipVia",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipVia"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Freight",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Freight}",
+            "alias": [
+              {
+                "name": "Freight",
+                "value": "orderdetails_orders_flow_relation--2ie$_$Freight"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipName}",
+            "alias": [
+              {
+                "name": "ShipName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipAddress",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipAddress}",
+            "alias": [
+              {
+                "name": "ShipAddress",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipAddress"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCity",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCity}",
+            "alias": [
+              {
+                "name": "ShipCity",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipCity"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipRegion",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipRegion}",
+            "alias": [
+              {
+                "name": "ShipRegion",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipRegion"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipPostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipPostalCode}",
+            "alias": [
+              {
+                "name": "ShipPostalCode",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipPostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ShipCountry",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ShipCountry}",
+            "alias": [
+              {
+                "name": "ShipCountry",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ShipCountry"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ProductName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ProductName}",
+            "alias": [
+              {
+                "name": "ProductName",
+                "value": "orderdetails_products_relation--2if$_$ProductName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "SupplierID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${SupplierID}",
+            "alias": [
+              {
+                "name": "SupplierID",
+                "value": "orderdetails_products_relation--2if$_$SupplierID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "orderdetails_products_relation--2if$_$CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "QuantityPerUnit",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${QuantityPerUnit}",
+            "alias": [
+              {
+                "name": "QuantityPerUnit",
+                "value": "orderdetails_products_relation--2if$_$QuantityPerUnit"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_UnitPrice",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_UnitPrice}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_UnitPrice",
+                "value": "orderdetails_products_relation--2if$_$UnitPrice"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsInStock",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsInStock}",
+            "alias": [
+              {
+                "name": "UnitsInStock",
+                "value": "orderdetails_products_relation--2if$_$UnitsInStock"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "UnitsOnOrder",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${UnitsOnOrder}",
+            "alias": [
+              {
+                "name": "UnitsOnOrder",
+                "value": "orderdetails_products_relation--2if$_$UnitsOnOrder"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReorderLevel",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReorderLevel}",
+            "alias": [
+              {
+                "name": "ReorderLevel",
+                "value": "orderdetails_products_relation--2if$_$ReorderLevel"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Discontinued",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Discontinued}",
+            "alias": [
+              {
+                "name": "Discontinued",
+                "value": "orderdetails_products_relation--2if$_$Discontinued"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_CompanyName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_CompanyName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactTitle}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_ContactTitle",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Address}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Address",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_City}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_City",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Region}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Region",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_PostalCode",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Country}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Country",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Phone}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Phone",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Fax}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Customers_relation_Fax",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_LastName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_LastName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_FirstName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_FirstName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Title}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Title",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_TitleOfCourtesy",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_BirthDate}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_BirthDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HireDate}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HireDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Address}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Address",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_City}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_City",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Region}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Region",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PostalCode",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Country}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Country",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HomePhone}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_HomePhone",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Extension}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Extension",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Photo}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Photo",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Notes}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_Notes",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_ReportsTo}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_ReportsTo",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PhotoPath}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_PhotoPath",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$PhotoPath"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_CompanyName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_CompanyName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_Phone}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_OrdersFlow_Shippers_Phone",
+                "value": "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$CategoryName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Description",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Description}",
+            "alias": [
+              {
+                "name": "Description",
+                "value": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$Description"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Picture",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Picture}",
+            "alias": [
+              {
+                "name": "Picture",
+                "value": "orderdetails_products_relation--2if$_$products_categories_relation--2ii$_$Picture"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_CompanyName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_CompanyName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_CompanyName",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$CompanyName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_ContactName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactName",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$ContactName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactTitle",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_ContactTitle}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_ContactTitle",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$ContactTitle"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_Address}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Address",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_City}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_City",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_Region}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Region",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_PostalCode}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_PostalCode",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_Country}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Country",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_Phone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_Phone}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Phone",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$Phone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Products_relation_Products_Suppliers_relation_Fax",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Products_relation_Products_Suppliers_relation_Fax}",
+            "alias": [
+              {
+                "name": "OrderDetails_Products_relation_Products_Suppliers_relation_Fax",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$Fax"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePage",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePage}",
+            "alias": [
+              {
+                "name": "HomePage",
+                "value": "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij$_$HomePage"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_LastName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_LastName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_FirstName}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_FirstName",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Title}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Title",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_TitleOfCourtesy",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_BirthDate}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_BirthDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HireDate}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HireDate",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Address}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Address",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_City}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_City",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Region}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Region",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PostalCode}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PostalCode",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Country}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Country",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HomePhone}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_HomePhone",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Extension}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Extension",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Photo}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Photo",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Notes}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_Notes",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_ReportsTo}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_ReportsTo",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PhotoPath}",
+            "alias": [
+              {
+                "name": "OrderDetails_Orders_flow_relation_Orders_flow_Employees_SQL_relation_EmployeesSQL_EmployeesSQL_PhotoPath",
+                "value": "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il$_$PhotoPath"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [
+      "orderdetails_orders_flow_relation--2ie",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_customers_relation--2ig",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih",
+      "orderdetails_orders_flow_relation--2ie$_$orders_flow_employees_sql_relation--2ih$_$employeessql_employeessql--2il",
+      "orderdetails_orders_flow_relation--2ie$_$ordersflow_shippers--2ik",
+      "orderdetails_products_relation--2if",
+      "orderdetails_products_relation--2if$_$products_categories_relation--2ii",
+      "orderdetails_products_relation--2if$_$products_suppliers_relation--2ij"
+    ],
+    "subtype": "MODEL_BASED"
+  },
+  "virtualDataset": false
+}
