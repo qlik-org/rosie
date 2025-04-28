@@ -1,0 +1,251 @@
+{
+  "id": "categories--2i6",
+  "name": "Categories",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "datasetId": "categories--2h6",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "shippers--2ia",
+      "name": "Shippers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "employees--2h8",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "customers--2h7",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "orders--2h-",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "orderdetails--2h9",
+      "name": "OrderDetails",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "suppliers--2ib",
+      "name": "Suppliers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    },
+    {
+      "datasetId": "products--2h_",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_storage--2h4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Categories",
+    "columns": [
+      {
+        "name": "CategoryID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "categoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "CategoryName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 15,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(15)"
+        },
+        "id": "categoryname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Description",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 16777216,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(16777216)"
+        },
+        "id": "description",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Picture",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BYTES",
+          "length": 8388608,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "BINARY",
+          "originalTypeFull": "BINARY(8388608)"
+        },
+        "id": "picture",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "orderdetails--2h9",
+          "name": "OrderDetails",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "registered_data_storage--2h4"
+        },
+        "entityRelationshipPath": "products_categories_relation--2i0$_$orderdetails_products_relation--2ix",
+        "dimensionId": "categories_orderdetails--2i4"
+      },
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "products--2h_",
+          "name": "Products",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "registered_data_storage--2h4"
+        },
+        "entityRelationshipPath": "products_categories_relation--2i0",
+        "dimensionId": "categories_products--2i5"
+      }
+    ],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "categories--2h6",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "registered_data_storage--2h4"
+    },
+    "entityRelationshipPath": [],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "CategoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${CategoryID}",
+            "alias": [
+              {
+                "name": "CategoryID",
+                "value": "CategoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "CategoryName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${CategoryName}",
+            "alias": [
+              {
+                "name": "CategoryName",
+                "value": "CategoryName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Description",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Description}",
+            "alias": [
+              {
+                "name": "Description",
+                "value": "Description"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Picture",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Picture}",
+            "alias": [
+              {
+                "name": "Picture",
+                "value": "Picture"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix$_$orderdetails_orders_relation--2iw$_$orders_shippers--2i2",
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix$_$orderdetails_orders_relation--2iw$_$orders_employees_relation--2iz$_$employees_employees--2i3",
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix$_$orderdetails_orders_relation--2iw$_$orders_employees_relation--2iz",
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix$_$orderdetails_orders_relation--2iw$_$orders_customers_relation--2iy",
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix$_$orderdetails_orders_relation--2iw",
+      "products_categories_relation--2i0$_$products_suppliers_relation--2i1",
+      "products_categories_relation--2i0$_$orderdetails_products_relation--2ix",
+      "products_categories_relation--2i0"
+    ],
+    "subtype": "MODEL_BASED"
+  },
+  "virtualDataset": false
+}
