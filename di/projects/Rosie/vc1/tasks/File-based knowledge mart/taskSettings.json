@@ -1,8 +1,8 @@
 {
   "taskRuntime": {
-    "chunkSize": "2002",
-    "chunkOverlap": "9991",
-    "bulkSize": "102",
+    "chunkSize": "2007",
+    "chunkOverlap": "99917",
+    "bulkSize": "97",
     "filesLocation": {
       "donePath": "./done",
       "failPath": "./fail",
@@ -17,9 +17,9 @@
   "indexActionOnPrepare": "RECREATE",
   "includedFilesPatterns": "*.pdf,*.docx,*.txt",
   "testAssistantSettings": {
-    "numberOfDocumentsRetrieved": 3,
-    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:aa",
-    "filterConditions": "aa",
+    "numberOfDocumentsRetrieved": 4,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:aa4",
+    "filterConditions": "aa4",
     "documentRetrieval": "DOCUMENT_RETRIEVAL_DISABLED",
     "answerGeneration": "ANSWER_GENERATION_ENABLED",
     "searchFunction": ""
@@ -36,8 +36,8 @@
   "llmSettings": {
     "kindId": "llm:OpenAI@1.0.0",
     "parameters": {
-      "embedding_model": "text-embedding-3-large",
-      "completion_model": "gpt-4o"
+      "embedding_model": "text-embedding-3-small",
+      "completion_model": "gpt-4o-mini"
     }
   }
 }
