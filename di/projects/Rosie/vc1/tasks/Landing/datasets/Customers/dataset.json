@@ -1,0 +1,15 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$dbo_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-gtpf",
+      "schema": "{{task.landing-gtpf:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false
+}

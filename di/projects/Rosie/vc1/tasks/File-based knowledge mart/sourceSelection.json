@@ -1,0 +1,6 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart-gtpt.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
