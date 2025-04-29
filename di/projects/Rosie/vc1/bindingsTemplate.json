@@ -57,10 +57,10 @@
     "task.knowledge_mart-gtpo.taskSchema": "",
     "task.knowledge_mart-gtpo.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.knowledge_mart-gtpo.maxNumberOfRecords": "",
+    "task.file_based_knowledge_mart-gtpt.vectorDbConnection": "",
+    "task.file_based_knowledge_mart-gtpt.llmConnection": "",
     "task.file_based_knowledge_mart-gtpt.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
     "task.file_based_knowledge_mart-gtpt.indexName": "",
-    "task.file_based_knowledge_mart-gtpt.indexSchema": "",
-    "task.file_based_knowledge_mart-gtpt.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
     "task.file_based_knowledge_mart-gtpt.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.file_based_knowledge_mart-gtpt.sourceConnection": ""
   },
@@ -76,6 +76,14 @@
     },
     "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
       "type": "repsrc_mssql"
+    },
+    "{{id(connection, automation.systest-opensearch-1)}}": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:OpenSearch@1.0.0"
+    },
+    "{{id(connection, automation.systest-openai-1)}}": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
     },
     "{{id(connection, automation.systest-s3_file_source-1)}}": {
       "type": "reptgt_qdis3"

@@ -10,12 +10,12 @@
     "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
-    "artifactsPrefix": ""
+    "artifactsPrefix": "PREF_"
   },
   "taskRuntime": {
     "bulkSize": "100",
     "maxNumberOfRecords": "{{task.knowledge_mart-gtpo.maxNumberOfRecords}}",
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 11,
     "warehouseSelection": {
       "warehouseName": "{{task.knowledge_mart-gtpo.warehouseName}}"
     }
@@ -23,8 +23,8 @@
   "loadViewsSuffix": "__publish_doc_view",
   "cdcViewsSuffix": "__publish_doc_cdc_view",
   "outputDirectory": "",
-  "indexActionOnPrepare": "RECREATE",
-  "viewType": "DEFAULT",
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
+  "viewType": "SECURE_VIEW",
   "testAssistantSettings": {
     "numberOfDocumentsRetrieved": 2,
     "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
