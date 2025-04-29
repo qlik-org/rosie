@@ -40,23 +40,23 @@
     "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
     "task-type.fileBasedKnowledgeMart.warehouseName": "",
     "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
-    "task.landing-gtpf.databaseName": "{{task-type.landing.databaseName}}",
-    "task.landing-gtpf.taskSchema": "",
-    "task.landing-gtpf.sourceConnection": "",
-    "task.landing-gtpf:null$_$dbo.schema": "",
     "task.storage-gtpg.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-gtpg.internalSchema": "",
     "task.storage-gtpg.taskSchema": "",
     "task.storage-gtpg.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.knowledge_mart-gtpo.vectorDbConnection": "",
+    "task.knowledge_mart-gtpo.llmConnection": "",
     "task.knowledge_mart-gtpo.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
     "task.knowledge_mart-gtpo.indexName": "",
-    "task.knowledge_mart-gtpo.indexSchema": "",
-    "task.knowledge_mart-gtpo.indexDatabase": "{{task-type.knowledgeMart.indexDatabase}}",
     "task.knowledge_mart-gtpo.databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "task.knowledge_mart-gtpo.internalSchema": "",
     "task.knowledge_mart-gtpo.taskSchema": "",
     "task.knowledge_mart-gtpo.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.knowledge_mart-gtpo.maxNumberOfRecords": "",
+    "task.landing-gtpf.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-gtpf.taskSchema": "",
+    "task.landing-gtpf.sourceConnection": "",
+    "task.landing-gtpf:null$_$dbo.schema": "",
     "task.file_based_knowledge_mart-gtpt.vectorDbConnection": "",
     "task.file_based_knowledge_mart-gtpt.llmConnection": "",
     "task.file_based_knowledge_mart-gtpt.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
@@ -65,17 +65,14 @@
     "task.file_based_knowledge_mart-gtpt.sourceConnection": ""
   },
   "idToNameMap": {
-    "landing-gtpf": "Landing",
     "storage-gtpg": "Storage",
     "knowledge_mart-gtpo": "Knowledge mart",
+    "landing-gtpf": "Landing",
     "file_based_knowledge_mart-gtpt": "File-based knowledge mart"
   },
   "connectionProperties": {
     "{{id(connection, rosie.Snowflake_Target)}}": {
       "type": "reptgt_qdisnowflake"
-    },
-    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
-      "type": "repsrc_mssql"
     },
     "{{id(connection, automation.systest-opensearch-1)}}": {
       "type": "external_data_provider",
@@ -84,6 +81,9 @@
     "{{id(connection, automation.systest-openai-1)}}": {
       "type": "external_data_provider",
       "kindId": "llm:OpenAI@1.0.0"
+    },
+    "{{id(connection, rosie.Microsoft_SQL_Server_(log_based))}}": {
+      "type": "repsrc_mssql"
     },
     "{{id(connection, automation.systest-s3_file_source-1)}}": {
       "type": "reptgt_qdis3"
