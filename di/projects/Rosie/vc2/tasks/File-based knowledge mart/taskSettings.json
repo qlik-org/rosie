@@ -1,7 +1,7 @@
 {
   "taskRuntime": {
-    "chunkSize": "2000",
-    "chunkOverlap": "0",
+    "chunkSize": "2002",
+    "chunkOverlap": "992",
     "bulkSize": "100",
     "filesLocation": {
       "donePath": "./done",
@@ -20,7 +20,7 @@
     "numberOfDocumentsRetrieved": 1,
     "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:1",
     "filterConditions": "1",
-    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_DISABLED",
     "answerGeneration": "ANSWER_GENERATION_ENABLED",
     "searchFunction": ""
   },

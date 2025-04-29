@@ -10,12 +10,12 @@
     "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
-    "artifactsPrefix": "pref_"
+    "artifactsPrefix": "pref_1_"
   },
   "taskRuntime": {
     "bulkSize": "100",
     "maxNumberOfRecords": "{{task.knowledge_mart-sekd.maxNumberOfRecords}}",
-    "tableUpdateConcurrency": 10,
+    "tableUpdateConcurrency": 11,
     "warehouseSelection": {
       "warehouseName": "{{task.knowledge_mart-sekd.warehouseName}}"
     }
