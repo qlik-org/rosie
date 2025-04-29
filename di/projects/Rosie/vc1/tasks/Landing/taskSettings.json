@@ -67,7 +67,9 @@
   "fileAttributes": {
     "general": {
       "maxFileSize": 100,
-      "useCompression": true
+      "useCompression": true,
+      "loadingMethod": "BULK_LOADING",
+      "filesInBatch": 30
     }
   },
   "changeProcessingTuning": {

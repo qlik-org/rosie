@@ -10,12 +10,12 @@
     "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
-    "artifactsPrefix": "PREF_W_"
+    "artifactsPrefix": "PREF__b3"
   },
   "taskRuntime": {
-    "bulkSize": "105",
+    "bulkSize": "106",
     "maxNumberOfRecords": "{{task.knowledge_mart-gtpo.maxNumberOfRecords}}",
-    "tableUpdateConcurrency": 15,
+    "tableUpdateConcurrency": 16,
     "warehouseSelection": {
       "warehouseName": "{{task.knowledge_mart-gtpo.warehouseName}}"
     }
@@ -23,14 +23,14 @@
   "loadViewsSuffix": "__publish_doc_view",
   "cdcViewsSuffix": "__publish_doc_cdc_view",
   "outputDirectory": "",
-  "indexActionOnPrepare": "RECREATE",
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
   "viewType": "SECURE_VIEW",
   "testAssistantSettings": {
-    "numberOfDocumentsRetrieved": 5,
-    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:5",
-    "filterConditions": "55",
-    "documentRetrieval": "DOCUMENT_RETRIEVAL_DISABLED",
-    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "numberOfDocumentsRetrieved": 6,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:6",
+    "filterConditions": "66",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_DISABLED",
     "searchFunction": ""
   },
   "indexArtifactsLocation": {

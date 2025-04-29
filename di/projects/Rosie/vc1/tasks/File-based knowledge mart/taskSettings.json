@@ -1,8 +1,8 @@
 {
   "taskRuntime": {
-    "chunkSize": "2007",
-    "chunkOverlap": "99917",
-    "bulkSize": "97",
+    "chunkSize": "2008",
+    "chunkOverlap": "99918",
+    "bulkSize": "99",
     "filesLocation": {
       "donePath": "./done",
       "failPath": "./fail",
@@ -14,14 +14,14 @@
       "warehouseName": "{{task.file_based_knowledge_mart-gtpt.warehouseName}}"
     }
   },
-  "indexActionOnPrepare": "RECREATE",
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
   "includedFilesPatterns": "*.pdf,*.docx,*.txt",
   "testAssistantSettings": {
-    "numberOfDocumentsRetrieved": 4,
-    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:aa4",
-    "filterConditions": "aa4",
-    "documentRetrieval": "DOCUMENT_RETRIEVAL_DISABLED",
-    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "numberOfDocumentsRetrieved": 5,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:aa5",
+    "filterConditions": "aa5",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_DISABLED",
     "searchFunction": ""
   },
   "indexArtifactsLocation": {
