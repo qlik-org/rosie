@@ -1,0 +1,50 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.knowledge_mart-sekd.internalSchema}}",
+    "taskSchema": "{{task.knowledge_mart-sekd.taskSchema}}",
+    "databaseName": "{{task.knowledge_mart-sekd.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "artifactsPrefix": "pref_"
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.knowledge_mart-sekd.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.knowledge_mart-sekd.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
+  "viewType": "SECURE_VIEW",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 3,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:3",
+    "filterConditions": "3",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_DISABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.knowledge_mart-sekd.databricksVectorSearchEndpoint}}",
+    "schema": "{{task.knowledge_mart-sekd.indexSchema}}",
+    "name": "{{task.knowledge_mart-sekd.indexName}}",
+    "database": "{{task.knowledge_mart-sekd.indexDatabase}}"
+  },
+  "vectorDbTargetType": "PROJECT_PLATFORM",
+  "llmSettings": {
+    "kindId": "llm:snowflake",
+    "parameters": {
+      "embedding_model": "nv-embed-qa-4",
+      "completion_model": "mistral-7b"
+    }
+  }
+}
