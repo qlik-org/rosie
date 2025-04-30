@@ -1,0 +1,44 @@
+{
+  "taskRuntime": {
+    "chunkSize": "2001",
+    "chunkOverlap": "1",
+    "bulkSize": "101",
+    "filesLocation": {
+      "donePath": "./done",
+      "failPath": "./fail",
+      "contextType": "GLOBAL_TS",
+      "deepScanLevel": 1
+    },
+    "processingMethod": "NEW_AND_MODIFIED_FILES",
+    "warehouseSelection": {
+      "warehouseName": "{{task.file_based_knowledge_mart_1-zhkm.warehouseName}}"
+    }
+  },
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
+  "includedFilesPatterns": "*.pdf,*.docx,*.txt",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.file_based_knowledge_mart_1-zhkm.databricksVectorSearchEndpoint}}",
+    "schema": "vc3_branch1_file-basedknowledgemart_1",
+    "name": "{{task.file_based_knowledge_mart_1-zhkm.indexName}}",
+    "database": "ROSIE_DB"
+  },
+  "vectorDbTargetType": "EXTERNAL_VECTOR_DB",
+  "vectorDbConnection": "{{task.file_based_knowledge_mart_1-zhkm.vectorDbConnection}}",
+  "llmConnection": "{{task.file_based_knowledge_mart_1-zhkm.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:Bedrock@1.0.0",
+    "parameters": {
+      "embedding_model": "amazon.titan-embed-text-v1",
+      "completion_model": "amazon.titan-text-lite-v1",
+      "completion_model_provider": "amazon"
+    }
+  }
+}
