@@ -1,0 +1,28 @@
+{
+  "id": "orders_flow-zhjj",
+  "name": "Orders_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "orders-zhjq",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-zhjk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "4e1a076a-024d-4382-abd7-dd7b5e1038ec",
+    "targetId": "16dd2815-1e93-442b-a39c-018490d81ee1",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

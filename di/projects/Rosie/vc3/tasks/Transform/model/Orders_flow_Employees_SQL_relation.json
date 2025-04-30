@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders_flow-zhjj",
+    "name": "Orders_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhjd"
+  },
+  "targetEntity": {
+    "datasetId": "employees_sql-zhji",
+    "name": "Employees_SQL",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhjd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_flow_Employees_SQL_relation",
+  "description": "",
+  "id": "orders_flow_employees_sql_relation-zhj0"
+}
