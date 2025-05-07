@@ -1,16 +1,10 @@
 {
-  "id": "07224e50-188f-4483-9e51-767e9d50088f",
-  "description": "desc of flow orders",
   "name": "Orders_flow",
+  "description": "desc of flow orders",
   "context": {
     "projectId": "{{ref(project.current.projectId)}}",
     "dataAppId": "transform-zhjd"
   },
-  "createdAt": "2025-04-30T09:13:19.053Z",
-  "createdBy": "681086dcbd29e18f94bdae8d",
-  "updatedAt": "2025-04-30T09:18:14.902Z",
-  "updatedBy": "681086dcbd29e18f94bdae8d",
-  "checksum": "715bc9f0-ed15-4bfd-b6c0-00caa4b1976d",
   "graph": {
     "nodes": [
       {
