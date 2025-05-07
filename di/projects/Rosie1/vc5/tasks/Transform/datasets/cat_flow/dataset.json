@@ -1,0 +1,28 @@
+{
+  "id": "cat_flow-bkfe",
+  "name": "cat_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "categories-bkfy",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-bkfw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, cat_flow)}}",
+    "targetId": "c2c64b0d-9503-427d-975b-c4afd317a71e",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
