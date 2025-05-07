@@ -1,0 +1,98 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-zhku"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-zhkv"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-zhkw"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Order Details",
+      "type": "NONE",
+      "sourceTableId": "order_details-zhkx"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-zhky"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-zhkz"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Shippers",
+      "type": "NONE",
+      "sourceTableId": "shippers-zhk0"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-zhks",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-zhk1"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-9yye",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-9yyg"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-9yye",
+      "name": "EmployeeTerritories",
+      "type": "NONE",
+      "sourceTableId": "employeeterritories-9yyh"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-9yye",
+      "name": "Region",
+      "type": "NONE",
+      "sourceTableId": "region-9yyi"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_storage-9yye",
+      "name": "Territories",
+      "type": "NONE",
+      "sourceTableId": "territories-9yyj"
+    }
+  ]
+}
