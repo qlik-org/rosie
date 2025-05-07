@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-zhlk",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhk-"
+  },
+  "targetEntity": {
+    "datasetId": "categories-zhle",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhk-"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-zhlu"
+}

@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-zhky",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-zhks"
+  },
+  "targetEntity": {
+    "datasetId": "employees-zhkw",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-zhks"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "EmployeeID",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "employeeid",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Orders_Employees_relation",
+  "description": "",
+  "id": "orders_employees_relation-zhk7"
+}

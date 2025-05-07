@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "products-zhkz",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-zhks"
+  },
+  "targetEntity": {
+    "datasetId": "suppliers-zhk1",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-zhks"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-zhk9"
+}

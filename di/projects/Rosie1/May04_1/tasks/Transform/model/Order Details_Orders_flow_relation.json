@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "order_details-zhli",
+    "name": "Order Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhk-"
+  },
+  "targetEntity": {
+    "datasetId": "orders_flow-zhld",
+    "name": "Orders_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-zhk-"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order Details_Orders_flow_relation",
+  "description": "",
+  "id": "order_details_orders_flow_relation-zhlq"
+}
