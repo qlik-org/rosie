@@ -1,0 +1,132 @@
+{
+  "id": "region_1-9yzp",
+  "name": "Region_1",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "datasetId": "region-9yyi",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-9yye"
+    },
+    {
+      "datasetId": "territories-9yyj",
+      "name": "Territories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-9yye"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Region_1",
+    "columns": [
+      {
+        "name": "RegionID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "regionid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "regiondescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [
+      {
+        "rootDataEntityId": {
+          "type": "NONE",
+          "entityId": "territories-9yyj",
+          "name": "Territories",
+          "projectId": "{{ref(project.current.projectId)}}",
+          "dataAppId": "onboarding_storage-9yye"
+        },
+        "entityRelationshipPath": "territories_region_relation-9yyx",
+        "dimensionId": "region_1_territories-9yzo"
+      }
+    ],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "region-9yyi",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "onboarding_storage-9yye"
+    },
+    "entityRelationshipPath": [],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "RegionID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${RegionID}",
+            "alias": [
+              {
+                "name": "RegionID",
+                "value": "RegionID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionDescription}",
+            "alias": [
+              {
+                "name": "RegionDescription",
+                "value": "RegionDescription"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [
+      "territories_region_relation-9yyx"
+    ],
+    "subtype": "MODEL_BASED"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

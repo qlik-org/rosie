@@ -1,0 +1,212 @@
+{
+  "id": "employees_employeeterritories-9yzc",
+  "name": "Employees__EmployeeTerritories",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "datasetId": "employeeterritories-9yyh",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-9yye"
+    },
+    {
+      "datasetId": "employees-9yyg",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-9yye"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "Employees__EmployeeTerritories",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryID",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 2,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "territoryid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TerritoryDescription",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "employeeterritories_territories_relation-9yyw$_$territorydescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionID",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeterritories_territories_relation-9yyw$_$regionid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "employeeterritories_territories_relation-9yyw$_$territories_region_relation-9yyx$_$regiondescription",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employeeterritories-9yyh",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "onboarding_storage-9yye"
+    },
+    "entityRelationshipPath": [
+      "employeeterritories_territories_relation-9yyw",
+      "employeeterritories_territories_relation-9yyw$_$territories_region_relation-9yyx"
+    ],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${TerritoryID}",
+            "alias": [
+              {
+                "name": "TerritoryID",
+                "value": "TerritoryID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TerritoryDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TerritoryDescription}",
+            "alias": [
+              {
+                "name": "TerritoryDescription",
+                "value": "employeeterritories_territories_relation-9yyw$_$TerritoryDescription"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionID",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionID}",
+            "alias": [
+              {
+                "name": "RegionID",
+                "value": "employeeterritories_territories_relation-9yyw$_$RegionID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "RegionDescription",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${RegionDescription}",
+            "alias": [
+              {
+                "name": "RegionDescription",
+                "value": "employeeterritories_territories_relation-9yyw$_$territories_region_relation-9yyx$_$RegionDescription"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED"
+  },
+  "virtualDataset": true,
+  "description": ""
+}
