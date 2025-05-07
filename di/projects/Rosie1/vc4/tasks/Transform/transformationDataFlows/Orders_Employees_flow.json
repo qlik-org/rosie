@@ -1,0 +1,347 @@
+{
+  "name": "Orders_Employees_flow",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-bkev"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "c6606d2e-41e4-4419-8549-40a5788020c5",
+        "label": "Employees",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "ecb3e668-c217-4a5f-9486-25996f5140bf",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage-bkeq",
+              "entityId": "employees-bket"
+            },
+            "configuration": {
+              "name": "Employees"
+            }
+          }
+        }
+      },
+      {
+        "type": "source",
+        "id": "ae30ce43-b1df-4d55-bf3d-97d9c5a2b2fd",
+        "label": "Orders",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 200
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "3a74cc02-54d0-423f-935a-96805ca259d7",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage-bkeq",
+              "entityId": "orders-bkeu"
+            },
+            "configuration": {
+              "name": "Orders"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "62bae05b-251e-49c7-9078-4de757eac945",
+        "label": "Orders_Employees_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "ef02ff20-f16d-4988-9d3d-443ecaf4f17d",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Orders_Employees_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "LEFT_EmployeeID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "LastName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "FirstName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Title",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "TitleOfCourtesy",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "BirthDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HireDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePhone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Extension",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Photo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Notes",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReportsTo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PhotoPath",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "OrderID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CustomerID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RIGHT_EmployeeID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "OrderDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RequiredDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShippedDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipVia",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Freight",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipAddress",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCity",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipRegion",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipPostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCountry",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "53e0db7d-4a0c-4e70-9bc7-0cd309a204fa",
+        "label": "Join 1",
+        "graphical": {
+          "position": {
+            "x": 280,
+            "y": 120
+          },
+          "icon": "union-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "2623907a-92e8-4e00-ac8b-73a9e31a9420",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "420df189-5f85-4a22-9cb3-2fc40cf27a1d",
+              "type": "LOOKUP"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "22139b49-47bf-4ac0-8cf1-43a7fa37b7ed",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "join",
+          "label": "Join",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+            "configuration": {
+              "joinFunction": "LEFT_OUTER_JOIN",
+              "conditions": [
+                {
+                  "leftKey": "EmployeeID",
+                  "rightKey": "EmployeeID",
+                  "keepBothKeysInOutput": true,
+                  "$leftKey_name": "EmployeeID",
+                  "$rightKey_name": "EmployeeID"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "reactflow__edge-c6606d2e-41e4-4419-8549-40a5788020c5ecb3e668-c217-4a5f-9486-25996f5140bf-53e0db7d-4a0c-4e70-9bc7-0cd309a204fa2623907a-92e8-4e00-ac8b-73a9e31a9420",
+        "sourceHandle": "ecb3e668-c217-4a5f-9486-25996f5140bf",
+        "targetHandle": "2623907a-92e8-4e00-ac8b-73a9e31a9420"
+      },
+      {
+        "id": "reactflow__edge-ae30ce43-b1df-4d55-bf3d-97d9c5a2b2fd3a74cc02-54d0-423f-935a-96805ca259d7-53e0db7d-4a0c-4e70-9bc7-0cd309a204fa420df189-5f85-4a22-9cb3-2fc40cf27a1d",
+        "sourceHandle": "3a74cc02-54d0-423f-935a-96805ca259d7",
+        "targetHandle": "420df189-5f85-4a22-9cb3-2fc40cf27a1d"
+      },
+      {
+        "id": "reactflow__edge-53e0db7d-4a0c-4e70-9bc7-0cd309a204fa22139b49-47bf-4ac0-8cf1-43a7fa37b7ed-62bae05b-251e-49c7-9078-4de757eac945ef02ff20-f16d-4988-9d3d-443ecaf4f17d",
+        "sourceHandle": "22139b49-47bf-4ac0-8cf1-43a7fa37b7ed",
+        "targetHandle": "ef02ff20-f16d-4988-9d3d-443ecaf4f17d"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

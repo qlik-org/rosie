@@ -1,0 +1,28 @@
+{
+  "id": "employees_flow-bkem",
+  "name": "Employees_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "employees-bket",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-bkeq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "OFF",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Employees_flow)}}",
+    "targetId": "3b7a0bb8-1b72-4acc-8436-2f239ed31234",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,28 @@
+{
+  "id": "customers_flow-bkeg",
+  "name": "Customers_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "datasetId": "customers-bkes",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-bkeq"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Customers_flow)}}",
+    "targetId": "b19382f0-9ecc-49f6-9fb3-d6f1bd4e54c3",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
