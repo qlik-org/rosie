@@ -1,6 +1,6 @@
 {
   "name": "Employees_flow",
-  "description": "",
+  "description": "new desc",
   "context": {
     "projectId": "{{ref(project.current.projectId)}}",
     "dataAppId": "transform_1-bkex"
