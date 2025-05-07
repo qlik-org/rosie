@@ -25,7 +25,7 @@
   "dataflowDatasetSettings": {
     "dataflowId": "{{id(dataflow, prod_supp_flow)}}",
     "targetId": "d0a8657c-1c10-4a13-af0e-1b40814bfc29",
-    "dataflowTargetState": "NOT_VALID",
+    "dataflowTargetState": "VALID",
     "incremental": false
   },
   "virtualDataset": false,
