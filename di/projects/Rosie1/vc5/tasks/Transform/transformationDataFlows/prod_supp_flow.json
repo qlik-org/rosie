@@ -108,7 +108,113 @@
                 "hasHistory": "INHERIT",
                 "incremental": false
               },
-              "overridenColumnsConfiguration": []
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
             }
           }
         }
@@ -151,12 +257,14 @@
               "joinFunction": "LEFT_OUTER_JOIN",
               "conditions": [
                 {
-                  "leftKey": "",
-                  "rightKey": "",
-                  "keepBothKeysInOutput": false
+                  "leftKey": "SupplierID",
+                  "rightKey": "SupplierID",
+                  "keepBothKeysInOutput": false,
+                  "$leftKey_name": "SupplierID",
+                  "$rightKey_name": "SupplierID"
                 }
               ],
-              "$state": "UNCONFIGURED"
+              "$state": "CONFIGURED"
             }
           }
         }
