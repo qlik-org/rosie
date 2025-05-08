@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding_7_5_landing-x4l_.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Products",
+      "schema": "{{task.onboarding_7_5_landing-x4l_:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    }
+  ]
+}
