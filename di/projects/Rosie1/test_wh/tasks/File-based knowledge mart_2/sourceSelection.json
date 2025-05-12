@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart_2-cpha.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "rula",
+      "type": "DIRECTORY",
+      "sourceTableId": "rula"
+    }
+  ]
+}

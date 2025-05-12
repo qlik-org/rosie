@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart_1-cpg8.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "ai-databricks/Onboarding_Landing",
+      "type": "DIRECTORY",
+      "sourceTableId": "ai-databricks$_$Onboarding_Landing"
+    },
+    {
+      "name": "test",
+      "type": "DIRECTORY",
+      "sourceTableId": "test"
+    }
+  ]
+}
