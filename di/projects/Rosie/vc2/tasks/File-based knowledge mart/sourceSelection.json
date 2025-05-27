@@ -1,6 +1,0 @@
-{
-  "sourceConnection": "{{task.file_based_knowledge_mart-sekj.sourceConnection}}",
-  "includePatterns": [],
-  "excludePatterns": [],
-  "explicitlySelected": []
-}

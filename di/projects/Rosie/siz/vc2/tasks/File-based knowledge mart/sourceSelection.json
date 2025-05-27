@@ -1,6 +1,0 @@
-{
-  "sourceConnection": "{{task.file_based_knowledge_mart-n-wq.sourceConnection}}",
-  "includePatterns": [],
-  "excludePatterns": [],
-  "explicitlySelected": []
-}
