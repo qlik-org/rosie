@@ -47,11 +47,16 @@
     "task.onboarding_storage-f2ck.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboarding_storage-f2ck.internalSchema": "",
     "task.onboarding_storage-f2ck.taskSchema": "",
-    "task.onboarding_storage-f2ck.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboarding_storage-f2ck.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage-f2c6.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage-f2c6.internalSchema": "",
+    "task.storage-f2c6.taskSchema": "",
+    "task.storage-f2c6.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
     "onboarding_landing-f2cj": "Onboarding_Landing",
-    "onboarding_storage-f2ck": "Onboarding_Storage"
+    "onboarding_storage-f2ck": "Onboarding_Storage",
+    "storage-f2c6": "Storage"
   },
   "connectionProperties": {
     "task.onboarding_landing-f2cj.sourceConnection": {
