@@ -55,13 +55,18 @@
     "task.onboarding_storage-jbvk.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboarding_storage-jbvk.internalSchema": "",
     "task.onboarding_storage-jbvk.taskSchema": "",
-    "task.onboarding_storage-jbvk.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboarding_storage-jbvk.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage-1f64.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage-1f64.internalSchema": "",
+    "task.storage-1f64.taskSchema": "",
+    "task.storage-1f64.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
     "data_mart-jbvs": "Data mart",
     "data_mart_1-qcgt": "Data mart_1",
     "onboarding_landing-jbvj": "Onboarding_Landing",
-    "onboarding_storage-jbvk": "Onboarding_Storage"
+    "onboarding_storage-jbvk": "Onboarding_Storage",
+    "storage-1f64": "Storage"
   },
   "connectionProperties": {
     "task.onboarding_landing-jbvj.sourceConnection": {

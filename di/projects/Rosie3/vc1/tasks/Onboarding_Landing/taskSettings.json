@@ -18,7 +18,8 @@
       "escalationCount": {
         "isChecked": false,
         "value": 50
-      }
+      },
+      "retryCount": 3
     },
     "environmental": {
       "interval": 5,
@@ -150,7 +151,10 @@
         "targetName": "attrep_ddl_history",
         "isChecked": false
       }
-    ]
+    ],
+    "jsonHandling": {
+      "automaticallyDiscoverJsonColumns": false
+    }
   },
   "characterSubstitution": {
     "sourceTargetCharacters": [],
