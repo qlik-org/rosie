@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-u2q8",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-u2q1"
+  },
+  "targetEntity": {
+    "datasetId": "customers_sql-u2q3",
+    "name": "Customers_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-u2q1"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_sql_relation",
+  "description": "",
+  "id": "orders_customers_sql_relation-u2q_"
+}
