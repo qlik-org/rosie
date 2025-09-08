@@ -1,0 +1,72 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabase": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.indexDatabase": "",
+    "task-type.knowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.file_based_knowledge_mart-cnsp.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.file_based_knowledge_mart-cnsp.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
+    "task.file_based_knowledge_mart-cnsp.indexName": "",
+    "task.file_based_knowledge_mart-cnsp.indexSchema": "",
+    "task.file_based_knowledge_mart-cnsp.sourceConnection": "",
+    "task.file_based_knowledge_mart-cnsp.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
+    "task.onboarding_landing-c2dj.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_landing-c2dj.sourceConnection": "",
+    "task.onboarding_landing-c2dj.taskSchema": "",
+    "task.onboarding_landing-c2dj:null$_$dbo.schema": "",
+    "task.onboarding_storage-c2dk.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_storage-c2dk.internalSchema": "",
+    "task.onboarding_storage-c2dk.taskSchema": "",
+    "task.onboarding_storage-c2dk.warehouseName": "{{task-type.storage.warehouseName}}"
+  },
+  "idToNameMap": {
+    "file_based_knowledge_mart-cnsp": "File-based knowledge mart",
+    "onboarding_landing-c2dj": "Onboarding_Landing",
+    "onboarding_storage-c2dk": "Onboarding_Storage"
+  },
+  "connectionProperties": {
+    "task.file_based_knowledge_mart-cnsp.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "filesource:sharepoint"
+    },
+    "task.onboarding_landing-c2dj.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
+}

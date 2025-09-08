@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-c2dr",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "targetEntity": {
+    "datasetId": "shippers-c2du",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-c2ea"
+}

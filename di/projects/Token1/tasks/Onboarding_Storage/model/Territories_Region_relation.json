@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "territories-c2dw",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "targetEntity": {
+    "datasetId": "region-c2dt",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_Region_relation",
+  "description": "",
+  "id": "territories_region_relation-c2d-"
+}

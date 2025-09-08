@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "employees-c2do",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "targetEntity": {
+    "datasetId": "employees-c2do",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-c2dk"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Employees_Employees",
+  "description": "",
+  "id": "employees_employees-c2d_"
+}
