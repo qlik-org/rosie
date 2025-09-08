@@ -1,0 +1,25 @@
+{
+  "sourceEntity": {
+    "datasetId": "orders-svzh",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-svzf"
+  },
+  "targetEntity": {
+    "datasetId": "customers_sql-svzs",
+    "name": "customers_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-svzf"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_customers_sql_relation",
+  "description": "",
+  "id": "orders_customers_sql_relation-svzt"
+}
