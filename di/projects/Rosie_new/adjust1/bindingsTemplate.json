@@ -71,6 +71,10 @@
     "task.storage-69zs.internalSchema": "",
     "task.storage-69zs.taskSchema": "",
     "task.storage-69zs.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage_1-69zw.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage_1-69zw.internalSchema": "",
+    "task.storage_1-69zw.taskSchema": "",
+    "task.storage_1-69zw.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.transform-1_Qc.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-1_Qc.internalSchema": "",
     "task.transform-1_Qc.taskSchema": "",
@@ -84,6 +88,7 @@
     "registered_data-beyl": "Registered_data",
     "registered_data_storage-beym": "Registered_data_Storage",
     "storage-69zs": "Storage",
+    "storage_1-69zw": "Storage_1",
     "transform-1_Qc": "Transform"
   },
   "connectionProperties": {
