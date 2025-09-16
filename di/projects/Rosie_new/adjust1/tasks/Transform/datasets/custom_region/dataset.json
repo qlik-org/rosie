@@ -31,7 +31,8 @@
           "type": "INT4",
           "length": 0,
           "precision": 0,
-          "scale": 0
+          "scale": 0,
+          "originalTypeFull": ""
         },
         "id": "regionid",
         "flags": "NONE"
@@ -45,7 +46,8 @@
           "type": "WSTRING",
           "length": 50,
           "precision": 0,
-          "scale": 0
+          "scale": 0,
+          "originalTypeFull": ""
         },
         "id": "regiondescription",
         "flags": "NONE"
