@@ -1,0 +1,48 @@
+{
+  "transformedTableLocal": {
+    "newTableName": "Orders1",
+    "transformedColumnsLocal": [
+      {
+        "action": "ADD",
+        "columnName": "new1",
+        "newDataType": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "${OrderID}",
+          "alias": [
+            {
+              "name": "OrderID",
+              "value": "orderid"
+            }
+          ]
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "e514b0b1-e603-4cd2-8e53-d183f486140a",
+        "markAsMetadata": false
+      }
+    ]
+  },
+  "datasetId": "orders-tqga",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Orders",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Orders",
+  "id": "orders-fgxf",
+  "description": ""
+}
