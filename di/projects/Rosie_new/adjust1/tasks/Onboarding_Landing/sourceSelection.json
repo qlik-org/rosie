@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.onboarding_landing-1_QX.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Region",
+      "schema": "{{task.onboarding_landing-1_QX:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    }
+  ]
+}

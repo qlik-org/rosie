@@ -1,0 +1,13 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_landing-1_QX",
+      "name": "Region",
+      "type": "NONE",
+      "sourceTableId": "region"
+    }
+  ]
+}

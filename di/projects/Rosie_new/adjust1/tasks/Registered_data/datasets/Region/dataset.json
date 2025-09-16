@@ -1,0 +1,18 @@
+{
+  "id": "region",
+  "name": "Region",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$onboarding_landing_region",
+      "name": "Region",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-beyl",
+      "schema": "{{task.registered_data-beyl:AutoDWH$_$onboarding_landing.schema}}",
+      "database": "{{task.registered_data-beyl:AutoDWH$_$onboarding_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,13 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data-beyl:engineering-152721$_$onboarding_landing.database}}",
+      "name": "Region",
+      "schema": "{{task.registered_data-beyl:engineering-152721$_$onboarding_landing.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$registered_data$onboarding_landing_region"
+    }
+  ]
+}
