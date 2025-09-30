@@ -1,0 +1,44 @@
+{
+  "taskRuntime": {
+    "chunkSize": "2000",
+    "chunkOverlap": "0",
+    "bulkSize": "100",
+    "filesLocation": {
+      "donePath": "./done",
+      "failPath": "./fail",
+      "contextType": "GLOBAL_TS",
+      "deepScanLevel": 1
+    },
+    "processingMethod": "NEW_AND_MODIFIED_FILES",
+    "warehouseSelection": {
+      "warehouseName": "{{task.file_based_knowledge_mart_2-axrs.warehouseName}}"
+    }
+  },
+  "indexActionOnPrepare": "CREATE_IF_NOT_EXISTS",
+  "includedFilesPatterns": "*.pdf,*.docx,*.txt",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.file_based_knowledge_mart_2-axrs.databricksVectorSearchEndpoint}}",
+    "schema": "file-basedknowledgemart_2",
+    "name": "{{task.file_based_knowledge_mart_2-axrs.indexName}}",
+    "database": "dis_systests"
+  },
+  "vectorDbTargetType": "EXTERNAL_VECTOR_DB",
+  "vectorDbConnection": "{{task.file_based_knowledge_mart_2-axrs.vectorDbConnection}}",
+  "llmConnection": "{{task.file_based_knowledge_mart_2-axrs.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:OpenAI@1.0.0",
+    "parameters": {
+      "embedding_model": "text-embedding-3-large",
+      "completion_model": "gpt-4o"
+    }
+  },
+  "fullLoadOnly": false
+}
