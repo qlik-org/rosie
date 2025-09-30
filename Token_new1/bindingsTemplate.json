@@ -70,6 +70,12 @@
     "task.file_based_knowledge_mart_4-axr0.indexSchema": "",
     "task.file_based_knowledge_mart_4-axr0.sourceConnection": "",
     "task.file_based_knowledge_mart_4-axr0.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
+    "task.file_based_knowledge_mart_5-myyz.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.file_based_knowledge_mart_5-myyz.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
+    "task.file_based_knowledge_mart_5-myyz.indexName": "",
+    "task.file_based_knowledge_mart_5-myyz.indexSchema": "",
+    "task.file_based_knowledge_mart_5-myyz.sourceConnection": "",
+    "task.file_based_knowledge_mart_5-myyz.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.knowledge_mart-axrd.databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "task.knowledge_mart-axrd.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
     "task.knowledge_mart-axrd.indexDatabase": "{{task-type.knowledgeMart.indexDatabase}}",
@@ -139,6 +145,7 @@
     "file_based_knowledge_mart_2-axrs": "File-based knowledge mart_2",
     "file_based_knowledge_mart_3-axrw": "File-based knowledge mart_3",
     "file_based_knowledge_mart_4-axr0": "File-based knowledge mart_4",
+    "file_based_knowledge_mart_5-myyz": "File-based knowledge mart_5",
     "knowledge_mart-axrd": "Knowledge mart",
     "knowledge_mart_1-axrl": "Knowledge mart_1",
     "knowledge_mart_2-axrs": "Knowledge mart_2",
@@ -190,6 +197,10 @@
       "kindId": "vectordb:Elasticsearch@1.0.0"
     },
     "task.file_based_knowledge_mart_4-axr0.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "filesource:onedrive"
+    },
+    "task.file_based_knowledge_mart_5-myyz.sourceConnection": {
       "type": "external_data_provider",
       "kindId": "filesource:onedrive"
     },
