@@ -4,6 +4,7 @@
   "type": "TRANSFORM_MODEL_BASED",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "orders-svzc",
       "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",

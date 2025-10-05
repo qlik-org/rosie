@@ -4,12 +4,14 @@
   "type": "DOCUMENT_SCHEMA",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "orders-svzh",
       "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "transform-svzf"
     },
     {
+      "type": "NONE",
       "datasetId": "employees-svzj",
       "name": "Employees",
       "projectId": "{{ref(project.current.projectId)}}",

@@ -4,6 +4,7 @@
   "type": "DIMENSION",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "employees-svzj",
       "name": "Employees",
       "projectId": "{{ref(project.current.projectId)}}",

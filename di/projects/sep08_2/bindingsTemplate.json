@@ -53,6 +53,15 @@
     "task.knowledge_mart-svz2.maxNumberOfRecords": "",
     "task.knowledge_mart-svz2.taskSchema": "",
     "task.knowledge_mart-svz2.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+    "task.knowledge_mart_1-z-gh.databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "task.knowledge_mart_1-z-gh.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.knowledge_mart_1-z-gh.indexName": "",
+    "task.knowledge_mart_1-z-gh.internalSchema": "",
+    "task.knowledge_mart_1-z-gh.llmConnection": "",
+    "task.knowledge_mart_1-z-gh.maxNumberOfRecords": "",
+    "task.knowledge_mart_1-z-gh.taskSchema": "",
+    "task.knowledge_mart_1-z-gh.vectorDbConnection": "",
+    "task.knowledge_mart_1-z-gh.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.landing-svzu.databaseName": "{{task-type.landing.databaseName}}",
     "task.landing-svzu.sourceConnection": "",
     "task.landing-svzu.taskSchema": "",
@@ -69,11 +78,20 @@
   "idToNameMap": {
     "data_mart-svzv": "Data mart",
     "knowledge_mart-svz2": "Knowledge mart",
+    "knowledge_mart_1-z-gh": "Knowledge mart_1",
     "landing-svzu": "Landing",
     "storage-svzy": "Storage",
     "transform-svzf": "Transform"
   },
   "connectionProperties": {
+    "task.knowledge_mart_1-z-gh.llmConnection": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
+    },
+    "task.knowledge_mart_1-z-gh.vectorDbConnection": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
     "task.landing-svzu.sourceConnection": {
       "type": "repsrc_mssql"
     }

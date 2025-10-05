@@ -4,6 +4,7 @@
   "type": "STORAGE",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "employees",
       "name": "Employees",
       "projectId": "{{ref(project.current.projectId)}}",

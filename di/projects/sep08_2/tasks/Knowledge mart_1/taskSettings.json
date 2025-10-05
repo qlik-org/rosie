@@ -1,0 +1,54 @@
+{
+  "artifactsLocation": {
+    "internalSchema": "{{task.knowledge_mart_1-z-gh.internalSchema}}",
+    "taskSchema": "{{task.knowledge_mart_1-z-gh.taskSchema}}",
+    "databaseName": "{{task.knowledge_mart_1-z-gh.databaseName}}"
+  },
+  "artifactsSettings": {
+    "liveViewsEnabled": true,
+    "historyEnabled": false,
+    "materialized": true,
+    "changeTablesEnabled": true,
+    "currentTableSuffix": "__current",
+    "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+    "artifactsPrefix": ""
+  },
+  "taskRuntime": {
+    "bulkSize": "100",
+    "maxNumberOfRecords": "{{task.knowledge_mart_1-z-gh.maxNumberOfRecords}}",
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task.knowledge_mart_1-z-gh.warehouseName}}"
+    }
+  },
+  "loadViewsSuffix": "__publish_doc_view",
+  "cdcViewsSuffix": "__publish_doc_cdc_view",
+  "outputDirectory": "",
+  "indexActionOnPrepare": "RECREATE",
+  "viewType": "DEFAULT",
+  "testAssistantSettings": {
+    "numberOfDocumentsRetrieved": 2,
+    "userPromptTemplate": "Use the given context to answer the question. If you don\u0027t know the answer, say you don\u0027t know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:",
+    "filterConditions": "",
+    "documentRetrieval": "DOCUMENT_RETRIEVAL_ENABLED",
+    "answerGeneration": "ANSWER_GENERATION_ENABLED",
+    "searchFunction": ""
+  },
+  "indexArtifactsLocation": {
+    "databricksVectorSearchEndpoint": "{{task.knowledge_mart_1-z-gh.databricksVectorSearchEndpoint}}",
+    "schema": "knowledgemart_1",
+    "name": "{{task.knowledge_mart_1-z-gh.indexName}}",
+    "database": "ROSIE"
+  },
+  "vectorDbTargetType": "EXTERNAL_VECTOR_DB",
+  "vectorDbConnection": "{{task.knowledge_mart_1-z-gh.vectorDbConnection}}",
+  "llmConnection": "{{task.knowledge_mart_1-z-gh.llmConnection}}",
+  "llmSettings": {
+    "kindId": "llm:OpenAI@1.0.0",
+    "parameters": {
+      "embedding_model": "text-embedding-3-large",
+      "completion_model": "gpt-4o"
+    }
+  },
+  "fullLoadOnly": false
+}

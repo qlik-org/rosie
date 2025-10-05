@@ -4,6 +4,7 @@
   "type": "FACT",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "orders-svzh",
       "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",

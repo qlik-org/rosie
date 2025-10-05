@@ -1,22 +1,22 @@
 {
-  "id": "employees-svzj",
+  "id": "employees-z-gl",
   "name": "Employees",
-  "type": "TRANSFORM_MODEL_BASED",
+  "type": "DOCUMENT_SCHEMA",
   "inputDatasets": [
     {
       "type": "NONE",
-      "datasetId": "employees-svzb",
+      "datasetId": "employees-svzj",
       "name": "Employees",
       "projectId": "{{ref(project.current.projectId)}}",
-      "taskId": "storage-svzy"
+      "taskId": "transform-svzf"
     }
   ],
   "datasetAttributes": {
-    "materialized": "INHERIT",
+    "materialized": "ON",
     "hasHistory": "INHERIT",
-    "hasLiveViews": "OFF",
+    "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
-    "hasStandardViewsWithHeaders": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
     "watermarkIncrementalSettings": "INHERIT"
   },
   "tableDef": {
@@ -25,7 +25,7 @@
       {
         "name": "EmployeeID",
         "ordinal": 1,
-        "nullable": false,
+        "nullable": true,
         "primaryKeyOrdinal": 1,
         "datatype": {
           "type": "INT4",
@@ -43,7 +43,7 @@
       {
         "name": "LastName",
         "ordinal": 2,
-        "nullable": false,
+        "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
@@ -61,7 +61,7 @@
       {
         "name": "FirstName",
         "ordinal": 3,
-        "nullable": false,
+        "nullable": true,
         "primaryKeyOrdinal": 0,
         "datatype": {
           "type": "WSTRING",
@@ -347,8 +347,262 @@
         }
       }
     ],
+    "entityId": "",
     "secureQri": "",
     "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "employees-svzj",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "transform-svzf"
+    },
+    "entityRelationshipPath": [],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Address",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Address}",
+            "alias": [
+              {
+                "name": "Address",
+                "value": "Address"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "City",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${City}",
+            "alias": [
+              {
+                "name": "City",
+                "value": "City"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Region",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Region}",
+            "alias": [
+              {
+                "name": "Region",
+                "value": "Region"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PostalCode",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PostalCode}",
+            "alias": [
+              {
+                "name": "PostalCode",
+                "value": "PostalCode"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Country",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Country}",
+            "alias": [
+              {
+                "name": "Country",
+                "value": "Country"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HomePhone",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HomePhone}",
+            "alias": [
+              {
+                "name": "HomePhone",
+                "value": "HomePhone"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Extension",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Extension}",
+            "alias": [
+              {
+                "name": "Extension",
+                "value": "Extension"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Photo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Photo}",
+            "alias": [
+              {
+                "name": "Photo",
+                "value": "Photo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Notes",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Notes}",
+            "alias": [
+              {
+                "name": "Notes",
+                "value": "Notes"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "PhotoPath",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${PhotoPath}",
+            "alias": [
+              {
+                "name": "PhotoPath",
+                "value": "PhotoPath"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [],
+    "subtype": "MODEL_BASED"
   },
   "virtualDataset": false,
   "description": ""

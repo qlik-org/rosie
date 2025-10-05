@@ -4,6 +4,7 @@
   "type": "CUSTOM",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "customers-svza",
       "name": "Customers",
       "projectId": "{{ref(project.current.projectId)}}",

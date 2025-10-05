@@ -1,5 +1,6 @@
 {
   "sourceDataEntityKey": {
+    "type": "NONE",
     "datasetId": "employees-svzb",
     "name": "Employees",
     "projectId": "{{ref(project.current.projectId)}}",

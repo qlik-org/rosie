@@ -1,11 +1,13 @@
 {
   "sourceEntity": {
+    "type": "NONE",
     "datasetId": "orders-svzh",
     "name": "Orders",
     "projectId": "{{ref(project.current.projectId)}}",
     "taskId": "transform-svzf"
   },
   "targetEntity": {
+    "type": "NONE",
     "datasetId": "customers_sql-svzs",
     "name": "customers_sql",
     "projectId": "{{ref(project.current.projectId)}}",

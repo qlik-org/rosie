@@ -4,6 +4,7 @@
   "type": "DIMENSION",
   "inputDatasets": [
     {
+      "type": "NONE",
       "datasetId": "customers_sql-svzs",
       "name": "customers_sql",
       "projectId": "{{ref(project.current.projectId)}}",
