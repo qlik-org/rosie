@@ -1,0 +1,26 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_categories_landing-fp7h",
+      "schema": "{{task.onboarding_categories_landing-fp7h:null$_$dbo.schema}}"
+    }
+  ],
+  "tableDef": {
+    "name": "Orders",
+    "dbSchema": "onboarding_categories_landing",
+    "dbName": "DIS_AUTOMATION",
+    "columns": [],
+    "entityId": "orders",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
