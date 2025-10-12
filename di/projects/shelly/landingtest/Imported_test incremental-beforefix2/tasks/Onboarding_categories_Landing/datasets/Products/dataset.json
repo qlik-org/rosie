@@ -1,0 +1,26 @@
+{
+  "id": "products",
+  "name": "Products",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_products",
+      "name": "Products",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_categories_landing-fp7h",
+      "schema": "{{task.onboarding_categories_landing-fp7h:null$_$dbo.schema}}"
+    }
+  ],
+  "tableDef": {
+    "name": "Products",
+    "dbSchema": "onboarding_categories_landing",
+    "dbName": "DIS_AUTOMATION",
+    "columns": [],
+    "entityId": "products",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
