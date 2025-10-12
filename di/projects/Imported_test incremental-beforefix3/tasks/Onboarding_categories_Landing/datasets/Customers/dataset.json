@@ -14,12 +14,18 @@
   ],
   "tableDef": {
     "name": "Customers",
-    "dbSchema": "onboarding_categories_landing",
+    "dbSchema": "test33_onboarding_categories_landing",
     "dbName": "DIS_AUTOMATION",
     "columns": [],
     "entityId": "customers",
     "secureQri": "",
     "fullLoadOnly": false
+  },
+  "landingDatasetSettings": {
+    "loadOrder": "LOWER",
+    "loadParallelSettings": {
+      "loadParallel": "NONE"
+    }
   },
   "virtualDataset": false,
   "description": ""

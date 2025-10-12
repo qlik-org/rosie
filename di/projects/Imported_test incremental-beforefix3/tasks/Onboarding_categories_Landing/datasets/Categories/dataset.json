@@ -14,7 +14,7 @@
   ],
   "tableDef": {
     "name": "Categories",
-    "dbSchema": "onboarding_categories_landing",
+    "dbSchema": "test33_onboarding_categories_landing",
     "dbName": "DIS_AUTOMATION",
     "columns": [],
     "entityId": "categories",
