@@ -21,6 +21,12 @@
     "secureQri": "",
     "fullLoadOnly": false
   },
+  "landingDatasetSettings": {
+    "loadOrder": "LOWER",
+    "loadParallelSettings": {
+      "loadParallel": "NONE"
+    }
+  },
   "virtualDataset": false,
   "description": ""
 }

@@ -1,6 +1,6 @@
 {
   "taskRuntime": {
-    "tableLoadInParallel": 5,
+    "tableLoadInParallel": 10,
     "warehouseSelection": {
       "warehouseName": "{{task-type.landing.warehouseName}}",
       "selectionMethod": "{{task-type.landing.warehouseSelectionMethod}}"

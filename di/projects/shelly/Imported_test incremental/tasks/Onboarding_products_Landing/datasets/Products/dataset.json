@@ -12,6 +12,21 @@
       "schema": "{{task.onboarding_products_landing-h47z:null$_$dbo.schema}}"
     }
   ],
+  "tableDef": {
+    "name": "Products",
+    "dbSchema": "prefixonboarding_products_landing",
+    "dbName": "DIS_AUTOMATION",
+    "columns": [],
+    "entityId": "products",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "landingDatasetSettings": {
+    "loadOrder": "HIGH",
+    "loadParallelSettings": {
+      "loadParallel": "NONE"
+    }
+  },
   "virtualDataset": false,
   "description": ""
 }
