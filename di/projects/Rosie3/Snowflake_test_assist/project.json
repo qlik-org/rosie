@@ -3,7 +3,7 @@
   "name": "{{projectName}}",
   "space": "ref{project.current.spaceId}",
   "type": "DATA_PIPELINE",
-  "description": "main branch",
+  "description": "main branch description new one",
   "platformType": "SNOWFLAKE",
   "platformConnection": "{{platformConnection}}",
   "cloudStagingConnection": "{{cloudStagingConnection}}",
