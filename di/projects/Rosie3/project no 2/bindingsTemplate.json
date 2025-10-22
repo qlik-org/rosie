@@ -39,8 +39,23 @@
     "task-type.transform.databaseName": "",
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
-    "task-type.transform.warehouseSelectionMethod": ""
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.onboarding_landing-olxm.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_landing-olxm.sourceConnection": "",
+    "task.onboarding_landing-olxm.taskSchema": "",
+    "task.onboarding_landing-olxm:null$_$dbo.schema": "",
+    "task.onboarding_storage-olxn.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_storage-olxn.internalSchema": "",
+    "task.onboarding_storage-olxn.taskSchema": "",
+    "task.onboarding_storage-olxn.warehouseName": "{{task-type.storage.warehouseName}}"
   },
-  "idToNameMap": {},
-  "connectionProperties": {}
+  "idToNameMap": {
+    "onboarding_landing-olxm": "Onboarding_Landing",
+    "onboarding_storage-olxn": "Onboarding_Storage"
+  },
+  "connectionProperties": {
+    "task.onboarding_landing-olxm.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
 }
