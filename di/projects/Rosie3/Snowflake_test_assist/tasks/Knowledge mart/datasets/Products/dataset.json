@@ -37,7 +37,8 @@
         "id": "productid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true
+          "documentMetadata": true,
+          "nesting": "NONE"
         }
       },
       {
@@ -55,7 +56,8 @@
         "id": "productname",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true
+          "documentMetadata": true,
+          "nesting": "NONE"
         }
       },
       {
@@ -73,7 +75,8 @@
         "id": "supplierid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -91,7 +94,8 @@
         "id": "categoryid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -109,7 +113,8 @@
         "id": "quantityperunit",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -127,7 +132,8 @@
         "id": "unitprice",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -145,7 +151,8 @@
         "id": "unitsinstock",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true
+          "documentMetadata": true,
+          "nesting": "NONE"
         }
       },
       {
@@ -163,7 +170,8 @@
         "id": "unitsonorder",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -181,7 +189,8 @@
         "id": "reorderlevel",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       },
       {
@@ -199,7 +208,8 @@
         "id": "discontinued",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false
+          "documentMetadata": false,
+          "nesting": "NONE"
         }
       }
     ],
@@ -354,7 +364,8 @@
     },
     "fullyType2Sources": false,
     "checkedTreeNodesForDisplay": [],
-    "subtype": "MODEL_BASED"
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
   },
   "virtualDataset": false,
   "description": ""

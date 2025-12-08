@@ -65,16 +65,29 @@
     "task.onboarding_storage-xgeh.databaseName": "{{task-type.storage.databaseName}}",
     "task.onboarding_storage-xgeh.internalSchema": "",
     "task.onboarding_storage-xgeh.taskSchema": "",
-    "task.onboarding_storage-xgeh.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.onboarding_storage-xgeh.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.onboarding_test_landing-hffb.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_test_landing-hffb.sourceConnection": "",
+    "task.onboarding_test_landing-hffb.taskSchema": "",
+    "task.onboarding_test_landing-hffb:null$_$dbo.schema": "",
+    "task.onboarding_test_storage-hffc.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_test_storage-hffc.internalSchema": "",
+    "task.onboarding_test_storage-hffc.taskSchema": "",
+    "task.onboarding_test_storage-hffc.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
     "knowledge_mart-xges": "Knowledge mart",
     "knowledge_mart_1-xgez": "Knowledge mart_1",
     "onboarding_landing-xgeg": "Onboarding_Landing",
-    "onboarding_storage-xgeh": "Onboarding_Storage"
+    "onboarding_storage-xgeh": "Onboarding_Storage",
+    "onboarding_test_landing-hffb": "Onboarding_test_Landing",
+    "onboarding_test_storage-hffc": "Onboarding_test_Storage"
   },
   "connectionProperties": {
     "task.onboarding_landing-xgeg.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.onboarding_test_landing-hffb.sourceConnection": {
       "type": "repsrc_mssql"
     }
   }

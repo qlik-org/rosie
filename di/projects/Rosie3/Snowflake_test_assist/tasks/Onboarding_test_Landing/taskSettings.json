@@ -40,8 +40,8 @@
   "fullLoadOnly": false,
   "landingDwSettings": {
     "landingArtifactsLocation": {
-      "dataAssetSchema": "{{task.onboarding_landing-xgeg.taskSchema}}",
-      "database": "{{task.onboarding_landing-xgeg.databaseName}}"
+      "dataAssetSchema": "{{task.onboarding_test_landing-hffb.taskSchema}}",
+      "database": "{{task.onboarding_test_landing-hffb.databaseName}}"
     }
   },
   "landingStorageSettings": {
