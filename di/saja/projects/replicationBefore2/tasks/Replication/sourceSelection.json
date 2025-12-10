@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.replication-azxc.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "test_table",
+      "schema": "{{task.replication-azxc:null$_$saja_automation_source.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$saja_automation_source_test_table"
+    },
+    {
+      "name": "test_table3",
+      "schema": "{{task.replication-azxc:null$_$saja_automation_source.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$saja_automation_source_test_table3"
+    }
+  ]
+}

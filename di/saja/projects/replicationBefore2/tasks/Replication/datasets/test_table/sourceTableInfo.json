@@ -1,0 +1,73 @@
+{
+  "id": "$replicate$saja_automation_source_test_table",
+  "name": "saja_automation_source_test_table",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "test_table",
+    "dbSchema": "{{task.replication-azxc:null$_$saja_automation_source.schema}}",
+    "columns": [
+      {
+        "name": "a",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "a",
+        "flags": "NONE"
+      },
+      {
+        "name": "b",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "b",
+        "flags": "NONE"
+      },
+      {
+        "name": "c",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "c",
+        "flags": "NONE"
+      },
+      {
+        "name": "d",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "d",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "test_table3",
+  "name": "test_table3",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$saja_automation_source_test_table3",
+      "name": "test_table3",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication-azxc",
+      "schema": "{{task.replication-azxc:null$_$saja_automation_source.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
