@@ -1,0 +1,17 @@
+{
+  "id": "test_table",
+  "name": "test_table",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$saja_automation_source_test_table",
+      "name": "test_table",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-azw6",
+      "schema": "{{task.onboarding_landing-azw6:null$_$saja_automation_source.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

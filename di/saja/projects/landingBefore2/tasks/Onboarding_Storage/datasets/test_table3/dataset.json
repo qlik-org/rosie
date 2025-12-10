@@ -1,0 +1,24 @@
+{
+  "id": "test_table3-azw-",
+  "name": "test_table3",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "test_table3",
+      "name": "test_table3",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-azw6"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
