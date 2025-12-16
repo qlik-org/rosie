@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.lake_landing-xv5u.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Orders",
+      "schema": "{{task.lake_landing-xv5u:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    }
+  ]
+}
