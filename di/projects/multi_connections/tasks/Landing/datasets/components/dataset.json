@@ -1,0 +1,17 @@
+{
+  "id": "components",
+  "name": "components",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$Replication-Stitch_components",
+      "name": "components",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-l9ih",
+      "schema": "{{task.landing-l9ih:null$_$Replication-Stitch.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

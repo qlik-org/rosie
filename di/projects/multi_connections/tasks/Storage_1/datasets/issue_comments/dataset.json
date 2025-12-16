@@ -1,0 +1,24 @@
+{
+  "id": "issue_comments-w4rf",
+  "name": "issue_comments",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "issue_comments",
+      "name": "issue_comments",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-l9ih"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

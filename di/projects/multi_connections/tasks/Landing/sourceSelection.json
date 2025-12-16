@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.landing-l9ih.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "components",
+      "schema": "{{task.landing-l9ih:null$_$Replication-Stitch.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$Replication-Stitch_components"
+    },
+    {
+      "name": "issue_comments",
+      "schema": "{{task.landing-l9ih:null$_$Replication-Stitch.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$Replication-Stitch_issue_comments"
+    }
+  ]
+}

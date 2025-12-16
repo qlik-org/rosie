@@ -1,0 +1,223 @@
+{
+  "id": "$replicate$Replication-Stitch_components",
+  "name": "Replication-Stitch_components",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "components",
+    "dbSchema": "{{task.landing-l9ih:null$_$Replication-Stitch.schema}}",
+    "columns": [
+      {
+        "name": "assignee",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "assignee",
+        "flags": "NONE"
+      },
+      {
+        "name": "assigneeType",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "assigneetype",
+        "flags": "NONE"
+      },
+      {
+        "name": "componentBean",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "componentbean",
+        "flags": "NONE"
+      },
+      {
+        "name": "description",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "description",
+        "flags": "NONE"
+      },
+      {
+        "name": "id",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "isAssigneeTypeValid",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT1",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "isassigneetypevalid",
+        "flags": "NONE"
+      },
+      {
+        "name": "issueCount",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "issuecount",
+        "flags": "NONE"
+      },
+      {
+        "name": "lead",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "lead",
+        "flags": "NONE"
+      },
+      {
+        "name": "name",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "name",
+        "flags": "NONE"
+      },
+      {
+        "name": "project",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "project",
+        "flags": "NONE"
+      },
+      {
+        "name": "projectId",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "projectid",
+        "flags": "NONE"
+      },
+      {
+        "name": "realAssignee",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "realassignee",
+        "flags": "NONE"
+      },
+      {
+        "name": "realAssigneeType",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "realassigneetype",
+        "flags": "NONE"
+      },
+      {
+        "name": "self",
+        "ordinal": 14,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "self",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

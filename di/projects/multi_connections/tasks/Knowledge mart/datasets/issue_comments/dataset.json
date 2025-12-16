@@ -1,0 +1,436 @@
+{
+  "id": "issue_comments-l9iq",
+  "name": "issue_comments",
+  "type": "DOCUMENT_SCHEMA",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "issue_comments-w4rf",
+      "name": "issue_comments",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage_1-l9ik"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "issue_comments",
+    "columns": [
+      {
+        "name": "author",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "author",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "body",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "body",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "created",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(0)"
+        },
+        "id": "created",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "id",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "issueId",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "issueid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "jsdPublic",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT1",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "BYTEINT"
+        },
+        "id": "jsdpublic",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "properties",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "properties",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "renderedBody",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "renderedbody",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "self",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "self",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "updateAuthor",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "updateauthor",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "updated",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(0)"
+        },
+        "id": "updated",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      },
+      {
+        "name": "visibility",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(8388608)"
+        },
+        "id": "visibility",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "nesting": "NONE"
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "documentDataEntitySettings": {
+    "repeatedDataEntities": [],
+    "type": "TYPE1",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "entityId": "issue_comments-w4rf",
+      "name": "issue_comments",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "dataAppId": "storage_1-l9ik"
+    },
+    "entityRelationshipPath": [],
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "author",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${author}",
+            "alias": [
+              {
+                "name": "author",
+                "value": "author"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "body",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${body}",
+            "alias": [
+              {
+                "name": "body",
+                "value": "body"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "created",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${created}",
+            "alias": [
+              {
+                "name": "created",
+                "value": "created"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "id",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${id}",
+            "alias": [
+              {
+                "name": "id",
+                "value": "id"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "issueId",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${issueId}",
+            "alias": [
+              {
+                "name": "issueId",
+                "value": "issueId"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "jsdPublic",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${jsdPublic}",
+            "alias": [
+              {
+                "name": "jsdPublic",
+                "value": "jsdPublic"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "properties",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${properties}",
+            "alias": [
+              {
+                "name": "properties",
+                "value": "properties"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "renderedBody",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${renderedBody}",
+            "alias": [
+              {
+                "name": "renderedBody",
+                "value": "renderedBody"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "self",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${self}",
+            "alias": [
+              {
+                "name": "self",
+                "value": "self"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "updateAuthor",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${updateAuthor}",
+            "alias": [
+              {
+                "name": "updateAuthor",
+                "value": "updateAuthor"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "updated",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${updated}",
+            "alias": [
+              {
+                "name": "updated",
+                "value": "updated"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "visibility",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${visibility}",
+            "alias": [
+              {
+                "name": "visibility",
+                "value": "visibility"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "checkedTreeNodesForDisplay": [],
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

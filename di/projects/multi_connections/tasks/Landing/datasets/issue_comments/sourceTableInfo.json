@@ -1,0 +1,193 @@
+{
+  "id": "$replicate$Replication-Stitch_issue_comments",
+  "name": "Replication-Stitch_issue_comments",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "issue_comments",
+    "dbSchema": "{{task.landing-l9ih:null$_$Replication-Stitch.schema}}",
+    "columns": [
+      {
+        "name": "author",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "author",
+        "flags": "NONE"
+      },
+      {
+        "name": "body",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "body",
+        "flags": "NONE"
+      },
+      {
+        "name": "created",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "created",
+        "flags": "NONE"
+      },
+      {
+        "name": "id",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE"
+      },
+      {
+        "name": "issueId",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "issueid",
+        "flags": "NONE"
+      },
+      {
+        "name": "jsdPublic",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "UINT1",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "jsdpublic",
+        "flags": "NONE"
+      },
+      {
+        "name": "properties",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "properties",
+        "flags": "NONE"
+      },
+      {
+        "name": "renderedBody",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "renderedbody",
+        "flags": "NONE"
+      },
+      {
+        "name": "self",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "self",
+        "flags": "NONE"
+      },
+      {
+        "name": "updateAuthor",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "updateauthor",
+        "flags": "NONE"
+      },
+      {
+        "name": "updated",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "updated",
+        "flags": "NONE"
+      },
+      {
+        "name": "visibility",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NCLOB",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "visibility",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
