@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.replication_2-w4r3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Employees",
+      "schema": "{{task.replication_2-w4r3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    },
+    {
+      "name": "Orders",
+      "schema": "{{task.replication_2-w4r3:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_orders"
+    }
+  ]
+}

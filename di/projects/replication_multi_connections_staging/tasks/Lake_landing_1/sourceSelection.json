@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.lake_landing_1-xv5y.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Region",
+      "schema": "{{task.lake_landing_1-xv5y:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    },
+    {
+      "name": "Territories",
+      "schema": "{{task.lake_landing_1-xv5y:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_territories"
+    }
+  ]
+}

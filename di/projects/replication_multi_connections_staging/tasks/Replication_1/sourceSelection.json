@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.replication_1-w4r2.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Customers",
+      "schema": "{{task.replication_1-w4r2:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_customers"
+    }
+  ]
+}

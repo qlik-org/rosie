@@ -1,0 +1,89 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-xv5x.databaseName": "{{task-type.lakeLanding.databaseName}}",
+    "task.lake_landing-xv5x.sourceConnection": "",
+    "task.lake_landing-xv5x.targetConnection": "",
+    "task.lake_landing-xv5x:null$_$dbo.schema": "",
+    "task.lake_landing_1-xv5y.databaseName": "{{task-type.lakeLanding.databaseName}}",
+    "task.lake_landing_1-xv5y.sourceConnection": "",
+    "task.lake_landing_1-xv5y.targetConnection": "",
+    "task.lake_landing_1-xv5y:null$_$dbo.schema": "",
+    "task.replication-xv5w.sourceConnection": "",
+    "task.replication-xv5w.targetConnection": "",
+    "task.replication-xv5w.targetStorageConnection": "",
+    "task.replication-xv5w:null$_$dbo.schema": "",
+    "task.replication_1-w4r2.sourceConnection": "",
+    "task.replication_1-w4r2.targetConnection": "",
+    "task.replication_1-w4r2.targetStorageConnection": "",
+    "task.replication_1-w4r2:null$_$dbo.schema": "",
+    "task.replication_2-w4r3.sourceConnection": "",
+    "task.replication_2-w4r3.targetConnection": "",
+    "task.replication_2-w4r3.targetStorageConnection": "",
+    "task.replication_2-w4r3:null$_$dbo.schema": "",
+    "task.replication_3-l9i5.sourceConnection": "",
+    "task.replication_3-l9i5.targetConnection": "",
+    "task.replication_3-l9i5.targetStorageConnection": "",
+    "task.replication_3-l9i5:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "lake_landing-xv5x": "Lake_landing",
+    "lake_landing_1-xv5y": "Lake_landing_1",
+    "replication-xv5w": "Replication",
+    "replication_1-w4r2": "Replication_1",
+    "replication_2-w4r3": "Replication_2",
+    "replication_3-l9i5": "Replication_3"
+  },
+  "connectionProperties": {
+    "task.lake_landing-xv5x.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing-xv5x.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_1-xv5y.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing_1-xv5y.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-xv5w.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-xv5w.targetConnection": {
+      "type": "reptgt_qdidatabricks"
+    },
+    "task.replication-xv5w.targetStorageConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication_1-w4r2.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication_1-w4r2.targetConnection": {
+      "type": "reptgt_qdidatabricks"
+    },
+    "task.replication_1-w4r2.targetStorageConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication_2-w4r3.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication_2-w4r3.targetConnection": {
+      "type": "reptgt_qdimicrosoftfabric"
+    },
+    "task.replication_2-w4r3.targetStorageConnection": {
+      "type": "reptgt_qdiadls"
+    },
+    "task.replication_3-l9i5.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication_3-l9i5.targetConnection": {
+      "type": "reptgt_qdimicrosoftfabric"
+    },
+    "task.replication_3-l9i5.targetStorageConnection": {
+      "type": "reptgt_qdiadls"
+    }
+  }
+}

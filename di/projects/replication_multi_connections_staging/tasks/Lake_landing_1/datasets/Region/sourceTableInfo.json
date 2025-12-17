@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$dbo_region",
+  "name": "dbo_Region",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Region",
+    "dbSchema": "{{task.lake_landing_1-xv5y:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
