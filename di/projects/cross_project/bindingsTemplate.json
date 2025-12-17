@@ -1,0 +1,90 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "project.rosie$_$databricks_multi_connections.projectId": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabase": "",
+    "task-type.fileBasedKnowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.fileBasedKnowledgeMart.llmConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbConnection": "",
+    "task-type.fileBasedKnowledgeMart.vectorDbTargetType": "",
+    "task-type.fileBasedKnowledgeMart.warehouseName": "",
+    "task-type.fileBasedKnowledgeMart.warehouseSelectionMethod": "",
+    "task-type.knowledgeMart.databaseName": "",
+    "task-type.knowledgeMart.databaseSelectionMethod": "",
+    "task-type.knowledgeMart.databricksVectorSearchEndpoint": "",
+    "task-type.knowledgeMart.indexDatabase": "",
+    "task-type.knowledgeMart.indexDatabaseSelectionMethod": "",
+    "task-type.knowledgeMart.llmConnection": "",
+    "task-type.knowledgeMart.vectorDbConnection": "",
+    "task-type.knowledgeMart.vectorDbTargetType": "",
+    "task-type.knowledgeMart.warehouseName": "",
+    "task-type.knowledgeMart.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.knowledge_mart-l9jh.databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "task.knowledge_mart-l9jh.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.knowledge_mart-l9jh.indexName": "",
+    "task.knowledge_mart-l9jh.internalSchema": "",
+    "task.knowledge_mart-l9jh.llmConnection": "",
+    "task.knowledge_mart-l9jh.maxNumberOfRecords": "",
+    "task.knowledge_mart-l9jh.taskSchema": "",
+    "task.knowledge_mart-l9jh.vectorDbConnection": "",
+    "task.knowledge_mart-l9jh.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+    "task.knowledge_mart_1-w4sw.databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "task.knowledge_mart_1-w4sw.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.knowledge_mart_1-w4sw.indexName": "",
+    "task.knowledge_mart_1-w4sw.internalSchema": "",
+    "task.knowledge_mart_1-w4sw.llmConnection": "",
+    "task.knowledge_mart_1-w4sw.maxNumberOfRecords": "",
+    "task.knowledge_mart_1-w4sw.taskSchema": "",
+    "task.knowledge_mart_1-w4sw.vectorDbConnection": "",
+    "task.knowledge_mart_1-w4sw.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+    "task.transform-l9jf.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform-l9jf.internalSchema": "",
+    "task.transform-l9jf.taskSchema": "",
+    "task.transform-l9jf.warehouseName": "{{task-type.transform.warehouseName}}"
+  },
+  "idToNameMap": {
+    "knowledge_mart-l9jh": "Knowledge mart",
+    "knowledge_mart_1-w4sw": "Knowledge mart_1",
+    "transform-l9jf": "Transform"
+  },
+  "connectionProperties": {
+    "task.knowledge_mart-l9jh.llmConnection": {
+      "type": "external_data_provider",
+      "kindId": "llm:Bedrock@1.0.0"
+    },
+    "task.knowledge_mart-l9jh.vectorDbConnection": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
+    "task.knowledge_mart_1-w4sw.llmConnection": {
+      "type": "external_data_provider",
+      "kindId": "llm:Bedrock@1.0.0"
+    },
+    "task.knowledge_mart_1-w4sw.vectorDbConnection": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    }
+  }
+}

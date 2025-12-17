@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$databricks_multi_connections.projectId}}",
+      "sourceTask": "onboarding_storage-w4so",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-w4sq"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$databricks_multi_connections.projectId}}",
+      "sourceTask": "onboarding_storage-w4so",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-w4sr"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$databricks_multi_connections.projectId}}",
+      "sourceTask": "onboarding_storage-w4so",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-w4ss"
+    }
+  ]
+}
