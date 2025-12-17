@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$dbo_categories",
+  "name": "dbo_Categories",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "Categories",
+    "dbSchema": "{{task.onboarding_landing_1-xv7c:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
