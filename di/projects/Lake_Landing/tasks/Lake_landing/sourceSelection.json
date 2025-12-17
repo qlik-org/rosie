@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.lake_landing-l9jr.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Employees",
+      "schema": "{{task.lake_landing-l9jr:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_employees"
+    }
+  ]
+}
