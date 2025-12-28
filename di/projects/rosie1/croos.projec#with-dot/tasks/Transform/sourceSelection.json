@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$sorce.project#with-chars.projectId}}",
+      "sourceTask": "storagewithdot---2p",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-9fsm"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$sorce.project#with-chars.projectId}}",
+      "sourceTask": "storagewithdot---2p",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-9fsn"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$sorce.project#with-chars.projectId}}",
+      "sourceTask": "storagewithdot---2p",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-9fso"
+    }
+  ]
+}
