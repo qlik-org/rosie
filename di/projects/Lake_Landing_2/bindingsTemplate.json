@@ -1,0 +1,22 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-ot-e.databaseName": "{{task-type.lakeLanding.databaseName}}",
+    "task.lake_landing-ot-e.sourceConnection": "",
+    "task.lake_landing-ot-e.targetConnection": "",
+    "task.lake_landing-ot-e:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "lake_landing-ot-e": "Lake_landing"
+  },
+  "connectionProperties": {
+    "task.lake_landing-ot-e.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing-ot-e.targetConnection": {
+      "type": "reptgt_qdis3"
+    }
+  }
+}
