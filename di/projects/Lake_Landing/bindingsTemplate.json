@@ -3,7 +3,6 @@
     "cloudStagingConnection": "",
     "platformConnection": "",
     "projectName": "",
-    "task.lake_landing-l9jr.databaseName": "{{task-type.lakeLanding.databaseName}}",
     "task.lake_landing-l9jr.sourceConnection": "",
     "task.lake_landing-l9jr.targetConnection": "",
     "task.lake_landing-l9jr:null$_$dbo.schema": ""
