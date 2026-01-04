@@ -3,7 +3,7 @@
   "name": "{{projectName}}",
   "space": "ref{project.current.spaceId}",
   "type": "DATA_MOVEMENT",
-  "description": "new 3 ",
+  "description": "new 4 dwsc",
   "platformType": "SNOWFLAKE",
   "platformConnection": "{{platformConnection}}",
   "cloudStagingConnection": "{{cloudStagingConnection}}",
