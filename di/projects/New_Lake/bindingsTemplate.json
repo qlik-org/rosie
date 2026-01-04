@@ -5,10 +5,15 @@
     "projectName": "",
     "task.lake_landing--het.sourceConnection": "",
     "task.lake_landing--het.targetConnection": "",
-    "task.lake_landing--het:null$_$dbo.schema": ""
+    "task.lake_landing--het:null$_$dbo.schema": "",
+    "task.replication-jgoc.sourceConnection": "",
+    "task.replication-jgoc.targetConnection": "",
+    "task.replication-jgoc.targetStorageConnection": "",
+    "task.replication-jgoc:null$_$dbo.schema": ""
   },
   "idToNameMap": {
-    "lake_landing--het": "Lake_landing"
+    "lake_landing--het": "Lake_landing",
+    "replication-jgoc": "Replication"
   },
   "connectionProperties": {
     "task.lake_landing--het.sourceConnection": {
@@ -16,6 +21,12 @@
     },
     "task.lake_landing--het.targetConnection": {
       "type": "reptgt_qdis3"
+    },
+    "task.replication-jgoc.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-jgoc.targetConnection": {
+      "type": "reptgt_qdisnowflake"
     }
   }
 }
