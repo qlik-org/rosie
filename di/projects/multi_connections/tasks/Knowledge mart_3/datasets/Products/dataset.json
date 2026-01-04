@@ -224,6 +224,7 @@
       "type": "NONE",
       "entityId": "products-l9iy",
       "name": "Products",
+      "isPattern": false,
       "projectId": "{{ref(project.current.projectId)}}",
       "dataAppId": "onboarding_storage-l9iw"
     },

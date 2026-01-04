@@ -262,6 +262,7 @@
       "type": "NONE",
       "entityId": "issue_comments-w4rf",
       "name": "issue_comments",
+      "isPattern": false,
       "projectId": "{{ref(project.current.projectId)}}",
       "dataAppId": "storage_1-l9ik"
     },

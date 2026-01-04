@@ -19,7 +19,7 @@
           "originalTypeFull": ""
         },
         "id": "assignee",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "assigneeType",
@@ -34,7 +34,7 @@
           "originalTypeFull": ""
         },
         "id": "assigneetype",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "componentBean",
@@ -49,7 +49,7 @@
           "originalTypeFull": ""
         },
         "id": "componentbean",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "description",
@@ -64,7 +64,7 @@
           "originalTypeFull": ""
         },
         "id": "description",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "id",
@@ -79,7 +79,7 @@
           "originalTypeFull": ""
         },
         "id": "id",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "isAssigneeTypeValid",
@@ -124,7 +124,7 @@
           "originalTypeFull": ""
         },
         "id": "lead",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "name",
@@ -139,7 +139,7 @@
           "originalTypeFull": ""
         },
         "id": "name",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "project",
@@ -154,7 +154,7 @@
           "originalTypeFull": ""
         },
         "id": "project",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "projectId",
@@ -184,7 +184,7 @@
           "originalTypeFull": ""
         },
         "id": "realassignee",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "realAssigneeType",
@@ -199,7 +199,7 @@
           "originalTypeFull": ""
         },
         "id": "realassigneetype",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "self",
@@ -214,7 +214,7 @@
           "originalTypeFull": ""
         },
         "id": "self",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       }
     ],
     "secureQri": "",

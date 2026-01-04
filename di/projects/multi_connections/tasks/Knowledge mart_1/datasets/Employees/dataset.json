@@ -376,6 +376,7 @@
       "type": "NONE",
       "entityId": "employees-w4rd",
       "name": "Employees",
+      "isPattern": false,
       "projectId": "{{ref(project.current.projectId)}}",
       "dataAppId": "storage-l9ii"
     },

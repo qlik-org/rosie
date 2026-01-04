@@ -19,7 +19,7 @@
           "originalTypeFull": ""
         },
         "id": "author",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "body",
@@ -34,7 +34,7 @@
           "originalTypeFull": ""
         },
         "id": "body",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "created",
@@ -64,7 +64,7 @@
           "originalTypeFull": ""
         },
         "id": "id",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "issueId",
@@ -79,7 +79,7 @@
           "originalTypeFull": ""
         },
         "id": "issueid",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "jsdPublic",
@@ -109,7 +109,7 @@
           "originalTypeFull": ""
         },
         "id": "properties",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "renderedBody",
@@ -124,7 +124,7 @@
           "originalTypeFull": ""
         },
         "id": "renderedbody",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "self",
@@ -139,7 +139,7 @@
           "originalTypeFull": ""
         },
         "id": "self",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "updateAuthor",
@@ -154,7 +154,7 @@
           "originalTypeFull": ""
         },
         "id": "updateauthor",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       },
       {
         "name": "updated",
@@ -184,7 +184,7 @@
           "originalTypeFull": ""
         },
         "id": "visibility",
-        "flags": "NONE"
+        "flags": "COLUMN_DEF_COLUMN_IS_NOT_SUPPORTED"
       }
     ],
     "secureQri": "",
