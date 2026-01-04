@@ -6,6 +6,9 @@
     "task.lake_landing--het.sourceConnection": "",
     "task.lake_landing--het.targetConnection": "",
     "task.lake_landing--het:null$_$dbo.schema": "",
+    "task.lake_landing_1-jgod.sourceConnection": "",
+    "task.lake_landing_1-jgod.targetConnection": "",
+    "task.lake_landing_1-jgod:null$_$dbo.schema": "",
     "task.replication-jgoc.sourceConnection": "",
     "task.replication-jgoc.targetConnection": "",
     "task.replication-jgoc.targetStorageConnection": "",
@@ -13,6 +16,7 @@
   },
   "idToNameMap": {
     "lake_landing--het": "Lake_landing",
+    "lake_landing_1-jgod": "Lake_landing_1",
     "replication-jgoc": "Replication"
   },
   "connectionProperties": {
@@ -20,6 +24,12 @@
       "type": "repsrc_mssql"
     },
     "task.lake_landing--het.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_1-jgod.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing_1-jgod.targetConnection": {
       "type": "reptgt_qdis3"
     },
     "task.replication-jgoc.sourceConnection": {
