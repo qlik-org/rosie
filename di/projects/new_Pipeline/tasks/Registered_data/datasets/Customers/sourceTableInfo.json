@@ -1,0 +1,12 @@
+{
+  "id": "$registered_data$newpipe1_onboarding_storage_customers",
+  "name": "newpipe1_onboarding_storage_Customers",
+  "type": "EXTERNAL_TABLE",
+  "tableDef": {
+    "name": "Customers",
+    "dbSchema": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.schema}}",
+    "dbName": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

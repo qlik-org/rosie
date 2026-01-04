@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.database}}",
+      "name": "Customers",
+      "schema": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.schema}}",
+      "type": "VIEW",
+      "sourceTableId": "$registered_data$newpipe1_onboarding_storage_customers"
+    },
+    {
+      "database": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.database}}",
+      "name": "Employees",
+      "schema": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.schema}}",
+      "type": "VIEW",
+      "sourceTableId": "$registered_data$newpipe1_onboarding_storage_employees"
+    },
+    {
+      "database": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.database}}",
+      "name": "Orders",
+      "schema": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.schema}}",
+      "type": "VIEW",
+      "sourceTableId": "$registered_data$newpipe1_onboarding_storage_orders"
+    }
+  ]
+}

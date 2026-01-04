@@ -1,0 +1,18 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$registered_data$newpipe1_onboarding_storage_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data--hek",
+      "schema": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.schema}}",
+      "database": "{{task.registered_data--hek:ROSIE$_$newpipe1_onboarding_storage.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
