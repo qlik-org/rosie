@@ -1,0 +1,29 @@
+{
+  "id": "orders-jgot",
+  "name": "Orders",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "orders-twgk",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-twgg"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Orders)}}",
+    "targetId": "e7aac996-5a60-4c97-894e-b55711d7fc97",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
