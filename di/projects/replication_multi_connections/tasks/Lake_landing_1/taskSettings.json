@@ -46,8 +46,7 @@
   "dataProviderType": "REPLICATE",
   "landingDwSettings": {
     "landingArtifactsLocation": {
-      "dataAssetSchema": "lake_landing_1",
-      "database": "{{task.lake_landing_1-w4r1.databaseName}}"
+      "dataAssetSchema": "lake_landing_1"
     }
   },
   "landingStorageSettings": {
