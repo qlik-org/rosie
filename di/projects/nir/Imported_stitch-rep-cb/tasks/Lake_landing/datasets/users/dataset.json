@@ -1,0 +1,17 @@
+{
+  "id": "users",
+  "name": "users",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$public_users",
+      "name": "users",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lake_landing-jzue",
+      "schema": "{{task.lake_landing-jzue:null$_$public.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

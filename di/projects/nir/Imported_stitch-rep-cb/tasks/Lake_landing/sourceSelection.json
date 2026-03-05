@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.lake_landing-jzue.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "users",
+      "schema": "{{task.lake_landing-jzue:null$_$public.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$public_users"
+    }
+  ]
+}

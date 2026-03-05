@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.replication-jzub.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "issues",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_3428"
+    },
+    {
+      "name": "releases",
+      "type": "VIEW",
+      "sourceTableId": "$external_data_provider$_3430"
+    }
+  ]
+}

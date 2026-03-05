@@ -1,0 +1,45 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-jzue.sourceConnection": "",
+    "task.lake_landing-jzue.targetConnection": "",
+    "task.lake_landing-jzue:null$_$public.schema": "",
+    "task.replication-jzub.sourceConnection": "",
+    "task.replication-jzub.targetConnection": "",
+    "task.replication-jzub.targetSchema": "",
+    "task.replication-jzub.targetStorageConnection": "",
+    "task.replication_1-jzud.sourceConnection": "",
+    "task.replication_1-jzud.targetConnection": "",
+    "task.replication_1-jzud.targetSchema": "",
+    "task.replication_1-jzud.targetStorageConnection": "",
+    "task.replication_1-jzud:null$_$public.schema": ""
+  },
+  "idToNameMap": {
+    "lake_landing-jzue": "Lake_landing",
+    "replication-jzub": "Replication",
+    "replication_1-jzud": "Replication_1"
+  },
+  "connectionProperties": {
+    "task.lake_landing-jzue.sourceConnection": {
+      "type": "repsrc_postgresql"
+    },
+    "task.lake_landing-jzue.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-jzub.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "16"
+    },
+    "task.replication-jzub.targetConnection": {
+      "type": "reptgt_qdipostgresql"
+    },
+    "task.replication_1-jzud.sourceConnection": {
+      "type": "repsrc_postgresql"
+    },
+    "task.replication_1-jzud.targetConnection": {
+      "type": "reptgt_qdioracle"
+    }
+  }
+}

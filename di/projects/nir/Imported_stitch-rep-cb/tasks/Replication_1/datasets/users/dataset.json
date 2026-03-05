@@ -1,0 +1,17 @@
+{
+  "id": "users",
+  "name": "users",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$public_users",
+      "name": "users",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication_1-jzud",
+      "schema": "{{task.replication_1-jzud:null$_$public.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
