@@ -1,0 +1,16 @@
+{
+  "id": "issue_events",
+  "name": "issue_events",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$external_data_provider$_78900",
+      "name": "issue_events",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication_1--ng3"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

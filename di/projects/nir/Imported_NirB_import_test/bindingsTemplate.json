@@ -1,0 +1,59 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.replication-gdsh.sourceConnection": "",
+    "task.replication-gdsh.targetConnection": "",
+    "task.replication-gdsh.targetSchema": "",
+    "task.replication-gdsh.targetStorageConnection": "",
+    "task.replication_1--ng3.sourceConnection": "",
+    "task.replication_1--ng3.targetConnection": "",
+    "task.replication_1--ng3.targetSchema": "",
+    "task.replication_1--ng3.targetStorageConnection": "",
+    "task.replication_2-lvw3.sourceConnection": "",
+    "task.replication_2-lvw3.targetConnection": "",
+    "task.replication_2-lvw3.targetSchema": "",
+    "task.replication_2-lvw3.targetStorageConnection": "",
+    "task.replication_3-gdsu.sourceConnection": "",
+    "task.replication_3-gdsu.targetConnection": "",
+    "task.replication_3-gdsu.targetSchema": "",
+    "task.replication_3-gdsu.targetStorageConnection": "",
+    "task.replication_3-gdsu:null$_$nir.schema": ""
+  },
+  "idToNameMap": {
+    "replication-gdsh": "Replication",
+    "replication_1--ng3": "Replication_1",
+    "replication_2-lvw3": "Replication_2",
+    "replication_3-gdsu": "Replication_3"
+  },
+  "connectionProperties": {
+    "task.replication-gdsh.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "16"
+    },
+    "task.replication-gdsh.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_1--ng3.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "16"
+    },
+    "task.replication_1--ng3.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_2-lvw3.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "8"
+    },
+    "task.replication_2-lvw3.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.replication_3-gdsu.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.replication_3-gdsu.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

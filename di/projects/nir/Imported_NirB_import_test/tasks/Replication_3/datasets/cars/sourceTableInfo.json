@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$nir_cars",
+  "name": "nir_cars",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "cars",
+    "dbSchema": "{{task.replication_3-gdsu:null$_$nir.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

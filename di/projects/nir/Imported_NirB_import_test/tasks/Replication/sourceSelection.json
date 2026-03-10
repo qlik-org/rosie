@@ -1,0 +1,22 @@
+{
+  "sourceConnection": "{{task.replication-gdsh.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "commits",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78875"
+    },
+    {
+      "name": "issue_labels",
+      "type": "VIEW",
+      "sourceTableId": "$external_data_provider$_78880"
+    },
+    {
+      "name": "issues",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78877"
+    }
+  ]
+}

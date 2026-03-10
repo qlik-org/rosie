@@ -1,0 +1,11 @@
+{
+  "id": "$replicate$nir_newname",
+  "name": "nir_newname",
+  "type": "LANDING",
+  "tableDef": {
+    "name": "newname",
+    "dbSchema": "{{task.replication_3-gdsu:null$_$nir.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.replication_2-lvw3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "issues",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78857"
+    },
+    {
+      "name": "projects",
+      "type": "VIEW",
+      "sourceTableId": "$external_data_provider$_78849"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sourceConnection": "{{task.replication_1--ng3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "commits",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78894"
+    },
+    {
+      "name": "issue_events",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78900"
+    },
+    {
+      "name": "issues",
+      "type": "TABLE",
+      "sourceTableId": "$external_data_provider$_78896"
+    }
+  ]
+}

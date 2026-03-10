@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.replication_3-gdsu.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "cars",
+      "schema": "{{task.replication_3-gdsu:null$_$nir.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$nir_cars"
+    },
+    {
+      "name": "newname",
+      "schema": "{{task.replication_3-gdsu:null$_$nir.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$nir_newname"
+    }
+  ]
+}

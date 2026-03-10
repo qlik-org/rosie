@@ -1,0 +1,16 @@
+{
+  "id": "projects",
+  "name": "projects",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "VIEW",
+      "datasetId": "$external_data_provider$_78849",
+      "name": "projects",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication_2-lvw3"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
