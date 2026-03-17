@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.file_based_knowledge_mart-e_om.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "tests",
+      "type": "DIRECTORY",
+      "sourceTableId": "tests"
+    }
+  ]
+}
