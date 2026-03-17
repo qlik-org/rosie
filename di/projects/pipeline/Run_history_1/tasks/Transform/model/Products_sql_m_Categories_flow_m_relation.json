@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "products_sql_m-_8af",
+    "name": "Products_sql_m",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-fpmd"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "categories_flow_m-_xkl",
+    "name": "Categories_flow_m",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-fpmd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_sql_m_Categories_flow_m_relation",
+  "description": "",
+  "id": "products_sql_m_categories_flow_m_relation-dcui"
+}

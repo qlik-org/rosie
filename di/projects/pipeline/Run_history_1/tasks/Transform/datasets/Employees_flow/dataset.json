@@ -1,0 +1,30 @@
+{
+  "id": "employees_flow-dcug",
+  "name": "Employees_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "employees-gljg",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-2kq-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Employees_flow)}}",
+    "targetId": "246348ee-f5f0-4f28-9dae-5496f76cd2a6",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

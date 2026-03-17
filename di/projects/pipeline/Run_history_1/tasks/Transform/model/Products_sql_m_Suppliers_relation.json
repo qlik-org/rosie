@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "products_sql_m-_8af",
+    "name": "Products_sql_m",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-fpmd"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "suppliers-_xkp",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-fpmd"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_sql_m_Suppliers_relation",
+  "description": "",
+  "id": "products_sql_m_suppliers_relation-dcuj"
+}

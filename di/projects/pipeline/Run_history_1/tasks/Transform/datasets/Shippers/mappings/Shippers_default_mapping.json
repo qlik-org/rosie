@@ -1,0 +1,50 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "shippers-gljk",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-2kq-"
+  },
+  "mappingFields": [
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shippers_default_mapping-_xkt",
+  "name": "Shippers_default_mapping",
+  "description": ""
+}

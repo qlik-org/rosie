@@ -1,0 +1,30 @@
+{
+  "id": "categories_flow_m-_xkl",
+  "name": "Categories_flow_m",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "categories-glje",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-2kq-"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Categories_flow_m)}}",
+    "targetId": "1fc38e0b-8e36-481d-8d36-03b08960e509",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
