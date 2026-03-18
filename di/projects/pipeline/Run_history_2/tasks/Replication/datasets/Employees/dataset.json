@@ -1,0 +1,17 @@
+{
+  "id": "employees",
+  "name": "Employees",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "replication-_8aq",
+      "schema": "{{task.replication-_8aq:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
