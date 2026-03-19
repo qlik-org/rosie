@@ -1,0 +1,6 @@
+{
+  "name": "Onboarding_Streaming_Transform",
+  "id": "onboarding_streaming_transform-lnrn",
+  "description": "",
+  "type": "ICEBERG_TRANSFORM"
+}

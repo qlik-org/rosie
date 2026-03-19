@@ -1,0 +1,52 @@
+{
+  "generalSettings": {
+    "artifactsLocation": {
+      "internalSchema": "{{task.onboarding_streaming_transform_2-591_.internalSchema}}",
+      "taskSchema": "{{task.onboarding_streaming_transform_2-591_.taskSchema}}"
+    },
+    "artifactsSettings": {
+      "liveViewsEnabled": true,
+      "historyEnabled": false,
+      "materialized": true,
+      "changeTablesEnabled": true,
+      "currentTableSuffix": "__current",
+      "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
+      "artifactsPrefix": ""
+    },
+    "storageLocationSettings": {
+      "folderLocationType": "DATA_ASSET_NAME",
+      "specificFolder": ""
+    },
+    "loadSettings": {
+      "loadMode": "APPEND_ONLY",
+      "mergeSettings": {
+        "softDelete": false,
+        "hasHistory": false
+      }
+    },
+    "nestedFieldsHandling": "KEEP_NESTED_FIELDS",
+    "targetTablePartition": "NONE",
+    "retentionSettings": {
+      "type": "NONE",
+      "days": 1
+    }
+  },
+  "runtimeSettings": {
+    "lakehouseClusterId": "{{task.onboarding_streaming_transform_2-591_.lakehouseCluster}}"
+  },
+  "ddlHandlingPolicy": {
+    "addColumnRoot": "APPLY_TO_TARGET",
+    "addColumnStruct": "APPLY_TO_TARGET",
+    "addColumn": "APPLY_TO_TARGET",
+    "changeColumnType": "IGNORE",
+    "renameTable": "SUSPEND_TABLE",
+    "renameColumn": "SUSPEND_TABLE",
+    "dropTable": "IGNORE",
+    "dropColumn": "IGNORE",
+    "truncateTable": "IGNORE",
+    "createTable": "APPLY_TO_TARGET"
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  }
+}

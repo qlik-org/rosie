@@ -1,0 +1,26 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "my_topic2",
+    "name": "my_topic2",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_streaming_landing_2-591-"
+  },
+  "mappingFields": [
+    {
+      "columnId": "id",
+      "expression": {
+        "expressionStatement": "${id}",
+        "alias": [
+          {
+            "name": "id",
+            "value": "id"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "my_topic2_default_mapping-592d",
+  "name": "my_topic2_default_mapping",
+  "description": ""
+}

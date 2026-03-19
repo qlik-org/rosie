@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.streaming_landing-po3e.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "my%",
+      "schemaPattern": "{{task.streaming_landing-po3e:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

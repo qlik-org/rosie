@@ -1,0 +1,47 @@
+{
+  "id": "my_topic5",
+  "name": "my_topic5",
+  "type": "STREAMING_LANDING",
+  "inputDatasets": [],
+  "virtualDataset": false,
+  "description": "",
+  "streamingLandingDatasetSettings": {
+    "inputEntities": {
+      "includePatterns": [],
+      "explicitlySelected": [
+        "my_topic5"
+      ]
+    },
+    "generalSettings": {
+      "entityFolderRetentionSettings": {
+        "attributeSourceValue": "INHERIT",
+        "folderRetentionSettings": {
+          "type": "NONE",
+          "daysOfRetention": 1
+        }
+      },
+      "entityStartReadDataFrom": {
+        "attributeSourceValue": "INHERIT",
+        "startReadDataFrom": "EARLIEST_EVENT"
+      },
+      "entityProcessFilesFromPastSettings": {
+        "attributeSourceValue": "INHERIT",
+        "processPastFilesSettings": {
+          "timeAmount": 1,
+          "timeUnit": "DAYS"
+        }
+      },
+      "entityDeleteFilesInSourceSettings": {
+        "attributeSourceValue": "INHERIT",
+        "deleteFilesInSourceAfterLoad": false
+      },
+      "entityStrategy": "NONE"
+    },
+    "runtimeSettings": {
+      "numberOfReadersSettings": {
+        "numberOfReaders": 0,
+        "attributeSourceValue": "INHERIT"
+      }
+    }
+  }
+}

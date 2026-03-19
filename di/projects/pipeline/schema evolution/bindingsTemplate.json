@@ -1,0 +1,57 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task.onboarding_streaming_landing-lnrm.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing-lnrm.sourceConnection": "",
+    "task.onboarding_streaming_landing-lnrm:null$_$%.schemaPattern": "",
+    "task.onboarding_streaming_landing_1-37bq.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing_1-37bq.sourceConnection": "",
+    "task.onboarding_streaming_landing_1-37bq:null$_$%.schemaPattern": "",
+    "task.onboarding_streaming_landing_2-591-.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing_2-591-.sourceConnection": "",
+    "task.onboarding_streaming_landing_2-591-:null$_$%.schemaPattern": "",
+    "task.onboarding_streaming_transform-lnrn.internalSchema": "",
+    "task.onboarding_streaming_transform-lnrn.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform-lnrn.taskSchema": "",
+    "task.onboarding_streaming_transform_1-37br.internalSchema": "",
+    "task.onboarding_streaming_transform_1-37br.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform_1-37br.taskSchema": "",
+    "task.onboarding_streaming_transform_2-591_.internalSchema": "",
+    "task.onboarding_streaming_transform_2-591_.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform_2-591_.taskSchema": "",
+    "task.streaming_landing-po3e.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.streaming_landing-po3e.sourceConnection": "",
+    "task.streaming_landing-po3e:null$_$%.schemaPattern": ""
+  },
+  "idToNameMap": {
+    "onboarding_streaming_landing-lnrm": "Onboarding_Streaming_landing",
+    "onboarding_streaming_landing_1-37bq": "Onboarding_Streaming_landing_1",
+    "onboarding_streaming_landing_2-591-": "Onboarding_Streaming_landing_2",
+    "onboarding_streaming_transform-lnrn": "Onboarding_Streaming_Transform",
+    "onboarding_streaming_transform_1-37br": "Onboarding_Streaming_Transform_1",
+    "onboarding_streaming_transform_2-591_": "Onboarding_Streaming_Transform_2",
+    "streaming_landing-po3e": "Streaming landing"
+  },
+  "connectionProperties": {
+    "task.onboarding_streaming_landing-lnrm.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    },
+    "task.onboarding_streaming_landing_1-37bq.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    },
+    "task.onboarding_streaming_landing_2-591-.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    },
+    "task.streaming_landing-po3e.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    }
+  }
+}

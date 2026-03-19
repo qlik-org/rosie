@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.onboarding_streaming_landing_1-37bq.sourceConnection}}",
+  "includePatterns": [
+    {
+      "tablePattern": "my%",
+      "schemaPattern": "{{task.onboarding_streaming_landing_1-37bq:null$_$%.schemaPattern}}",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}

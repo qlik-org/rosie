@@ -1,0 +1,83 @@
+{
+  "id": "my_topic-lnro",
+  "name": "my_topic",
+  "type": "ICEBERG_TRANSFORM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "my_topic",
+      "name": "my_topic",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_streaming_landing-lnrm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "my_topic",
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "id",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "id"
+            ],
+            "hash": false
+          }
+        }
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": "",
+  "icebergTransformDatasetSettings": {
+    "generalSettings": {
+      "entityLoadSettings": {
+        "loadMode": "APPEND_ONLY",
+        "mergeSettings": {
+          "softDelete": false,
+          "hasHistory": false
+        }
+      },
+      "entityPartitionSettings": {
+        "partitionColumnSettings": []
+      },
+      "retentionSettings": {
+        "type": "NONE",
+        "days": 1
+      },
+      "sortSettings": {
+        "columns": []
+      },
+      "snapshotSettings": {
+        "expirationValue": 2,
+        "durationType": "HOUR"
+      },
+      "nestedFieldsHandling": "KEEP_NESTED_FIELDS"
+    }
+  }
+}
