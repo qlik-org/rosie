@@ -1,0 +1,25 @@
+{
+  "id": "question_bank_locales-iad4",
+  "name": "question_bank_locales",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "question_bank_locales",
+      "name": "question_bank_locales",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-iadz"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
