@@ -1,0 +1,6 @@
+{
+  "name": "Onboarding_Storage",
+  "id": "onboarding_storage-fluj",
+  "description": "",
+  "type": "ICEBERG_STORAGE"
+}

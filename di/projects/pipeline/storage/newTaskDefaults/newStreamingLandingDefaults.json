@@ -1,0 +1,14 @@
+{
+  "taskRuntime": {
+    "numberOfReadersTaskSettings": {
+      "numberOfReaders": 1,
+      "numberOfReadersType": "AUTOMATIC"
+    }
+  },
+  "folderRetentionSettings": {
+    "type": "NONE",
+    "daysOfRetention": 1
+  },
+  "folderLocationType": "DATA_ASSET_NAME",
+  "specificFolder": ""
+}

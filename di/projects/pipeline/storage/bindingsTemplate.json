@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task.onboarding_lake_landing-flui.sourceConnection": "",
+    "task.onboarding_lake_landing-flui.taskSchema": "",
+    "task.onboarding_lake_landing-flui:null$_$AUTONORTHWIND.schema": "",
+    "task.onboarding_storage-fluj.internalSchema": "",
+    "task.onboarding_storage-fluj.lakehouseCluster": "{{task-type.icebergStorage.lakehouseCluster}}",
+    "task.onboarding_storage-fluj.taskSchema": ""
+  },
+  "idToNameMap": {
+    "onboarding_lake_landing-flui": "Onboarding_Lake_landing",
+    "onboarding_storage-fluj": "Onboarding_Storage"
+  },
+  "connectionProperties": {
+    "task.onboarding_lake_landing-flui.sourceConnection": {
+      "type": "repsrc_oracle"
+    }
+  }
+}

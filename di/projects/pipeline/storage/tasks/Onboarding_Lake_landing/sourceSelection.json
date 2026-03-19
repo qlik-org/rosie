@@ -1,0 +1,19 @@
+{
+  "sourceConnection": "{{task.onboarding_lake_landing-flui.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Categories",
+      "schema": "{{task.onboarding_lake_landing-flui:null$_$AUTONORTHWIND.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$AUTONORTHWIND_categories"
+    },
+    {
+      "name": "Customers",
+      "schema": "{{task.onboarding_lake_landing-flui:null$_$AUTONORTHWIND.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$AUTONORTHWIND_customers"
+    }
+  ]
+}
