@@ -1,0 +1,17 @@
+{
+  "sourceConnection": "{{task.onboarding_streaming_landing_2-lnrb.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "shahar-gotshel-userdata-3sn2lxef3x7383h7",
+      "type": "NONE",
+      "sourceTableId": "shahar_gotshel_userdata_3sn2lxef3x7383h7"
+    },
+    {
+      "name": "shahar-multishards-userdata-3sn2lxef3x7383h7",
+      "type": "NONE",
+      "sourceTableId": "shahar_multishards_userdata_3sn2lxef3x7383h7"
+    }
+  ]
+}

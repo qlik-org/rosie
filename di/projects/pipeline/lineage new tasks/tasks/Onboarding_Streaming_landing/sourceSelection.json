@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.onboarding_streaming_landing-rpc3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "s3://shahar-gotshel-upsolver-integration-3sn2lxef3x7383h7/s3_source/schema_evolution_2/*",
+      "type": "NONE",
+      "sourceTableId": "0"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "taskRuntime": {},
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "folderLocationType": "DATA_ASSET_NAME",
+  "specificFolder": ""
+}

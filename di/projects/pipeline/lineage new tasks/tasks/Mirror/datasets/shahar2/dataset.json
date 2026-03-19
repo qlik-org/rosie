@@ -1,0 +1,25 @@
+{
+  "id": "shahar2-fluh",
+  "name": "shahar2",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "shahar_multishards_userdata_3sn2lxef3x7383h7-lnrf",
+      "name": "shahar2",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_streaming_transform_2-lnrc"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

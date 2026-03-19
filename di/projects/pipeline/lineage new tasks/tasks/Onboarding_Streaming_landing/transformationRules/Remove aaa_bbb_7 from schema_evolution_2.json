@@ -1,0 +1,35 @@
+{
+  "ordinal": 0,
+  "actionType": "DROP_COLUMN",
+  "scopeType": "NONE",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "schema_evolution_2",
+    "whereColumnName": "aaa_bbb_7",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "NONE",
+    "applyColumnDatatype": false,
+    "column": {
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 50,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Remove aaa_bbb_7 from schema_evolution_2",
+  "id": "remove_aaa_bbb_7_from_schema_evolution_2-44ti",
+  "description": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "shahar-flug",
+  "name": "shahar",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "shahar_gotshel_userdata_3sn2lxef3x7383h7-lnrd",
+      "name": "shahar",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_streaming_transform_2-lnrc"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

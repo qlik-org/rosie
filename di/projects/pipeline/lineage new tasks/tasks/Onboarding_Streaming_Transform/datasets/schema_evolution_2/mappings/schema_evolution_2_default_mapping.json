@@ -1,0 +1,230 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "schema_evolution_2",
+    "name": "schema_evolution_2",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_streaming_landing-rpc3"
+  },
+  "mappingFields": [
+    {
+      "columnId": "aaa_bbb_1",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_1}",
+        "alias": [
+          {
+            "name": "aaa_bbb_1",
+            "value": "aaa_bbb_1"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_2",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_2}",
+        "alias": [
+          {
+            "name": "aaa_bbb_2",
+            "value": "aaa_bbb_2"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_3",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_3}",
+        "alias": [
+          {
+            "name": "aaa_bbb_3",
+            "value": "aaa_bbb_3"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_4",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_4}",
+        "alias": [
+          {
+            "name": "aaa_bbb_4",
+            "value": "aaa_bbb_4"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root_struct2",
+      "expression": {
+        "expressionStatement": "${root_struct2}",
+        "alias": [
+          {
+            "name": "root_struct2",
+            "value": "root_struct2"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_6-ce21",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_6}",
+        "alias": [
+          {
+            "name": "aaa_bbb_6",
+            "value": "aaa_bbb_6"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_8-b16d",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_8}",
+        "alias": [
+          {
+            "name": "aaa_bbb_8",
+            "value": "aaa_bbb_8"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "aaa_bbb_9-9041",
+      "expression": {
+        "expressionStatement": "${aaa_bbb_9}",
+        "alias": [
+          {
+            "name": "aaa_bbb_9",
+            "value": "aaa_bbb_9"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "arr2_nested-e20a",
+      "expression": {
+        "expressionStatement": "${arr2_nested}",
+        "alias": [
+          {
+            "name": "arr2_nested",
+            "value": "arr2_nested"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "arr_of_arr_of_primitives-a50b",
+      "expression": {
+        "expressionStatement": "${arr_of_arr_of_primitives}",
+        "alias": [
+          {
+            "name": "arr_of_arr_of_primitives",
+            "value": "arr_of_arr_of_primitives"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "arr_of_primitives-ed3a",
+      "expression": {
+        "expressionStatement": "${arr_of_primitives}",
+        "alias": [
+          {
+            "name": "arr_of_primitives",
+            "value": "arr_of_primitives"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "arr_of_structs-180a",
+      "expression": {
+        "expressionStatement": "${arr_of_structs}",
+        "alias": [
+          {
+            "name": "arr_of_structs",
+            "value": "arr_of_structs"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root struct-3fdc",
+      "expression": {
+        "expressionStatement": "${\u0022root struct\u0022}",
+        "alias": [
+          {
+            "name": "\u0022root struct\u0022",
+            "value": "\u0022root struct\u0022"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root_primitive_bool-c0d3",
+      "expression": {
+        "expressionStatement": "${root_primitive_bool}",
+        "alias": [
+          {
+            "name": "root_primitive_bool",
+            "value": "root_primitive_bool"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root_primitive_double-b462",
+      "expression": {
+        "expressionStatement": "${root_primitive_double}",
+        "alias": [
+          {
+            "name": "root_primitive_double",
+            "value": "root_primitive_double"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root_primitive_long-8ebe",
+      "expression": {
+        "expressionStatement": "${root_primitive_long}",
+        "alias": [
+          {
+            "name": "root_primitive_long",
+            "value": "root_primitive_long"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "root_primitive_string-1559",
+      "expression": {
+        "expressionStatement": "${root_primitive_string}",
+        "alias": [
+          {
+            "name": "root_primitive_string",
+            "value": "root_primitive_string"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "struct_with_two_arrs-6467",
+      "expression": {
+        "expressionStatement": "${struct_with_two_arrs}",
+        "alias": [
+          {
+            "name": "struct_with_two_arrs",
+            "value": "struct_with_two_arrs"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "schema_evolution_2_default_mapping-rpc6",
+  "name": "schema_evolution_2_default_mapping",
+  "description": ""
+}

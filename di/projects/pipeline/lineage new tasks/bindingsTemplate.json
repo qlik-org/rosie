@@ -1,0 +1,46 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task.mirror-fluf.databaseName": "",
+    "task.mirror-fluf.internalSchema": "",
+    "task.mirror-fluf.snowflakeExternalVolume": "",
+    "task.mirror-fluf.snowflakeOpenCatalog": "",
+    "task.mirror-fluf.targetConnection": "",
+    "task.mirror-fluf.taskSchema": "",
+    "task.mirror-fluf.warehouseName": "",
+    "task.onboarding_streaming_landing-rpc3.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing-rpc3.sourceConnection": "",
+    "task.onboarding_streaming_landing_2-lnrb.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.onboarding_streaming_landing_2-lnrb.sourceConnection": "",
+    "task.onboarding_streaming_transform-rpc4.internalSchema": "",
+    "task.onboarding_streaming_transform-rpc4.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform-rpc4.taskSchema": "",
+    "task.onboarding_streaming_transform_2-lnrc.internalSchema": "",
+    "task.onboarding_streaming_transform_2-lnrc.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.onboarding_streaming_transform_2-lnrc.taskSchema": ""
+  },
+  "idToNameMap": {
+    "mirror-fluf": "Mirror",
+    "onboarding_streaming_landing-rpc3": "Onboarding_Streaming_landing",
+    "onboarding_streaming_landing_2-lnrb": "Onboarding_Streaming_landing_2",
+    "onboarding_streaming_transform-rpc4": "Onboarding_Streaming_Transform",
+    "onboarding_streaming_transform_2-lnrc": "Onboarding_Streaming_Transform_2"
+  },
+  "connectionProperties": {
+    "task.mirror-fluf.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.onboarding_streaming_landing-rpc3.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.onboarding_streaming_landing_2-lnrb.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-kinesis"
+    }
+  }
+}

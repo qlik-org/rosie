@@ -1,0 +1,516 @@
+{
+  "id": "schema_evolution_2-rpc5",
+  "name": "schema_evolution_2",
+  "type": "ICEBERG_TRANSFORM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "schema_evolution_2",
+      "name": "schema_evolution_2",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_streaming_landing-rpc3"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "schema_evolution_2",
+    "columns": [
+      {
+        "name": "aaa_bbb_1",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_1",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_1"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_2",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_2",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_2"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_3",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_3",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_3"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_4",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_4",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_4"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root_struct2",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022shaharInner2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}},{\u0022name\u0022:\u0022sub_root_struct2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022f1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Boolean\u0022}},{\u0022name\u0022:\u0022f2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Boolean\u0022}}]}},{\u0022name\u0022:\u0022table\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022white space\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}",
+          "originalTypeFull": ""
+        },
+        "id": "root_struct2",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root_struct2"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_6",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_6-ce21",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_6"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_8",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_8-b16d",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_8"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "aaa_bbb_9",
+        "ordinal": 8,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "aaa_bbb_9-9041",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "aaa_bbb_9"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "arr2_nested",
+        "ordinal": 9,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "ARRAY",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022arr2_nested1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022arr2_nested2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}}",
+          "originalTypeFull": ""
+        },
+        "id": "arr2_nested-e20a",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "arr2_nested"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "arr_of_arr_of_primitives",
+        "ordinal": 10,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "ARRAY",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}}}",
+          "originalTypeFull": ""
+        },
+        "id": "arr_of_arr_of_primitives-a50b",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "arr_of_arr_of_primitives"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "arr_of_primitives",
+        "ordinal": 11,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "ARRAY",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}",
+          "originalTypeFull": ""
+        },
+        "id": "arr_of_primitives-ed3a",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "arr_of_primitives"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "arr_of_structs",
+        "ordinal": 12,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "ARRAY",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022first_name\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022last_name\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}",
+          "originalTypeFull": ""
+        },
+        "id": "arr_of_structs-180a",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "arr_of_structs"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root struct",
+        "ordinal": 13,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022sub_arr_c\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}},{\u0022name\u0022:\u0022sub_arr_nested\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022x\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}},{\u0022name\u0022:\u0022y\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Boolean\u0022}},{\u0022name\u0022:\u0022z\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}},{\u0022name\u0022:\u0022sub_field_a\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Boolean\u0022}},{\u0022name\u0022:\u0022sub_field_b\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022table\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022white space\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022table\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022s.1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}}]}}]}}}]}",
+          "originalTypeFull": ""
+        },
+        "id": "root struct-3fdc",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root struct"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root_primitive_bool",
+        "ordinal": 14,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "BOOLEAN",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "root_primitive_bool-c0d3",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root_primitive_bool"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root_primitive_double",
+        "ordinal": 15,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "REAL8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "root_primitive_double-b462",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root_primitive_double"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root_primitive_long",
+        "ordinal": 16,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT8",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "root_primitive_long-8ebe",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root_primitive_long"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "root_primitive_string",
+        "ordinal": 17,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 2147483647,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "root_primitive_string-1559",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "root_primitive_string"
+            ],
+            "hash": false
+          }
+        }
+      },
+      {
+        "name": "struct_with_two_arrs",
+        "ordinal": 18,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRUCT",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022arr_nested\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Struct\u0022,\u0022fields\u0022:[{\u0022name\u0022:\u0022arr_nested1\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022arr_nested2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022QlikString\u0022,\u0022length\u0022:2147483647}},{\u0022name\u0022:\u0022arr_nested3\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Array\u0022,\u0022elementType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}}}]}}},{\u0022name\u0022:\u0022s2\u0022,\u0022dataType\u0022:{\u0022clazz\u0022:\u0022Int8\u0022}}]}",
+          "originalTypeFull": ""
+        },
+        "id": "struct_with_two_arrs-6467",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false,
+          "streamingProperties": {
+            "nesting": "TOPLEVEL",
+            "childrenIds": [
+              "struct_with_two_arrs"
+            ],
+            "hash": false
+          }
+        }
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "virtualDataset": false,
+  "description": "",
+  "icebergTransformDatasetSettings": {
+    "generalSettings": {
+      "entityLoadSettings": {
+        "loadMode": "APPEND_ONLY",
+        "mergeSettings": {
+          "softDelete": false,
+          "hasHistory": false
+        }
+      },
+      "entityPartitionSettings": {
+        "partitionColumnSettings": []
+      },
+      "retentionSettings": {
+        "type": "NONE",
+        "days": 1
+      },
+      "sortSettings": {
+        "columns": []
+      },
+      "snapshotSettings": {
+        "expirationValue": 2,
+        "durationType": "HOUR"
+      },
+      "nestedFieldsHandling": "KEEP_NESTED_FIELDS"
+    },
+    "metadataUpdatedTo": 1773921660000
+  }
+}
