@@ -1,0 +1,30 @@
+{
+  "id": "employees_flow-cmut",
+  "name": "employees_flow",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "employees-cmuh",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-cmue"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, employees_flow)}}",
+    "targetId": "9ef4153f-81ee-4d62-9751-a673f22db187",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

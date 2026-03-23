@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "employees_flow-cmut",
+    "name": "employees_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "employees_flow-cmut",
+    "name": "employees_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "EmployeesFlow_EmployeesFlow",
+  "description": "",
+  "id": "employeesflow_employeesflow-cmu4"
+}

@@ -1,0 +1,240 @@
+{
+  "name": "employees_flow",
+  "description": "non m ",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-cmun"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "fdce2d43-efa4-416a-85cb-503ae6982dbe",
+        "label": "Employees",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "97fcba17-ba2b-4697-b279-d3d2fd821142",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-cmue",
+              "entityId": "employees-cmuh"
+            },
+            "configuration": {
+              "name": "Employees"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "9ef4153f-81ee-4d62-9751-a673f22db187",
+        "label": "employees_flow",
+        "graphical": {
+          "position": {
+            "x": 600,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "a6fd6576-76f6-48bc-b27e-37d15ba4e839",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "employees_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "EmployeeID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "LastName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "FirstName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Title",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "TitleOfCourtesy",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "BirthDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HireDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePhone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Extension",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Photo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Notes",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReportsTo",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PhotoPath",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "2690a02f-6be9-47e2-9716-0f8a6ae00fab",
+        "label": "Filter 1",
+        "graphical": {
+          "position": {
+            "x": 320,
+            "y": 40
+          },
+          "icon": "filter-row-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "1bafa711-dcc2-41df-a0ac-275df5138e0a",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "51d373f4-34bf-4ef4-81e2-a4a94395dda4",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "b566333a-6490-4be0-ab49-7e6be7166484",
+              "type": "REJECT"
+            }
+          ]
+        },
+        "component": {
+          "type": "filter",
+          "label": "Filter",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmlsdGVy",
+            "configuration": {
+              "logicalOpType": "ALL",
+              "filters": [
+                {
+                  "columnName": "EmployeeID",
+                  "function": "EMPTY",
+                  "operator": "LOWER",
+                  "compareWith": "VALUE",
+                  "value": "30",
+                  "columnToCompareWith": "",
+                  "$columnName_name": "EmployeeID",
+                  "$operator_name": "\u003C"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "reactflow__edge-fdce2d43-efa4-416a-85cb-503ae6982dbe97fcba17-ba2b-4697-b279-d3d2fd821142-2690a02f-6be9-47e2-9716-0f8a6ae00fab1bafa711-dcc2-41df-a0ac-275df5138e0a",
+        "sourceHandle": "97fcba17-ba2b-4697-b279-d3d2fd821142",
+        "targetHandle": "1bafa711-dcc2-41df-a0ac-275df5138e0a"
+      },
+      {
+        "id": "cfa6dc4c-12f0-4227-9aeb-27f2a9a9b297",
+        "sourceHandle": "51d373f4-34bf-4ef4-81e2-a4a94395dda4",
+        "targetHandle": "a6fd6576-76f6-48bc-b27e-37d15ba4e839"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

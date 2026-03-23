@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details-cmuu",
+    "name": "Order_Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "orders-cmux",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order_Details_Orders_relation",
+  "description": "",
+  "id": "order_details_orders_relation-cmu0"
+}

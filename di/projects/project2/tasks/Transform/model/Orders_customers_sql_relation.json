@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-cmux",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "customers_sql-cmuq",
+    "name": "customers_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-cmun"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_customers_sql_relation",
+  "description": "",
+  "id": "orders_customers_sql_relation-cmu1"
+}
