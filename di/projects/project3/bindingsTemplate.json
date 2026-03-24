@@ -1,0 +1,32 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_land-zf25.sourceConnection": "",
+    "task.lake_land-zf25.targetConnection": "",
+    "task.rep-zf24.sourceConnection": "",
+    "task.rep-zf24.targetConnection": "",
+    "task.rep-zf24.targetStorageConnection": "",
+    "task.rep-zf24:null$_$dbo.schema": ""
+  },
+  "idToNameMap": {
+    "lake_land-zf25": "Lake_land",
+    "rep-zf24": "Rep"
+  },
+  "connectionProperties": {
+    "task.lake_land-zf25.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.lake_land-zf25.targetConnection": {
+      "type": "reptgt_qdigooglecloudstorage"
+    },
+    "task.rep-zf24.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.rep-zf24.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}
