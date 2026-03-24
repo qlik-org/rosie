@@ -1,0 +1,12 @@
+{
+  "sourceConnection": "{{task.fbkm-op18.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "tests",
+      "type": "DIRECTORY",
+      "sourceTableId": "tests"
+    }
+  ]
+}
