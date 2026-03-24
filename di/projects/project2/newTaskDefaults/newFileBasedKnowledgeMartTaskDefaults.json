@@ -16,16 +16,16 @@
   },
   "taskRunSchedule": {
     "runInterval": 15,
-    "schedulingType": "TIME_BASED"
+    "schedulingType": "NONE"
   },
   "vectorDbTargetType": "{{task-type.fileBasedKnowledgeMart.vectorDbTargetType}}",
   "vectorDbConnection": "{{task-type.fileBasedKnowledgeMart.vectorDbConnection}}",
   "llmConnection": "{{task-type.fileBasedKnowledgeMart.llmConnection}}",
   "llmSettings": {
-    "kindId": "llm:SnowflakeCortex@1.0.0",
+    "kindId": "llm:OpenAI@1.0.0",
     "parameters": {
-      "embedding_model": "nv-embed-qa-4",
-      "completion_model": "mistral-7b"
+      "embedding_model": "text-embedding-3-large",
+      "completion_model": "gpt-4o"
     }
   },
   "fullLoadOnly": false

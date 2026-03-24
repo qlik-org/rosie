@@ -11,10 +11,10 @@
   },
   "taskRunSchedule": {
     "runInterval": 15,
-    "schedulingType": "EVENT_BASED"
+    "schedulingType": "NONE"
   },
   "catalogIntegration": {
-    "publishDatasets": true
+    "publishDatasets": false
   },
   "databaseSelection": {
     "databaseName": "{{task-type.datamart.databaseName}}",

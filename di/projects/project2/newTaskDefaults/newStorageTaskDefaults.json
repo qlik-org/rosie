@@ -10,11 +10,11 @@
     }
   },
   "taskRunSchedule": {
-    "runInterval": 15,
+    "runInterval": 30,
     "schedulingType": "TIME_BASED"
   },
   "catalogIntegration": {
-    "publishDatasets": false
+    "publishDatasets": true
   },
   "databaseSelection": {
     "databaseName": "{{task-type.storage.databaseName}}",
@@ -30,5 +30,5 @@
       "snowflakeOpenCatalog": ""
     }
   },
-  "viewType": "DEFAULT"
+  "viewType": "SECURE_VIEW"
 }

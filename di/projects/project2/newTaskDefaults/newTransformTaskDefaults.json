@@ -11,8 +11,8 @@
     }
   },
   "taskRunSchedule": {
-    "runInterval": 15,
-    "schedulingType": "EVENT_BASED"
+    "runInterval": 45,
+    "schedulingType": "TIME_BASED"
   },
   "catalogIntegration": {
     "publishDatasets": false
@@ -31,5 +31,5 @@
       "snowflakeOpenCatalog": ""
     }
   },
-  "viewType": "DEFAULT"
+  "viewType": "SECURE_VIEW"
 }

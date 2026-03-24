@@ -1,13 +1,13 @@
 {
   "artifactsNaming": {
-    "suffixLiveViews": "__live",
-    "suffixChangesView": "__changes",
-    "suffixCurrentView": "",
-    "suffixHistoryViews": "__history",
-    "suffixLiveHistoryViews": "__live_history",
-    "suffixInternalSchema": "__internal",
+    "suffixLiveViews": "__live_2",
+    "suffixChangesView": "__changes_3",
+    "suffixCurrentView": "__curr_4",
+    "suffixHistoryViews": "__history_5",
+    "suffixLiveHistoryViews": "__live_history_6",
+    "suffixInternalSchema": "__internal_1",
     "prefixHeaderColumns": "hdr__",
     "prefixSchema": "{{project.current.prefixSchema}}",
-    "defaultSchemaNameOption": "LOWER_CASE"
+    "defaultSchemaNameOption": "NO_FURTHER_PROCESSING"
   }
 }
