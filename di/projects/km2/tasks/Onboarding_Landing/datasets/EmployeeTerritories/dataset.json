@@ -1,0 +1,17 @@
+{
+  "id": "employeeterritories",
+  "name": "EmployeeTerritories",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_employeeterritories",
+      "name": "EmployeeTerritories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-glim",
+      "schema": "{{task.onboarding_landing-glim:null$_$dbo.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

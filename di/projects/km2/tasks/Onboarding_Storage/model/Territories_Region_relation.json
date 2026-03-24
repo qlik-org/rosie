@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "territories-gliz",
+    "name": "Territories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-glin"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "region-gliw",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-glin"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_Region_relation",
+  "description": "",
+  "id": "territories_region_relation-fpla"
+}

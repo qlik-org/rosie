@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details-gliz",
+    "name": "Order_Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-fplt"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "products-gli1",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-fplt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ProductID",
+      "targetColumn": "ProductID",
+      "sourceColumnId": "productid",
+      "targetColumnId": "productid"
+    }
+  ],
+  "name": "Order_Details_Products_relation",
+  "description": "",
+  "id": "order_details_products_relation-gli8"
+}

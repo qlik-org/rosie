@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "employees-glix",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-fplt"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "employees-glix",
+    "name": "Employees",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage-fplt"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ReportsTo",
+      "targetColumn": "EmployeeID",
+      "sourceColumnId": "reportsto",
+      "targetColumnId": "employeeid"
+    }
+  ],
+  "name": "Employees_Employees",
+  "description": "",
+  "id": "employees_employees-fplx"
+}
