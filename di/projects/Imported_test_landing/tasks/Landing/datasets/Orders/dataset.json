@@ -1,0 +1,23 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-misc",
+      "schema": "{{task.landing-misc:null$_$dbo.schema}}"
+    }
+  ],
+  "landingDatasetSettings": {
+    "loadOrder": "HIGHER",
+    "loadParallelSettings": {
+      "loadParallel": "NONE"
+    }
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "customers",
+  "name": "Customers",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_customers",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-misc",
+      "schema": "{{task.landing-misc:null$_$dbo.schema}}"
+    }
+  ],
+  "landingDatasetSettings": {
+    "loadOrder": "LOWER",
+    "loadParallelSettings": {
+      "loadParallel": "SEGMENTATION",
+      "segmentationSettings": {
+        "columnNames": [
+          "CustomerID",
+          "CompanyName",
+          "ContactName"
+        ],
+        "splitPoints": [
+          {
+            "values": [
+              "0-100",
+              "\u003E\u0027a\u0027",
+              "=!NULL"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "virtualDataset": false,
+  "description": ""
+}

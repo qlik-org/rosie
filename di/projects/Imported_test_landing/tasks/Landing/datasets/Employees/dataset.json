@@ -1,0 +1,35 @@
+{
+  "id": "employees",
+  "name": "Employees",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$replicate$dbo_employees",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-misc",
+      "schema": "{{task.landing-misc:null$_$dbo.schema}}"
+    }
+  ],
+  "landingDatasetSettings": {
+    "loadOrder": "NORMAL",
+    "loadParallelSettings": {
+      "loadParallel": "SEGMENTATION",
+      "segmentationSettings": {
+        "columnNames": [
+          "EmployeeID"
+        ],
+        "splitPoints": [
+          {
+            "values": [
+              "30"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "virtualDataset": false,
+  "description": ""
+}
