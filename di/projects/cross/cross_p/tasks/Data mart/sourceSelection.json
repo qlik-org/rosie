@@ -1,0 +1,62 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.barb$_$pipeline_p (pipeline_p_branch1).projectId}}",
+      "sourceTask": "transform-engv",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-engy"
+    },
+    {
+      "sourceProject": "{{project.barb$_$pipeline_p (pipeline_p_branch1).projectId}}",
+      "sourceTask": "transform-engv",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-engz"
+    },
+    {
+      "sourceProject": "{{project.barb$_$pipeline_p (pipeline_p_branch1).projectId}}",
+      "sourceTask": "transform-engv",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-enga"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+      "sourceTask": "onboarding_storage-cmue",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-cmug"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+      "sourceTask": "onboarding_storage-cmue",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-cmuh"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+      "sourceTask": "onboarding_storage-cmue",
+      "name": "Order_Details",
+      "type": "NONE",
+      "sourceTableId": "order_details-cmui"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+      "sourceTask": "onboarding_storage-cmue",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-cmuj"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+      "sourceTask": "onboarding_storage-cmue",
+      "name": "Shippers",
+      "type": "NONE",
+      "sourceTableId": "shippers-cmuk"
+    }
+  ]
+}

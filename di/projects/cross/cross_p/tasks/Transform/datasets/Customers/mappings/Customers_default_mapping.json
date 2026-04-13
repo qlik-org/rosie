@@ -1,0 +1,62 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "customers-cmug",
+    "name": "Customers",
+    "projectId": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+    "taskId": "onboarding_storage-cmue"
+  },
+  "mappingFields": [
+    {
+      "columnId": "customerid",
+      "expression": {
+        "expressionStatement": "${CustomerID}",
+        "alias": [
+          {
+            "name": "CustomerID",
+            "value": "CustomerID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contactname",
+      "expression": {
+        "expressionStatement": "${ContactName}",
+        "alias": [
+          {
+            "name": "ContactName",
+            "value": "ContactName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contacttitle",
+      "expression": {
+        "expressionStatement": "${ContactTitle}",
+        "alias": [
+          {
+            "name": "ContactTitle",
+            "value": "ContactTitle"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "customers_default_mapping-engz",
+  "name": "Customers_default_mapping",
+  "description": ""
+}
