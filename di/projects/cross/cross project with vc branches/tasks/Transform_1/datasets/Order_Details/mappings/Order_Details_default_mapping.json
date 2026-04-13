@@ -1,0 +1,74 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "order_details-cmuu",
+    "name": "Order_Details",
+    "projectId": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+    "taskId": "transform-cmun"
+  },
+  "mappingFields": [
+    {
+      "columnId": "orderid",
+      "expression": {
+        "expressionStatement": "${OrderID}",
+        "alias": [
+          {
+            "name": "OrderID",
+            "value": "OrderID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "productid",
+      "expression": {
+        "expressionStatement": "${ProductID}",
+        "alias": [
+          {
+            "name": "ProductID",
+            "value": "ProductID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "unitprice",
+      "expression": {
+        "expressionStatement": "${UnitPrice}",
+        "alias": [
+          {
+            "name": "UnitPrice",
+            "value": "UnitPrice"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "quantity",
+      "expression": {
+        "expressionStatement": "${Quantity}",
+        "alias": [
+          {
+            "name": "Quantity",
+            "value": "Quantity"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "discount",
+      "expression": {
+        "expressionStatement": "${Discount}",
+        "alias": [
+          {
+            "name": "Discount",
+            "value": "Discount"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "order_details_default_mapping-fw2a",
+  "name": "Order_Details_default_mapping",
+  "description": ""
+}

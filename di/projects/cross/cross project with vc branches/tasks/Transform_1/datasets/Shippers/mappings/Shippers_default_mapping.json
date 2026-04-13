@@ -1,0 +1,50 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "shippers-cmuw",
+    "name": "Shippers",
+    "projectId": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+    "taskId": "transform-cmun"
+  },
+  "mappingFields": [
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shippers_default_mapping-fw18",
+  "name": "Shippers_default_mapping",
+  "description": ""
+}

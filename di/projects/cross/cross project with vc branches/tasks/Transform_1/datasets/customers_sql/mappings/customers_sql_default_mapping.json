@@ -1,0 +1,62 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "customers_sql-cmuq",
+    "name": "customers_sql",
+    "projectId": "{{project.rosie$_$project2 (project2_branch1).projectId}}",
+    "taskId": "transform-cmun"
+  },
+  "mappingFields": [
+    {
+      "columnId": "customerid",
+      "expression": {
+        "expressionStatement": "${CustomerID}",
+        "alias": [
+          {
+            "name": "CustomerID",
+            "value": "CustomerID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contactname",
+      "expression": {
+        "expressionStatement": "${ContactName}",
+        "alias": [
+          {
+            "name": "ContactName",
+            "value": "ContactName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "contacttitle",
+      "expression": {
+        "expressionStatement": "${ContactTitle}",
+        "alias": [
+          {
+            "name": "ContactTitle",
+            "value": "ContactTitle"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "customers_sql_default_mapping-fw2c",
+  "name": "customers_sql_default_mapping",
+  "description": ""
+}
