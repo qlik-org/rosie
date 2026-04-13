@@ -1,0 +1,13 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.barb$_$cross_p.projectId}}",
+      "sourceTask": "transform-engm",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-engy"
+    }
+  ]
+}
