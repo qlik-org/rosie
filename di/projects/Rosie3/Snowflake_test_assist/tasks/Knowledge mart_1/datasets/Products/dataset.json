@@ -17,7 +17,8 @@
     "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
     "hasStandardViewsWithHeaders": "ON",
-    "watermarkIncrementalSettings": "INHERIT"
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
   },
   "tableDef": {
     "name": "Products",
@@ -37,8 +38,7 @@
         "id": "productid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true,
-          "nesting": "NONE"
+          "documentMetadata": true
         }
       },
       {
@@ -56,8 +56,7 @@
         "id": "productname",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true,
-          "nesting": "NONE"
+          "documentMetadata": true
         }
       },
       {
@@ -75,8 +74,7 @@
         "id": "supplierid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -94,8 +92,7 @@
         "id": "categoryid",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -113,8 +110,7 @@
         "id": "quantityperunit",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -132,8 +128,7 @@
         "id": "unitprice",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -151,8 +146,7 @@
         "id": "unitsinstock",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": true,
-          "nesting": "NONE"
+          "documentMetadata": true
         }
       },
       {
@@ -170,8 +164,7 @@
         "id": "unitsonorder",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -189,8 +182,7 @@
         "id": "reorderlevel",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       },
       {
@@ -208,8 +200,7 @@
         "id": "discontinued",
         "flags": "NONE",
         "properties": {
-          "documentMetadata": false,
-          "nesting": "NONE"
+          "documentMetadata": false
         }
       }
     ],
@@ -222,10 +213,10 @@
     "type": "TYPE1",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "products-xgek",
+      "datasetId": "products-xgek",
       "name": "Products",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "onboarding_storage-xgeh"
+      "taskId": "onboarding_storage-xgeh"
     },
     "entityRelationshipPath": [],
     "mapping": {

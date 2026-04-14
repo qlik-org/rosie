@@ -2,7 +2,8 @@
   "enabled": false,
   "schedulingType": "EVENT_BASED",
   "timeBasedScheduling": {
-    "schedule": []
+    "schedule": [],
+    "fullloadInterval": 0
   },
   "eventBasedScheduling": {
     "eventSchedulingType": "ANY_INPUT_TASK",

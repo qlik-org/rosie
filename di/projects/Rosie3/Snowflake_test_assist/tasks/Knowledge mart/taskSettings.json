@@ -14,7 +14,7 @@
     "artifactsPrefix": ""
   },
   "taskRuntime": {
-    "bulkSize": "100",
+    "bulkSize": 100,
     "maxNumberOfRecords": "{{task.knowledge_mart-xges.maxNumberOfRecords}}",
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {

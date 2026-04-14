@@ -6,7 +6,8 @@
       "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
     ],
     "startDateTime": "2025-10-15T09:01:35.585Z",
-    "timezone": "Etc/UTC"
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
   },
   "eventBasedScheduling": {
     "eventSchedulingType": "ANY_INPUT_TASK",

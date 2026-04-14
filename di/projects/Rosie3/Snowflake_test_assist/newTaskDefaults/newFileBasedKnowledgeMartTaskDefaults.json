@@ -1,7 +1,5 @@
 {
   "taskRuntime": {
-    "tableUpdateInterval": 0,
-    "tableUpdateConcurrency": 0,
     "warehouseSelection": {
       "warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
       "selectionMethod": "{{task-type.fileBasedKnowledgeMart.warehouseSelectionMethod}}"
@@ -27,6 +25,5 @@
       "embedding_model": "nv-embed-qa-4",
       "completion_model": "mistral-7b"
     }
-  },
-  "fullLoadOnly": false
+  }
 }
