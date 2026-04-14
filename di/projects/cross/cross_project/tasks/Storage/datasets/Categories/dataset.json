@@ -1,0 +1,25 @@
+{
+  "id": "categories-i3qk",
+  "name": "Categories",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "categories",
+      "name": "Categories",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "landing-npyy"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
