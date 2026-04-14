@@ -1,0 +1,35 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-8ti2",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$source_project (source_project_branch1).projectId}}",
+      "sourceTask": "transform-8tja",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-edvh"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$source_project (source_project_branch1).projectId}}",
+      "sourceTask": "transform-8tja",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-edvj"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$source_project (source_project_branch1).projectId}}",
+      "sourceTask": "transform-8tja",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-edvl"
+    }
+  ]
+}

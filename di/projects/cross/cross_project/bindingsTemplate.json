@@ -4,6 +4,7 @@
     "platformConnection": "",
     "projectName": "",
     "project.current.prefixSchema": "",
+    "project.rosie$_$source_project (source_project_branch1).projectId": "",
     "project.rosie$_$source_project.projectId": "",
     "task-type.datamart.databaseName": "",
     "task-type.datamart.databaseSelectionMethod": "",
@@ -52,12 +53,17 @@
     "task.transform-edvn.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-edvn.internalSchema": "",
     "task.transform-edvn.taskSchema": "",
-    "task.transform-edvn.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.transform-edvn.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_1-vx6g.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_1-vx6g.internalSchema": "",
+    "task.transform_1-vx6g.taskSchema": "",
+    "task.transform_1-vx6g.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "landing-npyy": "Landing",
     "storage-8ti2": "Storage",
-    "transform-edvn": "Transform"
+    "transform-edvn": "Transform",
+    "transform_1-vx6g": "Transform_1"
   },
   "connectionProperties": {
     "task.landing-npyy.sourceConnection": {
