@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2026-04-20T08:16:03.222Z",
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-q7ff",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}
