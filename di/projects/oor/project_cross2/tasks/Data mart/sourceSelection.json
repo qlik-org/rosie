@@ -1,0 +1,42 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "transform-mxxe",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-mxwy"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-mxwz"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-mxwa"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Shippers",
+      "type": "NONE",
+      "sourceTableId": "shippers-mxwb"
+    }
+  ]
+}

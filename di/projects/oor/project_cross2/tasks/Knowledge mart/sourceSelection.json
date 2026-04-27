@@ -1,0 +1,55 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-mxw_",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories-mxxb"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-mxw_",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products-mxxc"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "storage-mxw_",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers-mxxd"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers-mxwy"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees-mxwz"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders-mxwa"
+    },
+    {
+      "sourceProject": "{{project.rosie$_$project_s2 (project_s2_branch1).projectId}}",
+      "sourceTask": "storage-mxww",
+      "name": "Shippers",
+      "type": "NONE",
+      "sourceTableId": "shippers-mxwb"
+    }
+  ]
+}
