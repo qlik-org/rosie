@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-xvqr
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-xvqr.internalSchema}}'
+    taskSchema: '{{task.storage-xvqr.taskSchema}}'
+    databaseName: '{{task.storage-xvqr.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-xvqr.warehouseName}}'

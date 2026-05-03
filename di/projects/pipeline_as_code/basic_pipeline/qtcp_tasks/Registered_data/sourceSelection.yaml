@@ -1,0 +1,16 @@
+explicitlySelected:
+  - database: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.database}}'
+    name: Customers
+    schema: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.schema}}'
+    type: TABLE
+    sourceTableId: $registered_data$basic_pipe1_landing_customers
+  - database: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.database}}'
+    name: Employees
+    schema: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.schema}}'
+    type: TABLE
+    sourceTableId: $registered_data$basic_pipe1_landing_employees
+  - database: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.database}}'
+    name: Orders
+    schema: '{{task.registered_data-xvqx:ROSIE$_$basic_pipe1_landing.schema}}'
+    type: TABLE
+    sourceTableId: $registered_data$basic_pipe1_landing_orders

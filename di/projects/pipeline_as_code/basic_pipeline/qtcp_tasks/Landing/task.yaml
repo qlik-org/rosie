@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-xvqq
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-xvqq.taskSchema}}'
+      database: '{{task.landing-xvqq.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: transform-xvqa
+    tablePattern: '%'
+    schemaPattern: '%'

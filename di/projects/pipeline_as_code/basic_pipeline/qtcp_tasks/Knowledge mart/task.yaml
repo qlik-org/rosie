@@ -1,0 +1,23 @@
+properties:
+  name: Knowledge mart
+  id: knowledge_mart-xvqq
+  type: KNOWLEDGE_MART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.knowledge_mart-xvqq.internalSchema}}'
+    taskSchema: '{{task.knowledge_mart-xvqq.taskSchema}}'
+    databaseName: '{{task.knowledge_mart-xvqq.databaseName}}'
+  taskRuntime:
+    maxNumberOfRecords: '{{task.knowledge_mart-xvqq.maxNumberOfRecords}}'
+    warehouseSelection:
+      warehouseName: '{{task.knowledge_mart-xvqq.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.knowledge_mart-xvqq.databricksVectorSearchEndpoint}}'
+    schema: '{{task.knowledge_mart-xvqq.indexSchema}}'
+    name: '{{task.knowledge_mart-xvqq.indexName}}'
+    database: '{{task.knowledge_mart-xvqq.indexDatabase}}'
+  llmSettings:
+    kindId: llm:snowflake
+    parameters:
+      embedding_model: nv-embed-qa-4
+      completion_model: mistral-7b

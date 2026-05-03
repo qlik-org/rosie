@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-xvqa
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-xvqa.internalSchema}}'
+    taskSchema: '{{task.transform-xvqa.taskSchema}}'
+    databaseName: '{{task.transform-xvqa.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-xvqa.warehouseName}}'

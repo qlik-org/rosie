@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: storage-xvqr
+    tablePattern: '%'
+    schemaPattern: '%'

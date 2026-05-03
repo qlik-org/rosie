@@ -1,0 +1,9 @@
+properties:
+  name: Registered_data
+  id: registered_data-xvqx
+  type: REGISTERED_DATA
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data-xvqx.internalSchema}}'
+    taskSchema: '{{task.registered_data-xvqx.taskSchema}}'
+    databaseName: '{{task.registered_data-xvqx.databaseName}}'

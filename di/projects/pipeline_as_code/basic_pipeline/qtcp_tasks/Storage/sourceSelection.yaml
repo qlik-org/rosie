@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: landing-xvqq
+    tablePattern: '%'
+    schemaPattern: '%'

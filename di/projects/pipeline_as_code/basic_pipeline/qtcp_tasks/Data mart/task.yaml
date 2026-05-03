@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-xvqk
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-xvqk.internalSchema}}'
+    taskSchema: '{{task.data_mart-xvqk.taskSchema}}'
+    databaseName: '{{task.data_mart-xvqk.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-xvqk.warehouseName}}'
