@@ -3,12 +3,21 @@
     "cloudStagingConnection": "",
     "platformConnection": "",
     "projectName": "",
+    "task.lake_landing-nf70.sourceConnection": "",
+    "task.lake_landing-nf70.targetConnection": "",
+    "task.lake_landing-nf70:null$_$dbo.schema": "",
     "task.repli_1-nf7z.sourceConnection": "",
     "task.repli_1-nf7z.targetConnection": "",
     "task.repli_1-nf7z.targetStorageConnection": "",
     "task.repli_1-nf7z:null$_$dbo.schema": ""
   },
   "connectionProperties": {
+    "task.lake_landing-nf70.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing-nf70.targetConnection": {
+      "type": "reptgt_qdigooglecloudstorage"
+    },
     "task.repli_1-nf7z.sourceConnection": {
       "type": "repsrc_mssql"
     },
@@ -17,6 +26,10 @@
     }
   },
   "taskProperties": {
+    "lake_landing-nf70": {
+      "type": "LAKE_LANDING",
+      "name": "Lake_landing"
+    },
     "repli_1-nf7z": {
       "type": "REPLICATION",
       "name": "Repli_1"
