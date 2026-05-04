@@ -1,0 +1,14 @@
+sourceConnection: '{{task.repli_1-nf7z.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.repli_1-nf7z:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_categories
+  - name: Products
+    schema: '{{task.repli_1-nf7z:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_products
+  - name: Suppliers
+    schema: '{{task.repli_1-nf7z:null$_$dbo.schema}}'
+    type: TABLE
+    sourceTableId: $replicate$dbo_suppliers

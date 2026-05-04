@@ -1,0 +1,14 @@
+properties:
+  name: Repli_1
+  id: repli_1-nf7z
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.repli_1-nf7z.targetConnection}}'
+    targetStorageConnection: '{{task.repli_1-nf7z.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-05-04T06:39:40.2010000Z
