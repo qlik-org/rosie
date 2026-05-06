@@ -1,4 +1,0 @@
-includePatterns:
-  - sourceTask: registered_data-xvqx
-    tablePattern: '%'
-    schemaPattern: '%'
