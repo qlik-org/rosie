@@ -1,0 +1,18 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  space: 'ref{project.current.spaceId}'
+  type: DATA_PIPELINE
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+settings:
+  artifactsNaming:
+    suffixLiveViews: __liveB
+    suffixChangesView: __changesC
+    suffixCurrentView: _D
+    suffixHistoryViews: __historyE
+    suffixLiveHistoryViews: __live_historyF
+    suffixInternalSchema: __internalA
+    prefixSchema: '{{project.current.prefixSchema}}'
+    defaultSchemaNameOption: UPPER_CASE

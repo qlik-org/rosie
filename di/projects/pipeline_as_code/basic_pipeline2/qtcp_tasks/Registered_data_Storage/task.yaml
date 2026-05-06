@@ -1,0 +1,26 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-xvqy
+  type: STORAGE
+settings:
+  artifactsSettings:
+    liveViewsEnabled: true
+    historyEnabled: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-xvqy.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-xvqy.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-xvqy.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-xvqy.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: false
+  tableTypeSettings:
+    tableType: REGULAR
+    icebergSettings:
+      snowflakeExternalVolume: ''
+      folderLocationType: DATA_ASSET_NAME
+      specificFolder: ''
+      enableOpenCatalogSync: false
+      snowflakeOpenCatalog: ''
+  viewType: DEFAULT
