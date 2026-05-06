@@ -1,0 +1,19 @@
+{
+  "taskRuntime": {
+    "tableLoadInParallel": 7,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.landing.warehouseName}}",
+      "selectionMethod": "{{task-type.landing.warehouseSelectionMethod}}"
+    }
+  },
+  "proxySettings": {
+    "proxyOdbc": true,
+    "proxyStorage": false
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.landing.databaseName}}",
+    "selectionMethod": "{{task-type.landing.databaseSelectionMethod}}"
+  },
+  "folderLocationType": "DATA_ASSET_NAME",
+  "specificFolder": ""
+}

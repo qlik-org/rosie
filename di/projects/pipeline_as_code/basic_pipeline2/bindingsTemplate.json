@@ -49,10 +49,7 @@
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
     "task.data_mart-xvqk.databaseName": "{{task-type.datamart.databaseName}}",
-    "task.data_mart-xvqk.icebergFolder": "",
     "task.data_mart-xvqk.internalSchema": "",
-    "task.data_mart-xvqk.snowflakeExternalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
-    "task.data_mart-xvqk.snowflakeOpenCatalog": "{{task-type.datamart.snowflakeOpenCatalog}}",
     "task.data_mart-xvqk.taskSchema": "",
     "task.data_mart-xvqk.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.file_based_knowledge_mart-xvq3.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
@@ -80,25 +77,27 @@
     "task.registered_data-xvqx:ROSIE$_$basic_pipe2_landing.database": "",
     "task.registered_data-xvqx:ROSIE$_$basic_pipe2_landing.schema": "",
     "task.registered_data_storage-xvqy.databaseName": "{{task-type.storage.databaseName}}",
-    "task.registered_data_storage-xvqy.icebergFolder": "",
     "task.registered_data_storage-xvqy.internalSchema": "",
-    "task.registered_data_storage-xvqy.snowflakeExternalVolume": "{{task-type.storage.snowflakeExternalVolume}}",
-    "task.registered_data_storage-xvqy.snowflakeOpenCatalog": "{{task-type.storage.snowflakeOpenCatalog}}",
     "task.registered_data_storage-xvqy.taskSchema": "",
     "task.registered_data_storage-xvqy.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.storage-xvqr.databaseName": "{{task-type.storage.databaseName}}",
-    "task.storage-xvqr.icebergFolder": "",
     "task.storage-xvqr.internalSchema": "",
-    "task.storage-xvqr.snowflakeExternalVolume": "{{task-type.storage.snowflakeExternalVolume}}",
-    "task.storage-xvqr.snowflakeOpenCatalog": "{{task-type.storage.snowflakeOpenCatalog}}",
     "task.storage-xvqr.taskSchema": "",
     "task.storage-xvqr.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.transform-xvqa.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-xvqa.internalSchema": "",
-    "task.transform-xvqa.snowflakeExternalVolume": "{{task-type.transform.snowflakeExternalVolume}}",
-    "task.transform-xvqa.snowflakeOpenCatalog": "{{task-type.transform.snowflakeOpenCatalog}}",
     "task.transform-xvqa.taskSchema": "",
     "task.transform-xvqa.warehouseName": "{{task-type.transform.warehouseName}}"
+  },
+  "idToNameMap": {
+    "data_mart-xvqk": "Data mart",
+    "file_based_knowledge_mart-xvq3": "File-based knowledge mart",
+    "knowledge_mart-xvqq": "Knowledge mart",
+    "landing-xvqq": "Landing",
+    "registered_data-xvqx": "Registered_data",
+    "registered_data_storage-xvqy": "Registered_data_Storage",
+    "storage-xvqr": "Storage",
+    "transform-xvqa": "Transform"
   },
   "connectionProperties": {
     "task.file_based_knowledge_mart-xvq3.sourceConnection": {
@@ -106,40 +105,6 @@
     },
     "task.landing-xvqq.sourceConnection": {
       "type": "repsrc_mssql"
-    }
-  },
-  "taskProperties": {
-    "file_based_knowledge_mart-xvq3": {
-      "type": "FILE_BASED_KNOWLEDGE_MART",
-      "name": "File-based knowledge mart"
-    },
-    "registered_data_storage-xvqy": {
-      "type": "STORAGE",
-      "name": "Registered_data_Storage"
-    },
-    "transform-xvqa": {
-      "type": "TRANSFORM",
-      "name": "Transform"
-    },
-    "registered_data-xvqx": {
-      "type": "REGISTERED_DATA",
-      "name": "Registered_data"
-    },
-    "knowledge_mart-xvqq": {
-      "type": "KNOWLEDGE_MART",
-      "name": "Knowledge mart"
-    },
-    "storage-xvqr": {
-      "type": "STORAGE",
-      "name": "Storage"
-    },
-    "landing-xvqq": {
-      "type": "LANDING_SAAS_MANAGED",
-      "name": "Landing"
-    },
-    "data_mart-xvqk": {
-      "type": "DATAMART",
-      "name": "Data mart"
     }
   }
 }

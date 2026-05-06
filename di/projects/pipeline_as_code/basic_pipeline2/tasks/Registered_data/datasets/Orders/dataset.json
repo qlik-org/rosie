@@ -1,0 +1,18 @@
+{
+  "id": "orders",
+  "name": "Orders",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$basic_pipe1_landing_orders",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-xvqx",
+      "schema": "{{task.registered_data-xvqx:ROSIE$_$basic_pipe2_landing.schema}}",
+      "database": "{{task.registered_data-xvqx:ROSIE$_$basic_pipe2_landing.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

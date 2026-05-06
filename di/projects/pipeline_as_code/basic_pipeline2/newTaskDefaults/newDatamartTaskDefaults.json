@@ -1,0 +1,34 @@
+{
+  "materialized": false,
+  "hasHistory": false,
+  "taskRuntime": {
+    "tableUpdateInterval": 15,
+    "tableUpdateConcurrency": 10,
+    "warehouseSelection": {
+      "warehouseName": "{{task-type.datamart.warehouseName}}",
+      "selectionMethod": "{{task-type.datamart.warehouseSelectionMethod}}"
+    }
+  },
+  "taskRunSchedule": {
+    "runInterval": 5,
+    "schedulingType": "TIME_BASED"
+  },
+  "catalogIntegration": {
+    "publishDatasets": false
+  },
+  "databaseSelection": {
+    "databaseName": "{{task-type.datamart.databaseName}}",
+    "selectionMethod": "{{task-type.datamart.databaseSelectionMethod}}"
+  },
+  "tableTypeSettings": {
+    "tableType": "ICEBERG",
+    "icebergSettings": {
+      "snowflakeExternalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
+      "folderLocationType": "SPECIFIC_FOLDER",
+      "specificFolder": "{{task-type.datamart.icebergFolder}}",
+      "enableOpenCatalogSync": true,
+      "snowflakeOpenCatalog": "{{task-type.datamart.snowflakeOpenCatalog}}"
+    }
+  },
+  "viewType": "SECURE_VIEW"
+}
