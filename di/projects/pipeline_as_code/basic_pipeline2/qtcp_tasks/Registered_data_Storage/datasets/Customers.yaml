@@ -1,6 +1,0 @@
-properties:
-  id: customers-xvq0
-  name: Customers
-  inputDatasets:
-    - datasetId: customers
-      taskId: registered_data-xvqx
