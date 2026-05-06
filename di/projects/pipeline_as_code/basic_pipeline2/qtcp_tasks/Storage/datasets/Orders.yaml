@@ -1,6 +1,0 @@
-properties:
-  id: orders-xvqv
-  name: Orders
-  inputDatasets:
-    - datasetId: orders
-      taskId: landing-xvqq
