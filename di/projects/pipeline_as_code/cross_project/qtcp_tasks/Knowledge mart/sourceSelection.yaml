@@ -1,0 +1,9 @@
+explicitlySelected:
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: transform-q7fk
+    name: Categories
+    sourceTableId: categories-q7fm
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: transform-q7fk
+    name: Products
+    sourceTableId: products-q7fq

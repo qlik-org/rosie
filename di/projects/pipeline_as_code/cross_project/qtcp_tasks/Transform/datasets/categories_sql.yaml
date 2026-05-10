@@ -1,0 +1,55 @@
+properties:
+  id: categories_sql-exst
+  name: categories_sql
+  inputDatasets:
+    - datasetId: categories-q7fg
+      name: Categories
+      projectId: '{{project.rosie$_$source_project.projectId}}'
+      taskId: onboarding_storage-q7fe
+  tableDef:
+    name: categories_sql
+    columns:
+      - name: CategoryID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: categoryid
+      - name: CategoryName
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: categoryname
+      - name: Description
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 8388608
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(8388608)
+        id: description
+      - name: Picture
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: BYTES
+          length: 8388608
+          originalType: BINARY
+          originalTypeFull: BINARY(8388608)
+        id: picture
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Categories}
+      alias:
+        - name: Categories
+          value: '{{project.rosie$_$source_project.projectId}}$_$onboarding_storage-q7fe$_$categories-q7fg'
+    incremental: false
+mappings:
+  mappings: []
