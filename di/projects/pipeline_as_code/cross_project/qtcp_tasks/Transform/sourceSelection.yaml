@@ -1,0 +1,7 @@
+explicitlySelected:
+  - sourceTask: onboarding_storage-q7fe
+    name: Categories
+    sourceTableId: categories-q7fg
+  - sourceTask: onboarding_storage-q7fe
+    name: Products
+    sourceTableId: products-q7fh

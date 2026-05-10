@@ -1,0 +1,13 @@
+properties:
+  name: Data mart
+  id: data_mart-exsy
+  description: from transform in source_project
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-exsy.internalSchema}}'
+    taskSchema: '{{task.data_mart-exsy.taskSchema}}'
+    databaseName: '{{task.data_mart-exsy.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-exsy.warehouseName}}'

@@ -1,0 +1,13 @@
+properties:
+  id: products_flow-exsu
+  name: products_flow
+  inputDatasets:
+    - datasetId: products-q7fh
+      taskId: onboarding_storage-q7fe
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, products_flow)}}'
+    targetId: '7f8b668e-1927-44af-9622-67abcc633fa9'
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []
