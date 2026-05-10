@@ -1,7 +1,0 @@
-explicitlySelected:
-  - sourceTask: transform-q7fk
-    name: Categories
-    sourceTableId: categories-q7fm
-  - sourceTask: transform-q7fk
-    name: Products
-    sourceTableId: products-q7fq
