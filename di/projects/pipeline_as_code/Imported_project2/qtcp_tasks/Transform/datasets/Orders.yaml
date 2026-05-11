@@ -1,0 +1,213 @@
+properties:
+  id: orders-lg51
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-lg5d
+      name: Orders
+      taskId: storage-lg5x
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Orders
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: Required_Date
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: Shipped_Date
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: ShipName_1
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+        properties:
+          documentMetadata: false
+      - name: shipaddress
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: shipaddress
+        properties:
+          documentMetadata: false
+      - name: ShipCity
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcity
+        properties:
+          documentMetadata: false
+      - name: ShipRegion
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipregion
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: orders-lg5d
+        name: Orders
+        taskId: storage-lg5x
+      mappingFields:
+        - columnId: orderid
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnId: customerid
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnId: employeeid
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnId: orderdate
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnId: requireddate
+          expression:
+            expressionStatement: ${Required_Date}
+            alias:
+              - name: Required_Date
+                value: Required_Date
+        - columnId: shippeddate
+          expression:
+            expressionStatement: ${Shipped_Date}
+            alias:
+              - name: Shipped_Date
+                value: Shipped_Date
+        - columnId: shipvia
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnId: freight
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnId: shipname
+          expression:
+            expressionStatement: ${ShipName_1}
+            alias:
+              - name: ShipName_1
+                value: ShipName_1
+        - columnId: shipaddress
+          expression:
+            expressionStatement: ${shipaddress}
+            alias:
+              - name: shipaddress
+                value: shipaddress
+        - columnId: shipcity
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: ShipCity
+        - columnId: shipregion
+          expression:
+            expressionStatement: ${ShipRegion}
+            alias:
+              - name: ShipRegion
+                value: ShipRegion
+      id: orders_default_mapping-lg54
+      name: Orders_default_mapping
+      description: ''

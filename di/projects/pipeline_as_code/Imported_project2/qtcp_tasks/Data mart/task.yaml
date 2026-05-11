@@ -1,0 +1,15 @@
+properties:
+  name: Data mart
+  id: data_mart-lg6b
+  description: data MART Description
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-lg6b.internalSchema}}'
+    taskSchema: '{{task.data_mart-lg6b.taskSchema}}'
+    databaseName: '{{task.data_mart-lg6b.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-lg6b.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: false

@@ -1,0 +1,6 @@
+properties:
+  id: order_details-lg5c
+  name: Order_Details
+  inputDatasets:
+    - datasetId: order_details
+      taskId: landing-lg5q

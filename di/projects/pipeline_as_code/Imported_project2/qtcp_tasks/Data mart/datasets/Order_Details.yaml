@@ -1,0 +1,135 @@
+properties:
+  id: order_details-lg6f
+  name: Order_Details
+  inputDatasets:
+    - datasetId: order_details-lg5z
+      name: Order_Details
+      taskId: transform-lg5r
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Order_Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Quantity_1
+        ordinal: 5
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: Quantity_1-9902
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 6
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+    entityId: order_details-lg6f
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: order_details-lg5z
+      name: Order_Details
+      taskId: transform-lg5r
+    factDimension:
+      - name: customers_flow
+        dimension:
+          type: NONE
+          datasetId: customers_flow-lg6d
+          taskId: data_mart-lg6b
+        dimensionRelationshipPath: order_details_orders_relation-lg5-$_$orders_customers_flow_relation-lg5_
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation:Orders_customers_flow_relation
+        dimensionRelationshipPathShortName: ''
+      - name: Orders
+        dimension:
+          type: NONE
+          datasetId: orders-lg6e
+          taskId: data_mart-lg6b
+        dimensionRelationshipPath: order_details_orders_relation-lg5-
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+        - columnName: Quantity_1
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+    subtype: MODEL_BASED
+    materializedSource: false

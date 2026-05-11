@@ -1,0 +1,49 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details-lg5z
+      name: Order_Details
+      taskId: transform-lg5r
+    targetEntity:
+      datasetId: orders-lg51
+      name: Orders
+      taskId: transform-lg5r
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-lg5-
+  - sourceEntity:
+      datasetId: orders-lg51
+      name: Orders
+      taskId: transform-lg5r
+    targetEntity:
+      datasetId: customers_flow-lg5x
+      name: customers_flow
+      taskId: transform-lg5r
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_customers_flow_relation
+    description: ''
+    id: orders_customers_flow_relation-lg5_
+  - sourceEntity:
+      datasetId: orders-lg51
+      name: Orders
+      taskId: transform-lg5r
+    targetEntity:
+      datasetId: employees_sql-lg5y
+      name: employees_sql
+      taskId: transform-lg5r
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_employees_sql_relation
+    description: ''
+    id: orders_employees_sql_relation-lg6a

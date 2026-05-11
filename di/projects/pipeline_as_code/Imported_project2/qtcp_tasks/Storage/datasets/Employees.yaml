@@ -1,0 +1,10 @@
+properties:
+  id: employees-lg5b
+  name: Employees
+  inputDatasets:
+    - datasetId: employees
+      taskId: landing-lg5q
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: PhotoPath
