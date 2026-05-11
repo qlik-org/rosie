@@ -1,0 +1,340 @@
+properties:
+  id: orders-lg6e
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-lg51
+      name: Orders
+      taskId: transform-lg5r
+    - datasetId: employees_sql-lg5y
+      name: employees_sql
+      taskId: transform-lg5r
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Orders
+    columns:
+      - name: OrderID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: ReportsTo
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orders_employees_sql_relation-lg6a$_$reportsto
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: Required_Date
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: Shipped_Date
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: ShipName_123
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+        properties:
+          documentMetadata: false
+      - name: shipaddress
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: shipaddress
+        properties:
+          documentMetadata: false
+      - name: ShipCity
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 17
+        id: shipcity
+        properties:
+          documentMetadata: false
+      - name: ShipRegion
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipregion
+        properties:
+          documentMetadata: false
+      - name: Emp_LastName_123
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: STRING
+          length: 20
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(20)
+        id: orders_employees_sql_relation-lg6a$_$lastname_1
+        properties:
+          documentMetadata: false
+      - name: Emp_FirstName_123
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: orders_employees_sql_relation-lg6a$_$firstname_1
+        properties:
+          documentMetadata: false
+      - name: Title
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: orders_employees_sql_relation-lg6a$_$title
+        properties:
+          documentMetadata: false
+      - name: TitleOfCourtesy
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: STRING
+          length: 25
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(25)
+        id: orders_employees_sql_relation-lg6a$_$titleofcourtesy
+        properties:
+          documentMetadata: false
+      - name: phone_ext
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: STRING
+          length: 4
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(4)
+        id: orders_employees_sql_relation-lg6a$_$phone_ext
+        properties:
+          documentMetadata: false
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE2
+    rootDataEntityId:
+      datasetId: orders-lg51
+      name: Orders
+      taskId: transform-lg5r
+    entityRelationshipPath:
+      - orders_employees_sql_relation-lg6a
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: CustomerID
+          type: NONE
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnName: EmployeeID
+          type: NONE
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnName: Required_Date
+          type: NONE
+          expression:
+            expressionStatement: ${Required_Date}
+            alias:
+              - name: Required_Date
+                value: Required_Date
+        - columnName: Shipped_Date
+          type: NONE
+          expression:
+            expressionStatement: ${Shipped_Date}
+            alias:
+              - name: Shipped_Date
+                value: Shipped_Date
+        - columnName: ShipVia
+          type: NONE
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnName: Freight
+          type: NONE
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnName: ShipName_123
+          type: NONE
+          expression:
+            expressionStatement: ${ShipName_123}
+            alias:
+              - name: ShipName_123
+                value: ShipName_123
+        - columnName: shipaddress
+          type: NONE
+          expression:
+            expressionStatement: ${shipaddress}
+            alias:
+              - name: shipaddress
+                value: shipaddress
+        - columnName: ShipCity
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: ShipCity
+        - columnName: ShipRegion
+          type: NONE
+          expression:
+            expressionStatement: ${ShipRegion}
+            alias:
+              - name: ShipRegion
+                value: ShipRegion
+        - columnName: Emp_LastName_123
+          type: NONE
+          expression:
+            expressionStatement: ${LastName_123}
+            alias:
+              - name: LastName_123
+                value: orders_employees_sql_relation-lg6a$_$LastName_123
+        - columnName: Emp_FirstName_123
+          type: NONE
+          expression:
+            expressionStatement: ${FirstName_123}
+            alias:
+              - name: FirstName_123
+                value: orders_employees_sql_relation-lg6a$_$FirstName_123
+        - columnName: Title
+          type: NONE
+          expression:
+            expressionStatement: ${Title}
+            alias:
+              - name: Title
+                value: orders_employees_sql_relation-lg6a$_$Title
+        - columnName: TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${TitleOfCourtesy}
+            alias:
+              - name: TitleOfCourtesy
+                value: orders_employees_sql_relation-lg6a$_$TitleOfCourtesy
+        - columnName: phone_ext
+          type: NONE
+          expression:
+            expressionStatement: ${phone_ext}
+            alias:
+              - name: phone_ext
+                value: orders_employees_sql_relation-lg6a$_$phone_ext
+        - columnName: ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${ReportsTo}
+            alias:
+              - name: ReportsTo
+                value: orders_employees_sql_relation-lg6a$_$ReportsTo
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

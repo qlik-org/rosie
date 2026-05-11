@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-lg5x
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-lg5x.internalSchema}}'
+    taskSchema: '{{task.storage-lg5x.taskSchema}}'
+    databaseName: '{{task.storage-lg5x.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-lg5x.warehouseName}}'

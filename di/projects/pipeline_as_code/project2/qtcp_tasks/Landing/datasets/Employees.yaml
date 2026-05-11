@@ -1,0 +1,16 @@
+properties:
+  id: employees
+  name: Employees
+  landingDatasetSettings:
+    loadOrder: HIGH
+    loadParallelSettings:
+      loadParallel: NONE
+transformations:
+  filter:
+    expressionStatement: ${EmployeeID} < 25
+    alias:
+      - name: EmployeeID
+        value: employeeid
+sourceTable:
+  schema: '{{task.landing-lg5q:null$_$dbo.schema}}'
+  name: Employees

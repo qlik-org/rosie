@@ -1,0 +1,6 @@
+properties:
+  id: products-lg5e
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: landing-lg5q

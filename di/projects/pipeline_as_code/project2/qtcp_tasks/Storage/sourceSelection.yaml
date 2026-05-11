@@ -1,0 +1,19 @@
+explicitlySelected:
+  - sourceTask: landing-lg5q
+    name: Categories
+    sourceTableId: categories
+  - sourceTask: landing-lg5q
+    name: Customers
+    sourceTableId: customers
+  - sourceTask: landing-lg5q
+    name: Employees
+    sourceTableId: employees
+  - sourceTask: landing-lg5q
+    name: Order_Details
+    sourceTableId: order_details
+  - sourceTask: landing-lg5q
+    name: Orders
+    sourceTableId: orders
+  - sourceTask: landing-lg5q
+    name: Products
+    sourceTableId: products

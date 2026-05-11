@@ -1,0 +1,10 @@
+properties:
+  id: order_details
+  name: Order Details
+  landingDatasetSettings:
+    loadOrder: HIGHEST
+    loadParallelSettings:
+      loadParallel: NONE
+sourceTable:
+  schema: '{{task.landing-lg5q:null$_$dbo.schema}}'
+  name: Order Details
