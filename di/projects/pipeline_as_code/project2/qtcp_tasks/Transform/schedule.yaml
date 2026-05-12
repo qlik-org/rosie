@@ -1,7 +1,0 @@
-scheduling:
-  - schedulingType: EVENT_BASED
-    timeBasedScheduling:
-      schedule:
-        - RRULE:FREQ=MINUTELY;INTERVAL=60;BYSECOND=0
-      startDateTime: 2026-05-11T11:47:44.8290000Z
-      timezone: Etc/UTC

@@ -1,4 +1,0 @@
-includePatterns:
-  - sourceTask: storage-lg5x
-    tablePattern: '%'
-    schemaPattern: '%'
