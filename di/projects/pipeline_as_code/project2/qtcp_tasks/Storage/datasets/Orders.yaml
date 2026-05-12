@@ -1,0 +1,11 @@
+properties:
+  id: orders-lg5d
+  name: Orders
+  inputDatasets:
+    - datasetId: orders
+      taskId: landing-lg5q
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ShippedDate
+      newColumnName: Shipped_Date

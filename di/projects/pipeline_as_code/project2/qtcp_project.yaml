@@ -1,0 +1,17 @@
+properties:
+  exportVersion: '1.0'
+  name: '{{projectName}}'
+  space: 'ref{project.current.spaceId}'
+  type: DATA_PIPELINE
+  description: pipeline without km
+  platformType: SNOWFLAKE
+  platformConnection: '{{platformConnection}}'
+  cloudStagingConnection: '{{cloudStagingConnection}}'
+settings:
+  artifactsNaming:
+    suffixLiveViews: __live1
+    suffixChangesView: __changes2
+    suffixCurrentView: _3
+    suffixHistoryViews: __history4
+    suffixLiveHistoryViews: __live_history5
+    prefixSchema: '{{project.current.prefixSchema}}'

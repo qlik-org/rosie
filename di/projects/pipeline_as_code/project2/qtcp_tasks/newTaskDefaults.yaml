@@ -1,0 +1,14 @@
+landing:
+  taskRuntime:
+    tableLoadInParallel: 6
+storage:
+  taskRunSchedule:
+    runInterval: 30
+transform:
+  taskRunSchedule:
+    runInterval: 60
+    schedulingType: TIME_BASED
+datamart:
+  taskRunSchedule:
+    runInterval: 45
+    schedulingType: TIME_BASED

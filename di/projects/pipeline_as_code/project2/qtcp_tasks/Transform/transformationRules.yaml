@@ -1,0 +1,11 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%_1'
+    action:
+      renameType: ADD_SUFFIX
+      value: '23'
+    name: add suffix
+    description: '23 added to _1'

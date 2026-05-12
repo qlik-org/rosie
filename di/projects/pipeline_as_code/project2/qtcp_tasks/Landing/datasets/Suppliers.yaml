@@ -1,0 +1,9 @@
+properties:
+  id: suppliers
+  name: Suppliers
+  landingDatasetSettings:
+    loadOrder: LOWEST
+    loadParallelSettings: {}
+sourceTable:
+  schema: '{{task.landing-lg5q:null$_$dbo.schema}}'
+  name: Suppliers

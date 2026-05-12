@@ -1,0 +1,11 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Address'
+    action:
+      renameType: TO_LOWER
+      value: ''
+    name: lower case Address
+    description: expected address

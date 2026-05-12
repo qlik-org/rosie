@@ -1,0 +1,81 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details-lg5c
+      name: Order_Details
+      taskId: storage-lg5x
+    targetEntity:
+      datasetId: orders-lg5d
+      name: Orders
+      taskId: storage-lg5x
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-lg5i
+  - sourceEntity:
+      datasetId: order_details-lg5c
+      name: Order_Details
+      taskId: storage-lg5x
+    targetEntity:
+      datasetId: products-lg5e
+      name: Products
+      taskId: storage-lg5x
+    columnRelationships:
+      - sourceColumn: ProductID
+        targetColumn: ProductID
+        sourceColumnId: productid
+        targetColumnId: productid
+    name: Order_Details_Products_relation
+    description: ''
+    id: order_details_products_relation-lg5j
+  - sourceEntity:
+      datasetId: orders-lg5d
+      name: Orders
+      taskId: storage-lg5x
+    targetEntity:
+      datasetId: customers-lg5a
+      name: Customers
+      taskId: storage-lg5x
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-lg5k
+  - sourceEntity:
+      datasetId: orders-lg5d
+      name: Orders
+      taskId: storage-lg5x
+    targetEntity:
+      datasetId: employees-lg5b
+      name: Employees
+      taskId: storage-lg5x
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-lg5l
+  - sourceEntity:
+      datasetId: products-lg5e
+      name: Products
+      taskId: storage-lg5x
+    targetEntity:
+      datasetId: categories-lg5z
+      name: Categories
+      taskId: storage-lg5x
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-lg5m
