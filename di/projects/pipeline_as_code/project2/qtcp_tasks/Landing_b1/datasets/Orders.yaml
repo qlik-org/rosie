@@ -1,0 +1,14 @@
+properties:
+  id: orders
+  name: Orders
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: RequiredDate
+      newColumnName: Required_Date
+sourceTable:
+  schema: '{{task.landing-lg5q:null$_$dbo.schema}}'
+  name: Orders

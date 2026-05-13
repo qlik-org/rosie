@@ -1,0 +1,24 @@
+properties:
+  id: categories
+  name: Categories
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Picture
+    - action: ADD
+      columnName: added_col
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${CategoryID}
+        alias:
+          - name: CategoryID
+            value: categoryid
+      addedColumnId: f57ffd86-da6f-4974-93ea-96fa3817bfbc
+sourceTable:
+  schema: '{{task.landing-lg5q:null$_$dbo.schema}}'
+  name: Categories
