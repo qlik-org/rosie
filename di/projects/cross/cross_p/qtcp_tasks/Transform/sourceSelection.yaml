@@ -1,0 +1,21 @@
+explicitlySelected:
+  - sourceProject: '69c2a7df4700cf71f4c3bd77'
+    sourceTask: onboarding_storage-cmue
+    name: Customers
+    sourceTableId: customers-cmug
+  - sourceProject: '69c2a7df4700cf71f4c3bd77'
+    sourceTask: onboarding_storage-cmue
+    name: Employees
+    sourceTableId: employees-cmuh
+  - sourceProject: '69c2a7df4700cf71f4c3bd77'
+    sourceTask: onboarding_storage-cmue
+    name: Order_Details
+    sourceTableId: order_details-cmui
+  - sourceProject: '69c2a7df4700cf71f4c3bd77'
+    sourceTask: onboarding_storage-cmue
+    name: Orders
+    sourceTableId: orders-cmuj
+  - sourceProject: '69c2a7df4700cf71f4c3bd77'
+    sourceTask: onboarding_storage-cmue
+    name: Shippers
+    sourceTableId: shippers-cmuk

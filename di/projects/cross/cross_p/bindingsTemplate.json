@@ -3,9 +3,7 @@
     "cloudStagingConnection": "",
     "platformConnection": "",
     "projectName": "",
-    "project.barb$_$pipeline_p (pipeline_p_branch1).projectId": "",
     "project.current.prefixSchema": "",
-    "project.rosie$_$project2 (project2_branch1).projectId": "",
     "task-type.datamart.databaseName": "",
     "task-type.datamart.databaseSelectionMethod": "",
     "task-type.datamart.warehouseName": "",
@@ -42,18 +40,16 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
-    "task.data_mart-eng0.databaseName": "{{task-type.datamart.databaseName}}",
-    "task.data_mart-eng0.internalSchema": "",
-    "task.data_mart-eng0.taskSchema": "",
-    "task.data_mart-eng0.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.transform-engm.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-engm.internalSchema": "",
     "task.transform-engm.taskSchema": "",
     "task.transform-engm.warehouseName": "{{task-type.transform.warehouseName}}"
   },
-  "idToNameMap": {
-    "data_mart-eng0": "Data mart",
-    "transform-engm": "Transform"
-  },
-  "connectionProperties": {}
+  "connectionProperties": {},
+  "taskProperties": {
+    "transform-engm": {
+      "type": "TRANSFORM",
+      "name": "Transform"
+    }
+  }
 }

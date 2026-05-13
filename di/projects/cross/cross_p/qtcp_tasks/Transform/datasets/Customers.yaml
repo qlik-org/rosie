@@ -1,0 +1,88 @@
+properties:
+  id: customers-engy
+  name: Customers
+  inputDatasets:
+    - datasetId: customers-cmug
+      name: Customers
+      projectId: '69c2a7df4700cf71f4c3bd77'
+      taskId: onboarding_storage-cmue
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Customers
+    columns:
+      - name: CustomerID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: ContactName
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: contactname
+        properties:
+          documentMetadata: false
+      - name: ContactTitle
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: contacttitle
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: customers-cmug
+        name: Customers
+        projectId: '69c2a7df4700cf71f4c3bd77'
+        taskId: onboarding_storage-cmue
+      mappingFields:
+        - columnId: customerid
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnId: companyname
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnId: contactname
+          expression:
+            expressionStatement: ${ContactName}
+            alias:
+              - name: ContactName
+                value: ContactName
+        - columnId: contacttitle
+          expression:
+            expressionStatement: ${ContactTitle}
+            alias:
+              - name: ContactTitle
+                value: ContactTitle
+      id: customers_default_mapping-engz
+      name: Customers_default_mapping
+      description: ''

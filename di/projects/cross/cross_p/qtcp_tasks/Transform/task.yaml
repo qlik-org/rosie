@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-engm
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-engm.internalSchema}}'
+    taskSchema: '{{task.transform-engm.taskSchema}}'
+    databaseName: '{{task.transform-engm.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-engm.warehouseName}}'
