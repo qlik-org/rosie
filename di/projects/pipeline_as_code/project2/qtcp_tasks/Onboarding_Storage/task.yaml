@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-r34r
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-r34r.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-r34r.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-r34r.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-r34r.warehouseName}}'

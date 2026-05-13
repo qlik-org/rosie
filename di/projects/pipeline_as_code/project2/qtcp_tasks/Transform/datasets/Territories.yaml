@@ -1,0 +1,68 @@
+properties:
+  id: territories-r34a
+  name: Territories
+  inputDatasets:
+    - datasetId: territories-r34v
+      name: Territories
+      taskId: onboarding_storage-r34r
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Territories
+    columns:
+      - name: TerritoryID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: territoryid
+        properties:
+          documentMetadata: false
+      - name: TerritoryDescription
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 50
+          originalTypeFull: NVARCHAR(50)
+        id: territorydescription
+        properties:
+          documentMetadata: false
+      - name: RegionID
+        ordinal: 3
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: regionid
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: territories-r34v
+        name: Territories
+        taskId: onboarding_storage-r34r
+      mappingFields:
+        - columnId: territoryid
+          expression:
+            expressionStatement: ${TerritoryID}
+            alias:
+              - name: TerritoryID
+                value: TerritoryID
+        - columnId: territorydescription
+          expression:
+            expressionStatement: ${TerritoryDescription}
+            alias:
+              - name: TerritoryDescription
+                value: TerritoryDescription
+        - columnId: regionid
+          expression:
+            expressionStatement: ${RegionID}
+            alias:
+              - name: RegionID
+                value: RegionID
+      id: territories_default_mapping-r34c
+      name: Territories_default_mapping
+      description: ''

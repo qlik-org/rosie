@@ -1,0 +1,11 @@
+properties:
+  name: Landing_new
+  id: landing_new-r34w
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing_new-r34w.taskSchema}}'
+      database: '{{task.landing_new-r34w.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

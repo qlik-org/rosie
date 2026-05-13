@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-r34q
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-r34q.taskSchema}}'
+      database: '{{task.onboarding_landing-r34q.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,6 @@
+properties:
+  id: employeeterritories-r34t
+  name: EmployeeTerritories
+  inputDatasets:
+    - datasetId: employeeterritories
+      taskId: onboarding_landing-r34q

@@ -1,0 +1,11 @@
+sourceConnection: '{{task.onboarding_landing-r34q.sourceConnection}}'
+explicitlySelected:
+  - name: EmployeeTerritories
+    schema: '{{task.onboarding_landing-r34q:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Region
+    schema: '{{task.onboarding_landing-r34q:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Territories
+    schema: '{{task.onboarding_landing-r34q:null$_$dbo.schema}}'
+    type: TABLE

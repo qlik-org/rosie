@@ -1,0 +1,11 @@
+sourceConnection: '{{task.landing_new-r34w.sourceConnection}}'
+explicitlySelected:
+  - name: leading_zero
+    schema: '{{task.landing_new-r34w:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Table_1
+    schema: '{{task.landing_new-r34w:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Table_2
+    schema: '{{task.landing_new-r34w:null$_$dbo.schema}}'
+    type: TABLE

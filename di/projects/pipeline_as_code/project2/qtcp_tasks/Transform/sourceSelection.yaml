@@ -2,3 +2,13 @@ includePatterns:
   - sourceTask: storage-lg5x
     tablePattern: '%'
     schemaPattern: '%'
+explicitlySelected:
+  - sourceTask: onboarding_storage-r34r
+    name: EmployeeTerritories
+    sourceTableId: employeeterritories-r34t
+  - sourceTask: onboarding_storage-r34r
+    name: Region
+    sourceTableId: region-r34u
+  - sourceTask: onboarding_storage-r34r
+    name: Territories
+    sourceTableId: territories-r34v
