@@ -48,6 +48,18 @@
     "task.landing-lg5q.sourceConnection": "",
     "task.landing-lg5q.taskSchema": "",
     "task.landing-lg5q:null$_$dbo.schema": "",
+    "task.landing_new-r34w.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing_new-r34w.sourceConnection": "",
+    "task.landing_new-r34w.taskSchema": "",
+    "task.landing_new-r34w:null$_$dbo.schema": "",
+    "task.onboarding_landing-r34q.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_landing-r34q.sourceConnection": "",
+    "task.onboarding_landing-r34q.taskSchema": "",
+    "task.onboarding_landing-r34q:null$_$dbo.schema": "",
+    "task.onboarding_storage-r34r.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_storage-r34r.internalSchema": "",
+    "task.onboarding_storage-r34r.taskSchema": "",
+    "task.onboarding_storage-r34r.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.storage-lg5x.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-lg5x.internalSchema": "",
     "task.storage-lg5x.taskSchema": "",
@@ -60,16 +72,34 @@
   "connectionProperties": {
     "task.landing-lg5q.sourceConnection": {
       "type": "repsrc_mssql"
+    },
+    "task.landing_new-r34w.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.onboarding_landing-r34q.sourceConnection": {
+      "type": "repsrc_mssql"
     }
   },
   "taskProperties": {
+    "onboarding_landing-r34q": {
+      "type": "LANDING_SAAS_MANAGED",
+      "name": "Onboarding_Landing"
+    },
     "data_mart-lg6b": {
       "type": "DATAMART",
       "name": "Data mart"
     },
+    "landing_new-r34w": {
+      "type": "LANDING_SAAS_MANAGED",
+      "name": "Landing_new"
+    },
     "landing-lg5q": {
       "type": "LANDING_SAAS_MANAGED",
       "name": "Landing_b1"
+    },
+    "onboarding_storage-r34r": {
+      "type": "STORAGE",
+      "name": "Onboarding_Storage"
     },
     "storage-lg5x": {
       "type": "STORAGE",

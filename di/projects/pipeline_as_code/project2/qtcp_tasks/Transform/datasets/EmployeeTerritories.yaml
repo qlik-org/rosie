@@ -1,0 +1,54 @@
+properties:
+  id: employeeterritories-r34b
+  name: EmployeeTerritories
+  inputDatasets:
+    - datasetId: employeeterritories-r34t
+      name: EmployeeTerritories
+      taskId: onboarding_storage-r34r
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: EmployeeTerritories
+    columns:
+      - name: EmployeeID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: TerritoryID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: territoryid
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: employeeterritories-r34t
+        name: EmployeeTerritories
+        taskId: onboarding_storage-r34r
+      mappingFields:
+        - columnId: employeeid
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnId: territoryid
+          expression:
+            expressionStatement: ${TerritoryID}
+            alias:
+              - name: TerritoryID
+                value: TerritoryID
+      id: employeeterritories_default_mapping-r34e
+      name: EmployeeTerritories_default_mapping
+      description: ''
