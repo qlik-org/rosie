@@ -45,12 +45,15 @@
     "task.landing-misc.taskSchema": "",
     "task.landing-misc:null$_$dbo.schema": ""
   },
-  "idToNameMap": {
-    "landing-misc": "Landing"
-  },
   "connectionProperties": {
     "task.landing-misc.sourceConnection": {
       "type": "repsrc_mssql"
+    }
+  },
+  "taskProperties": {
+    "landing-misc": {
+      "type": "LANDING_SAAS_MANAGED",
+      "name": "Landing"
     }
   }
 }
