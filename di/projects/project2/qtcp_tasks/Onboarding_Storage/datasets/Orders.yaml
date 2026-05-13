@@ -1,0 +1,6 @@
+properties:
+  id: orders-cmuj
+  name: Orders
+  inputDatasets:
+    - datasetId: orders
+      taskId: onboarding_landing-cmud

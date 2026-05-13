@@ -1,0 +1,136 @@
+properties:
+  id: order_details-cmvb
+  name: Order_Details
+  inputDatasets:
+    - datasetId: order_details-cmuu
+      name: Order_Details
+      taskId: transform-cmun
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Order_Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 5
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+    entityId: order_details-cmvb
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: order_details-cmuu
+      name: Order_Details
+      taskId: transform-cmun
+    factDimension:
+      - name: customers_sql
+        dimension:
+          type: NONE
+          datasetId: customers_sql-cmu9
+          taskId: data_mart-cmu7
+        dimensionRelationshipPath: order_details_orders_relation-cmu0$_$orders_customers_sql_relation-cmu1
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation:Orders_customers_sql_relation
+        dimensionRelationshipPathShortName: ''
+      - name: employees_flow
+        dimension:
+          type: NONE
+          datasetId: employees_flow-cmu-
+          taskId: data_mart-cmu7
+        dimensionRelationshipPath: order_details_orders_relation-cmu0$_$orders_employees_flow_relation-cmu2
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation:Orders_employees_flow_relation
+        dimensionRelationshipPathShortName: ''
+      - name: employees_flow
+        dimension:
+          type: NONE
+          datasetId: employees_flow-cmu-
+          taskId: data_mart-cmu7
+        dimensionRelationshipPath: order_details_orders_relation-cmu0$_$orders_employees_flow_relation-cmu2$_$employeesflow_employeesflow-cmu4
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation:Orders_employees_flow_relation:EmployeesFlow_EmployeesFlow
+        dimensionRelationshipPathShortName: ''
+      - name: Shippers
+        dimension:
+          type: NONE
+          datasetId: shippers-cmu_
+          taskId: data_mart-cmu7
+        dimensionRelationshipPath: order_details_orders_relation-cmu0$_$orders_shippers-cmu3
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation:Orders_Shippers
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+    subtype: MODEL_BASED
+    materializedSource: false

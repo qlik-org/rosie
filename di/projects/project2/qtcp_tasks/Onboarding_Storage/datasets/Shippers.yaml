@@ -1,0 +1,6 @@
+properties:
+  id: shippers-cmuk
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: onboarding_landing-cmud

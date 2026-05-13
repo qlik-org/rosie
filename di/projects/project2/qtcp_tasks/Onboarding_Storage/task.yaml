@@ -1,0 +1,15 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-cmue
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-cmue.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-cmue.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-cmue.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-cmue.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: false
+  viewType: DEFAULT

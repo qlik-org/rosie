@@ -1,0 +1,6 @@
+properties:
+  id: order_details-cmui
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details
+      taskId: onboarding_landing-cmud

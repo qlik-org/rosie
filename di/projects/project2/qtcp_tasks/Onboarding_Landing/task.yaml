@@ -1,0 +1,14 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-cmud
+  type: LANDING_SAAS_MANAGED
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-cmud.taskSchema}}'
+      database: '{{task.onboarding_landing-cmud.databaseName}}'
+  landingAppRuntime:
+    tableLoadInParallel: 5
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: RND_WH

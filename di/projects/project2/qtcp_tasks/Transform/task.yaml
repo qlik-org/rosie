@@ -1,0 +1,13 @@
+properties:
+  name: Transform
+  id: transform-cmun
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-cmun.internalSchema}}'
+    taskSchema: '{{task.transform-cmun.taskSchema}}'
+    databaseName: '{{task.transform-cmun.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-cmun.warehouseName}}'
+  viewType: DEFAULT

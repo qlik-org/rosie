@@ -1,0 +1,13 @@
+properties:
+  id: employees_flow-cmut
+  name: employees_flow
+  inputDatasets:
+    - datasetId: employees-cmuh
+      taskId: onboarding_storage-cmue
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, employees_flow)}}'
+    targetId: '9ef4153f-81ee-4d62-9751-a673f22db187'
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

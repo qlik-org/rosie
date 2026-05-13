@@ -1,0 +1,14 @@
+properties:
+  name: Data mart
+  id: data_mart-cmu7
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-cmu7.internalSchema}}'
+    taskSchema: '{{task.data_mart-cmu7.taskSchema}}'
+    databaseName: '{{task.data_mart-cmu7.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-cmu7.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: true

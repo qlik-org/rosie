@@ -1,0 +1,6 @@
+properties:
+  id: customers-cmug
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_landing-cmud

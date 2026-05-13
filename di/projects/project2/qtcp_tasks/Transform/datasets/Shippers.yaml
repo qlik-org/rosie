@@ -1,0 +1,88 @@
+properties:
+  id: shippers-cmuw
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers-cmuk
+      name: Shippers
+      taskId: onboarding_storage-cmue
+  datasetAttributes:
+    materialized: ON
+    hasHistory: OFF
+    hasLiveViews: OFF
+  tableDef:
+    name: Shippers
+    columns:
+      - name: ShipperID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        expression:
+          expressionStatement: ${Phone}
+          alias:
+            - name: Phone
+              value: Phone
+        id: phone
+        properties:
+          documentMetadata: false
+    entityId: shippers-cmuw
+  description: m t1
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: shippers-cmuk
+        name: Shippers
+        taskId: onboarding_storage-cmue
+      mappingFields:
+        - columnId: shipperid
+          expression:
+            expressionStatement: ${ShipperID}
+            alias:
+              - name: ShipperID
+                value: ShipperID
+        - columnId: companyname
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnId: phone
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: Phone
+      id: shippers_default_mapping-cmuy
+      name: Shippers_default_mapping
+      description: ''

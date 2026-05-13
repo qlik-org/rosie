@@ -66,16 +66,31 @@
     "task.transform-cmun.taskSchema": "",
     "task.transform-cmun.warehouseName": "{{task-type.transform.warehouseName}}"
   },
-  "idToNameMap": {
-    "data_mart-cmu7": "Data mart",
-    "knowledge_mart-zf2t": "Knowledge mart",
-    "onboarding_landing-cmud": "Onboarding_Landing",
-    "onboarding_storage-cmue": "Onboarding_Storage",
-    "transform-cmun": "Transform"
-  },
   "connectionProperties": {
     "task.onboarding_landing-cmud.sourceConnection": {
       "type": "repsrc_mssql"
+    }
+  },
+  "taskProperties": {
+    "data_mart-cmu7": {
+      "type": "DATAMART",
+      "name": "Data mart"
+    },
+    "onboarding_landing-cmud": {
+      "type": "LANDING_SAAS_MANAGED",
+      "name": "Onboarding_Landing"
+    },
+    "knowledge_mart-zf2t": {
+      "type": "KNOWLEDGE_MART",
+      "name": "Knowledge mart"
+    },
+    "onboarding_storage-cmue": {
+      "type": "STORAGE",
+      "name": "Onboarding_Storage"
+    },
+    "transform-cmun": {
+      "type": "TRANSFORM",
+      "name": "Transform"
     }
   }
 }

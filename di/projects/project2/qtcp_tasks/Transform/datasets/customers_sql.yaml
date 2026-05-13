@@ -1,0 +1,121 @@
+properties:
+  id: customers_sql-cmuq
+  name: customers_sql
+  inputDatasets:
+    - datasetId: customers-cmug
+      name: Customers
+      taskId: onboarding_storage-cmue
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    name: customers_sql
+    columns:
+      - name: CustomerID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: customerid
+      - name: CompanyName
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+      - name: ContactName
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contactname
+      - name: ContactTitle
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contacttitle
+      - name: Address
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        id: address
+      - name: City
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: city
+      - name: Region
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: region
+      - name: PostalCode
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: postalcode
+      - name: Country
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: country
+      - name: Phone
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: phone
+      - name: Fax
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: fax
+    entityId: customers_sql-cmuq
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Customers}
+      alias:
+        - name: Customers
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-cmue$_$customers-cmug'
+    incremental: true
+  description: m t2 incremental
+mappings:
+  mappings: []

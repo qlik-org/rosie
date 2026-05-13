@@ -1,0 +1,81 @@
+relationships:
+  - sourceEntity:
+      datasetId: employees_flow-cmut
+      name: employees_flow
+      taskId: transform-cmun
+    targetEntity:
+      datasetId: employees_flow-cmut
+      name: employees_flow
+      taskId: transform-cmun
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: EmployeesFlow_EmployeesFlow
+    description: ''
+    id: employeesflow_employeesflow-cmu4
+  - sourceEntity:
+      datasetId: order_details-cmuu
+      name: Order_Details
+      taskId: transform-cmun
+    targetEntity:
+      datasetId: orders-cmux
+      name: Orders
+      taskId: transform-cmun
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-cmu0
+  - sourceEntity:
+      datasetId: orders-cmux
+      name: Orders
+      taskId: transform-cmun
+    targetEntity:
+      datasetId: customers_sql-cmuq
+      name: customers_sql
+      taskId: transform-cmun
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_customers_sql_relation
+    description: ''
+    id: orders_customers_sql_relation-cmu1
+  - sourceEntity:
+      datasetId: orders-cmux
+      name: Orders
+      taskId: transform-cmun
+    targetEntity:
+      datasetId: employees_flow-cmut
+      name: employees_flow
+      taskId: transform-cmun
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_employees_flow_relation
+    description: ''
+    id: orders_employees_flow_relation-cmu2
+  - sourceEntity:
+      datasetId: orders-cmux
+      name: Orders
+      taskId: transform-cmun
+    targetEntity:
+      datasetId: shippers-cmuw
+      name: Shippers
+      taskId: transform-cmun
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-cmu3
