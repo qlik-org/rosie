@@ -53,6 +53,15 @@
     "task.onboarding_storage-r36w.internalSchema": "",
     "task.onboarding_storage-r36w.taskSchema": "",
     "task.onboarding_storage-r36w.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.registered_data-pi5p.databaseName": "{{task-type.registered.databaseName}}",
+    "task.registered_data-pi5p.internalSchema": "",
+    "task.registered_data-pi5p.taskSchema": "",
+    "task.registered_data-pi5p:ROSIE$_$siz_source1_onboarding_landing.database": "",
+    "task.registered_data-pi5p:ROSIE$_$siz_source1_onboarding_landing.schema": "",
+    "task.registered_data_storage-pi5q.databaseName": "{{task-type.storage.databaseName}}",
+    "task.registered_data_storage-pi5q.internalSchema": "",
+    "task.registered_data_storage-pi5q.taskSchema": "",
+    "task.registered_data_storage-pi5q.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.storage-r362.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-r362.internalSchema": "",
     "task.storage-r362.taskSchema": "",
@@ -71,6 +80,10 @@
     }
   },
   "taskProperties": {
+    "registered_data-pi5p": {
+      "type": "REGISTERED_DATA",
+      "name": "Registered_data"
+    },
     "onboarding_landing-r36v": {
       "type": "LANDING_SAAS_MANAGED",
       "name": "Onboarding_Landing"
@@ -82,6 +95,10 @@
     "storage-r362": {
       "type": "STORAGE",
       "name": "Storage"
+    },
+    "registered_data_storage-pi5q": {
+      "type": "STORAGE",
+      "name": "Registered_data_Storage"
     },
     "transform-r367": {
       "type": "TRANSFORM",
