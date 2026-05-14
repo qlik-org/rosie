@@ -49,6 +49,10 @@
     "task.knowledge_mart-vfld.maxNumberOfRecords": "",
     "task.knowledge_mart-vfld.taskSchema": "",
     "task.knowledge_mart-vfld.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
+    "task.landing-qkox.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-qkox.sourceConnection": "",
+    "task.landing-qkox.taskSchema": "",
+    "task.landing-qkox:null$_$dbo.schema": "",
     "task.onboarding_landing-8ti6.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-8ti6.sourceConnection": "",
     "task.onboarding_landing-8ti6.taskSchema": "",
@@ -64,11 +68,15 @@
   },
   "idToNameMap": {
     "knowledge_mart-vfld": "Knowledge mart",
+    "landing-qkox": "Landing",
     "onboarding_landing-8ti6": "Onboarding_Landing",
     "onboarding_storage-8ti7": "Onboarding_Storage",
     "transform-8tja": "Transform"
   },
   "connectionProperties": {
+    "task.landing-qkox.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
     "task.onboarding_landing-8ti6.sourceConnection": {
       "type": "repsrc_mssql"
     }
