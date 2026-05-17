@@ -1,8 +1,0 @@
-sourceConnection: '{{task.replication-pi-i.sourceConnection}}'
-explicitlySelected:
-  - name: Customers
-    schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
-    type: TABLE
-  - name: Employees
-    schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
-    type: TABLE
