@@ -1,0 +1,11 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Name'
+    action:
+      renameType: ADD_SUFFIX
+      value: _1
+    name: rename name to name_1
+    description: '%name -> %name_1'

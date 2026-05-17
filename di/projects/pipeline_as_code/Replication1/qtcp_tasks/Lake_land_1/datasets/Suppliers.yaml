@@ -1,0 +1,18 @@
+properties:
+  id: suppliers
+  name: Suppliers
+  landingDatasetSettings:
+    loadOrder: HIGH
+    loadParallelSettings: {}
+transformations:
+  filter:
+    expressionStatement: ${SupplierID} < 10
+    alias:
+      - name: SupplierID
+        value: supplierid
+  columnTransformations:
+    - action: DROP
+      columnName: Fax
+sourceTable:
+  schema: '{{task.lake_landing-pi-p:null$_$dbo.schema}}'
+  name: Suppliers

@@ -6,29 +6,19 @@ properties:
 settings:
   targetEndpoint:
     targetConnection: '{{task.replication-pi-i.targetConnection}}'
-    targetSchema: '{{task.replication-pi-i.targetSchema}}'
     targetStorageConnection: '{{task.replication-pi-i.targetStorageConnection}}'
-  proxySettings:
-    proxyOdbc: true
   taskSettings:
     fullLoad: true
     storeChanges: true
   fullLoadOptions:
     tableExistsHandling: TRUNCATE
   storeChangesOptions:
-    ddlOptions: false
     changeDataPartitioning:
       partitionBaseTime: 2026-05-17T10:03:15.1620000Z
   errorHandling:
     applyConflicts:
-      insertPolicy: ERROR_POLICY_IGNORE_RECORD
       updatePolicy: ERROR_POLICY_STOP_TASK
-  metadata:
-    lobHandling:
-      lobColumns: DO_NOT_REPLICATE_LOB_COLUMN
   fileAttributes:
     general:
       maxFileSize: 101
       filesInBatch: 31
-  catalogSettings:
-    publish: true
