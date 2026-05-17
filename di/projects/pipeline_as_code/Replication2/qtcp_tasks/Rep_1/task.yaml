@@ -1,0 +1,14 @@
+properties:
+  name: Rep_1
+  id: rep_1-pi_x
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.rep_1-pi_x.targetConnection}}'
+    targetStorageConnection: '{{task.rep_1-pi_x.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    storeChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-05-17T13:10:11.5730000Z

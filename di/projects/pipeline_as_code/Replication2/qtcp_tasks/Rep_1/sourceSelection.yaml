@@ -1,0 +1,11 @@
+sourceConnection: '{{task.rep_1-pi_x.sourceConnection}}'
+explicitlySelected:
+  - name: Orders
+    schema: '{{task.rep_1-pi_x:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Products
+    schema: '{{task.rep_1-pi_x:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Order Details
+    schema: '{{task.rep_1-pi_x:null$_$dbo.schema}}'
+    type: TABLE
