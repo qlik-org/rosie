@@ -1,0 +1,14 @@
+properties:
+  name: Replication
+  id: replication-pi-i
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-pi-i.targetConnection}}'
+    targetStorageConnection: '{{task.replication-pi-i.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-05-17T10:03:15.1620000Z

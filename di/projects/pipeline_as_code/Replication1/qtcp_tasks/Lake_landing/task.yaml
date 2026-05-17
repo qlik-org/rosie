@@ -1,0 +1,7 @@
+properties:
+  name: Lake_landing
+  id: lake_landing-pi-p
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing-pi-p.targetConnection}}'
