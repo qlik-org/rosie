@@ -1,0 +1,27 @@
+properties:
+  id: orders
+  name: Orders
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: copyOrderDate
+      newDataType:
+        type: DATETIME
+        length: 0
+        precision: 3
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${OrderDate}
+        alias:
+          - name: OrderDate
+            value: orderdate
+      addedColumnId: f8ae8db7-a9e0-4465-b483-ceac80894805
+    - action: DROP
+      columnName: ShipAddress
+sourceTable:
+  schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
+  name: Orders

@@ -1,0 +1,15 @@
+properties:
+  id: employees
+  name: Employees
+  landingDatasetSettings:
+    loadOrder: HIGH
+    loadParallelSettings: {}
+transformations:
+  filter:
+    expressionStatement: ${EmployeeID} < 25
+    alias:
+      - name: EmployeeID
+        value: employeeid
+sourceTable:
+  schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
+  name: Employees

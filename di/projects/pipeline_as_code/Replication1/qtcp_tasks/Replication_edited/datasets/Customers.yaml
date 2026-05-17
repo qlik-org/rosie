@@ -1,0 +1,9 @@
+properties:
+  id: customers
+  name: Customers
+  landingDatasetSettings:
+    loadOrder: LOWER
+    loadParallelSettings: {}
+sourceTable:
+  schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
+  name: Customers

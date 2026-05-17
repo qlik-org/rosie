@@ -1,0 +1,18 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    scope:
+      whereTableName: Orders
+    action:
+      renameType: ADD_SUFFIX
+      value: ss
+    name: Rule
+  - ordinal: 1
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Phone'
+    action:
+      renameType: RENAME
+      value: NewPhone
+    name: rename Phone column
