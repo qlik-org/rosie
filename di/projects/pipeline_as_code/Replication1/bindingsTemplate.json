@@ -27,13 +27,13 @@
     }
   },
   "taskProperties": {
-    "lake_landing-pi-p": {
-      "type": "LAKE_LANDING",
-      "name": "Lake_landing"
-    },
     "replication-pi-i": {
       "type": "REPLICATION",
       "name": "Replication_edited"
+    },
+    "lake_landing-pi-p": {
+      "type": "LAKE_LANDING",
+      "name": "Lake_landing"
     }
   }
 }

@@ -6,3 +6,6 @@ explicitlySelected:
   - name: Employees
     schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
     type: TABLE
+  - name: Orders
+    schema: '{{task.replication-pi-i:null$_$dbo.schema}}'
+    type: TABLE
