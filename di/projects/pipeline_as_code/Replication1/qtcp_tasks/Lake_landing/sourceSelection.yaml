@@ -1,8 +1,0 @@
-sourceConnection: '{{task.lake_landing-pi-p.sourceConnection}}'
-explicitlySelected:
-  - name: Products
-    schema: '{{task.lake_landing-pi-p:null$_$dbo.schema}}'
-    type: TABLE
-  - name: Suppliers
-    schema: '{{task.lake_landing-pi-p:null$_$dbo.schema}}'
-    type: TABLE
