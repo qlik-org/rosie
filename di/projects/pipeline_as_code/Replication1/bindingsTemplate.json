@@ -8,6 +8,7 @@
     "task.lake_landing-pi-p:null$_$dbo.schema": "",
     "task.replication-pi-i.sourceConnection": "",
     "task.replication-pi-i.targetConnection": "",
+    "task.replication-pi-i.targetSchema": "",
     "task.replication-pi-i.targetStorageConnection": "",
     "task.replication-pi-i:null$_$dbo.schema": ""
   },
