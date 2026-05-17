@@ -1,6 +1,7 @@
 properties:
-  name: Replication
+  name: Replication_edited
   id: replication-pi-i
+  description: some description text here
   type: REPLICATION
 settings:
   targetEndpoint:
