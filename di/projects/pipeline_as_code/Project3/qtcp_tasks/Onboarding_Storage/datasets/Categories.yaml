@@ -1,6 +1,0 @@
-properties:
-  id: categories-r36y
-  name: Categories
-  inputDatasets:
-    - datasetId: categories
-      taskId: onboarding_landing-r36v
