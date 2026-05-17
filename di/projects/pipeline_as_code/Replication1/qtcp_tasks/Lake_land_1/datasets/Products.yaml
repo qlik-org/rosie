@@ -1,0 +1,14 @@
+properties:
+  id: products
+  name: Products
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ReorderLevel
+      newColumnName: ReorderLevel_1
+sourceTable:
+  schema: '{{task.lake_landing-pi-p:null$_$dbo.schema}}'
+  name: Products

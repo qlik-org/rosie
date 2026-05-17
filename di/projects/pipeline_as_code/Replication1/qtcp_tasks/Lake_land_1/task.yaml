@@ -1,0 +1,11 @@
+properties:
+  name: Lake_land_1
+  id: lake_landing-pi-p
+  description: desc lake land 1!
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing-pi-p.targetConnection}}'
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: lake_landing

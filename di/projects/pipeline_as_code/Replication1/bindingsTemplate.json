@@ -8,7 +8,6 @@
     "task.lake_landing-pi-p:null$_$dbo.schema": "",
     "task.replication-pi-i.sourceConnection": "",
     "task.replication-pi-i.targetConnection": "",
-    "task.replication-pi-i.targetSchema": "",
     "task.replication-pi-i.targetStorageConnection": "",
     "task.replication-pi-i:null$_$dbo.schema": ""
   },
@@ -27,13 +26,13 @@
     }
   },
   "taskProperties": {
+    "lake_landing-pi-p": {
+      "type": "LAKE_LANDING",
+      "name": "Lake_land_1"
+    },
     "replication-pi-i": {
       "type": "REPLICATION",
       "name": "Replication_edited"
-    },
-    "lake_landing-pi-p": {
-      "type": "LAKE_LANDING",
-      "name": "Lake_landing"
     }
   }
 }
