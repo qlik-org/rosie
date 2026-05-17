@@ -1,8 +1,13 @@
-includePatterns:
-  - sourceTask: onboarding_landing-r36v
-    tablePattern: '%'
-    schemaPattern: '%'
 explicitlySelected:
   - sourceTask: onboarding_landing-r36v
     name: Suppliers
     sourceTableId: suppliers
+  - sourceTask: onboarding_landing-r36v
+    name: Order Details
+    sourceTableId: order_details
+  - sourceTask: onboarding_landing-r36v
+    name: Products
+    sourceTableId: products
+  - sourceTask: onboarding_landing-r36v
+    name: Region
+    sourceTableId: region
