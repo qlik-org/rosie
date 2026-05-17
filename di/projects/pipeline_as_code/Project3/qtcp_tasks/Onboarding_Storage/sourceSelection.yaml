@@ -2,3 +2,7 @@ includePatterns:
   - sourceTask: onboarding_landing-r36v
     tablePattern: '%'
     schemaPattern: '%'
+explicitlySelected:
+  - sourceTask: onboarding_landing-r36v
+    name: Suppliers
+    sourceTableId: suppliers

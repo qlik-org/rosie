@@ -12,3 +12,6 @@ explicitlySelected:
   - name: Order Details
     schema: '{{task.onboarding_landing-r36v:null$_$dbo.schema}}'
     type: TABLE
+  - name: Suppliers
+    schema: '{{task.onboarding_landing-r36v:null$_$dbo.schema}}'
+    type: TABLE

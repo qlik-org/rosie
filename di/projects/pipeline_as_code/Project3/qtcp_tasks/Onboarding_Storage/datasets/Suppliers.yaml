@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-pi9s
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing-r36v
