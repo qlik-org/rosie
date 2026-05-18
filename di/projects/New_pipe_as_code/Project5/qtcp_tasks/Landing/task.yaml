@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-7z5m
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-7z5m.taskSchema}}'
+      database: '{{task.landing-7z5m.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: landing-7z5m
+    tablePattern: '%'
+    schemaPattern: '%'

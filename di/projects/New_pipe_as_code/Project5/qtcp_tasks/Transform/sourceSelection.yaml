@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: storage-7z5n
+    tablePattern: '%'
+    schemaPattern: '%'

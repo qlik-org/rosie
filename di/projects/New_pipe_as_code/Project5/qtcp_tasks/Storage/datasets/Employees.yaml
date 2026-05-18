@@ -1,0 +1,6 @@
+properties:
+  id: employees-7z5q
+  name: Employees
+  inputDatasets:
+    - datasetId: employees
+      taskId: landing-7z5m
