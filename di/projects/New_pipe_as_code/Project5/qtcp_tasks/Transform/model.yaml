@@ -47,3 +47,35 @@ relationships:
     name: Orders_Shippers
     description: ''
     id: orders_shippers-7z55
+  - sourceEntity:
+      datasetId: products-7z6f
+      name: Products
+      taskId: transform-7z5t
+    targetEntity:
+      datasetId: categories-7z6e
+      name: Categories
+      taskId: transform-7z5t
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-7z6j
+  - sourceEntity:
+      datasetId: products-7z6f
+      name: Products
+      taskId: transform-7z5t
+    targetEntity:
+      datasetId: suppliers-7z6d
+      name: Suppliers
+      taskId: transform-7z5t
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation-7z6k
