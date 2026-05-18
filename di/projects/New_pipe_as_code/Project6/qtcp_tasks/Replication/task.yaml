@@ -1,0 +1,14 @@
+properties:
+  name: Replication
+  id: replication-7z6t
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-7z6t.targetConnection}}'
+    targetStorageConnection: '{{task.replication-7z6t.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-05-18T14:36:51.3100000Z

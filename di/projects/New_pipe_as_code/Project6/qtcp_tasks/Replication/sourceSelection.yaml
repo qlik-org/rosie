@@ -1,0 +1,11 @@
+sourceConnection: '{{task.replication-7z6t.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.replication-7z6t:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Products
+    schema: '{{task.replication-7z6t:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Suppliers
+    schema: '{{task.replication-7z6t:null$_$dbo.schema}}'
+    type: TABLE
