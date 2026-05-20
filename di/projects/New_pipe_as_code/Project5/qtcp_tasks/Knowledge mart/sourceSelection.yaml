@@ -1,4 +1,0 @@
-includePatterns:
-  - sourceTask: transform-7z5t
-    tablePattern: '%'
-    schemaPattern: '%'
