@@ -79,35 +79,5 @@
     "task.onboarding_landing-r34q.sourceConnection": {
       "type": "repsrc_mssql"
     }
-  },
-  "taskProperties": {
-    "onboarding_landing-r34q": {
-      "type": "LANDING_SAAS_MANAGED",
-      "name": "Onboarding_Landing"
-    },
-    "data_mart-lg6b": {
-      "type": "DATAMART",
-      "name": "Data mart"
-    },
-    "landing_new-r34w": {
-      "type": "LANDING_SAAS_MANAGED",
-      "name": "Landing_new"
-    },
-    "landing-lg5q": {
-      "type": "LANDING_SAAS_MANAGED",
-      "name": "Landing_b1"
-    },
-    "onboarding_storage-r34r": {
-      "type": "STORAGE",
-      "name": "Onboarding_Storage"
-    },
-    "storage-lg5x": {
-      "type": "STORAGE",
-      "name": "Storage"
-    },
-    "transform-lg5r": {
-      "type": "TRANSFORM",
-      "name": "Transform"
-    }
   }
 }
