@@ -2,7 +2,7 @@ properties:
   name: Landing_b1
   id: landing-lg5q
   description: descript of landing task
-  type: LANDING_SAAS_MANAGED
+  type: LANDING
 settings:
   landingDwSettings:
     landingArtifactsLocation:
