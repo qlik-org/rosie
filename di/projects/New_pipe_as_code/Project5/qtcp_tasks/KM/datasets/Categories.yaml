@@ -5,9 +5,6 @@ properties:
     - datasetId: categories-7z6e
       name: Categories
       taskId: transform-7z5t
-    - datasetId: products-7z6f
-      name: Products
-      taskId: transform-7z5t
   datasetAttributes:
     materialized: ON
     hasStandardViewsWithHeaders: ON
@@ -23,7 +20,7 @@ properties:
           originalTypeFull: INTEGER
         id: categoryid
         properties:
-          documentMetadata: true
+          documentMetadata: false
       - name: CategoryName
         ordinal: 2
         nullable: true
@@ -54,16 +51,9 @@ properties:
         id: picture
         properties:
           documentMetadata: false
-    entityId: ''
+    entityId: categories-7z6h
   documentDataEntitySettings:
-    repeatedDataEntities:
-      - rootDataEntityId:
-          type: NONE
-          datasetId: products-7z6f
-          name: Products
-          taskId: transform-7z5t
-        entityRelationshipPath: products_categories_relation-7z6j
-        dimensionId: categories__products-7z6g
+    repeatedDataEntities: []
     type: TYPE1
     rootDataEntityId:
       type: NONE
@@ -102,7 +92,6 @@ properties:
               - name: Picture
                 value: Picture
     fullyType2Sources: false
-    checkedTreeNodesForDisplay:
-      - products_categories_relation-7z6j
+    checkedTreeNodesForDisplay: []
     subtype: MODEL_BASED
     materializedSource: false
