@@ -1,3 +1,0 @@
-scheduling:
-  - enabled: true
-    schedulingType: EVENT_BASED
