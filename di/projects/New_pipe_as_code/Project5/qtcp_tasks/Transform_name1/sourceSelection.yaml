@@ -1,0 +1,17 @@
+includePatterns:
+  - sourceTask: storage-7z5n
+    tablePattern: '%'
+    schemaPattern: '%'
+explicitlySelected:
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: onboarding_storage-q7fe
+    name: Categories
+    sourceTableId: categories-q7fg
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: onboarding_storage-q7fe
+    name: Products
+    sourceTableId: products-q7fh
+  - sourceProject: '{{project.rosie$_$source_project.projectId}}'
+    sourceTask: onboarding_storage-q7fe
+    name: Suppliers
+    sourceTableId: suppliers-q7fi

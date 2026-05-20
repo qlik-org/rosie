@@ -1,0 +1,13 @@
+properties:
+  name: Storage_edited
+  id: storage-7z5n
+  description: 'added descr.'
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-7z5n.internalSchema}}'
+    taskSchema: '{{task.storage-7z5n.taskSchema}}'
+    databaseName: '{{task.storage-7z5n.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-7z5n.warehouseName}}'

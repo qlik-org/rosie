@@ -1,0 +1,13 @@
+properties:
+  name: Data mart name1
+  id: data_mart-7z6t
+  description: name 1
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-7z6t.internalSchema}}'
+    taskSchema: '{{task.data_mart-7z6t.taskSchema}}'
+    databaseName: '{{task.data_mart-7z6t.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-7z6t.warehouseName}}'
