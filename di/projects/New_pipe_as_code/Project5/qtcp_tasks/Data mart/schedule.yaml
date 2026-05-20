@@ -1,8 +1,0 @@
-scheduling:
-  - schedulingType: TIME_BASED
-    timeBasedScheduling:
-      schedule:
-        - RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=10;BYMONTH=5;BYHOUR=19;BYMINUTE=0;BYSECOND=0
-      startDateTime: 2026-05-20T19:00:00.0000000Z
-      endDateTime: 0001-01-01T00:00:00.0000000Z
-      timezone: Etc/UTC
