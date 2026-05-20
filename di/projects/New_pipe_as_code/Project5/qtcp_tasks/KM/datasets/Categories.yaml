@@ -20,7 +20,7 @@ properties:
           originalTypeFull: INTEGER
         id: categoryid
         properties:
-          documentMetadata: false
+          documentMetadata: true
       - name: CategoryName
         ordinal: 2
         nullable: true
