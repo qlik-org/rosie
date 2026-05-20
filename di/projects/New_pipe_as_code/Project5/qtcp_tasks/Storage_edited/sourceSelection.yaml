@@ -1,4 +1,16 @@
-includePatterns:
+explicitlySelected:
   - sourceTask: landing-7z5m
-    tablePattern: '%'
-    schemaPattern: '%'
+    name: Customers
+    sourceTableId: customers
+  - sourceTask: landing-7z5m
+    name: Employees
+    sourceTableId: employees
+  - sourceTask: landing-7z5m
+    name: Orders
+    sourceTableId: orders
+  - sourceTask: landing-7z5m
+    name: Shippers
+    sourceTableId: shippers
+  - sourceTask: landing-7z5m
+    name: Order Details
+    sourceTableId: order_details

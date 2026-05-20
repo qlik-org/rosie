@@ -1,0 +1,103 @@
+properties:
+  id: order_details-0pqk
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details-0pqh
+      name: Order Details
+      taskId: transform-7z5t
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Order Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 5
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+    entityId: ''
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: order_details-0pqh
+      name: Order Details
+      taskId: transform-7z5t
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+    subtype: MODEL_BASED
+    materializedSource: false

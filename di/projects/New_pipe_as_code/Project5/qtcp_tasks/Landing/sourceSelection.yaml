@@ -12,3 +12,9 @@ explicitlySelected:
   - name: Shippers
     schema: '{{task.landing-7z5m:null$_$dbo.schema}}'
     type: TABLE
+  - name: Order Details
+    schema: '{{task.landing-7z5m:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Products
+    schema: '{{task.landing-7z5m:null$_$dbo.schema}}'
+    type: TABLE
