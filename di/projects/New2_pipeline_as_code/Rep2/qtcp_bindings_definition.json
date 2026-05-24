@@ -1,0 +1,29 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "task.lake_landing-extu.sourceConnection": "",
+    "task.lake_landing-extu.targetConnection": "",
+    "task.replication-exts.sourceConnection": "",
+    "task.replication-exts.targetConnection": "",
+    "task.replication-exts.targetSchema": "",
+    "task.replication-exts.targetStorageConnection": ""
+  },
+  "connectionProperties": {
+    "task.lake_landing-extu.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.lake_landing-extu.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-exts.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "source:SurveyMonkey@1.0.0"
+    },
+    "task.replication-exts.targetConnection": {
+      "type": "reptgt_mssqltarget"
+    }
+  }
+}

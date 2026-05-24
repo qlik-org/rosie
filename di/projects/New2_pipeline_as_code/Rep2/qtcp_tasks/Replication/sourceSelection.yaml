@@ -1,0 +1,10 @@
+sourceConnection: '{{task.replication-exts.sourceConnection}}'
+explicitlySelected:
+  - name: question_bank
+    type: VIEW
+  - name: question_bank_locales
+    type: VIEW
+  - name: question_bank_modifiers
+    type: VIEW
+  - name: question_bank_modifiers_options
+    type: VIEW

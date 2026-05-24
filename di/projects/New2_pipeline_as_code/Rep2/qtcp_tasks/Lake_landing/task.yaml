@@ -1,0 +1,11 @@
+properties:
+  name: Lake_landing
+  id: lake_landing-extu
+  type: LAKE_LANDING
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing-extu.targetConnection}}'
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false
