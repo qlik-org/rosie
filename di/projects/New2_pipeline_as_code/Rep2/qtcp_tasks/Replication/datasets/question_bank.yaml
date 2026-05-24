@@ -1,0 +1,22 @@
+properties:
+  id: question_bank
+  name: question_bank
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: copy_id
+      newDataType:
+        type: WSTRING
+        length: 5
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${question_id}
+        alias:
+          - name: question_id
+            value: question_id
+      addedColumnId: '7665bce4-459b-4840-8139-c85e4aa50e15'
+sourceTable:
+  type: VIEW
+  name: question_bank

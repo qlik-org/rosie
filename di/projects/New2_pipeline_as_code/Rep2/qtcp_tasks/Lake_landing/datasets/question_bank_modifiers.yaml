@@ -1,0 +1,22 @@
+properties:
+  id: question_bank_modifiers
+  name: question_bank_modifiers
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: copy_index
+      newDataType:
+        type: INT8
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${array_index}
+        alias:
+          - name: array_index
+            value: array_index
+      addedColumnId: '6202c1a2-9a89-40d8-99c2-e61685aefa05'
+sourceTable:
+  type: VIEW
+  name: question_bank_modifiers
