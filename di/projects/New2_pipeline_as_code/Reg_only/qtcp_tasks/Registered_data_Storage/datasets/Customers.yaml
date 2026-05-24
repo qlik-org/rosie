@@ -1,0 +1,6 @@
+properties:
+  id: customers-41dq
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: registered_data-41dn

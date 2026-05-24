@@ -1,0 +1,13 @@
+explicitlySelected:
+  - database: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.database}}'
+    name: Customers
+    schema: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.database}}'
+    name: Employees
+    schema: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.database}}'
+    name: Orders
+    schema: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.schema}}'
+    type: TABLE

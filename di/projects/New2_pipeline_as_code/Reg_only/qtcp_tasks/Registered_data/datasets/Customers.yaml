@@ -1,0 +1,24 @@
+properties:
+  id: customers
+  name: Customers
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: CustID_copy
+      newDataType:
+        type: STRING
+        length: 5
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${CustomerID}
+        alias:
+          - name: CustomerID
+            value: customerid
+      addedColumnId: '4e8f4407-0638-401c-aca1-dd652748ca72'
+sourceTable:
+  schema: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.schema}}'
+  database: '{{task.registered_data-41dn:AAA_WASEEM_DB$_$for_registered_landing.database}}'
+  type: TABLE
+  name: Customers

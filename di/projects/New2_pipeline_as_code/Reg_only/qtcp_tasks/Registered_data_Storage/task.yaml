@@ -1,0 +1,12 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-41do
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-41do.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-41do.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-41do.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-41do.warehouseName}}'
