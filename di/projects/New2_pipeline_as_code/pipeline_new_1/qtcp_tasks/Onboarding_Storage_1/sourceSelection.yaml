@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: onboarding_landing_1-41bj
+    tablePattern: '%'
+    schemaPattern: '%'
