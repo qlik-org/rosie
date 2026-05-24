@@ -1,0 +1,25 @@
+properties:
+  id: suppliers
+  name: Suppliers
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: HomePage
+    - action: ADD
+      columnName: Supp_id_dup
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${SupplierID}
+        alias:
+          - name: SupplierID
+            value: supplierid
+      addedColumnId: '76d1509d-5551-418d-88a6-1798cfd1573a'
+sourceTable:
+  schema: '{{task.replication-41cx:null$_$dbo.schema}}'
+  type: TABLE
+  name: Suppliers

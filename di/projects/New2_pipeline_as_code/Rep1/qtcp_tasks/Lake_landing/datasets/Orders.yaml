@@ -1,0 +1,16 @@
+properties:
+  id: orders
+  name: Orders
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  filter:
+    expressionStatement: ${OrderID} < 10400
+    alias:
+      - name: OrderID
+        value: orderid
+sourceTable:
+  schema: '{{task.lake_landing-41cy:null$_$dbo.schema}}'
+  type: TABLE
+  name: Orders

@@ -1,0 +1,14 @@
+properties:
+  name: Replication
+  id: replication-41cx
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-41cx.targetConnection}}'
+    targetStorageConnection: '{{task.replication-41cx.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-05-24T12:36:59.0430000Z

@@ -1,0 +1,25 @@
+properties:
+  id: categories
+  name: Categories
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Picture
+    - action: ADD
+      columnName: dup_catID
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${CategoryID}
+        alias:
+          - name: CategoryID
+            value: categoryid
+      addedColumnId: '9d53f9c7-7076-4db6-a6b5-807202a9b23a'
+sourceTable:
+  schema: '{{task.replication-41cx:null$_$dbo.schema}}'
+  type: TABLE
+  name: Categories

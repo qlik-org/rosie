@@ -1,0 +1,12 @@
+properties:
+  id: customers
+  name: Customers
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: PostalCode
+      newColumnName: Postal_Code
+sourceTable:
+  schema: '{{task.lake_landing-41cy:null$_$dbo.schema}}'
+  type: TABLE
+  name: Customers

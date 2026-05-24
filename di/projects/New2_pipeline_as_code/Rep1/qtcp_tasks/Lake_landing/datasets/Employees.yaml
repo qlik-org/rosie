@@ -1,0 +1,30 @@
+properties:
+  id: employees
+  name: Employees
+  landingDatasetSettings:
+    loadOrder: HIGH
+    loadParallelSettings: {}
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Photo
+    - action: DROP
+      columnName: Notes
+    - action: ADD
+      columnName: emp_id_copy
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${EmployeeID}
+        alias:
+          - name: EmployeeID
+            value: employeeid
+      addedColumnId: '9be4344c-90fc-4fad-b9eb-3995d531f3f5'
+sourceTable:
+  schema: '{{task.lake_landing-41cy:null$_$dbo.schema}}'
+  type: TABLE
+  name: Employees

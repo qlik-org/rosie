@@ -1,0 +1,14 @@
+rules:
+  - ordinal: 0
+    actionType: ADD_COLUMN
+    scopeType: COLUMN
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: ${Q_M_COLUMN_NAME}
+        alias:
+          - name: Q_M_COLUMN_NAME
+            value: $Q_M_COLUMN_NAME
+      column:
+        name: rule_col
+    name: Rule
