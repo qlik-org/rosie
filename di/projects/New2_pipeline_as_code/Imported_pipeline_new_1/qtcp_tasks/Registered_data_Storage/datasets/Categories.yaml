@@ -1,0 +1,6 @@
+properties:
+  id: categories-41b9
+  name: Categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: registered_data-41b6

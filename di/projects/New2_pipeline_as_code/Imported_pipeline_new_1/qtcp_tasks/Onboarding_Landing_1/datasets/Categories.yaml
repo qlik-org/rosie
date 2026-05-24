@@ -1,0 +1,11 @@
+properties:
+  id: categories
+  name: Categories
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Picture
+sourceTable:
+  schema: '{{task.onboarding_landing_1-41bj:null$_$dbo.schema}}'
+  type: TABLE
+  name: Categories

@@ -1,0 +1,24 @@
+properties:
+  id: categories
+  name: Categories
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: CatID_copy
+      newDataType:
+        type: NUMERIC
+        length: 0
+        precision: 38
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${CategoryID}
+        alias:
+          - name: CategoryID
+            value: categoryid
+      addedColumnId: '4053fa9d-dd38-4a2f-aa40-134d8afd2643'
+sourceTable:
+  schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.schema}}'
+  database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.database}}'
+  type: TABLE
+  name: Categories

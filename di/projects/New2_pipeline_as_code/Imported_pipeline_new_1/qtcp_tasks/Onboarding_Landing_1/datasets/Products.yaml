@@ -1,0 +1,17 @@
+properties:
+  id: products
+  name: Products
+transformations:
+  filter:
+    expressionStatement: ${CategoryID} < 20
+    alias:
+      - name: CategoryID
+        value: categoryid
+  columnTransformations:
+    - action: KEEP
+      columnName: ReorderLevel
+      newColumnName: Reorder_Level
+sourceTable:
+  schema: '{{task.onboarding_landing_1-41bj:null$_$dbo.schema}}'
+  type: TABLE
+  name: Products

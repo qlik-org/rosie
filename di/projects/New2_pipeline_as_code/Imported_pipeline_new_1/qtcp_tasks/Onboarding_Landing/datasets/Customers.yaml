@@ -1,0 +1,17 @@
+properties:
+  id: customers
+  name: Customers
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Fax
+      expression:
+        expressionStatement: ${Phone}
+        alias:
+          - name: Phone
+            value: phone
+      ordinal: 11
+sourceTable:
+  schema: '{{task.onboarding_landing-41bd:null$_$dbo.schema}}'
+  type: TABLE
+  name: Customers

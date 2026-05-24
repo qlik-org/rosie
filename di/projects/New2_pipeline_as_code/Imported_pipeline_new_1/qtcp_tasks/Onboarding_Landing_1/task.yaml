@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Landing_1
+  id: onboarding_landing_1-41bj
+  type: LANDING
+settings:
+  fullLoadOnly: true
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing_1-41bj.taskSchema}}'
+      database: '{{task.onboarding_landing_1-41bj.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

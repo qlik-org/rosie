@@ -1,0 +1,25 @@
+explicitlySelected:
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.database}}'
+    name: Customers
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.database}}'
+    name: Employees
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.database}}'
+    name: Orders
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.database}}'
+    name: Categories
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.database}}'
+    name: Products
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.database}}'
+    name: Suppliers
+    schema: '{{task.registered_data-41b6:ROSIE$_$imp_pipe1_new1_onboarding_landing_1.schema}}'
+    type: TABLE

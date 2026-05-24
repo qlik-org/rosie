@@ -1,0 +1,6 @@
+properties:
+  id: products-41cb
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: registered_data-41b6
