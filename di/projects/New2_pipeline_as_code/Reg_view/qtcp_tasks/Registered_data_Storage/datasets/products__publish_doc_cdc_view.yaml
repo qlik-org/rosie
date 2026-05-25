@@ -1,0 +1,6 @@
+properties:
+  id: products__publish_doc_cdc_view-extt
+  name: products__publish_doc_cdc_view
+  inputDatasets:
+    - datasetId: products__publish_doc_cdc_view
+      taskId: registered_data-extn

@@ -1,0 +1,6 @@
+properties:
+  id: products__orderdetails__ai_view-exts
+  name: products__orderdetails__ai_view
+  inputDatasets:
+    - datasetId: products__orderdetails__ai_view
+      taskId: registered_data-extn

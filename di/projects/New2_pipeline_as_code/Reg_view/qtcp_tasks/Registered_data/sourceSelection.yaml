@@ -1,0 +1,21 @@
+explicitlySelected:
+  - database: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.database}}'
+    name: products__ai_cdc_view
+    schema: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.database}}'
+    name: products__ai_view
+    schema: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.database}}'
+    name: products__orderdetails__ai_view
+    schema: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.database}}'
+    name: products__publish_doc_cdc_view
+    schema: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.database}}'
+    name: products__publish_doc_view
+    schema: '{{task.registered_data-extn:dis_automation$_$a_ato_lea_11_13_50km_external__internal.schema}}'
+    type: VIEW

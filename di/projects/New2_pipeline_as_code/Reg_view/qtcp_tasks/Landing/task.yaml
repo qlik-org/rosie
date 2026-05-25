@@ -1,0 +1,12 @@
+properties:
+  name: Landing
+  id: landing-extm
+  type: LANDING
+settings:
+  fullLoadOnly: true
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-extm.taskSchema}}'
+      database: '{{task.landing-extm.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

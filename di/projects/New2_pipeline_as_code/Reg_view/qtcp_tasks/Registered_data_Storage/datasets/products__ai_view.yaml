@@ -1,0 +1,6 @@
+properties:
+  id: products__ai_view-extr
+  name: products__ai_view
+  inputDatasets:
+    - datasetId: products__ai_view
+      taskId: registered_data-extn

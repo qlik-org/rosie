@@ -1,0 +1,14 @@
+sourceConnection: '{{task.landing-extm.sourceConnection}}'
+explicitlySelected:
+  - name: Quarterly Orders
+    schema: '{{task.landing-extm:null$_$dbo.schema}}'
+    type: VIEW
+  - name: Products by Category
+    schema: '{{task.landing-extm:null$_$dbo.schema}}'
+    type: VIEW
+  - name: Sales by Category
+    schema: '{{task.landing-extm:null$_$dbo.schema}}'
+    type: VIEW
+  - name: Category Sales for 1997
+    schema: '{{task.landing-extm:null$_$dbo.schema}}'
+    type: VIEW

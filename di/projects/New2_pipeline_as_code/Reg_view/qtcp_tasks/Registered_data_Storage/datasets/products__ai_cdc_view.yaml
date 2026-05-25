@@ -1,0 +1,6 @@
+properties:
+  id: products__ai_cdc_view-extq
+  name: products__ai_cdc_view
+  inputDatasets:
+    - datasetId: products__ai_cdc_view
+      taskId: registered_data-extn
