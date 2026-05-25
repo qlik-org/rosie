@@ -1,0 +1,6 @@
+properties:
+  id: customers-exwp
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: registered_data_watermark-exwm

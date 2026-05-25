@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-exvd
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-exvd.taskSchema}}'
+      database: '{{task.landing-exvd.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

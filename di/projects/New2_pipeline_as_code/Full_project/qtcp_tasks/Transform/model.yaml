@@ -1,0 +1,97 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details-exvz
+      name: Order Details
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: orders-exv1
+      name: Orders
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-exv_
+  - sourceEntity:
+      datasetId: order_details-exvz
+      name: Order Details
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: orders_shippers-exv-
+      name: Orders_Shippers
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_Shippers_relation
+    description: ''
+    id: order_details_orders_shippers_relation-exwa
+  - sourceEntity:
+      datasetId: orders-exv1
+      name: Orders
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: customers-exvx
+      name: Customers
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-exwb
+  - sourceEntity:
+      datasetId: orders-exv1
+      name: Orders
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: employees_sql-exv5
+      name: employees_sql
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_employees_sql_relation
+    description: ''
+    id: orders_employees_sql_relation-exwc
+  - sourceEntity:
+      datasetId: orders-exv1
+      name: Orders
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: shippers-exv3
+      name: Shippers
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-exwd
+  - sourceEntity:
+      datasetId: employees_sql-exv5
+      name: employees_sql
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: employees_sql-exv5
+      name: employees_sql
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: EmployeesSql_EmployeesSql
+    description: ''
+    id: employeessql_employeessql-exwe

@@ -1,0 +1,6 @@
+properties:
+  id: order_details-exvj
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details
+      taskId: landing-exvd

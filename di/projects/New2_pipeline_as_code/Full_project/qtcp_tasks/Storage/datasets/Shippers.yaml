@@ -1,0 +1,6 @@
+properties:
+  id: shippers-exvm
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: landing-exvd

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: storage-exve
+    tablePattern: '%'
+    schemaPattern: '%'

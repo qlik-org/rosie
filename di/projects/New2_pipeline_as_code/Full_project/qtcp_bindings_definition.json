@@ -39,7 +39,56 @@
     "task-type.transform.databaseName": "",
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
-    "task-type.transform.warehouseSelectionMethod": ""
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.landing-exvd.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-exvd.sourceConnection": "",
+    "task.landing-exvd.taskSchema": "",
+    "task.landing-exvd:null$_$dbo.schema": "",
+    "task.onboarding_reload_landing-exvo.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_reload_landing-exvo.sourceConnection": "",
+    "task.onboarding_reload_landing-exvo.taskSchema": "",
+    "task.onboarding_reload_landing-exvo:null$_$dbo.schema": "",
+    "task.onboarding_reload_storage-exvp.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_reload_storage-exvp.internalSchema": "",
+    "task.onboarding_reload_storage-exvp.taskSchema": "",
+    "task.onboarding_reload_storage-exvp.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.registered_data-exwg.databaseName": "{{task-type.registered.databaseName}}",
+    "task.registered_data-exwg.internalSchema": "",
+    "task.registered_data-exwg.taskSchema": "",
+    "task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.database": "",
+    "task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.schema": "",
+    "task.registered_data_storage-exwh.databaseName": "{{task-type.storage.databaseName}}",
+    "task.registered_data_storage-exwh.internalSchema": "",
+    "task.registered_data_storage-exwh.taskSchema": "",
+    "task.registered_data_storage-exwh.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.registered_data_watermark-exwm.databaseName": "{{task-type.registered.databaseName}}",
+    "task.registered_data_watermark-exwm.internalSchema": "",
+    "task.registered_data_watermark-exwm.taskSchema": "",
+    "task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.database": "",
+    "task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.schema": "",
+    "task.registered_data_watermark_storage-exwn.databaseName": "{{task-type.storage.databaseName}}",
+    "task.registered_data_watermark_storage-exwn.internalSchema": "",
+    "task.registered_data_watermark_storage-exwn.taskSchema": "",
+    "task.registered_data_watermark_storage-exwn.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage-exve.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage-exve.internalSchema": "",
+    "task.storage-exve.taskSchema": "",
+    "task.storage-exve.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.transform-exvv.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform-exvv.internalSchema": "",
+    "task.transform-exvv.taskSchema": "",
+    "task.transform-exvv.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_m-exwt.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_m-exwt.internalSchema": "",
+    "task.transform_m-exwt.taskSchema": "",
+    "task.transform_m-exwt.warehouseName": "{{task-type.transform.warehouseName}}"
   },
-  "connectionProperties": {}
+  "connectionProperties": {
+    "task.landing-exvd.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.onboarding_reload_landing-exvo.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
 }

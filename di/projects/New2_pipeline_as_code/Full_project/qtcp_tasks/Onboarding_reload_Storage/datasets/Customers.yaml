@@ -1,0 +1,6 @@
+properties:
+  id: customers-exvr
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_reload_landing-exvo

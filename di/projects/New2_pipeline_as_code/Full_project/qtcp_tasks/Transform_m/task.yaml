@@ -1,0 +1,15 @@
+properties:
+  name: Transform_m
+  id: transform_m-exwt
+  description: m
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_m-exwt.internalSchema}}'
+    taskSchema: '{{task.transform_m-exwt.taskSchema}}'
+    databaseName: '{{task.transform_m-exwt.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_m-exwt.warehouseName}}'
