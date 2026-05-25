@@ -1,0 +1,60 @@
+properties:
+  id: orders_shippers-exv-
+  name: Orders_Shippers
+  inputDatasets:
+    - datasetId: orders-exvk
+      name: Orders
+      taskId: storage-exve
+    - datasetId: shippers-exvm
+      name: Shippers
+      taskId: storage-exve
+  tableDef:
+    name: Orders_Shippers
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orderid
+      - name: OrderDate
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: orderdate
+      - name: SHIPPERNAME
+        ordinal: 3
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: shippername
+      - name: SHIPPERPHONE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: shipperphone
+  customDatasetSettings:
+    customSql:
+      expressionStatement: "SELECT \n    o.\"OrderID\", \n    o.\"OrderDate\", \n    s.\"CompanyName\" AS ShipperName, \n    s.\"Phone\" AS ShipperPhone\nFROM \n    ${Orders} o\nINNER JOIN \n    ${Shippers} s ON o.\"ShipVia\" = s.\"ShipperID\";"
+      alias:
+        - name: Orders
+          value: '{{ref(project.current.projectId)}}$_$storage-exve$_$orders-exvk'
+        - name: Shippers
+          value: '{{ref(project.current.projectId)}}$_$storage-exve$_$shippers-exvm'
+    incremental: false
+  description: join
+mappings:
+  mappings: []

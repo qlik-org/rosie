@@ -1,0 +1,12 @@
+properties:
+  name: Registered_data_watermark_Storage
+  id: registered_data_watermark_storage-exwn
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_watermark_storage-exwn.internalSchema}}'
+    taskSchema: '{{task.registered_data_watermark_storage-exwn.taskSchema}}'
+    databaseName: '{{task.registered_data_watermark_storage-exwn.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_watermark_storage-exwn.warehouseName}}'

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: onboarding_reload_storage-exvp
+    tablePattern: '%'
+    schemaPattern: '%'

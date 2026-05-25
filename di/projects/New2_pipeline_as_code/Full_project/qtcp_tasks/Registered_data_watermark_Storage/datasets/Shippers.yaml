@@ -1,0 +1,6 @@
+properties:
+  id: shippers-exws
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: registered_data_watermark-exwm
