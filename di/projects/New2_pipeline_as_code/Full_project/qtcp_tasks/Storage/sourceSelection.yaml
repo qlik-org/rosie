@@ -1,0 +1,16 @@
+explicitlySelected:
+  - sourceTask: landing-exvd
+    name: Customers
+    sourceTableId: customers
+  - sourceTask: landing-exvd
+    name: Employees
+    sourceTableId: employees
+  - sourceTask: landing-exvd
+    name: Order Details
+    sourceTableId: order_details
+  - sourceTask: landing-exvd
+    name: Orders
+    sourceTableId: orders
+  - sourceTask: landing-exvd
+    name: Shippers
+    sourceTableId: shippers

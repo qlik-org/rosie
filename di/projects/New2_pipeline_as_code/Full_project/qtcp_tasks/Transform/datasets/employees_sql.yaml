@@ -1,0 +1,20 @@
+properties:
+  id: employees_sql-exv5
+  name: employees_sql
+  inputDatasets:
+    - datasetId: employees-exvi
+      name: Employees
+      taskId: storage-exve
+  tableDef:
+    name: employees_sql
+    columns: []
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Employees}
+      alias:
+        - name: Employees
+          value: '{{ref(project.current.projectId)}}$_$storage-exve$_$employees-exvi'
+    incremental: false
+  description: default settings, select all
+mappings:
+  mappings: []

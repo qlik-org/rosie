@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_reload_Storage
+  id: onboarding_reload_storage-exvp
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_reload_storage-exvp.internalSchema}}'
+    taskSchema: '{{task.onboarding_reload_storage-exvp.taskSchema}}'
+    databaseName: '{{task.onboarding_reload_storage-exvp.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_reload_storage-exvp.warehouseName}}'

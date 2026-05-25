@@ -1,0 +1,13 @@
+properties:
+  name: Transform
+  id: transform-exvv
+  description: non m
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-exvv.internalSchema}}'
+    taskSchema: '{{task.transform-exvv.taskSchema}}'
+    databaseName: '{{task.transform-exvv.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-exvv.warehouseName}}'

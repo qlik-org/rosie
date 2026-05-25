@@ -39,7 +39,34 @@
     "task-type.transform.databaseName": "",
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
-    "task-type.transform.warehouseSelectionMethod": ""
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.landing-exvd.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-exvd.sourceConnection": "",
+    "task.landing-exvd.taskSchema": "",
+    "task.landing-exvd:null$_$dbo.schema": "",
+    "task.onboarding_reload_landing-exvo.databaseName": "{{task-type.landing.databaseName}}",
+    "task.onboarding_reload_landing-exvo.sourceConnection": "",
+    "task.onboarding_reload_landing-exvo.taskSchema": "",
+    "task.onboarding_reload_landing-exvo:null$_$dbo.schema": "",
+    "task.onboarding_reload_storage-exvp.databaseName": "{{task-type.storage.databaseName}}",
+    "task.onboarding_reload_storage-exvp.internalSchema": "",
+    "task.onboarding_reload_storage-exvp.taskSchema": "",
+    "task.onboarding_reload_storage-exvp.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage-exve.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage-exve.internalSchema": "",
+    "task.storage-exve.taskSchema": "",
+    "task.storage-exve.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.transform-exvv.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform-exvv.internalSchema": "",
+    "task.transform-exvv.taskSchema": "",
+    "task.transform-exvv.warehouseName": "{{task-type.transform.warehouseName}}"
   },
-  "connectionProperties": {}
+  "connectionProperties": {
+    "task.landing-exvd.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.onboarding_reload_landing-exvo.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
 }

@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-exve
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-exve.internalSchema}}'
+    taskSchema: '{{task.storage-exve.taskSchema}}'
+    databaseName: '{{task.storage-exve.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-exve.warehouseName}}'
