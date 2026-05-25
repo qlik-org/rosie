@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: registered_data-h_as
+    tablePattern: '%'
+    schemaPattern: '%'

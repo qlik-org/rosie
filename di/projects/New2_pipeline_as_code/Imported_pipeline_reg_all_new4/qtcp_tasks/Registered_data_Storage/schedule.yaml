@@ -1,0 +1,7 @@
+scheduling:
+  - schedulingType: TIME_BASED
+    timeBasedScheduling:
+      schedule:
+        - RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0
+      startDateTime: 2026-05-24T14:55:08.6200000Z
+      timezone: Etc/UTC
