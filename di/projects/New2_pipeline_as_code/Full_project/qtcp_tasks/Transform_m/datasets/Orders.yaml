@@ -54,8 +54,22 @@ properties:
         id: employeeid
         properties:
           documentMetadata: false
-      - name: OrderDate
+      - name: ShipVia
         ordinal: 4
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${ShipVia}
+          alias:
+            - name: ShipVia
+              value: ShipVia
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 5
         nullable: true
         datatype:
           type: DATETIME
@@ -70,7 +84,7 @@ properties:
         properties:
           documentMetadata: false
       - name: RequiredDate
-        ordinal: 5
+        ordinal: 6
         nullable: true
         datatype:
           type: DATETIME
@@ -85,7 +99,7 @@ properties:
         properties:
           documentMetadata: false
       - name: ShippedDate
-        ordinal: 6
+        ordinal: 7
         nullable: true
         datatype:
           type: DATETIME
@@ -97,20 +111,6 @@ properties:
             - name: ShippedDate
               value: ShippedDate
         id: shippeddate
-        properties:
-          documentMetadata: false
-      - name: ShipVia
-        ordinal: 7
-        nullable: true
-        datatype:
-          type: INT4
-          originalTypeFull: INTEGER
-        expression:
-          expressionStatement: ${ShipVia}
-          alias:
-            - name: ShipVia
-              value: ShipVia
-        id: shipvia
         properties:
           documentMetadata: false
       - name: Freight

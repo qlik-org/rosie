@@ -4,3 +4,19 @@ properties:
   inputDatasets:
     - datasetId: shippers
       taskId: landing-exvd
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: copy_id
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${ShipperID}
+        alias:
+          - name: ShipperID
+            value: shipperid
+      addedColumnId: e9b0da68-8ddc-45f5-9439-f81b69874473

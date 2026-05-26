@@ -2,3 +2,7 @@ includePatterns:
   - sourceTask: storage-exve
     tablePattern: '%'
     schemaPattern: '%'
+explicitlySelected:
+  - sourceTask: onboarding_reload_storage-exvp
+    name: Shippers
+    sourceTableId: shippers-exvu

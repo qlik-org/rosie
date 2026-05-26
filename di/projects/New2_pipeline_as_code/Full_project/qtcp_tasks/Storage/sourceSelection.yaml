@@ -14,3 +14,6 @@ explicitlySelected:
   - sourceTask: landing-exvd
     name: Shippers
     sourceTableId: shippers
+  - sourceTask: landing-exvd
+    name: Products
+    sourceTableId: products

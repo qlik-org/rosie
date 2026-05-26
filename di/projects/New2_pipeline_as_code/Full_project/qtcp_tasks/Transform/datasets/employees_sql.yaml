@@ -132,17 +132,8 @@ properties:
           originalType: VARCHAR
           originalTypeFull: VARCHAR(4)
         id: extension
-      - name: Photo
-        ordinal: 15
-        nullable: true
-        datatype:
-          type: BYTES
-          length: 8388608
-          originalType: BINARY
-          originalTypeFull: BINARY(8388608)
-        id: photo
       - name: Notes
-        ordinal: 16
+        ordinal: 15
         nullable: true
         datatype:
           type: STRING
@@ -151,7 +142,7 @@ properties:
           originalTypeFull: VARCHAR(8388608)
         id: notes
       - name: ReportsTo
-        ordinal: 17
+        ordinal: 16
         nullable: true
         datatype:
           type: NUMERIC
@@ -159,15 +150,6 @@ properties:
           originalType: NUMBER
           originalTypeFull: NUMBER(38,0)
         id: reportsto
-      - name: PhotoPath
-        ordinal: 18
-        nullable: true
-        datatype:
-          type: STRING
-          length: 255
-          originalType: VARCHAR
-          originalTypeFull: VARCHAR(255)
-        id: photopath
     entityId: employees_sql-exv5
   customDatasetSettings:
     customSql:

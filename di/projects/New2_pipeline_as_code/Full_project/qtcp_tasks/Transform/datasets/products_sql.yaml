@@ -1,0 +1,117 @@
+properties:
+  id: products_sql-exyw
+  name: products_sql
+  inputDatasets:
+    - datasetId: products-exyu
+      name: Products
+      taskId: storage-exve
+  tableDef:
+    name: products_sql
+    columns:
+      - name: ProductID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: productid
+      - name: ProductName
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: productname
+      - name: SupplierID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: supplierid
+      - name: CategoryID
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: categoryid
+      - name: QuantityPerUnit
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 20
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(20)
+        id: quantityperunit
+      - name: UnitPrice
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalType: NUMBER
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+      - name: UnitsInStock
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: unitsinstock
+      - name: UnitsOnOrder
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: unitsonorder
+      - name: ReorderLevel
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: reorderlevel
+      - name: Discontinued
+        ordinal: 10
+        datatype:
+          type: BOOLEAN
+          originalType: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: discontinued
+      - name: copy_name
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: copy_name
+    entityId: products_sql-exyw
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Products}
+      alias:
+        - name: Products
+          value: '{{ref(project.current.projectId)}}$_$storage-exve$_$products-exyu'
+    incremental: false
+mappings:
+  mappings: []

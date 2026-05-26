@@ -1,17 +1,17 @@
 explicitlySelected:
-  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.database}}'
+  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.database}}'
     name: Customers
-    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.schema}}'
+    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.database}}'
+  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.database}}'
     name: Employees
-    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.schema}}'
+    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.database}}'
+  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.database}}'
     name: Orders
-    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.schema}}'
+    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.database}}'
+  - database: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.database}}'
     name: Shippers
-    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$Full_p_b1_landing.schema}}'
+    schema: '{{task.registered_data_watermark-exwm:ROSIE$_$full_p_main_landing.schema}}'
     type: TABLE

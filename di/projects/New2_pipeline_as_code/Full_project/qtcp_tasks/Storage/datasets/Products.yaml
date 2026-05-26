@@ -1,0 +1,22 @@
+properties:
+  id: products-exyu
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: landing-exvd
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: copy_name
+      newDataType:
+        type: WSTRING
+        length: 50
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: $CONCAT('Origin ', ${ProductName})
+        alias:
+          - name: ProductName
+            value: productname
+      addedColumnId: '1767e816-00e7-42ec-ab38-e35ba4742027'

@@ -1,0 +1,20 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Fax'
+    action:
+      renameType: ADD_SUFFIX
+      value: _123
+    name: Rule add suffix to Fax col
+    description: fax to fax_123
+  - ordinal: 1
+    actionType: RENAME_TABLE
+    scope:
+      whereTableName: Orders
+    action:
+      renameType: RENAME
+      value: Orders_a
+    name: Rule Orders
+    description: change name _a

@@ -3,6 +3,9 @@ properties:
   id: storage-exve
   type: STORAGE
 settings:
+  ddlHandlingPolicy:
+    addColumn: IGNORE
+    createTable: IGNORE
   artifactsLocation:
     internalSchema: '{{task.storage-exve.internalSchema}}'
     taskSchema: '{{task.storage-exve.taskSchema}}'
@@ -10,3 +13,5 @@ settings:
   taskRuntime:
     warehouseSelection:
       warehouseName: '{{task.storage-exve.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: true

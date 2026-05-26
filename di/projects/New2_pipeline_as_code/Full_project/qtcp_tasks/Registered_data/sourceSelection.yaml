@@ -1,13 +1,13 @@
 explicitlySelected:
-  - database: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.database}}'
+  - database: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.database}}'
     name: Employees
-    schema: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.schema}}'
+    schema: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.database}}'
+  - database: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.database}}'
     name: Orders
-    schema: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.schema}}'
+    schema: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.database}}'
+  - database: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.database}}'
     name: Shippers
-    schema: '{{task.registered_data-exwg:ROSIE$_$Full_p_b1_onboarding_reload_landing.schema}}'
+    schema: '{{task.registered_data-exwg:ROSIE$_$full_p_main_onboarding_reload_landing.schema}}'
     type: TABLE
