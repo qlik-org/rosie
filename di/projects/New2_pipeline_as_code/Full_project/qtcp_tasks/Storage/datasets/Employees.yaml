@@ -4,3 +4,14 @@ properties:
   inputDatasets:
     - datasetId: employees
       taskId: landing-exvd
+transformations:
+  filter:
+    expressionStatement: ${EmployeeID} < 30
+    alias:
+      - name: EmployeeID
+        value: employeeid
+  columnTransformations:
+    - action: DROP
+      columnName: Photo
+    - action: DROP
+      columnName: PhotoPath

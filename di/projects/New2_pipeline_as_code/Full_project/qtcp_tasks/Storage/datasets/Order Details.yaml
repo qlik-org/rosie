@@ -4,3 +4,6 @@ properties:
   inputDatasets:
     - datasetId: order_details
       taskId: landing-exvd
+  description: changed name
+transformations:
+  newTableName: Order_Details

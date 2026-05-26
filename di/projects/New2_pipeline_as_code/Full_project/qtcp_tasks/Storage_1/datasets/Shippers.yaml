@@ -1,0 +1,6 @@
+properties:
+  id: shippers-exzg
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: onboarding_reload_landing-exvo

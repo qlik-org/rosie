@@ -5,7 +5,7 @@ properties:
   type: TRANSFORM
 settings:
   artifactsSettings:
-    materialized: true
+    historyEnabled: false
   artifactsLocation:
     internalSchema: '{{task.transform_m-exwt.internalSchema}}'
     taskSchema: '{{task.transform_m-exwt.taskSchema}}'

@@ -1,0 +1,33 @@
+relationships:
+  - sourceEntity:
+      datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+    targetEntity:
+      datasetId: customers-exwv
+      name: Customers
+      taskId: transform_m-exwt
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-exy9
+  - sourceEntity:
+      datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+    targetEntity:
+      datasetId: employees_sql-exwx
+      name: employees_sql
+      taskId: transform_m-exwt
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_employees_sql_relation
+    description: ''
+    id: orders_employees_sql_relation-exy-

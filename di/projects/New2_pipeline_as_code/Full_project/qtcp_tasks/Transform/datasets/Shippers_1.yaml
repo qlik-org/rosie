@@ -1,6 +1,6 @@
 properties:
-  id: shippers-exwb
-  name: Shippers
+  id: shippers_1-exy1
+  name: Shippers_1
   inputDatasets:
     - datasetId: shippers-exvu
       name: Shippers
@@ -8,7 +8,7 @@ properties:
   datasetAttributes:
     hasLiveViews: OFF
   tableDef:
-    name: Shippers
+    name: Shippers_1
     columns:
       - name: ShipperID
         ordinal: 1
@@ -38,15 +38,6 @@ properties:
         id: phone
         properties:
           documentMetadata: false
-      - name: CompanyName_1
-        ordinal: 4
-        datatype:
-          type: WSTRING
-          length: 40
-          originalTypeFull: NVARCHAR(40)
-        id: CompanyName_1-c54e
-        properties:
-          documentMetadata: false
 mappings:
   mappings:
     - sourceDataEntityKey:
@@ -73,12 +64,6 @@ mappings:
             alias:
               - name: Phone
                 value: Phone
-        - columnId: CompanyName_1-c54e
-          expression:
-            expressionStatement: ${CompanyName}
-            alias:
-              - name: CompanyName
-                value: CompanyName
-      id: shippers_default_mapping-exwd
-      name: Shippers_default_mapping
+      id: shippers_1_default_mapping-exy2
+      name: Shippers_1_default_mapping
       description: ''

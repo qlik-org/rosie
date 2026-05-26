@@ -59,7 +59,7 @@ properties:
         id: address
         properties:
           documentMetadata: false
-      - name: City
+      - name: City_123
         ordinal: 6
         nullable: true
         datatype:
@@ -79,18 +79,8 @@ properties:
         id: region
         properties:
           documentMetadata: false
-      - name: PostalCode
-        ordinal: 8
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 10
-          originalTypeFull: NVARCHAR(10)
-        id: postalcode
-        properties:
-          documentMetadata: false
       - name: Country
-        ordinal: 9
+        ordinal: 8
         nullable: true
         datatype:
           type: WSTRING
@@ -100,7 +90,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Phone
-        ordinal: 10
+        ordinal: 9
         nullable: true
         datatype:
           type: WSTRING
@@ -110,7 +100,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Fax
-        ordinal: 11
+        ordinal: 10
         nullable: true
         datatype:
           type: WSTRING
@@ -169,12 +159,6 @@ mappings:
             alias:
               - name: Region
                 value: Region
-        - columnId: postalcode
-          expression:
-            expressionStatement: ${PostalCode}
-            alias:
-              - name: PostalCode
-                value: PostalCode
         - columnId: country
           expression:
             expressionStatement: ${Country}

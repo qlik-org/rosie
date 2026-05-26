@@ -1,5 +1,21 @@
 relationships:
   - sourceEntity:
+      datasetId: employees_sql-exv5
+      name: employees_sql
+      taskId: transform-exvv
+    targetEntity:
+      datasetId: employees_sql-exv5
+      name: employees_sql
+      taskId: transform-exvv
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: EmployeesSql_EmployeesSql
+    description: ''
+    id: employeessql_employeessql-exwe
+  - sourceEntity:
       datasetId: order_details-exvz
       name: Order Details
       taskId: transform-exvv
@@ -36,22 +52,6 @@ relationships:
       name: Orders
       taskId: transform-exvv
     targetEntity:
-      datasetId: customers-exvx
-      name: Customers
-      taskId: transform-exvv
-    columnRelationships:
-      - sourceColumn: CustomerID
-        targetColumn: CustomerID
-        sourceColumnId: customerid
-        targetColumnId: customerid
-    name: Orders_Customers_relation
-    description: ''
-    id: orders_customers_relation-exwb
-  - sourceEntity:
-      datasetId: orders-exv1
-      name: Orders
-      taskId: transform-exvv
-    targetEntity:
       datasetId: employees_sql-exv5
       name: employees_sql
       taskId: transform-exvv
@@ -79,19 +79,3 @@ relationships:
     name: Orders_Shippers
     description: ''
     id: orders_shippers-exwd
-  - sourceEntity:
-      datasetId: employees_sql-exv5
-      name: employees_sql
-      taskId: transform-exvv
-    targetEntity:
-      datasetId: employees_sql-exv5
-      name: employees_sql
-      taskId: transform-exvv
-    columnRelationships:
-      - sourceColumn: ReportsTo
-        targetColumn: EmployeeID
-        sourceColumnId: reportsto
-        targetColumnId: employeeid
-    name: EmployeesSql_EmployeesSql
-    description: ''
-    id: employeessql_employeessql-exwe

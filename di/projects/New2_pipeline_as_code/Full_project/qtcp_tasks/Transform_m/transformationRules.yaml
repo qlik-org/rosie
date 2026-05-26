@@ -1,0 +1,11 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: Phone
+    action:
+      renameType: ADD_PREFIX
+      value: a_
+    name: Rule rename col phone
+    description: add a_
