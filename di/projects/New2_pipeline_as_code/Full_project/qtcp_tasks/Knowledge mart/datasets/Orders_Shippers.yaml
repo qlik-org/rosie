@@ -1,0 +1,102 @@
+properties:
+  id: orders_shippers-ex4f
+  name: Orders_Shippers
+  inputDatasets:
+    - datasetId: orders_shippers-exv-
+      name: Orders_Shippers
+      taskId: transform-exvv
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Orders_Shippers
+    columns:
+      - name: OrderID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: SHIPPERNAME
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: shippername
+        properties:
+          documentMetadata: false
+      - name: SHIPPERPHONE
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: shipperphone
+        properties:
+          documentMetadata: false
+    entityId: ''
+  documentDataEntitySettings:
+    repeatedDataEntities: []
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: orders_shippers-exv-
+      name: Orders_Shippers
+      taskId: transform-exvv
+    entityRelationshipPath: []
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnName: SHIPPERNAME
+          type: NONE
+          expression:
+            expressionStatement: ${SHIPPERNAME}
+            alias:
+              - name: SHIPPERNAME
+                value: SHIPPERNAME
+        - columnName: SHIPPERPHONE
+          type: NONE
+          expression:
+            expressionStatement: ${SHIPPERPHONE}
+            alias:
+              - name: SHIPPERPHONE
+                value: SHIPPERPHONE
+    fullyType2Sources: false
+    checkedTreeNodesForDisplay: []
+    subtype: MODEL_BASED
+    materializedSource: false

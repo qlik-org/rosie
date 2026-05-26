@@ -1,0 +1,17 @@
+includePatterns:
+  - sourceTask: transform-exvv
+    tablePattern: '%'
+    schemaPattern: '%'
+explicitlySelected:
+  - sourceTask: transform_m-exwt
+    name: Customers
+    sourceTableId: customers-exwv
+  - sourceTask: transform_m-exwt
+    name: Orders
+    sourceTableId: orders-exwa
+  - sourceTask: transform_m-exwt
+    name: Shippers
+    sourceTableId: shippers-exwb
+  - sourceTask: transform_m-exwt
+    name: employees_sql
+    sourceTableId: employees_sql-exwx

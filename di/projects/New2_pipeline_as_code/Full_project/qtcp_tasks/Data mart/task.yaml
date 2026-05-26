@@ -1,0 +1,13 @@
+properties:
+  name: Data mart
+  id: data_mart-ex3y
+  description: added on branch3
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-ex3y.internalSchema}}'
+    taskSchema: '{{task.data_mart-ex3y.taskSchema}}'
+    databaseName: '{{task.data_mart-ex3y.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-ex3y.warehouseName}}'

@@ -1,0 +1,108 @@
+properties:
+  id: shippers-ex4e
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers-exwb
+      name: Shippers
+      taskId: transform_m-exwt
+    - datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Shippers
+    columns:
+      - name: ShipperID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipperid
+        properties:
+          documentMetadata: true
+      - name: CompanyName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: companyname
+        properties:
+          documentMetadata: true
+      - name: a_Phone
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: CompanyName_1
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: CompanyName_1-c54e
+        properties:
+          documentMetadata: false
+    entityId: ''
+  documentDataEntitySettings:
+    repeatedDataEntities:
+      - rootDataEntityId:
+          type: NONE
+          datasetId: orders-exwa
+          name: Orders
+          taskId: transform_m-exwt
+        entityRelationshipPath: orders_shippers-ex4c
+        dimensionId: shippers__orders-ex4d
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: shippers-exwb
+      name: Shippers
+      taskId: transform_m-exwt
+    entityRelationshipPath: []
+    mapping:
+      columns:
+        - columnName: ShipperID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ShipperID}
+            alias:
+              - name: ShipperID
+                value: ShipperID
+        - columnName: CompanyName
+          type: NONE
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnName: a_Phone
+          type: NONE
+          expression:
+            expressionStatement: ${a_Phone}
+            alias:
+              - name: a_Phone
+                value: a_Phone
+        - columnName: CompanyName_1
+          type: NONE
+          expression:
+            expressionStatement: ${CompanyName_1}
+            alias:
+              - name: CompanyName_1
+                value: CompanyName_1
+    fullyType2Sources: false
+    checkedTreeNodesForDisplay:
+      - orders_shippers-ex4c
+    subtype: MODEL_BASED
+    materializedSource: false
