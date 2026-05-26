@@ -5,3 +5,9 @@ properties:
 settings:
   targetEndpoint:
     targetConnection: '{{task.lake_landing-41cy.targetConnection}}'
+  changeDataPartitioning:
+    partitionBaseTime: 2026-05-24T00:00:00.0000000Z
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false

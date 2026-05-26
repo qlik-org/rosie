@@ -9,6 +9,7 @@ settings:
   taskSettings:
     fullLoad: true
     applyChanges: true
+    storeChanges: true
   storeChangesOptions:
     changeDataPartitioning:
       partitionBaseTime: 2026-05-24T12:36:59.0430000Z
