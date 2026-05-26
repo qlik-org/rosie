@@ -1,0 +1,183 @@
+properties:
+  id: shippers__orders-ex4d
+  name: Shippers__Orders
+  inputDatasets:
+    - datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+    - datasetId: shippers-exwb
+      name: Shippers
+      taskId: transform_m-exwt
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Shippers__Orders
+    columns:
+      - name: OrderID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: RequiredDate
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: ShippedDate
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: ShipName
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+        properties:
+          documentMetadata: false
+    entityId: ''
+  documentDataEntitySettings:
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+    entityRelationshipPath: []
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: CustomerID
+          type: NONE
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnName: EmployeeID
+          type: NONE
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: ShipVia
+          type: NONE
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnName: OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnName: RequiredDate
+          type: NONE
+          expression:
+            expressionStatement: ${RequiredDate}
+            alias:
+              - name: RequiredDate
+                value: RequiredDate
+        - columnName: ShippedDate
+          type: NONE
+          expression:
+            expressionStatement: ${ShippedDate}
+            alias:
+              - name: ShippedDate
+                value: ShippedDate
+        - columnName: Freight
+          type: NONE
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnName: ShipName
+          type: NONE
+          expression:
+            expressionStatement: ${ShipName}
+            alias:
+              - name: ShipName
+                value: ShipName
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false
+  virtualDataset: true

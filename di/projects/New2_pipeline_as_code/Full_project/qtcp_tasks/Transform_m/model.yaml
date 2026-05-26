@@ -31,3 +31,19 @@ relationships:
     name: Orders_employees_sql_relation
     description: ''
     id: orders_employees_sql_relation-exy-
+  - sourceEntity:
+      datasetId: orders-exwa
+      name: Orders
+      taskId: transform_m-exwt
+    targetEntity:
+      datasetId: shippers-exwb
+      name: Shippers
+      taskId: transform_m-exwt
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-ex4c
