@@ -1,0 +1,6 @@
+properties:
+  id: customers-ex5q
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: landing-ex5l

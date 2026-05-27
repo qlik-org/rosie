@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_reload_Landing
+  id: onboarding_reload_landing-ex50
+  type: LANDING
+settings:
+  fullLoadOnly: true
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_reload_landing-ex50.taskSchema}}'
+      database: '{{task.onboarding_reload_landing-ex50.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

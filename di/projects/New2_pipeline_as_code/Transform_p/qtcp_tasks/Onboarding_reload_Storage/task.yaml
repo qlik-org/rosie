@@ -1,0 +1,14 @@
+properties:
+  name: Onboarding_reload_Storage
+  id: onboarding_reload_storage-ex51
+  type: STORAGE
+settings:
+  artifactsSettings:
+    historyEnabled: false
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_reload_storage-ex51.internalSchema}}'
+    taskSchema: '{{task.onboarding_reload_storage-ex51.taskSchema}}'
+    databaseName: '{{task.onboarding_reload_storage-ex51.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_reload_storage-ex51.warehouseName}}'

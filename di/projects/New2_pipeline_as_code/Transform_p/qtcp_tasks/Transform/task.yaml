@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-ex56
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-ex56.internalSchema}}'
+    taskSchema: '{{task.transform-ex56.taskSchema}}'
+    databaseName: '{{task.transform-ex56.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-ex56.warehouseName}}'
