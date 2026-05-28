@@ -1,0 +1,44 @@
+properties:
+  id: employees_sql-rpsd
+  name: employees_sql
+  inputDatasets:
+    - datasetId: employees-ex5r
+      name: Employees
+      taskId: storage-ex5n
+  tableDef:
+    name: employees_sql
+    columns:
+      - name: EmployeeID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: employeeid
+      - name: LastName
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 20
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(20)
+        id: lastname
+      - name: FirstName
+        ordinal: 3
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: firstname
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select "EmployeeID", "LastName", "FirstName" from ${Employees}
+      alias:
+        - name: Employees
+          value: '{{ref(project.current.projectId)}}$_$storage-ex5n$_$employees-ex5r'
+    incremental: false
+mappings:
+  mappings: []
