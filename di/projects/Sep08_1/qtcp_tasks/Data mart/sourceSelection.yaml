@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: transform-u2q1
+    tablePattern: '%'
+    schemaPattern: '%'

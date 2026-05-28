@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-u2rb
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-u2rb.internalSchema}}'
+    taskSchema: '{{task.data_mart-u2rb.taskSchema}}'
+    databaseName: '{{task.data_mart-u2rb.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-u2rb.warehouseName}}'

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: landing-u2qu
+    tablePattern: '%'
+    schemaPattern: '%'

@@ -1,0 +1,14 @@
+properties:
+  name: Transform
+  id: transform-u2q1
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform-u2q1.internalSchema}}'
+    taskSchema: '{{task.transform-u2q1.taskSchema}}'
+    databaseName: '{{task.transform-u2q1.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-u2q1.warehouseName}}'

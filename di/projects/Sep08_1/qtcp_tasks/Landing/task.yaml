@@ -1,0 +1,16 @@
+properties:
+  name: Landing
+  id: landing-u2qu
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-u2qu.taskSchema}}'
+      database: '{{task.landing-u2qu.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

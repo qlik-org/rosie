@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-u2qw
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-u2qw.internalSchema}}'
+    taskSchema: '{{task.storage-u2qw.taskSchema}}'
+    databaseName: '{{task.storage-u2qw.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-u2qw.warehouseName}}'
