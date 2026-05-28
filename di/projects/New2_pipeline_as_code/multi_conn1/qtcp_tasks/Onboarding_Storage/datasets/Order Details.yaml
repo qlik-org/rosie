@@ -1,0 +1,6 @@
+properties:
+  id: order_details-rpsa
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details
+      taskId: onboarding_landing-rpsu

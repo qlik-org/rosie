@@ -1,0 +1,6 @@
+properties:
+  id: customers-rpsj
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_compare_landing-rpsg

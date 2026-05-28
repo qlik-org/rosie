@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_compare_Storage
+  id: onboarding_compare_storage-rpsh
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_compare_storage-rpsh.internalSchema}}'
+    taskSchema: '{{task.onboarding_compare_storage-rpsh.taskSchema}}'
+    databaseName: '{{task.onboarding_compare_storage-rpsh.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_compare_storage-rpsh.warehouseName}}'

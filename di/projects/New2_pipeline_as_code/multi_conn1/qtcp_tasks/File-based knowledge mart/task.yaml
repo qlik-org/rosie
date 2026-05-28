@@ -1,0 +1,21 @@
+properties:
+  name: File-based knowledge mart
+  id: file_based_knowledge_mart-rpso
+  type: FILE_BASED_KNOWLEDGE_MART
+settings:
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.file_based_knowledge_mart-rpso.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.file_based_knowledge_mart-rpso.databricksVectorSearchEndpoint}}'
+    schema: file-basedknowledgemart
+    name: '{{task.file_based_knowledge_mart-rpso.indexName}}'
+    database: dis_systests
+  vectorDbTargetType: EXTERNAL_VECTOR_DB
+  vectorDbConnection: '{{task.file_based_knowledge_mart-rpso.vectorDbConnection}}'
+  llmConnection: '{{task.file_based_knowledge_mart-rpso.llmConnection}}'
+  llmSettings:
+    kindId: 'llm:OpenAI@1.0.0'
+    parameters:
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o

@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-rpsv
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-rpsv.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-rpsv.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-rpsv.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-rpsv.warehouseName}}'

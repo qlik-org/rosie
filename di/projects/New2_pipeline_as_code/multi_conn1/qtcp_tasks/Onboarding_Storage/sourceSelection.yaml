@@ -1,0 +1,13 @@
+explicitlySelected:
+  - sourceTask: onboarding_landing-rpsu
+    name: Categories
+    sourceTableId: categories
+  - sourceTask: onboarding_landing-rpsu
+    name: Order_Details
+    sourceTableId: order_details
+  - sourceTask: onboarding_landing-rpsu
+    name: Products
+    sourceTableId: products
+  - sourceTask: onboarding_landing-rpsu
+    name: Suppliers
+    sourceTableId: suppliers

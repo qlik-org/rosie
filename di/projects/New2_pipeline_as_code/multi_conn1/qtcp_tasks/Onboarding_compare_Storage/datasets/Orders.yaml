@@ -1,0 +1,6 @@
+properties:
+  id: orders-rpsm
+  name: Orders
+  inputDatasets:
+    - datasetId: orders
+      taskId: onboarding_compare_landing-rpsg

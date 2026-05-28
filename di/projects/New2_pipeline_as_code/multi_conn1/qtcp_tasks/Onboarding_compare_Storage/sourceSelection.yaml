@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: onboarding_compare_landing-rpsg
+    tablePattern: '%'
+    schemaPattern: '%'

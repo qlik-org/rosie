@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-rpsu
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-rpsu.taskSchema}}'
+      database: '{{task.onboarding_landing-rpsu.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
