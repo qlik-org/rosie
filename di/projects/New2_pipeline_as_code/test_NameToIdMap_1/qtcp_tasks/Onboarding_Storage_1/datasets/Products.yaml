@@ -1,0 +1,6 @@
+properties:
+  id: products-rpvq
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing_1-rpvn

@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Landing_1
+  id: onboarding_landing_1-rpvn
+  type: LANDING
+settings:
+  fullLoadOnly: true
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing_1-rpvn.taskSchema}}'
+      database: '{{task.onboarding_landing_1-rpvn.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

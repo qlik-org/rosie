@@ -1,0 +1,26 @@
+properties:
+  name: Knowledge mart
+  id: knowledge_mart-rpvi
+  type: KNOWLEDGE_MART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.knowledge_mart-rpvi.internalSchema}}'
+    taskSchema: '{{task.knowledge_mart-rpvi.taskSchema}}'
+    databaseName: '{{task.knowledge_mart-rpvi.databaseName}}'
+  taskRuntime:
+    maxNumberOfRecords: '{{task.knowledge_mart-rpvi.maxNumberOfRecords}}'
+    warehouseSelection:
+      warehouseName: '{{task.knowledge_mart-rpvi.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.knowledge_mart-rpvi.databricksVectorSearchEndpoint}}'
+    schema: knowledgemart
+    name: '{{task.knowledge_mart-rpvi.indexName}}'
+    database: ROSIE
+  vectorDbTargetType: EXTERNAL_VECTOR_DB
+  vectorDbConnection: '{{task.knowledge_mart-rpvi.vectorDbConnection}}'
+  llmConnection: '{{task.knowledge_mart-rpvi.llmConnection}}'
+  llmSettings:
+    kindId: 'llm:OpenAI@1.0.0'
+    parameters:
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o

@@ -1,0 +1,21 @@
+properties:
+  name: FBKM
+  id: fbkm-rpvs
+  type: FILE_BASED_KNOWLEDGE_MART
+settings:
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.fbkm-rpvs.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.fbkm-rpvs.databricksVectorSearchEndpoint}}'
+    schema: fbkm
+    name: '{{task.fbkm-rpvs.indexName}}'
+    database: ROSIE
+  vectorDbTargetType: EXTERNAL_VECTOR_DB
+  vectorDbConnection: '{{task.fbkm-rpvs.vectorDbConnection}}'
+  llmConnection: '{{task.fbkm-rpvs.llmConnection}}'
+  llmSettings:
+    kindId: 'llm:OpenAI@1.0.0'
+    parameters:
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o

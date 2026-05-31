@@ -1,0 +1,6 @@
+properties:
+  id: customers-rpvg
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_landing-rpvd

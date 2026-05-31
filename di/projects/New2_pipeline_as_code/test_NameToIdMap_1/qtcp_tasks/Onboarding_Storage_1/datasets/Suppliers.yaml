@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-rpvr
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing_1-rpvn
