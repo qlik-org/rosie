@@ -1,0 +1,17 @@
+properties:
+  id: orders_customers_flow-rpu4
+  name: orders_customers_flow
+  inputDatasets:
+    - datasetId: customers-exvh
+      projectId: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+      taskId: storage-exve
+    - datasetId: orders-exvk
+      projectId: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+      taskId: storage-exve
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, orders_customers_flow)}}'
+    targetId: '91c9e678-d552-411a-8d68-52362f91c727'
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

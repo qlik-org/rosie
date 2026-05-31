@@ -1,0 +1,13 @@
+properties:
+  name: Data mart
+  id: data_mart-rpva
+  description: dm
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-rpva.internalSchema}}'
+    taskSchema: '{{task.data_mart-rpva.taskSchema}}'
+    databaseName: '{{task.data_mart-rpva.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-rpva.warehouseName}}'

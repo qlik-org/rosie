@@ -1,0 +1,5 @@
+includePatterns:
+  - sourceProject: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+    sourceTask: storage-exve
+    tablePattern: '%'
+    schemaPattern: '%'

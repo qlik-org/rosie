@@ -1,0 +1,58 @@
+properties:
+  id: shippers_sql-rpu_
+  name: shippers_sql
+  inputDatasets:
+    - datasetId: shippers-exvm
+      name: Shippers
+      projectId: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+      taskId: storage-exve
+  tableDef:
+    name: shippers_sql
+    columns:
+      - name: ShipperID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipperid
+      - name: CompanyName
+        ordinal: 2
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+      - name: Phone
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: phone
+      - name: Shipper2_ID
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipper2_id
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >-
+        select "ShipperID", "CompanyName", "Phone", "copy_id" as "Shipper2_ID"
+
+        from ${Shippers}
+      alias:
+        - name: Shippers
+          value: '{{project.pipeline_as_code_3$_$Full_project.projectId}}$_$storage-exve$_$shippers-exvm'
+    incremental: false
+mappings:
+  mappings: []

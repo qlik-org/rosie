@@ -1,0 +1,13 @@
+properties:
+  name: Transform
+  id: transform-rpu2
+  description: cross project transform with data flow
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-rpu2.internalSchema}}'
+    taskSchema: '{{task.transform-rpu2.taskSchema}}'
+    databaseName: '{{task.transform-rpu2.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-rpu2.warehouseName}}'

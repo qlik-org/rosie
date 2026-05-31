@@ -1,0 +1,23 @@
+properties:
+  name: KM
+  id: km-rpvi
+  type: KNOWLEDGE_MART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.km-rpvi.internalSchema}}'
+    taskSchema: '{{task.km-rpvi.taskSchema}}'
+    databaseName: '{{task.km-rpvi.databaseName}}'
+  taskRuntime:
+    maxNumberOfRecords: '{{task.km-rpvi.maxNumberOfRecords}}'
+    warehouseSelection:
+      warehouseName: '{{task.km-rpvi.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.km-rpvi.databricksVectorSearchEndpoint}}'
+    schema: '{{task.km-rpvi.indexSchema}}'
+    name: '{{task.km-rpvi.indexName}}'
+    database: '{{task.km-rpvi.indexDatabase}}'
+  llmSettings:
+    kindId: llm:snowflake
+    parameters:
+      embedding_model: nv-embed-qa-4
+      completion_model: mistral-7b

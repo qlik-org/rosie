@@ -1,0 +1,17 @@
+explicitlySelected:
+  - sourceProject: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+    sourceTask: storage-exve
+    name: Customers
+    sourceTableId: customers-exvh
+  - sourceProject: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+    sourceTask: storage-exve
+    name: Employees
+    sourceTableId: employees-exvi
+  - sourceProject: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+    sourceTask: storage-exve
+    name: Orders_a
+    sourceTableId: orders-exvk
+  - sourceProject: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+    sourceTask: storage-exve
+    name: Shippers
+    sourceTableId: shippers-exvm

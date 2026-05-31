@@ -1,0 +1,122 @@
+properties:
+  id: order_details-rpve
+  name: Order_Details
+  inputDatasets:
+    - datasetId: order_details-exvj
+      name: Order_Details
+      projectId: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+      taskId: storage-exve
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Order_Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 5
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+    entityId: order_details-rpve
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: order_details-exvj
+      name: Order_Details
+      projectId: '{{project.pipeline_as_code_3$_$Full_project.projectId}}'
+      taskId: storage-exve
+    factDimension:
+      - name: Customers
+        dimension:
+          type: NONE
+          datasetId: customers-rpvc
+          taskId: data_mart-rpva
+        dimensionRelationshipPath: orderdetails_orders-rpvf$_$orders_customers-rpvg
+        dimensionRelationshipPathDisplayName: OrderDetails_Orders:Orders_Customers
+        dimensionRelationshipPathShortName: ''
+      - name: Employees
+        dimension:
+          type: NONE
+          datasetId: employees-rpvd
+          taskId: data_mart-rpva
+        dimensionRelationshipPath: orderdetails_orders-rpvf$_$orders_employees-rpvh
+        dimensionRelationshipPathDisplayName: OrderDetails_Orders:Orders_Employees
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+    subtype: MODEL_BASED
+    materializedSource: false
