@@ -25,7 +25,8 @@
         "ordinal": 0,
         "nullable": true,
         "addedColumnId": "e514b0b1-e603-4cd2-8e53-d183f486140a",
-        "markAsMetadata": false
+        "markAsMetadata": false,
+        "hash": false
       }
     ]
   },

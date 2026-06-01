@@ -1,7 +1,7 @@
 {
+  "type": "LANDING",
   "id": "$replicate$dbo_orders",
   "name": "dbo_Orders",
-  "type": "LANDING",
   "tableDef": {
     "name": "Orders",
     "dbSchema": "{{task.onboarding_landing-tqf6:null$_$dbo.schema}}",

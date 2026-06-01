@@ -1,12 +1,12 @@
 {
-  "id": "employees-0tmu",
-  "name": "Employees",
+  "id": "orders-mitg",
+  "name": "Orders",
   "type": "STORAGE",
   "inputDatasets": [
     {
       "type": "NONE",
-      "datasetId": "employees",
-      "name": "Employees",
+      "datasetId": "orders",
+      "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "onboarding_landing-tqf6"
     }

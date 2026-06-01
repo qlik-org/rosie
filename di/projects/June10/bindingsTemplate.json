@@ -52,6 +52,10 @@
     "task.storage-0tmr.internalSchema": "",
     "task.storage-0tmr.taskSchema": "",
     "task.storage-0tmr.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage_1-mitb.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage_1-mitb.internalSchema": "",
+    "task.storage_1-mitb.taskSchema": "",
+    "task.storage_1-mitb.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.transform-b2gn.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-b2gn.internalSchema": "",
     "task.transform-b2gn.taskSchema": "",
@@ -61,6 +65,7 @@
     "onboarding_landing-tqf6": "Onboarding_Landing",
     "onboarding_storage-tqf7": "Onboarding_Storage",
     "storage-0tmr": "Storage",
+    "storage_1-mitb": "Storage_1",
     "transform-b2gn": "Transform"
   },
   "connectionProperties": {
