@@ -1,0 +1,18 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-tqf6
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-tqf6.taskSchema}}'
+      database: '{{task.onboarding_landing-tqf6.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: onboarding_landing-tqf6
+    tablePattern: '%'
+    schemaPattern: '%'

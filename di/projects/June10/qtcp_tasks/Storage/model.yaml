@@ -1,0 +1,49 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details-0tmv
+      name: Order Details
+      taskId: storage-0tmr
+    targetEntity:
+      datasetId: orders-0tmw
+      name: Orders
+      taskId: storage-0tmr
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-rpwi
+  - sourceEntity:
+      datasetId: orders-0tmw
+      name: Orders
+      taskId: storage-0tmr
+    targetEntity:
+      datasetId: customers-0tmt
+      name: Customers
+      taskId: storage-0tmr
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-rpwj
+  - sourceEntity:
+      datasetId: orders-0tmw
+      name: Orders
+      taskId: storage-0tmr
+    targetEntity:
+      datasetId: employees-0tmu
+      name: Employees
+      taskId: storage-0tmr
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-rpwk

@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-b2gn
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-b2gn.internalSchema}}'
+    taskSchema: '{{task.transform-b2gn.taskSchema}}'
+    databaseName: '{{task.transform-b2gn.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-b2gn.warehouseName}}'

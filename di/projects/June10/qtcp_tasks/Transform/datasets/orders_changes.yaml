@@ -1,0 +1,157 @@
+properties:
+  id: orders2-yc8z
+  name: orders_changes
+  inputDatasets:
+    - datasetId: orders-tqga
+      name: Orders1
+      taskId: onboarding_storage-tqf7
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    name: orders_changes
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orderid
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: customerid
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: employeeid
+      - name: OrderDate
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: orderdate
+      - name: RequiredDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: requireddate
+      - name: ShippedDate
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: shippeddate
+      - name: ShipVia
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipvia
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalType: NUMBER
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+      - name: ShipName
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: shipname
+      - name: ShipAddress
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        id: shipaddress
+      - name: ShipCity
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: shipcity
+      - name: ShipRegion
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: shipregion
+      - name: ShipPostalCode
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: shippostalcode
+      - name: ShipCountry
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: shipcountry
+      - name: new1
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: new1
+  customDatasetSettings:
+    customSql:
+      expressionStatement: "SELECT\n    \"OrderID\",\n  \n    \"CustomerID\",  \n    \"EmployeeID\",\n    \"OrderDate\",\n    \"RequiredDate\",\n    \"ShippedDate\",\n    \"ShipVia\",\n    \"Freight\",\n    \"ShipName\",\n    \"ShipAddress\",\n    \"ShipCity\",\n    \"ShipRegion\",\n    \"ShipPostalCode\",\n    \"ShipCountry\",\n    \"new1\"\nFROM\n    ${Orders1}\n"
+      alias:
+        - name: Orders1
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-tqf7$_$orders-tqga'
+    incremental: false
+mappings:
+  mappings: []

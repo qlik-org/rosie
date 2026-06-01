@@ -1,0 +1,23 @@
+properties:
+  id: orders-tqga
+  name: Orders
+  inputDatasets:
+    - datasetId: orders
+      taskId: onboarding_landing-tqf6
+transformations:
+  newTableName: Orders1
+  columnTransformations:
+    - action: ADD
+      columnName: new1
+      newDataType:
+        type: INT4
+        length: 0
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ${OrderID}
+        alias:
+          - name: OrderID
+            value: orderid
+      addedColumnId: e514b0b1-e603-4cd2-8e53-d183f486140a
