@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-4v0w
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-4v0w.internalSchema}}'
+    taskSchema: '{{task.transform-4v0w.taskSchema}}'
+    databaseName: '{{task.transform-4v0w.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-4v0w.warehouseName}}'

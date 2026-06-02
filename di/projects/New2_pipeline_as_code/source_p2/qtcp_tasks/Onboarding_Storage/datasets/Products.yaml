@@ -1,0 +1,6 @@
+properties:
+  id: products-4v0u
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing-4v0q

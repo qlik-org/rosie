@@ -1,0 +1,6 @@
+properties:
+  id: categories-4v0t
+  name: Categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: onboarding_landing-4v0q

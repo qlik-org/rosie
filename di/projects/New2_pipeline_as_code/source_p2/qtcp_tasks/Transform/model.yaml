@@ -1,0 +1,33 @@
+relationships:
+  - sourceEntity:
+      datasetId: products-4v0z
+      name: Products
+      taskId: transform-4v0w
+    targetEntity:
+      datasetId: categories-4v00
+      name: Categories
+      taskId: transform-4v0w
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-4v07
+  - sourceEntity:
+      datasetId: products-4v0z
+      name: Products
+      taskId: transform-4v0w
+    targetEntity:
+      datasetId: suppliers-4v0y
+      name: Suppliers
+      taskId: transform-4v0w
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation-4v08
