@@ -40,11 +40,15 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.landing-o7gw.databaseName": "{{task-type.landing.databaseName}}",
+    "task.landing-o7gw.sourceConnection": "",
+    "task.landing-o7gw.taskSchema": "",
+    "task.landing-o7gw:null$_$dbo.schema": "",
     "task.registered_data_compare-o7gj.databaseName": "{{task-type.registered.databaseName}}",
     "task.registered_data_compare-o7gj.internalSchema": "",
     "task.registered_data_compare-o7gj.taskSchema": "",
-    "task.registered_data_compare-o7gj:ROSIE$_$A_freezing_mayonnaonboarding321_landing.database": "",
-    "task.registered_data_compare-o7gj:ROSIE$_$A_freezing_mayonnaonboarding321_landing.schema": "",
+    "task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.database": "",
+    "task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.schema": "",
     "task.registered_data_compare_storage-o7gk.databaseName": "{{task-type.storage.databaseName}}",
     "task.registered_data_compare_storage-o7gk.internalSchema": "",
     "task.registered_data_compare_storage-o7gk.taskSchema": "",
@@ -52,12 +56,20 @@
     "task.registered_data_watermark-o7gn.databaseName": "{{task-type.registered.databaseName}}",
     "task.registered_data_watermark-o7gn.internalSchema": "",
     "task.registered_data_watermark-o7gn.taskSchema": "",
-    "task.registered_data_watermark-o7gn:ROSIE$_$A_freezing_mayonnaonboarding321_landing.database": "",
-    "task.registered_data_watermark-o7gn:ROSIE$_$A_freezing_mayonnaonboarding321_landing.schema": "",
+    "task.registered_data_watermark-o7gn:ROSIE$_$reg2_landing.database": "",
+    "task.registered_data_watermark-o7gn:ROSIE$_$reg2_landing.schema": "",
     "task.registered_data_watermark_storage-o7go.databaseName": "{{task-type.storage.databaseName}}",
     "task.registered_data_watermark_storage-o7go.internalSchema": "",
     "task.registered_data_watermark_storage-o7go.taskSchema": "",
-    "task.registered_data_watermark_storage-o7go.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.registered_data_watermark_storage-o7go.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage-o7gy.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage-o7gy.internalSchema": "",
+    "task.storage-o7gy.taskSchema": "",
+    "task.storage-o7gy.warehouseName": "{{task-type.storage.warehouseName}}"
   },
-  "connectionProperties": {}
+  "connectionProperties": {
+    "task.landing-o7gw.sourceConnection": {
+      "type": "repsrc_mssql"
+    }
+  }
 }

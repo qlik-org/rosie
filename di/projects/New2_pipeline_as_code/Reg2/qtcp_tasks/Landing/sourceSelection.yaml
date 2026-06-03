@@ -1,0 +1,8 @@
+sourceConnection: '{{task.landing-o7gw.sourceConnection}}'
+explicitlySelected:
+  - name: Employees
+    schema: '{{task.landing-o7gw:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Shippers
+    schema: '{{task.landing-o7gw:null$_$dbo.schema}}'
+    type: TABLE

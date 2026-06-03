@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-o7gy
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-o7gy.internalSchema}}'
+    taskSchema: '{{task.storage-o7gy.taskSchema}}'
+    databaseName: '{{task.storage-o7gy.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-o7gy.warehouseName}}'

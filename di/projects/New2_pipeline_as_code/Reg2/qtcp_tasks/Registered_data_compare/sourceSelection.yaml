@@ -1,5 +1,9 @@
 explicitlySelected:
-  - database: '{{task.registered_data_compare-o7gj:ROSIE$_$A_freezing_mayonnaonboarding321_landing.database}}'
-    name: Categories
-    schema: '{{task.registered_data_compare-o7gj:ROSIE$_$A_freezing_mayonnaonboarding321_landing.schema}}'
-    type: TABLE
+  - database: '{{task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.database}}'
+    name: Employees
+    schema: '{{task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.database}}'
+    name: Shippers
+    schema: '{{task.registered_data_compare-o7gj:ROSIE$_$reg2_storage.schema}}'
+    type: VIEW
