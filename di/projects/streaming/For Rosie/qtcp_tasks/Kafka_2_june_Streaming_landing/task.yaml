@@ -1,0 +1,14 @@
+properties:
+  name: Kafka_2_june_Streaming_landing
+  id: kafka_2_june_streaming_landing-f9gq
+  type: STREAMING_LAKE_LANDING
+settings:
+  generalSettings:
+    contentTypeSettings:
+      regexTypeSettings:
+        pattern: '(?<line>.*)'
+    processPastFilesSettings:
+      timeAmount: 24
+      timeUnit: HOURS
+  taskRuntime:
+    lakehouseClusterId: '{{task.kafka_2_june_streaming_landing-f9gq.lakehouseCluster}}'

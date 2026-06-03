@@ -1,0 +1,4 @@
+sourceConnection: '{{task.kinesis_2_jun_streaming_landing-f9f9.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: dima
+    name: dima-rabkin-userdata-4nx5dmzywgnm6ayi

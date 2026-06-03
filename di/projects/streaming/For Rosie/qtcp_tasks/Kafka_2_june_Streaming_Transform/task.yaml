@@ -1,0 +1,12 @@
+properties:
+  name: Kafka_2_june_Streaming_Transform
+  id: kafka_2_june_streaming_transform-f9gr
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.kafka_2_june_streaming_transform-f9gr.internalSchema}}'
+      taskSchema: '{{task.kafka_2_june_streaming_transform-f9gr.taskSchema}}'
+    nestedFieldsHandling: KEEP_NESTED_FIELDS
+  runtimeSettings:
+    lakehouseClusterId: '{{task.kafka_2_june_streaming_transform-f9gr.lakehouseCluster}}'

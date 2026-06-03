@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: s3_02_june_streaming_landing-f9gy
+    tablePattern: '%'
+    schemaPattern: '%'

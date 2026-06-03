@@ -1,0 +1,4 @@
+sourceConnection: '{{task.kafka_2_june_streaming_landing-f9gq.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: lior15
+    name: lior15

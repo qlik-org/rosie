@@ -1,0 +1,5 @@
+sourceConnection: '{{task.s3_02_june_streaming_landing-f9gy.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: complex_json
+    name: s3://dima-rabkin-upsolver-integration-4nx5dmzywgnm6ayi/s3_source/complex-json/*
+    type: TABLE

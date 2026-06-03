@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: kinesis_2_jun_streaming_transform-f9f-
+    tablePattern: '%'
+    schemaPattern: '%'

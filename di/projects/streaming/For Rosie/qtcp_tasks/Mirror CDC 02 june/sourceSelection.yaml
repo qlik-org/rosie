@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: cdc_02_june_storage-f9gp
+    tablePattern: '%'
+    schemaPattern: '%'

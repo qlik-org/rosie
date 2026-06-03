@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceTask: kafka_2_june_streaming_transform-f9gr
+    tablePattern: '%'
+    schemaPattern: '%'

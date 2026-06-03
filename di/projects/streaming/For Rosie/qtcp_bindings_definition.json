@@ -1,0 +1,99 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task-type.icebergTransform.lakehouseCluster": "",
+    "task-type.streamingLanding.lakehouseCluster": "",
+    "task.cdc_02_june_lake_landing-f9go.sourceConnection": "",
+    "task.cdc_02_june_lake_landing-f9go.taskSchema": "",
+    "task.cdc_02_june_lake_landing-f9go:null$_$testdb.schema": "",
+    "task.cdc_02_june_storage-f9gp.internalSchema": "",
+    "task.cdc_02_june_storage-f9gp.lakehouseCluster": "{{task-type.icebergStorage.lakehouseCluster}}",
+    "task.cdc_02_june_storage-f9gp.taskSchema": "",
+    "task.kafka_2_june_streaming_landing-f9gq.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.kafka_2_june_streaming_landing-f9gq.sourceConnection": "",
+    "task.kafka_2_june_streaming_transform-f9gr.internalSchema": "",
+    "task.kafka_2_june_streaming_transform-f9gr.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.kafka_2_june_streaming_transform-f9gr.taskSchema": "",
+    "task.kinesis_2_jun_streaming_landing-f9f9.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.kinesis_2_jun_streaming_landing-f9f9.sourceConnection": "",
+    "task.kinesis_2_jun_streaming_transform-f9f-.internalSchema": "",
+    "task.kinesis_2_jun_streaming_transform-f9f-.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.kinesis_2_jun_streaming_transform-f9f-.taskSchema": "",
+    "task.mirror_cdc_02_june-f9gt.databaseName": "",
+    "task.mirror_cdc_02_june-f9gt.internalSchema": "",
+    "task.mirror_cdc_02_june-f9gt.snowflakeExternalVolume": "",
+    "task.mirror_cdc_02_june-f9gt.snowflakeOpenCatalog": "",
+    "task.mirror_cdc_02_june-f9gt.targetConnection": "",
+    "task.mirror_cdc_02_june-f9gt.taskSchema": "",
+    "task.mirror_cdc_02_june-f9gt.warehouseName": "",
+    "task.mirror_kafka_manual_02_june-f9gu.databaseName": "",
+    "task.mirror_kafka_manual_02_june-f9gu.internalSchema": "",
+    "task.mirror_kafka_manual_02_june-f9gu.snowflakeExternalVolume": "",
+    "task.mirror_kafka_manual_02_june-f9gu.snowflakeOpenCatalog": "",
+    "task.mirror_kafka_manual_02_june-f9gu.targetConnection": "",
+    "task.mirror_kafka_manual_02_june-f9gu.taskSchema": "",
+    "task.mirror_kafka_manual_02_june-f9gu.warehouseName": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.databaseName": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.internalSchema": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.snowflakeExternalVolume": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.snowflakeOpenCatalog": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.targetConnection": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.taskSchema": "",
+    "task.mirror_kinesis_2_june_manual-f9gg.warehouseName": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.databaseName": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.internalSchema": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.snowflakeExternalVolume": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.snowflakeOpenCatalog": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.targetConnection": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.taskSchema": "",
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.warehouseName": "",
+    "task.mirror_s3_02_june-f9gi.databaseName": "",
+    "task.mirror_s3_02_june-f9gi.internalSchema": "",
+    "task.mirror_s3_02_june-f9gi.snowflakeExternalVolume": "",
+    "task.mirror_s3_02_june-f9gi.snowflakeOpenCatalog": "",
+    "task.mirror_s3_02_june-f9gi.targetConnection": "",
+    "task.mirror_s3_02_june-f9gi.taskSchema": "",
+    "task.mirror_s3_02_june-f9gi.warehouseName": "",
+    "task.s3_02_june_streaming_landing-f9gy.lakehouseCluster": "{{task-type.streamingLanding.lakehouseCluster}}",
+    "task.s3_02_june_streaming_landing-f9gy.sourceConnection": "",
+    "task.s3_02_june_streaming_transform-f9gz.internalSchema": "",
+    "task.s3_02_june_streaming_transform-f9gz.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.s3_02_june_streaming_transform-f9gz.taskSchema": ""
+  },
+  "connectionProperties": {
+    "task.cdc_02_june_lake_landing-f9go.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.kafka_2_june_streaming_landing-f9gq.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    },
+    "task.kinesis_2_jun_streaming_landing-f9f9.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-kinesis"
+    },
+    "task.mirror_cdc_02_june-f9gt.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_kafka_manual_02_june-f9gu.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_kinesis_2_june_manual-f9gg.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_kinesis_auto_refresh_2_june-f9gk.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_s3_02_june-f9gi.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.s3_02_june_streaming_landing-f9gy.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    }
+  }
+}
