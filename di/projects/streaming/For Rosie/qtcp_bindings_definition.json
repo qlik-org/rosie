@@ -4,6 +4,7 @@
     "platformConnection": "",
     "projectName": "",
     "project.current.prefixSchema": "",
+    "task-type.externalReplicate.lakehouseCluster": "",
     "task-type.icebergStorage.lakehouseCluster": "",
     "task-type.icebergTransform.lakehouseCluster": "",
     "task-type.streamingLanding.lakehouseCluster": "",
