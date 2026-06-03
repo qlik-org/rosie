@@ -1,0 +1,5 @@
+explicitlySelected:
+  - database: '{{task.registered_data_watermark-o7gn:ROSIE$_$A_freezing_mayonnaonboarding321_landing.database}}'
+    name: Categories
+    schema: '{{task.registered_data_watermark-o7gn:ROSIE$_$A_freezing_mayonnaonboarding321_landing.schema}}'
+    type: TABLE

@@ -1,0 +1,24 @@
+properties:
+  name: Registered_data_watermark
+  id: registered_data_watermark-o7gn
+  type: REGISTERED_DATA
+settings:
+  fullLoadOnly: false
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_watermark-o7gn.internalSchema}}'
+    taskSchema: '{{task.registered_data_watermark-o7gn.taskSchema}}'
+    databaseName: '{{task.registered_data_watermark-o7gn.databaseName}}'
+  incrementalSettings:
+    registeredType: REPLICATE
+    watermarkColumnName:
+      expressionStatement: header__change_seq
+    fromDateColumnName:
+      expressionStatement: header__timestamp
+    ctTableName:
+      expressionStatement: ${SOURCE_TABLE_NAME}__ct
+    softDeleteSupport: true
+    softDeleteExpression:
+      expressionStatement: ${header__change_oper} = 'D'
+    priorImageSupport: true
+    priorImageExpression:
+      expressionStatement: ${header__change_oper} = 'B'

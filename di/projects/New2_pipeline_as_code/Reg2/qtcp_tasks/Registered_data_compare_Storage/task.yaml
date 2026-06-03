@@ -1,0 +1,13 @@
+properties:
+  name: Registered_data_compare_Storage
+  id: registered_data_compare_storage-o7gk
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_compare_storage-o7gk.internalSchema}}'
+    taskSchema: '{{task.registered_data_compare_storage-o7gk.taskSchema}}'
+    databaseName: '{{task.registered_data_compare_storage-o7gk.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_compare_storage-o7gk.warehouseName}}'
