@@ -61,6 +61,10 @@
     "task.storage-z-ie.internalSchema": "",
     "task.storage-z-ie.taskSchema": "",
     "task.storage-z-ie.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.storage_1-o7gy.databaseName": "{{task-type.storage.databaseName}}",
+    "task.storage_1-o7gy.internalSchema": "",
+    "task.storage_1-o7gy.taskSchema": "",
+    "task.storage_1-o7gy.warehouseName": "{{task-type.storage.warehouseName}}",
     "task.transform-z-ik.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform-z-ik.internalSchema": "",
     "task.transform-z-ik.taskSchema": "",
@@ -71,6 +75,7 @@
     "knowledge_mart-z-i2": "Knowledge mart",
     "landing-z-id": "Landing",
     "storage-z-ie": "Storage",
+    "storage_1-o7gy": "Storage_1",
     "transform-z-ik": "Transform"
   },
   "connectionProperties": {

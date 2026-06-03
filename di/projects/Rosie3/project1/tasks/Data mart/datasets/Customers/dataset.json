@@ -17,7 +17,8 @@
     "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
     "hasStandardViewsWithHeaders": "ON",
-    "watermarkIncrementalSettings": "INHERIT"
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
   },
   "tableDef": {
     "name": "Customers",
@@ -229,10 +230,10 @@
     "type": "TYPE1",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "customers-z-im",
+      "datasetId": "customers-z-im",
       "name": "Customers",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "transform-z-ik"
+      "taskId": "transform-z-ik"
     },
     "mapping": {
       "columns": [
@@ -382,7 +383,8 @@
       ]
     },
     "fullyType2Sources": false,
-    "subtype": "MODEL_BASED"
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
   },
   "virtualDataset": false,
   "description": ""

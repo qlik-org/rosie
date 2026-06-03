@@ -17,7 +17,8 @@
     "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
     "hasStandardViewsWithHeaders": "ON",
-    "watermarkIncrementalSettings": "INHERIT"
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
   },
   "tableDef": {
     "name": "Employees",
@@ -355,10 +356,10 @@
     "type": "TYPE2",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "employees-z-iq",
+      "datasetId": "employees-z-iq",
       "name": "Employees",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "transform-z-ik"
+      "taskId": "transform-z-ik"
     },
     "mapping": {
       "columns": [
@@ -599,7 +600,8 @@
       ]
     },
     "fullyType2Sources": false,
-    "subtype": "MODEL_BASED"
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
   },
   "virtualDataset": false,
   "description": ""

@@ -1,12 +1,12 @@
 {
-  "id": "employees-z-ih",
-  "name": "Employees",
+  "id": "orders-o7gc",
+  "name": "Orders",
   "type": "STORAGE",
   "inputDatasets": [
     {
       "type": "NONE",
-      "datasetId": "employees",
-      "name": "Employees",
+      "datasetId": "orders",
+      "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "landing-z-id"
     }

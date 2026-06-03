@@ -32,6 +32,5 @@
       "embedding_model": "nv-embed-qa-4",
       "completion_model": "mistral-7b"
     }
-  },
-  "fullLoadOnly": false
+  }
 }

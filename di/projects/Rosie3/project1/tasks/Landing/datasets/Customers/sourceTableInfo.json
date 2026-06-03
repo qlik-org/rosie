@@ -1,7 +1,7 @@
 {
+  "type": "LANDING",
   "id": "$replicate$dbo_customers",
   "name": "dbo_Customers",
-  "type": "LANDING",
   "tableDef": {
     "name": "Customers",
     "dbSchema": "{{task.landing-z-id:null$_$dbo.schema}}",

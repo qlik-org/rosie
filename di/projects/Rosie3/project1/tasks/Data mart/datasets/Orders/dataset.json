@@ -17,7 +17,8 @@
     "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
     "hasStandardViewsWithHeaders": "ON",
-    "watermarkIncrementalSettings": "INHERIT"
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
   },
   "tableDef": {
     "name": "Orders",
@@ -283,19 +284,19 @@
     "type": "TRANSACTIONAL",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "orders-z-io",
+      "datasetId": "orders-z-io",
       "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "transform-z-ik"
+      "taskId": "transform-z-ik"
     },
     "factDimension": [
       {
         "name": "Customers",
         "dimension": {
           "type": "NONE",
-          "entityId": "customers-z-ix",
+          "datasetId": "customers-z-ix",
           "projectId": "{{ref(project.current.projectId)}}",
-          "dataAppId": "data_mart-z-iu"
+          "taskId": "data_mart-z-iu"
         },
         "dimensionRelationshipPath": "orders_customers_relation-z-is",
         "dimensionRelationshipPathDisplayName": "Orders_Customers_relation",
@@ -305,9 +306,9 @@
         "name": "Employees",
         "dimension": {
           "type": "NONE",
-          "entityId": "employees-z-iy",
+          "datasetId": "employees-z-iy",
           "projectId": "{{ref(project.current.projectId)}}",
-          "dataAppId": "data_mart-z-iu"
+          "taskId": "data_mart-z-iu"
         },
         "dimensionRelationshipPath": "orders_employees_relation-z-it",
         "dimensionRelationshipPathDisplayName": "Orders_Employees_relation",
@@ -500,7 +501,8 @@
         }
       ]
     },
-    "subtype": "MODEL_BASED"
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
   },
   "virtualDataset": false,
   "description": ""

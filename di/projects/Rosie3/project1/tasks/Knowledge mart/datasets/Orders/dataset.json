@@ -17,7 +17,8 @@
     "hasLiveViews": "INHERIT",
     "hasChanges": "INHERIT",
     "hasStandardViewsWithHeaders": "ON",
-    "watermarkIncrementalSettings": "INHERIT"
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
   },
   "tableDef": {
     "name": "Orders",
@@ -284,10 +285,10 @@
     "type": "TYPE1",
     "rootDataEntityId": {
       "type": "NONE",
-      "entityId": "orders-z-io",
+      "datasetId": "orders-z-io",
       "name": "Orders",
       "projectId": "{{ref(project.current.projectId)}}",
-      "dataAppId": "transform-z-ik"
+      "taskId": "transform-z-ik"
     },
     "entityRelationshipPath": [],
     "mapping": {
@@ -478,7 +479,8 @@
     },
     "fullyType2Sources": false,
     "checkedTreeNodesForDisplay": [],
-    "subtype": "MODEL_BASED"
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
   },
   "virtualDataset": false,
   "description": ""

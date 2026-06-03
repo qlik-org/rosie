@@ -1,8 +1,12 @@
 {
   "enabled": false,
-  "schedulingType": "EVENT_BASED",
+  "schedulingType": "TIME_BASED",
   "timeBasedScheduling": {
-    "schedule": [],
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2026-06-03T07:50:29.748Z",
+    "timezone": "Etc/UTC",
     "fullloadInterval": 0
   },
   "eventBasedScheduling": {
@@ -10,7 +14,7 @@
     "triggerApps": []
   },
   "runOnReconnect": "ONSCHEDULED",
-  "id": "schedule-z-il",
+  "id": "schedule-o7gz",
   "name": "Schedule",
   "description": "",
   "version": "1"
