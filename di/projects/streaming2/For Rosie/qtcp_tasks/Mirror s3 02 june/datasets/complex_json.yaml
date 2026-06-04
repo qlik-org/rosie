@@ -1,0 +1,6 @@
+properties:
+  id: complex_json-f9gj
+  name: complex_json
+  inputDatasets:
+    - datasetId: complex_json-f9ga
+      taskId: s3_02_june_streaming_transform-f9gz

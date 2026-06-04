@@ -1,0 +1,19 @@
+properties:
+  name: Mirror s3 02 june
+  id: mirror_s3_02_june-f9gi
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_s3_02_june-f9gi.internalSchema}}'
+    taskSchema: '{{task.mirror_s3_02_june-f9gi.taskSchema}}'
+    databaseName: '{{task.mirror_s3_02_june-f9gi.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_s3_02_june-f9gi.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_s3_02_june-f9gi.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_s3_02_june-f9gi.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_s3_02_june-f9gi.warehouseName}}'

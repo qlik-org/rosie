@@ -1,0 +1,6 @@
+properties:
+  id: newtable_sales-f9gv
+  name: NewTable_sales
+  inputDatasets:
+    - datasetId: newtable_sales-f9gr
+      taskId: cdc_02_june_storage-f9gp

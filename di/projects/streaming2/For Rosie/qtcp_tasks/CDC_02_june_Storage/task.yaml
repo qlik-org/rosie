@@ -1,0 +1,10 @@
+properties:
+  name: CDC_02_june_Storage
+  id: cdc_02_june_storage-f9gp
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.cdc_02_june_storage-f9gp.internalSchema}}'
+    taskSchema: '{{task.cdc_02_june_storage-f9gp.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.cdc_02_june_storage-f9gp.lakehouseCluster}}'

@@ -1,0 +1,260 @@
+properties:
+  id: dima-f9f_
+  name: dima
+  inputDatasets:
+    - datasetId: dima
+      name: dima
+      taskId: kinesis_2_jun_streaming_landing-f9f9
+  tableDef:
+    name: dima
+    columns:
+      - name: orderId
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: orderid
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - orderId
+            hash: false
+      - name: netTotal
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: REAL8
+          originalTypeFull: DOUBLE
+        id: nettotal
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - netTotal
+            hash: false
+      - name: orderDate
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: orderdate
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - orderDate
+            hash: false
+      - name: customer_lastName
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_lastname
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_lastName
+            hash: false
+      - name: customer_email
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_email
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_email
+            hash: false
+      - name: customer_firstName
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_firstname
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_firstName
+            hash: false
+      - name: customer_address_city
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_address_city
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_address_city
+            hash: false
+      - name: customer_address_country
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_address_country
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_address_country
+            hash: false
+      - name: customer_address_state
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_address_state
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_address_state
+            hash: false
+      - name: customer_address_address1
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_address_address1
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_address_address1
+            hash: false
+      - name: customer_address_address2
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: customer_address_address2
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_address_address2
+            hash: false
+  icebergTransformDatasetSettings:
+    generalSettings:
+      entityPartitionSettings:
+        partitionColumnSettings:
+          - columnName: hdr__from_timestamp
+            transform: DAY
+      retentionSettings:
+        retentionColumn: hdr__from_timestamp
+      nestedFieldsHandling: KEEP_NESTED_FIELDS
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: dima
+        name: dima
+        taskId: kinesis_2_jun_streaming_landing-f9f9
+      mappingFields:
+        - columnId: orderid
+          expression:
+            expressionStatement: ${orderId}
+            alias:
+              - name: orderId
+                value: orderId
+        - columnId: nettotal
+          expression:
+            expressionStatement: ${netTotal}
+            alias:
+              - name: netTotal
+                value: netTotal
+        - columnId: orderdate
+          expression:
+            expressionStatement: ${orderDate}
+            alias:
+              - name: orderDate
+                value: orderDate
+        - columnId: customer_lastname
+          expression:
+            expressionStatement: ${customer_lastName}
+            alias:
+              - name: customer_lastName
+                value: customer_lastName
+        - columnId: customer_email
+          expression:
+            expressionStatement: ${customer_email}
+            alias:
+              - name: customer_email
+                value: customer_email
+        - columnId: customer_firstname
+          expression:
+            expressionStatement: ${customer_firstName}
+            alias:
+              - name: customer_firstName
+                value: customer_firstName
+        - columnId: customer_address_city
+          expression:
+            expressionStatement: ${customer_address_city}
+            alias:
+              - name: customer_address_city
+                value: customer_address_city
+        - columnId: customer_address_country
+          expression:
+            expressionStatement: ${customer_address_country}
+            alias:
+              - name: customer_address_country
+                value: customer_address_country
+        - columnId: customer_address_state
+          expression:
+            expressionStatement: ${customer_address_state}
+            alias:
+              - name: customer_address_state
+                value: customer_address_state
+        - columnId: customer_address_address1
+          expression:
+            expressionStatement: ${customer_address_address1}
+            alias:
+              - name: customer_address_address1
+                value: customer_address_address1
+        - columnId: customer_address_address2
+          expression:
+            expressionStatement: ${customer_address_address2}
+            alias:
+              - name: customer_address_address2
+                value: customer_address_address2
+      id: dima_default_mapping-f9ga
+      name: dima_default_mapping
+      description: ''
