@@ -4,6 +4,10 @@ properties:
   type: STREAMING_LAKE_LANDING
 settings:
   generalSettings:
+    storageLocationSettings:
+      folderLocationType: DATA_ASSET_NAME
+    folderRetentionSettings:
+      type: NONE
     contentTypeSettings:
       regexTypeSettings:
         pattern: '(?<line>.*)'

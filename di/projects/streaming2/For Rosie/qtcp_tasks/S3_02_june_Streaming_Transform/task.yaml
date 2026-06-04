@@ -7,10 +7,11 @@ settings:
     artifactsLocation:
       internalSchema: '{{task.s3_02_june_streaming_transform-f9gz.internalSchema}}'
       taskSchema: '{{task.s3_02_june_streaming_transform-f9gz.taskSchema}}'
+    storageLocationSettings:
+      folderLocationType: DATA_ASSET_NAME
     nestedFieldsHandling: KEEP_NESTED_FIELDS
     targetTablePartition: EVENT_INGESTION_DATE
   runtimeSettings:
     lakehouseClusterId: '{{task.s3_02_june_streaming_transform-f9gz.lakehouseCluster}}'
-  viewDefinitionSettings:
-    standardViewHeaders:
-      hdrFromTimestamp: true
+  catalogIntegration:
+    publishDatasets: false

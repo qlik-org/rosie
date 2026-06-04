@@ -8,4 +8,9 @@ properties:
   cloudStagingConnection: '{{cloudStagingConnection}}'
 settings:
   artifactsNaming:
+    suffixChangesView: __changes2
+    suffixCurrentView: '3'
+    suffixHistoryViews: __history4
+    suffixInternalSchema: __internal1
     prefixSchema: '{{project.current.prefixSchema}}'
+    defaultSchemaNameOption: NO_FURTHER_PROCESSING

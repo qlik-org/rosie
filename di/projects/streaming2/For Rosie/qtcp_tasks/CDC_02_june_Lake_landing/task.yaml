@@ -6,3 +6,10 @@ settings:
   landingDwSettings:
     landingArtifactsLocation:
       dataAssetSchema: '{{task.cdc_02_june_lake_landing-f9go.taskSchema}}'
+  landingStorageSettings:
+    folderLocationType: DATA_ASSET_NAME
+  landingAppRuntime:
+    tableLoadInParallel: 5
+  changeDataPartitioning:
+    mode: PARTITION_OFF
+    partitionEvery: 60

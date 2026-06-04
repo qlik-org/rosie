@@ -6,5 +6,11 @@ settings:
   artifactsLocation:
     internalSchema: '{{task.cdc_02_june_storage-f9gp.internalSchema}}'
     taskSchema: '{{task.cdc_02_june_storage-f9gp.taskSchema}}'
+  artifactsSettings:
+    historyEnabled: true
+  storageLocationSettings:
+    folderLocationType: DATA_ASSET_NAME
+  catalogIntegration:
+    publishDatasets: false
   taskRuntime:
     lakehouseCluster: '{{task.cdc_02_june_storage-f9gp.lakehouseCluster}}'

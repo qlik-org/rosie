@@ -1,0 +1,23 @@
+lakeLanding:
+  taskRuntime:
+    tableLoadInParallel: 6
+  folderLocationType: ROOT_FOLDER
+lakehouseStorage:
+  hasHistory: false
+  catalogIntegration:
+    publishDatasets: true
+  folderLocationType: ROOT_FOLDER
+streamingLakeLanding:
+  folderRetentionSettings:
+    type: DELETE
+    daysOfRetention: 1
+  folderLocationType: ROOT_FOLDER
+streamingTransform:
+  catalogIntegration:
+    publishDatasets: true
+  folderLocationType: ROOT_FOLDER
+  viewDefinitionSettings:
+    standardViewHeaders:
+      hdrFromTimestamp: true
+externalReplicate:
+  folderLocationType: ROOT_FOLDER
