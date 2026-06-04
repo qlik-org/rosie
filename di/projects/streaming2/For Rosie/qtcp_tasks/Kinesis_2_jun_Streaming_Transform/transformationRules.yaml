@@ -1,0 +1,9 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    scope:
+      whereTableName: dima
+    action:
+      renameType: ADD_SUFFIX
+      value: _A
+    name: Rule

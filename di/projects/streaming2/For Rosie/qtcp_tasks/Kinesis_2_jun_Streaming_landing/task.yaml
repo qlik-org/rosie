@@ -4,15 +4,15 @@ properties:
   type: STREAMING_LAKE_LANDING
 settings:
   generalSettings:
-    storageLocationSettings:
-      folderLocationType: DATA_ASSET_NAME
-    folderRetentionSettings:
-      type: NONE
+    startReadDataFrom: NOW
     contentTypeSettings:
+      format: AVRO
       regexTypeSettings:
         pattern: '(?<line>.*)'
     processPastFilesSettings:
       timeAmount: 24
       timeUnit: HOURS
   taskRuntime:
+    numberOfReadersTaskSettings:
+      numberOfReadersType: CUSTOM
     lakehouseClusterId: '{{task.kinesis_2_jun_streaming_landing-f9f9.lakehouseCluster}}'

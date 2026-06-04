@@ -1,0 +1,7 @@
+rules:
+  - ordinal: 0
+    actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: ' customer_lastName'
+    name: Rule delete column
