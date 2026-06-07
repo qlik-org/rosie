@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "products-94hw",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-94hs"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "suppliers-94ha",
+    "name": "Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-94hs"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "SupplierID",
+      "targetColumn": "SupplierID",
+      "sourceColumnId": "supplierid",
+      "targetColumnId": "supplierid"
+    }
+  ],
+  "name": "Products_Suppliers_relation",
+  "description": "",
+  "id": "products_suppliers_relation-94hz"
+}

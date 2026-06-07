@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-94hz",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-94hs"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "shippers-94hx",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-94hs"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers-94h0"
+}
