@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-94hs
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-94hs.internalSchema}}'
+    taskSchema: '{{task.transform-94hs.taskSchema}}'
+    databaseName: '{{task.transform-94hs.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-94hs.warehouseName}}'

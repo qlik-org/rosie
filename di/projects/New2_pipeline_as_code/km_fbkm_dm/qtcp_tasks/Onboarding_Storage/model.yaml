@@ -1,0 +1,129 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details-94hk
+      name: Order Details
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: orders-94hl
+      name: Orders
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-94hk
+  - sourceEntity:
+      datasetId: order_details-94hk
+      name: Order Details
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: products-94hm
+      name: Products
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: ProductID
+        targetColumn: ProductID
+        sourceColumnId: productid
+        targetColumnId: productid
+    name: Order Details_Products_relation
+    description: ''
+    id: order_details_products_relation-94hl
+  - sourceEntity:
+      datasetId: orders-94hl
+      name: Orders
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: customers-94hi
+      name: Customers
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-94hm
+  - sourceEntity:
+      datasetId: orders-94hl
+      name: Orders
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: employees-94hj
+      name: Employees
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-94hn
+  - sourceEntity:
+      datasetId: products-94hm
+      name: Products
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: categories-94hh
+      name: Categories
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-94ho
+  - sourceEntity:
+      datasetId: products-94hm
+      name: Products
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: suppliers-94ho
+      name: Suppliers
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation-94hp
+  - sourceEntity:
+      datasetId: orders-94hl
+      name: Orders
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: shippers-94hn
+      name: Shippers
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-94hs
+  - sourceEntity:
+      datasetId: employees-94hj
+      name: Employees
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: employees-94hj
+      name: Employees
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-94ht

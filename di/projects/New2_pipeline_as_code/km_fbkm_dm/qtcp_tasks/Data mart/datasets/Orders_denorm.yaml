@@ -1,0 +1,1059 @@
+properties:
+  id: orders_denorm-94ib
+  name: Orders_denorm
+  inputDatasets:
+    - datasetId: orders-94hz
+      name: Orders
+      taskId: transform-94hs
+    - datasetId: shippers-94hx
+      name: Shippers
+      taskId: transform-94hs
+    - datasetId: employees-94he
+      name: Employees
+      taskId: transform-94hs
+    - datasetId: employees-94he
+      name: Employees
+      taskId: transform-94hs
+    - datasetId: customers-94hb
+      name: Customers
+      taskId: transform-94hs
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Orders_denorm
+    columns:
+      - name: OrderID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: RequiredDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: ShippedDate
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: ShipName
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+        properties:
+          documentMetadata: false
+      - name: ShipAddress
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: shipaddress
+        properties:
+          documentMetadata: false
+      - name: ShipCity
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcity
+        properties:
+          documentMetadata: false
+      - name: ShipRegion
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipregion
+        properties:
+          documentMetadata: false
+      - name: ShipPostalCode
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: shippostalcode
+        properties:
+          documentMetadata: false
+      - name: ShipCountry
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcountry
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_CompanyName
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_CompanyName
+        properties:
+          documentMetadata: false
+      - name: ContactName
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: orders_customers_relation-94hw$_$contactname
+        properties:
+          documentMetadata: false
+      - name: ContactTitle
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: orders_customers_relation-94hw$_$contacttitle
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_Address
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_Address
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_City
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_City
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_Region
+        ordinal: 20
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_Region
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_PostalCode
+        ordinal: 21
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_PostalCode
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_Country
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_Country
+        properties:
+          documentMetadata: false
+      - name: Orders_Customers_relation_Phone
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_customers_relation-94hw$_$Orders_Customers_relation_Phone
+        properties:
+          documentMetadata: false
+      - name: Fax
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_customers_relation-94hw$_$fax
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_LastName
+        ordinal: 25
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_LastName
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_FirstName
+        ordinal: 26
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_FirstName
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Title
+        ordinal: 27
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_Title
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_TitleOfCourtesy
+        ordinal: 28
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_TitleOfCourtesy
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_BirthDate
+        ordinal: 29
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_BirthDate
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_HireDate
+        ordinal: 30
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_HireDate
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Address
+        ordinal: 31
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: orders_employees_relation-94hx$_$address
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_City
+        ordinal: 32
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$city
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Region
+        ordinal: 33
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$region
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_PostalCode
+        ordinal: 34
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_employees_relation-94hx$_$postalcode
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Country
+        ordinal: 35
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$country
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_HomePhone
+        ordinal: 36
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_HomePhone
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Extension
+        ordinal: 37
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_Extension
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Photo
+        ordinal: 38
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_Photo
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Notes
+        ordinal: 39
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_Notes
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_ReportsTo
+        ordinal: 40
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_ReportsTo
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_PhotoPath
+        ordinal: 41
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 255
+          originalTypeFull: NVARCHAR(255)
+        id: orders_employees_relation-94hx$_$Orders_Employees_relation_PhotoPath
+        properties:
+          documentMetadata: false
+      - name: Orders_Shippers_CompanyName
+        ordinal: 42
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: orders_shippers-94h0$_$companyname
+        properties:
+          documentMetadata: false
+      - name: Orders_Shippers_Phone
+        ordinal: 43
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_shippers-94h0$_$phone
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_LastName
+        ordinal: 44
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$lastname
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_FirstName
+        ordinal: 45
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$firstname
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Title
+        ordinal: 46
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$title
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_TitleOfCourtesy
+        ordinal: 47
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$titleofcourtesy
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_BirthDate
+        ordinal: 48
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$birthdate
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_HireDate
+        ordinal: 49
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$hiredate
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Address
+        ordinal: 50
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$address
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_City
+        ordinal: 51
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$city
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Region
+        ordinal: 52
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$region
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_PostalCode
+        ordinal: 53
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$postalcode
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Country
+        ordinal: 54
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$country
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_HomePhone
+        ordinal: 55
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$homephone
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Extension
+        ordinal: 56
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$extension
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Photo
+        ordinal: 57
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$photo
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_Notes
+        ordinal: 58
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$notes
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_ReportsTo
+        ordinal: 59
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$reportsto
+        properties:
+          documentMetadata: false
+      - name: Orders_Employees_relation_Employees_Employees_PhotoPath
+        ordinal: 60
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 255
+          originalTypeFull: NVARCHAR(255)
+        id: orders_employees_relation-94hx$_$employees_employees-94h1$_$photopath
+        properties:
+          documentMetadata: false
+    entityId: ''
+  dimensionDatasetSettings:
+    type: TYPE2
+    rootDataEntityId:
+      datasetId: orders-94hz
+      name: Orders
+      taskId: transform-94hs
+    entityRelationshipPath:
+      - orders_shippers-94h0
+      - orders_employees_relation-94hx$_$employees_employees-94h1
+      - orders_employees_relation-94hx
+      - orders_customers_relation-94hw
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: CustomerID
+          type: NONE
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnName: EmployeeID
+          type: NONE
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnName: RequiredDate
+          type: NONE
+          expression:
+            expressionStatement: ${RequiredDate}
+            alias:
+              - name: RequiredDate
+                value: RequiredDate
+        - columnName: ShippedDate
+          type: NONE
+          expression:
+            expressionStatement: ${ShippedDate}
+            alias:
+              - name: ShippedDate
+                value: ShippedDate
+        - columnName: ShipVia
+          type: NONE
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnName: Freight
+          type: NONE
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnName: ShipName
+          type: NONE
+          expression:
+            expressionStatement: ${ShipName}
+            alias:
+              - name: ShipName
+                value: ShipName
+        - columnName: ShipAddress
+          type: NONE
+          expression:
+            expressionStatement: ${ShipAddress}
+            alias:
+              - name: ShipAddress
+                value: ShipAddress
+        - columnName: ShipCity
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: ShipCity
+        - columnName: ShipRegion
+          type: NONE
+          expression:
+            expressionStatement: ${ShipRegion}
+            alias:
+              - name: ShipRegion
+                value: ShipRegion
+        - columnName: ShipPostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${ShipPostalCode}
+            alias:
+              - name: ShipPostalCode
+                value: ShipPostalCode
+        - columnName: ShipCountry
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCountry}
+            alias:
+              - name: ShipCountry
+                value: ShipCountry
+        - columnName: Orders_Customers_relation_CompanyName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_CompanyName}
+            alias:
+              - name: Orders_Customers_relation_CompanyName
+                value: orders_customers_relation-94hw$_$CompanyName
+        - columnName: ContactName
+          type: NONE
+          expression:
+            expressionStatement: ${ContactName}
+            alias:
+              - name: ContactName
+                value: orders_customers_relation-94hw$_$ContactName
+        - columnName: ContactTitle
+          type: NONE
+          expression:
+            expressionStatement: ${ContactTitle}
+            alias:
+              - name: ContactTitle
+                value: orders_customers_relation-94hw$_$ContactTitle
+        - columnName: Orders_Customers_relation_Address
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_Address}
+            alias:
+              - name: Orders_Customers_relation_Address
+                value: orders_customers_relation-94hw$_$Address
+        - columnName: Orders_Customers_relation_City
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_City}
+            alias:
+              - name: Orders_Customers_relation_City
+                value: orders_customers_relation-94hw$_$City
+        - columnName: Orders_Customers_relation_Region
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_Region}
+            alias:
+              - name: Orders_Customers_relation_Region
+                value: orders_customers_relation-94hw$_$Region
+        - columnName: Orders_Customers_relation_PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_PostalCode}
+            alias:
+              - name: Orders_Customers_relation_PostalCode
+                value: orders_customers_relation-94hw$_$PostalCode
+        - columnName: Orders_Customers_relation_Country
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_Country}
+            alias:
+              - name: Orders_Customers_relation_Country
+                value: orders_customers_relation-94hw$_$Country
+        - columnName: Orders_Customers_relation_Phone
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Customers_relation_Phone}
+            alias:
+              - name: Orders_Customers_relation_Phone
+                value: orders_customers_relation-94hw$_$Phone
+        - columnName: Fax
+          type: NONE
+          expression:
+            expressionStatement: ${Fax}
+            alias:
+              - name: Fax
+                value: orders_customers_relation-94hw$_$Fax
+        - columnName: Orders_Employees_relation_LastName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_LastName}
+            alias:
+              - name: Orders_Employees_relation_LastName
+                value: orders_employees_relation-94hx$_$LastName
+        - columnName: Orders_Employees_relation_FirstName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_FirstName}
+            alias:
+              - name: Orders_Employees_relation_FirstName
+                value: orders_employees_relation-94hx$_$FirstName
+        - columnName: Orders_Employees_relation_Title
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Title}
+            alias:
+              - name: Orders_Employees_relation_Title
+                value: orders_employees_relation-94hx$_$Title
+        - columnName: Orders_Employees_relation_TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_TitleOfCourtesy}
+            alias:
+              - name: Orders_Employees_relation_TitleOfCourtesy
+                value: orders_employees_relation-94hx$_$TitleOfCourtesy
+        - columnName: Orders_Employees_relation_BirthDate
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_BirthDate}
+            alias:
+              - name: Orders_Employees_relation_BirthDate
+                value: orders_employees_relation-94hx$_$BirthDate
+        - columnName: Orders_Employees_relation_HireDate
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_HireDate}
+            alias:
+              - name: Orders_Employees_relation_HireDate
+                value: orders_employees_relation-94hx$_$HireDate
+        - columnName: Orders_Employees_relation_Address
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Address}
+            alias:
+              - name: Orders_Employees_relation_Address
+                value: orders_employees_relation-94hx$_$Address
+        - columnName: Orders_Employees_relation_City
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_City}
+            alias:
+              - name: Orders_Employees_relation_City
+                value: orders_employees_relation-94hx$_$City
+        - columnName: Orders_Employees_relation_Region
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Region}
+            alias:
+              - name: Orders_Employees_relation_Region
+                value: orders_employees_relation-94hx$_$Region
+        - columnName: Orders_Employees_relation_PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_PostalCode}
+            alias:
+              - name: Orders_Employees_relation_PostalCode
+                value: orders_employees_relation-94hx$_$PostalCode
+        - columnName: Orders_Employees_relation_Country
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Country}
+            alias:
+              - name: Orders_Employees_relation_Country
+                value: orders_employees_relation-94hx$_$Country
+        - columnName: Orders_Employees_relation_HomePhone
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_HomePhone}
+            alias:
+              - name: Orders_Employees_relation_HomePhone
+                value: orders_employees_relation-94hx$_$HomePhone
+        - columnName: Orders_Employees_relation_Extension
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Extension}
+            alias:
+              - name: Orders_Employees_relation_Extension
+                value: orders_employees_relation-94hx$_$Extension
+        - columnName: Orders_Employees_relation_Photo
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Photo}
+            alias:
+              - name: Orders_Employees_relation_Photo
+                value: orders_employees_relation-94hx$_$Photo
+        - columnName: Orders_Employees_relation_Notes
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Notes}
+            alias:
+              - name: Orders_Employees_relation_Notes
+                value: orders_employees_relation-94hx$_$Notes
+        - columnName: Orders_Employees_relation_ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_ReportsTo}
+            alias:
+              - name: Orders_Employees_relation_ReportsTo
+                value: orders_employees_relation-94hx$_$ReportsTo
+        - columnName: Orders_Employees_relation_PhotoPath
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_PhotoPath}
+            alias:
+              - name: Orders_Employees_relation_PhotoPath
+                value: orders_employees_relation-94hx$_$PhotoPath
+        - columnName: Orders_Shippers_CompanyName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Shippers_CompanyName}
+            alias:
+              - name: Orders_Shippers_CompanyName
+                value: orders_shippers-94h0$_$CompanyName
+        - columnName: Orders_Shippers_Phone
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Shippers_Phone}
+            alias:
+              - name: Orders_Shippers_Phone
+                value: orders_shippers-94h0$_$Phone
+        - columnName: Orders_Employees_relation_Employees_Employees_LastName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_LastName}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_LastName
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$LastName
+        - columnName: Orders_Employees_relation_Employees_Employees_FirstName
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_FirstName}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_FirstName
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$FirstName
+        - columnName: Orders_Employees_relation_Employees_Employees_Title
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Title}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Title
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Title
+        - columnName: Orders_Employees_relation_Employees_Employees_TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_TitleOfCourtesy}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_TitleOfCourtesy
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$TitleOfCourtesy
+        - columnName: Orders_Employees_relation_Employees_Employees_BirthDate
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_BirthDate}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_BirthDate
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$BirthDate
+        - columnName: Orders_Employees_relation_Employees_Employees_HireDate
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_HireDate}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_HireDate
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$HireDate
+        - columnName: Orders_Employees_relation_Employees_Employees_Address
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Address}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Address
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Address
+        - columnName: Orders_Employees_relation_Employees_Employees_City
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_City}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_City
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$City
+        - columnName: Orders_Employees_relation_Employees_Employees_Region
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Region}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Region
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Region
+        - columnName: Orders_Employees_relation_Employees_Employees_PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_PostalCode}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_PostalCode
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$PostalCode
+        - columnName: Orders_Employees_relation_Employees_Employees_Country
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Country}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Country
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Country
+        - columnName: Orders_Employees_relation_Employees_Employees_HomePhone
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_HomePhone}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_HomePhone
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$HomePhone
+        - columnName: Orders_Employees_relation_Employees_Employees_Extension
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Extension}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Extension
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Extension
+        - columnName: Orders_Employees_relation_Employees_Employees_Photo
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Photo}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Photo
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Photo
+        - columnName: Orders_Employees_relation_Employees_Employees_Notes
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_Notes}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_Notes
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$Notes
+        - columnName: Orders_Employees_relation_Employees_Employees_ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_ReportsTo}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_ReportsTo
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$ReportsTo
+        - columnName: Orders_Employees_relation_Employees_Employees_PhotoPath
+          type: NONE
+          expression:
+            expressionStatement: ${Orders_Employees_relation_Employees_Employees_PhotoPath}
+            alias:
+              - name: Orders_Employees_relation_Employees_Employees_PhotoPath
+                value: orders_employees_relation-94hx$_$employees_employees-94h1$_$PhotoPath
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false
