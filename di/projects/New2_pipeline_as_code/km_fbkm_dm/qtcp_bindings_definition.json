@@ -42,6 +42,7 @@
     "task-type.transform.warehouseSelectionMethod": "",
     "task.data_mart-94h6.databaseName": "{{task-type.datamart.databaseName}}",
     "task.data_mart-94h6.internalSchema": "",
+    "task.data_mart-94h6.snowflakeExternalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
     "task.data_mart-94h6.taskSchema": "",
     "task.data_mart-94h6.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.file_based_knowledge_mart-94h2.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
