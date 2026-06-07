@@ -10,3 +10,7 @@ settings:
   taskRuntime:
     warehouseSelection:
       warehouseName: '{{task.data_mart-94h6.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.data_mart-94h6.snowflakeExternalVolume}}'

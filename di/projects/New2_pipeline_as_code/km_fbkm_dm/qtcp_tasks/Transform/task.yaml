@@ -10,3 +10,7 @@ settings:
   taskRuntime:
     warehouseSelection:
       warehouseName: '{{task.transform-94hs.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.transform-94hs.snowflakeExternalVolume}}'

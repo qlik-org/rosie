@@ -10,3 +10,7 @@ settings:
   taskRuntime:
     warehouseSelection:
       warehouseName: '{{task.onboarding_storage-94hf.warehouseName}}'
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.onboarding_storage-94hf.snowflakeExternalVolume}}'

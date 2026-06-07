@@ -1,5 +1,21 @@
 relationships:
   - sourceEntity:
+      datasetId: employees-94hj
+      name: Employees
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: employees-94hj
+      name: Employees
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-94ht
+  - sourceEntity:
       datasetId: order_details-94hk
       name: Order Details
       taskId: onboarding_storage-94hf
@@ -64,6 +80,22 @@ relationships:
     description: ''
     id: orders_employees_relation-94hn
   - sourceEntity:
+      datasetId: orders-94hl
+      name: Orders
+      taskId: onboarding_storage-94hf
+    targetEntity:
+      datasetId: shippers-94hn
+      name: Shippers
+      taskId: onboarding_storage-94hf
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-94hs
+  - sourceEntity:
       datasetId: products-94hm
       name: Products
       taskId: onboarding_storage-94hf
@@ -95,35 +127,3 @@ relationships:
     name: Products_Suppliers_relation
     description: ''
     id: products_suppliers_relation-94hp
-  - sourceEntity:
-      datasetId: orders-94hl
-      name: Orders
-      taskId: onboarding_storage-94hf
-    targetEntity:
-      datasetId: shippers-94hn
-      name: Shippers
-      taskId: onboarding_storage-94hf
-    columnRelationships:
-      - sourceColumn: ShipVia
-        targetColumn: ShipperID
-        sourceColumnId: shipvia
-        targetColumnId: shipperid
-    name: Orders_Shippers
-    description: ''
-    id: orders_shippers-94hs
-  - sourceEntity:
-      datasetId: employees-94hj
-      name: Employees
-      taskId: onboarding_storage-94hf
-    targetEntity:
-      datasetId: employees-94hj
-      name: Employees
-      taskId: onboarding_storage-94hf
-    columnRelationships:
-      - sourceColumn: ReportsTo
-        targetColumn: EmployeeID
-        sourceColumnId: reportsto
-        targetColumnId: employeeid
-    name: Employees_Employees
-    description: ''
-    id: employees_employees-94ht
