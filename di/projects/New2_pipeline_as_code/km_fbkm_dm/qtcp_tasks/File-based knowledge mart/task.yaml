@@ -4,15 +4,27 @@ properties:
   type: FILE_BASED_KNOWLEDGE_MART
 settings:
   taskRuntime:
+    chunkSize: 2003
+    chunkOverlap: 2
+    bulkSize: 103
     warehouseSelection:
       warehouseName: '{{task.file_based_knowledge_mart-94h2.warehouseName}}'
+  indexActionOnPrepare: RECREATE
+  testAssistantSettings:
+    numberOfDocumentsRetrieved: 5
+    userPromptTemplate: "PROMPT: Use the given context to answer the question. If you don't know the answer, say you don't know. Use three sentences maximum and keep the answer concise. \nContext: {context}.\n\nQuestion: {question}\nHelpful Answer:"
+    filterConditions: Filter_HERE
+    documentRetrieval: DOCUMENT_RETRIEVAL_DISABLED
   indexArtifactsLocation:
     databricksVectorSearchEndpoint: '{{task.file_based_knowledge_mart-94h2.databricksVectorSearchEndpoint}}'
-    schema: '{{task.file_based_knowledge_mart-94h2.indexSchema}}'
+    schema: file-basedknowledgemart
     name: '{{task.file_based_knowledge_mart-94h2.indexName}}'
-    database: '{{task.file_based_knowledge_mart-94h2.indexDatabase}}'
+    database: ROSIE
+  vectorDbTargetType: EXTERNAL_VECTOR_DB
+  vectorDbConnection: '{{task.file_based_knowledge_mart-94h2.vectorDbConnection}}'
+  llmConnection: '{{task.file_based_knowledge_mart-94h2.llmConnection}}'
   llmSettings:
-    kindId: llm:snowflake
+    kindId: 'llm:OpenAI@1.0.0'
     parameters:
-      embedding_model: nv-embed-qa-4
-      completion_model: mistral-7b
+      embedding_model: text-embedding-3-large
+      completion_model: gpt-4o

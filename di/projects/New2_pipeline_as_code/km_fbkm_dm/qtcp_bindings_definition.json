@@ -42,13 +42,17 @@
     "task-type.transform.warehouseSelectionMethod": "",
     "task.data_mart-94h6.databaseName": "{{task-type.datamart.databaseName}}",
     "task.data_mart-94h6.internalSchema": "",
+    "task.data_mart-94h6.snowflakeExternalVolume": "{{task-type.datamart.snowflakeExternalVolume}}",
+    "task.data_mart-94h6.snowflakeOpenCatalog": "{{task-type.datamart.snowflakeOpenCatalog}}",
     "task.data_mart-94h6.taskSchema": "",
     "task.data_mart-94h6.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.file_based_knowledge_mart-94h2.databricksVectorSearchEndpoint": "{{task-type.fileBasedKnowledgeMart.databricksVectorSearchEndpoint}}",
     "task.file_based_knowledge_mart-94h2.indexDatabase": "{{task-type.fileBasedKnowledgeMart.indexDatabase}}",
     "task.file_based_knowledge_mart-94h2.indexName": "",
     "task.file_based_knowledge_mart-94h2.indexSchema": "",
+    "task.file_based_knowledge_mart-94h2.llmConnection": "",
     "task.file_based_knowledge_mart-94h2.sourceConnection": "",
+    "task.file_based_knowledge_mart-94h2.vectorDbConnection": "",
     "task.file_based_knowledge_mart-94h2.warehouseName": "{{task-type.fileBasedKnowledgeMart.warehouseName}}",
     "task.knowledge_mart-94ii.databaseName": "{{task-type.knowledgeMart.databaseName}}",
     "task.knowledge_mart-94ii.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
@@ -56,8 +60,10 @@
     "task.knowledge_mart-94ii.indexName": "",
     "task.knowledge_mart-94ii.indexSchema": "",
     "task.knowledge_mart-94ii.internalSchema": "",
+    "task.knowledge_mart-94ii.llmConnection": "",
     "task.knowledge_mart-94ii.maxNumberOfRecords": "",
     "task.knowledge_mart-94ii.taskSchema": "",
+    "task.knowledge_mart-94ii.vectorDbConnection": "",
     "task.knowledge_mart-94ii.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.onboarding_landing-94he.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-94he.sourceConnection": "",
@@ -73,8 +79,24 @@
     "task.transform-94hs.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "connectionProperties": {
+    "task.file_based_knowledge_mart-94h2.llmConnection": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
+    },
     "task.file_based_knowledge_mart-94h2.sourceConnection": {
       "type": "reptgt_qdis3"
+    },
+    "task.file_based_knowledge_mart-94h2.vectorDbConnection": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:Pinecone@1.0.0"
+    },
+    "task.knowledge_mart-94ii.llmConnection": {
+      "type": "external_data_provider",
+      "kindId": "llm:OpenAI@1.0.0"
+    },
+    "task.knowledge_mart-94ii.vectorDbConnection": {
+      "type": "external_data_provider",
+      "kindId": "vectordb:OpenSearch@1.0.0"
     },
     "task.onboarding_landing-94he.sourceConnection": {
       "type": "repsrc_mssql"

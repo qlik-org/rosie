@@ -2,6 +2,7 @@ scheduling:
   - schedulingType: TIME_BASED
     timeBasedScheduling:
       schedule:
-        - RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0
-      startDateTime: 2026-06-07T09:43:18.9800000Z
+        - RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=MO;BYHOUR=10;BYMINUTE=15;BYSECOND=0
+      startDateTime: 2026-06-07T10:15:00.0000000Z
+      endDateTime: 0001-01-01T00:00:00.0000000Z
       timezone: Etc/UTC

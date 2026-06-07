@@ -3,10 +3,23 @@ properties:
   id: data_mart-94h6
   type: DATAMART
 settings:
+  artifactsSettings:
+    artifactsPrefix: a1_
   artifactsLocation:
     internalSchema: '{{task.data_mart-94h6.internalSchema}}'
     taskSchema: '{{task.data_mart-94h6.taskSchema}}'
     databaseName: '{{task.data_mart-94h6.databaseName}}'
   taskRuntime:
+    tableUpdateConcurrency: 11
     warehouseSelection:
       warehouseName: '{{task.data_mart-94h6.warehouseName}}'
+  catalogIntegration:
+    publishDatasets: false
+  tableTypeSettings:
+    tableType: ICEBERG
+    icebergSettings:
+      snowflakeExternalVolume: '{{task.data_mart-94h6.snowflakeExternalVolume}}'
+      folderLocationType: ROOT_FOLDER
+      enableOpenCatalogSync: true
+      snowflakeOpenCatalog: '{{task.data_mart-94h6.snowflakeOpenCatalog}}'
+  viewType: SECURE_VIEW
