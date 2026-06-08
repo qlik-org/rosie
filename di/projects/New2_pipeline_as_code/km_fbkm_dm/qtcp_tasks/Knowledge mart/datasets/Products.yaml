@@ -1,0 +1,442 @@
+properties:
+  id: products-94ka
+  name: Products
+  inputDatasets:
+    - datasetId: products-94hm
+      name: Products
+      taskId: onboarding_storage-94hf
+    - datasetId: suppliers-94ho
+      name: Suppliers
+      taskId: onboarding_storage-94hf
+    - datasetId: categories-94hh
+      name: Categories
+      taskId: onboarding_storage-94hf
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Products
+    columns:
+      - name: ProductID
+        ordinal: 1
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: true
+      - name: ProductName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: productname
+        properties:
+          documentMetadata: true
+      - name: SupplierID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: supplierid
+        properties:
+          documentMetadata: false
+      - name: CategoryID
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: categoryid
+        properties:
+          documentMetadata: false
+      - name: QuantityPerUnit
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: quantityperunit
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: UnitsInStock
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: unitsinstock
+        properties:
+          documentMetadata: false
+      - name: UnitsOnOrder
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: unitsonorder
+        properties:
+          documentMetadata: false
+      - name: ReorderLevel
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: reorderlevel
+        properties:
+          documentMetadata: false
+      - name: Discontinued
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: discontinued
+        properties:
+          documentMetadata: false
+      - name: CategoryName
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: products_categories_relation-94ho$_$categoryname
+        properties:
+          documentMetadata: false
+      - name: Description
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: products_categories_relation-94ho$_$description
+        properties:
+          documentMetadata: false
+      - name: Picture
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        id: products_categories_relation-94ho$_$picture
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: products_suppliers_relation-94hp$_$companyname
+        properties:
+          documentMetadata: false
+      - name: ContactName
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: products_suppliers_relation-94hp$_$contactname
+        properties:
+          documentMetadata: false
+      - name: Contact_Title
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: products_suppliers_relation-94hp$_$contacttitle
+        properties:
+          documentMetadata: false
+      - name: Address
+        ordinal: 17
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: products_suppliers_relation-94hp$_$address
+        properties:
+          documentMetadata: false
+      - name: City
+        ordinal: 18
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: products_suppliers_relation-94hp$_$city
+        properties:
+          documentMetadata: false
+      - name: Region
+        ordinal: 19
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: products_suppliers_relation-94hp$_$region
+        properties:
+          documentMetadata: false
+      - name: PostalCode
+        ordinal: 20
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: products_suppliers_relation-94hp$_$postalcode
+        properties:
+          documentMetadata: false
+      - name: Country
+        ordinal: 21
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: products_suppliers_relation-94hp$_$country
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 22
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: products_suppliers_relation-94hp$_$phone
+        properties:
+          documentMetadata: false
+      - name: Fax
+        ordinal: 23
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: products_suppliers_relation-94hp$_$fax
+        properties:
+          documentMetadata: false
+      - name: HomePage
+        ordinal: 24
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: products_suppliers_relation-94hp$_$homepage
+        properties:
+          documentMetadata: false
+    entityId: ''
+  documentDataEntitySettings:
+    repeatedDataEntities: []
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: products-94hm
+      name: Products
+      taskId: onboarding_storage-94hf
+    entityRelationshipPath:
+      - products_categories_relation-94ho
+      - products_suppliers_relation-94hp
+    mapping:
+      columns:
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: ProductName
+          type: NONE
+          expression:
+            expressionStatement: ${ProductName}
+            alias:
+              - name: ProductName
+                value: ProductName
+        - columnName: SupplierID
+          type: NONE
+          expression:
+            expressionStatement: ${SupplierID}
+            alias:
+              - name: SupplierID
+                value: SupplierID
+        - columnName: CategoryID
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: CategoryID
+        - columnName: QuantityPerUnit
+          type: NONE
+          expression:
+            expressionStatement: ${QuantityPerUnit}
+            alias:
+              - name: QuantityPerUnit
+                value: QuantityPerUnit
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: UnitsInStock
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsInStock}
+            alias:
+              - name: UnitsInStock
+                value: UnitsInStock
+        - columnName: UnitsOnOrder
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsOnOrder}
+            alias:
+              - name: UnitsOnOrder
+                value: UnitsOnOrder
+        - columnName: ReorderLevel
+          type: NONE
+          expression:
+            expressionStatement: ${ReorderLevel}
+            alias:
+              - name: ReorderLevel
+                value: ReorderLevel
+        - columnName: Discontinued
+          type: NONE
+          expression:
+            expressionStatement: ${Discontinued}
+            alias:
+              - name: Discontinued
+                value: Discontinued
+        - columnName: CategoryName
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryName}
+            alias:
+              - name: CategoryName
+                value: products_categories_relation-94ho$_$CategoryName
+        - columnName: Description
+          type: NONE
+          expression:
+            expressionStatement: ${Description}
+            alias:
+              - name: Description
+                value: products_categories_relation-94ho$_$Description
+        - columnName: Picture
+          type: NONE
+          expression:
+            expressionStatement: ${Picture}
+            alias:
+              - name: Picture
+                value: products_categories_relation-94ho$_$Picture
+        - columnName: CompanyName
+          type: NONE
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: products_suppliers_relation-94hp$_$CompanyName
+        - columnName: ContactName
+          type: NONE
+          expression:
+            expressionStatement: ${ContactName}
+            alias:
+              - name: ContactName
+                value: products_suppliers_relation-94hp$_$ContactName
+        - columnName: Contact_Title
+          type: NONE
+          expression:
+            expressionStatement: ${ContactTitle}
+            alias:
+              - name: ContactTitle
+                value: products_suppliers_relation-94hp$_$ContactTitle
+        - columnName: Address
+          type: NONE
+          expression:
+            expressionStatement: ${Address}
+            alias:
+              - name: Address
+                value: products_suppliers_relation-94hp$_$Address
+        - columnName: City
+          type: NONE
+          expression:
+            expressionStatement: ${City}
+            alias:
+              - name: City
+                value: products_suppliers_relation-94hp$_$City
+        - columnName: Region
+          type: NONE
+          expression:
+            expressionStatement: ${Region}
+            alias:
+              - name: Region
+                value: products_suppliers_relation-94hp$_$Region
+        - columnName: PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${PostalCode}
+            alias:
+              - name: PostalCode
+                value: products_suppliers_relation-94hp$_$PostalCode
+        - columnName: Country
+          type: NONE
+          expression:
+            expressionStatement: ${Country}
+            alias:
+              - name: Country
+                value: products_suppliers_relation-94hp$_$Country
+        - columnName: Phone
+          type: NONE
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: products_suppliers_relation-94hp$_$Phone
+        - columnName: Fax
+          type: NONE
+          expression:
+            expressionStatement: ${Fax}
+            alias:
+              - name: Fax
+                value: products_suppliers_relation-94hp$_$Fax
+        - columnName: HomePage
+          type: NONE
+          expression:
+            expressionStatement: ${HomePage}
+            alias:
+              - name: HomePage
+                value: products_suppliers_relation-94hp$_$HomePage
+    fullyType2Sources: false
+    checkedTreeNodesForDisplay:
+      - products_suppliers_relation-94hp
+      - products_categories_relation-94ho
+    subtype: MODEL_BASED
+    materializedSource: false

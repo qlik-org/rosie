@@ -13,3 +13,8 @@ rules:
     internalRule: true
     name: QLIK__REMOVE_BYTES_COLUMNS
     description: 'Removes all BYTES columns. This rule is automatically generated and added for compatibility reasons.'
+  - actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereDatatype: NCLOB
+    name: Rule

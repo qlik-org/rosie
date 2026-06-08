@@ -41,14 +41,14 @@ properties:
         id: description
         properties:
           documentMetadata: false
-      - name: Picture
+      - name: CategoryName_1
         ordinal: 4
         nullable: true
         datatype:
-          type: BLOB
-          length: 2147483647
-          originalTypeFull: BINARY(8388608)
-        id: picture
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: CategoryName_1-d94b
         properties:
           documentMetadata: false
     entityId: ''
@@ -81,13 +81,13 @@ properties:
             alias:
               - name: Description
                 value: Description
-        - columnName: Picture
+        - columnName: CategoryName_1
           type: NONE
           expression:
-            expressionStatement: ${Picture}
+            expressionStatement: ${CategoryName}
             alias:
-              - name: Picture
-                value: Picture
+              - name: CategoryName
+                value: CategoryName
     fullyType2Sources: false
     subtype: MODEL_BASED
     materializedSource: false

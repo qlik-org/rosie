@@ -1,5 +1,21 @@
 relationships:
   - sourceEntity:
+      datasetId: employees-94he
+      name: Employees
+      taskId: transform-94hs
+    targetEntity:
+      datasetId: employees-94he
+      name: Employees
+      taskId: transform-94hs
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-94h1
+  - sourceEntity:
       datasetId: order_details-94hv
       name: Order_Details
       taskId: transform-94hs
@@ -64,6 +80,22 @@ relationships:
     description: ''
     id: orders_employees_relation-94hx
   - sourceEntity:
+      datasetId: orders-94hz
+      name: Orders
+      taskId: transform-94hs
+    targetEntity:
+      datasetId: shippers-94hx
+      name: Shippers
+      taskId: transform-94hs
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-94h0
+  - sourceEntity:
       datasetId: products-94hw
       name: Products
       taskId: transform-94hs
@@ -95,35 +127,3 @@ relationships:
     name: Products_Suppliers_relation
     description: ''
     id: products_suppliers_relation-94hz
-  - sourceEntity:
-      datasetId: orders-94hz
-      name: Orders
-      taskId: transform-94hs
-    targetEntity:
-      datasetId: shippers-94hx
-      name: Shippers
-      taskId: transform-94hs
-    columnRelationships:
-      - sourceColumn: ShipVia
-        targetColumn: ShipperID
-        sourceColumnId: shipvia
-        targetColumnId: shipperid
-    name: Orders_Shippers
-    description: ''
-    id: orders_shippers-94h0
-  - sourceEntity:
-      datasetId: employees-94he
-      name: Employees
-      taskId: transform-94hs
-    targetEntity:
-      datasetId: employees-94he
-      name: Employees
-      taskId: transform-94hs
-    columnRelationships:
-      - sourceColumn: ReportsTo
-        targetColumn: EmployeeID
-        sourceColumnId: reportsto
-        targetColumnId: employeeid
-    name: Employees_Employees
-    description: ''
-    id: employees_employees-94h1

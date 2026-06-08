@@ -533,6 +533,16 @@ properties:
         id: order_details_orders_relation-94hu$_$orders_employees_relation-94hx$_$employees_employees-94h1$_$photopath
         properties:
           documentMetadata: false
+      - name: ShipCity_1
+        ordinal: 53
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: ShipCity_1-227a
+        properties:
+          documentMetadata: false
     entityId: ''
   documentDataEntitySettings:
     repeatedDataEntities: []
@@ -912,6 +922,13 @@ properties:
             alias:
               - name: Order_Details_Orders_relation_Orders_Employees_relation_Employees_Employees_PhotoPath
                 value: order_details_orders_relation-94hu$_$orders_employees_relation-94hx$_$employees_employees-94h1$_$PhotoPath
+        - columnName: ShipCity_1
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: order_details_orders_relation-94hu$_$ShipCity
     fullyType2Sources: false
     checkedTreeNodesForDisplay:
       - order_details_orders_relation-94hu$_$orders_employees_relation-94hx$_$employees_employees-94h1

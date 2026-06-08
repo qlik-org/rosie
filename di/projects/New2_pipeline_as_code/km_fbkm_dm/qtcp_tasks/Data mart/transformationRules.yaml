@@ -1,0 +1,17 @@
+rules:
+  - actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Phone'
+    action:
+      renameType: ADD_SUFFIX
+      value: _A
+    name: Rule
+  - actionType: RENAME_TABLE
+    scope:
+      whereTableName: '%rs'
+    action:
+      renameType: REPLACE_SUFFIX
+      value: _rs
+      oldValue: rs
+    name: Rule_1

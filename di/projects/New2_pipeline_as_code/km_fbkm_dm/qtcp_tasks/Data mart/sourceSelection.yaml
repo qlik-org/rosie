@@ -1,3 +1,7 @@
 includePatterns:
   - sourceTask: transform-94hs
     tablePattern: '%'
+explicitlySelected:
+  - sourceTask: onboarding_storage-94hf
+    name: Products
+    sourceTableId: products-94hm

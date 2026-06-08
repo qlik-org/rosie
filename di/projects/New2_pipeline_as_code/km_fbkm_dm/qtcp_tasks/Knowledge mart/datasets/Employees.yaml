@@ -62,8 +62,17 @@ properties:
         id: firstname
         properties:
           documentMetadata: true
-      - name: Title
+      - name: ReportsTo
         ordinal: 4
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: reportsto
+        properties:
+          documentMetadata: false
+      - name: Title
+        ordinal: 5
         nullable: true
         datatype:
           type: WSTRING
@@ -73,23 +82,13 @@ properties:
         properties:
           documentMetadata: false
       - name: TitleOfCourtesy
-        ordinal: 5
+        ordinal: 6
         nullable: true
         datatype:
           type: WSTRING
           length: 25
           originalTypeFull: NVARCHAR(25)
         id: titleofcourtesy
-        properties:
-          documentMetadata: false
-      - name: BirthDate
-        ordinal: 6
-        nullable: true
-        datatype:
-          type: DATETIME
-          precision: 3
-          originalTypeFull: TIMESTAMP_NTZ(3)
-        id: birthdate
         properties:
           documentMetadata: false
       - name: HireDate
@@ -192,27 +191,8 @@ properties:
         id: notes
         properties:
           documentMetadata: false
-      - name: ReportsTo
-        ordinal: 17
-        nullable: true
-        datatype:
-          type: INT4
-          originalTypeFull: INTEGER
-        id: reportsto
-        properties:
-          documentMetadata: false
-      - name: PhotoPath
-        ordinal: 18
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 255
-          originalTypeFull: NVARCHAR(255)
-        id: photopath
-        properties:
-          documentMetadata: false
       - name: Employees_Employees_LastName
-        ordinal: 19
+        ordinal: 17
         nullable: true
         datatype:
           type: WSTRING
@@ -222,7 +202,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_FirstName
-        ordinal: 20
+        ordinal: 18
         nullable: true
         datatype:
           type: WSTRING
@@ -232,7 +212,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_Title
-        ordinal: 21
+        ordinal: 19
         nullable: true
         datatype:
           type: WSTRING
@@ -242,7 +222,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_TitleOfCourtesy
-        ordinal: 22
+        ordinal: 20
         nullable: true
         datatype:
           type: WSTRING
@@ -252,7 +232,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_BirthDate
-        ordinal: 23
+        ordinal: 21
         nullable: true
         datatype:
           type: DATETIME
@@ -262,7 +242,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_HireDate
-        ordinal: 24
+        ordinal: 22
         nullable: true
         datatype:
           type: DATETIME
@@ -272,7 +252,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_Address
-        ordinal: 25
+        ordinal: 23
         nullable: true
         datatype:
           type: WSTRING
@@ -282,7 +262,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_City
-        ordinal: 26
+        ordinal: 24
         nullable: true
         datatype:
           type: WSTRING
@@ -292,7 +272,7 @@ properties:
         properties:
           documentMetadata: false
       - name: Employees_Employees_Region
-        ordinal: 27
+        ordinal: 25
         nullable: true
         datatype:
           type: WSTRING
@@ -301,18 +281,8 @@ properties:
         id: employees_employees-94h1$_$region
         properties:
           documentMetadata: false
-      - name: Employees_Employees_PostalCode
-        ordinal: 28
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 10
-          originalTypeFull: NVARCHAR(10)
-        id: employees_employees-94h1$_$postalcode
-        properties:
-          documentMetadata: false
       - name: Employees_Employees_Country
-        ordinal: 29
+        ordinal: 26
         nullable: true
         datatype:
           type: WSTRING
@@ -321,63 +291,13 @@ properties:
         id: employees_employees-94h1$_$country
         properties:
           documentMetadata: false
-      - name: Employees_Employees_HomePhone
-        ordinal: 30
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 24
-          originalTypeFull: NVARCHAR(24)
-        id: employees_employees-94h1$_$homephone
-        properties:
-          documentMetadata: false
-      - name: Employees_Employees_Extension
-        ordinal: 31
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 4
-          originalTypeFull: NVARCHAR(4)
-        id: employees_employees-94h1$_$extension
-        properties:
-          documentMetadata: false
-      - name: Employees_Employees_Photo
-        ordinal: 32
-        nullable: true
-        datatype:
-          type: BLOB
-          length: 2147483647
-          originalTypeFull: BINARY(8388608)
-        id: employees_employees-94h1$_$photo
-        properties:
-          documentMetadata: false
-      - name: Employees_Employees_Notes
-        ordinal: 33
-        nullable: true
-        datatype:
-          type: NCLOB
-          length: 1073741823
-          originalTypeFull: NVARCHAR(8388608)
-        id: employees_employees-94h1$_$notes
-        properties:
-          documentMetadata: false
       - name: Employees_Employees_ReportsTo
-        ordinal: 34
+        ordinal: 27
         nullable: true
         datatype:
           type: INT4
           originalTypeFull: INTEGER
         id: employees_employees-94h1$_$reportsto
-        properties:
-          documentMetadata: false
-      - name: Employees_Employees_PhotoPath
-        ordinal: 35
-        nullable: true
-        datatype:
-          type: WSTRING
-          length: 255
-          originalTypeFull: NVARCHAR(255)
-        id: employees_employees-94h1$_$photopath
         properties:
           documentMetadata: false
     entityId: ''
@@ -442,13 +362,6 @@ properties:
             alias:
               - name: TitleOfCourtesy
                 value: TitleOfCourtesy
-        - columnName: BirthDate
-          type: NONE
-          expression:
-            expressionStatement: ${BirthDate}
-            alias:
-              - name: BirthDate
-                value: BirthDate
         - columnName: HireDate
           type: NONE
           expression:
@@ -526,13 +439,6 @@ properties:
             alias:
               - name: ReportsTo
                 value: ReportsTo
-        - columnName: PhotoPath
-          type: NONE
-          expression:
-            expressionStatement: ${PhotoPath}
-            alias:
-              - name: PhotoPath
-                value: PhotoPath
         - columnName: Employees_Employees_LastName
           type: NONE
           expression:
@@ -596,13 +502,6 @@ properties:
             alias:
               - name: Employees_Employees_Region
                 value: employees_employees-94h1$_$Region
-        - columnName: Employees_Employees_PostalCode
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_PostalCode}
-            alias:
-              - name: Employees_Employees_PostalCode
-                value: employees_employees-94h1$_$PostalCode
         - columnName: Employees_Employees_Country
           type: NONE
           expression:
@@ -610,34 +509,6 @@ properties:
             alias:
               - name: Employees_Employees_Country
                 value: employees_employees-94h1$_$Country
-        - columnName: Employees_Employees_HomePhone
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_HomePhone}
-            alias:
-              - name: Employees_Employees_HomePhone
-                value: employees_employees-94h1$_$HomePhone
-        - columnName: Employees_Employees_Extension
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_Extension}
-            alias:
-              - name: Employees_Employees_Extension
-                value: employees_employees-94h1$_$Extension
-        - columnName: Employees_Employees_Photo
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_Photo}
-            alias:
-              - name: Employees_Employees_Photo
-                value: employees_employees-94h1$_$Photo
-        - columnName: Employees_Employees_Notes
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_Notes}
-            alias:
-              - name: Employees_Employees_Notes
-                value: employees_employees-94h1$_$Notes
         - columnName: Employees_Employees_ReportsTo
           type: NONE
           expression:
@@ -645,13 +516,6 @@ properties:
             alias:
               - name: Employees_Employees_ReportsTo
                 value: employees_employees-94h1$_$ReportsTo
-        - columnName: Employees_Employees_PhotoPath
-          type: NONE
-          expression:
-            expressionStatement: ${Employees_Employees_PhotoPath}
-            alias:
-              - name: Employees_Employees_PhotoPath
-                value: employees_employees-94h1$_$PhotoPath
     fullyType2Sources: false
     checkedTreeNodesForDisplay:
       - orders_employees_relation-94hx$_$order_details_orders_relation-94hu$_$order_details_products_relation-94hv$_$products_suppliers_relation-94hz

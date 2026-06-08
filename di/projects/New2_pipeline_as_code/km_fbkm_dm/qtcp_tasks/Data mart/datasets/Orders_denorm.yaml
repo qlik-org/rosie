@@ -122,13 +122,12 @@ properties:
         id: shipaddress
         properties:
           documentMetadata: false
-      - name: ShipCity
+      - name: Ship_City
         ordinal: 11
         nullable: true
         datatype:
           type: WSTRING
-          length: 15
-          originalTypeFull: NVARCHAR(15)
+          length: 22
         id: shipcity
         properties:
           documentMetadata: false
@@ -704,7 +703,7 @@ properties:
             alias:
               - name: ShipAddress
                 value: ShipAddress
-        - columnName: ShipCity
+        - columnName: Ship_City
           type: NONE
           expression:
             expressionStatement: ${ShipCity}
