@@ -1,0 +1,13 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "registered_data-W97c",
+      "name": "Region__current_renamed",
+      "type": "NONE",
+      "sourceTableId": "region_current"
+    }
+  ]
+}

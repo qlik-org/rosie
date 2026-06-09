@@ -1,0 +1,109 @@
+{
+  "transformedTableLocal": {
+    "newTableName": "Region__current_renamed",
+    "transformedColumnsLocal": [
+      {
+        "action": "DROP",
+        "columnName": "hdr__key_hash",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__from_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__operation",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__inserted_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__modified_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "RegionID",
+        "newColumnName": "RegionID",
+        "primaryKeyOrdinal": 1,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "KEEP",
+        "columnName": "RegionDescription",
+        "newColumnName": "RegionDescriptionRenamed",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": false,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "ADD",
+        "columnName": "NewColumn",
+        "newDataType": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "expression": {
+          "expressionStatement": "",
+          "alias": []
+        },
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "addedColumnId": "f7414529-f5b6-498c-97dc-32611514f5ec",
+        "markAsMetadata": false,
+        "hash": false
+      }
+    ]
+  },
+  "datasetId": "region_current",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Region__current",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Region__current",
+  "id": "region_current-W-BJ",
+  "description": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "region_current",
+  "name": "Region__current",
+  "type": "EXTERNAL_TABLE",
+  "inputDatasets": [
+    {
+      "type": "TABLE",
+      "datasetId": "$registered_data$auto_test11_storage__internal_region_current",
+      "name": "Region__current",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-W97c",
+      "schema": "{{task.registered_data-W97c:ROSIE$_$auto_test11_storage__internal.schema}}",
+      "database": "{{task.registered_data-W97c:ROSIE$_$auto_test11_storage__internal.database}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}

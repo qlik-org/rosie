@@ -1,0 +1,13 @@
+{
+  "sourceConnection": "{{task.landing-W97U.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Region",
+      "schema": "{{task.landing-W97U:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_region"
+    }
+  ]
+}
