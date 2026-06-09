@@ -1,0 +1,4 @@
+explicitlySelected:
+  - sourceTask: registered_data-W97c
+    name: Region__current_renamed
+    sourceTableId: region_current

@@ -1,0 +1,42 @@
+properties:
+  id: region_current
+  name: Region__current
+transformations:
+  newTableName: Region__current_renamed
+  columnTransformations:
+    - action: DROP
+      columnName: hdr__key_hash
+    - action: DROP
+      columnName: hdr__from_timestamp
+    - action: DROP
+      columnName: hdr__operation
+    - action: DROP
+      columnName: hdr__inserted_timestamp
+    - action: DROP
+      columnName: hdr__modified_timestamp
+    - action: KEEP
+      columnName: RegionID
+      newColumnName: RegionID
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: RegionDescription
+      newColumnName: RegionDescriptionRenamed
+      nullable: false
+    - action: ADD
+      columnName: NewColumn
+      newDataType:
+        type: WSTRING
+        length: 50
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: ''
+        alias: []
+      addedColumnId: f7414529-f5b6-498c-97dc-32611514f5ec
+sourceTable:
+  schema: '{{task.registered_data-W97c:DIS_AUTOMATION$_$A_LIV_GRO_09_10_51storage__internal.schema}}'
+  database: '{{task.registered_data-W97c:DIS_AUTOMATION$_$A_LIV_GRO_09_10_51storage__internal.database}}'
+  type: TABLE
+  name: Region__current

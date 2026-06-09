@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-W97X
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-W97X.internalSchema}}'
+    taskSchema: '{{task.storage-W97X.taskSchema}}'
+    databaseName: '{{task.storage-W97X.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-W97X.warehouseName}}'

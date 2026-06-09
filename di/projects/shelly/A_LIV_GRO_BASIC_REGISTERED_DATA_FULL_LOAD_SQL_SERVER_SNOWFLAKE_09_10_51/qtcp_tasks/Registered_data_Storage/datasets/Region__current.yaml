@@ -1,0 +1,6 @@
+properties:
+  id: region_current-W-BK
+  name: Region__current
+  inputDatasets:
+    - datasetId: region_current
+      taskId: registered_data-W97c

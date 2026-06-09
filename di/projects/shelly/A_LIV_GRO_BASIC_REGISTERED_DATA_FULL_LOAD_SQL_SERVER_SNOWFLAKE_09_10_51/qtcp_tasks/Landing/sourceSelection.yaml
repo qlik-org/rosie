@@ -1,0 +1,5 @@
+sourceConnection: '{{task.landing-W97U.sourceConnection}}'
+explicitlySelected:
+  - name: Region
+    schema: '{{task.landing-W97U:null$_$dbo.schema}}'
+    type: TABLE

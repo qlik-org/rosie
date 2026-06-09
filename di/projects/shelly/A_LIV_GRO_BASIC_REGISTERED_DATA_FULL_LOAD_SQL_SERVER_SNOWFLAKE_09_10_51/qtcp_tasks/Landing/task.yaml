@@ -1,0 +1,17 @@
+properties:
+  name: Landing
+  id: landing-W97U
+  type: LANDING
+settings:
+  errorHandling:
+    data:
+      truncationPolicyErrors: ERROR_POLICY_LOG_ERROR
+      policyErrors: ERROR_POLICY_LOG_ERROR
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-W97U.taskSchema}}'
+      database: '{{task.landing-W97U.databaseName}}'
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false

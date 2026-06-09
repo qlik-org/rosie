@@ -1,0 +1,13 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-W97d
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-W97d.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-W97d.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-W97d.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-W97d.warehouseName}}'

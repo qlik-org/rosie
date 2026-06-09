@@ -1,0 +1,7 @@
+datamart:
+  catalogIntegration:
+    publishDatasets: false
+knowledgeMart:
+  llmSettings: {}
+fileBasedKnowledgeMart:
+  llmSettings: {}
