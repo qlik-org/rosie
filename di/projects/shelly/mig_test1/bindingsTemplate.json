@@ -56,13 +56,18 @@
     "task.storage-W97X.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-W97X.internalSchema": "",
     "task.storage-W97X.taskSchema": "",
-    "task.storage-W97X.warehouseName": "{{task-type.storage.warehouseName}}"
+    "task.storage-W97X.warehouseName": "{{task-type.storage.warehouseName}}",
+    "task.transform_10_6-deqk.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_10_6-deqk.internalSchema": "",
+    "task.transform_10_6-deqk.taskSchema": "",
+    "task.transform_10_6-deqk.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "landing-W97U": "Landing",
     "registered_data-W97c": "Registered_data",
     "registered_data_storage-W97d": "Registered_data_Storage",
-    "storage-W97X": "Storage"
+    "storage-W97X": "Storage",
+    "transform_10_6-deqk": "Transform_10_6"
   },
   "connectionProperties": {
     "task.landing-W97U.sourceConnection": {
