@@ -1,0 +1,67 @@
+{
+  "transformedTableLocal": {
+    "transformedColumnsLocal": [
+      {
+        "action": "DROP",
+        "columnName": "hdr__modified_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__key_hash",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__from_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__operation",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      },
+      {
+        "action": "DROP",
+        "columnName": "hdr__inserted_timestamp",
+        "primaryKeyOrdinal": 0,
+        "ordinal": 0,
+        "nullable": true,
+        "markAsMetadata": false,
+        "hash": false
+      }
+    ]
+  },
+  "datasetId": "region__current_1",
+  "actionType": "LOCAL_MANIPULATION",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "Region__current_1",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Region__current_1",
+  "id": "region__current_1-dep_",
+  "description": ""
+}

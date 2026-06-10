@@ -1,0 +1,25 @@
+{
+  "id": "region__current_1-deqb",
+  "name": "Region__current_1",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "region__current_1",
+      "name": "Region__current_1",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data-W97c"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

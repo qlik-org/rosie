@@ -1,0 +1,126 @@
+{
+  "type": "EXTERNAL_TABLE",
+  "id": "$registered_data$A_MAN_HAI_12_48_03storage__internal_region__current",
+  "name": "A_MAN_HAI_12_48_03storage__internal_Region__current",
+  "tableDef": {
+    "name": "Region__current",
+    "dbSchema": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.schema}}",
+    "dbName": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.database}}",
+    "columns": [
+      {
+        "name": "hdr__key_hash",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "BYTES",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "BINARY",
+          "originalTypeFull": "BINARY(20)"
+        },
+        "id": "hdr__key_hash",
+        "flags": "NONE"
+      },
+      {
+        "name": "hdr__from_timestamp",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(6)"
+        },
+        "id": "hdr__from_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "hdr__operation",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(1)"
+        },
+        "id": "hdr__operation",
+        "flags": "NONE"
+      },
+      {
+        "name": "hdr__inserted_timestamp",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(6)"
+        },
+        "id": "hdr__inserted_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "hdr__modified_timestamp",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 6,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(6)"
+        },
+        "id": "hdr__modified_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionID",
+        "ordinal": 6,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 7,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "regiondescription",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
