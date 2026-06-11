@@ -43,5 +43,5 @@
       "snowflakeOpenCatalog": ""
     }
   },
-  "viewType": "DEFAULT"
+  "viewType": "SECURE_VIEW"
 }
