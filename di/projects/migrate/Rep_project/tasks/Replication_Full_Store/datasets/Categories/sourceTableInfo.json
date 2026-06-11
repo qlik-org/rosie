@@ -1,0 +1,11 @@
+{
+  "type": "LANDING",
+  "id": "$replicate$dbo_categories",
+  "name": "dbo_Categories",
+  "tableDef": {
+    "name": "Categories",
+    "dbSchema": "{{task.replication_full_store--nkq:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

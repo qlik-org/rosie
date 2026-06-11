@@ -1,0 +1,11 @@
+{
+  "type": "LANDING",
+  "id": "$replicate$dbo_orders",
+  "name": "dbo_Orders",
+  "tableDef": {
+    "name": "Orders",
+    "dbSchema": "{{task.lake_landing_cdc--nkr:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

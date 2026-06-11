@@ -1,0 +1,11 @@
+{
+  "type": "LANDING",
+  "id": "$replicate$dbo_suppliers",
+  "name": "dbo_Suppliers",
+  "tableDef": {
+    "name": "Suppliers",
+    "dbSchema": "{{task.lake_landing_reload--nks:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "LANDING",
+  "id": "$replicate$dbo_shippers",
+  "name": "dbo_Shippers",
+  "tableDef": {
+    "name": "Shippers",
+    "dbSchema": "{{task.replication_full_apply--nkp:null$_$dbo.schema}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
