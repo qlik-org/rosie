@@ -1,0 +1,58 @@
+{
+  "type": "LANDING",
+  "id": "$replicate$dbo_region",
+  "name": "dbo_Region",
+  "tableDef": {
+    "name": "Region",
+    "dbSchema": "{{task.onboarding_11_6_lake_landing-i7l1:null$_$dbo.schema}}",
+    "columns": [
+      {
+        "name": "RegionID",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regionid",
+        "flags": "NONE"
+      },
+      {
+        "name": "RegionDescription",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "regiondescription",
+        "flags": "NONE"
+      },
+      {
+        "name": "NewColumn",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": ""
+        },
+        "id": "newcolumn",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "name": "tf",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_11_6-i7l6"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "5170fb82-66b8-4e3a-830f-29a7b8280db6",
+        "label": "Categories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "27ffb116-028a-4b3c-a885-c2e9a00941bd",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_11_6_storage-i7l2",
+              "entityId": "categories-i7l4"
+            },
+            "configuration": {
+              "name": "Categories"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "2f72fb2e-1da1-4dda-805c-12d03aff86c6",
+        "label": "tf",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "115b6156-96b1-415f-9d9c-7953223fa631",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "tf",
+              "settings": {
+                "materialized": "ON",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "CategoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CategoryName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Description",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Picture",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "NewColumn",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "NewColumn2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "cd2027aa-7f6f-41fe-994d-3d01d433a38b",
+        "sourceHandle": "27ffb116-028a-4b3c-a885-c2e9a00941bd",
+        "targetHandle": "115b6156-96b1-415f-9d9c-7953223fa631"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

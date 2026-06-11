@@ -1,0 +1,30 @@
+{
+  "id": "tf-i7md",
+  "name": "tf",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "categories-i7l4",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_11_6_storage-i7l2"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, tf)}}",
+    "targetId": "2f72fb2e-1da1-4dda-805c-12d03aff86c6",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}
