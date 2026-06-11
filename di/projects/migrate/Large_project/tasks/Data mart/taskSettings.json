@@ -1,27 +1,27 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": true,
+    "historyEnabled": false,
     "materialized": true,
-    "changeTablesEnabled": true,
-    "currentTableSuffix": "__current",
+    "changeTablesEnabled": false,
+    "currentTableSuffix": "__t",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",
     "artifactsPrefix": ""
   },
   "fullLoadOnly": false,
   "artifactsLocation": {
-    "internalSchema": "{{task.transform_8--nf8.internalSchema}}",
-    "taskSchema": "{{task.transform_8--nf8.taskSchema}}",
-    "databaseName": "{{task.transform_8--nf8.databaseName}}"
+    "internalSchema": "{{task.data_mart--nim.internalSchema}}",
+    "taskSchema": "{{task.data_mart--nim.taskSchema}}",
+    "databaseName": "{{task.data_mart--nim.databaseName}}"
   },
   "taskRuntime": {
     "tableUpdateConcurrency": 10,
     "warehouseSelection": {
-      "warehouseName": "{{task.transform_8--nf8.warehouseName}}"
+      "warehouseName": "{{task.data_mart--nim.warehouseName}}"
     }
   },
   "catalogIntegration": {
-    "publishDatasets": false
+    "publishDatasets": true
   },
   "tableTypeSettings": {
     "tableType": "REGULAR",

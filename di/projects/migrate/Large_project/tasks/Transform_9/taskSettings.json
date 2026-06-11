@@ -1,7 +1,7 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": true,
+    "historyEnabled": false,
     "materialized": false,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
