@@ -31,7 +31,7 @@
     }
   },
   "catalogIntegration": {
-    "publishDatasets": true
+    "publishDatasets": false
   },
   "tableTypeSettings": {
     "tableType": "REGULAR",
