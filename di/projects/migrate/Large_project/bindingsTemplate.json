@@ -40,6 +40,10 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.data_mart--nim.databaseName": "{{task-type.datamart.databaseName}}",
+    "task.data_mart--nim.internalSchema": "",
+    "task.data_mart--nim.taskSchema": "",
+    "task.data_mart--nim.warehouseName": "{{task-type.datamart.warehouseName}}",
     "task.onboarding_compare_t1_landing--nel.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_compare_t1_landing--nel.sourceConnection": "",
     "task.onboarding_compare_t1_landing--nel.taskSchema": "",
@@ -122,6 +126,7 @@
     "task.transform_9--nf-.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
+    "data_mart--nim": "Data mart",
     "onboarding_compare_t1_landing--nel": "Onboarding_compare_t1_Landing",
     "onboarding_compare_t1_storage--nem": "Onboarding_compare_t1_Storage",
     "onboarding_landing--nea": "Onboarding_Landing",

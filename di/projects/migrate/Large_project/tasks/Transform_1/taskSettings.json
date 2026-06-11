@@ -1,8 +1,8 @@
 {
   "artifactsSettings": {
     "liveViewsEnabled": false,
-    "historyEnabled": true,
-    "materialized": false,
+    "historyEnabled": false,
+    "materialized": true,
     "changeTablesEnabled": true,
     "currentTableSuffix": "__current",
     "reloadType": "COMPARE_AND_APPLY_WITH_DELETED_ROWS",

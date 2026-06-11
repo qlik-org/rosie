@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "order_details--nhj",
+    "name": "Order_Details",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_6--nf4"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "orders--nhr",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_6--nf4"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "OrderID",
+      "targetColumn": "OrderID",
+      "sourceColumnId": "orderid",
+      "targetColumnId": "orderid"
+    }
+  ],
+  "name": "Order_Details_Orders_relation",
+  "description": "",
+  "id": "order_details_orders_relation--nif"
+}
