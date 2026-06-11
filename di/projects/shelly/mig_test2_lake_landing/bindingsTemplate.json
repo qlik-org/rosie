@@ -57,12 +57,18 @@
     "task.transform_11_6-i7l6.internalSchema": "",
     "task.transform_11_6-i7l6.snowflakeExternalVolume": "{{task-type.transform.snowflakeExternalVolume}}",
     "task.transform_11_6-i7l6.taskSchema": "",
-    "task.transform_11_6-i7l6.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.transform_11_6-i7l6.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_11_6_2-i7mr.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_11_6_2-i7mr.internalSchema": "",
+    "task.transform_11_6_2-i7mr.snowflakeExternalVolume": "{{task-type.transform.snowflakeExternalVolume}}",
+    "task.transform_11_6_2-i7mr.taskSchema": "",
+    "task.transform_11_6_2-i7mr.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "onboarding_11_6_lake_landing-i7l1": "Onboarding_11_6_Lake_landing",
     "onboarding_11_6_storage-i7l2": "Onboarding_11_6_Storage",
-    "transform_11_6-i7l6": "Transform_11_6"
+    "transform_11_6-i7l6": "Transform_11_6",
+    "transform_11_6_2-i7mr": "Transform_11_6_2"
   },
   "connectionProperties": {
     "task.onboarding_11_6_lake_landing-i7l1.sourceConnection": {
