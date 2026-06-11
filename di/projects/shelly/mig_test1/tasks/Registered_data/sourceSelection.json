@@ -3,9 +3,9 @@
   "excludePatterns": [],
   "explicitlySelected": [
     {
-      "database": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.database}}",
+      "database": "{{task.registered_data-W97c:SHELLY$_$dbo.database}}",
       "name": "Region__current",
-      "schema": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.schema}}",
+      "schema": "{{task.registered_data-W97c:SHELLY$_$dbo.schema}}",
       "type": "TABLE",
       "sourceTableId": "$registered_data$A_MAN_HAI_12_48_03storage__internal_region__current"
     }

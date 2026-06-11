@@ -47,8 +47,8 @@
     "task.registered_data-W97c.databaseName": "{{task-type.registered.databaseName}}",
     "task.registered_data-W97c.internalSchema": "",
     "task.registered_data-W97c.taskSchema": "",
-    "task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.database": "",
-    "task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.schema": "",
+    "task.registered_data-W97c:SHELLY$_$dbo.database": "",
+    "task.registered_data-W97c:SHELLY$_$dbo.schema": "",
     "task.registered_data_storage-W97d.databaseName": "{{task-type.storage.databaseName}}",
     "task.registered_data_storage-W97d.internalSchema": "",
     "task.registered_data_storage-W97d.taskSchema": "",
@@ -56,18 +56,13 @@
     "task.storage-W97X.databaseName": "{{task-type.storage.databaseName}}",
     "task.storage-W97X.internalSchema": "",
     "task.storage-W97X.taskSchema": "",
-    "task.storage-W97X.warehouseName": "{{task-type.storage.warehouseName}}",
-    "task.transform_10_6-deqk.databaseName": "{{task-type.transform.databaseName}}",
-    "task.transform_10_6-deqk.internalSchema": "",
-    "task.transform_10_6-deqk.taskSchema": "",
-    "task.transform_10_6-deqk.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.storage-W97X.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "idToNameMap": {
     "landing-W97U": "Landing",
     "registered_data-W97c": "Registered_data",
     "registered_data_storage-W97d": "Registered_data_Storage",
-    "storage-W97X": "Storage",
-    "transform_10_6-deqk": "Transform_10_6"
+    "storage-W97X": "Storage"
   },
   "connectionProperties": {
     "task.landing-W97U.sourceConnection": {

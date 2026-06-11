@@ -9,8 +9,8 @@
       "name": "Region__current",
       "projectId": "{{ref(project.current.projectId)}}",
       "taskId": "registered_data-W97c",
-      "schema": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.schema}}",
-      "database": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.database}}"
+      "schema": "{{task.registered_data-W97c:SHELLY$_$dbo.schema}}",
+      "database": "{{task.registered_data-W97c:SHELLY$_$dbo.database}}"
     }
   ],
   "virtualDataset": false,
