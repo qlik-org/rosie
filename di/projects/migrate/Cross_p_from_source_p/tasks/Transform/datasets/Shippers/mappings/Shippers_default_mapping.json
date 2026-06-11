@@ -1,0 +1,50 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "shippers--nk7",
+    "name": "Shippers",
+    "projectId": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+    "taskId": "onboarding_storage--nkz"
+  },
+  "mappingFields": [
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "shippers_default_mapping--nl1",
+  "name": "Shippers_default_mapping",
+  "description": ""
+}

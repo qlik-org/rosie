@@ -1,0 +1,27 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "transform--nk9",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products--nlb"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "transform--nk9",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers--nld"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "transform--nk9",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories--nlf"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Categories",
+      "type": "NONE",
+      "sourceTableId": "categories--nk1"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Customers",
+      "type": "NONE",
+      "sourceTableId": "customers--nk2"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Employees",
+      "type": "NONE",
+      "sourceTableId": "employees--nk3"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Order Details",
+      "type": "NONE",
+      "sourceTableId": "order_details--nk4"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Orders",
+      "type": "NONE",
+      "sourceTableId": "orders--nk5"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Products",
+      "type": "NONE",
+      "sourceTableId": "products--nk6"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Shippers",
+      "type": "NONE",
+      "sourceTableId": "shippers--nk7"
+    },
+    {
+      "sourceProject": "{{project.Migration$_$Source_p_for_cross.projectId}}",
+      "sourceTask": "onboarding_storage--nkz",
+      "name": "Suppliers",
+      "type": "NONE",
+      "sourceTableId": "suppliers--nk8"
+    }
+  ]
+}
