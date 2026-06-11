@@ -10,7 +10,7 @@
     "createTable": "APPLY_TO_TARGET"
   },
   "artifactsSettings": {
-    "liveViewsEnabled": true,
+    "liveViewsEnabled": false,
     "historyEnabled": true,
     "materialized": true,
     "changeTablesEnabled": true,

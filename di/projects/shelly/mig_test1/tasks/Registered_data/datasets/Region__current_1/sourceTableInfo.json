@@ -4,8 +4,8 @@
   "name": "A_MAN_HAI_12_48_03storage__internal_Region__current",
   "tableDef": {
     "name": "Region__current",
-    "dbSchema": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.schema}}",
-    "dbName": "{{task.registered_data-W97c:ROSIE$_$A_MAN_HAI_12_48_03storage__internal.database}}",
+    "dbSchema": "{{task.registered_data-W97c:SHELLY$_$dbo.schema}}",
+    "dbName": "{{task.registered_data-W97c:SHELLY$_$dbo.database}}",
     "columns": [
       {
         "name": "hdr__key_hash",
