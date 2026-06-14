@@ -1,0 +1,25 @@
+{
+  "id": "ebopref-ukz-",
+  "name": "EBOPREF",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "ebopref",
+      "name": "EBOPREF",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_bpcs-cuub"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
