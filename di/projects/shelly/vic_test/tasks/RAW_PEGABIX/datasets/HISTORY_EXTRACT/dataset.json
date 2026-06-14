@@ -1,0 +1,25 @@
+{
+  "id": "history_extract-hzpf",
+  "name": "HISTORY_EXTRACT",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "history_extract",
+      "name": "HISTORY_EXTRACT",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_pegabix-hzpc"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
