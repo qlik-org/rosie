@@ -1,0 +1,25 @@
+{
+  "id": "edipn1xr-qcak",
+  "name": "EDIPN1XR",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "edipn1xr",
+      "name": "EDIPN1XR",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_mimixvcoa_us_1-ipic"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
