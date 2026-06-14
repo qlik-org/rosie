@@ -1,0 +1,25 @@
+{
+  "id": "mplind-1buo",
+  "name": "MPLIND",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mplind",
+      "name": "MPLIND",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_tx_hist_m3-vmqt"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
