@@ -1,0 +1,25 @@
+{
+  "id": "mitpop-qceg",
+  "name": "MITPOP",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mitpop",
+      "name": "MITPOP",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
