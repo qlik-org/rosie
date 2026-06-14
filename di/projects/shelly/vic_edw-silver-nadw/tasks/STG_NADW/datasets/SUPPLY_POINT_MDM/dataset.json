@@ -1,0 +1,252 @@
+{
+  "id": "dim_supply_pt-kbv-",
+  "name": "SUPPLY_POINT_MDM",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dim_supply_pt-gkdr",
+      "name": "dim_Supply_Pt",
+      "projectId": "{{project.shelly$_$vic_edw-bronze-common.projectId}}",
+      "taskId": "raw_nadw-wn_4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "SUPPLY_POINT_MDM",
+    "columns": [
+      {
+        "name": "SUPPLY_PT",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "supply_pt",
+        "flags": "NONE"
+      },
+      {
+        "name": "RESPONSIBLE_FACILITY",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "responsible_facility",
+        "flags": "NONE"
+      },
+      {
+        "name": "RESPONSIBLE_FACILITY_FIXED",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "responsible_facility_fixed",
+        "flags": "NONE"
+      },
+      {
+        "name": "KB_TRIGGER_GROUPING",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "kb_trigger_grouping",
+        "flags": "NONE"
+      },
+      {
+        "name": "SUPPLY_CHAIN_RESPONSIBLE",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "supply_chain_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "SC_PHONE",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "sc_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "MANAGER_RESPONSIBLE",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "manager_responsible",
+        "flags": "NONE"
+      },
+      {
+        "name": "MANAGER_PHONE",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "manager_phone",
+        "flags": "NONE"
+      },
+      {
+        "name": "MAX_CAPACITY",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 3,
+          "originalType": "",
+          "originalTypeFull": ""
+        },
+        "id": "max_capacity",
+        "flags": "NONE"
+      },
+      {
+        "name": "SUPPLY_CHAIN_RESPONSIBLE_EMAIL",
+        "ordinal": 10,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "supply_chain_responsible_email",
+        "flags": "NONE"
+      },
+      {
+        "name": "SUPPLY_PT_DESCRIPTION",
+        "ordinal": 11,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "supply_pt_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "GENERATED_TIMESTAMP",
+        "ordinal": 12,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalType": "TIMESTAMPNTZ",
+          "originalTypeFull": "TIMESTAMPNTZ(3)"
+        },
+        "id": "generated_timestamp",
+        "flags": "NONE"
+      },
+      {
+        "name": "RESPONSIBLE_FACILITY_BACKUP_GROUP",
+        "ordinal": 13,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "responsible_facility_backup_group",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "  Select \n  \u0022Supply_Pt\u0022 as SUPPLY_PT,\n  \u0022Responsible_Facility\u0022 as RESPONSIBLE_FACILITY,\n  \u0022Responsible_Facility_Fixed\u0022 AS RESPONSIBLE_FACILITY_FIXED,\n  \u0022KB_Trigger_Grouping\u0022 AS KB_TRIGGER_GROUPING,\n  \u0022Supply_Chain_Responsible\u0022 AS SUPPLY_CHAIN_RESPONSIBLE,\n  \u0022SC_Phone\u0022 AS SC_PHONE,\n  \u0022Manager_Responsible\u0022 AS MANAGER_RESPONSIBLE,\n  \u0022Manager_Phone\u0022 AS MANAGER_PHONE,\n  \u0022Max_Capacity\u0022 AS MAX_CAPACITY,\n  \u0022Supply_Chain_Responsible_Email\u0022 AS SUPPLY_CHAIN_RESPONSIBLE_EMAIL,\n  \u0022Supply_Pt_Description\u0022 AS SUPPLY_PT_DESCRIPTION,\n  \u0022Generated_Timestamp\u0022 AS GENERATED_TIMESTAMP,\n  \u0022Responsible_Facility_Backup_Group\u0022 AS RESPONSIBLE_FACILITY_BACKUP_GROUP\n  From ${dim_Supply_Pt}",
+      "alias": [
+        {
+          "name": "dim_Supply_Pt",
+          "value": "{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_supply_pt-gkdr"
+        }
+      ]
+    },
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

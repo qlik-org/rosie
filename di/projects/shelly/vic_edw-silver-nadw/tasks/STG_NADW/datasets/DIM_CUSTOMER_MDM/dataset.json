@@ -1,0 +1,108 @@
+{
+  "id": "dim_customer_mdm-jnuw",
+  "name": "DIM_CUSTOMER_MDM",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dim_customer--ulc",
+      "name": "dim_Customer",
+      "projectId": "{{project.shelly$_$vic_edw-bronze-common.projectId}}",
+      "taskId": "raw_nadw-wn_4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "DIM_CUSTOMER_MDM",
+    "columns": [
+      {
+        "name": "CONSOLIDATED_AR_CUSTOMER_NAME",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "consolidated_ar_customer_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUSTOMER_CODE",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "STRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(25)"
+        },
+        "id": "customer_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUSTOMER_GLOBAL_NAME",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(30)"
+        },
+        "id": "customer_global_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "CUSTOMER_SAME_DAY_SHIP_AGREEMENT_FLAG",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(1)"
+        },
+        "id": "customer_same_day_ship_agreement_flag",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "Select \n  \u0022Consolidated_AR_Customer_Name\u0022 as CONSOLIDATED_AR_CUSTOMER_NAME,\n  \u0022Customer\u0022 as CUSTOMER_CODE,\n  \u0022Customer_Global_Name\u0022 as CUSTOMER_GLOBAL_NAME,\n  \u0022Customer_Same_Day_Ship_Agreement_Flag\u0022 as CUSTOMER_SAME_DAY_SHIP_AGREEMENT_FLAG\nFrom ${dim_Customer}",
+      "alias": [
+        {
+          "name": "dim_Customer",
+          "value": "{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_customer--ulc"
+        }
+      ]
+    },
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

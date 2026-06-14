@@ -1,0 +1,92 @@
+{
+  "id": "dim_country-z4ns",
+  "name": "DIM_COUNTRY_MDM",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "dim_country--ulb",
+      "name": "dim_Country",
+      "projectId": "{{project.shelly$_$vic_edw-bronze-common.projectId}}",
+      "taskId": "raw_nadw-wn_4"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "DIM_COUNTRY_MDM",
+    "columns": [
+      {
+        "name": "COUNTRY_CODE",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "STRING",
+          "length": 5,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(5)"
+        },
+        "id": "country_code",
+        "flags": "NONE"
+      },
+      {
+        "name": "CPI_COUNTRY_DESCRIPTION",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "cpi_country_description",
+        "flags": "NONE"
+      },
+      {
+        "name": "FCPA_REGION",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(50)"
+        },
+        "id": "fcpa_region",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "select\n  \u0022Country_Code\u0022 as COUNTRY_CODE,\n  \u0022CPI_Country_Description\u0022 as CPI_COUNTRY_DESCRIPTION,\n  \u0022FCPA_Region\u0022 as FCPA_REGION\nFrom ${dim_Country}",
+      "alias": [
+        {
+          "name": "dim_Country",
+          "value": "{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_country--ulb"
+        }
+      ]
+    },
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": "test description"
+}

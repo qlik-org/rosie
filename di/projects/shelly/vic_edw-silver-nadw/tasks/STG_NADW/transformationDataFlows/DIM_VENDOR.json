@@ -1,0 +1,488 @@
+{
+  "name": "DIM_VENDOR",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "stg_nadw-yfce"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "target",
+        "id": "b8c12b17-11ce-48c1-bb66-816e604e614f",
+        "label": "DIM_VENDOR",
+        "graphical": {
+          "position": {
+            "x": 1080,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "339499a8-d90a-4c6f-b5c9-c2875d12a06a",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "DIM_VENDOR",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "Vendor_Status",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Record_Identifier",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Number",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "Vendor_Name",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address_Line_1",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address_Line_2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_State",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Post_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Terms_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Type",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Type_Descr",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Pay_To_Vendor_Number",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Date_Last_Paid",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Type_1099",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Code_1099",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone_Number",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Company",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Currency_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Method_of_Payment",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "One_Time_Vendor",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Contact_Name",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Social_Security_Number",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purchasing_Adr_1",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purchasing_Adr_2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purchasing_City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purch_State",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purch_Postal_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purch_Contact",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purch_Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Purcher_Phone_Number",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Country_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Registration_Number",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Print_on_Requisition",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "KANBAN_PO",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "EXTRA_FAX_#1",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "EXTRA_FAX_#2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "VENDOR_EMAIL_#1",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "VENDOR_EMAIL_#2",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "BPA_NUMBER",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "FTP_EDI_PO_TO_VENDOR",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "EMAIL_TO_VENDOR",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Terms_and_Conditions_required",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Kind_of_TC",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Expense_Type",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Expense_Type_Descr",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Employee_Flag",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ENV",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Terms_Descr",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Category",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_SubCategory",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Master_Name",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Contract_Ind",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Blanket_PO_Ind",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Generated_Timestamp",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Compliance_Class",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QA_Engineer",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QA_Category",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Tax_Exempt_No",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Tax_Code",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Tax_ID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Hold_Vendor",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Alpha_Key",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Vendor_Email_Adress",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SUPPLIER_JOIN_KEY",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "887fc935-cdc3-488a-8d98-1f35c5f1e250",
+        "label": "SUPPLIER_JOIN_KEY",
+        "graphical": {
+          "position": {
+            "x": 600,
+            "y": 40
+          },
+          "icon": "sql-expression-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "7acfa3d5-fd78-4760-a9ab-46dc8ef72c7c",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "c305574b-c1a4-4748-b106-cc0ae9a66af5",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "sql-expression",
+          "label": "SQL Expression",
+          "properties": {
+            "tckType": "ZGF0YXByZXAtZnVuY3Rpb25zI0RhdGFwcmVwI1NxbEV4cHJlc3Npb24==",
+            "configuration": {
+              "sqlExpressions": [
+                {
+                  "newColumnName": "SUPPLIER_JOIN_KEY",
+                  "datatype": {
+                    "type": "STRING",
+                    "length": 256,
+                    "precision": 18,
+                    "scale": 2
+                  },
+                  "nullable": true,
+                  "expression": {
+                    "expressionStatement": "CASE\n\n  WHEN (${ENV} = \u0027A\u0027 or ${ENV}  = \u0027C\u0027) and ${Vendor_Number} \u003C\u003E \u0027VCOCINTERCO\u0027\n    THEN concat(${ENV},right(concat(\u0027000000\u0027,substring(${Vendor_Number},1,charindex(${ENV},${Vendor_Number})-1)),6))\n  ELSE ${Vendor_Number}\n\nEND",
+                    "alias": [
+                      {
+                        "name": "ENV",
+                        "value": "ENV"
+                      },
+                      {
+                        "name": "Vendor_Number",
+                        "value": "Vendor_Number"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      },
+      {
+        "type": "source",
+        "id": "5cb86359-fca4-4761-ad6b-e30997f233f9",
+        "label": "dim_Vendor",
+        "graphical": {
+          "position": {
+            "x": 120,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "f5f0292d-f960-4e51-b9b5-a0a349f16615",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{project.shelly$_$vic_edw-bronze-common.projectId}}",
+              "dataAppId": "raw_nadw-wn_4",
+              "entityId": "dim_vendor-wn_5"
+            },
+            "configuration": {
+              "name": "dim_Vendor"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "64ec0445-1a26-4872-8246-aa9d4b93fbec",
+        "sourceHandle": "c305574b-c1a4-4748-b106-cc0ae9a66af5",
+        "targetHandle": "339499a8-d90a-4c6f-b5c9-c2875d12a06a"
+      },
+      {
+        "id": "reactflow__edge-5cb86359-fca4-4761-ad6b-e30997f233f9f5f0292d-f960-4e51-b9b5-a0a349f16615-887fc935-cdc3-488a-8d98-1f35c5f1e2507acfa3d5-fd78-4760-a9ab-46dc8ef72c7c",
+        "sourceHandle": "f5f0292d-f960-4e51-b9b5-a0a349f16615",
+        "targetHandle": "7acfa3d5-fd78-4760-a9ab-46dc8ef72c7c"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
