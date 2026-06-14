@@ -1,0 +1,25 @@
+{
+  "id": "oohead_aud-wtbe",
+  "name": "OOHEAD_AUD",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "oohead_aud",
+      "name": "OOHEAD_AUD",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "lnd_m3ce-zmhm"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
