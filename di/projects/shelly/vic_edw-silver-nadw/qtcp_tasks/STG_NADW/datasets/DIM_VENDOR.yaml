@@ -1,0 +1,14 @@
+properties:
+  id: dim_vendor-yfcj
+  name: DIM_VENDOR
+  inputDatasets:
+    - datasetId: dim_vendor-wn_5
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, DIM_VENDOR)}}'
+    targetId: b8c12b17-11ce-48c1-bb66-816e604e614f
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

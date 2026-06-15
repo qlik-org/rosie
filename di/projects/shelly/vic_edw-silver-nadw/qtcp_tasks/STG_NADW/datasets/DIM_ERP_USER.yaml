@@ -1,0 +1,63 @@
+properties:
+  id: dim_erp_user-3j_v
+  name: DIM_ERP_USER
+  inputDatasets:
+    - datasetId: dim_erp_user-gkdo
+      name: dim_ERP_User
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  tableDef:
+    name: DIM_ERP_USER
+    columns:
+      - name: USER_ID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: user_id
+      - name: USER_NAME
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: user_name
+      - name: NT_NAME
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: nt_name
+      - name: GENERATED_TIMESTAMP
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: generated_timestamp
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >-
+        Select 
+            "User_ID" as USER_ID,
+            "User_Name" as USER_NAME,
+            "NTName" as NT_NAME,
+            "Generated_Timestamp" as GENERATED_TIMESTAMP
+
+        From ${dim_ERP_User}
+      alias:
+        - name: dim_ERP_User
+          value: '{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_erp_user-gkdo'
+    incremental: false
+mappings:
+  mappings: []

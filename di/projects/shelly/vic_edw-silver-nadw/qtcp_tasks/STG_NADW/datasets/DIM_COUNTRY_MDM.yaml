@@ -1,0 +1,53 @@
+properties:
+  id: dim_country-z4ns
+  name: DIM_COUNTRY_MDM
+  inputDatasets:
+    - datasetId: dim_country--ulb
+      name: dim_Country
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  tableDef:
+    name: DIM_COUNTRY_MDM
+    columns:
+      - name: COUNTRY_CODE
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: country_code
+      - name: CPI_COUNTRY_DESCRIPTION
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: cpi_country_description
+      - name: FCPA_REGION
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: fcpa_region
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >-
+        select
+          "Country_Code" as COUNTRY_CODE,
+          "CPI_Country_Description" as CPI_COUNTRY_DESCRIPTION,
+          "FCPA_Region" as FCPA_REGION
+        From ${dim_Country}
+      alias:
+        - name: dim_Country
+          value: '{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_country--ulb'
+    incremental: false
+  description: test description
+mappings:
+  mappings: []

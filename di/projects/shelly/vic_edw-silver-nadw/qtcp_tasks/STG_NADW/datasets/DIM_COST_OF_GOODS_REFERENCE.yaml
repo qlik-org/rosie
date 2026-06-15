@@ -1,0 +1,113 @@
+properties:
+  id: dim_cost_of_goods_reference-1_cn
+  name: DIM_COST_OF_GOODS_REFERENCE
+  inputDatasets:
+    - datasetId: dim_costofgoods_reference-gkdm
+      name: dim_CostofGoods_Reference
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  tableDef:
+    name: DIM_COST_OF_GOODS_REFERENCE
+    columns:
+      - name: ERP
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: erp
+      - name: TRANSACTION_TYPE
+        ordinal: 2
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: transaction_type
+      - name: TRANSACTION_TYPE_M3
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: transaction_type_m3
+      - name: SIGN_REQUIRED
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 1
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(1)
+        id: sign_required
+      - name: COST_CONSUMED_FLAG
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 1
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(1)
+        id: cost_consumed_flag
+      - name: COST_SOLD_FLAG
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 1
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(1)
+        id: cost_sold_flag
+      - name: ORDER_TYPE
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: order_type
+      - name: INTER_COMPANY_LOGIC
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 1
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(1)
+        id: inter_company_logic
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >-
+        Select 
+
+
+        "ERP" as ERP,
+
+        "TransactionType" as TRANSACTION_TYPE,
+
+        "TransactionTypeM3" as TRANSACTION_TYPE_M3,
+
+        "SignRequired" as SIGN_REQUIRED,
+
+        "CostConsumedFlag" as COST_CONSUMED_FLAG,
+
+        "CostSoldFlag" as COST_SOLD_FLAG,
+
+        "OrderType" as ORDER_TYPE,
+
+        "InterCompanyLogic" as INTER_COMPANY_LOGIC
+
+
+        From ${dim_CostofGoods_Reference}
+      alias:
+        - name: dim_CostofGoods_Reference
+          value: '{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_costofgoods_reference-gkdm'
+    incremental: false
+mappings:
+  mappings: []

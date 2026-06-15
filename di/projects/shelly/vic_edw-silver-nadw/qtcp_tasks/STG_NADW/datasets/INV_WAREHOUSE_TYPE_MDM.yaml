@@ -1,0 +1,123 @@
+properties:
+  id: inv_warehouse_type_mdm-ipul
+  name: INV_WAREHOUSE_TYPE_MDM
+  inputDatasets:
+    - datasetId: inv_warehouse_type-27mv
+      name: Inv_Warehouse_Type
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  tableDef:
+    name: INV_WAREHOUSE_TYPE_MDM
+    columns:
+      - name: BPCS_Supply_WH_for_M3
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: bpcs_supply_wh_for_m3
+      - name: Container_Shipping_Queue_Days
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: container_shipping_queue_days
+      - name: Facility
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: facility
+      - name: ID
+        ordinal: 4
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: id
+      - name: Inventory_Region
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: inventory_region
+      - name: Inventory_Site
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: inventory_site
+      - name: Inventory_Site_Code
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: inventory_site_code
+      - name: Inventory_Warehouse_Type
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: inventory_warehouse_type
+      - name: MDM_WAREHOUSE_FACILITY_JOIN_KEY
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 7
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(7)
+        id: mdm_warehouse_facility_join_key
+      - name: Warehouse
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 3
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(3)
+        id: warehouse
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >-
+        SELECT 
+          "BPCS_Supply_WH_for_M3",
+          "Container_Shipping_Queue_Days",
+          "Facility",
+          "ID",
+          "Inventory_Region",
+          "Inventory_Site",
+          "Inventory_Site_Code",
+          "Inventory_Warehouse_Type",
+          "Warehouse" || '-' || "Facility" AS MDM_WAREHOUSE_FACILITY_JOIN_KEY,
+          "Warehouse"
+        FROM
+          ${Inv_Warehouse_Type}
+      alias:
+        - name: Inv_Warehouse_Type
+          value: '{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$inv_warehouse_type-27mv'
+    incremental: false
+mappings:
+  mappings: []

@@ -1,0 +1,152 @@
+properties:
+  id: dim_supply_pt-kbv-
+  name: SUPPLY_POINT_MDM
+  inputDatasets:
+    - datasetId: dim_supply_pt-gkdr
+      name: dim_Supply_Pt
+      projectId: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+      taskId: raw_nadw-wn_4
+  tableDef:
+    name: SUPPLY_POINT_MDM
+    columns:
+      - name: SUPPLY_PT
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: supply_pt
+      - name: RESPONSIBLE_FACILITY
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: responsible_facility
+      - name: RESPONSIBLE_FACILITY_FIXED
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: responsible_facility_fixed
+      - name: KB_TRIGGER_GROUPING
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: kb_trigger_grouping
+      - name: SUPPLY_CHAIN_RESPONSIBLE
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: supply_chain_responsible
+      - name: SC_PHONE
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: sc_phone
+      - name: MANAGER_RESPONSIBLE
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: manager_responsible
+      - name: MANAGER_PHONE
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: manager_phone
+      - name: MAX_CAPACITY
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          scale: 3
+          originalType: ''
+        id: max_capacity
+      - name: SUPPLY_CHAIN_RESPONSIBLE_EMAIL
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: supply_chain_responsible_email
+      - name: SUPPLY_PT_DESCRIPTION
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: supply_pt_description
+      - name: GENERATED_TIMESTAMP
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: generated_timestamp
+      - name: RESPONSIBLE_FACILITY_BACKUP_GROUP
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: STRING
+          length: 50
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(50)
+        id: responsible_facility_backup_group
+  customDatasetSettings:
+    customSql:
+      expressionStatement: >2-
+          Select 
+          "Supply_Pt" as SUPPLY_PT,
+          "Responsible_Facility" as RESPONSIBLE_FACILITY,
+          "Responsible_Facility_Fixed" AS RESPONSIBLE_FACILITY_FIXED,
+          "KB_Trigger_Grouping" AS KB_TRIGGER_GROUPING,
+          "Supply_Chain_Responsible" AS SUPPLY_CHAIN_RESPONSIBLE,
+          "SC_Phone" AS SC_PHONE,
+          "Manager_Responsible" AS MANAGER_RESPONSIBLE,
+          "Manager_Phone" AS MANAGER_PHONE,
+          "Max_Capacity" AS MAX_CAPACITY,
+          "Supply_Chain_Responsible_Email" AS SUPPLY_CHAIN_RESPONSIBLE_EMAIL,
+          "Supply_Pt_Description" AS SUPPLY_PT_DESCRIPTION,
+          "Generated_Timestamp" AS GENERATED_TIMESTAMP,
+          "Responsible_Facility_Backup_Group" AS RESPONSIBLE_FACILITY_BACKUP_GROUP
+          From ${dim_Supply_Pt}
+      alias:
+        - name: dim_Supply_Pt
+          value: '{{project.shelly$_$vic_edw-bronze-common.projectId}}$_$raw_nadw-wn_4$_$dim_supply_pt-gkdr'
+    incremental: false
+mappings:
+  mappings: []

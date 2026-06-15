@@ -1,0 +1,8 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    action:
+      renameType: TO_UPPER
+      value: ''
+    name: Columns To Uppercase

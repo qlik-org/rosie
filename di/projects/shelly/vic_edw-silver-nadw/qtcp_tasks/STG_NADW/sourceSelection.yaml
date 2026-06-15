@@ -1,0 +1,4 @@
+includePatterns:
+  - sourceProject: '{{project.shelly$_$vic_edw-bronze-common.projectId}}'
+    sourceTask: raw_nadw-wn_4
+    tablePattern: '%'

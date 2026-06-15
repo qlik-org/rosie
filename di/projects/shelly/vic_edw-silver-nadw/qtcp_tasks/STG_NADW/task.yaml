@@ -1,0 +1,14 @@
+properties:
+  name: STG_NADW
+  id: stg_nadw-yfce
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    historyEnabled: false
+  artifactsLocation:
+    internalSchema: '{{task.stg_nadw-yfce.internalSchema}}'
+    taskSchema: '{{task.stg_nadw-yfce.taskSchema}}'
+    databaseName: '{{task.stg_nadw-yfce.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.stg_nadw-yfce.warehouseName}}'
