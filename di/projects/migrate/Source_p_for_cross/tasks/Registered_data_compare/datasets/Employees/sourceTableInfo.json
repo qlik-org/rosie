@@ -1,0 +1,12 @@
+{
+  "type": "EXTERNAL_TABLE",
+  "id": "$registered_data$source_p_4_cross_onboarding_storage_employees",
+  "name": "source_p_4_cross_onboarding_storage_Employees",
+  "tableDef": {
+    "name": "Employees",
+    "dbSchema": "{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.schema}}",
+    "dbName": "{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.database}}",
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}
