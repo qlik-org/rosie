@@ -1,0 +1,6 @@
+properties:
+  id: us_iimxx-uvam
+  name: US_IIMXX
+  inputDatasets:
+    - datasetId: us_iimxx
+      taskId: lnd_tx_hist_bpcs-cuub

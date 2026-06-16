@@ -1,0 +1,6 @@
+properties:
+  id: us_ebopsdet-uvzk
+  name: US_EBOPSDET
+  inputDatasets:
+    - datasetId: us_ebopsdet
+      taskId: lnd_tx_hist_bpcs-cuub

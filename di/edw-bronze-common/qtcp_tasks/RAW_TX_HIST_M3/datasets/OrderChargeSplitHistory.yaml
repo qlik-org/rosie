@@ -1,0 +1,13 @@
+properties:
+  id: orderchargesplithistory-1bu8
+  name: OrderChargeSplitHistory
+  inputDatasets:
+    - datasetId: orderchargesplithistory
+      taskId: lnd_tx_hist_m3-vmqt
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

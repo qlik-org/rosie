@@ -1,0 +1,6 @@
+properties:
+  id: us_ecsvquote-uvz3
+  name: US_ECSVQUOTE
+  inputDatasets:
+    - datasetId: us_ecsvquote
+      taskId: lnd_tx_hist_bpcs-cuub

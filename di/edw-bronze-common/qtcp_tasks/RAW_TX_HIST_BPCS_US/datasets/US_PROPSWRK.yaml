@@ -1,0 +1,6 @@
+properties:
+  id: us_propswrk-uvas
+  name: US_PROPSWRK
+  inputDatasets:
+    - datasetId: us_propswrk
+      taskId: lnd_tx_hist_bpcs-cuub
