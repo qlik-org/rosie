@@ -1,0 +1,14 @@
+properties:
+  name: Transform_4
+  id: transform_4--nf0
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_4--nf0.internalSchema}}'
+    taskSchema: '{{task.transform_4--nf0.taskSchema}}'
+    databaseName: '{{task.transform_4--nf0.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_4--nf0.warehouseName}}'
