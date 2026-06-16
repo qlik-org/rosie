@@ -1,0 +1,6 @@
+properties:
+  id: csytab-ots6
+  name: CSYTAB
+  inputDatasets:
+    - datasetId: csytab
+      taskId: lnd_m3ce-zmhm

@@ -1,0 +1,12 @@
+properties:
+  name: RAW_M3CE
+  id: raw_m3ce-zmhn
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_m3ce-zmhn.internalSchema}}'
+    taskSchema: '{{task.raw_m3ce-zmhn.taskSchema}}'
+    databaseName: '{{task.raw_m3ce-zmhn.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_m3ce-zmhn.warehouseName}}'

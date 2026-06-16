@@ -1,0 +1,6 @@
+properties:
+  id: ocusad-qcet
+  name: OCUSAD
+  inputDatasets:
+    - datasetId: ocusad
+      taskId: lnd_m3ce-zmhm

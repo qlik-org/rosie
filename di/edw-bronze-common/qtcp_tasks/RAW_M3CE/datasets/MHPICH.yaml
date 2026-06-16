@@ -1,0 +1,6 @@
+properties:
+  id: mhpich-qcex
+  name: MHPICH
+  inputDatasets:
+    - datasetId: mhpich
+      taskId: lnd_m3ce-zmhm

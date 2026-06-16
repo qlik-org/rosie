@@ -1,0 +1,6 @@
+properties:
+  id: bprojs-qcem
+  name: BPROJS
+  inputDatasets:
+    - datasetId: bprojs
+      taskId: lnd_m3ce-zmhm

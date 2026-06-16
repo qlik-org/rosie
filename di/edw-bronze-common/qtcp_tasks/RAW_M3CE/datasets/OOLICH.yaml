@@ -1,0 +1,6 @@
+properties:
+  id: oolich-qce3
+  name: OOLICH
+  inputDatasets:
+    - datasetId: oolich
+      taskId: lnd_m3ce-zmhm

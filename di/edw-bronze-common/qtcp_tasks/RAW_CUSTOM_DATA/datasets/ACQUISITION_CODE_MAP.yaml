@@ -1,0 +1,13 @@
+properties:
+  id: acquisition_code_map-r2az
+  name: ACQUISITION_CODE_MAP
+  inputDatasets:
+    - datasetId: acquisition_code_map
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ACQUISITIONCODE
+      newColumnName: ACQUISITIONCODE
+      primaryKeyOrdinal: 1
+      nullable: false

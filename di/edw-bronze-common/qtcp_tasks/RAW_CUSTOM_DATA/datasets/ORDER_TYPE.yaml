@@ -1,0 +1,6 @@
+properties:
+  id: order_type-ezte
+  name: ORDER_TYPE
+  inputDatasets:
+    - datasetId: order_type
+      taskId: lnd_custom_data-gqwk

@@ -1,0 +1,6 @@
+properties:
+  id: mitsch-qceh
+  name: MITSCH
+  inputDatasets:
+    - datasetId: mitsch
+      taskId: lnd_m3ce-zmhm

@@ -1,0 +1,6 @@
+properties:
+  id: globe_item_type-hywb
+  name: GLOBE_ITEM_TYPE
+  inputDatasets:
+    - datasetId: globe_item_type
+      taskId: lnd_custom_data-gqwk

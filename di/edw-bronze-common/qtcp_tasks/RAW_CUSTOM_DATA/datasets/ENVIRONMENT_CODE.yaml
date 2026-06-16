@@ -1,0 +1,13 @@
+properties:
+  id: environment_code-lacb
+  name: ENVIRONMENT_CODE
+  inputDatasets:
+    - datasetId: environment_code
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: SOURCE_CODE
+      newColumnName: SOURCE_CODE
+      primaryKeyOrdinal: 1
+      nullable: false

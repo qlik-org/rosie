@@ -1,0 +1,6 @@
+properties:
+  id: mwohed-qcer
+  name: MWOHED
+  inputDatasets:
+    - datasetId: mwohed
+      taskId: lnd_m3ce-zmhm

@@ -1,0 +1,6 @@
+properties:
+  id: mitmas-qcee
+  name: MITMAS
+  inputDatasets:
+    - datasetId: mitmas
+      taskId: lnd_m3ce-zmhm

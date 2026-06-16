@@ -1,0 +1,6 @@
+properties:
+  id: cfacil-lmhj
+  name: CFACIL
+  inputDatasets:
+    - datasetId: cfacil
+      taskId: lnd_m3ce-zmhm

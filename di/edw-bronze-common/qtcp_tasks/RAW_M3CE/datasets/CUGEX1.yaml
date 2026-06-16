@@ -1,0 +1,6 @@
+properties:
+  id: cugex1-qceq
+  name: CUGEX1
+  inputDatasets:
+    - datasetId: cugex1
+      taskId: lnd_m3ce-zmhm

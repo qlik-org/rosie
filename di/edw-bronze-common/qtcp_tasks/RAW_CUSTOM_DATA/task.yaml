@@ -1,0 +1,12 @@
+properties:
+  name: RAW_CUSTOM_DATA
+  id: raw_custom_data-laca
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_custom_data-laca.internalSchema}}'
+    taskSchema: '{{task.raw_custom_data-laca.taskSchema}}'
+    databaseName: '{{task.raw_custom_data-laca.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_custom_data-laca.warehouseName}}'

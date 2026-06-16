@@ -1,0 +1,6 @@
+properties:
+  id: tax_charge_codes-eztf
+  name: TAX_CHARGE_CODES
+  inputDatasets:
+    - datasetId: tax_charge_codes
+      taskId: lnd_custom_data-gqwk

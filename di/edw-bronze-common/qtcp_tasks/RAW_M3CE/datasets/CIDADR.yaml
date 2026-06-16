@@ -1,0 +1,6 @@
+properties:
+  id: cidadr-s5cq
+  name: CIDADR
+  inputDatasets:
+    - datasetId: cidadr
+      taskId: lnd_m3ce-zmhm

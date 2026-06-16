@@ -1,0 +1,6 @@
+properties:
+  id: droudi-qcer
+  name: DROUDI
+  inputDatasets:
+    - datasetId: droudi
+      taskId: lnd_m3ce-zmhm

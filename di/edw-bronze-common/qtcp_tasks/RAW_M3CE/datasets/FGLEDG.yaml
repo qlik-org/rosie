@@ -1,0 +1,6 @@
+properties:
+  id: fgledg-qcet
+  name: FGLEDG
+  inputDatasets:
+    - datasetId: fgledg
+      taskId: lnd_m3ce-zmhm

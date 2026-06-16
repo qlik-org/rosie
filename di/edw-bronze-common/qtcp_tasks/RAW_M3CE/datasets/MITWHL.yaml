@@ -1,0 +1,6 @@
+properties:
+  id: mitwhl-lmhl
+  name: MITWHL
+  inputDatasets:
+    - datasetId: mitwhl
+      taskId: lnd_m3ce-zmhm

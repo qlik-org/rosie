@@ -1,0 +1,6 @@
+properties:
+  id: ciaddr-qceo
+  name: CIADDR
+  inputDatasets:
+    - datasetId: ciaddr
+      taskId: lnd_m3ce-zmhm

@@ -1,0 +1,6 @@
+properties:
+  id: mmoplp-qcek
+  name: MMOPLP
+  inputDatasets:
+    - datasetId: mmoplp
+      taskId: lnd_m3ce-zmhm
