@@ -1,0 +1,14 @@
+properties:
+  name: Transform_5
+  id: transform_5--nf2
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_5--nf2.internalSchema}}'
+    taskSchema: '{{task.transform_5--nf2.taskSchema}}'
+    databaseName: '{{task.transform_5--nf2.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_5--nf2.warehouseName}}'

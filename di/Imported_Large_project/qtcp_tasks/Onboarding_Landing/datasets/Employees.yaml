@@ -1,0 +1,15 @@
+properties:
+  id: employees
+  name: Employees
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: PhotoPath
+    - action: DROP
+      columnName: Notes
+    - action: DROP
+      columnName: Photo
+sourceTable:
+  schema: '{{task.onboarding_landing--nea:null$_$dbo.schema}}'
+  type: TABLE
+  name: Employees

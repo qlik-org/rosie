@@ -1,0 +1,6 @@
+properties:
+  id: order_details--nfb
+  name: Order_Details
+  inputDatasets:
+    - datasetId: order_details
+      taskId: onboarding_landing--nea

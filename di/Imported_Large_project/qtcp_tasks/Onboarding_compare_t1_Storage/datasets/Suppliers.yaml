@@ -1,0 +1,6 @@
+properties:
+  id: suppliers--neq
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_compare_t1_landing--nel
