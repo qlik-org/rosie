@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: storage_t1--ney
-    tablePattern: '%'

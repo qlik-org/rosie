@@ -1,6 +1,0 @@
-properties:
-  id: shippers--ne6
-  name: Shippers
-  inputDatasets:
-    - datasetId: shippers
-      taskId: onboarding_landing--nea

@@ -1,6 +1,0 @@
-properties:
-  id: categories--ne0
-  name: Categories
-  inputDatasets:
-    - datasetId: categories
-      taskId: onboarding_landing--nea

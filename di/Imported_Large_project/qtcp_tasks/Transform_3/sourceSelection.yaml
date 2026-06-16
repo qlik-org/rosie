@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: onboarding_compare_t1_storage--nem
-    tablePattern: '%'

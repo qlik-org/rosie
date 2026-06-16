@@ -1,6 +1,0 @@
-properties:
-  id: order_details--neg
-  name: Order Details
-  inputDatasets:
-    - datasetId: order_details
-      taskId: onboarding_landing--nea

@@ -1,6 +1,0 @@
-properties:
-  id: orders--nfc
-  name: Orders
-  inputDatasets:
-    - datasetId: orders
-      taskId: onboarding_landing--nea

@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: storage--ne8
-    tablePattern: '%'

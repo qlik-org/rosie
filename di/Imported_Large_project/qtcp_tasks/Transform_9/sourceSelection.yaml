@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: transform_3--nfy
-    tablePattern: '%'

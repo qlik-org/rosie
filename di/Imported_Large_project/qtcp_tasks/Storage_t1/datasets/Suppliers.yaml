@@ -1,6 +1,0 @@
-properties:
-  id: suppliers--ne7
-  name: Suppliers
-  inputDatasets:
-    - datasetId: suppliers
-      taskId: onboarding_landing--nea

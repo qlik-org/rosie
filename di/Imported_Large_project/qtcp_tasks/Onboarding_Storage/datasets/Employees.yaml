@@ -1,6 +1,0 @@
-properties:
-  id: employees--nef
-  name: Employees
-  inputDatasets:
-    - datasetId: employees
-      taskId: onboarding_landing--nea

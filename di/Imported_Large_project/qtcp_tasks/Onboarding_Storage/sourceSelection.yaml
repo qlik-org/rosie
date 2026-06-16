@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: onboarding_landing--nea
-    tablePattern: '%'

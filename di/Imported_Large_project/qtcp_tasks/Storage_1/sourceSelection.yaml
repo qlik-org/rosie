@@ -1,7 +1,0 @@
-explicitlySelected:
-  - sourceTask: onboarding_compare_t1_landing--nel
-    name: Products
-    sourceTableId: products
-  - sourceTask: onboarding_compare_t1_landing--nel
-    name: Categories
-    sourceTableId: categories

@@ -1,6 +1,0 @@
-properties:
-  id: products--nep
-  name: Products
-  inputDatasets:
-    - datasetId: products
-      taskId: onboarding_compare_t1_landing--nel

@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: onboarding_storage--neb
-    tablePattern: '%'

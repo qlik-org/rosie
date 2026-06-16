@@ -1,3 +1,0 @@
-includePatterns:
-  - sourceTask: storage_2--nfl
-    tablePattern: '%'
