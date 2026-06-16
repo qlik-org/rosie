@@ -1,0 +1,217 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details--nhq
+      name: Order_Details
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders--nhr
+      name: Orders
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation--niu
+  - sourceEntity:
+      datasetId: order_details--nhq
+      name: Order_Details
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_Shippers_relation
+    description: ''
+    id: order_details_orders_shippers_relation--niv
+  - sourceEntity:
+      datasetId: orders--nhr
+      name: Orders
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: customers_1--nho
+      name: Customers_1
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_1_relation
+    description: ''
+    id: orders_customers_1_relation--niw
+  - sourceEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: customers_1--nho
+      name: Customers_1
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_Customers_1_relation
+    description: ''
+    id: orders_customers_customers_1_relation--niz
+  - sourceEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: employees--nhs
+      name: Employees
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Customers_Employees_relation
+    description: ''
+    id: orders_customers_employees_relation--nia
+  - sourceEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders--nhr
+      name: Orders
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Orders_Customers_Orders_relation
+    description: ''
+    id: orders_customers_orders_relation--nib
+  - sourceEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Orders_Customers_Orders_Shippers_relation
+    description: ''
+    id: orders_customers_orders_shippers_relation--nic
+  - sourceEntity:
+      datasetId: orders--nhr
+      name: Orders
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: employees--nhs
+      name: Employees
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation--nix
+  - sourceEntity:
+      datasetId: orders--nhr
+      name: Orders
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Orders_Orders_Customers_relation
+    description: ''
+    id: orders_orders_customers_relation--niy
+  - sourceEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: customers_1--nho
+      name: Customers_1
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Shippers_Customers_1_relation
+    description: ''
+    id: orders_shippers_customers_1_relation--nid
+  - sourceEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: employees--nhs
+      name: Employees
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Shippers_Employees_relation
+    description: ''
+    id: orders_shippers_employees_relation--nie
+  - sourceEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: orders_customers--nhz
+      name: Orders_Customers
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Orders_Shippers_Orders_Customers_relation
+    description: ''
+    id: orders_shippers_orders_customers_relation--nif
+  - sourceEntity:
+      datasetId: orders_shippers--nhx
+      name: Orders_Shippers
+      taskId: transform_8--nf8
+    targetEntity:
+      datasetId: shippers--nhn
+      name: Shippers
+      taskId: transform_8--nf8
+    columnRelationships:
+      - sourceColumn: ShipperID
+        targetColumn: ShipperID
+        sourceColumnId: shipperid
+        targetColumnId: shipperid
+    name: Orders_Shippers_Shippers_relation
+    description: ''
+    id: orders_shippers_shippers_relation--nig
