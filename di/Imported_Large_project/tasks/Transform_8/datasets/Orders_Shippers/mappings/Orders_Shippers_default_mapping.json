@@ -1,0 +1,146 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "orders_shippers--ngv",
+    "name": "Orders_Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_2--nfw"
+  },
+  "mappingFields": [
+    {
+      "columnId": "orderid",
+      "expression": {
+        "expressionStatement": "${OrderID}",
+        "alias": [
+          {
+            "name": "OrderID",
+            "value": "OrderID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "customerid",
+      "expression": {
+        "expressionStatement": "${CustomerID}",
+        "alias": [
+          {
+            "name": "CustomerID",
+            "value": "CustomerID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "employeeid",
+      "expression": {
+        "expressionStatement": "${EmployeeID}",
+        "alias": [
+          {
+            "name": "EmployeeID",
+            "value": "EmployeeID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "orderdate",
+      "expression": {
+        "expressionStatement": "${OrderDate}",
+        "alias": [
+          {
+            "name": "OrderDate",
+            "value": "OrderDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "requireddate",
+      "expression": {
+        "expressionStatement": "${RequiredDate}",
+        "alias": [
+          {
+            "name": "RequiredDate",
+            "value": "RequiredDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shippeddate",
+      "expression": {
+        "expressionStatement": "${ShippedDate}",
+        "alias": [
+          {
+            "name": "ShippedDate",
+            "value": "ShippedDate"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipvia",
+      "expression": {
+        "expressionStatement": "${ShipVia}",
+        "alias": [
+          {
+            "name": "ShipVia",
+            "value": "ShipVia"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "freight",
+      "expression": {
+        "expressionStatement": "${Freight}",
+        "alias": [
+          {
+            "name": "Freight",
+            "value": "Freight"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "companyname",
+      "expression": {
+        "expressionStatement": "${CompanyName}",
+        "alias": [
+          {
+            "name": "CompanyName",
+            "value": "CompanyName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "phone",
+      "expression": {
+        "expressionStatement": "${Phone}",
+        "alias": [
+          {
+            "name": "Phone",
+            "value": "Phone"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "shipperid",
+      "expression": {
+        "expressionStatement": "${ShipperID}",
+        "alias": [
+          {
+            "name": "ShipperID",
+            "value": "ShipperID"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "orders_shippers_default_mapping--nhy",
+  "name": "Orders_Shippers_default_mapping",
+  "description": ""
+}

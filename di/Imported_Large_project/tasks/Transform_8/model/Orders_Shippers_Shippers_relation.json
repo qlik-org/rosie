@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders_shippers--nhx",
+    "name": "Orders_Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_8--nf8"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "shippers--nhn",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_8--nf8"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipperID",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipperid",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers_Shippers_relation",
+  "description": "",
+  "id": "orders_shippers_shippers_relation--nig"
+}
