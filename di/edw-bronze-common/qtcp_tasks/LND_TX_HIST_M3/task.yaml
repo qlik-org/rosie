@@ -1,0 +1,18 @@
+properties:
+  name: LND_TX_HIST_M3
+  id: lnd_tx_hist_m3-vmqt
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_tx_hist_m3-vmqt.taskSchema}}'
+      database: '{{task.lnd_tx_hist_m3-vmqt.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

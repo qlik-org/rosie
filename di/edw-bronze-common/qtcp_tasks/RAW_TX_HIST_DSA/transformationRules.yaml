@@ -1,0 +1,15 @@
+rules:
+  - ordinal: 0
+    actionType: REPLACE_COLUMN_VALUE
+    scopeType: COLUMN
+    scope:
+      whereTableName: '%OrderSplitRules%'
+      whereDatatype: STRING
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: $REPLACE(${Q_D_COLUMN_DATA}, ' ', '')
+        alias:
+          - name: Q_D_COLUMN_DATA
+            value: $Q_D_COLUMN_DATA
+    name: OrderSplitRules_NULL_For_Spaces

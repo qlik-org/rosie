@@ -1,0 +1,6 @@
+properties:
+  id: can_ite-v_it
+  name: CAN_ITE
+  inputDatasets:
+    - datasetId: can_ite
+      taskId: lnd_tx_hist_bpcs-cuub

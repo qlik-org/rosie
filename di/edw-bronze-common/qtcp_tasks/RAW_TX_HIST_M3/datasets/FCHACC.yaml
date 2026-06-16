@@ -1,0 +1,13 @@
+properties:
+  id: fchacc-1buw
+  name: FCHACC
+  inputDatasets:
+    - datasetId: fchacc
+      taskId: lnd_tx_hist_m3-vmqt
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

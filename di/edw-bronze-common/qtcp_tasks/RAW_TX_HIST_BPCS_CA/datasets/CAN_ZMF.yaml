@@ -1,0 +1,6 @@
+properties:
+  id: can_zmf-v_i1
+  name: CAN_ZMF
+  inputDatasets:
+    - datasetId: can_zmf
+      taskId: lnd_tx_hist_bpcs-cuub

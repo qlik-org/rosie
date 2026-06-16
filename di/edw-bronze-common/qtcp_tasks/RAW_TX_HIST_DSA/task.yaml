@@ -1,0 +1,13 @@
+properties:
+  name: RAW_TX_HIST_DSA
+  id: raw_tx_hist_dsa-boai
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_dsa-boai.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_dsa-boai.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_dsa-boai.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_dsa-boai.warehouseName}}'

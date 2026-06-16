@@ -1,0 +1,6 @@
+properties:
+  id: can_gca-v_ii
+  name: CAN_GCA
+  inputDatasets:
+    - datasetId: can_gca
+      taskId: lnd_tx_hist_bpcs-cuub
