@@ -1,0 +1,6 @@
+properties:
+  id: ctn-3j_s
+  name: CTN
+  inputDatasets:
+    - datasetId: ctn
+      taskId: lnd_mimixvcoc_ca-9nfq

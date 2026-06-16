@@ -1,0 +1,6 @@
+properties:
+  id: acp_draft_invoice_header-jnnl
+  name: ACP_DRAFT_INVOICE_HEADER
+  inputDatasets:
+    - datasetId: acp_draft_invoice_header
+      taskId: lnd_mimixvcoc_ca-9nfq

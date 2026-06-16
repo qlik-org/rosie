@@ -1,0 +1,6 @@
+properties:
+  id: invoicelinessplitresult-te6n
+  name: InvoiceLinesSplitResult
+  inputDatasets:
+    - datasetId: invoicelinessplitresult
+      taskId: lnd_sales_split-te6g

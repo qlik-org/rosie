@@ -1,0 +1,6 @@
+properties:
+  id: esnvquote-jnn0
+  name: ESNVQUOTE
+  inputDatasets:
+    - datasetId: esnvquote
+      taskId: lnd_mimixvcoc_ca-9nfq

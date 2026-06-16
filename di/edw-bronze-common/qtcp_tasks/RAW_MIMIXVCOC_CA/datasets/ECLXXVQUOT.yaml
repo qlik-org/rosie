@@ -1,0 +1,6 @@
+properties:
+  id: eclxxvquot-jnnr
+  name: ECLXXVQUOT
+  inputDatasets:
+    - datasetId: eclxxvquot
+      taskId: lnd_mimixvcoc_ca-9nfq

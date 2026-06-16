@@ -1,0 +1,6 @@
+properties:
+  id: cic-9nfz
+  name: CIC
+  inputDatasets:
+    - datasetId: cic
+      taskId: lnd_mimixvcoc_ca-9nfq

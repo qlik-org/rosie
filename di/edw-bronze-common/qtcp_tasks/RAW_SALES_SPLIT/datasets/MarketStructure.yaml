@@ -1,0 +1,6 @@
+properties:
+  id: marketstructure-te6o
+  name: MarketStructure
+  inputDatasets:
+    - datasetId: marketstructure
+      taskId: lnd_sales_split-te6g

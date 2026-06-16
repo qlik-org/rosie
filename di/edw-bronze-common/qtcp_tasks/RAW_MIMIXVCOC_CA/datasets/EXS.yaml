@@ -1,0 +1,6 @@
+properties:
+  id: exs-jnn4
+  name: EXS
+  inputDatasets:
+    - datasetId: exs
+      taskId: lnd_mimixvcoc_ca-9nfq

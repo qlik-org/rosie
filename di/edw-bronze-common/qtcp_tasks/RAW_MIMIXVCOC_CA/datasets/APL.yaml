@@ -1,0 +1,6 @@
+properties:
+  id: apl-9nfu
+  name: APL
+  inputDatasets:
+    - datasetId: apl
+      taskId: lnd_mimixvcoc_ca-9nfq

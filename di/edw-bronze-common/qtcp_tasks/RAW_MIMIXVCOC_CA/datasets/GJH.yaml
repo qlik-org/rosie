@@ -1,0 +1,6 @@
+properties:
+  id: gjh-jnof
+  name: GJH
+  inputDatasets:
+    - datasetId: gjh
+      taskId: lnd_mimixvcoc_ca-9nfq

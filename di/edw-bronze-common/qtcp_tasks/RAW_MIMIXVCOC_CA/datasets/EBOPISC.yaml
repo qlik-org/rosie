@@ -1,0 +1,6 @@
+properties:
+  id: ebopisc-jnnc
+  name: EBOPISC
+  inputDatasets:
+    - datasetId: ebopisc
+      taskId: lnd_mimixvcoc_ca-9nfq

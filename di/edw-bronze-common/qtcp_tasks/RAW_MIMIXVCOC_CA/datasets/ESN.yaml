@@ -1,0 +1,6 @@
+properties:
+  id: esn-jnnz
+  name: ESN
+  inputDatasets:
+    - datasetId: esn
+      taskId: lnd_mimixvcoc_ca-9nfq

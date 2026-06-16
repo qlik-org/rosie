@@ -1,0 +1,6 @@
+properties:
+  id: apo-jnnp
+  name: APO
+  inputDatasets:
+    - datasetId: apo
+      taskId: lnd_mimixvcoc_ca-9nfq

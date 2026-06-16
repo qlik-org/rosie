@@ -1,0 +1,6 @@
+properties:
+  id: orderchargesplitresult-te6r
+  name: OrderChargeSplitResult
+  inputDatasets:
+    - datasetId: orderchargesplitresult
+      taskId: lnd_sales_split-te6g

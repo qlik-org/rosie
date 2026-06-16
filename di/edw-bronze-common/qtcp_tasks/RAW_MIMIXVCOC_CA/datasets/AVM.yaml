@@ -1,0 +1,6 @@
+properties:
+  id: avm-9nfw
+  name: AVM
+  inputDatasets:
+    - datasetId: avm
+      taskId: lnd_mimixvcoc_ca-9nfq

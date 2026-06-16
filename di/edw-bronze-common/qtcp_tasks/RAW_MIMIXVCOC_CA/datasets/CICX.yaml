@@ -1,0 +1,6 @@
+properties:
+  id: cicx-9nfa
+  name: CICX
+  inputDatasets:
+    - datasetId: cicx
+      taskId: lnd_mimixvcoc_ca-9nfq

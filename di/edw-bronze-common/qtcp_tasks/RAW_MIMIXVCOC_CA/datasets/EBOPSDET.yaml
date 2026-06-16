@@ -1,0 +1,6 @@
+properties:
+  id: ebopsdet-jnne
+  name: EBOPSDET
+  inputDatasets:
+    - datasetId: ebopsdet
+      taskId: lnd_mimixvcoc_ca-9nfq

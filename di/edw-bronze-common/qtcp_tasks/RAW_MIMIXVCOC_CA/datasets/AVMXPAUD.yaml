@@ -1,0 +1,6 @@
+properties:
+  id: avmxpaud-jnnr
+  name: AVMXPAUD
+  inputDatasets:
+    - datasetId: avmxpaud
+      taskId: lnd_mimixvcoc_ca-9nfq

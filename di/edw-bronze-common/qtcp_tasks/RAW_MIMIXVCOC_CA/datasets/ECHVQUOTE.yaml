@@ -1,0 +1,6 @@
+properties:
+  id: echvquote-jnnh
+  name: ECHVQUOTE
+  inputDatasets:
+    - datasetId: echvquote
+      taskId: lnd_mimixvcoc_ca-9nfq

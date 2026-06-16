@@ -1,0 +1,37 @@
+properties:
+  id: dim_costofgoods_reference_warehouse_excp-yvre
+  name: dim_CostofGoods_Reference_Warehouse_EXCP
+  inputDatasets:
+    - datasetId: dim_costofgoods_reference_warehouse_excp
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: PK
+      newDataType:
+        type: STRING
+        length: 50
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: >-
+          $IFF(${ERP} = 'BPCS',
+
+
+          $CONCAT(${ERP}, ${WarehouseCode},${TransactionType})
+
+
+          , $CONCAT(${ERP}, ${WarehouseCode},${TransactionTypeM3}))
+        alias:
+          - name: ERP
+            value: erp
+          - name: WarehouseCode
+            value: warehousecode
+          - name: TransactionType
+            value: transactiontype
+          - name: TransactionTypeM3
+            value: transactiontypem3
+      primaryKeyOrdinal: 1
+      nullable: false
+      addedColumnId: '3468477a-ea5b-4c81-b2ac-cb1f477ea443'

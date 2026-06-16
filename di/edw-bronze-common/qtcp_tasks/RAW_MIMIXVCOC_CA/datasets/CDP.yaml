@@ -1,0 +1,6 @@
+properties:
+  id: cdp-jnnv
+  name: CDP
+  inputDatasets:
+    - datasetId: cdp
+      taskId: lnd_mimixvcoc_ca-9nfq

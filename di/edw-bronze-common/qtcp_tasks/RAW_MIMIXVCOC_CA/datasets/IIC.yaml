@@ -1,0 +1,6 @@
+properties:
+  id: iic-jnon
+  name: IIC
+  inputDatasets:
+    - datasetId: iic
+      taskId: lnd_mimixvcoc_ca-9nfq

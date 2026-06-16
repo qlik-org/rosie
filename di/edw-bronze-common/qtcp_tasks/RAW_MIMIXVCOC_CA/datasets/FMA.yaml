@@ -1,0 +1,6 @@
+properties:
+  id: fma-jnn-
+  name: FMA
+  inputDatasets:
+    - datasetId: fma
+      taskId: lnd_mimixvcoc_ca-9nfq

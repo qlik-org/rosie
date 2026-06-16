@@ -1,0 +1,6 @@
+properties:
+  id: ctspapwork-jnna
+  name: CTSPAPWORK
+  inputDatasets:
+    - datasetId: ctspapwork
+      taskId: lnd_mimixvcoc_ca-9nfq

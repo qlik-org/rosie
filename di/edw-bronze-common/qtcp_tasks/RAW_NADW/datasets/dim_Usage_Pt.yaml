@@ -1,0 +1,13 @@
+properties:
+  id: dim_usage_pt-gkds
+  name: dim_Usage_Pt
+  inputDatasets:
+    - datasetId: dim_usage_pt
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Usage_Pt
+      newColumnName: Usage_Pt
+      primaryKeyOrdinal: 1
+      nullable: false

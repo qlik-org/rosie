@@ -1,0 +1,6 @@
+properties:
+  id: salesterritorystructure-te6v
+  name: SalesTerritoryStructure
+  inputDatasets:
+    - datasetId: salesterritorystructure
+      taskId: lnd_sales_split-te6g

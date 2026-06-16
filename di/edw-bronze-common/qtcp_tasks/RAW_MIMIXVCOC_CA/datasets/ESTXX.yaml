@@ -1,0 +1,6 @@
+properties:
+  id: estxx-jnn3
+  name: ESTXX
+  inputDatasets:
+    - datasetId: estxx
+      taskId: lnd_mimixvcoc_ca-9nfq
