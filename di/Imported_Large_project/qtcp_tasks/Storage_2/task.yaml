@@ -1,0 +1,12 @@
+properties:
+  name: Storage_2
+  id: storage_2--nfl
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage_2--nfl.internalSchema}}'
+    taskSchema: '{{task.storage_2--nfl.taskSchema}}'
+    databaseName: '{{task.storage_2--nfl.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage_2--nfl.warehouseName}}'

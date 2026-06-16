@@ -1,0 +1,14 @@
+properties:
+  name: Transform
+  id: transform--nfc
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform--nfc.internalSchema}}'
+    taskSchema: '{{task.transform--nfc.taskSchema}}'
+    databaseName: '{{task.transform--nfc.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform--nfc.warehouseName}}'
