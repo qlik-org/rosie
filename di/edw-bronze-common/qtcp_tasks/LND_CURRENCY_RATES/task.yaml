@@ -1,0 +1,18 @@
+properties:
+  name: LND_CURRENCY_RATES
+  id: lnd_currency_rates-1n5u
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_currency_rates-1n5u.taskSchema}}'
+      database: '{{task.lnd_currency_rates-1n5u.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,6 @@
+properties:
+  id: trptool-jno5
+  name: TRPTOOL
+  inputDatasets:
+    - datasetId: trptool
+      taskId: lnd_mimixvcoc_ca-9nfq

@@ -1,0 +1,6 @@
+properties:
+  id: mdm_market_major_market-7ps9
+  name: MDM_MARKET_MAJOR_MARKET
+  inputDatasets:
+    - datasetId: mdm_market_major_market
+      taskId: lnd_zoho_mdm-7ps1

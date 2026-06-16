@@ -1,0 +1,6 @@
+properties:
+  id: rco-jnos
+  name: RCO
+  inputDatasets:
+    - datasetId: rco
+      taskId: lnd_mimixvcoc_ca-9nfq

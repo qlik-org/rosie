@@ -1,0 +1,6 @@
+properties:
+  id: ordptri-jnok
+  name: ORDPTRI
+  inputDatasets:
+    - datasetId: ordptri
+      taskId: lnd_mimixvcoc_ca-9nfq

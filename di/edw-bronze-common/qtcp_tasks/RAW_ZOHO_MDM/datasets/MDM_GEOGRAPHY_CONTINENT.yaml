@@ -1,0 +1,6 @@
+properties:
+  id: mdm_geography_continent-nw71
+  name: MDM_GEOGRAPHY_CONTINENT
+  inputDatasets:
+    - datasetId: mdm_geography_continent
+      taskId: lnd_zoho_mdm-7ps1

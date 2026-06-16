@@ -1,0 +1,6 @@
+properties:
+  id: sih-jnov
+  name: SIH
+  inputDatasets:
+    - datasetId: sih
+      taskId: lnd_mimixvcoc_ca-9nfq

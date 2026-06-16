@@ -1,0 +1,16 @@
+properties:
+  id: scar_corrective_action
+  name: SCAR_CORRECTIVE_ACTION
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: ID
+      newColumnName: ID
+sourceTable:
+  type: TABLE
+  name: SCAR_CORRECTIVE_ACTION

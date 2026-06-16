@@ -1,0 +1,6 @@
+properties:
+  id: mpb-jnoe
+  name: MPB
+  inputDatasets:
+    - datasetId: mpb
+      taskId: lnd_mimixvcoc_ca-9nfq

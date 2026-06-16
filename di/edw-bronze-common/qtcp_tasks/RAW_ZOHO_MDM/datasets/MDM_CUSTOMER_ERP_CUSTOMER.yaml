@@ -1,0 +1,6 @@
+properties:
+  id: mdm_customer_erp_customer-7ps3
+  name: MDM_CUSTOMER_ERP_CUSTOMER
+  inputDatasets:
+    - datasetId: mdm_customer_erp_customer
+      taskId: lnd_zoho_mdm-7ps1

@@ -1,0 +1,6 @@
+properties:
+  id: mbmpaud-yop3
+  name: MBMPAUD
+  inputDatasets:
+    - datasetId: mbmpaud
+      taskId: lnd_mimixvcoc_ca-9nfq

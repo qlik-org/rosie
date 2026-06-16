@@ -1,0 +1,6 @@
+properties:
+  id: purpprvfil-jnom
+  name: PURPPRVFIL
+  inputDatasets:
+    - datasetId: purpprvfil
+      taskId: lnd_mimixvcoc_ca-9nfq

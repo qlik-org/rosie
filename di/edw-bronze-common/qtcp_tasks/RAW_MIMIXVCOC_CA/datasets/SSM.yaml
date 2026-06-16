@@ -1,0 +1,6 @@
+properties:
+  id: ssm-jnoy
+  name: SSM
+  inputDatasets:
+    - datasetId: ssm
+      taskId: lnd_mimixvcoc_ca-9nfq

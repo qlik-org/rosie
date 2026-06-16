@@ -1,0 +1,8 @@
+sourceConnection: '{{task.lnd_currency_rates-1n5u.sourceConnection}}'
+explicitlySelected:
+  - name: CURRENCY_RATES
+    type: TABLE
+  - name: CURRENT_CURRENCY_RATES
+    type: TABLE
+  - name: RAW_CURRENCY_RATES
+    type: TABLE

@@ -1,0 +1,6 @@
+properties:
+  id: mdm_erp_enduse-nw70
+  name: MDM_ERP_ENDUSE
+  inputDatasets:
+    - datasetId: mdm_erp_enduse
+      taskId: lnd_zoho_mdm-7ps1

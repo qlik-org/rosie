@@ -1,0 +1,6 @@
+properties:
+  id: invregmt-jnow
+  name: INVREGMT
+  inputDatasets:
+    - datasetId: invregmt
+      taskId: lnd_mimixvcoc_ca-9nfq

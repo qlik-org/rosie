@@ -1,0 +1,6 @@
+properties:
+  id: ite-jnox
+  name: ITE
+  inputDatasets:
+    - datasetId: ite
+      taskId: lnd_mimixvcoc_ca-9nfq

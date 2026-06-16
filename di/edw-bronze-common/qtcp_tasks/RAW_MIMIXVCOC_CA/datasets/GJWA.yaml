@@ -1,0 +1,6 @@
+properties:
+  id: gjwa-ag92
+  name: GJWA
+  inputDatasets:
+    - datasetId: gjwa
+      taskId: lnd_mimixvcoc_ca-9nfq

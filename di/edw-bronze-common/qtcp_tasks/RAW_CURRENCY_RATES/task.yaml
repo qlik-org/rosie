@@ -1,0 +1,12 @@
+properties:
+  name: RAW_CURRENCY_RATES
+  id: stg_currency_rates-1n5v
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.stg_currency_rates-1n5v.internalSchema}}'
+    taskSchema: '{{task.stg_currency_rates-1n5v.taskSchema}}'
+    databaseName: '{{task.stg_currency_rates-1n5v.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.stg_currency_rates-1n5v.warehouseName}}'

@@ -1,0 +1,13 @@
+properties:
+  name: RAW_ZOHO_MDM
+  id: raw_zoho_mdm-7ps2
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_zoho_mdm-7ps2.internalSchema}}'
+    taskSchema: '{{task.raw_zoho_mdm-7ps2.taskSchema}}'
+    databaseName: '{{task.raw_zoho_mdm-7ps2.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_zoho_mdm-7ps2.warehouseName}}'

@@ -1,0 +1,6 @@
+properties:
+  id: mostatuses_excel_mostatuses-9qzm
+  name: MOStatuses_Excel_MOStatuses
+  inputDatasets:
+    - datasetId: mostatuses_excel_mostatuses
+      taskId: lnd_app_rep_unite-9qzg

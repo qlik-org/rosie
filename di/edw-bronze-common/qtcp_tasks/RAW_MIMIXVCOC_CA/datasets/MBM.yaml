@@ -1,0 +1,6 @@
+properties:
+  id: mbm-jnoc
+  name: MBM
+  inputDatasets:
+    - datasetId: mbm
+      taskId: lnd_mimixvcoc_ca-9nfq
