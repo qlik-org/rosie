@@ -69,7 +69,11 @@
     "task.transform--nk9.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform--nk9.internalSchema": "",
     "task.transform--nk9.taskSchema": "",
-    "task.transform--nk9.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.transform--nk9.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_1-l5ix.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_1-l5ix.internalSchema": "",
+    "task.transform_1-l5ix.taskSchema": "",
+    "task.transform_1-l5ix.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "onboarding_landing--nky": "Onboarding_Landing",
@@ -78,7 +82,8 @@
     "registered_data_cdc_storage-l5fi": "Registered_data_cdc_Storage",
     "registered_data_compare-l5fn": "Registered_data_compare",
     "registered_data_compare_storage-l5fo": "Registered_data_compare_Storage",
-    "transform--nk9": "Transform"
+    "transform--nk9": "Transform",
+    "transform_1-l5ix": "Transform_1"
   },
   "connectionProperties": {
     "task.onboarding_landing--nky.sourceConnection": {

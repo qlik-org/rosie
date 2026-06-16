@@ -1,11 +1,27 @@
 {
-  "type": "EXTERNAL_TABLE",
-  "id": "$registered_data$source_p_4_cross_onboarding_landing_customers",
-  "name": "source_p_4_cross_onboarding_landing_Customers",
+  "id": "customers-l5ib",
+  "name": "Customers",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "customers-l5fk",
+      "name": "Customers",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_cdc_storage-l5fi"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
   "tableDef": {
     "name": "Customers",
-    "dbSchema": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.schema}}",
-    "dbName": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.database}}",
     "columns": [
       {
         "name": "CustomerID",
@@ -21,7 +37,10 @@
           "originalTypeFull": "VARCHAR(5)"
         },
         "id": "customerid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "CompanyName",
@@ -37,7 +56,10 @@
           "originalTypeFull": "VARCHAR(40)"
         },
         "id": "companyname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ContactName",
@@ -53,7 +75,10 @@
           "originalTypeFull": "VARCHAR(30)"
         },
         "id": "contactname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ContactTitle",
@@ -69,7 +94,10 @@
           "originalTypeFull": "VARCHAR(30)"
         },
         "id": "contacttitle",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Address",
@@ -85,7 +113,10 @@
           "originalTypeFull": "VARCHAR(60)"
         },
         "id": "address",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "City",
@@ -101,7 +132,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "city",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Region",
@@ -117,7 +151,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "region",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PostalCode",
@@ -133,7 +170,10 @@
           "originalTypeFull": "VARCHAR(10)"
         },
         "id": "postalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Country",
@@ -149,7 +189,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "country",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Phone",
@@ -165,7 +208,10 @@
           "originalTypeFull": "VARCHAR(24)"
         },
         "id": "phone",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Fax",
@@ -181,10 +227,15 @@
           "originalTypeFull": "VARCHAR(24)"
         },
         "id": "fax",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
     "fullLoadOnly": false
-  }
+  },
+  "virtualDataset": false,
+  "description": ""
 }

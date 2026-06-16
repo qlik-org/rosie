@@ -1,11 +1,27 @@
 {
-  "type": "EXTERNAL_TABLE",
-  "id": "$registered_data$source_p_4_cross_onboarding_landing_employees",
-  "name": "source_p_4_cross_onboarding_landing_Employees",
+  "id": "employees-l5iz",
+  "name": "Employees",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "employees-l5fl",
+      "name": "Employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_cdc_storage-l5fi"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
   "tableDef": {
     "name": "Employees",
-    "dbSchema": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.schema}}",
-    "dbName": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.database}}",
     "columns": [
       {
         "name": "EmployeeID",
@@ -21,7 +37,10 @@
           "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "employeeid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "LastName",
@@ -37,7 +56,10 @@
           "originalTypeFull": "VARCHAR(20)"
         },
         "id": "lastname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "FirstName",
@@ -53,7 +75,10 @@
           "originalTypeFull": "VARCHAR(10)"
         },
         "id": "firstname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Title",
@@ -69,7 +94,10 @@
           "originalTypeFull": "VARCHAR(30)"
         },
         "id": "title",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "TitleOfCourtesy",
@@ -85,7 +113,10 @@
           "originalTypeFull": "VARCHAR(25)"
         },
         "id": "titleofcourtesy",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "BirthDate",
@@ -101,7 +132,10 @@
           "originalTypeFull": "TIMESTAMPNTZ(3)"
         },
         "id": "birthdate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "HireDate",
@@ -117,7 +151,10 @@
           "originalTypeFull": "TIMESTAMPNTZ(3)"
         },
         "id": "hiredate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Address",
@@ -133,7 +170,10 @@
           "originalTypeFull": "VARCHAR(60)"
         },
         "id": "address",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "City",
@@ -149,7 +189,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "city",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Region",
@@ -165,7 +208,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "region",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PostalCode",
@@ -181,7 +227,10 @@
           "originalTypeFull": "VARCHAR(10)"
         },
         "id": "postalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Country",
@@ -197,7 +246,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "country",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "HomePhone",
@@ -213,7 +265,10 @@
           "originalTypeFull": "VARCHAR(24)"
         },
         "id": "homephone",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Extension",
@@ -229,7 +284,10 @@
           "originalTypeFull": "VARCHAR(4)"
         },
         "id": "extension",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Photo",
@@ -245,7 +303,10 @@
           "originalTypeFull": "BINARY(8388608)"
         },
         "id": "photo",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Notes",
@@ -261,7 +322,10 @@
           "originalTypeFull": "VARCHAR(16777216)"
         },
         "id": "notes",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ReportsTo",
@@ -277,7 +341,10 @@
           "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "reportsto",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "PhotoPath",
@@ -293,10 +360,15 @@
           "originalTypeFull": "VARCHAR(255)"
         },
         "id": "photopath",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
     "fullLoadOnly": false
-  }
+  },
+  "virtualDataset": false,
+  "description": ""
 }

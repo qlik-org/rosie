@@ -1,11 +1,27 @@
 {
-  "type": "EXTERNAL_TABLE",
-  "id": "$registered_data$source_p_4_cross_onboarding_landing_orders",
-  "name": "source_p_4_cross_onboarding_landing_Orders",
+  "id": "orders-l5ic",
+  "name": "Orders",
+  "type": "TRANSFORM_MODEL_BASED",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "orders-l5fm",
+      "name": "Orders",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_cdc_storage-l5fi"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "OFF",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
   "tableDef": {
     "name": "Orders",
-    "dbSchema": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.schema}}",
-    "dbName": "{{task.registered_data_cdc-l5fh:ROSIE$_$source_p_4_cross_onboarding_landing.database}}",
     "columns": [
       {
         "name": "OrderID",
@@ -21,7 +37,10 @@
           "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "orderid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "CustomerID",
@@ -37,7 +56,10 @@
           "originalTypeFull": "VARCHAR(5)"
         },
         "id": "customerid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "EmployeeID",
@@ -53,7 +75,10 @@
           "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "employeeid",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "OrderDate",
@@ -69,7 +94,10 @@
           "originalTypeFull": "TIMESTAMPNTZ(3)"
         },
         "id": "orderdate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "RequiredDate",
@@ -85,7 +113,10 @@
           "originalTypeFull": "TIMESTAMPNTZ(3)"
         },
         "id": "requireddate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShippedDate",
@@ -101,7 +132,10 @@
           "originalTypeFull": "TIMESTAMPNTZ(3)"
         },
         "id": "shippeddate",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipVia",
@@ -117,7 +151,10 @@
           "originalTypeFull": "NUMBER(38,0)"
         },
         "id": "shipvia",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "Freight",
@@ -133,7 +170,10 @@
           "originalTypeFull": "NUMBER(19,4)"
         },
         "id": "freight",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipName",
@@ -149,7 +189,10 @@
           "originalTypeFull": "VARCHAR(40)"
         },
         "id": "shipname",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipAddress",
@@ -165,7 +208,10 @@
           "originalTypeFull": "VARCHAR(60)"
         },
         "id": "shipaddress",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipCity",
@@ -181,7 +227,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "shipcity",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipRegion",
@@ -197,7 +246,10 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "shipregion",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipPostalCode",
@@ -213,7 +265,10 @@
           "originalTypeFull": "VARCHAR(10)"
         },
         "id": "shippostalcode",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       },
       {
         "name": "ShipCountry",
@@ -229,10 +284,15 @@
           "originalTypeFull": "VARCHAR(15)"
         },
         "id": "shipcountry",
-        "flags": "NONE"
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
       }
     ],
     "secureQri": "",
     "fullLoadOnly": false
-  }
+  },
+  "virtualDataset": false,
+  "description": ""
 }
