@@ -1,0 +1,13 @@
+properties:
+  id: m3_order_line_type
+  name: M3_ORDER_LINE_TYPE
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ORDERLINETYPECODE
+      newColumnName: ORDERLINETYPECODE
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: M3_ORDER_LINE_TYPE

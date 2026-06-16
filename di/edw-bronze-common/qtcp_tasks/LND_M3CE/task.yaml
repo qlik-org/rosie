@@ -1,0 +1,18 @@
+properties:
+  name: LND_M3CE
+  id: lnd_m3ce-zmhm
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_m3ce-zmhm.taskSchema}}'
+      database: '{{task.lnd_m3ce-zmhm.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: COMPUTE_WH

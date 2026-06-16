@@ -1,0 +1,13 @@
+properties:
+  id: dim_customer--ulc
+  name: dim_Customer
+  inputDatasets:
+    - datasetId: dim_customer
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Customer
+      newColumnName: Customer
+      primaryKeyOrdinal: 1
+      nullable: false

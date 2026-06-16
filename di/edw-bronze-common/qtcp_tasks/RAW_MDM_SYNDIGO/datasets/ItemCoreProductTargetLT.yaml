@@ -1,0 +1,6 @@
+properties:
+  id: itemcoreproducttargetlt-djvw
+  name: ItemCoreProductTargetLT
+  inputDatasets:
+    - datasetId: itemcoreproducttargetlt
+      taskId: lnd_mdm_syndigo-djvt

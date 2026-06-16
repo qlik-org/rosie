@@ -1,0 +1,41 @@
+properties:
+  id: dim_costofgoods_reference-gkdm
+  name: dim_CostofGoods_Reference
+  inputDatasets:
+    - datasetId: dim_costofgoods_reference
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ERP
+      newColumnName: ERP
+    - action: KEEP
+      columnName: TransactionType
+      newColumnName: TransactionType
+    - action: ADD
+      columnName: PK
+      newDataType:
+        type: STRING
+        length: 256
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: >-
+          $IFF(${ERP} = 'BPCS',
+
+
+          $CONCAT(${ERP}, ${TransactionType})
+
+
+          , $CONCAT(${ERP}, ${TransactionTypeM3}))
+        alias:
+          - name: ERP
+            value: erp
+          - name: TransactionType
+            value: transactiontype
+          - name: TransactionTypeM3
+            value: transactiontypem3
+      primaryKeyOrdinal: 1
+      nullable: false
+      addedColumnId: bebe39c5-2156-4618-932d-b3da342d0d82

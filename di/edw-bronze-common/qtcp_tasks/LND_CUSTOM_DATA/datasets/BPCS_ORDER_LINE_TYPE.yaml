@@ -1,0 +1,13 @@
+properties:
+  id: bpcs_order_line_type
+  name: BPCS_ORDER_LINE_TYPE
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ORDERLINETYPECODE
+      newColumnName: ORDERLINETYPECODE
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: BPCS_ORDER_LINE_TYPE

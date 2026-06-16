@@ -1,0 +1,6 @@
+properties:
+  id: marketingstyle-djvz
+  name: MarketingStyle
+  inputDatasets:
+    - datasetId: marketingstyle
+      taskId: lnd_mdm_syndigo-djvt

@@ -1,0 +1,13 @@
+properties:
+  id: m3_region_division_mapping
+  name: M3_REGION_DIVISION_MAPPING
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DIVISIONCODE
+      newColumnName: DIVISIONCODE
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: M3_REGION_DIVISION_MAPPING

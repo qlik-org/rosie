@@ -1,0 +1,122 @@
+sourceConnection: '{{task.lnd_m3ce-zmhm.sourceConnection}}'
+explicitlySelected:
+  - name: CIDMAS
+    type: TABLE
+  - name: CSYTAB
+    type: TABLE
+  - name: CIDVEN
+    type: TABLE
+  - name: CIDADR
+    type: TABLE
+  - name: CMNDIV
+    type: TABLE
+  - name: CFACIL
+    type: TABLE
+  - name: MITWHL
+    type: TABLE
+  - name: OPRICH
+    type: TABLE
+  - name: DROUTE
+    type: TABLE
+  - name: MHDISH
+    type: TABLE
+  - name: BPROJS
+    type: TABLE
+  - name: CIADDR
+    type: TABLE
+  - name: CMNUSR
+    type: TABLE
+  - name: CUGEX1
+    type: TABLE
+  - name: DROUDI
+    type: TABLE
+  - name: FCHACC
+    type: TABLE
+  - name: FGLEDG
+    type: TABLE
+  - name: FSLEDG
+    type: TABLE
+  - name: MCHEAD
+    type: TABLE
+  - name: MHDISL
+    type: TABLE
+  - name: MHPICH
+    type: TABLE
+  - name: MITALO
+    type: TABLE
+  - name: MITARE
+    type: TABLE
+  - name: MITAUN
+    type: TABLE
+  - name: MITFAC
+    type: TABLE
+  - name: MITBAL
+    type: TABLE
+  - name: MITLOC
+    type: TABLE
+  - name: MITMAS
+    type: TABLE
+  - name: MITPCE
+    type: TABLE
+  - name: MITPOP
+    type: TABLE
+  - name: MITSCH
+    type: TABLE
+  - name: MITTRA
+    type: TABLE
+  - name: MITTTY
+    type: TABLE
+  - name: MMOPLP
+    type: TABLE
+  - name: MMOPLP_AUD
+    type: TABLE
+  - name: MPHEAD
+    type: TABLE
+  - name: MPLIND
+    type: TABLE
+  - name: MPLINE
+    type: TABLE
+  - name: MPPOAD
+    type: TABLE
+  - name: MWOHED
+    type: TABLE
+  - name: MWOHED_AUD
+    type: TABLE
+  - name: OCUSAD
+    type: TABLE
+  - name: OCUSIT
+    type: TABLE
+  - name: OCUSMA
+    type: TABLE
+  - name: ODCHRG
+    type: TABLE
+  - name: OEXFEE
+    type: TABLE
+  - name: OINVOH
+    type: TABLE
+  - name: OINVOL
+    type: TABLE
+  - name: OLICHA
+    type: TABLE
+  - name: OOCHRG
+    type: TABLE
+  - name: OOHEAD
+    type: TABLE
+  - name: OOLICH
+    type: TABLE
+  - name: OOLINE
+    type: TABLE
+  - name: OOLINE_AUD
+    type: TABLE
+  - name: OOTYPE
+    type: TABLE
+  - name: OSBSTD
+    type: TABLE
+  - name: OXCNTR
+    type: TABLE
+  - name: SAGITM
+    type: TABLE
+  - name: OOADRE
+    type: TABLE
+  - name: OOHEAD_AUD
+    type: TABLE

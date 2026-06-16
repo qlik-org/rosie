@@ -1,0 +1,6 @@
+properties:
+  id: itemdiameterclass-djvx
+  name: ItemDiameterClass
+  inputDatasets:
+    - datasetId: itemdiameterclass
+      taskId: lnd_mdm_syndigo-djvt

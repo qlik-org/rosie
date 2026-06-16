@@ -1,0 +1,13 @@
+properties:
+  id: dim_enduse-gkdn
+  name: dim_Enduse
+  inputDatasets:
+    - datasetId: dim_enduse
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Enduse
+      newColumnName: Enduse
+      primaryKeyOrdinal: 1
+      nullable: false

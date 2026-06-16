@@ -1,0 +1,22 @@
+properties:
+  name: LND_SALES_SPLIT
+  id: lnd_sales_split-te6g
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_sales_split-te6g.taskSchema}}'
+      database: '{{task.lnd_sales_split-te6g.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: JAKE_QCDI_WH
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false

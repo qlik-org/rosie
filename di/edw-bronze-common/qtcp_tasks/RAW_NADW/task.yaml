@@ -1,0 +1,12 @@
+properties:
+  name: RAW_NADW
+  id: raw_nadw-wn_4
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_nadw-wn_4.internalSchema}}'
+    taskSchema: '{{task.raw_nadw-wn_4.taskSchema}}'
+    databaseName: '{{task.raw_nadw-wn_4.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_nadw-wn_4.warehouseName}}'

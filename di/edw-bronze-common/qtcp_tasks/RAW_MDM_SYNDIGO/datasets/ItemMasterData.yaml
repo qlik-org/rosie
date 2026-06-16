@@ -1,0 +1,6 @@
+properties:
+  id: itemmasterdata-djvy
+  name: ItemMasterData
+  inputDatasets:
+    - datasetId: itemmasterdata
+      taskId: lnd_mdm_syndigo-djvt

@@ -1,0 +1,18 @@
+properties:
+  name: LND_MIMIXVCOC_CA
+  id: lnd_mimixvcoc_ca-9nfq
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_mimixvcoc_ca-9nfq.taskSchema}}'
+      database: '{{task.lnd_mimixvcoc_ca-9nfq.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

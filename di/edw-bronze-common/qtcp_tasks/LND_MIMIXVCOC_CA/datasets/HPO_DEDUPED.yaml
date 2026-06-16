@@ -1,0 +1,28 @@
+properties:
+  id: hpo_deduped
+  name: HPO_DEDUPED
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: PORD
+      newColumnName: PORD
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: PLINE
+      newColumnName: PLINE
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: PVEND
+      newColumnName: PVEND
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: PEDTE
+      newColumnName: PEDTE
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: HPO_DEDUPED
