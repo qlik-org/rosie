@@ -1,0 +1,129 @@
+relationships:
+  - sourceEntity:
+      datasetId: order_details--nk4
+      name: Order Details
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: orders--nk5
+      name: Orders
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation--nlx
+  - sourceEntity:
+      datasetId: order_details--nk4
+      name: Order Details
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: products--nk6
+      name: Products
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: ProductID
+        targetColumn: ProductID
+        sourceColumnId: productid
+        targetColumnId: productid
+    name: Order Details_Products_relation
+    description: ''
+    id: order_details_products_relation--nly
+  - sourceEntity:
+      datasetId: orders--nk5
+      name: Orders
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: customers--nk2
+      name: Customers
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation--nlz
+  - sourceEntity:
+      datasetId: orders--nk5
+      name: Orders
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: employees--nk3
+      name: Employees
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation--nla
+  - sourceEntity:
+      datasetId: products--nk6
+      name: Products
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: categories--nk1
+      name: Categories
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation--nlb
+  - sourceEntity:
+      datasetId: products--nk6
+      name: Products
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: suppliers--nk8
+      name: Suppliers
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation--nlc
+  - sourceEntity:
+      datasetId: orders--nk5
+      name: Orders
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: shippers--nk7
+      name: Shippers
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers--nld
+  - sourceEntity:
+      datasetId: employees--nk3
+      name: Employees
+      taskId: onboarding_storage--nkz
+    targetEntity:
+      datasetId: employees--nk3
+      name: Employees
+      taskId: onboarding_storage--nkz
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees--nle

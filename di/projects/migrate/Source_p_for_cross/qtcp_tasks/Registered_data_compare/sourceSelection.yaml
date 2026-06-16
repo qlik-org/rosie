@@ -1,0 +1,13 @@
+explicitlySelected:
+  - database: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.database}}'
+    name: Customers
+    schema: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.database}}'
+    name: Employees
+    schema: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.database}}'
+    name: Orders
+    schema: '{{task.registered_data_compare-l5fn:ROSIE$_$source_p_4_cross_onboarding_storage.schema}}'
+    type: VIEW

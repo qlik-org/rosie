@@ -1,0 +1,15 @@
+properties:
+  name: Registered_data_compare_Storage
+  id: registered_data_compare_storage-l5fo
+  type: STORAGE
+settings:
+  artifactsSettings:
+    historyEnabled: false
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_compare_storage-l5fo.internalSchema}}'
+    taskSchema: '{{task.registered_data_compare_storage-l5fo.taskSchema}}'
+    databaseName: '{{task.registered_data_compare_storage-l5fo.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_compare_storage-l5fo.warehouseName}}'

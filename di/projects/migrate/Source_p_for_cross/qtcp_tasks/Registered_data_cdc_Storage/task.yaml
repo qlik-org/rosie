@@ -1,0 +1,12 @@
+properties:
+  name: Registered_data_cdc_Storage
+  id: registered_data_cdc_storage-l5fi
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_cdc_storage-l5fi.internalSchema}}'
+    taskSchema: '{{task.registered_data_cdc_storage-l5fi.taskSchema}}'
+    databaseName: '{{task.registered_data_cdc_storage-l5fi.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_cdc_storage-l5fi.warehouseName}}'
