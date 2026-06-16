@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_coverage_type-7pth
+  name: MDM_SALESORG_SALES_COVERAGE_TYPE
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_coverage_type
+      taskId: lnd_zoho_mdm-7ps1

@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_region_market_territory-a-cy
+  name: ZohoSalesOrg_Region_Market_Territory
+  inputDatasets:
+    - datasetId: zohosalesorg_region_market_territory
+      taskId: lnd_zoho_sales_org-a-cs

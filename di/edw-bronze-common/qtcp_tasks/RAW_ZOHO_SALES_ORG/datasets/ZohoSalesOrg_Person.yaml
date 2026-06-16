@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_person-a-cw
+  name: ZohoSalesOrg_Person
+  inputDatasets:
+    - datasetId: zohosalesorg_person
+      taskId: lnd_zoho_sales_org-a-cs

@@ -1,0 +1,6 @@
+properties:
+  id: mdm_product_erp_item_class-7ps-
+  name: MDM_PRODUCT_ERP_ITEM_CLASS
+  inputDatasets:
+    - datasetId: mdm_product_erp_item_class
+      taskId: lnd_zoho_mdm-7ps1

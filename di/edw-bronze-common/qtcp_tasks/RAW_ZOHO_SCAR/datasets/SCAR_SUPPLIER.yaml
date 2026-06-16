@@ -1,0 +1,6 @@
+properties:
+  id: scar_supplier-0gu7
+  name: SCAR_SUPPLIER
+  inputDatasets:
+    - datasetId: scar_supplier
+      taskId: lnd_zoho_scar-0guz

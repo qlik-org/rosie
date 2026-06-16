@@ -1,0 +1,6 @@
+properties:
+  id: mdm_product_product_line_ul-7pte
+  name: MDM_PRODUCT_PRODUCT_LINE_UL
+  inputDatasets:
+    - datasetId: mdm_product_product_line_ul
+      taskId: lnd_zoho_mdm-7ps1

@@ -1,0 +1,6 @@
+properties:
+  id: scar_recv_shipping_log-0gu5
+  name: SCAR_RECV_SHIPPING_LOG
+  inputDatasets:
+    - datasetId: scar_recv_shipping_log
+      taskId: lnd_zoho_scar-0guz

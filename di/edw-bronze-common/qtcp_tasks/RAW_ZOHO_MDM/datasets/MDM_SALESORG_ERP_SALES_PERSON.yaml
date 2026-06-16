@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_erp_sales_person-7ptf
+  name: MDM_SALESORG_ERP_SALES_PERSON
+  inputDatasets:
+    - datasetId: mdm_salesorg_erp_sales_person
+      taskId: lnd_zoho_mdm-7ps1

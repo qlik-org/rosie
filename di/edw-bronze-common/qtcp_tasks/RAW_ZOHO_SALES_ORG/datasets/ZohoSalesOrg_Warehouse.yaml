@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_warehouse-a-c6
+  name: ZohoSalesOrg_Warehouse
+  inputDatasets:
+    - datasetId: zohosalesorg_warehouse
+      taskId: lnd_zoho_sales_org-a-cs

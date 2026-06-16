@@ -1,0 +1,6 @@
+properties:
+  id: holiday_calendar_report_entry-oeap
+  name: Holiday_Calendar_Report_Entry
+  inputDatasets:
+    - datasetId: holiday_calendar_report_entry
+      taskId: lnd_workday-oeam

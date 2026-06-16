@@ -1,0 +1,6 @@
+properties:
+  id: scar_regional_qa-0gu6
+  name: SCAR_REGIONAL_QA
+  inputDatasets:
+    - datasetId: scar_regional_qa
+      taskId: lnd_zoho_scar-0guz

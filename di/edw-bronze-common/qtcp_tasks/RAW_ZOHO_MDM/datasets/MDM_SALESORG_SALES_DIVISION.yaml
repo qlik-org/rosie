@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_division-7pti
+  name: MDM_SALESORG_SALES_DIVISION
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_division
+      taskId: lnd_zoho_mdm-7ps1

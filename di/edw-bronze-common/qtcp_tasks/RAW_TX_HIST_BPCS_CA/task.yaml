@@ -1,0 +1,12 @@
+properties:
+  name: RAW_TX_HIST_BPCS_CA
+  id: raw_tx_hist_bpcs_ca-kahl
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_bpcs_ca-kahl.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_bpcs_ca-kahl.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_bpcs_ca-kahl.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_bpcs_ca-kahl.warehouseName}}'

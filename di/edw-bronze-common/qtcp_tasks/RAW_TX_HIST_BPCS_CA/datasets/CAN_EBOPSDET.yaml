@@ -1,0 +1,6 @@
+properties:
+  id: can_ebopsdet-v_ig
+  name: CAN_EBOPSDET
+  inputDatasets:
+    - datasetId: can_ebopsdet
+      taskId: lnd_tx_hist_bpcs-cuub

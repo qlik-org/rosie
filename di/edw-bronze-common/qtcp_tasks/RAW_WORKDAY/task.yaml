@@ -1,0 +1,13 @@
+properties:
+  name: RAW_WORKDAY
+  id: raw_workday-oean
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_workday-oean.internalSchema}}'
+    taskSchema: '{{task.raw_workday-oean.taskSchema}}'
+    databaseName: '{{task.raw_workday-oean.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_workday-oean.warehouseName}}'

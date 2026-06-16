@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_main_territory-a-cv
+  name: ZohoSalesOrg_Main_Territory
+  inputDatasets:
+    - datasetId: zohosalesorg_main_territory
+      taskId: lnd_zoho_sales_org-a-cs

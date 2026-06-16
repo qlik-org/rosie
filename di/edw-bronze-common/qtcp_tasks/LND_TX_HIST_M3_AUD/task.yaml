@@ -1,0 +1,18 @@
+properties:
+  name: LND_TX_HIST_M3_AUD
+  id: lnd_tx_hist_m3_aud-kahu
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_tx_hist_m3_aud-kahu.taskSchema}}'
+      database: '{{task.lnd_tx_hist_m3_aud-kahu.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_sales_vp-a-c2
+  name: ZohoSalesOrg_Sales_VP
+  inputDatasets:
+    - datasetId: zohosalesorg_sales_vp
+      taskId: lnd_zoho_sales_org-a-cs

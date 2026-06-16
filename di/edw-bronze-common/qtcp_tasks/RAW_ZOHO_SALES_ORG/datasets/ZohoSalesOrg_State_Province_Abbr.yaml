@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_state_province_abbr-a-c5
+  name: ZohoSalesOrg_State_Province_Abbr
+  inputDatasets:
+    - datasetId: zohosalesorg_state_province_abbr
+      taskId: lnd_zoho_sales_org-a-cs

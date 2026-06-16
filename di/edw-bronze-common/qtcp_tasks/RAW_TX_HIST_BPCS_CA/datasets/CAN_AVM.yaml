@@ -1,0 +1,6 @@
+properties:
+  id: can_avm-v_h7
+  name: CAN_AVM
+  inputDatasets:
+    - datasetId: can_avm
+      taskId: lnd_tx_hist_bpcs-cuub

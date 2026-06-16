@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_sales_market-a-cz
+  name: ZohoSalesOrg_Sales_Market
+  inputDatasets:
+    - datasetId: zohosalesorg_sales_market
+      taskId: lnd_zoho_sales_org-a-cs
