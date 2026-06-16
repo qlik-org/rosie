@@ -1,0 +1,9 @@
+properties:
+  id: customers
+  name: Customers
+transformations:
+  newTableName: Customers_1
+sourceTable:
+  schema: '{{task.onboarding_landing--nea:null$_$dbo.schema}}'
+  type: TABLE
+  name: Customers
