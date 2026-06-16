@@ -1,0 +1,14 @@
+properties:
+  name: Transform_8
+  id: transform_8--nf8
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_8--nf8.internalSchema}}'
+    taskSchema: '{{task.transform_8--nf8.taskSchema}}'
+    databaseName: '{{task.transform_8--nf8.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_8--nf8.warehouseName}}'
