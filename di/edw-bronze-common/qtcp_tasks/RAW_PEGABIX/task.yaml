@@ -1,0 +1,15 @@
+properties:
+  name: RAW_PEGABIX
+  id: raw_pegabix-hzpd
+  type: STORAGE
+settings:
+  artifactsSettings:
+    historyEnabled: true
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_pegabix-hzpd.internalSchema}}'
+    taskSchema: '{{task.raw_pegabix-hzpd.taskSchema}}'
+    databaseName: '{{task.raw_pegabix-hzpd.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_pegabix-hzpd.warehouseName}}'

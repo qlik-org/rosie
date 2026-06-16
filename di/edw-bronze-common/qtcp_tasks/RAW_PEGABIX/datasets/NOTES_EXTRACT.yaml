@@ -1,0 +1,6 @@
+properties:
+  id: notes_extract-hzpk
+  name: NOTES_EXTRACT
+  inputDatasets:
+    - datasetId: notes_extract
+      taskId: lnd_pegabix-hzpc

@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract-hzpl
+  name: SR_EXTRACT
+  inputDatasets:
+    - datasetId: sr_extract
+      taskId: lnd_pegabix-hzpc

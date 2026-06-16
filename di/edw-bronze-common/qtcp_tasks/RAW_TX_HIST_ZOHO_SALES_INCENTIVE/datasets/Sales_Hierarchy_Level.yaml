@@ -1,0 +1,13 @@
+properties:
+  id: sales_hierarchy_level-v_kq
+  name: Sales_Hierarchy_Level
+  inputDatasets:
+    - datasetId: sales_hierarchy_lvl_json
+      taskId: lnd_tx_hist_zoho_sales_incentive-v_km
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

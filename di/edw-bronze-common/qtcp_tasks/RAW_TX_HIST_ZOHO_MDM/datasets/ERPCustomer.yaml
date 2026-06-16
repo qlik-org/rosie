@@ -1,0 +1,13 @@
+properties:
+  id: erpcustomer-mknn
+  name: ERPCustomer
+  inputDatasets:
+    - datasetId: erpcustomer_json
+      taskId: lnd_tx_hist_zoho_mdm-w-ri
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

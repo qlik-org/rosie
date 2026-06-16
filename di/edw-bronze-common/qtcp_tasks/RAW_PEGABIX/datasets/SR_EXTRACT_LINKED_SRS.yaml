@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract_linked_srs-hzpn
+  name: SR_EXTRACT_LINKED_SRS
+  inputDatasets:
+    - datasetId: sr_extract_linked_srs
+      taskId: lnd_pegabix-hzpc

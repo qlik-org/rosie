@@ -1,0 +1,3 @@
+includePatterns:
+  - sourceTask: lnd_tx_hist_zoho_sales_incentive-v_km
+    tablePattern: '%'

@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract_alternate_market_sales_team-hzpm
+  name: SR_EXTRACT_ALTERNATE_MARKET_SALES_TEAM
+  inputDatasets:
+    - datasetId: sr_extract_alternate_market_sales_team
+      taskId: lnd_pegabix-hzpc

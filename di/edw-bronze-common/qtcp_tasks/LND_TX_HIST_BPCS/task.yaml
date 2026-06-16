@@ -1,0 +1,18 @@
+properties:
+  name: LND_TX_HIST_BPCS
+  id: lnd_tx_hist_bpcs-cuub
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_tx_hist_bpcs-cuub.taskSchema}}'
+      database: '{{task.lnd_tx_hist_bpcs-cuub.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

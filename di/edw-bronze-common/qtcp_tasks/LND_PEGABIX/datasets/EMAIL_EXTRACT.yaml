@@ -1,0 +1,11 @@
+properties:
+  id: email_extract
+  name: EMAIL_EXTRACT
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Email_Private/Public
+      newColumnName: Email_Private_Public
+sourceTable:
+  type: TABLE
+  name: EMAIL_EXTRACT
