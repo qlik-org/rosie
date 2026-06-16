@@ -1,0 +1,122 @@
+properties:
+  id: order_details--nmc
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details--nk_
+      name: Order Details
+      projectId: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+      taskId: transform--nk9
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: Order Details
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: ProductID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+        properties:
+          documentMetadata: false
+      - name: UnitPrice
+        ordinal: 3
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - name: Quantity
+        ordinal: 4
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+        properties:
+          documentMetadata: false
+      - name: Discount
+        ordinal: 5
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+        properties:
+          documentMetadata: false
+    entityId: order_details--nmc
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: order_details--nk_
+      name: Order Details
+      projectId: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+      taskId: transform--nk9
+    factDimension:
+      - name: Orders
+        dimension:
+          type: NONE
+          datasetId: orders--nmb
+          taskId: data_mart--nl-
+        dimensionRelationshipPath: order_details_orders_relation--nlp
+        dimensionRelationshipPathDisplayName: Order_Details_Orders_relation
+        dimensionRelationshipPathShortName: ''
+      - name: Products
+        dimension:
+          type: NONE
+          datasetId: products--nma
+          taskId: data_mart--nl-
+        dimensionRelationshipPath: order_details_products_relation--nlq
+        dimensionRelationshipPathDisplayName: Order_Details_Products_relation
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+    subtype: MODEL_BASED
+    materializedSource: false

@@ -1,0 +1,33 @@
+explicitlySelected:
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Categories
+    sourceTableId: categories--nk1
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Customers
+    sourceTableId: customers--nk2
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Employees
+    sourceTableId: employees--nk3
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Order Details
+    sourceTableId: order_details--nk4
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Orders
+    sourceTableId: orders--nk5
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Products
+    sourceTableId: products--nk6
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Shippers
+    sourceTableId: shippers--nk7
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: onboarding_storage--nkz
+    name: Suppliers
+    sourceTableId: suppliers--nk8
