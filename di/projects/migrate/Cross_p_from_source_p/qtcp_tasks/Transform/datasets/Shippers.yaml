@@ -1,0 +1,71 @@
+properties:
+  id: shippers--nlv
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers--nk7
+      name: Shippers
+      projectId: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+      taskId: onboarding_storage--nkz
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Shippers
+    columns:
+      - name: ShipperID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipperid
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: phone
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: shippers--nk7
+        name: Shippers
+        projectId: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+        taskId: onboarding_storage--nkz
+      mappingFields:
+        - columnId: shipperid
+          expression:
+            expressionStatement: ${ShipperID}
+            alias:
+              - name: ShipperID
+                value: ShipperID
+        - columnId: companyname
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnId: phone
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: Phone
+      id: shippers_default_mapping--nl1
+      name: Shippers_default_mapping
+      description: ''

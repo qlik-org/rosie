@@ -1,0 +1,14 @@
+properties:
+  name: Transform
+  id: transform--nls
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform--nls.internalSchema}}'
+    taskSchema: '{{task.transform--nls.taskSchema}}'
+    databaseName: '{{task.transform--nls.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform--nls.warehouseName}}'

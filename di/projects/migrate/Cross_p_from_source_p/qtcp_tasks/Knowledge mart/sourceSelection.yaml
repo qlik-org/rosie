@@ -1,0 +1,13 @@
+explicitlySelected:
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Products
+    sourceTableId: products--nlb
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Suppliers
+    sourceTableId: suppliers--nld
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Categories
+    sourceTableId: categories--nlf
