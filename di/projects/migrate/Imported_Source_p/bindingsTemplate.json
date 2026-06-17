@@ -51,12 +51,17 @@
     "task.transform--nk9.databaseName": "{{task-type.transform.databaseName}}",
     "task.transform--nk9.internalSchema": "",
     "task.transform--nk9.taskSchema": "",
-    "task.transform--nk9.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.transform--nk9.warehouseName": "{{task-type.transform.warehouseName}}",
+    "task.transform_1-l5iu.databaseName": "{{task-type.transform.databaseName}}",
+    "task.transform_1-l5iu.internalSchema": "",
+    "task.transform_1-l5iu.taskSchema": "",
+    "task.transform_1-l5iu.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
     "onboarding_landing--nky": "Onboarding_Landing",
     "onboarding_storage--nkz": "Onboarding_Storage",
-    "transform--nk9": "Transform"
+    "transform--nk9": "Transform",
+    "transform_1-l5iu": "Transform_1"
   },
   "connectionProperties": {
     "task.onboarding_landing--nky.sourceConnection": {
