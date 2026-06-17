@@ -1,0 +1,14 @@
+properties:
+  name: Transform
+  id: transform--nk9
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform--nk9.internalSchema}}'
+    taskSchema: '{{task.transform--nk9.taskSchema}}'
+    databaseName: '{{task.transform--nk9.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform--nk9.warehouseName}}'
