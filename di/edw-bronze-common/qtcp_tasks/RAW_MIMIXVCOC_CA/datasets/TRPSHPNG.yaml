@@ -1,0 +1,6 @@
+properties:
+  id: trpshpng-jno4
+  name: TRPSHPNG
+  inputDatasets:
+    - datasetId: trpshpng
+      taskId: lnd_mimixvcoc_ca-9nfq

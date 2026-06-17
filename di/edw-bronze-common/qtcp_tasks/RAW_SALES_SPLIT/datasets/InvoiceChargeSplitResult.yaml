@@ -1,0 +1,6 @@
+properties:
+  id: invoicechargesplitresult-te6k
+  name: InvoiceChargeSplitResult
+  inputDatasets:
+    - datasetId: invoicechargesplitresult
+      taskId: lnd_sales_split-te6g

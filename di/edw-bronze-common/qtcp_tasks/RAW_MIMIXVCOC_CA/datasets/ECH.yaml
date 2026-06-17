@@ -1,0 +1,6 @@
+properties:
+  id: ech-jnnf
+  name: ECH
+  inputDatasets:
+    - datasetId: ech
+      taskId: lnd_mimixvcoc_ca-9nfq

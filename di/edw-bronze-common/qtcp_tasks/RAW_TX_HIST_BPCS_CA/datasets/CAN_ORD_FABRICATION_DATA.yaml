@@ -1,0 +1,6 @@
+properties:
+  id: can_ord_fabrication_data-v_iw
+  name: CAN_ORD_FABRICATION_DATA
+  inputDatasets:
+    - datasetId: can_ord_fabrication_data
+      taskId: lnd_tx_hist_bpcs-cuub

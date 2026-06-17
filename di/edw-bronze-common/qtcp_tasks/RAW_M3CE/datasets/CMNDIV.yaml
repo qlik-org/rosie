@@ -1,0 +1,6 @@
+properties:
+  id: cmndiv-lmhk
+  name: CMNDIV
+  inputDatasets:
+    - datasetId: cmndiv
+      taskId: lnd_m3ce-zmhm

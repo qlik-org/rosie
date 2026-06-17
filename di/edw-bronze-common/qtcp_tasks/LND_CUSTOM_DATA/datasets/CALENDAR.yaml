@@ -1,0 +1,7 @@
+properties:
+  id: calendar
+  name: CALENDAR
+transformations: {}
+sourceTable:
+  type: TABLE
+  name: CALENDAR

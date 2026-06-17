@@ -1,0 +1,6 @@
+properties:
+  id: saleslinereference-djvc
+  name: SalesLineReference
+  inputDatasets:
+    - datasetId: saleslinereference
+      taskId: lnd_mdm_syndigo-djvt

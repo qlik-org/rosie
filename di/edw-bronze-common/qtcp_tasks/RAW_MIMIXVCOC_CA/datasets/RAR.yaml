@@ -1,0 +1,6 @@
+properties:
+  id: rar-jnon
+  name: RAR
+  inputDatasets:
+    - datasetId: rar
+      taskId: lnd_mimixvcoc_ca-9nfq

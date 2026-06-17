@@ -1,0 +1,6 @@
+properties:
+  id: ord_fabrication_data-jnoi
+  name: ORD_FABRICATION_DATA
+  inputDatasets:
+    - datasetId: ord_fabrication_data
+      taskId: lnd_mimixvcoc_ca-9nfq

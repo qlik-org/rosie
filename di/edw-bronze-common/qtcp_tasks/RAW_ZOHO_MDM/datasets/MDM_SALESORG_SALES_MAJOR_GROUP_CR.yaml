@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_major_group_cr-7ptj
+  name: MDM_SALESORG_SALES_MAJOR_GROUP_CR
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_major_group_cr
+      taskId: lnd_zoho_mdm-7ps1

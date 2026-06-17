@@ -1,0 +1,6 @@
+properties:
+  id: interactions_extract-hzpg
+  name: INTERACTIONS_EXTRACT
+  inputDatasets:
+    - datasetId: interactions_extract
+      taskId: lnd_pegabix-hzpc

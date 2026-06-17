@@ -1,0 +1,6 @@
+properties:
+  id: can_exw-v_ig
+  name: CAN_EXW
+  inputDatasets:
+    - datasetId: can_exw
+      taskId: lnd_tx_hist_bpcs-cuub

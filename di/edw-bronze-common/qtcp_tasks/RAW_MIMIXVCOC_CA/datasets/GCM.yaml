@@ -1,0 +1,6 @@
+properties:
+  id: gcm-4frg
+  name: GCM
+  inputDatasets:
+    - datasetId: gcm
+      taskId: lnd_mimixvcoc_ca-9nfq

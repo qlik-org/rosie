@@ -1,0 +1,11 @@
+storage:
+  hasHistory: false
+  taskRunSchedule:
+    schedulingType: NONE
+datamart:
+  catalogIntegration:
+    publishDatasets: false
+knowledgeMart:
+  llmSettings: {}
+fileBasedKnowledgeMart:
+  llmSettings: {}

@@ -1,0 +1,6 @@
+properties:
+  id: dim_item-gkdq
+  name: dim_Item
+  inputDatasets:
+    - datasetId: dim_item
+      taskId: lnd_nadw-wn_3

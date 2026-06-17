@@ -1,0 +1,6 @@
+properties:
+  id: ech-qcz3
+  name: ECH
+  inputDatasets:
+    - datasetId: ech
+      taskId: lnd_mimixvcoa_us_1-ipic

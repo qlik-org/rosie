@@ -1,0 +1,6 @@
+properties:
+  id: ocusma-qcev
+  name: OCUSMA
+  inputDatasets:
+    - datasetId: ocusma
+      taskId: lnd_m3ce-zmhm

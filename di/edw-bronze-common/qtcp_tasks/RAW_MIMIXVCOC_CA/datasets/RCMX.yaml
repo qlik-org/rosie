@@ -1,0 +1,6 @@
+properties:
+  id: rcmx-jnor
+  name: RCMX
+  inputDatasets:
+    - datasetId: rcmx
+      taskId: lnd_mimixvcoc_ca-9nfq

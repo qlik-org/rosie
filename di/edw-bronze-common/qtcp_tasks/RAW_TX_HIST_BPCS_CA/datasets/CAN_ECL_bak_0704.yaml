@@ -1,0 +1,13 @@
+properties:
+  id: can_ecl_bak_0704-v_ip
+  name: CAN_ECL_bak_0704
+  inputDatasets:
+    - datasetId: can_ecl_bak_0704
+      taskId: lnd_tx_hist_bpcs-cuub
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

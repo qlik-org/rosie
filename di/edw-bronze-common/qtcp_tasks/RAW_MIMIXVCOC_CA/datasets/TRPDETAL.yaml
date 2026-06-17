@@ -1,0 +1,6 @@
+properties:
+  id: trpdetal-jno1
+  name: TRPDETAL
+  inputDatasets:
+    - datasetId: trpdetal
+      taskId: lnd_mimixvcoc_ca-9nfq

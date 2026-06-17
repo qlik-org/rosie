@@ -1,0 +1,6 @@
+properties:
+  id: sizegroupreference-djvd
+  name: SizeGroupReference
+  inputDatasets:
+    - datasetId: sizegroupreference
+      taskId: lnd_mdm_syndigo-djvt

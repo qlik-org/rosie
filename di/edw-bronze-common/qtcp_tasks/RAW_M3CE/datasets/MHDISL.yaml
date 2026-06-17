@@ -1,0 +1,6 @@
+properties:
+  id: mhdisl-qcew
+  name: MHDISL
+  inputDatasets:
+    - datasetId: mhdisl
+      taskId: lnd_m3ce-zmhm

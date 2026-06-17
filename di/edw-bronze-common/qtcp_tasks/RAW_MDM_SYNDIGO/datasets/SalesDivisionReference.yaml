@@ -1,0 +1,6 @@
+properties:
+  id: salesdivisionreference-djvb
+  name: SalesDivisionReference
+  inputDatasets:
+    - datasetId: salesdivisionreference
+      taskId: lnd_mdm_syndigo-djvt

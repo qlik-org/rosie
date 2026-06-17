@@ -1,0 +1,6 @@
+properties:
+  id: suppliers--nk8
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing--nky

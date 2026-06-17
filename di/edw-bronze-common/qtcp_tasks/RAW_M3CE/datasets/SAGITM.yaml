@@ -1,0 +1,6 @@
+properties:
+  id: sagitm-qce9
+  name: SAGITM
+  inputDatasets:
+    - datasetId: sagitm
+      taskId: lnd_m3ce-zmhm

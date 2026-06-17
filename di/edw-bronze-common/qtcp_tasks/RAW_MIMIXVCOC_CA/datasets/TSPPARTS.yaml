@@ -1,0 +1,6 @@
+properties:
+  id: tspparts-jno6
+  name: TSPPARTS
+  inputDatasets:
+    - datasetId: tspparts
+      taskId: lnd_mimixvcoc_ca-9nfq

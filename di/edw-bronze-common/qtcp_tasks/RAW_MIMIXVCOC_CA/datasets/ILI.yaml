@@ -1,0 +1,6 @@
+properties:
+  id: ili-jnou
+  name: ILI
+  inputDatasets:
+    - datasetId: ili
+      taskId: lnd_mimixvcoc_ca-9nfq

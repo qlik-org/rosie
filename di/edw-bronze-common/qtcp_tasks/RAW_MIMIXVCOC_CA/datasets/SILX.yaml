@@ -1,0 +1,6 @@
+properties:
+  id: silx-jnox
+  name: SILX
+  inputDatasets:
+    - datasetId: silx
+      taskId: lnd_mimixvcoc_ca-9nfq

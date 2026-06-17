@@ -1,0 +1,13 @@
+properties:
+  id: current_currency_rates-1n5x
+  name: CURRENT_CURRENCY_RATES
+  inputDatasets:
+    - datasetId: current_currency_rates
+      taskId: lnd_currency_rates-1n5u
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: CRATEPK
+      newColumnName: CRATEPK
+      primaryKeyOrdinal: 1
+      nullable: false

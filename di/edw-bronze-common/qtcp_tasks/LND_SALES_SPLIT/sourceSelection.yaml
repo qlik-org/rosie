@@ -1,0 +1,14 @@
+sourceConnection: '{{task.lnd_sales_split-te6g.sourceConnection}}'
+explicitlySelected:
+  - name: InvoiceChargeSplitResult
+    type: TABLE
+  - name: InvoiceLinesSplitResult
+    type: TABLE
+  - name: MarketStructure
+    type: TABLE
+  - name: OrderChargeSplitResult
+    type: TABLE
+  - name: OrderLinesSplitResult
+    type: TABLE
+  - name: SalesTerritoryStructure
+    type: TABLE

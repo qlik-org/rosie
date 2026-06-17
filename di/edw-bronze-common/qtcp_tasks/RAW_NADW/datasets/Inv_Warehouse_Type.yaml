@@ -1,0 +1,6 @@
+properties:
+  id: inv_warehouse_type-27mv
+  name: Inv_Warehouse_Type
+  inputDatasets:
+    - datasetId: inv_warehouse_type
+      taskId: lnd_nadw-wn_3

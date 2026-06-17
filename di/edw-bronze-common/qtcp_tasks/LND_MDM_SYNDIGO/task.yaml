@@ -1,0 +1,18 @@
+properties:
+  name: LND_MDM_SYNDIGO
+  id: lnd_mdm_syndigo-djvt
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_mdm_syndigo-djvt.taskSchema}}'
+      database: '{{task.lnd_mdm_syndigo-djvt.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: DEVELOPMENT_WH

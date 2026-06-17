@@ -1,0 +1,6 @@
+sourceConnection: '{{task.lnd_workday-oeam.sourceConnection}}'
+explicitlySelected:
+  - name: Holiday_Calendar_Calendar_Events
+    type: TABLE
+  - name: Holiday_Calendar_Report_Entry
+    type: TABLE

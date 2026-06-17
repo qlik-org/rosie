@@ -1,0 +1,6 @@
+properties:
+  id: ecl-jnnl
+  name: ECL
+  inputDatasets:
+    - datasetId: ecl
+      taskId: lnd_mimixvcoc_ca-9nfq

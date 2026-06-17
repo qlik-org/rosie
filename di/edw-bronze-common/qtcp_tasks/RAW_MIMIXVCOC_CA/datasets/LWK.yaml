@@ -1,0 +1,6 @@
+properties:
+  id: lwk-jnob
+  name: LWK
+  inputDatasets:
+    - datasetId: lwk
+      taskId: lnd_mimixvcoc_ca-9nfq

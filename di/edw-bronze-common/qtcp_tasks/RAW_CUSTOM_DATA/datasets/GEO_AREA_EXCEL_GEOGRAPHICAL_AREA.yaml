@@ -1,0 +1,13 @@
+properties:
+  id: geo_area_excel_geographical_area-782r
+  name: GEO_AREA_EXCEL_GEOGRAPHICAL_AREA
+  inputDatasets:
+    - datasetId: geo_area_excel_geographical_area
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ROWID
+      newColumnName: ROWID
+      primaryKeyOrdinal: 1
+      nullable: false

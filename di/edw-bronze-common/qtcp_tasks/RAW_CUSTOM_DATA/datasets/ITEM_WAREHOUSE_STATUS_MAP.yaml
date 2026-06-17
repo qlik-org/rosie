@@ -1,0 +1,13 @@
+properties:
+  id: item_warehouse_status_map-r2aa
+  name: ITEM_WAREHOUSE_STATUS_MAP
+  inputDatasets:
+    - datasetId: item_warehouse_status_map
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ITEMWAREHOUSESATUSCODE
+      newColumnName: ITEMWAREHOUSESATUSCODE
+      primaryKeyOrdinal: 1
+      nullable: false

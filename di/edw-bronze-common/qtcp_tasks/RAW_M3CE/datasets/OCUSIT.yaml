@@ -1,0 +1,6 @@
+properties:
+  id: ocusit-qceu
+  name: OCUSIT
+  inputDatasets:
+    - datasetId: ocusit
+      taskId: lnd_m3ce-zmhm

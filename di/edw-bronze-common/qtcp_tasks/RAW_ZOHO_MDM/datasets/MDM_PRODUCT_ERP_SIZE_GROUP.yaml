@@ -1,0 +1,6 @@
+properties:
+  id: mdm_product_erp_size_group-7ptc
+  name: MDM_PRODUCT_ERP_SIZE_GROUP
+  inputDatasets:
+    - datasetId: mdm_product_erp_size_group
+      taskId: lnd_zoho_mdm-7ps1

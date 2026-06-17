@@ -1,0 +1,33 @@
+relationships:
+  - sourceEntity:
+      datasetId: products--nib
+      name: Products
+      taskId: transform_11--ngc
+    targetEntity:
+      datasetId: categories--nia
+      name: Categories
+      taskId: transform_11--ngc
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation--nik
+  - sourceEntity:
+      datasetId: products--nib
+      name: Products
+      taskId: transform_11--ngc
+    targetEntity:
+      datasetId: suppliers--nh_
+      name: Suppliers
+      taskId: transform_11--ngc
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation--nil

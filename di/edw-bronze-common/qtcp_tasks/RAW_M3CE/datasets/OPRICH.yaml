@@ -1,0 +1,6 @@
+properties:
+  id: oprich-unpi
+  name: OPRICH
+  inputDatasets:
+    - datasetId: oprich
+      taskId: lnd_m3ce-zmhm

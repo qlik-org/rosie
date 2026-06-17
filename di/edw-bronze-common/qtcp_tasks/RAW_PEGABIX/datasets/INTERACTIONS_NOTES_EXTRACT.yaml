@@ -1,0 +1,6 @@
+properties:
+  id: interactions_notes_extract-hzph
+  name: INTERACTIONS_NOTES_EXTRACT
+  inputDatasets:
+    - datasetId: interactions_notes_extract
+      taskId: lnd_pegabix-hzpc

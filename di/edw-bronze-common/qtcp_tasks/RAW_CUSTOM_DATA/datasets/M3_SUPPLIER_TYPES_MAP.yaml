@@ -1,0 +1,13 @@
+properties:
+  id: m3_supplier_types_map-s5b5
+  name: M3_SUPPLIER_TYPES_MAP
+  inputDatasets:
+    - datasetId: m3_supplier_types_map
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: KEY
+      newColumnName: KEY
+      primaryKeyOrdinal: 1
+      nullable: false

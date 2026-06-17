@@ -1,0 +1,6 @@
+properties:
+  id: mitare-qcez
+  name: MITARE
+  inputDatasets:
+    - datasetId: mitare
+      taskId: lnd_m3ce-zmhm

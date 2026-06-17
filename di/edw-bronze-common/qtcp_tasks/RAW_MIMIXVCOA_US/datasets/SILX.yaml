@@ -1,0 +1,6 @@
+properties:
+  id: silx-qcbt
+  name: SILX
+  inputDatasets:
+    - datasetId: silx
+      taskId: lnd_mimixvcoa_us_1-ipic

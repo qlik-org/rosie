@@ -1,0 +1,6 @@
+properties:
+  id: aml-jnnn
+  name: AML
+  inputDatasets:
+    - datasetId: aml
+      taskId: lnd_mimixvcoc_ca-9nfq

@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_market_cr-wfdq
+  name: MDM_SALESORG_SALES_MARKET_CR
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_market_cr
+      taskId: lnd_zoho_mdm-7ps1

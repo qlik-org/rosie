@@ -1,0 +1,13 @@
+properties:
+  id: m3_order_stop_map
+  name: M3_ORDER_STOP_MAP
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: KEY
+      newColumnName: KEY
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: M3_ORDER_STOP_MAP

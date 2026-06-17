@@ -1,0 +1,11 @@
+properties:
+  id: email_extract-hzpe
+  name: EMAIL_EXTRACT
+  inputDatasets:
+    - datasetId: email_extract
+      taskId: lnd_pegabix-hzpc
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Email_Private/Public
+      newColumnName: Email_Private_Public

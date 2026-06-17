@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing--nky
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing--nky.taskSchema}}'
+      database: '{{task.onboarding_landing--nky.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,6 @@
+properties:
+  id: ithh-jnoz
+  name: ITHH
+  inputDatasets:
+    - datasetId: ithh
+      taskId: lnd_mimixvcoc_ca-9nfq

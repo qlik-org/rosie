@@ -1,0 +1,6 @@
+properties:
+  id: fso-jnob
+  name: FSO
+  inputDatasets:
+    - datasetId: fso
+      taskId: lnd_mimixvcoc_ca-9nfq

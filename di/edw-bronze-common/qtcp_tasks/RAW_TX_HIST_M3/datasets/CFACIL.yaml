@@ -1,0 +1,13 @@
+properties:
+  id: cfacil-vmqw
+  name: CFACIL
+  inputDatasets:
+    - datasetId: cfacil
+      taskId: lnd_tx_hist_m3-vmqt
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

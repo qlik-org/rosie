@@ -1,0 +1,6 @@
+properties:
+  id: mittty-qcej
+  name: MITTTY
+  inputDatasets:
+    - datasetId: mittty
+      taskId: lnd_m3ce-zmhm

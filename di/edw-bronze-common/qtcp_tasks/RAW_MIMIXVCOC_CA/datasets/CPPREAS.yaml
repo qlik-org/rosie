@@ -1,0 +1,6 @@
+properties:
+  id: cppreas-jnnx
+  name: CPPREAS
+  inputDatasets:
+    - datasetId: cppreas
+      taskId: lnd_mimixvcoc_ca-9nfq

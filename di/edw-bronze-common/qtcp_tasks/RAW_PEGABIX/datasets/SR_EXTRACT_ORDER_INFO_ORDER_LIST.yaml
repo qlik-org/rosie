@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract_order_info_order_list-hzpv
+  name: SR_EXTRACT_ORDER_INFO_ORDER_LIST
+  inputDatasets:
+    - datasetId: sr_extract_order_info_order_list
+      taskId: lnd_pegabix-hzpc

@@ -1,0 +1,6 @@
+properties:
+  id: mchead-qcev
+  name: MCHEAD
+  inputDatasets:
+    - datasetId: mchead
+      taskId: lnd_m3ce-zmhm

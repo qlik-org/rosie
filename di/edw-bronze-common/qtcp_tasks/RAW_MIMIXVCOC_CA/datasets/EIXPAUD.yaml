@@ -1,0 +1,6 @@
+properties:
+  id: eixpaud-jnnw
+  name: EIXPAUD
+  inputDatasets:
+    - datasetId: eixpaud
+      taskId: lnd_mimixvcoc_ca-9nfq

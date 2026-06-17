@@ -1,0 +1,6 @@
+properties:
+  id: categories--nfi
+  name: Categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: onboarding_compare_t1_landing--nel

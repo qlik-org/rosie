@@ -1,0 +1,6 @@
+properties:
+  id: syspcomm-jnoz
+  name: SYSPCOMM
+  inputDatasets:
+    - datasetId: syspcomm
+      taskId: lnd_mimixvcoc_ca-9nfq

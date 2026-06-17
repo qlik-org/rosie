@@ -1,0 +1,6 @@
+properties:
+  id: mdm_erp_contractor-7ps4
+  name: MDM_ERP_CONTRACTOR
+  inputDatasets:
+    - datasetId: mdm_erp_contractor
+      taskId: lnd_zoho_mdm-7ps1

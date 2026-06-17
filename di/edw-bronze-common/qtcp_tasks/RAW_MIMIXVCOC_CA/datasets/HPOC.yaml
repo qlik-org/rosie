@@ -1,0 +1,6 @@
+properties:
+  id: hpoc-jnol
+  name: HPOC
+  inputDatasets:
+    - datasetId: hpoc
+      taskId: lnd_mimixvcoc_ca-9nfq

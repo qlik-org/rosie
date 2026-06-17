@@ -1,0 +1,13 @@
+properties:
+  id: dim_fab_type-gkdp
+  name: dim_Fab_Type
+  inputDatasets:
+    - datasetId: dim_fab_type
+      taskId: lnd_nadw-wn_3
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Fab_Type
+      newColumnName: Fab_Type
+      primaryKeyOrdinal: 1
+      nullable: false

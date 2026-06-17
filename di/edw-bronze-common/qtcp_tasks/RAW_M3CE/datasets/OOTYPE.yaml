@@ -1,0 +1,6 @@
+properties:
+  id: ootype-qce6
+  name: OOTYPE
+  inputDatasets:
+    - datasetId: ootype
+      taskId: lnd_m3ce-zmhm

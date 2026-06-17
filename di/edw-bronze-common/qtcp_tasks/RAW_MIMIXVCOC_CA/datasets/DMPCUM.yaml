@@ -1,0 +1,6 @@
+properties:
+  id: dmpcum-jnnb
+  name: DMPCUM
+  inputDatasets:
+    - datasetId: dmpcum
+      taskId: lnd_mimixvcoc_ca-9nfq

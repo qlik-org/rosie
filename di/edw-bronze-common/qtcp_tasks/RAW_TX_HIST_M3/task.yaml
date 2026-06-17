@@ -1,0 +1,13 @@
+properties:
+  name: RAW_TX_HIST_M3
+  id: raw_tx_hist_m3-vmqu
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_m3-vmqu.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_m3-vmqu.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_m3-vmqu.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_m3-vmqu.warehouseName}}'

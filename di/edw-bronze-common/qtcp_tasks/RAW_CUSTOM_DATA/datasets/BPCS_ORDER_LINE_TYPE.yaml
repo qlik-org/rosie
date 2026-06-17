@@ -1,0 +1,6 @@
+properties:
+  id: bpcs_order_line_type-hywa
+  name: BPCS_ORDER_LINE_TYPE
+  inputDatasets:
+    - datasetId: bpcs_order_line_type
+      taskId: lnd_custom_data-gqwk

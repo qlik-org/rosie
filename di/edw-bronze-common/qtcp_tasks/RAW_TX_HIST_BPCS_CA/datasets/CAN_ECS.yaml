@@ -1,0 +1,6 @@
+properties:
+  id: can_ecs-v_ix
+  name: CAN_ECS
+  inputDatasets:
+    - datasetId: can_ecs
+      taskId: lnd_tx_hist_bpcs-cuub

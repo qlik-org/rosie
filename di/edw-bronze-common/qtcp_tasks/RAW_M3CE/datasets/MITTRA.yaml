@@ -1,0 +1,6 @@
+properties:
+  id: mittra-qcei
+  name: MITTRA
+  inputDatasets:
+    - datasetId: mittra
+      taskId: lnd_m3ce-zmhm

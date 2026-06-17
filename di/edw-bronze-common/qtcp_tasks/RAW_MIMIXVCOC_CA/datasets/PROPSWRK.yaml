@@ -1,0 +1,6 @@
+properties:
+  id: propswrk-jnol
+  name: PROPSWRK
+  inputDatasets:
+    - datasetId: propswrk
+      taskId: lnd_mimixvcoc_ca-9nfq

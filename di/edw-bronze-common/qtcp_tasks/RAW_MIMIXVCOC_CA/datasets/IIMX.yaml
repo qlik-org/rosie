@@ -1,0 +1,6 @@
+properties:
+  id: iimx-jnor
+  name: IIMX
+  inputDatasets:
+    - datasetId: iimx
+      taskId: lnd_mimixvcoc_ca-9nfq

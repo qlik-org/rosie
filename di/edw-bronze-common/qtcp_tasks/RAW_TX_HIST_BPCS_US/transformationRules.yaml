@@ -1,0 +1,13 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    action:
+      renameType: REMOVE_PREFIX
+      value: US_
+    name: Remove US_ prefix
+  - ordinal: 1
+    actionType: RENAME_TABLE
+    action:
+      renameType: ADD_SUFFIX
+      value: _HIST
+    name: add _HIST suffix

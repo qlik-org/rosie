@@ -1,0 +1,13 @@
+properties:
+  name: RAW_ZOHO_SALES_INCENTIVES
+  id: raw_zoho_sales_incentives-3fmn
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_zoho_sales_incentives-3fmn.internalSchema}}'
+    taskSchema: '{{task.raw_zoho_sales_incentives-3fmn.taskSchema}}'
+    databaseName: '{{task.raw_zoho_sales_incentives-3fmn.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_zoho_sales_incentives-3fmn.warehouseName}}'

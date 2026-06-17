@@ -1,0 +1,6 @@
+properties:
+  id: olicha-qce0
+  name: OLICHA
+  inputDatasets:
+    - datasetId: olicha
+      taskId: lnd_m3ce-zmhm

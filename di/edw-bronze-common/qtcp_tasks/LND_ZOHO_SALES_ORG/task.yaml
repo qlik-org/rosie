@@ -1,0 +1,18 @@
+properties:
+  name: LND_ZOHO_SALES_ORG
+  id: lnd_zoho_sales_org-a-cs
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_zoho_sales_org-a-cs.taskSchema}}'
+      database: '{{task.lnd_zoho_sales_org-a-cs.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

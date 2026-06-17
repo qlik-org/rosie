@@ -1,0 +1,6 @@
+properties:
+  id: can_ebopisc-v_if
+  name: CAN_EBOPISC
+  inputDatasets:
+    - datasetId: can_ebopisc
+      taskId: lnd_tx_hist_bpcs-cuub

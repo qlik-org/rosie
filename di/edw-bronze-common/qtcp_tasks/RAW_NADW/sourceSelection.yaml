@@ -1,0 +1,7 @@
+includePatterns:
+  - sourceTask: lnd_nadw-wn_3
+    tablePattern: '%'
+explicitlySelected:
+  - sourceTask: lnd_nadw-wn_3
+    name: dim_CostofGoods_Reference_Warehouse_EXCP
+    sourceTableId: dim_costofgoods_reference_warehouse_excp

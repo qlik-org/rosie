@@ -1,0 +1,3 @@
+includePatterns:
+  - sourceTask: lnd_mimixvcoa_us_1-ipic
+    tablePattern: '%'

@@ -1,0 +1,6 @@
+properties:
+  id: orderlinessplitresult-te6u
+  name: OrderLinesSplitResult
+  inputDatasets:
+    - datasetId: orderlinessplitresult
+      taskId: lnd_sales_split-te6g

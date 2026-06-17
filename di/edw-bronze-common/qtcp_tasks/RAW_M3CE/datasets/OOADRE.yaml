@@ -1,0 +1,6 @@
+properties:
+  id: ooadre-znwz
+  name: OOADRE
+  inputDatasets:
+    - datasetId: ooadre
+      taskId: lnd_m3ce-zmhm

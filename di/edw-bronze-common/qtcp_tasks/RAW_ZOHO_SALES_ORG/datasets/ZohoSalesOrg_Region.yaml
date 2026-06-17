@@ -1,0 +1,6 @@
+properties:
+  id: zohosalesorg_region-a-cx
+  name: ZohoSalesOrg_Region
+  inputDatasets:
+    - datasetId: zohosalesorg_region
+      taskId: lnd_zoho_sales_org-a-cs

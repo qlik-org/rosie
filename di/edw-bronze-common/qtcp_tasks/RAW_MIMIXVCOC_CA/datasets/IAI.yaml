@@ -1,0 +1,6 @@
+properties:
+  id: iai-jnom
+  name: IAI
+  inputDatasets:
+    - datasetId: iai
+      taskId: lnd_mimixvcoc_ca-9nfq

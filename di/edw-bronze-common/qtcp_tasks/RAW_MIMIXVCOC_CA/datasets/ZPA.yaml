@@ -1,0 +1,6 @@
+properties:
+  id: zpa-jno8
+  name: ZPA
+  inputDatasets:
+    - datasetId: zpa
+      taskId: lnd_mimixvcoc_ca-9nfq

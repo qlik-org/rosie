@@ -1,0 +1,18 @@
+properties:
+  name: LND_WORKDAY
+  id: lnd_workday-oeam
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_workday-oeam.taskSchema}}'
+      database: '{{task.lnd_workday-oeam.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

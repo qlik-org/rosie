@@ -1,0 +1,211 @@
+properties:
+  id: orders_shippers--nhx
+  name: Orders_Shippers
+  inputDatasets:
+    - datasetId: orders_shippers--ngv
+      name: Orders_Shippers
+      taskId: transform_2--nfw
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Orders_Shippers
+    columns:
+      - name: OrderID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orderid
+        properties:
+          documentMetadata: false
+      - name: CustomerID
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: customerid
+        properties:
+          documentMetadata: false
+      - name: EmployeeID
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: OrderDate
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: orderdate
+        properties:
+          documentMetadata: false
+      - name: RequiredDate
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: requireddate
+        properties:
+          documentMetadata: false
+      - name: ShippedDate
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: shippeddate
+        properties:
+          documentMetadata: false
+      - name: ShipVia
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipvia
+        properties:
+          documentMetadata: false
+      - name: Freight
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalType: NUMBER
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: ShipperID
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipperid
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: orders_shippers--ngv
+        name: Orders_Shippers
+        taskId: transform_2--nfw
+      mappingFields:
+        - columnId: orderid
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnId: customerid
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnId: employeeid
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnId: orderdate
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnId: requireddate
+          expression:
+            expressionStatement: ${RequiredDate}
+            alias:
+              - name: RequiredDate
+                value: RequiredDate
+        - columnId: shippeddate
+          expression:
+            expressionStatement: ${ShippedDate}
+            alias:
+              - name: ShippedDate
+                value: ShippedDate
+        - columnId: shipvia
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnId: freight
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnId: companyname
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnId: phone
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: Phone
+        - columnId: shipperid
+          expression:
+            expressionStatement: ${ShipperID}
+            alias:
+              - name: ShipperID
+                value: ShipperID
+      id: orders_shippers_default_mapping--nhy
+      name: Orders_Shippers_default_mapping
+      description: ''

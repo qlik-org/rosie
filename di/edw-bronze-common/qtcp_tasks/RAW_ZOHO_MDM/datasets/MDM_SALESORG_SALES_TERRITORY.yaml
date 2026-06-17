@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_territory-7ptn
+  name: MDM_SALESORG_SALES_TERRITORY
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_territory
+      taskId: lnd_zoho_mdm-7ps1

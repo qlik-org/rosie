@@ -1,0 +1,24 @@
+sourceConnection: '{{task.lnd_mdm_syndigo-djvt.sourceConnection}}'
+explicitlySelected:
+  - name: CountryGeographicalReference
+    type: TABLE
+  - name: ItemCoreProductTargetLT
+    type: TABLE
+  - name: ItemDiameterClass
+    type: TABLE
+  - name: ItemMasterData
+    type: TABLE
+  - name: MarketingStyle
+    type: TABLE
+  - name: NFSACategory
+    type: TABLE
+  - name: SalesDivisionReference
+    type: TABLE
+  - name: SalesLineReference
+    type: TABLE
+  - name: SizeGroupReference
+    type: TABLE
+  - name: SupplyChainProductCategory
+    type: TABLE
+  - name: SupplyChainProductSubCategory
+    type: TABLE

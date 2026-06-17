@@ -1,0 +1,36 @@
+sourceConnection: '{{task.lnd_custom_data-gqwk.sourceConnection}}'
+explicitlySelected:
+  - name: ENVIRONMENT_CODE
+    type: TABLE
+  - name: M3_SUPPLIER_TYPES_MAP
+    type: TABLE
+  - name: CALENDAR
+    type: TABLE
+  - name: CUTP_FIELD_MAP
+    type: TABLE
+  - name: GEO_AREA_EXCEL_GEOGRAPHICAL_AREA
+    type: TABLE
+  - name: ORDER_TYPE
+    type: TABLE
+  - name: TAX_CHARGE_CODES
+    type: TABLE
+  - name: M3_REGION_DIVISION_MAPPING
+    type: TABLE
+  - name: PRODUCT_MAJOR_GROUP
+    type: TABLE
+  - name: ACQUISITION_CODE_MAP
+    type: TABLE
+  - name: ITEM_WAREHOUSE_STATUS_MAP
+    type: TABLE
+  - name: PLANNING_METHOD_CODE_MAP
+    type: TABLE
+  - name: M3_ORDER_STOP_MAP
+    type: TABLE
+  - name: BPCS_ORDER_LINE_TYPE
+    type: TABLE
+  - name: GLOBE_ITEM_TYPE
+    type: TABLE
+  - name: M3_ORDER_LINE_TYPE
+    type: TABLE
+  - name: M3_MARKET_SPLIT
+    type: TABLE

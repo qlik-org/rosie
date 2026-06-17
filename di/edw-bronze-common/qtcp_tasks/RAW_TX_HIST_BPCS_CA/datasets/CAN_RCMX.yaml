@@ -1,0 +1,6 @@
+properties:
+  id: can_rcmx-v_ix
+  name: CAN_RCMX
+  inputDatasets:
+    - datasetId: can_rcmx
+      taskId: lnd_tx_hist_bpcs-cuub

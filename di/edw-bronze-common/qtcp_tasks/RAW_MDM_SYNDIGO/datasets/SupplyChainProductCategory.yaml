@@ -1,0 +1,6 @@
+properties:
+  id: supplychainproductcategory-djve
+  name: SupplyChainProductCategory
+  inputDatasets:
+    - datasetId: supplychainproductcategory
+      taskId: lnd_mdm_syndigo-djvt

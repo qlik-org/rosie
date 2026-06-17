@@ -1,0 +1,6 @@
+properties:
+  id: aty-9nfv
+  name: ATY
+  inputDatasets:
+    - datasetId: aty
+      taskId: lnd_mimixvcoc_ca-9nfq

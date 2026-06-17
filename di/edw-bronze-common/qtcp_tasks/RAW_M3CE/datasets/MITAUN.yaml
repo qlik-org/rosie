@@ -1,0 +1,6 @@
+properties:
+  id: mitaun-qcea
+  name: MITAUN
+  inputDatasets:
+    - datasetId: mitaun
+      taskId: lnd_m3ce-zmhm

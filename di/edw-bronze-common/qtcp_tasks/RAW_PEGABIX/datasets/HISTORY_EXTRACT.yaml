@@ -1,0 +1,6 @@
+properties:
+  id: history_extract-hzpf
+  name: HISTORY_EXTRACT
+  inputDatasets:
+    - datasetId: history_extract
+      taskId: lnd_pegabix-hzpc

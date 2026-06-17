@@ -1,0 +1,18 @@
+properties:
+  name: LND_TX_HIST_ZOHO_MDM
+  id: lnd_tx_hist_zoho_mdm-w-ri
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_tx_hist_zoho_mdm-w-ri.taskSchema}}'
+      database: '{{task.lnd_tx_hist_zoho_mdm-w-ri.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

@@ -1,0 +1,6 @@
+properties:
+  id: can_zpa-v_i2
+  name: CAN_ZPA
+  inputDatasets:
+    - datasetId: can_zpa
+      taskId: lnd_tx_hist_bpcs-cuub

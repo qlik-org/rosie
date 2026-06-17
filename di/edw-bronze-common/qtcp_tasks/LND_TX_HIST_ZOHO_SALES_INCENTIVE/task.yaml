@@ -1,0 +1,18 @@
+properties:
+  name: LND_TX_HIST_ZOHO_SALES_INCENTIVE
+  id: lnd_tx_hist_zoho_sales_incentive-v_km
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_tx_hist_zoho_sales_incentive-v_km.taskSchema}}'
+      database: '{{task.lnd_tx_hist_zoho_sales_incentive-v_km.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

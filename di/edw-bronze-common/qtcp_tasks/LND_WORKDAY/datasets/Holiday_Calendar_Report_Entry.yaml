@@ -1,0 +1,13 @@
+properties:
+  id: holiday_calendar_report_entry
+  name: Holiday_Calendar_Report_Entry
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: id
+      newColumnName: id
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: Holiday_Calendar_Report_Entry

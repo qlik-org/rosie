@@ -1,0 +1,13 @@
+properties:
+  name: RAW_TX_HIST_ZOHO_MDM
+  id: raw_tx_hist_zoho_mdm-w-rj
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_zoho_mdm-w-rj.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_zoho_mdm-w-rj.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_zoho_mdm-w-rj.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_zoho_mdm-w-rj.warehouseName}}'

@@ -1,0 +1,6 @@
+properties:
+  id: products--nk6
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing--nky

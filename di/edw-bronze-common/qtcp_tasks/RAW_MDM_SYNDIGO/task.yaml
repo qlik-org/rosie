@@ -1,0 +1,12 @@
+properties:
+  name: RAW_MDM_SYNDIGO
+  id: raw_mdm_syndigo-djvu
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_mdm_syndigo-djvu.internalSchema}}'
+    taskSchema: '{{task.raw_mdm_syndigo-djvu.taskSchema}}'
+    databaseName: '{{task.raw_mdm_syndigo-djvu.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_mdm_syndigo-djvu.warehouseName}}'

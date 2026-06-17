@@ -1,0 +1,6 @@
+properties:
+  id: oexfee-qcex
+  name: OEXFEE
+  inputDatasets:
+    - datasetId: oexfee
+      taskId: lnd_m3ce-zmhm

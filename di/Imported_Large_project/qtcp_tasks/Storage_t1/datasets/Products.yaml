@@ -1,0 +1,6 @@
+properties:
+  id: products--ne5
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing--nea

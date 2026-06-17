@@ -1,0 +1,12 @@
+properties:
+  name: RAW_TX_HIST_BPCS_CANAM2k
+  id: raw_tx_hist_bpcs_canam2k-uva5
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_bpcs_canam2k-uva5.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_bpcs_canam2k-uva5.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_bpcs_canam2k-uva5.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_bpcs_canam2k-uva5.warehouseName}}'

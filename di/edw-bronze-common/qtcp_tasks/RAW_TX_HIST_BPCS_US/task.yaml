@@ -1,0 +1,12 @@
+properties:
+  name: RAW_TX_HIST_BPCS_US
+  id: raw_tx_hist_bpcs_us-ukyy
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_tx_hist_bpcs_us-ukyy.internalSchema}}'
+    taskSchema: '{{task.raw_tx_hist_bpcs_us-ukyy.taskSchema}}'
+    databaseName: '{{task.raw_tx_hist_bpcs_us-ukyy.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_tx_hist_bpcs_us-ukyy.warehouseName}}'

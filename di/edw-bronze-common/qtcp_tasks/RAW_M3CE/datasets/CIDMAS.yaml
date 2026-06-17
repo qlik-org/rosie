@@ -1,0 +1,6 @@
+properties:
+  id: cidmas-zmho
+  name: CIDMAS
+  inputDatasets:
+    - datasetId: cidmas
+      taskId: lnd_m3ce-zmhm

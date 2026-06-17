@@ -1,0 +1,6 @@
+properties:
+  id: customers-l5fk
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: registered_data_cdc-l5fh

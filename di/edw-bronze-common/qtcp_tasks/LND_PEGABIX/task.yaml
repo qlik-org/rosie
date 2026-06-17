@@ -1,0 +1,18 @@
+properties:
+  name: LND_PEGABIX
+  id: lnd_pegabix-hzpc
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_pegabix-hzpc.taskSchema}}'
+      database: '{{task.lnd_pegabix-hzpc.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

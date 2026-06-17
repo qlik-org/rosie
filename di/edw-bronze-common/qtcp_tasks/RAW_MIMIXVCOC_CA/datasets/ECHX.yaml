@@ -1,0 +1,6 @@
+properties:
+  id: echx-jnni
+  name: ECHX
+  inputDatasets:
+    - datasetId: echx
+      taskId: lnd_mimixvcoc_ca-9nfq

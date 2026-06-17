@@ -1,0 +1,12 @@
+properties:
+  name: RAW_MIMIXVCOC_CA
+  id: raw_mimixvcoc_ca-9nfr
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_mimixvcoc_ca-9nfr.internalSchema}}'
+    taskSchema: '{{task.raw_mimixvcoc_ca-9nfr.taskSchema}}'
+    databaseName: '{{task.raw_mimixvcoc_ca-9nfr.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_mimixvcoc_ca-9nfr.warehouseName}}'

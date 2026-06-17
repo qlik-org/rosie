@@ -1,0 +1,6 @@
+properties:
+  id: exw-jnn5
+  name: EXW
+  inputDatasets:
+    - datasetId: exw
+      taskId: lnd_mimixvcoc_ca-9nfq

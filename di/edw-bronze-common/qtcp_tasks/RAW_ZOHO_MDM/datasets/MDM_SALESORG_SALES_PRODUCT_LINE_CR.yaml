@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_sales_product_line_cr-7ptl
+  name: MDM_SALESORG_SALES_PRODUCT_LINE_CR
+  inputDatasets:
+    - datasetId: mdm_salesorg_sales_product_line_cr
+      taskId: lnd_zoho_mdm-7ps1

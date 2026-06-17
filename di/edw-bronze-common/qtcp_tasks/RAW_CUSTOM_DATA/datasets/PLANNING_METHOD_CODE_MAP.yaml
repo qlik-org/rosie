@@ -1,0 +1,13 @@
+properties:
+  id: planning_method_code_map-r2ab
+  name: PLANNING_METHOD_CODE_MAP
+  inputDatasets:
+    - datasetId: planning_method_code_map
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: PLANNINGMETHODCODE
+      newColumnName: PLANNINGMETHODCODE
+      primaryKeyOrdinal: 1
+      nullable: false

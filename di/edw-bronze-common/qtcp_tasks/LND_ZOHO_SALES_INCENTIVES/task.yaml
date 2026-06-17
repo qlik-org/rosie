@@ -1,0 +1,18 @@
+properties:
+  name: LND_ZOHO_SALES_INCENTIVES
+  id: lnd_zoho_sales_incentives-3fmm
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_zoho_sales_incentives-3fmm.taskSchema}}'
+      database: '{{task.lnd_zoho_sales_incentives-3fmm.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

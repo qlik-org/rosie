@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract_primary_sales_team-hzpb
+  name: SR_EXTRACT_PRIMARY_SALES_TEAM
+  inputDatasets:
+    - datasetId: sr_extract_primary_sales_team
+      taskId: lnd_pegabix-hzpc

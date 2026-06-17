@@ -1,0 +1,7 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    action:
+      renameType: REMOVE_SUFFIX
+      value: _json
+    name: Remove _json suffix

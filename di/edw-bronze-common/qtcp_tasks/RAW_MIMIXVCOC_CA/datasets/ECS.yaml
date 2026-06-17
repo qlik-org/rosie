@@ -1,0 +1,6 @@
+properties:
+  id: ecs-jnns
+  name: ECS
+  inputDatasets:
+    - datasetId: ecs
+      taskId: lnd_mimixvcoc_ca-9nfq

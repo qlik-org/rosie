@@ -1,0 +1,6 @@
+properties:
+  id: frt-jnoa
+  name: FRT
+  inputDatasets:
+    - datasetId: frt
+      taskId: lnd_mimixvcoc_ca-9nfq

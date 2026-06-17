@@ -1,0 +1,14 @@
+properties:
+  name: Onboarding_compare_t1_Storage
+  id: onboarding_compare_t1_storage--nem
+  type: STORAGE
+settings:
+  artifactsSettings:
+    historyEnabled: false
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_compare_t1_storage--nem.internalSchema}}'
+    taskSchema: '{{task.onboarding_compare_t1_storage--nem.taskSchema}}'
+    databaseName: '{{task.onboarding_compare_t1_storage--nem.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_compare_t1_storage--nem.warehouseName}}'

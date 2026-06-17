@@ -1,0 +1,13 @@
+properties:
+  name: RAW_ZOHO_SCAR
+  id: raw_zoho_scar-0gu0
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.raw_zoho_scar-0gu0.internalSchema}}'
+    taskSchema: '{{task.raw_zoho_scar-0gu0.taskSchema}}'
+    databaseName: '{{task.raw_zoho_scar-0gu0.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_zoho_scar-0gu0.warehouseName}}'

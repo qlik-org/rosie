@@ -1,0 +1,6 @@
+properties:
+  id: ecsx-jnnu
+  name: ECSX
+  inputDatasets:
+    - datasetId: ecsx
+      taskId: lnd_mimixvcoc_ca-9nfq

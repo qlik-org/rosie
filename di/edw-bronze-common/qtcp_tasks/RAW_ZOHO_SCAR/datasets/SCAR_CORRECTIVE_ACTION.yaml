@@ -1,0 +1,6 @@
+properties:
+  id: scar_corrective_action-0gu1
+  name: SCAR_CORRECTIVE_ACTION
+  inputDatasets:
+    - datasetId: scar_corrective_action
+      taskId: lnd_zoho_scar-0guz

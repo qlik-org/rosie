@@ -1,0 +1,6 @@
+properties:
+  id: us_invregmt-uvan
+  name: US_INVREGMT
+  inputDatasets:
+    - datasetId: us_invregmt
+      taskId: lnd_tx_hist_bpcs-cuub

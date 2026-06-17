@@ -1,0 +1,6 @@
+properties:
+  id: fchacc-qces
+  name: FCHACC
+  inputDatasets:
+    - datasetId: fchacc
+      taskId: lnd_m3ce-zmhm

@@ -1,0 +1,6 @@
+properties:
+  id: can_estx-v_ie
+  name: CAN_ESTX
+  inputDatasets:
+    - datasetId: can_estx
+      taskId: lnd_tx_hist_bpcs-cuub

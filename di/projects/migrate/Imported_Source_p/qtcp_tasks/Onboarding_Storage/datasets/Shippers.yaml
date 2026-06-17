@@ -1,0 +1,6 @@
+properties:
+  id: shippers--nk7
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: onboarding_landing--nky

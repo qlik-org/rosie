@@ -1,0 +1,13 @@
+properties:
+  id: orderheaderext2-boaj
+  name: OrderHeaderExt2
+  inputDatasets:
+    - datasetId: orderheaderext2
+      taskId: lnd_tx_hist_dsa-boah
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

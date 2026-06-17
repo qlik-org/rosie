@@ -1,0 +1,6 @@
+properties:
+  id: interactions_py_user_data_extract-hzpi
+  name: INTERACTIONS_PY_USER_DATA_EXTRACT
+  inputDatasets:
+    - datasetId: interactions_py_user_data_extract
+      taskId: lnd_pegabix-hzpc

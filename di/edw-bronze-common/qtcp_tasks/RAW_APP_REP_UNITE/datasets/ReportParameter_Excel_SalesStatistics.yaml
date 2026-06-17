@@ -1,0 +1,6 @@
+properties:
+  id: reportparameter_excel_salesstatistics-9qzo
+  name: ReportParameter_Excel_SalesStatistics
+  inputDatasets:
+    - datasetId: reportparameter_excel_salesstatistics
+      taskId: lnd_app_rep_unite-9qzg

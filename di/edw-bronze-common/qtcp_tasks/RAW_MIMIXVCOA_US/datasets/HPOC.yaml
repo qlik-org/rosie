@@ -1,0 +1,6 @@
+properties:
+  id: hpoc-qcam
+  name: HPOC
+  inputDatasets:
+    - datasetId: hpoc
+      taskId: lnd_mimixvcoa_us_1-ipic

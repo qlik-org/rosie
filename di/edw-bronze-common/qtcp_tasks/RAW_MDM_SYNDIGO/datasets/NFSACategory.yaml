@@ -1,0 +1,6 @@
+properties:
+  id: nfsacategory-djva
+  name: NFSACategory
+  inputDatasets:
+    - datasetId: nfsacategory
+      taskId: lnd_mdm_syndigo-djvt

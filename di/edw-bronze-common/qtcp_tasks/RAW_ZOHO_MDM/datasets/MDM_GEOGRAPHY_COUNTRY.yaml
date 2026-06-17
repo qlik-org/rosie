@@ -1,0 +1,6 @@
+properties:
+  id: mdm_geography_country-7ps5
+  name: MDM_GEOGRAPHY_COUNTRY
+  inputDatasets:
+    - datasetId: mdm_geography_country
+      taskId: lnd_zoho_mdm-7ps1

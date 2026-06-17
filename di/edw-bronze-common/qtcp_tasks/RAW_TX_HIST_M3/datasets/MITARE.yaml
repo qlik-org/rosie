@@ -1,0 +1,13 @@
+properties:
+  id: mitare-1bud
+  name: MITARE
+  inputDatasets:
+    - datasetId: mitare
+      taskId: lnd_tx_hist_m3-vmqt
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_Id
+      newColumnName: DW_Id
+      primaryKeyOrdinal: 1
+      nullable: false

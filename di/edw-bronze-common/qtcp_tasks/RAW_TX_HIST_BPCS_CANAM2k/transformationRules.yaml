@@ -1,0 +1,7 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    action:
+      renameType: ADD_SUFFIX
+      value: _HIST
+    name: add _HIST suffix

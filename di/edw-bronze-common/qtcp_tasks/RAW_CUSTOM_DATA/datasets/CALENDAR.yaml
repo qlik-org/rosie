@@ -1,0 +1,13 @@
+properties:
+  id: calendar-kybf
+  name: CALENDAR
+  inputDatasets:
+    - datasetId: calendar
+      taskId: lnd_custom_data-gqwk
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: DW_ID
+      newColumnName: DW_ID
+      primaryKeyOrdinal: 1
+      nullable: false

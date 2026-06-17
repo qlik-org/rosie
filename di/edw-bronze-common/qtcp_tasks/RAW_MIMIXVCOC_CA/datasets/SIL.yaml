@@ -1,0 +1,6 @@
+properties:
+  id: sil-jnow
+  name: SIL
+  inputDatasets:
+    - datasetId: sil
+      taskId: lnd_mimixvcoc_ca-9nfq

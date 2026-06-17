@@ -1,0 +1,13 @@
+properties:
+  id: inv_warehouse_type
+  name: Inv_Warehouse_Type
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: ID
+      newColumnName: ID
+      primaryKeyOrdinal: 1
+      nullable: false
+sourceTable:
+  type: TABLE
+  name: Inv_Warehouse_Type

@@ -1,0 +1,18 @@
+properties:
+  name: LND_APP_REP_UNITE
+  id: lnd_app_rep_unite-9qzg
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_app_rep_unite-9qzg.taskSchema}}'
+      database: '{{task.lnd_app_rep_unite-9qzg.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: LOAD_WH

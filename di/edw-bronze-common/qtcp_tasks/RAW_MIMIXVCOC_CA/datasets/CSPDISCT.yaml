@@ -1,0 +1,6 @@
+properties:
+  id: cspdisct-jnnz
+  name: CSPDISCT
+  inputDatasets:
+    - datasetId: cspdisct
+      taskId: lnd_mimixvcoc_ca-9nfq

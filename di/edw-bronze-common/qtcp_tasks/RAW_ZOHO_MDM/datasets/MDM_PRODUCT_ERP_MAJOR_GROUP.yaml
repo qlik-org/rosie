@@ -1,0 +1,6 @@
+properties:
+  id: mdm_product_erp_major_group-7ps_
+  name: MDM_PRODUCT_ERP_MAJOR_GROUP
+  inputDatasets:
+    - datasetId: mdm_product_erp_major_group
+      taskId: lnd_zoho_mdm-7ps1

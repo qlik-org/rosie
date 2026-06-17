@@ -1,0 +1,6 @@
+properties:
+  id: mdm_salesorg_global_grouping-7ptg
+  name: MDM_SALESORG_GLOBAL_GROUPING
+  inputDatasets:
+    - datasetId: mdm_salesorg_global_grouping
+      taskId: lnd_zoho_mdm-7ps1

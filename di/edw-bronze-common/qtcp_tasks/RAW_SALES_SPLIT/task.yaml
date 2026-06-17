@@ -1,0 +1,12 @@
+properties:
+  name: RAW_SALES_SPLIT
+  id: raw_sales_split-te6h
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.raw_sales_split-te6h.internalSchema}}'
+    taskSchema: '{{task.raw_sales_split-te6h.taskSchema}}'
+    databaseName: '{{task.raw_sales_split-te6h.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.raw_sales_split-te6h.warehouseName}}'

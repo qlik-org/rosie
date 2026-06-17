@@ -1,0 +1,6 @@
+properties:
+  id: osbstd-qce7
+  name: OSBSTD
+  inputDatasets:
+    - datasetId: osbstd
+      taskId: lnd_m3ce-zmhm

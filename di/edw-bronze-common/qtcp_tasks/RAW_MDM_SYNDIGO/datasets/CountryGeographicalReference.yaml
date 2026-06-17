@@ -1,0 +1,6 @@
+properties:
+  id: countrygeographicalreference-djvv
+  name: CountryGeographicalReference
+  inputDatasets:
+    - datasetId: countrygeographicalreference
+      taskId: lnd_mdm_syndigo-djvt

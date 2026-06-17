@@ -1,0 +1,6 @@
+properties:
+  id: scar_receipt_of_tool-0gu4
+  name: SCAR_RECEIPT_OF_TOOL
+  inputDatasets:
+    - datasetId: scar_receipt_of_tool
+      taskId: lnd_zoho_scar-0guz

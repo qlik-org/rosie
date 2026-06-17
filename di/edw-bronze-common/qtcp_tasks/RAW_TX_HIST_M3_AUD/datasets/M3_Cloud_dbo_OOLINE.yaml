@@ -1,0 +1,6 @@
+properties:
+  id: m3_cloud_dbo_ooline-kahy
+  name: M3_Cloud_dbo_OOLINE
+  inputDatasets:
+    - datasetId: m3_cloud_dbo_ooline
+      taskId: lnd_tx_hist_m3_aud-kahu

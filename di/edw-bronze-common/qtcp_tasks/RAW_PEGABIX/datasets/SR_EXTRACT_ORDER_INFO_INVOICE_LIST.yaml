@@ -1,0 +1,6 @@
+properties:
+  id: sr_extract_order_info_invoice_list-hzpr
+  name: SR_EXTRACT_ORDER_INFO_INVOICE_LIST
+  inputDatasets:
+    - datasetId: sr_extract_order_info_invoice_list
+      taskId: lnd_pegabix-hzpc

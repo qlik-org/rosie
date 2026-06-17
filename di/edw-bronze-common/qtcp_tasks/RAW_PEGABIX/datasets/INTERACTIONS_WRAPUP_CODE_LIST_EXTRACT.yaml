@@ -1,0 +1,6 @@
+properties:
+  id: interactions_wrapup_code_list_extract-hzpj
+  name: INTERACTIONS_WRAPUP_CODE_LIST_EXTRACT
+  inputDatasets:
+    - datasetId: interactions_wrapup_code_list_extract
+      taskId: lnd_pegabix-hzpc

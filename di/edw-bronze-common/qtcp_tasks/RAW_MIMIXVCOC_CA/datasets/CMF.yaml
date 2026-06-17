@@ -1,0 +1,6 @@
+properties:
+  id: cmf-9nfb
+  name: CMF
+  inputDatasets:
+    - datasetId: cmf
+      taskId: lnd_mimixvcoc_ca-9nfq

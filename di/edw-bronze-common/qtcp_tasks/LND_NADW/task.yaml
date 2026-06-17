@@ -1,0 +1,18 @@
+properties:
+  name: LND_NADW
+  id: lnd_nadw-wn_3
+  type: LANDING
+settings:
+  errorHandling:
+    environmental:
+      maximumRetrySettings:
+        maximumRetry: ALWAYS
+        count: 0
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.lnd_nadw-wn_3.taskSchema}}'
+      database: '{{task.lnd_nadw-wn_3.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60
+    workloadExecutionEngine:
+      name: JAKE_QCDI_WH

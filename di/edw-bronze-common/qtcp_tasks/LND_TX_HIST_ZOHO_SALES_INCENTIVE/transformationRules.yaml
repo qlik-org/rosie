@@ -1,0 +1,16 @@
+rules:
+  - ordinal: 0
+    actionType: RENAME_TABLE
+    scopeType: TABLE
+    action:
+      renameType: REMOVE_SUFFIX
+      value: _json
+    name: Remove _json suffix
+  - ordinal: 1
+    actionType: RENAME_TABLE
+    scope:
+      whereTableName: Sales_Hierarchy_Lvl%
+    action:
+      renameType: RENAME
+      value: Sales_Hierarchy_Level
+    name: Lvl to Level

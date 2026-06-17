@@ -1,0 +1,33 @@
+explicitlySelected:
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Order Details
+    sourceTableId: order_details--nk_
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Products
+    sourceTableId: products--nlb
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Suppliers
+    sourceTableId: suppliers--nld
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Categories
+    sourceTableId: categories--nlf
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Shippers
+    sourceTableId: shippers--nlh
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Employees
+    sourceTableId: employees--nlj
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Customers
+    sourceTableId: customers--nll
+  - sourceProject: '{{project.Migration$_$Source_p_for_cross.projectId}}'
+    sourceTask: transform--nk9
+    name: Orders
+    sourceTableId: orders--nln

@@ -1,0 +1,6 @@
+properties:
+  id: amh-jnnm
+  name: AMH
+  inputDatasets:
+    - datasetId: amh
+      taskId: lnd_mimixvcoc_ca-9nfq

@@ -1,0 +1,6 @@
+properties:
+  id: iimxx-jnos
+  name: IIMXX
+  inputDatasets:
+    - datasetId: iimxx
+      taskId: lnd_mimixvcoc_ca-9nfq
