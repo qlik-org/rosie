@@ -1,0 +1,13 @@
+{
+  "includePatterns": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "onboarding_soure_landing-l5kd",
+      "tablePattern": "%",
+      "schemaPattern": "%",
+      "type": "TABLE"
+    }
+  ],
+  "excludePatterns": [],
+  "explicitlySelected": []
+}
