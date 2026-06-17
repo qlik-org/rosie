@@ -1,0 +1,14 @@
+properties:
+  name: Replication_Full_Apply
+  id: replication_full_apply--nkp
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication_full_apply--nkp.targetConnection}}'
+    targetStorageConnection: '{{task.replication_full_apply--nkp.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-11T08:10:10.4980000Z

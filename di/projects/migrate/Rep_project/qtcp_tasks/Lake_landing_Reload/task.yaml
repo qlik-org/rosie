@@ -1,0 +1,16 @@
+properties:
+  name: Lake_landing_Reload
+  id: lake_landing_reload--nks
+  type: LAKE_LANDING
+settings:
+  fullLoadOnly: true
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_reload--nks.targetConnection}}'
+  landingStorageSettings:
+    folderLocationType: ROOT_FOLDER
+  changeDataPartitioning:
+    partitionBaseTime: 2026-06-11T00:00:00.0000000Z
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false
