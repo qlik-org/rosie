@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=MINUTELY;INTERVAL=15;BYSECOND=0"
+    ],
+    "startDateTime": "2026-06-17T10:43:47.435Z",
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-l5jl",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}

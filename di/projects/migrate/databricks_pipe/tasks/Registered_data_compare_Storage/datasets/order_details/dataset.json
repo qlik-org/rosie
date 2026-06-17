@@ -1,0 +1,25 @@
+{
+  "id": "order_details-l5jp",
+  "name": "order_details",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "order_details",
+      "name": "order_details",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "registered_data_compare-l5jk"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

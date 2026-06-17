@@ -1,0 +1,36 @@
+{
+  "id": "products_categories-l5ju",
+  "name": "Products_Suppliers",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "suppliers-l5jw",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l5js"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "products-l5jv",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage-l5js"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, Products_Suppliers)}}",
+    "targetId": "101efc67-00d8-4482-9e7a-71442a9de282",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

@@ -1,0 +1,25 @@
+{
+  "sourceConnection": "{{task.landing-l5jg.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "Categories",
+      "schema": "{{task.landing-l5jg:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_categories"
+    },
+    {
+      "name": "Products",
+      "schema": "{{task.landing-l5jg:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_products"
+    },
+    {
+      "name": "Suppliers",
+      "schema": "{{task.landing-l5jg:null$_$dbo.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$dbo_suppliers"
+    }
+  ]
+}
