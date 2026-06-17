@@ -1,0 +1,210 @@
+{
+  "name": "Suppliers",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-l5js"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "4db92e48-ca03-4063-9fae-275443ddecb2",
+        "label": "Suppliers_s",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "309dda95-8223-42c0-8b8a-d30213a8a233",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage-l5js",
+              "entityId": "suppliers-l5jw"
+            },
+            "configuration": {
+              "name": "Suppliers_s"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "a41a4267-3f76-4cbf-91e7-9fbecc375146",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 640,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "0a0baf3d-9721-4537-af02-1358ae4b8018",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Suppliers",
+              "settings": {
+                "materialized": "ON",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "SupplierID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "1789cbc3-044e-4bdb-be0d-f0c23ae205b8",
+        "label": "Filter 1",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "filter-row-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "8216a965-44f9-4176-9ef4-a449a6090653",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "ccd97915-c887-4847-93d6-2b4687570dfb",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "e745069a-8f5d-4a92-972c-8bda8bd3df8e",
+              "type": "REJECT"
+            }
+          ]
+        },
+        "component": {
+          "type": "filter",
+          "label": "Filter",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmlsdGVy",
+            "configuration": {
+              "logicalOpType": "ALL",
+              "filters": [
+                {
+                  "columnName": "SupplierID",
+                  "function": "EMPTY",
+                  "operator": "LOWER",
+                  "compareWith": "VALUE",
+                  "value": "30",
+                  "columnToCompareWith": "",
+                  "$columnName_name": "SupplierID",
+                  "$operator_name": "\u003C"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "a8fa03da-f7b2-4318-8022-ecc67758018d",
+        "sourceHandle": "309dda95-8223-42c0-8b8a-d30213a8a233",
+        "targetHandle": "8216a965-44f9-4176-9ef4-a449a6090653"
+      },
+      {
+        "id": "b025cda9-42f5-4323-9e70-ca755f941ab9",
+        "sourceHandle": "ccd97915-c887-4847-93d6-2b4687570dfb",
+        "targetHandle": "0a0baf3d-9721-4537-af02-1358ae4b8018"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
