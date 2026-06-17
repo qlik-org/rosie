@@ -1,0 +1,14 @@
+sourceConnection: '{{task.onboarding_soure_landing-l5kd.sourceConnection}}'
+explicitlySelected:
+  - name: Employees
+    schema: '{{task.onboarding_soure_landing-l5kd:null$_$dbo.schema}}'
+    type: TABLE
+  - name: EmployeeTerritories
+    schema: '{{task.onboarding_soure_landing-l5kd:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Region
+    schema: '{{task.onboarding_soure_landing-l5kd:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Territories
+    schema: '{{task.onboarding_soure_landing-l5kd:null$_$dbo.schema}}'
+    type: TABLE

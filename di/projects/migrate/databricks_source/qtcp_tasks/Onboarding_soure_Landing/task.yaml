@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_soure_Landing
+  id: onboarding_soure_landing-l5kd
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_soure_landing-l5kd.taskSchema}}'
+      database: '{{task.onboarding_soure_landing-l5kd.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

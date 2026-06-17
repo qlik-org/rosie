@@ -1,0 +1,6 @@
+properties:
+  id: territories-l5kj
+  name: Territories
+  inputDatasets:
+    - datasetId: territories
+      taskId: onboarding_soure_landing-l5kd
