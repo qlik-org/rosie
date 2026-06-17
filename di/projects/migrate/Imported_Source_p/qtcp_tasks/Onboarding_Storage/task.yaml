@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage--nkz
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage--nkz.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage--nkz.taskSchema}}'
+    databaseName: '{{task.onboarding_storage--nkz.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage--nkz.warehouseName}}'
