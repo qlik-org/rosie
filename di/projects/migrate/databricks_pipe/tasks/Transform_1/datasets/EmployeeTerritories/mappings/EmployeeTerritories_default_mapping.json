@@ -1,0 +1,38 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "employeeterritories-l5kh",
+    "name": "EmployeeTerritories",
+    "projectId": "{{project.Migration$_$databricks_source.projectId}}",
+    "taskId": "onboarding_soure_storage-l5ke"
+  },
+  "mappingFields": [
+    {
+      "columnId": "employeeid",
+      "expression": {
+        "expressionStatement": "${EmployeeID}",
+        "alias": [
+          {
+            "name": "EmployeeID",
+            "value": "EmployeeID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "territoryid",
+      "expression": {
+        "expressionStatement": "${TerritoryID}",
+        "alias": [
+          {
+            "name": "TerritoryID",
+            "value": "TerritoryID"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "employeeterritories_default_mapping-l5kd",
+  "name": "EmployeeTerritories_default_mapping",
+  "description": ""
+}

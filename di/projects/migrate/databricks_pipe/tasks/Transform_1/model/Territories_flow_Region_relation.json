@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "territories_flow-l5ko",
+    "name": "Territories_flow",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-l5j5"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "region-l5ks",
+    "name": "Region",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform_1-l5j5"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "RegionID",
+      "targetColumn": "RegionID",
+      "sourceColumnId": "regionid",
+      "targetColumnId": "regionid"
+    }
+  ],
+  "name": "Territories_flow_Region_relation",
+  "description": "",
+  "id": "territories_flow_region_relation-l5kp"
+}

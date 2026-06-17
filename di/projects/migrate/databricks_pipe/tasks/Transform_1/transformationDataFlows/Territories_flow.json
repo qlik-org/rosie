@@ -1,0 +1,165 @@
+{
+  "name": "Territories_flow",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform_1-l5j5"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "39c2c94f-3e00-4e37-9fbb-f285fe4ae89a",
+        "label": "Territories",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "7dafcc22-79a8-4a23-bf94-a3293ff8826f",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{project.Migration$_$databricks_source.projectId}}",
+              "dataAppId": "onboarding_soure_storage-l5ke",
+              "entityId": "territories-l5kj"
+            },
+            "configuration": {
+              "name": "Territories"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "65a7b29c-293e-45f7-9fcb-d61eefd22cca",
+        "label": "Territories_flow",
+        "graphical": {
+          "position": {
+            "x": 640,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "0722c1dc-9d79-49c9-be28-6e24a3876644",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Territories_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "TerritoryID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "TerritoryDescription",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RegionID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "c91ea769-cbeb-4c5c-8a20-056ae5e950d6",
+        "label": "Filter 1",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "filter-row-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "4b955d6c-b583-4f7f-bb87-4da7ee1f936c",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "7f9a7c72-772e-4181-91f0-9a984594b9d3",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "9aa7f897-4a36-47dd-8e25-850f4dcdd1c7",
+              "type": "REJECT"
+            }
+          ]
+        },
+        "component": {
+          "type": "filter",
+          "label": "Filter",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjRmlsdGVy",
+            "configuration": {
+              "logicalOpType": "ALL",
+              "filters": [
+                {
+                  "columnName": "RegionID",
+                  "function": "EMPTY",
+                  "operator": "LOWER_OR_EQUAL",
+                  "compareWith": "VALUE",
+                  "value": "30",
+                  "columnToCompareWith": "",
+                  "$columnName_name": "RegionID",
+                  "$operator_name": "\u003C="
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "309ffc61-18fe-4454-b082-f0676557cb39",
+        "sourceHandle": "7dafcc22-79a8-4a23-bf94-a3293ff8826f",
+        "targetHandle": "4b955d6c-b583-4f7f-bb87-4da7ee1f936c"
+      },
+      {
+        "id": "5b3f9e48-527a-420a-bdbe-2a9dffdb42e6",
+        "sourceHandle": "7f9a7c72-772e-4181-91f0-9a984594b9d3",
+        "targetHandle": "0722c1dc-9d79-49c9-be28-6e24a3876644"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
