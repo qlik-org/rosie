@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-l5js
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-l5js.internalSchema}}'
+    taskSchema: '{{task.storage-l5js.taskSchema}}'
+    databaseName: '{{task.storage-l5js.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-l5js.warehouseName}}'

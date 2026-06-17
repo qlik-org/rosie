@@ -1,0 +1,21 @@
+explicitlySelected:
+  - database: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}'
+    name: customers
+    schema: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}'
+    name: employees
+    schema: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}'
+    name: order_details
+    schema: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}'
+    name: orders
+    schema: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}'
+    type: VIEW
+  - database: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}'
+    name: shippers
+    schema: '{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}'
+    type: VIEW

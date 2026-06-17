@@ -1,0 +1,14 @@
+properties:
+  name: Transform_1
+  id: transform_1-l5j5
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform_1-l5j5.internalSchema}}'
+    taskSchema: '{{task.transform_1-l5j5.taskSchema}}'
+    databaseName: '{{task.transform_1-l5j5.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_1-l5j5.warehouseName}}'

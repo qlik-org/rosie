@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-l5js
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-l5js.internalSchema}}'
+    taskSchema: '{{task.transform-l5js.taskSchema}}'
+    databaseName: '{{task.transform-l5js.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-l5js.warehouseName}}'

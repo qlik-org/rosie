@@ -1,0 +1,65 @@
+relationships:
+  - sourceEntity:
+      datasetId: products_s-l5jw
+      name: Products_s
+      taskId: transform-l5js
+    targetEntity:
+      datasetId: categories_sql-l5jv
+      name: Categories_sql
+      taskId: transform-l5js
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_s_Categories_sql_relation
+    description: ''
+    id: products_s_categories_sql_relation-l5j1
+  - sourceEntity:
+      datasetId: products_s-l5jw
+      name: Products_s
+      taskId: transform-l5js
+    targetEntity:
+      datasetId: suppliers-l5jy
+      name: Suppliers
+      taskId: transform-l5js
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_s_Suppliers_relation
+    description: ''
+    id: products_s_suppliers_relation-l5j2
+  - sourceEntity:
+      datasetId: products_categories-l5ju
+      name: Products_Suppliers
+      taskId: transform-l5js
+    targetEntity:
+      datasetId: categories_sql-l5jv
+      name: Categories_sql
+      taskId: transform-l5js
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Suppliers_Categories_sql_relation
+    description: ''
+    id: products_suppliers_categories_sql_relation-l5j3
+  - sourceEntity:
+      datasetId: products_categories-l5ju
+      name: Products_Suppliers
+      taskId: transform-l5js
+    targetEntity:
+      datasetId: suppliers-l5jy
+      name: Suppliers
+      taskId: transform-l5js
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_Suppliers_relation
+    description: ''
+    id: products_suppliers_suppliers_relation-l5j4

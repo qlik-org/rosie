@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_compare_Storage
+  id: onboarding_compare_storage-l5jk
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_compare_storage-l5jk.internalSchema}}'
+    taskSchema: '{{task.onboarding_compare_storage-l5jk.taskSchema}}'
+    databaseName: '{{task.onboarding_compare_storage-l5jk.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_compare_storage-l5jk.warehouseName}}'
