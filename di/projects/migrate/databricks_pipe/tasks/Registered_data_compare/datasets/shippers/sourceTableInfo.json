@@ -1,0 +1,62 @@
+{
+  "type": "EXTERNAL_TABLE",
+  "id": "$registered_data$databrick_pipe_onboarding_compare_storage_shippers",
+  "name": "databrick_pipe_onboarding_compare_storage_shippers",
+  "tableDef": {
+    "name": "shippers",
+    "dbSchema": "{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.schema}}",
+    "dbName": "{{task.registered_data_compare-l5jk:dis_systests$_$databrick_pipe_onboarding_compare_storage.database}}",
+    "columns": [
+      {
+        "name": "ShipperID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "INT",
+          "originalTypeFull": "INT"
+        },
+        "id": "shipperid",
+        "flags": "NONE"
+      },
+      {
+        "name": "CompanyName",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "companyname",
+        "flags": "NONE"
+      },
+      {
+        "name": "Phone",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 24,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(24)"
+        },
+        "id": "phone",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "products_categories-l5ju",
+    "name": "Products_Suppliers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-l5js"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "categories_sql-l5jv",
+    "name": "Categories_sql",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-l5js"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Suppliers_Categories_sql_relation",
+  "description": "",
+  "id": "products_suppliers_categories_sql_relation-l5j3"
+}
