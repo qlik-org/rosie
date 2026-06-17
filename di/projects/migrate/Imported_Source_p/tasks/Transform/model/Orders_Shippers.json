@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders--nln",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--nk9"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "shippers--nlh",
+    "name": "Shippers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform--nk9"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "ShipVia",
+      "targetColumn": "ShipperID",
+      "sourceColumnId": "shipvia",
+      "targetColumnId": "shipperid"
+    }
+  ],
+  "name": "Orders_Shippers",
+  "description": "",
+  "id": "orders_shippers--nlv"
+}
