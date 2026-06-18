@@ -1,0 +1,11 @@
+sourceConnection: '{{task.landing-l5jg.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.landing-l5jg:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Products
+    schema: '{{task.landing-l5jg:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Suppliers
+    schema: '{{task.landing-l5jg:null$_$dbo.schema}}'
+    type: TABLE

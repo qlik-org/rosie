@@ -1,0 +1,87 @@
+properties:
+  id: employeeterritories-l5k6
+  name: EmployeeTerritories
+  inputDatasets:
+    - datasetId: employeeterritories-l5kv
+      name: EmployeeTerritories
+      taskId: transform_1-l5j5
+    - datasetId: region-l5ks
+      name: Region
+      taskId: transform_1-l5j5
+    - datasetId: territories_flow-l5ko
+      name: Territories_flow
+      taskId: transform_1-l5j5
+    - datasetId: employees-l5kq
+      name: Employees
+      taskId: transform_1-l5j5
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    name: EmployeeTerritories
+    columns:
+      - name: EmployeeID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INT
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: TerritoryID
+        ordinal: 2
+        primaryKeyOrdinal: 2
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: VARCHAR(20)
+        id: territoryid
+        properties:
+          documentMetadata: false
+    entityId: employeeterritories-l5k6
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: employeeterritories-l5kv
+      name: EmployeeTerritories
+      taskId: transform_1-l5j5
+    entityRelationshipPath:
+      - employeeterritories_territories_flow_relation-l5ki$_$territories_flow_region_relation-l5kp
+      - employeeterritories_territories_flow_relation-l5ki
+      - employeeterritories_employees_relation-l5kh
+    factDimension:
+      - name: Employees
+        dimension:
+          type: NONE
+          datasetId: employees-l5k3
+          taskId: data_mart-l5kz
+        dimensionRelationshipPath: employeeterritories_employees_relation-l5kh
+        dimensionRelationshipPathDisplayName: EmployeeTerritories_Employees_relation
+        dimensionRelationshipPathShortName: ''
+      - name: Territories_flow
+        dimension:
+          type: NONE
+          datasetId: territories_flow-l5k4
+          taskId: data_mart-l5kz
+        dimensionRelationshipPath: employeeterritories_territories_flow_relation-l5ki
+        dimensionRelationshipPathDisplayName: EmployeeTerritories_Territories_flow_relation
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: EmployeeID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: TerritoryID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${TerritoryID}
+            alias:
+              - name: TerritoryID
+                value: TerritoryID
+    subtype: MODEL_BASED
+    materializedSource: false

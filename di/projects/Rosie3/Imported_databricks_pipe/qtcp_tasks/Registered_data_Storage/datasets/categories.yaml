@@ -1,0 +1,6 @@
+properties:
+  id: categories-l5jh
+  name: categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: registered_data-l5je

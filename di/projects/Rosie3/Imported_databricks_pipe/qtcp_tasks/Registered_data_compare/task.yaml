@@ -1,0 +1,9 @@
+properties:
+  name: Registered_data_compare
+  id: registered_data_compare-l5jk
+  type: REGISTERED_DATA
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_compare-l5jk.internalSchema}}'
+    taskSchema: '{{task.registered_data_compare-l5jk.taskSchema}}'
+    databaseName: '{{task.registered_data_compare-l5jk.databaseName}}'

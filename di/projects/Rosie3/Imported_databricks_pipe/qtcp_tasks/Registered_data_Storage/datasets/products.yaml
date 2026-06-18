@@ -1,0 +1,6 @@
+properties:
+  id: products-l5ji
+  name: products
+  inputDatasets:
+    - datasetId: products
+      taskId: registered_data-l5je

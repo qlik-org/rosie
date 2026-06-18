@@ -1,0 +1,13 @@
+explicitlySelected:
+  - database: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.database}}'
+    name: categories
+    schema: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.database}}'
+    name: products
+    schema: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.database}}'
+    name: suppliers
+    schema: '{{task.registered_data-l5je:dis_systests$_$hjyt_landing.schema}}'
+    type: TABLE

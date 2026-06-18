@@ -1,0 +1,8 @@
+rules:
+  - actionType: RENAME_TABLE
+    scope:
+      whereTableName: Order Details
+    action:
+      renameType: RENAME
+      value: Order_Details
+    name: Rule

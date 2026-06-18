@@ -1,0 +1,15 @@
+properties:
+  id: products_categories-l5ju
+  name: Products_Suppliers
+  inputDatasets:
+    - datasetId: suppliers-l5jw
+      taskId: storage-l5js
+    - datasetId: products-l5jv
+      taskId: storage-l5js
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Products_Suppliers)}}'
+    targetId: '101efc67-00d8-4482-9e7a-71442a9de282'
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

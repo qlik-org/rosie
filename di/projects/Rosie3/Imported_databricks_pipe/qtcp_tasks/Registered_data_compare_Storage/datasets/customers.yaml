@@ -1,0 +1,6 @@
+properties:
+  id: customers-l5jn
+  name: customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: registered_data_compare-l5jk

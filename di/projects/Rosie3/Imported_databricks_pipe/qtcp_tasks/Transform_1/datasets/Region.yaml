@@ -1,0 +1,55 @@
+properties:
+  id: region-l5ks
+  name: Region
+  inputDatasets:
+    - datasetId: region-l5ki
+      name: Region
+      projectId: '{{project.pipeline_as_code_import_space1$_$Imported_databricks_source.projectId}}'
+      taskId: onboarding_soure_storage-l5ke
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: Region
+    columns:
+      - name: RegionID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INT
+        id: regionid
+        properties:
+          documentMetadata: false
+      - name: RegionDescription
+        ordinal: 2
+        datatype:
+          type: WSTRING
+          length: 50
+          originalTypeFull: VARCHAR(50)
+        id: regiondescription
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: region-l5ki
+        name: Region
+        projectId: '{{project.pipeline_as_code_import_space1$_$Imported_databricks_source.projectId}}'
+        taskId: onboarding_soure_storage-l5ke
+      mappingFields:
+        - columnId: regionid
+          expression:
+            expressionStatement: ${RegionID}
+            alias:
+              - name: RegionID
+                value: RegionID
+        - columnId: regiondescription
+          expression:
+            expressionStatement: ${RegionDescription}
+            alias:
+              - name: RegionDescription
+                value: RegionDescription
+      id: region_default_mapping-l5kc
+      name: Region_default_mapping
+      description: ''

@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-l5kz
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-l5kz.internalSchema}}'
+    taskSchema: '{{task.data_mart-l5kz.taskSchema}}'
+    databaseName: '{{task.data_mart-l5kz.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-l5kz.warehouseName}}'

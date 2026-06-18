@@ -1,0 +1,161 @@
+relationships:
+  - sourceEntity:
+      datasetId: employeeterritories-l5kv
+      name: EmployeeTerritories
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: employees-l5kq
+      name: Employees
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: EmployeeTerritories_Employees_relation
+    description: ''
+    id: employeeterritories_employees_relation-l5kh
+  - sourceEntity:
+      datasetId: employeeterritories-l5kv
+      name: EmployeeTerritories
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: territories_flow-l5ko
+      name: Territories_flow
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: TerritoryID
+        targetColumn: TerritoryID
+        sourceColumnId: territoryid
+        targetColumnId: territoryid
+    name: EmployeeTerritories_Territories_flow_relation
+    description: ''
+    id: employeeterritories_territories_flow_relation-l5ki
+  - sourceEntity:
+      datasetId: order_details-l5kr
+      name: Order_Details
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: orders-l5kt
+      name: Orders
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order_Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-l5kj
+  - sourceEntity:
+      datasetId: order_details-l5kr
+      name: Order_Details
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: products-l5kx
+      name: products
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: ProductID
+        targetColumn: ProductID
+        sourceColumnId: productid
+        targetColumnId: productid
+    name: Order_Details_products_relation
+    description: ''
+    id: order_details_products_relation-l5kk
+  - sourceEntity:
+      datasetId: orders-l5kt
+      name: Orders
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: customers-l5ky
+      name: Customers
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-l5kl
+  - sourceEntity:
+      datasetId: orders-l5kt
+      name: Orders
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: employees-l5kq
+      name: Employees
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-l5km
+  - sourceEntity:
+      datasetId: orders-l5kt
+      name: Orders
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: shippers-l5ka
+      name: Shippers
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-l5kq
+  - sourceEntity:
+      datasetId: territories_flow-l5ko
+      name: Territories_flow
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: region-l5ks
+      name: Region
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: RegionID
+        targetColumn: RegionID
+        sourceColumnId: regionid
+        targetColumnId: regionid
+    name: Territories_flow_Region_relation
+    description: ''
+    id: territories_flow_region_relation-l5kp
+  - sourceEntity:
+      datasetId: products-l5kx
+      name: products
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: categories_sql-l5j7
+      name: categories_sql
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: products_categories_sql_relation
+    description: ''
+    id: products_categories_sql_relation-l5kn
+  - sourceEntity:
+      datasetId: products-l5kx
+      name: products
+      taskId: transform_1-l5j5
+    targetEntity:
+      datasetId: suppliers-l5kp
+      name: suppliers
+      taskId: transform_1-l5j5
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: products_suppliers_relation
+    description: ''
+    id: products_suppliers_relation-l5ko

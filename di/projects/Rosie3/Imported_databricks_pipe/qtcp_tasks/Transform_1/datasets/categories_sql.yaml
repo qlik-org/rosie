@@ -1,0 +1,55 @@
+properties:
+  id: categories_sql-l5j7
+  name: categories_sql
+  inputDatasets:
+    - datasetId: categories-l5jh
+      name: categories
+      taskId: registered_data_storage-l5jf
+  tableDef:
+    name: categories_sql
+    columns:
+      - name: CategoryID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalType: INT
+          originalTypeFull: INT
+        id: categoryid
+      - name: CategoryName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: categoryname
+      - name: Description
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: description
+      - name: Picture
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: picture
+    entityId: categories_sql-l5j7
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${categories}
+      alias:
+        - name: categories
+          value: '{{ref(project.current.projectId)}}$_$registered_data_storage-l5jf$_$categories-l5jh'
+    incremental: false
+mappings:
+  mappings: []

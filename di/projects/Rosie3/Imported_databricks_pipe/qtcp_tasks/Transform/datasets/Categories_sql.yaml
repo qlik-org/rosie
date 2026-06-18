@@ -1,0 +1,56 @@
+properties:
+  id: categories_sql-l5jv
+  name: Categories_sql
+  inputDatasets:
+    - datasetId: categories-l5ju
+      name: Categories_s
+      taskId: storage-l5js
+  datasetAttributes:
+    materialized: ON
+  tableDef:
+    name: Categories_sql
+    columns:
+      - name: CategoryID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalType: INT
+          originalTypeFull: INT
+        id: categoryid
+      - name: CategoryName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: categoryname
+      - name: Description
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: description
+      - name: Picture
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: picture
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Categories_s}
+      alias:
+        - name: Categories_s
+          value: '{{ref(project.current.projectId)}}$_$storage-l5js$_$categories-l5ju'
+    incremental: false
+mappings:
+  mappings: []

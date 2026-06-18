@@ -1,0 +1,6 @@
+rules:
+  - actionType: RENAME_TABLE
+    action:
+      renameType: ADD_SUFFIX
+      value: _s
+    name: Rule

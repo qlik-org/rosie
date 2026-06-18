@@ -1,0 +1,25 @@
+includePatterns:
+  - sourceTask: onboarding_compare_storage-l5jk
+    tablePattern: '%'
+explicitlySelected:
+  - sourceTask: registered_data_storage-l5jf
+    name: categories
+    sourceTableId: categories-l5jh
+  - sourceTask: registered_data_storage-l5jf
+    name: products
+    sourceTableId: products-l5ji
+  - sourceTask: registered_data_storage-l5jf
+    name: suppliers
+    sourceTableId: suppliers-l5jj
+  - sourceProject: '{{project.pipeline_as_code_import_space1$_$Imported_databricks_source.projectId}}'
+    sourceTask: onboarding_soure_storage-l5ke
+    name: EmployeeTerritories
+    sourceTableId: employeeterritories-l5kh
+  - sourceProject: '{{project.pipeline_as_code_import_space1$_$Imported_databricks_source.projectId}}'
+    sourceTask: onboarding_soure_storage-l5ke
+    name: Region
+    sourceTableId: region-l5ki
+  - sourceProject: '{{project.pipeline_as_code_import_space1$_$Imported_databricks_source.projectId}}'
+    sourceTask: onboarding_soure_storage-l5ke
+    name: Territories
+    sourceTableId: territories-l5kj
