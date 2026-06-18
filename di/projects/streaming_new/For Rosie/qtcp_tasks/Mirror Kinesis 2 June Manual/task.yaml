@@ -1,0 +1,19 @@
+properties:
+  name: Mirror Kinesis 2 June Manual
+  id: mirror_kinesis_2_june_manual-f9gg
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_kinesis_2_june_manual-f9gg.internalSchema}}'
+    taskSchema: '{{task.mirror_kinesis_2_june_manual-f9gg.taskSchema}}'
+    databaseName: '{{task.mirror_kinesis_2_june_manual-f9gg.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_kinesis_2_june_manual-f9gg.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_kinesis_2_june_manual-f9gg.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_kinesis_2_june_manual-f9gg.snowflakeOpenCatalog}}'
+      refreshMethod: QLIK_MANAGED_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_kinesis_2_june_manual-f9gg.warehouseName}}'

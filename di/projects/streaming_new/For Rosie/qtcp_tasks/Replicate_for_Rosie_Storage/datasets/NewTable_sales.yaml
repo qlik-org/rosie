@@ -1,0 +1,6 @@
+properties:
+  id: newtable_sales-ikwg
+  name: NewTable_sales
+  inputDatasets:
+    - datasetId: newtable_sales
+      taskId: replicate_for_rosie_replicate_landing-ikwc

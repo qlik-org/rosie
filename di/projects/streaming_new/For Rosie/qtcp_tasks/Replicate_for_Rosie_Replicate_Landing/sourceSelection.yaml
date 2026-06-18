@@ -1,0 +1,15 @@
+sourceConnection: '{{task.replicate_for_rosie_replicate_landing-ikwc.sourceConnection}}'
+externalReplicateRootDirectoryPath: s3://qlik-replicate-poc-upsolver-integration-4nx5dmzywgnm6ayi/angela_replicate3
+explicitlySelected:
+  - outputDatasetName: ANG_Customers1
+    name: ANG_Customers1
+    schema: '{{task.replicate_for_rosie_replicate_landing-ikwc:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: NewTable_sales
+    name: NewTable_sales
+    schema: '{{task.replicate_for_rosie_replicate_landing-ikwc:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: bigsky
+    name: bigsky
+    schema: '{{task.replicate_for_rosie_replicate_landing-ikwc:null$_$testdb.schema}}'
+    type: TABLE

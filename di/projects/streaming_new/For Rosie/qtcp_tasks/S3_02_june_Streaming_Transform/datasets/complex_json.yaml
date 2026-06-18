@@ -1,0 +1,367 @@
+properties:
+  id: complex_json-f9ga
+  name: complex_json
+  inputDatasets:
+    - datasetId: complex_json
+      name: complex_json
+      taskId: s3_02_june_streaming_landing-f9gy
+  tableDef:
+    name: complex_json
+    columns:
+      - name: root_primitive_bool
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: root_primitive_bool
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - root_primitive_bool
+            hash: false
+      - name: root_primitive_long
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: LONG
+        id: root_primitive_long
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - root_primitive_long
+            hash: false
+      - name: root_primitive_double
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: REAL8
+          originalTypeFull: DOUBLE
+        id: root_primitive_double
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - root_primitive_double
+            hash: false
+      - name: root_primitive_string
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: root_primitive_string
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - root_primitive_string
+            hash: false
+      - name: arr_of_structs
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"first_name","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"last_name","dataType":{"clazz":"QlikString","length":2147483647}}]}}'
+          originalTypeFull: ARRAY<STRUCT>
+        id: arr_of_structs
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - arr_of_structs
+            hash: false
+      - name: root_struct2
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"sub_root_struct2","dataType":{"clazz":"Struct","fields":[{"name":"f1","dataType":{"clazz":"Boolean"}},{"name":"f2","dataType":{"clazz":"Boolean"}}]}},{"name":"table","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"white space","dataType":{"clazz":"QlikString","length":2147483647}}]}'
+          originalTypeFull: STRUCT
+        id: root_struct2
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - root_struct2
+            hash: false
+      - name: arr_of_primitives
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"QlikString","length":2147483647}}'
+          originalTypeFull: ARRAY<STRING>
+        id: arr_of_primitives
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - arr_of_primitives
+            hash: false
+      - name: arr_of_arr_of_primitives
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Array","elementType":{"clazz":"Int8"}}}'
+          originalTypeFull: ARRAY<ARRAY<INT8>>
+        id: arr_of_arr_of_primitives
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - arr_of_arr_of_primitives
+            hash: false
+      - name: struct_with_two_arrs
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"arr_nested","dataType":{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"arr_nested1","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"arr_nested2","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"arr_nested3","dataType":{"clazz":"Array","elementType":{"clazz":"Int8"}}}]}}},{"name":"s2","dataType":{"clazz":"Int8"}}]}'
+          originalTypeFull: STRUCT
+        id: struct_with_two_arrs
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - struct_with_two_arrs
+            hash: false
+      - name: arr2_nested
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"arr2_nested1","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"arr2_nested2","dataType":{"clazz":"QlikString","length":2147483647}}]}}}'
+          originalTypeFull: ARRAY<ARRAY<STRUCT>>
+        id: arr2_nested
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - arr2_nested
+            hash: false
+      - name: root struct_sub_arr_c
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"QlikString","length":2147483647}}'
+          originalTypeFull: ARRAY<STRING>
+        id: root struct_sub_arr_c-5339
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - sub_arr_c
+            hash: false
+      - name: root struct_sub_arr_nested
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"x","dataType":{"clazz":"Int8"}},{"name":"y","dataType":{"clazz":"Boolean"}},{"name":"z","dataType":{"clazz":"QlikString","length":2147483647}}]}}'
+          originalTypeFull: ARRAY<STRUCT>
+        id: root struct_sub_arr_nested-b894
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - sub_arr_nested
+            hash: false
+      - name: root struct_sub_field_a
+        ordinal: 13
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: root struct_sub_field_a-a560
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - sub_field_a
+            hash: false
+      - name: root struct_sub_field_b
+        ordinal: 14
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: root struct_sub_field_b-defb
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - sub_field_b
+            hash: false
+      - name: root struct_table
+        ordinal: 15
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: root struct_table-ce7a
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - table
+            hash: false
+      - name: root struct_white space
+        ordinal: 16
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"table","dataType":{"clazz":"Struct","fields":[{"name":"s.1","dataType":{"clazz":"QlikString","length":2147483647}}]}}]}}'
+          originalTypeFull: ARRAY<STRUCT>
+        id: root struct_white space-701b
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - root struct
+              - white space
+            hash: false
+  icebergTransformDatasetSettings:
+    generalSettings:
+      entityPartitionSettings:
+        partitionColumnSettings:
+          - columnName: hdr__from_timestamp
+            transform: DAY
+      retentionSettings:
+        retentionColumn: hdr__from_timestamp
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: complex_json
+        name: complex_json
+        taskId: s3_02_june_streaming_landing-f9gy
+      mappingFields:
+        - columnId: root_primitive_bool
+          expression:
+            expressionStatement: ${root_primitive_bool}
+            alias:
+              - name: root_primitive_bool
+                value: root_primitive_bool
+        - columnId: root_primitive_long
+          expression:
+            expressionStatement: ${root_primitive_long}
+            alias:
+              - name: root_primitive_long
+                value: root_primitive_long
+        - columnId: root_primitive_double
+          expression:
+            expressionStatement: ${root_primitive_double}
+            alias:
+              - name: root_primitive_double
+                value: root_primitive_double
+        - columnId: root_primitive_string
+          expression:
+            expressionStatement: ${root_primitive_string}
+            alias:
+              - name: root_primitive_string
+                value: root_primitive_string
+        - columnId: arr_of_structs
+          expression:
+            expressionStatement: ${arr_of_structs}
+            alias:
+              - name: arr_of_structs
+                value: arr_of_structs
+        - columnId: root_struct2
+          expression:
+            expressionStatement: ${root_struct2}
+            alias:
+              - name: root_struct2
+                value: root_struct2
+        - columnId: arr_of_primitives
+          expression:
+            expressionStatement: ${arr_of_primitives}
+            alias:
+              - name: arr_of_primitives
+                value: arr_of_primitives
+        - columnId: arr_of_arr_of_primitives
+          expression:
+            expressionStatement: ${arr_of_arr_of_primitives}
+            alias:
+              - name: arr_of_arr_of_primitives
+                value: arr_of_arr_of_primitives
+        - columnId: struct_with_two_arrs
+          expression:
+            expressionStatement: ${struct_with_two_arrs}
+            alias:
+              - name: struct_with_two_arrs
+                value: struct_with_two_arrs
+        - columnId: arr2_nested
+          expression:
+            expressionStatement: ${arr2_nested}
+            alias:
+              - name: arr2_nested
+                value: arr2_nested
+        - columnId: root struct_sub_arr_c-5339
+          expression:
+            expressionStatement: '${"root struct".sub_arr_c}'
+            alias:
+              - name: '"root struct".sub_arr_c'
+                value: '"root struct".sub_arr_c'
+        - columnId: root struct_sub_arr_nested-b894
+          expression:
+            expressionStatement: '${"root struct".sub_arr_nested}'
+            alias:
+              - name: '"root struct".sub_arr_nested'
+                value: '"root struct".sub_arr_nested'
+        - columnId: root struct_sub_field_a-a560
+          expression:
+            expressionStatement: '${"root struct".sub_field_a}'
+            alias:
+              - name: '"root struct".sub_field_a'
+                value: '"root struct".sub_field_a'
+        - columnId: root struct_sub_field_b-defb
+          expression:
+            expressionStatement: '${"root struct".sub_field_b}'
+            alias:
+              - name: '"root struct".sub_field_b'
+                value: '"root struct".sub_field_b'
+        - columnId: root struct_table-ce7a
+          expression:
+            expressionStatement: '${"root struct"."table"}'
+            alias:
+              - name: '"root struct"."table"'
+                value: '"root struct"."table"'
+        - columnId: root struct_white space-701b
+          expression:
+            expressionStatement: '${"root struct"."white space"}'
+            alias:
+              - name: '"root struct"."white space"'
+                value: '"root struct"."white space"'
+      id: complex_json_default_mapping-f9gb
+      name: complex_json_default_mapping
+      description: ''

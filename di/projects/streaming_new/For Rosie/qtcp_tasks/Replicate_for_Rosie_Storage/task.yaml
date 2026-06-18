@@ -1,0 +1,12 @@
+properties:
+  name: Replicate_for_Rosie_Storage
+  id: replicate_for_rosie_storage-ikwd
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.replicate_for_rosie_storage-ikwd.internalSchema}}'
+    taskSchema: '{{task.replicate_for_rosie_storage-ikwd.taskSchema}}'
+  artifactsSettings:
+    historyEnabled: false
+  taskRuntime:
+    lakehouseCluster: '{{task.replicate_for_rosie_storage-ikwd.lakehouseCluster}}'

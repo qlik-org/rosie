@@ -1,0 +1,13 @@
+properties:
+  id: bigsky-ikwf
+  name: bigsky
+  inputDatasets:
+    - datasetId: bigsky
+      taskId: replicate_for_rosie_replicate_landing-ikwc
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: salesTax
+      newColumnName: salesTax
+      primaryKeyOrdinal: 1
+      nullable: false

@@ -1,0 +1,7 @@
+properties:
+  name: Replicate_for_Rosie_Replicate_Landing
+  id: replicate_for_rosie_replicate_landing-ikwc
+  type: EXTERNAL_REPLICATE
+settings:
+  taskRuntime:
+    lakehouseClusterId: '{{task.replicate_for_rosie_replicate_landing-ikwc.lakehouseCluster}}'

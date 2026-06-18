@@ -1,0 +1,11 @@
+properties:
+  name: CDC_02_june_Lake_landing
+  id: cdc_02_june_lake_landing-f9go
+  type: LAKE_LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.cdc_02_june_lake_landing-f9go.taskSchema}}'
+  changeDataPartitioning:
+    mode: PARTITION_OFF
+    partitionEvery: 60

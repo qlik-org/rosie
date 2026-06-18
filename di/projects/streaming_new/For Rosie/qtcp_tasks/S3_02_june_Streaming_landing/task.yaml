@@ -1,0 +1,12 @@
+properties:
+  name: S3_02_june_Streaming_landing
+  id: s3_02_june_streaming_landing-f9gy
+  type: STREAMING_LAKE_LANDING
+settings:
+  generalSettings:
+    contentTypeSettings:
+      regexTypeSettings:
+        pattern: '(?<line>.*)'
+    processPastFilesSettings:
+      timeAmount: 24
+      timeUnit: HOURS

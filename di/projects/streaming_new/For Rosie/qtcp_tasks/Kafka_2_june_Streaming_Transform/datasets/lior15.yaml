@@ -1,0 +1,168 @@
+properties:
+  id: lior15-f9gs
+  name: lior15
+  inputDatasets:
+    - datasetId: lior15
+      name: lior15
+      taskId: kafka_2_june_streaming_landing-f9gq
+  tableDef:
+    name: lior15
+    columns:
+      - name: customer_id
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: INT8
+          originalTypeFull: LONG
+        id: customer_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer_id
+            hash: false
+      - name: action
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: action
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - action
+            hash: false
+      - name: order_id
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: order_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - order_id
+            hash: false
+      - name: timestamp
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        id: '"timestamp"'
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - timestamp
+            hash: false
+      - name: shipping_address
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"city","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"country","dataType":{"clazz":"QlikString","length":2147483647}}]}'
+          originalTypeFull: STRUCT
+        id: shipping_address
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - shipping_address
+            hash: false
+      - name: payment_details
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"card","dataType":{"clazz":"Struct","fields":[{"name":"last4","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"type","dataType":{"clazz":"QlikString","length":2147483647}}]}},{"name":"method","dataType":{"clazz":"QlikString","length":2147483647}}]}'
+          originalTypeFull: STRUCT
+        id: payment_details
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - payment_details
+            hash: false
+      - name: order_details
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"items","dataType":{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"product_id","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"quantity","dataType":{"clazz":"Int8"}}]}}},{"name":"total_amount","dataType":{"clazz":"Real8"}}]}'
+          originalTypeFull: STRUCT
+        id: order_details
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - order_details
+            hash: false
+  icebergTransformDatasetSettings: {}
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: lior15
+        name: lior15
+        taskId: kafka_2_june_streaming_landing-f9gq
+      mappingFields:
+        - columnId: customer_id
+          expression:
+            expressionStatement: ${customer_id}
+            alias:
+              - name: customer_id
+                value: customer_id
+        - columnId: action
+          expression:
+            expressionStatement: ${action}
+            alias:
+              - name: action
+                value: action
+        - columnId: order_id
+          expression:
+            expressionStatement: ${order_id}
+            alias:
+              - name: order_id
+                value: order_id
+        - columnId: '"timestamp"'
+          expression:
+            expressionStatement: ${"timestamp"}
+            alias:
+              - name: '"timestamp"'
+                value: '"timestamp"'
+        - columnId: shipping_address
+          expression:
+            expressionStatement: ${shipping_address}
+            alias:
+              - name: shipping_address
+                value: shipping_address
+        - columnId: payment_details
+          expression:
+            expressionStatement: ${payment_details}
+            alias:
+              - name: payment_details
+                value: payment_details
+        - columnId: order_details
+          expression:
+            expressionStatement: ${order_details}
+            alias:
+              - name: order_details
+                value: order_details
+      id: lior15_default_mapping-f9gt
+      name: lior15_default_mapping
+      description: ''

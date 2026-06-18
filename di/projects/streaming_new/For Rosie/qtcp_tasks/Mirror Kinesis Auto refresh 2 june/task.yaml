@@ -1,0 +1,19 @@
+properties:
+  name: Mirror Kinesis Auto refresh 2 june
+  id: mirror_kinesis_auto_refresh_2_june-f9gk
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.internalSchema}}'
+    taskSchema: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.taskSchema}}'
+    databaseName: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_kinesis_auto_refresh_2_june-f9gk.warehouseName}}'

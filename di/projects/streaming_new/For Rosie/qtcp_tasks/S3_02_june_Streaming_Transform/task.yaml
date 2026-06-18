@@ -1,0 +1,13 @@
+properties:
+  name: S3_02_june_Streaming_Transform
+  id: s3_02_june_streaming_transform-f9gz
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.s3_02_june_streaming_transform-f9gz.internalSchema}}'
+      taskSchema: '{{task.s3_02_june_streaming_transform-f9gz.taskSchema}}'
+    targetTablePartition: EVENT_INGESTION_DATE
+  viewDefinitionSettings:
+    standardViewHeaders:
+      hdrFromTimestamp: true
