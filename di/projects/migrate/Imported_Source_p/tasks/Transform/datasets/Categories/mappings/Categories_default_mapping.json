@@ -54,6 +54,18 @@
           }
         ]
       }
+    },
+    {
+      "columnId": "CategoryName_1-c94a",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
     }
   ],
   "id": "categories_default_mapping--nlg",
