@@ -1,0 +1,6 @@
+sourceConnection: '{{task.file_based_knowledge_mart-cqzo.sourceConnection}}'
+includePatterns: []
+excludePatterns: []
+explicitlySelected:
+  - name: Lib2
+    type: DIRECTORY

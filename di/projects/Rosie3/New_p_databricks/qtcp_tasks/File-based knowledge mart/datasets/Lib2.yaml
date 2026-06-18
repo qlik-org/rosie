@@ -1,0 +1,13 @@
+properties:
+  id: Lib2
+  name: Lib2
+  datasetAttributes:
+    materialized: INHERIT
+    hasHistory: INHERIT
+    hasLiveViews: INHERIT
+    hasChanges: INHERIT
+    hasStandardViewsWithHeaders: INHERIT
+    watermarkIncrementalSettings: INHERIT
+sourceTable:
+  type: DIRECTORY
+  name: Lib2

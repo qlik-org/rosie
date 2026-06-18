@@ -1,0 +1,18 @@
+properties:
+  name: File-based knowledge mart
+  id: file_based_knowledge_mart-cqzo
+  type: FILE_BASED_KNOWLEDGE_MART
+settings:
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.file_based_knowledge_mart-cqzo.warehouseName}}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.file_based_knowledge_mart-cqzo.databricksVectorSearchEndpoint}}'
+    schema: '{{task.file_based_knowledge_mart-cqzo.indexSchema}}'
+    name: '{{task.file_based_knowledge_mart-cqzo.indexName}}'
+    database: '{{task.file_based_knowledge_mart-cqzo.indexDatabase}}'
+  llmSettings:
+    kindId: llm:databricks
+    parameters:
+      embedding_model_serving_endpoint: databricks-gte-large-en
+      completion_model_serving_endpoint: databricks-meta-llama-3-3-70b-instruct
