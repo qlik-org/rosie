@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_soure_Storage
+  id: onboarding_soure_storage-l5ke
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_soure_storage-l5ke.internalSchema}}'
+    taskSchema: '{{task.onboarding_soure_storage-l5ke.taskSchema}}'
+    databaseName: '{{task.onboarding_soure_storage-l5ke.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_soure_storage-l5ke.warehouseName}}'

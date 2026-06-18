@@ -1,0 +1,14 @@
+properties:
+  id: territories_flow-l5ko
+  name: Territories_flow
+  inputDatasets:
+    - datasetId: territories-l5kj
+      projectId: '{{project.Migration$_$databricks_source.projectId}}'
+      taskId: onboarding_soure_storage-l5ke
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Territories_flow)}}'
+    targetId: '65a7b29c-293e-45f7-9fcb-d61eefd22cca'
+    dataflowTargetState: VALID
+    incremental: false
+mappings:
+  mappings: []

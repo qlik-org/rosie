@@ -1,0 +1,226 @@
+properties:
+  id: suppliers-l5kp
+  name: suppliers
+  inputDatasets:
+    - datasetId: suppliers-l5jj
+      name: suppliers
+      taskId: registered_data_storage-l5jf
+  datasetAttributes:
+    hasLiveViews: OFF
+  tableDef:
+    name: suppliers
+    columns:
+      - name: SupplierID
+        ordinal: 1
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalType: INT
+          originalTypeFull: INT
+        id: supplierid
+        properties:
+          documentMetadata: false
+      - name: CompanyName
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+        properties:
+          documentMetadata: false
+      - name: ContactName
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contactname
+        properties:
+          documentMetadata: false
+      - name: ContactTitle
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contacttitle
+        properties:
+          documentMetadata: false
+      - name: Address
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        id: address
+        properties:
+          documentMetadata: false
+      - name: City
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: city
+        properties:
+          documentMetadata: false
+      - name: Region
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: region
+        properties:
+          documentMetadata: false
+      - name: PostalCode
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: postalcode
+        properties:
+          documentMetadata: false
+      - name: Country
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: country
+        properties:
+          documentMetadata: false
+      - name: Phone
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: phone
+        properties:
+          documentMetadata: false
+      - name: Fax
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: fax
+        properties:
+          documentMetadata: false
+      - name: HomePage
+        ordinal: 12
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: STRING
+          originalTypeFull: STRING
+        id: homepage
+        properties:
+          documentMetadata: false
+mappings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: suppliers-l5jj
+        name: suppliers
+        taskId: registered_data_storage-l5jf
+      mappingFields:
+        - columnId: supplierid
+          expression:
+            expressionStatement: ${SupplierID}
+            alias:
+              - name: SupplierID
+                value: SupplierID
+        - columnId: companyname
+          expression:
+            expressionStatement: ${CompanyName}
+            alias:
+              - name: CompanyName
+                value: CompanyName
+        - columnId: contactname
+          expression:
+            expressionStatement: ${ContactName}
+            alias:
+              - name: ContactName
+                value: ContactName
+        - columnId: contacttitle
+          expression:
+            expressionStatement: ${ContactTitle}
+            alias:
+              - name: ContactTitle
+                value: ContactTitle
+        - columnId: address
+          expression:
+            expressionStatement: ${Address}
+            alias:
+              - name: Address
+                value: Address
+        - columnId: city
+          expression:
+            expressionStatement: ${City}
+            alias:
+              - name: City
+                value: City
+        - columnId: region
+          expression:
+            expressionStatement: ${Region}
+            alias:
+              - name: Region
+                value: Region
+        - columnId: postalcode
+          expression:
+            expressionStatement: ${PostalCode}
+            alias:
+              - name: PostalCode
+                value: PostalCode
+        - columnId: country
+          expression:
+            expressionStatement: ${Country}
+            alias:
+              - name: Country
+                value: Country
+        - columnId: phone
+          expression:
+            expressionStatement: ${Phone}
+            alias:
+              - name: Phone
+                value: Phone
+        - columnId: fax
+          expression:
+            expressionStatement: ${Fax}
+            alias:
+              - name: Fax
+                value: Fax
+        - columnId: homepage
+          expression:
+            expressionStatement: ${HomePage}
+            alias:
+              - name: HomePage
+                value: HomePage
+      id: suppliers_default_mapping-l5ku
+      name: suppliers_default_mapping
+      description: ''

@@ -1,0 +1,14 @@
+properties:
+  name: Replication_Full_Store
+  id: replication_full_store--nkq
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication_full_store--nkq.targetConnection}}'
+    targetStorageConnection: '{{task.replication_full_store--nkq.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    storeChanges: true
+  storeChangesOptions:
+    changeDataPartitioning:
+      partitionBaseTime: 2026-06-11T08:11:34.8780000Z

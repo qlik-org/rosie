@@ -1,0 +1,25 @@
+properties:
+  name: Knowledge mart
+  id: knowledge_mart-l5k9
+  type: KNOWLEDGE_MART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.knowledge_mart-l5k9.internalSchema}}'
+    taskSchema: '{{task.knowledge_mart-l5k9.taskSchema}}'
+    databaseName: '{{task.knowledge_mart-l5k9.databaseName}}'
+  taskRuntime:
+    maxNumberOfRecords: '{{task.knowledge_mart-l5k9.maxNumberOfRecords}}'
+    warehouseSelection:
+      warehouseName: '{{task.knowledge_mart-l5k9.warehouseName}}'
+  testAssistantSettings:
+    filterConditions: '{"metadata LIKE": "%\"CategoryID\":3%"}'
+  indexArtifactsLocation:
+    databricksVectorSearchEndpoint: '{{task.knowledge_mart-l5k9.databricksVectorSearchEndpoint}}'
+    schema: '{{task.knowledge_mart-l5k9.indexSchema}}'
+    name: '{{task.knowledge_mart-l5k9.indexName}}'
+    database: '{{task.knowledge_mart-l5k9.indexDatabase}}'
+  llmSettings:
+    kindId: llm:databricks
+    parameters:
+      embedding_model_serving_endpoint: databricks-gte-large-en
+      completion_model_serving_endpoint: databricks-meta-llama-3-3-70b-instruct

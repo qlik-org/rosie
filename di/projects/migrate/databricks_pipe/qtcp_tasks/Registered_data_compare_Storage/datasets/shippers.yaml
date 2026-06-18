@@ -1,0 +1,6 @@
+properties:
+  id: shippers-l5jr
+  name: shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: registered_data_compare-l5jk
