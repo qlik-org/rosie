@@ -48,6 +48,15 @@ properties:
         id: picture
         properties:
           documentMetadata: false
+      - name: CategoryName_1
+        ordinal: 5
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: CategoryName_1-c94a
+        properties:
+          documentMetadata: false
 mappings:
   mappings:
     - sourceDataEntityKey:
@@ -80,6 +89,12 @@ mappings:
             alias:
               - name: Picture
                 value: Picture
+        - columnId: CategoryName_1-c94a
+          expression:
+            expressionStatement: ${CategoryName}
+            alias:
+              - name: CategoryName
+                value: CategoryName
       id: categories_default_mapping--nlg
       name: Categories_default_mapping
       description: ''
