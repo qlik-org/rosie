@@ -1,0 +1,6 @@
+properties:
+  id: bigsky-po2-
+  name: bigsky
+  inputDatasets:
+    - datasetId: bigsky
+      taskId: onboarding_replicate_landing_1-po22

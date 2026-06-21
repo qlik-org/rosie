@@ -1,0 +1,10 @@
+properties:
+  name: Onboarding_Storage_1
+  id: onboarding_storage_1-po23
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage_1-po23.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage_1-po23.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.onboarding_storage_1-po23.lakehouseCluster}}'

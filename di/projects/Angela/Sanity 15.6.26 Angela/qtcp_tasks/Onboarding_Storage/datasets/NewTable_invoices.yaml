@@ -1,0 +1,6 @@
+properties:
+  id: newtable_invoices-gwsx
+  name: NewTable_invoices
+  inputDatasets:
+    - datasetId: newtable_invoices
+      taskId: onboarding_replicate_landing-gwst

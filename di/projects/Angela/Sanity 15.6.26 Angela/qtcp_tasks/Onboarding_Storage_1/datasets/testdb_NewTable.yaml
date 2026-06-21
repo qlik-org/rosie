@@ -1,0 +1,6 @@
+properties:
+  id: testdb_newtable-po3d
+  name: testdb_NewTable
+  inputDatasets:
+    - datasetId: testdb_newtable
+      taskId: onboarding_replicate_landing_1-po22

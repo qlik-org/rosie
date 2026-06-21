@@ -1,0 +1,5 @@
+sourceConnection: '{{task.onboarding_replicate_landing_1-po22.sourceConnection}}'
+externalReplicateRootDirectoryPath: s3://qlik-replicate-poc-upsolver-integration-4nx5dmzywgnm6ayi/angela_replicate3
+includePatterns:
+  - tablePattern: '%'
+    schemaPattern: '{{task.onboarding_replicate_landing_1-po22:null$_$%.schemaPattern}}'

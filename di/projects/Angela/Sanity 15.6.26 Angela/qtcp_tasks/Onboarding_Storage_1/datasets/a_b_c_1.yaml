@@ -1,0 +1,6 @@
+properties:
+  id: a_b_c_1-po25
+  name: a_b_c_1
+  inputDatasets:
+    - datasetId: a_b_c_1
+      taskId: onboarding_replicate_landing_1-po22

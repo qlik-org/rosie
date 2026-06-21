@@ -1,0 +1,6 @@
+properties:
+  id: newtable_invoices-po3a
+  name: NewTable_invoices
+  inputDatasets:
+    - datasetId: newtable_invoices
+      taskId: onboarding_replicate_landing_1-po22

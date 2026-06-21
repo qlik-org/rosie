@@ -1,0 +1,6 @@
+properties:
+  id: all_data_types-po26
+  name: all_data_types
+  inputDatasets:
+    - datasetId: all_data_types
+      taskId: onboarding_replicate_landing_1-po22

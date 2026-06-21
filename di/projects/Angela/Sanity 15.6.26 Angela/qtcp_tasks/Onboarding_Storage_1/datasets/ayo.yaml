@@ -1,0 +1,6 @@
+properties:
+  id: ayo-po29
+  name: ayo
+  inputDatasets:
+    - datasetId: ayo
+      taskId: onboarding_replicate_landing_1-po22

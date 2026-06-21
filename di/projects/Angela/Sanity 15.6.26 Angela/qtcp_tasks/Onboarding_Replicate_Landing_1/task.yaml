@@ -1,0 +1,9 @@
+properties:
+  name: Onboarding_Replicate_Landing_1
+  id: onboarding_replicate_landing_1-po22
+  type: EXTERNAL_REPLICATE
+settings:
+  generalSettings:
+    automaticallyIncludeFutureTables: true
+  taskRuntime:
+    lakehouseClusterId: '{{task.onboarding_replicate_landing_1-po22.lakehouseCluster}}'

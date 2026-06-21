@@ -1,0 +1,6 @@
+properties:
+  id: newschema_newtable-po2_
+  name: newSchema_NewTable
+  inputDatasets:
+    - datasetId: newschema_newtable
+      taskId: onboarding_replicate_landing_1-po22
