@@ -1,0 +1,15 @@
+properties:
+  name: Kinesis_2_jun_Streaming_Transform
+  id: kinesis_2_jun_streaming_transform-f9f-
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.kinesis_2_jun_streaming_transform-f9f-.internalSchema}}'
+      taskSchema: '{{task.kinesis_2_jun_streaming_transform-f9f-.taskSchema}}'
+    targetTablePartition: EVENT_INGESTION_DATE
+  runtimeSettings:
+    lakehouseClusterId: '{{task.kinesis_2_jun_streaming_transform-f9f-.lakehouseCluster}}'
+  viewDefinitionSettings:
+    standardViewHeaders:
+      hdrFromTimestamp: true

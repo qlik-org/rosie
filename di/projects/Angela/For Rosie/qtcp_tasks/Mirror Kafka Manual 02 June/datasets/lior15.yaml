@@ -1,0 +1,6 @@
+properties:
+  id: lior15-f9gv
+  name: lior15
+  inputDatasets:
+    - datasetId: lior15-f9gs
+      taskId: kafka_2_june_streaming_transform-f9gr

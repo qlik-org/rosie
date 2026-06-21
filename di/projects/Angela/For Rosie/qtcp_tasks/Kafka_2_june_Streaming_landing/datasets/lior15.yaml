@@ -1,0 +1,7 @@
+properties:
+  id: lior15
+  name: lior15
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - lior15

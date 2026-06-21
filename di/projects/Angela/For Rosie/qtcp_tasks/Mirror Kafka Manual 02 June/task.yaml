@@ -1,0 +1,19 @@
+properties:
+  name: Mirror Kafka Manual 02 June
+  id: mirror_kafka_manual_02_june-f9gu
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_kafka_manual_02_june-f9gu.internalSchema}}'
+    taskSchema: '{{task.mirror_kafka_manual_02_june-f9gu.taskSchema}}'
+    databaseName: '{{task.mirror_kafka_manual_02_june-f9gu.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_kafka_manual_02_june-f9gu.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_kafka_manual_02_june-f9gu.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_kafka_manual_02_june-f9gu.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_kafka_manual_02_june-f9gu.warehouseName}}'

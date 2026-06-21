@@ -1,0 +1,19 @@
+properties:
+  name: Mirror CDC 02 june
+  id: mirror_cdc_02_june-f9gt
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_cdc_02_june-f9gt.internalSchema}}'
+    taskSchema: '{{task.mirror_cdc_02_june-f9gt.taskSchema}}'
+    databaseName: '{{task.mirror_cdc_02_june-f9gt.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_cdc_02_june-f9gt.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_cdc_02_june-f9gt.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_cdc_02_june-f9gt.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_cdc_02_june-f9gt.warehouseName}}'

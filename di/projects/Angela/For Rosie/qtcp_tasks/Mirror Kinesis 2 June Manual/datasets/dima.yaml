@@ -1,0 +1,6 @@
+properties:
+  id: dima-f9gh
+  name: dima
+  inputDatasets:
+    - datasetId: dima-f9f_
+      taskId: kinesis_2_jun_streaming_transform-f9f-
