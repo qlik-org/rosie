@@ -1,0 +1,11 @@
+rules:
+  - actionType: DROP_COLUMN
+    scope:
+      whereTableName: dima-rabkin-userdata-4nx5dmzywgnm6ayi
+      whereColumnName: customer_address_country
+    name: Remove customer_address_country from dima-rabkin-userdata-4nx5dmzywgnm6ayi
+  - actionType: RENAME_TABLE
+    action:
+      renameType: TO_UPPER
+      value: ''
+    name: Rule

@@ -1,0 +1,4 @@
+sourceConnection: '{{task.streaming_landing2_15$2E$6$2E$26-2pco.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: dima-rabkin-userdata-4nx5dmzywgnm6ayi
+    name: dima-rabkin-userdata-4nx5dmzywgnm6ayi

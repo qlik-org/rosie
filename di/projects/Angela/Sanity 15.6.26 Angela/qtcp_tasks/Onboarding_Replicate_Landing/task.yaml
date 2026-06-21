@@ -1,0 +1,7 @@
+properties:
+  name: Onboarding_Replicate_Landing
+  id: onboarding_replicate_landing-gwst
+  type: EXTERNAL_REPLICATE
+settings:
+  taskRuntime:
+    lakehouseClusterId: '{{task.onboarding_replicate_landing-gwst.lakehouseCluster}}'

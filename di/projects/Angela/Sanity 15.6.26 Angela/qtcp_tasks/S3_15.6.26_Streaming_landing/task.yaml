@@ -1,0 +1,14 @@
+properties:
+  name: 'S3_15.6.26_Streaming_landing'
+  id: s3_15$2E$6$2E$26_streaming_landing-6ypm
+  type: STREAMING_LAKE_LANDING
+settings:
+  generalSettings:
+    contentTypeSettings:
+      regexTypeSettings:
+        pattern: '(?<line>.*)'
+    processPastFilesSettings:
+      timeAmount: 7
+      timeUnit: HOURS
+  taskRuntime:
+    lakehouseClusterId: '{{task.s3_15$2E$6$2E$26_streaming_landing-6ypm.lakehouseCluster}}'

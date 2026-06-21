@@ -1,0 +1,170 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.externalReplicate.lakehouseCluster": "",
+    "task-type.icebergStorage.lakehouseCluster": "",
+    "task-type.icebergTransform.lakehouseCluster": "",
+    "task-type.streamingLanding.lakehouseCluster": "",
+    "task.cdc_15_june_lake_landing-2pb2.sourceConnection": "",
+    "task.cdc_15_june_lake_landing-2pb2.taskSchema": "",
+    "task.cdc_15_june_lake_landing-2pb2:null$_$testdb.schema": "",
+    "task.cdc_15_june_storage-2pb3.internalSchema": "",
+    "task.cdc_15_june_storage-2pb3.lakehouseCluster": "{{task-type.icebergStorage.lakehouseCluster}}",
+    "task.cdc_15_june_storage-2pb3.taskSchema": "",
+    "task.kafka_15$2E$6$2E$26_streaming_landing-gv84.lakehouseCluster": "",
+    "task.kafka_15$2E$6$2E$26_streaming_landing-gv84.sourceConnection": "",
+    "task.kafka_15$2E$6$2E$26_streaming_transform-gv85.internalSchema": "",
+    "task.kafka_15$2E$6$2E$26_streaming_transform-gv85.lakehouseCluster": "",
+    "task.kafka_15$2E$6$2E$26_streaming_transform-gv85.taskSchema": "",
+    "task.kinesis_15$2E$6$2E$26_streaming_landing-4qmd.lakehouseCluster": "",
+    "task.kinesis_15$2E$6$2E$26_streaming_landing-4qmd.sourceConnection": "",
+    "task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.internalSchema": "",
+    "task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.lakehouseCluster": "",
+    "task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.taskSchema": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.databaseName": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.internalSchema": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.snowflakeExternalVolume": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.snowflakeOpenCatalog": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.targetConnection": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.taskSchema": "",
+    "task.mirror_15$2E$6$2E$26_manual-gv80.warehouseName": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.databaseName": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.internalSchema": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.snowflakeExternalVolume": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.snowflakeOpenCatalog": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.targetConnection": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.taskSchema": "",
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.warehouseName": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.databaseName": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.internalSchema": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.snowflakeExternalVolume": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.snowflakeOpenCatalog": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.targetConnection": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.taskSchema": "",
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.warehouseName": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.databaseName": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.internalSchema": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.snowflakeExternalVolume": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.snowflakeOpenCatalog": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.targetConnection": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.taskSchema": "",
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.warehouseName": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.databaseName": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.internalSchema": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.snowflakeExternalVolume": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.snowflakeOpenCatalog": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.targetConnection": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.taskSchema": "",
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.warehouseName": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.databaseName": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.internalSchema": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.snowflakeExternalVolume": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.snowflakeOpenCatalog": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.targetConnection": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.taskSchema": "",
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.warehouseName": "",
+    "task.onboarding_replicate_landing-gwst.lakehouseCluster": "{{task-type.externalReplicate.lakehouseCluster}}",
+    "task.onboarding_replicate_landing-gwst.sourceConnection": "",
+    "task.onboarding_replicate_landing-gwst:null$_$newSchema.schema": "",
+    "task.onboarding_replicate_landing-gwst:null$_$testdb.schema": "",
+    "task.onboarding_replicate_landing_1-po22.lakehouseCluster": "{{task-type.externalReplicate.lakehouseCluster}}",
+    "task.onboarding_replicate_landing_1-po22.sourceConnection": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$%.schemaPattern": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$a.schema": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$a_b.schema": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$newSchema.schema": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$testdb.schema": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$x.schema": "",
+    "task.onboarding_replicate_landing_1-po22:null$_$y.schema": "",
+    "task.onboarding_storage-gwsu.internalSchema": "",
+    "task.onboarding_storage-gwsu.lakehouseCluster": "{{task-type.icebergStorage.lakehouseCluster}}",
+    "task.onboarding_storage-gwsu.taskSchema": "",
+    "task.onboarding_storage_1-po23.internalSchema": "",
+    "task.onboarding_storage_1-po23.lakehouseCluster": "{{task-type.icebergStorage.lakehouseCluster}}",
+    "task.onboarding_storage_1-po23.taskSchema": "",
+    "task.replicate_15$2E$6$2E$26_replicate_landing-2pcj.lakehouseCluster": "",
+    "task.replicate_15$2E$6$2E$26_replicate_landing-2pcj.sourceConnection": "",
+    "task.replicate_15$2E$6$2E$26_replicate_landing-2pcj:null$_$newSchema.schema": "",
+    "task.replicate_15$2E$6$2E$26_replicate_landing-2pcj:null$_$testdb.schema": "",
+    "task.replicate_15$2E$6$2E$26_storage-2pck.internalSchema": "",
+    "task.replicate_15$2E$6$2E$26_storage-2pck.lakehouseCluster": "",
+    "task.replicate_15$2E$6$2E$26_storage-2pck.taskSchema": "",
+    "task.replicate_landing2_15$2E$6$2E$26-2pcp.lakehouseCluster": "",
+    "task.replicate_landing2_15$2E$6$2E$26-2pcp.sourceConnection": "",
+    "task.replicate_landing2_15$2E$6$2E$26-2pcp:null$_$testdb.schema": "",
+    "task.s3_15$2E$6$2E$26_streaming_landing-6ypm.lakehouseCluster": "",
+    "task.s3_15$2E$6$2E$26_streaming_landing-6ypm.sourceConnection": "",
+    "task.s3_15$2E$6$2E$26_streaming_transform-6ypn.internalSchema": "",
+    "task.s3_15$2E$6$2E$26_streaming_transform-6ypn.lakehouseCluster": "",
+    "task.s3_15$2E$6$2E$26_streaming_transform-6ypn.taskSchema": "",
+    "task.storage2_15$2E$6$2E$26-gv9d.internalSchema": "",
+    "task.storage2_15$2E$6$2E$26-gv9d.lakehouseCluster": "",
+    "task.storage2_15$2E$6$2E$26-gv9d.taskSchema": "",
+    "task.streaming_landing2_15$2E$6$2E$26-2pco.lakehouseCluster": "",
+    "task.streaming_landing2_15$2E$6$2E$26-2pco.sourceConnection": "",
+    "task.streaming_transform2_15$2E$6$2E$26-gv9e.internalSchema": "",
+    "task.streaming_transform2_15$2E$6$2E$26-gv9e.lakehouseCluster": "",
+    "task.streaming_transform2_15$2E$6$2E$26-gv9e.taskSchema": "",
+    "task.streaming_transform_kafka_add_column_ignore-gv9f.internalSchema": "",
+    "task.streaming_transform_kafka_add_column_ignore-gv9f.lakehouseCluster": "{{task-type.icebergTransform.lakehouseCluster}}",
+    "task.streaming_transform_kafka_add_column_ignore-gv9f.taskSchema": ""
+  },
+  "connectionProperties": {
+    "task.cdc_15_june_lake_landing-2pb2.sourceConnection": {
+      "type": "repsrc_mysql"
+    },
+    "task.kafka_15$2E$6$2E$26_streaming_landing-gv84.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:apache-kafka"
+    },
+    "task.kinesis_15$2E$6$2E$26_streaming_landing-4qmd.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-kinesis"
+    },
+    "task.mirror_15$2E$6$2E$26_manual-gv80.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_kafka_15$2E$6$2E$26-vvyx.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_kinesis_15$2E$6$2E$26-6ypj.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_replicate_15$2E$6$2E$26-pi2q.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.mirror_s3_15$2E$6$2E$26-4qmk.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    },
+    "task.onboarding_replicate_landing-gwst.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.onboarding_replicate_landing_1-po22.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.replicate_15$2E$6$2E$26_replicate_landing-2pcj.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.replicate_landing2_15$2E$6$2E$26-2pcp.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.s3_15$2E$6$2E$26_streaming_landing-6ypm.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-s3"
+    },
+    "task.streaming_landing2_15$2E$6$2E$26-2pco.sourceConnection": {
+      "type": "external_data_provider",
+      "kindId": "sourcestreaming:amazon-kinesis"
+    }
+  }
+}

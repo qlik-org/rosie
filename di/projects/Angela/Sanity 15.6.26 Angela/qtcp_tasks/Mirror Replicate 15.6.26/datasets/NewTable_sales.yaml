@@ -1,0 +1,6 @@
+properties:
+  id: newtable_sales-4qmn
+  name: NewTable_sales
+  inputDatasets:
+    - datasetId: newtable_sales-2pcn
+      taskId: replicate_15$2E$6$2E$26_storage-2pck

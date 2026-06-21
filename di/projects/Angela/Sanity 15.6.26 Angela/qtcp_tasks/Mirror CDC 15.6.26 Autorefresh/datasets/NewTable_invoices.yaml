@@ -1,0 +1,6 @@
+properties:
+  id: newtable_invoices-pi2i
+  name: NewTable_invoices
+  inputDatasets:
+    - datasetId: newtable_invoices-2pb5
+      taskId: cdc_15_june_storage-2pb3

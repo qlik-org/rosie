@@ -1,0 +1,11 @@
+sourceConnection: '{{task.replicate_landing2_15$2E$6$2E$26-2pcp.sourceConnection}}'
+externalReplicateRootDirectoryPath: s3://qlik-replicate-poc-upsolver-integration-4nx5dmzywgnm6ayi/angela_replicate3
+explicitlySelected:
+  - outputDatasetName: NewTable_sales
+    name: NewTable_sales
+    schema: '{{task.replicate_landing2_15$2E$6$2E$26-2pcp:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: bigsky
+    name: bigsky
+    schema: '{{task.replicate_landing2_15$2E$6$2E$26-2pcp:null$_$testdb.schema}}'
+    type: TABLE

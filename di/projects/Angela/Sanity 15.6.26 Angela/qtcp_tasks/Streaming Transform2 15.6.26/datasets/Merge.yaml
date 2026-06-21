@@ -1,0 +1,329 @@
+properties:
+  id: dima_1-6ypc
+  name: Merge
+  inputDatasets:
+    - datasetId: dima
+      name: dima
+      taskId: kinesis_15$2E$6$2E$26_streaming_landing-4qmd
+  tableDef:
+    name: Merge
+    columns:
+      - name: netTotal
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: REAL8
+        expression:
+          expressionStatement: ${netTotal}
+          alias:
+            - name: netTotal
+              value: netTotal
+        id: nettotal
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - netTotal
+            hash: false
+      - name: orderDate
+        ordinal: 2
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: STRING
+          length: 2147483647
+          originalTypeFull: STRING
+        expression:
+          expressionStatement: ${orderDate}
+          alias:
+            - name: orderDate
+              value: orderDate
+        id: orderdate
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - orderDate
+            hash: false
+      - name: orderType
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        expression:
+          expressionStatement: ${orderType}
+          alias:
+            - name: orderType
+              value: orderType
+        id: ordertype
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - orderType
+            hash: false
+      - name: shippingInfo
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"address","dataType":{"clazz":"Struct","fields":[{"name":"address1","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"address2","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"city","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"country","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"postCode","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"state","dataType":{"clazz":"QlikString","length":2147483647}}]}},{"name":"method","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"recipient","dataType":{"clazz":"Struct","fields":[{"name":"firstName","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"lastName","dataType":{"clazz":"QlikString","length":2147483647}}]}}]}'
+        expression:
+          expressionStatement: ${shippingInfo}
+          alias:
+            - name: shippingInfo
+              value: shippingInfo
+        id: shippinginfo
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - shippingInfo
+            hash: false
+      - name: customer_address
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"address1","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"address2","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"city","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"country","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"postCode","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"state","dataType":{"clazz":"QlikString","length":2147483647}}]}'
+        id: customer_address-d213
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - customer
+              - address
+            hash: false
+      - name: customer_email
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: customer_email-6327
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - customer
+              - email
+            hash: false
+      - name: customer_firstName
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: customer_firstName-6d6f
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - customer
+              - firstName
+            hash: false
+      - name: customer_lastName
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: customer_lastName-cb14
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - customer
+              - lastName
+            hash: false
+      - name: saleInfo_source
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: saleInfo_source-3922
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - saleInfo
+              - source
+            hash: false
+      - name: saleInfo_store
+        ordinal: 10
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"location","dataType":{"clazz":"Struct","fields":[{"name":"country","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"name","dataType":{"clazz":"QlikString","length":2147483647}}]}},{"name":"servicedBy","dataType":{"clazz":"Struct","fields":[{"name":"employeeId","dataType":{"clazz":"Int8"}},{"name":"firstName","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"lastName","dataType":{"clazz":"QlikString","length":2147483647}}]}}]}'
+        id: saleInfo_store-30d0
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - saleInfo
+              - store
+            hash: false
+      - name: saleInfo_web
+        ordinal: 11
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"ip","dataType":{"clazz":"QlikString","length":2147483647}},{"name":"userAgent","dataType":{"clazz":"QlikString","length":2147483647}}]}'
+        id: saleInfo_web-dee7
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: NESTED
+            childrenIds:
+              - saleInfo
+              - web
+            hash: false
+    entityId: dima_1-6ypc
+  customDatasetSettings:
+    customSql: {}
+    incremental: false
+  icebergTransformDatasetSettings:
+    mappings:
+      - sourceDataEntityKey:
+          type: NONE
+          entityId: dima
+          name: dima
+          projectId: '6a2fbc057013421f8da62d82'
+          dataAppId: kinesis_15$2E$6$2E$26_streaming_landing-4qmd
+        mappingFields:
+          - toColName: customer
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${customer}
+              alias:
+                - name: customer
+                  value: customer
+          - toColName: netTotal
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${netTotal}
+              alias:
+                - name: netTotal
+                  value: netTotal
+          - toColName: orderDate
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${orderDate}
+              alias:
+                - name: orderDate
+                  value: orderDate
+          - toColName: orderType
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${orderType}
+              alias:
+                - name: orderType
+                  value: orderType
+          - toColName: saleInfo
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${saleInfo}
+              alias:
+                - name: saleInfo
+                  value: saleInfo
+          - toColName: shippingInfo
+            mappingType: EXPRESSION
+            expression:
+              expressionStatement: ${shippingInfo}
+              alias:
+                - name: shippingInfo
+                  value: shippingInfo
+    generalSettings:
+      entityLoadSettings:
+        loadMode: MERGE
+        mergeSettings:
+          hasHistory: true
+mappingSettings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: dima
+        name: dima
+        taskId: kinesis_15$2E$6$2E$26_streaming_landing-4qmd
+      mappingFields:
+        - columnId: nettotal
+          expression:
+            expressionStatement: ${netTotal}
+            alias:
+              - name: netTotal
+                value: netTotal
+        - columnId: orderdate
+          expression:
+            expressionStatement: ${orderDate}
+            alias:
+              - name: orderDate
+                value: orderDate
+        - columnId: ordertype
+          expression:
+            expressionStatement: ${orderType}
+            alias:
+              - name: orderType
+                value: orderType
+        - columnId: shippinginfo
+          expression:
+            expressionStatement: ${shippingInfo}
+            alias:
+              - name: shippingInfo
+                value: shippingInfo
+        - columnId: customer_address-d213
+          expression:
+            expressionStatement: '${customer.address}'
+            alias:
+              - name: 'customer.address'
+                value: 'customer.address'
+        - columnId: customer_email-6327
+          expression:
+            expressionStatement: '${customer.email}'
+            alias:
+              - name: 'customer.email'
+                value: 'customer.email'
+        - columnId: customer_firstName-6d6f
+          expression:
+            expressionStatement: '${customer.firstName}'
+            alias:
+              - name: 'customer.firstName'
+                value: 'customer.firstName'
+        - columnId: customer_lastName-cb14
+          expression:
+            expressionStatement: '${customer.lastName}'
+            alias:
+              - name: 'customer.lastName'
+                value: 'customer.lastName'
+        - columnId: saleInfo_source-3922
+          expression:
+            expressionStatement: '${saleInfo.source}'
+            alias:
+              - name: 'saleInfo.source'
+                value: 'saleInfo.source'
+        - columnId: saleInfo_store-30d0
+          expression:
+            expressionStatement: '${saleInfo.store}'
+            alias:
+              - name: 'saleInfo.store'
+                value: 'saleInfo.store'
+        - columnId: saleInfo_web-dee7
+          expression:
+            expressionStatement: '${saleInfo.web}'
+            alias:
+              - name: 'saleInfo.web'
+                value: 'saleInfo.web'
+      id: dima_1_default_mapping-6ypd
+      name: dima_1_default_mapping
+      description: ''

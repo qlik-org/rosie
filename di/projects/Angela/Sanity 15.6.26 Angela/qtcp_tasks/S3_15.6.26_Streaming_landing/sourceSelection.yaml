@@ -1,0 +1,8 @@
+sourceConnection: '{{task.s3_15$2E$6$2E$26_streaming_landing-6ypm.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: complex-json
+    name: s3://dima-rabkin-upsolver-integration-4nx5dmzywgnm6ayi/s3_source/complex-json/*
+    type: TABLE
+  - outputDatasetName: date_pattern_15june
+    name: s3://dima-rabkin-upsolver-integration-4nx5dmzywgnm6ayi/s3_source/date_pattern//<yyyy>/<MM>/<dd>/<HH>
+    type: TABLE

@@ -1,0 +1,10 @@
+properties:
+  name: CDC_15_june_Storage
+  id: cdc_15_june_storage-2pb3
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.cdc_15_june_storage-2pb3.internalSchema}}'
+    taskSchema: '{{task.cdc_15_june_storage-2pb3.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.cdc_15_june_storage-2pb3.lakehouseCluster}}'

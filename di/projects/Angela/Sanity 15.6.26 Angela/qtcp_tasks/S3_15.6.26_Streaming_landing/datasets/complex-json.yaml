@@ -1,0 +1,9 @@
+properties:
+  id: complex_json
+  name: complex-json
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - s3://dima-rabkin-upsolver-integration-4nx5dmzywgnm6ayi/s3_source/complex-json/*
+    generalSettings:
+      entityStrategy: SIMPLE

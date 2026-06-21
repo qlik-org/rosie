@@ -1,0 +1,19 @@
+properties:
+  name: 'Mirror S3 15.6.26'
+  id: mirror_s3_15$2E$6$2E$26-4qmk
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.internalSchema}}'
+    taskSchema: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.taskSchema}}'
+    databaseName: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_s3_15$2E$6$2E$26-4qmk.warehouseName}}'

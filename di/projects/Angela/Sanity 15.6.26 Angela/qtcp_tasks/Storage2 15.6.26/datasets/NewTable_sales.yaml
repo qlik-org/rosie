@@ -1,0 +1,6 @@
+properties:
+  id: newtable_sales-vvyf
+  name: NewTable_sales
+  inputDatasets:
+    - datasetId: newtable_sales
+      taskId: cdc_15_june_lake_landing-2pb2

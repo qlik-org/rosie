@@ -1,0 +1,13 @@
+properties:
+  id: newtable-2pcl
+  name: NewTable
+  inputDatasets:
+    - datasetId: newtable
+      taskId: replicate_15$2E$6$2E$26_replicate_landing-2pcj
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: Column1
+      newColumnName: Column1
+      primaryKeyOrdinal: 1
+      nullable: false

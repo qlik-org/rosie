@@ -1,0 +1,6 @@
+properties:
+  id: adam2-vvya
+  name: adam2
+  inputDatasets:
+    - datasetId: adam2-gv8-
+      taskId: kafka_15$2E$6$2E$26_streaming_transform-gv85

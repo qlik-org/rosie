@@ -1,0 +1,10 @@
+explicitlySelected:
+  - sourceTask: cdc_15_june_lake_landing-2pb2
+    name: ANG_Customers1
+    sourceTableId: ang_customers1
+  - sourceTask: cdc_15_june_lake_landing-2pb2
+    name: NewTable_invoices
+    sourceTableId: newtable_invoices
+  - sourceTask: cdc_15_june_lake_landing-2pb2
+    name: NewTable_sales
+    sourceTableId: newtable_sales

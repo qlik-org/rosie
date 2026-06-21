@@ -1,0 +1,11 @@
+properties:
+  id: dima
+  name: dima
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - dima-nested-userdata-4nx5dmzywgnm6ayi
+    runtimeSettings:
+      numberOfReadersSettings:
+        numberOfReaders: 1
+        attributeSourceValue: CUSTOM

@@ -1,0 +1,10 @@
+properties:
+  name: 'Replicate_15.6.26_Storage'
+  id: replicate_15$2E$6$2E$26_storage-2pck
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.replicate_15$2E$6$2E$26_storage-2pck.internalSchema}}'
+    taskSchema: '{{task.replicate_15$2E$6$2E$26_storage-2pck.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.replicate_15$2E$6$2E$26_storage-2pck.lakehouseCluster}}'

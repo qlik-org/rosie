@@ -1,0 +1,6 @@
+properties:
+  id: date_pattern_15june-pi2o
+  name: date_pattern_15june
+  inputDatasets:
+    - datasetId: date_pattern_15june-6ypo
+      taskId: s3_15$2E$6$2E$26_streaming_transform-6ypn

@@ -1,0 +1,19 @@
+properties:
+  name: 'Mirror CDC 15.6.26 Autorefresh'
+  id: mirror_cdc_15$2E$6$2E$26_autorefresh-gv81
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.internalSchema}}'
+    taskSchema: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.taskSchema}}'
+    databaseName: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_cdc_15$2E$6$2E$26_autorefresh-gv81.warehouseName}}'

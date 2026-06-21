@@ -1,0 +1,81 @@
+properties:
+  id: adam1-gv88
+  name: adam1
+  inputDatasets:
+    - datasetId: adam1
+      name: adam1
+      taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+  tableDef:
+    name: adam1
+    columns:
+      - name: user_id
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: INT8
+        id: user_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - user_id
+            hash: false
+      - name: action
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: action
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - action
+            hash: false
+      - name: product_id
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: product_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - product_id
+            hash: false
+  icebergTransformDatasetSettings: {}
+mappingSettings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: adam1
+        name: adam1
+        taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+      mappingFields:
+        - columnId: user_id
+          expression:
+            expressionStatement: ${user_id}
+            alias:
+              - name: user_id
+                value: user_id
+        - columnId: action
+          expression:
+            expressionStatement: ${action}
+            alias:
+              - name: action
+                value: action
+        - columnId: product_id
+          expression:
+            expressionStatement: ${product_id}
+            alias:
+              - name: product_id
+                value: product_id
+      id: adam1_default_mapping-gv89
+      name: adam1_default_mapping
+      description: ''

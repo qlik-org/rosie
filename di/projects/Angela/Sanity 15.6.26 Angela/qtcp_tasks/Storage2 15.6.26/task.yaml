@@ -1,0 +1,10 @@
+properties:
+  name: 'Storage2 15.6.26'
+  id: storage2_15$2E$6$2E$26-gv9d
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage2_15$2E$6$2E$26-gv9d.internalSchema}}'
+    taskSchema: '{{task.storage2_15$2E$6$2E$26-gv9d.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.storage2_15$2E$6$2E$26-gv9d.lakehouseCluster}}'

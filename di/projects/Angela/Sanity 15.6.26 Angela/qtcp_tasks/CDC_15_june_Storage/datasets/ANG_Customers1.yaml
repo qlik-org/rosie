@@ -1,0 +1,6 @@
+properties:
+  id: ang_customers1-2pb4
+  name: ANG_Customers1
+  inputDatasets:
+    - datasetId: ang_customers1
+      taskId: cdc_15_june_lake_landing-2pb2

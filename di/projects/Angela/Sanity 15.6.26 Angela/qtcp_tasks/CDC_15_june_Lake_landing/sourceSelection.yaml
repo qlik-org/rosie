@@ -1,0 +1,11 @@
+sourceConnection: '{{task.cdc_15_june_lake_landing-2pb2.sourceConnection}}'
+explicitlySelected:
+  - name: ANG_Customers1
+    schema: '{{task.cdc_15_june_lake_landing-2pb2:null$_$testdb.schema}}'
+    type: TABLE
+  - name: NewTable_invoices
+    schema: '{{task.cdc_15_june_lake_landing-2pb2:null$_$testdb.schema}}'
+    type: TABLE
+  - name: NewTable_sales
+    schema: '{{task.cdc_15_june_lake_landing-2pb2:null$_$testdb.schema}}'
+    type: TABLE

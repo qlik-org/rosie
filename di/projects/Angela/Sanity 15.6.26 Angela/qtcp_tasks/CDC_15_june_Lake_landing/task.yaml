@@ -1,0 +1,8 @@
+properties:
+  name: CDC_15_june_Lake_landing
+  id: cdc_15_june_lake_landing-2pb2
+  type: LAKE_LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.cdc_15_june_lake_landing-2pb2.taskSchema}}'

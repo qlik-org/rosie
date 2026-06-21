@@ -1,0 +1,4 @@
+sourceConnection: '{{task.kinesis_15$2E$6$2E$26_streaming_landing-4qmd.sourceConnection}}'
+explicitlySelected:
+  - outputDatasetName: dima
+    name: dima-nested-userdata-4nx5dmzywgnm6ayi

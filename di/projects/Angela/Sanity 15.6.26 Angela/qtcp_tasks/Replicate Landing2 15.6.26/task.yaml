@@ -1,0 +1,7 @@
+properties:
+  name: 'Replicate Landing2 15.6.26'
+  id: replicate_landing2_15$2E$6$2E$26-2pcp
+  type: EXTERNAL_REPLICATE
+settings:
+  taskRuntime:
+    lakehouseClusterId: '{{task.replicate_landing2_15$2E$6$2E$26-2pcp.lakehouseCluster}}'

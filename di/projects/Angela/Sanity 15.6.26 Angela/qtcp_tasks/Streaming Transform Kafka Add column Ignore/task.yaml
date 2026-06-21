@@ -1,0 +1,13 @@
+properties:
+  name: Streaming Transform Kafka Add column Ignore
+  id: streaming_transform_kafka_add_column_ignore-gv9f
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.streaming_transform_kafka_add_column_ignore-gv9f.internalSchema}}'
+      taskSchema: '{{task.streaming_transform_kafka_add_column_ignore-gv9f.taskSchema}}'
+  runtimeSettings:
+    lakehouseClusterId: '{{task.streaming_transform_kafka_add_column_ignore-gv9f.lakehouseCluster}}'
+  ddlHandlingPolicy:
+    addColumnRoot: IGNORE

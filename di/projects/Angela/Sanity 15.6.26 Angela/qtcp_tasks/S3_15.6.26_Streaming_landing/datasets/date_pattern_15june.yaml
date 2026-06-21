@@ -1,0 +1,9 @@
+properties:
+  id: date_pattern_15june
+  name: date_pattern_15june
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - s3://dima-rabkin-upsolver-integration-4nx5dmzywgnm6ayi/s3_source/date_pattern//<yyyy>/<MM>/<dd>/<HH>
+    generalSettings:
+      entityStrategy: DATE_PATTERN

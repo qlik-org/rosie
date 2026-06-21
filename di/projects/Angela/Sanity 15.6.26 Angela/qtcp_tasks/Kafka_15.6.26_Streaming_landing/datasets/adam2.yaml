@@ -1,0 +1,18 @@
+properties:
+  id: adam2
+  name: adam2
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - adam2
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: 'cart_info.price'
+      newColumnName: 'cart_info.price'
+      primaryKeyOrdinal: 1
+      nullable: false
+    - action: KEEP
+      columnName: 'items[].price'
+      newColumnName: 'items[].price'
+      ordinal: 14

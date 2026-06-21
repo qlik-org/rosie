@@ -1,0 +1,6 @@
+properties:
+  id: adam4-vvyp
+  name: adam4
+  inputDatasets:
+    - datasetId: adam4-2pcv
+      taskId: kafka_15$2E$6$2E$26_streaming_transform-gv85

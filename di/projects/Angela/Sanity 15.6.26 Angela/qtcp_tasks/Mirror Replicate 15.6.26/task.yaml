@@ -1,0 +1,19 @@
+properties:
+  name: 'Mirror Replicate 15.6.26'
+  id: mirror_replicate_15$2E$6$2E$26-pi2q
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.internalSchema}}'
+    taskSchema: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.taskSchema}}'
+    databaseName: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_replicate_15$2E$6$2E$26-pi2q.warehouseName}}'

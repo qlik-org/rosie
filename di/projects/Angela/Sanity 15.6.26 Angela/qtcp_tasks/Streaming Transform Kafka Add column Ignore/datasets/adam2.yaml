@@ -1,0 +1,204 @@
+properties:
+  id: adam2-vvyi
+  name: adam2
+  inputDatasets:
+    - datasetId: adam2
+      name: adam2
+      taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+  tableDef:
+    name: adam2
+    columns:
+      - name: '@timestamp'
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: '"@timestamp"'
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - '@timestamp'
+            hash: false
+      - name: action
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: action
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - action
+            hash: false
+      - name: cart_info
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"price","dataType":{"clazz":"Real8"}},{"name":"quantity","dataType":{"clazz":"Int8"}}]}'
+        id: cart_info
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - cart_info
+            hash: false
+      - name: customer-name
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: '"customer-name"'
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - customer-name
+            hash: false
+      - name: items
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: ARRAY
+          originalType: '{"clazz":"Array","elementType":{"clazz":"Struct","fields":[{"name":"price","dataType":{"clazz":"Real8"}},{"name":"quantity","dataType":{"clazz":"Int8"}},{"name":"sku","dataType":{"clazz":"QlikString","length":2147483647}}]}}'
+          originalTypeFull: ARRAY<STRUCT>
+        id: items
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - items
+            hash: false
+      - name: order$total
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: REAL8
+        id: order$total
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - order$total
+            hash: false
+      - name: product_id
+        ordinal: 7
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: product_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - product_id
+            hash: false
+      - name: source
+        ordinal: 8
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: source
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - source
+            hash: false
+      - name: user_id
+        ordinal: 9
+        nullable: true
+        datatype:
+          type: INT8
+        id: user_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - user_id
+            hash: false
+  customDatasetSettings:
+    customSql: {}
+    incremental: false
+  icebergTransformDatasetSettings: {}
+mappingSettings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: adam2
+        name: adam2
+        taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+      mappingFields:
+        - columnId: '"@timestamp"'
+          expression:
+            expressionStatement: ${"@timestamp"}
+            alias:
+              - name: '"@timestamp"'
+                value: '"@timestamp"'
+        - columnId: action
+          expression:
+            expressionStatement: ${action}
+            alias:
+              - name: action
+                value: action
+        - columnId: cart_info
+          expression:
+            expressionStatement: ${cart_info}
+            alias:
+              - name: cart_info
+                value: cart_info
+        - columnId: '"customer-name"'
+          expression:
+            expressionStatement: ${"customer-name"}
+            alias:
+              - name: '"customer-name"'
+                value: '"customer-name"'
+        - columnId: items
+          expression:
+            expressionStatement: ${items}
+            alias:
+              - name: items
+                value: items
+        - columnId: order$total
+          expression:
+            expressionStatement: ${order$total}
+            alias:
+              - name: order$total
+                value: order$total
+        - columnId: product_id
+          expression:
+            expressionStatement: ${product_id}
+            alias:
+              - name: product_id
+                value: product_id
+        - columnId: source
+          expression:
+            expressionStatement: ${source}
+            alias:
+              - name: source
+                value: source
+        - columnId: user_id
+          expression:
+            expressionStatement: ${user_id}
+            alias:
+              - name: user_id
+                value: user_id
+      id: adam2_default_mapping-vvyj
+      name: adam2_default_mapping
+      description: ''

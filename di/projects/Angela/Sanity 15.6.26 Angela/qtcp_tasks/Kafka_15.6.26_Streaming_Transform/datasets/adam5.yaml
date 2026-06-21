@@ -1,0 +1,141 @@
+properties:
+  id: adam5-6ypk
+  name: adam5
+  inputDatasets:
+    - datasetId: adam5
+      name: adam5
+      taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+  tableDef:
+    name: adam5
+    columns:
+      - name: user_id
+        ordinal: 1
+        nullable: true
+        datatype:
+          type: INT8
+        id: user_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - user_id
+            hash: false
+      - name: action
+        ordinal: 2
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: action
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - action
+            hash: false
+      - name: product_id
+        ordinal: 3
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: product_id
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - product_id
+            hash: false
+      - name: source
+        ordinal: 4
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: source
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - source
+            hash: false
+      - name: cart_info
+        ordinal: 5
+        nullable: true
+        datatype:
+          type: STRUCT
+          originalType: '{"clazz":"Struct","fields":[{"name":"price","dataType":{"clazz":"Real8"}},{"name":"quantity","dataType":{"clazz":"Int8"}}]}'
+        id: cart_info
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - cart_info
+            hash: false
+      - name: product_id2
+        ordinal: 6
+        nullable: true
+        datatype:
+          type: STRING
+          length: 2147483647
+        id: product_id2-c7e3
+        properties:
+          documentMetadata: false
+          streamingProperties:
+            nesting: TOPLEVEL
+            childrenIds:
+              - product_id2
+            hash: false
+  icebergTransformDatasetSettings: {}
+mappingSettings:
+  mappings:
+    - sourceDataEntityKey:
+        type: NONE
+        datasetId: adam5
+        name: adam5
+        taskId: kafka_15$2E$6$2E$26_streaming_landing-gv84
+      mappingFields:
+        - columnId: user_id
+          expression:
+            expressionStatement: ${user_id}
+            alias:
+              - name: user_id
+                value: user_id
+        - columnId: action
+          expression:
+            expressionStatement: ${action}
+            alias:
+              - name: action
+                value: action
+        - columnId: product_id
+          expression:
+            expressionStatement: ${product_id}
+            alias:
+              - name: product_id
+                value: product_id
+        - columnId: source
+          expression:
+            expressionStatement: ${source}
+            alias:
+              - name: source
+                value: source
+        - columnId: cart_info
+          expression:
+            expressionStatement: ${cart_info}
+            alias:
+              - name: cart_info
+                value: cart_info
+        - columnId: product_id2-c7e3
+          expression:
+            expressionStatement: ${product_id2}
+            alias:
+              - name: product_id2
+                value: product_id2
+      id: adam5_default_mapping-6ypl
+      name: adam5_default_mapping
+      description: ''

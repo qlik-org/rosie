@@ -1,0 +1,7 @@
+properties:
+  name: 'Streaming landing2 15.6.26'
+  id: streaming_landing2_15$2E$6$2E$26-2pco
+  type: STREAMING_LAKE_LANDING
+settings:
+  taskRuntime:
+    lakehouseClusterId: '{{task.streaming_landing2_15$2E$6$2E$26-2pco.lakehouseCluster}}'

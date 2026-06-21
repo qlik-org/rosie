@@ -1,0 +1,19 @@
+properties:
+  name: 'Mirror Kinesis 15.6.26'
+  id: mirror_kinesis_15$2E$6$2E$26-6ypj
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.internalSchema}}'
+    taskSchema: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.taskSchema}}'
+    databaseName: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.snowflakeOpenCatalog}}'
+      refreshMethod: AUTO_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_kinesis_15$2E$6$2E$26-6ypj.warehouseName}}'

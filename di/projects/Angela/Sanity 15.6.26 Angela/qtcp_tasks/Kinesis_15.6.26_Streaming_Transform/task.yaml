@@ -1,0 +1,15 @@
+properties:
+  name: 'Kinesis_15.6.26_Streaming_Transform'
+  id: kinesis_15$2E$6$2E$26_streaming_transform-4qme
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.internalSchema}}'
+      taskSchema: '{{task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.taskSchema}}'
+    targetTablePartition: EVENT_INGESTION_DATE
+  runtimeSettings:
+    lakehouseClusterId: '{{task.kinesis_15$2E$6$2E$26_streaming_transform-4qme.lakehouseCluster}}'
+  viewDefinitionSettings:
+    standardViewHeaders:
+      hdrFromTimestamp: true

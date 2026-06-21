@@ -1,0 +1,19 @@
+properties:
+  id: dima_rabkin_userdata_4nx5dmzywgnm6ayi
+  name: dima-rabkin-userdata-4nx5dmzywgnm6ayi
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - dima-rabkin-userdata-4nx5dmzywgnm6ayi
+    runtimeSettings:
+      numberOfReadersSettings:
+        numberOfReaders: 1
+        attributeSourceValue: CUSTOM
+transformations:
+  newTableName: dima
+  columnTransformations:
+    - action: KEEP
+      columnName: customer_address_address2
+      newColumnName: customer_address_address2
+      ordinal: 2
+      hash: true

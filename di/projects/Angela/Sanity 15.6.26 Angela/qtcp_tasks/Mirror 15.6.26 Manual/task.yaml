@@ -1,0 +1,19 @@
+properties:
+  name: 'Mirror 15.6.26 Manual'
+  id: mirror_15$2E$6$2E$26_manual-gv80
+  type: LAKEHOUSE_MIRROR
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.mirror_15$2E$6$2E$26_manual-gv80.internalSchema}}'
+    taskSchema: '{{task.mirror_15$2E$6$2E$26_manual-gv80.taskSchema}}'
+    databaseName: '{{task.mirror_15$2E$6$2E$26_manual-gv80.databaseName}}'
+  platformConfig:
+    platformType: SNOWFLAKE
+    connection: '{{task.mirror_15$2E$6$2E$26_manual-gv80.targetConnection}}'
+    snowflakeIcebergSettings:
+      snowflakeExternalVolume: '{{task.mirror_15$2E$6$2E$26_manual-gv80.snowflakeExternalVolume}}'
+      snowflakeCatalogIntegration: '{{task.mirror_15$2E$6$2E$26_manual-gv80.snowflakeOpenCatalog}}'
+      refreshMethod: QLIK_MANAGED_REFRESH
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.mirror_15$2E$6$2E$26_manual-gv80.warehouseName}}'

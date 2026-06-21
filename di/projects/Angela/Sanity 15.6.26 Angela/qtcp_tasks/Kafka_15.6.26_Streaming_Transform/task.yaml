@@ -1,0 +1,11 @@
+properties:
+  name: 'Kafka_15.6.26_Streaming_Transform'
+  id: kafka_15$2E$6$2E$26_streaming_transform-gv85
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.kafka_15$2E$6$2E$26_streaming_transform-gv85.internalSchema}}'
+      taskSchema: '{{task.kafka_15$2E$6$2E$26_streaming_transform-gv85.taskSchema}}'
+  runtimeSettings:
+    lakehouseClusterId: '{{task.kafka_15$2E$6$2E$26_streaming_transform-gv85.lakehouseCluster}}'

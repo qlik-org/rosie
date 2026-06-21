@@ -1,0 +1,6 @@
+properties:
+  id: newtable_invoices-2pb5
+  name: NewTable_invoices
+  inputDatasets:
+    - datasetId: newtable_invoices
+      taskId: cdc_15_june_lake_landing-2pb2

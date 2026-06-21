@@ -1,0 +1,11 @@
+properties:
+  name: 'S3_15.6.26_Streaming_Transform'
+  id: s3_15$2E$6$2E$26_streaming_transform-6ypn
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.s3_15$2E$6$2E$26_streaming_transform-6ypn.internalSchema}}'
+      taskSchema: '{{task.s3_15$2E$6$2E$26_streaming_transform-6ypn.taskSchema}}'
+  runtimeSettings:
+    lakehouseClusterId: '{{task.s3_15$2E$6$2E$26_streaming_transform-6ypn.lakehouseCluster}}'

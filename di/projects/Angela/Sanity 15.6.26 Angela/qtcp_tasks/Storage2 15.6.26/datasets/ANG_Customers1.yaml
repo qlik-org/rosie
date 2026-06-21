@@ -1,0 +1,28 @@
+properties:
+  id: ang_customers1-vvyd
+  name: ANG_Customers1
+  inputDatasets:
+    - datasetId: ang_customers1
+      taskId: cdc_15_june_lake_landing-2pb2
+transformations:
+  filter:
+    expressionStatement: ${customer_id}>100
+    alias:
+      - name: customer_id
+        value: customer_id
+  columnTransformations:
+    - action: ADD
+      columnName: test
+      newDataType:
+        type: NUMERIC
+        length: 0
+        precision: 18
+        scale: 2
+        originalTypeFull: ''
+      expression:
+        expressionStatement: $RANDOM()
+        alias: []
+      addedColumnId: '6bdc16f0-ebd1-4747-844c-8742e72d6e95'
+    - action: KEEP
+      columnName: customer_name
+      newColumnName: customer_name

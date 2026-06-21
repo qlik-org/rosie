@@ -1,0 +1,11 @@
+properties:
+  name: 'Streaming Transform2 15.6.26'
+  id: streaming_transform2_15$2E$6$2E$26-gv9e
+  type: STREAMING_TRANSFORM
+settings:
+  generalSettings:
+    artifactsLocation:
+      internalSchema: '{{task.streaming_transform2_15$2E$6$2E$26-gv9e.internalSchema}}'
+      taskSchema: '{{task.streaming_transform2_15$2E$6$2E$26-gv9e.taskSchema}}'
+  runtimeSettings:
+    lakehouseClusterId: '{{task.streaming_transform2_15$2E$6$2E$26-gv9e.lakehouseCluster}}'

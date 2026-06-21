@@ -1,0 +1,19 @@
+sourceConnection: '{{task.onboarding_replicate_landing-gwst.sourceConnection}}'
+externalReplicateRootDirectoryPath: s3://qlik-replicate-poc-upsolver-integration-4nx5dmzywgnm6ayi/angela_replicate3
+explicitlySelected:
+  - outputDatasetName: newSchema_NewTable
+    name: NewTable
+    schema: '{{task.onboarding_replicate_landing-gwst:null$_$newSchema.schema}}'
+    type: TABLE
+  - outputDatasetName: testdb_NewTable
+    name: NewTable
+    schema: '{{task.onboarding_replicate_landing-gwst:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: NewTable_invoices
+    name: NewTable_invoices
+    schema: '{{task.onboarding_replicate_landing-gwst:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: bigsky
+    name: bigsky
+    schema: '{{task.onboarding_replicate_landing-gwst:null$_$testdb.schema}}'
+    type: TABLE

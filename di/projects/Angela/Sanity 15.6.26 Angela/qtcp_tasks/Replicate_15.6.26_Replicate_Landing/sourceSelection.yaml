@@ -1,0 +1,15 @@
+sourceConnection: '{{task.replicate_15$2E$6$2E$26_replicate_landing-2pcj.sourceConnection}}'
+externalReplicateRootDirectoryPath: s3://qlik-replicate-poc-upsolver-integration-4nx5dmzywgnm6ayi/angela_replicate3
+explicitlySelected:
+  - outputDatasetName: newSchema_NewTable
+    name: NewTable
+    schema: '{{task.replicate_15$2E$6$2E$26_replicate_landing-2pcj:null$_$newSchema.schema}}'
+    type: TABLE
+  - outputDatasetName: NewTable_invoices
+    name: NewTable_invoices
+    schema: '{{task.replicate_15$2E$6$2E$26_replicate_landing-2pcj:null$_$testdb.schema}}'
+    type: TABLE
+  - outputDatasetName: NewTable_sales
+    name: NewTable_sales
+    schema: '{{task.replicate_15$2E$6$2E$26_replicate_landing-2pcj:null$_$testdb.schema}}'
+    type: TABLE

@@ -1,0 +1,7 @@
+properties:
+  id: adam3
+  name: adam3
+  streamingLandingDatasetSettings:
+    inputEntities:
+      explicitlySelected:
+        - adam3

@@ -1,0 +1,10 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-gwsu
+  type: LAKEHOUSE_STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-gwsu.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-gwsu.taskSchema}}'
+  taskRuntime:
+    lakehouseCluster: '{{task.onboarding_storage-gwsu.lakehouseCluster}}'

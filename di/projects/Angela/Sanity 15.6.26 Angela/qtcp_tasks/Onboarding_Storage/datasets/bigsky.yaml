@@ -1,0 +1,13 @@
+properties:
+  id: bigsky-gwsv
+  name: bigsky
+  inputDatasets:
+    - datasetId: bigsky
+      taskId: onboarding_replicate_landing-gwst
+transformations:
+  columnTransformations:
+    - action: KEEP
+      columnName: buyerEmail
+      newColumnName: buyerEmail
+      primaryKeyOrdinal: 1
+      nullable: false
