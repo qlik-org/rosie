@@ -1,0 +1,5 @@
+explicitlySelected:
+  - database: '{{task.registered_data_watermark-cqnd:ROSIE$_$reg2_landing.database}}'
+    name: Employees
+    schema: '{{task.registered_data_watermark-cqnd:ROSIE$_$reg2_landing.schema}}'
+    type: TABLE

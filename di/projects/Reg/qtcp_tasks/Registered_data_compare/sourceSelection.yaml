@@ -1,0 +1,5 @@
+explicitlySelected:
+  - database: '{{task.registered_data_compare-cqnh:ROSIE$_$reg2_storage.database}}'
+    name: Employees
+    schema: '{{task.registered_data_compare-cqnh:ROSIE$_$reg2_storage.schema}}'
+    type: VIEW

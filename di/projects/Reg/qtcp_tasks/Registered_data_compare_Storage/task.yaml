@@ -1,0 +1,13 @@
+properties:
+  name: Registered_data_compare_Storage
+  id: registered_data_compare_storage-cqni
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_compare_storage-cqni.internalSchema}}'
+    taskSchema: '{{task.registered_data_compare_storage-cqni.taskSchema}}'
+    databaseName: '{{task.registered_data_compare_storage-cqni.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_compare_storage-cqni.warehouseName}}'

@@ -1,0 +1,24 @@
+properties:
+  name: Registered_data_watermark
+  id: registered_data_watermark-cqnd
+  type: REGISTERED_DATA
+settings:
+  fullLoadOnly: false
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_watermark-cqnd.internalSchema}}'
+    taskSchema: '{{task.registered_data_watermark-cqnd.taskSchema}}'
+    databaseName: '{{task.registered_data_watermark-cqnd.databaseName}}'
+  incrementalSettings:
+    registeredType: REPLICATE
+    watermarkColumnName:
+      expressionStatement: header__change_seq
+    fromDateColumnName:
+      expressionStatement: header__timestamp
+    ctTableName:
+      expressionStatement: ${SOURCE_TABLE_NAME}__ct
+    softDeleteSupport: true
+    softDeleteExpression:
+      expressionStatement: ${header__change_oper} = 'D'
+    priorImageSupport: true
+    priorImageExpression:
+      expressionStatement: ${header__change_oper} = 'B'
