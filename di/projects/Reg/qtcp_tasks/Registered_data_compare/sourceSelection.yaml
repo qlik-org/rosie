@@ -3,3 +3,7 @@ explicitlySelected:
     name: Employees
     schema: '{{task.registered_data_compare-cqnh:ROSIE$_$reg2_storage.schema}}'
     type: VIEW
+  - database: '{{task.registered_data_compare-cqnh:ROSIE$_$reg2_storage.database}}'
+    name: Shippers
+    schema: '{{task.registered_data_compare-cqnh:ROSIE$_$reg2_storage.schema}}'
+    type: VIEW

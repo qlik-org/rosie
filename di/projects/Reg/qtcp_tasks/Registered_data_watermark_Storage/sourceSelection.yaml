@@ -1,3 +1,10 @@
 includePatterns:
   - sourceTask: registered_data_watermark-cqnd
     tablePattern: '%'
+explicitlySelected:
+  - sourceTask: registered_data_watermark-cqnd
+    name: Employees
+    sourceTableId: employees
+  - sourceTask: registered_data_watermark-cqnd
+    name: Shippers
+    sourceTableId: shippers

@@ -1,3 +1,10 @@
 includePatterns:
   - sourceTask: registered_data_compare-cqnh
     tablePattern: '%'
+explicitlySelected:
+  - sourceTask: registered_data_compare-cqnh
+    name: Employees
+    sourceTableId: employees
+  - sourceTask: registered_data_compare-cqnh
+    name: Shippers
+    sourceTableId: shippers

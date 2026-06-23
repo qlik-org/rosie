@@ -1,0 +1,6 @@
+properties:
+  id: shippers-cqn6
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: registered_data_watermark-cqnd

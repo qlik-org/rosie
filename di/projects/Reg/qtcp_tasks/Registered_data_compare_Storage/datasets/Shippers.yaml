@@ -1,13 +1,13 @@
 properties:
-  id: employees-cqnk
-  name: Employees
+  id: shippers-cqn7
+  name: Shippers
   inputDatasets:
-    - datasetId: employees
+    - datasetId: shippers
       taskId: registered_data_compare-cqnh
 transformations:
   columnTransformations:
     - action: KEEP
-      columnName: EmployeeID
-      newColumnName: EmployeeID
+      columnName: ShipperID
+      newColumnName: ShipperID
       primaryKeyOrdinal: 1
       nullable: false
