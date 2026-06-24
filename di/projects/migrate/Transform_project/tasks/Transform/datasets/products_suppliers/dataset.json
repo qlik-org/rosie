@@ -1,0 +1,36 @@
+{
+  "id": "products_suppliers-inpd",
+  "name": "products_suppliers",
+  "type": "DATAFLOW",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "suppliers-cwj9",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-cwj0"
+    },
+    {
+      "type": "NONE",
+      "datasetId": "products-cwj7",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_storage-cwj0"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "dataflowDatasetSettings": {
+    "dataflowId": "{{id(dataflow, products_suppliers)}}",
+    "targetId": "434783af-4ea5-424e-b5d3-c4998320cbfa",
+    "dataflowTargetState": "VALID",
+    "incremental": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

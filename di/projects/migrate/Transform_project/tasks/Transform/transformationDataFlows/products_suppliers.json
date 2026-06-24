@@ -1,0 +1,292 @@
+{
+  "name": "products_suppliers",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-cwkc"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "b4acb941-834d-4b96-9056-fa8d0a503621",
+        "label": "Products",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "02779a47-5464-43f9-9807-dd91812421f7",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-cwj0",
+              "entityId": "products-cwj7"
+            },
+            "configuration": {
+              "name": "Products"
+            }
+          }
+        }
+      },
+      {
+        "type": "source",
+        "id": "98c9942c-a189-4024-adee-2056a7735982",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 200
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "fdfa6096-f668-44b6-8af6-46961c43323e",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-cwj0",
+              "entityId": "suppliers-cwj9"
+            },
+            "configuration": {
+              "name": "Suppliers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "434783af-4ea5-424e-b5d3-c4998320cbfa",
+        "label": "products_suppliers",
+        "graphical": {
+          "position": {
+            "x": 560,
+            "y": 120
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "9f46a899-713e-4bec-930c-0395037ae13a",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "products_suppliers",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "ProductID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "ProductName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "SupplierID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CategoryID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "QuantityPerUnit",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitPrice",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsInStock",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "UnitsOnOrder",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ReorderLevel",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Discontinued",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "3322f03e-ed4c-45af-af48-b2cc89cc6371",
+        "label": "Join 1",
+        "graphical": {
+          "position": {
+            "x": 320,
+            "y": 120
+          },
+          "icon": "union-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "77c6da5e-0fe0-4691-b73a-f8d9f8ff6655",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "4e53198c-3da0-447d-9ce1-e26a34815dff",
+              "type": "LOOKUP"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "6b878fc7-f285-45f6-8ec1-242c57dbed50",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "join",
+          "label": "Join",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+            "configuration": {
+              "joinFunction": "LEFT_OUTER_JOIN",
+              "conditions": [
+                {
+                  "leftKey": "SupplierID",
+                  "rightKey": "SupplierID",
+                  "keepBothKeysInOutput": false,
+                  "$leftKey_name": "SupplierID",
+                  "$rightKey_name": "SupplierID"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "reactflow__edge-b4acb941-834d-4b96-9056-fa8d0a50362102779a47-5464-43f9-9807-dd91812421f7-3322f03e-ed4c-45af-af48-b2cc89cc637177c6da5e-0fe0-4691-b73a-f8d9f8ff6655",
+        "sourceHandle": "02779a47-5464-43f9-9807-dd91812421f7",
+        "targetHandle": "77c6da5e-0fe0-4691-b73a-f8d9f8ff6655"
+      },
+      {
+        "id": "reactflow__edge-98c9942c-a189-4024-adee-2056a7735982fdfa6096-f668-44b6-8af6-46961c43323e-3322f03e-ed4c-45af-af48-b2cc89cc63714e53198c-3da0-447d-9ce1-e26a34815dff",
+        "sourceHandle": "fdfa6096-f668-44b6-8af6-46961c43323e",
+        "targetHandle": "4e53198c-3da0-447d-9ce1-e26a34815dff"
+      },
+      {
+        "id": "reactflow__edge-3322f03e-ed4c-45af-af48-b2cc89cc63716b878fc7-f285-45f6-8ec1-242c57dbed50-434783af-4ea5-424e-b5d3-c4998320cbfa9f46a899-713e-4bec-930c-0395037ae13a",
+        "sourceHandle": "6b878fc7-f285-45f6-8ec1-242c57dbed50",
+        "targetHandle": "9f46a899-713e-4bec-930c-0395037ae13a"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}

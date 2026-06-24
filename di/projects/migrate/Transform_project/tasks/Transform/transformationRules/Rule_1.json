@@ -1,0 +1,45 @@
+{
+  "ordinal": 1,
+  "actionType": "ADD_COLUMN",
+  "scopeType": "COLUMN",
+  "scope": {
+    "whereOwnerName": "%",
+    "whereTableName": "%",
+    "whereColumnName": "%",
+    "whereDatatype": "UNSPECIFIED",
+    "whereColumnKeyAttribute": "ANY",
+    "whereColumnNullability": "ANY"
+  },
+  "action": {
+    "renameType": "RENAME",
+    "expression": {
+      "expressionStatement": "${Q_M_SOURCE_TABLE_NAME}",
+      "alias": [
+        {
+          "name": "Q_M_SOURCE_TABLE_NAME",
+          "value": "$Q_M_SOURCE_TABLE_NAME"
+        }
+      ]
+    },
+    "applyColumnDatatype": false,
+    "column": {
+      "name": "Rule_column",
+      "ordinal": 0,
+      "nullable": true,
+      "primaryKeyOrdinal": 0,
+      "datatype": {
+        "type": "STRING",
+        "length": 150,
+        "precision": 0,
+        "scale": 0,
+        "originalTypeFull": ""
+      },
+      "flags": "NONE"
+    }
+  },
+  "enabled": true,
+  "internalRule": false,
+  "name": "Rule_1",
+  "id": "rule_1-inqh",
+  "description": ""
+}

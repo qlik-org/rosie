@@ -1,0 +1,62 @@
+{
+  "sourceDataEntityKey": {
+    "type": "NONE",
+    "datasetId": "categories-cwj2",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "onboarding_storage-cwj0"
+  },
+  "mappingFields": [
+    {
+      "columnId": "categoryid",
+      "expression": {
+        "expressionStatement": "${CategoryID}",
+        "alias": [
+          {
+            "name": "CategoryID",
+            "value": "CategoryID"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "categoryname",
+      "expression": {
+        "expressionStatement": "${CategoryName}",
+        "alias": [
+          {
+            "name": "CategoryName",
+            "value": "CategoryName"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "description",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "Description_1-e6c8",
+      "expression": {
+        "expressionStatement": "${Description}",
+        "alias": [
+          {
+            "name": "Description",
+            "value": "Description"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "categories_default_mapping-inpq",
+  "name": "Categories_default_mapping",
+  "description": ""
+}
