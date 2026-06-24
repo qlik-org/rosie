@@ -1,0 +1,6 @@
+properties:
+  id: customers--nee
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_landing--nea

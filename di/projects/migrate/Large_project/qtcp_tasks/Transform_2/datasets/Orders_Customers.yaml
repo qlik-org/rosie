@@ -1,0 +1,15 @@
+properties:
+  id: orders_customers--ngu
+  name: Orders_Customers
+  inputDatasets:
+    - datasetId: orders--nfc
+      taskId: storage--ne8
+    - datasetId: customers_1--ne_
+      taskId: storage--ne8
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Orders_Customers)}}'
+    targetId: '5c01eb67-368f-4fa0-9817-090a974e3bb5'
+    dataflowTargetState: VALID
+    incremental: false
+mappingSettings:
+  mappings: []

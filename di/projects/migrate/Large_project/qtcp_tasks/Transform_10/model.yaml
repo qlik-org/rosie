@@ -1,0 +1,17 @@
+relationships:
+  - sourceEntity:
+      datasetId: products--nh7
+      name: Products
+      taskId: transform_10--nga
+    targetEntity:
+      datasetId: categories--nh8
+      name: Categories
+      taskId: transform_10--nga
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation--nij
