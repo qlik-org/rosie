@@ -1,0 +1,20 @@
+rules:
+  - actionType: RENAME_TABLE
+    action:
+      renameType: ADD_SUFFIX
+      value: _transform
+    name: Rule
+  - actionType: ADD_COLUMN
+    scopeType: COLUMN
+    action:
+      renameType: RENAME
+      expression:
+        expressionStatement: ${Q_M_SOURCE_TABLE_NAME}
+        alias:
+          - name: Q_M_SOURCE_TABLE_NAME
+            value: $Q_M_SOURCE_TABLE_NAME
+      column:
+        name: Rule_column
+        datatype:
+          length: 150
+    name: Rule_1

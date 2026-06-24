@@ -1,0 +1,43 @@
+properties:
+  id: shippers-inpf
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers-cwj8
+      name: Shippers
+      taskId: onboarding_storage-cwj0
+  tableDef:
+    columns:
+      - name: ShipperID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${ShipperID}
+          alias:
+            - name: ShipperID
+              value: ShipperID
+        id: shipperid
+      - name: CompanyName
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        expression:
+          expressionStatement: ${CompanyName}
+          alias:
+            - name: CompanyName
+              value: CompanyName
+        id: companyname
+      - name: Phone
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        expression:
+          expressionStatement: ${Phone}
+          alias:
+            - name: Phone
+              value: Phone
+        id: phone

@@ -1,0 +1,13 @@
+properties:
+  id: customers_flow-inpc
+  name: customers_flow
+  inputDatasets:
+    - datasetId: customers-cwj3
+      taskId: onboarding_storage-cwj0
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, customers_flow)}}'
+    targetId: e2597ed9-c4c5-476f-8e47-b441037269be
+    dataflowTargetState: VALID
+    incremental: false
+mappingSettings:
+  mappings: []

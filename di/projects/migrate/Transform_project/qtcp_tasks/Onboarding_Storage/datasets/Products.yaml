@@ -1,0 +1,6 @@
+properties:
+  id: products-cwj7
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: onboarding_landing-cwjz

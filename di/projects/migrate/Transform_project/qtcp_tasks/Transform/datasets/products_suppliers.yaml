@@ -1,0 +1,15 @@
+properties:
+  id: products_suppliers-inpd
+  name: products_suppliers
+  inputDatasets:
+    - datasetId: suppliers-cwj9
+      taskId: onboarding_storage-cwj0
+    - datasetId: products-cwj7
+      taskId: onboarding_storage-cwj0
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, products_suppliers)}}'
+    targetId: '434783af-4ea5-424e-b5d3-c4998320cbfa'
+    dataflowTargetState: VALID
+    incremental: false
+mappingSettings:
+  mappings: []

@@ -1,0 +1,129 @@
+relationships:
+  - sourceEntity:
+      datasetId: employees-inph
+      name: Employees
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: employees-inph
+      name: Employees
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-inp2
+  - sourceEntity:
+      datasetId: order_details-inpl
+      name: Order Details
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: orders-inpi
+      name: Orders
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: OrderID
+        targetColumn: OrderID
+        sourceColumnId: orderid
+        targetColumnId: orderid
+    name: Order Details_Orders_relation
+    description: ''
+    id: order_details_orders_relation-inpv
+  - sourceEntity:
+      datasetId: order_details-inpl
+      name: Order Details
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: products-inpm
+      name: Products
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: ProductID
+        targetColumn: ProductID
+        sourceColumnId: productid
+        targetColumnId: productid
+    name: Order Details_Products_relation
+    description: ''
+    id: order_details_products_relation-inpw
+  - sourceEntity:
+      datasetId: orders-inpi
+      name: Orders
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: customers-inpg
+      name: Customers
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-inpx
+  - sourceEntity:
+      datasetId: orders-inpi
+      name: Orders
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: employees-inph
+      name: Employees
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-inpy
+  - sourceEntity:
+      datasetId: orders-inpi
+      name: Orders
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: shippers-inpf
+      name: Shippers
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: ShipVia
+        targetColumn: ShipperID
+        sourceColumnId: shipvia
+        targetColumnId: shipperid
+    name: Orders_Shippers
+    description: ''
+    id: orders_shippers-inp1
+  - sourceEntity:
+      datasetId: products-inpm
+      name: Products
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: categories-inpj
+      name: Categories
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-inpz
+  - sourceEntity:
+      datasetId: products-inpm
+      name: Products
+      taskId: transform-cwkc
+    targetEntity:
+      datasetId: suppliers-inpk
+      name: Suppliers
+      taskId: transform-cwkc
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation-inp0

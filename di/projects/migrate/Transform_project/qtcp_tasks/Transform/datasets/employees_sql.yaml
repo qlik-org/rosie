@@ -1,0 +1,158 @@
+properties:
+  id: employees_sql-inpa
+  name: employees_sql
+  inputDatasets:
+    - datasetId: employees-cwj4
+      name: Employees
+      taskId: onboarding_storage-cwj0
+  tableDef:
+    columns:
+      - name: EmployeeID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: employeeid
+      - name: LastName
+        datatype:
+          type: STRING
+          length: 20
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(20)
+        id: lastname
+      - name: FirstName
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: firstname
+      - name: Title
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: title
+      - name: TitleOfCourtesy
+        nullable: true
+        datatype:
+          type: STRING
+          length: 25
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(25)
+        id: titleofcourtesy
+      - name: BirthDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: birthdate
+      - name: HireDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: hiredate
+      - name: Address
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        id: address
+      - name: City
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: city
+      - name: Region
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: region
+      - name: PostalCode
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: postalcode
+      - name: Country
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: country
+      - name: HomePhone
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: homephone
+      - name: Extension
+        nullable: true
+        datatype:
+          type: STRING
+          length: 4
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(4)
+        id: extension
+      - name: Photo
+        nullable: true
+        datatype:
+          type: BYTES
+          length: 8388608
+          originalType: BINARY
+          originalTypeFull: BINARY(8388608)
+        id: photo
+      - name: Notes
+        nullable: true
+        datatype:
+          type: STRING
+          length: 8388608
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(8388608)
+        id: notes
+      - name: ReportsTo
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: reportsto
+      - name: PhotoPath
+        nullable: true
+        datatype:
+          type: STRING
+          length: 255
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(255)
+        id: photopath
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Employees}
+      alias:
+        - name: Employees
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-cwj0$_$employees-cwj4'
+    incremental: false

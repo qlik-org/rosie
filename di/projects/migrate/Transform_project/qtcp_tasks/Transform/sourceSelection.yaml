@@ -1,0 +1,7 @@
+includePatterns:
+  - sourceTask: onboarding_storage-cwj0
+    tablePattern: '%'
+explicitlySelected:
+  - sourceTask: storage-inp3
+    name: a_Order Details
+    sourceTableId: order_details-inp8

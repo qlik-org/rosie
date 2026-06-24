@@ -1,0 +1,68 @@
+properties:
+  id: orders_shippers-inpe
+  name: orders_shippers
+  inputDatasets:
+    - datasetId: orders-cwj6
+      name: Orders
+      taskId: onboarding_storage-cwj0
+    - datasetId: shippers-cwj8
+      name: Shippers
+      taskId: onboarding_storage-cwj0
+  tableDef:
+    columns:
+      - name: CustomerID
+        nullable: true
+        datatype:
+          type: STRING
+          length: 5
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(5)
+        id: customerid
+      - name: EmployeeID
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: employeeid
+      - name: OrderDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalType: TIMESTAMPNTZ
+          originalTypeFull: TIMESTAMPNTZ(3)
+        id: orderdate
+      - name: OrderID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: orderid
+      - name: ShipVia
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: shipvia
+      - name: CompanyName
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+  customDatasetSettings:
+    customSql:
+      expressionStatement: "select ${Orders}.\"CustomerID\", ${Orders}.\"EmployeeID\", ${Orders}.\"OrderDate\", ${Orders}.\"OrderID\", ${Orders}.\"ShipVia\", ${Shippers}.\"CompanyName\"\n  from ${Orders}\njoin ${Shippers}\non ${Orders}.\"ShipVia\" = ${Shippers}.\"ShipperID\""
+      alias:
+        - name: Orders
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-cwj0$_$orders-cwj6'
+        - name: Shippers
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-cwj0$_$shippers-cwj8'
+    incremental: false

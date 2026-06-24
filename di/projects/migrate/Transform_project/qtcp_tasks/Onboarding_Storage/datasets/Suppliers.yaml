@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-cwj9
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing-cwjz

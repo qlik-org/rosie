@@ -1,0 +1,77 @@
+properties:
+  id: order_details-inpl
+  name: Order Details
+  inputDatasets:
+    - datasetId: order_details-inp8
+      name: a_Order Details
+      taskId: storage-inp3
+  tableDef:
+    columns:
+      - name: OrderID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${OrderID}
+          alias:
+            - name: OrderID
+              value: OrderID
+        id: orderid
+      - name: ProductID
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${ProductID}
+          alias:
+            - name: ProductID
+              value: ProductID
+        id: productid
+      - name: UnitPrice
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        expression:
+          expressionStatement: ${UnitPrice}
+          alias:
+            - name: UnitPrice
+              value: UnitPrice
+        id: unitprice
+      - name: Quantity
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        expression:
+          expressionStatement: ${Quantity}
+          alias:
+            - name: Quantity
+              value: Quantity
+        id: quantity
+      - name: Discount
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        expression:
+          expressionStatement: ${Discount}
+          alias:
+            - name: Discount
+              value: Discount
+        id: discount
+      - name: sum
+        nullable: true
+        datatype:
+          type: UINT4
+        expression:
+          expressionStatement: ${Quantity}*${UnitPrice}*(1-${Discount})
+          alias:
+            - name: Quantity
+              value: Quantity
+            - name: UnitPrice
+              value: UnitPrice
+            - name: Discount
+              value: Discount
+        id: sum-5f8f

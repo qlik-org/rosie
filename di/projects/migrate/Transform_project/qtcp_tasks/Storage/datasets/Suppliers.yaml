@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-inqa
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing-cwjz

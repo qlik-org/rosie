@@ -1,0 +1,121 @@
+properties:
+  id: products-inpm
+  name: Products
+  inputDatasets:
+    - datasetId: products-cwj7
+      name: Products
+      taskId: onboarding_storage-cwj0
+  tableDef:
+    columns:
+      - name: ProductID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${ProductID}
+          alias:
+            - name: ProductID
+              value: ProductID
+        id: productid
+      - name: ProductName
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        expression:
+          expressionStatement: ${ProductName}
+          alias:
+            - name: ProductName
+              value: ProductName
+        id: productname
+      - name: SupplierID
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${SupplierID}
+          alias:
+            - name: SupplierID
+              value: SupplierID
+        id: supplierid
+      - name: CategoryID
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${CategoryID}
+          alias:
+            - name: CategoryID
+              value: CategoryID
+        id: categoryid
+      - name: QuantityPerUnit
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        expression:
+          expressionStatement: ${QuantityPerUnit}
+          alias:
+            - name: QuantityPerUnit
+              value: QuantityPerUnit
+        id: quantityperunit
+      - name: UnitPrice
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        expression:
+          expressionStatement: ${UnitPrice}
+          alias:
+            - name: UnitPrice
+              value: UnitPrice
+        id: unitprice
+      - name: UnitsInStock
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        expression:
+          expressionStatement: ${UnitsInStock}
+          alias:
+            - name: UnitsInStock
+              value: UnitsInStock
+        id: unitsinstock
+      - name: UnitsOnOrder
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        expression:
+          expressionStatement: ${UnitsOnOrder}
+          alias:
+            - name: UnitsOnOrder
+              value: UnitsOnOrder
+        id: unitsonorder
+      - name: ReorderLevel
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        expression:
+          expressionStatement: ${ReorderLevel}
+          alias:
+            - name: ReorderLevel
+              value: ReorderLevel
+        id: reorderlevel
+      - name: Discontinued
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        expression:
+          expressionStatement: ${Discontinued}
+          alias:
+            - name: Discontinued
+              value: Discontinued
+        id: discontinued

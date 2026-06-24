@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-inp3
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-inp3.internalSchema}}'
+    taskSchema: '{{task.storage-inp3.taskSchema}}'
+    databaseName: '{{task.storage-inp3.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-inp3.warehouseName}}'

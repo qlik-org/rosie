@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-cwkc
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-cwkc.internalSchema}}'
+    taskSchema: '{{task.transform-cwkc.taskSchema}}'
+    databaseName: '{{task.transform-cwkc.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-cwkc.warehouseName}}'
