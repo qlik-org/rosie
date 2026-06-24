@@ -10,7 +10,6 @@ explicitlySelected:
     schema: '{{task.onboarding_landing--nky:null$_$dbo.schema}}'
     type: TABLE
   - name: Order Details
-    schema: '{{task.onboarding_landing--nky:null$_$dbo.schema}}'
     type: TABLE
   - name: Orders
     schema: '{{task.onboarding_landing--nky:null$_$dbo.schema}}'
