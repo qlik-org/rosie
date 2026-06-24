@@ -40,7 +40,6 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
-    "task.onboarding_landing--nky.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing--nky.sourceConnection": "",
     "task.onboarding_landing--nky.taskSchema": "",
     "task.onboarding_landing--nky:null$_$dbo.schema": "",
