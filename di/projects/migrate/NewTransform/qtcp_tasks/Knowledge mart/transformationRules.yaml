@@ -1,0 +1,30 @@
+rules:
+  - actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereDatatype: BLOB
+    internalRule: true
+    name: QLIK__REMOVE_BLOB_COLUMNS
+    description: 'Removes all BLOB columns. This rule is automatically generated and added for compatibility reasons.'
+  - actionType: DROP_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereDatatype: BYTES
+    internalRule: true
+    name: QLIK__REMOVE_BYTES_COLUMNS
+    description: 'Removes all BYTES columns. This rule is automatically generated and added for compatibility reasons.'
+  - actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Date'
+    action:
+      renameType: ADD_SUFFIX
+      value: _a
+    name: Rule
+  - actionType: RENAME_TABLE
+    scope:
+      whereTableName: Orders
+    action:
+      renameType: ADD_PREFIX
+      value: aa_
+    name: Rule_1

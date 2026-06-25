@@ -1,0 +1,168 @@
+properties:
+  id: mydataset-hx81
+  name: MyDataset
+  inputDatasets:
+    - datasetId: mydataset-v2js
+      name: MyDataset
+      taskId: transform-v2jb
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - name: EmployeeID
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: false
+      - name: MyColumn
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 50
+          originalTypeFull: NVARCHAR(50)
+        id: MyColumn-b51c
+        properties:
+          documentMetadata: false
+      - name: ReportsTo
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: reportsto
+        properties:
+          documentMetadata: false
+      - name: LastName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: lastname
+        properties:
+          documentMetadata: false
+      - name: FirstName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: firstname
+        properties:
+          documentMetadata: false
+      - name: Title
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: title
+        properties:
+          documentMetadata: false
+      - name: TitleOfCourtesy
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: titleofcourtesy
+        properties:
+          documentMetadata: false
+      - name: BirthDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: birthdate
+        properties:
+          documentMetadata: false
+      - name: HireDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: hiredate
+        properties:
+          documentMetadata: false
+  dimensionDatasetSettings:
+    type: TYPE2
+    rootDataEntityId:
+      datasetId: mydataset-v2js
+      name: MyDataset
+      taskId: transform-v2jb
+    mapping:
+      columns:
+        - columnName: EmployeeID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${ReportsTo}
+            alias:
+              - name: ReportsTo
+                value: ReportsTo
+        - columnName: LastName
+          type: NONE
+          expression:
+            expressionStatement: ${LastName}
+            alias:
+              - name: LastName
+                value: LastName
+        - columnName: FirstName
+          type: NONE
+          expression:
+            expressionStatement: ${FirstName}
+            alias:
+              - name: FirstName
+                value: FirstName
+        - columnName: Title
+          type: NONE
+          expression:
+            expressionStatement: ${Title}
+            alias:
+              - name: Title
+                value: Title
+        - columnName: TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${TitleOfCourtesy}
+            alias:
+              - name: TitleOfCourtesy
+                value: TitleOfCourtesy
+        - columnName: BirthDate
+          type: NONE
+          expression:
+            expressionStatement: ${BirthDate}
+            alias:
+              - name: BirthDate
+                value: BirthDate
+        - columnName: HireDate
+          type: NONE
+          expression:
+            expressionStatement: ${HireDate}
+            alias:
+              - name: HireDate
+                value: HireDate
+        - columnName: MyColumn
+          type: NONE
+          expression:
+            expressionStatement: $CONCAT(${X}, ${Y})
+            alias:
+              - name: X
+                value: LastName
+              - name: Y
+                value: FirstName
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

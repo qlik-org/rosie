@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-hx8u
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-hx8u.internalSchema}}'
+    taskSchema: '{{task.data_mart-hx8u.taskSchema}}'
+    databaseName: '{{task.data_mart-hx8u.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-hx8u.warehouseName}}'

@@ -1,0 +1,266 @@
+properties:
+  id: employees__order_details-wage
+  name: Employees__Order Details
+  inputDatasets:
+    - datasetId: orders-v2jm
+      name: Orders
+      taskId: transform-v2jb
+    - datasetId: order_details-v2jk
+      name: Order Details
+      taskId: transform-v2jb
+    - datasetId: employees-v2jg
+      name: Employees
+      taskId: transform-v2jb
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - name: OrderID
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orderid
+      - name: ProductID
+        nullable: true
+        primaryKeyOrdinal: 2
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: productid
+      - name: UnitPrice
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: unitprice
+      - name: Quantity
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: quantity
+      - name: Discount
+        nullable: true
+        datatype:
+          type: REAL4
+          originalTypeFull: FLOAT4
+        id: discount
+      - name: ProductName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: order_details_products_relation-hx8p$_$productname
+      - name: SupplierID
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: order_details_products_relation-hx8p$_$supplierid
+      - name: CategoryID
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: order_details_products_relation-hx8p$_$categoryid
+      - name: QuantityPerUnit
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: order_details_products_relation-hx8p$_$quantityperunit
+      - name: Order_Details_Products_relation_UnitPrice
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: order_details_products_relation-hx8p$_$unitprice
+      - name: UnitsInStock
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: order_details_products_relation-hx8p$_$unitsinstock
+      - name: UnitsOnOrder
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: order_details_products_relation-hx8p$_$unitsonorder
+      - name: ReorderLevel
+        nullable: true
+        datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        id: order_details_products_relation-hx8p$_$reorderlevel
+      - name: Discontinued
+        nullable: true
+        datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        id: order_details_products_relation-hx8p$_$discontinued
+      - name: Picture
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        id: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$picture
+      - name: CategoryName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$categoryname
+      - name: Description
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        id: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$description
+  documentDataEntitySettings:
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: order_details-v2jk
+      name: Order Details
+      taskId: transform-v2jb
+    entityRelationshipPath:
+      - order_details_products_relation-hx8p
+      - order_details_products_relation-hx8p$_$products_categories_relation-hx8t
+    mapping:
+      columns:
+        - columnName: OrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: Quantity
+          type: NONE
+          expression:
+            expressionStatement: ${Quantity}
+            alias:
+              - name: Quantity
+                value: Quantity
+        - columnName: Discount
+          type: NONE
+          expression:
+            expressionStatement: ${Discount}
+            alias:
+              - name: Discount
+                value: Discount
+        - columnName: ProductName
+          type: NONE
+          expression:
+            expressionStatement: ${ProductName}
+            alias:
+              - name: ProductName
+                value: order_details_products_relation-hx8p$_$ProductName
+        - columnName: SupplierID
+          type: NONE
+          expression:
+            expressionStatement: ${SupplierID}
+            alias:
+              - name: SupplierID
+                value: order_details_products_relation-hx8p$_$SupplierID
+        - columnName: CategoryID
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: order_details_products_relation-hx8p$_$CategoryID
+        - columnName: QuantityPerUnit
+          type: NONE
+          expression:
+            expressionStatement: ${QuantityPerUnit}
+            alias:
+              - name: QuantityPerUnit
+                value: order_details_products_relation-hx8p$_$QuantityPerUnit
+        - columnName: Order_Details_Products_relation_UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${Order_Details_Products_relation_UnitPrice}
+            alias:
+              - name: Order_Details_Products_relation_UnitPrice
+                value: order_details_products_relation-hx8p$_$UnitPrice
+        - columnName: UnitsInStock
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsInStock}
+            alias:
+              - name: UnitsInStock
+                value: order_details_products_relation-hx8p$_$UnitsInStock
+        - columnName: UnitsOnOrder
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsOnOrder}
+            alias:
+              - name: UnitsOnOrder
+                value: order_details_products_relation-hx8p$_$UnitsOnOrder
+        - columnName: ReorderLevel
+          type: NONE
+          expression:
+            expressionStatement: ${ReorderLevel}
+            alias:
+              - name: ReorderLevel
+                value: order_details_products_relation-hx8p$_$ReorderLevel
+        - columnName: Discontinued
+          type: NONE
+          expression:
+            expressionStatement: ${Discontinued}
+            alias:
+              - name: Discontinued
+                value: order_details_products_relation-hx8p$_$Discontinued
+        - columnName: Picture
+          type: NONE
+          expression:
+            expressionStatement: ${Picture}
+            alias:
+              - name: Picture
+                value: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$Picture
+        - columnName: CategoryName
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryName}
+            alias:
+              - name: CategoryName
+                value: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$CategoryName
+        - columnName: Description
+          type: NONE
+          expression:
+            expressionStatement: ${Description}
+            alias:
+              - name: Description
+                value: order_details_products_relation-hx8p$_$products_categories_relation-hx8t$_$Description
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false
+  virtualDataset: true

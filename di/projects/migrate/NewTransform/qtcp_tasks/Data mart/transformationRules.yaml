@@ -1,0 +1,10 @@
+rules:
+  - actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: Ship%
+    action:
+      renameType: ADD_PREFIX
+      value: a_
+    name: Rule ship column
+    description: add prefix to column starts with ship

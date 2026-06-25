@@ -1,0 +1,15 @@
+properties:
+  id: orders_customers_flow-v2jw
+  name: orders_customers_flow
+  inputDatasets:
+    - datasetId: customers-v2i8
+      taskId: onboarding_storage-v2i5
+    - datasetId: orders-v2i_
+      taskId: onboarding_storage-v2i5
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, orders_customers_flow)}}'
+    targetId: '82745131-f4c8-4499-91fb-cbd3da9c1fe9'
+    dataflowTargetState: VALID
+    incremental: false
+mappingSettings:
+  mappings: []
