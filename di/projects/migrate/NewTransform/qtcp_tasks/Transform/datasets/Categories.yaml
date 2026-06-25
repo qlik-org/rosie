@@ -5,6 +5,8 @@ properties:
     - datasetId: categories-v2i7
       name: Categories
       taskId: onboarding_storage-v2i5
+  datasetAttributes:
+    materialized: OFF
   tableDef:
     columns:
       - name: Picture
