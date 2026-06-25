@@ -1,0 +1,307 @@
+{
+  "name": "orders_customers_flow",
+  "description": "",
+  "context": {
+    "projectId": "{{ref(project.current.projectId)}}",
+    "dataAppId": "transform-v2jb"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "7e9ea882-6ca9-449b-ba30-de9d3ace7caa",
+        "label": "Customers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "7dd98232-6c13-4732-ac5f-36a45d4e47dd",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-v2i5",
+              "entityId": "customers-v2i8"
+            },
+            "configuration": {
+              "name": "Customers"
+            }
+          }
+        }
+      },
+      {
+        "type": "source",
+        "id": "4b2a92c7-07e8-4f98-a011-f294d50d5959",
+        "label": "Orders",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 200
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "77049ce4-d383-4fec-bf74-eb55fba9bb59",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "onboarding_storage-v2i5",
+              "entityId": "orders-v2i_"
+            },
+            "configuration": {
+              "name": "Orders"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "82745131-f4c8-4499-91fb-cbd3da9c1fe9",
+        "label": "orders_customers_flow",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "5358932d-0099-4692-8f64-05500f9d7510",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "orders_customers_flow",
+              "settings": {
+                "materialized": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "CustomerID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "OrderID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "EmployeeID",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "OrderDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "RequiredDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShippedDate",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipVia",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Freight",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipAddress",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCity",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipRegion",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipPostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ShipCountry",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "processor",
+        "id": "96e537e7-eac8-4e48-848b-a7adddcddd59",
+        "label": "Join 1",
+        "graphical": {
+          "position": {
+            "x": 280,
+            "y": 120
+          },
+          "icon": "union-processor"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "80da5d63-1314-4cd8-b842-c792b8672c4a",
+              "type": "DEFAULT"
+            },
+            {
+              "id": "5a6da69d-97e5-4b62-8ce9-fc5b1a309065",
+              "type": "LOOKUP"
+            }
+          ],
+          "outgoing": [
+            {
+              "id": "4d335b8b-e825-4c32-81d2-9b08359b7efe",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "join",
+          "label": "Join",
+          "properties": {
+            "tckType": "cHJvY2Vzc2luZy1iZWFtI1Byb2Nlc3NpbmcjSm9pbjI",
+            "configuration": {
+              "joinFunction": "LEFT_OUTER_JOIN",
+              "conditions": [
+                {
+                  "leftKey": "CustomerID",
+                  "rightKey": "CustomerID",
+                  "keepBothKeysInOutput": false,
+                  "$leftKey_name": "CustomerID",
+                  "$rightKey_name": "CustomerID"
+                }
+              ],
+              "$state": "CONFIGURED"
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "reactflow__edge-7e9ea882-6ca9-449b-ba30-de9d3ace7caa7dd98232-6c13-4732-ac5f-36a45d4e47dd-96e537e7-eac8-4e48-848b-a7adddcddd5980da5d63-1314-4cd8-b842-c792b8672c4a",
+        "sourceHandle": "7dd98232-6c13-4732-ac5f-36a45d4e47dd",
+        "targetHandle": "80da5d63-1314-4cd8-b842-c792b8672c4a"
+      },
+      {
+        "id": "reactflow__edge-4b2a92c7-07e8-4f98-a011-f294d50d595977049ce4-d383-4fec-bf74-eb55fba9bb59-96e537e7-eac8-4e48-848b-a7adddcddd595a6da69d-97e5-4b62-8ce9-fc5b1a309065",
+        "sourceHandle": "77049ce4-d383-4fec-bf74-eb55fba9bb59",
+        "targetHandle": "5a6da69d-97e5-4b62-8ce9-fc5b1a309065"
+      },
+      {
+        "id": "reactflow__edge-96e537e7-eac8-4e48-848b-a7adddcddd594d335b8b-e825-4c32-81d2-9b08359b7efe-82745131-f4c8-4499-91fb-cbd3da9c1fe95358932d-0099-4692-8f64-05500f9d7510",
+        "sourceHandle": "4d335b8b-e825-4c32-81d2-9b08359b7efe",
+        "targetHandle": "5358932d-0099-4692-8f64-05500f9d7510"
+      }
+    ]
+  },
+  "modelVersion": "1.0.0"
+}
