@@ -1,0 +1,15 @@
+properties:
+  name: Transform
+  id: transform-v2jb
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    historyEnabled: false
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform-v2jb.internalSchema}}'
+    taskSchema: '{{task.transform-v2jb.taskSchema}}'
+    databaseName: '{{task.transform-v2jb.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-v2jb.warehouseName}}'

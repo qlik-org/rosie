@@ -1,0 +1,422 @@
+properties:
+  id: orders-wagh
+  name: Orders
+  inputDatasets:
+    - datasetId: orders-v2jm
+      name: Orders
+      taskId: transform-v2jb
+    - datasetId: mydataset-v2js
+      name: MyDataset
+      taskId: transform-v2jb
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - name: CustomerID
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 5
+          originalTypeFull: NVARCHAR(5)
+        id: customerid
+      - name: EmployeeID
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+      - name: ShipVia
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: shipvia
+      - name: OrderDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orderdate
+      - name: RequiredDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: requireddate
+      - name: ShippedDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: shippeddate
+      - name: Freight
+        nullable: true
+        datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        id: freight
+      - name: ShipName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        id: shipname
+      - name: ShipAddress
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: shipaddress
+      - name: ShipCity
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcity
+      - name: ShipRegion
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipregion
+      - name: ShipPostalCode
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: shippostalcode
+      - name: ShipCountry
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: shipcountry
+      - name: ReportsTo
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: orders_mydataset_relation-hx8s$_$reportsto
+      - name: LastName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: orders_mydataset_relation-hx8s$_$lastname
+      - name: FirstName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_mydataset_relation-hx8s$_$firstname
+      - name: Title
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: orders_mydataset_relation-hx8s$_$title
+      - name: TitleOfCourtesy
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: orders_mydataset_relation-hx8s$_$titleofcourtesy
+      - name: BirthDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_mydataset_relation-hx8s$_$birthdate
+      - name: HireDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: orders_mydataset_relation-hx8s$_$hiredate
+      - name: Address
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: orders_mydataset_relation-hx8s$_$address
+      - name: City
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_mydataset_relation-hx8s$_$city
+      - name: Region
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_mydataset_relation-hx8s$_$region
+      - name: PostalCode
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: orders_mydataset_relation-hx8s$_$postalcode
+      - name: Country
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: orders_mydataset_relation-hx8s$_$country
+      - name: HomePhone
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: orders_mydataset_relation-hx8s$_$homephone
+      - name: Extension
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: orders_mydataset_relation-hx8s$_$extension
+      - name: OrderID
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: OrderID-1528
+  documentDataEntitySettings:
+    repeatedDataEntities: []
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: orders-v2jm
+      name: Orders
+      taskId: transform-v2jb
+    entityRelationshipPath:
+      - orders_mydataset_relation-hx8s
+    mapping:
+      columns:
+        - columnName: CustomerID
+          type: NONE
+          expression:
+            expressionStatement: ${CustomerID}
+            alias:
+              - name: CustomerID
+                value: CustomerID
+        - columnName: EmployeeID
+          type: NONE
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${OrderDate}
+            alias:
+              - name: OrderDate
+                value: OrderDate
+        - columnName: RequiredDate
+          type: NONE
+          expression:
+            expressionStatement: ${RequiredDate}
+            alias:
+              - name: RequiredDate
+                value: RequiredDate
+        - columnName: ShippedDate
+          type: NONE
+          expression:
+            expressionStatement: ${ShippedDate}
+            alias:
+              - name: ShippedDate
+                value: ShippedDate
+        - columnName: ShipVia
+          type: NONE
+          expression:
+            expressionStatement: ${ShipVia}
+            alias:
+              - name: ShipVia
+                value: ShipVia
+        - columnName: Freight
+          type: NONE
+          expression:
+            expressionStatement: ${Freight}
+            alias:
+              - name: Freight
+                value: Freight
+        - columnName: ShipName
+          type: NONE
+          expression:
+            expressionStatement: ${ShipName}
+            alias:
+              - name: ShipName
+                value: ShipName
+        - columnName: ShipAddress
+          type: NONE
+          expression:
+            expressionStatement: ${ShipAddress}
+            alias:
+              - name: ShipAddress
+                value: ShipAddress
+        - columnName: ShipCity
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCity}
+            alias:
+              - name: ShipCity
+                value: ShipCity
+        - columnName: ShipRegion
+          type: NONE
+          expression:
+            expressionStatement: ${ShipRegion}
+            alias:
+              - name: ShipRegion
+                value: ShipRegion
+        - columnName: ShipPostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${ShipPostalCode}
+            alias:
+              - name: ShipPostalCode
+                value: ShipPostalCode
+        - columnName: ShipCountry
+          type: NONE
+          expression:
+            expressionStatement: ${ShipCountry}
+            alias:
+              - name: ShipCountry
+                value: ShipCountry
+        - columnName: ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${ReportsTo}
+            alias:
+              - name: ReportsTo
+                value: orders_mydataset_relation-hx8s$_$ReportsTo
+        - columnName: LastName
+          type: NONE
+          expression:
+            expressionStatement: ${LastName}
+            alias:
+              - name: LastName
+                value: orders_mydataset_relation-hx8s$_$LastName
+        - columnName: FirstName
+          type: NONE
+          expression:
+            expressionStatement: ${FirstName}
+            alias:
+              - name: FirstName
+                value: orders_mydataset_relation-hx8s$_$FirstName
+        - columnName: Title
+          type: NONE
+          expression:
+            expressionStatement: ${Title}
+            alias:
+              - name: Title
+                value: orders_mydataset_relation-hx8s$_$Title
+        - columnName: TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${TitleOfCourtesy}
+            alias:
+              - name: TitleOfCourtesy
+                value: orders_mydataset_relation-hx8s$_$TitleOfCourtesy
+        - columnName: BirthDate
+          type: NONE
+          expression:
+            expressionStatement: ${BirthDate}
+            alias:
+              - name: BirthDate
+                value: orders_mydataset_relation-hx8s$_$BirthDate
+        - columnName: HireDate
+          type: NONE
+          expression:
+            expressionStatement: ${HireDate}
+            alias:
+              - name: HireDate
+                value: orders_mydataset_relation-hx8s$_$HireDate
+        - columnName: Address
+          type: NONE
+          expression:
+            expressionStatement: ${Address}
+            alias:
+              - name: Address
+                value: orders_mydataset_relation-hx8s$_$Address
+        - columnName: City
+          type: NONE
+          expression:
+            expressionStatement: ${City}
+            alias:
+              - name: City
+                value: orders_mydataset_relation-hx8s$_$City
+        - columnName: Region
+          type: NONE
+          expression:
+            expressionStatement: ${Region}
+            alias:
+              - name: Region
+                value: orders_mydataset_relation-hx8s$_$Region
+        - columnName: PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${PostalCode}
+            alias:
+              - name: PostalCode
+                value: orders_mydataset_relation-hx8s$_$PostalCode
+        - columnName: Country
+          type: NONE
+          expression:
+            expressionStatement: ${Country}
+            alias:
+              - name: Country
+                value: orders_mydataset_relation-hx8s$_$Country
+        - columnName: HomePhone
+          type: NONE
+          expression:
+            expressionStatement: ${HomePhone}
+            alias:
+              - name: HomePhone
+                value: orders_mydataset_relation-hx8s$_$HomePhone
+        - columnName: Extension
+          type: NONE
+          expression:
+            expressionStatement: ${Extension}
+            alias:
+              - name: Extension
+                value: orders_mydataset_relation-hx8s$_$Extension
+        - columnName: OrderID
+          type: NONE
+          expression:
+            expressionStatement: ${OrderID}
+            alias:
+              - name: OrderID
+                value: OrderID
+    fullyType2Sources: false
+    checkedTreeNodesForDisplay:
+      - orders_mydataset_relation-hx8s
+    subtype: MODEL_BASED
+    materializedSource: false

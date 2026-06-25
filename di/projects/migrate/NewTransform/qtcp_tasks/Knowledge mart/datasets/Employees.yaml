@@ -1,0 +1,272 @@
+properties:
+  id: employees-wagg
+  name: Employees
+  inputDatasets:
+    - datasetId: employees-v2jg
+      name: Employees
+      taskId: transform-v2jb
+    - datasetId: categories-v2jj
+      name: Categories
+      taskId: transform-v2jb
+    - datasetId: products-v2jo
+      name: Products
+      taskId: transform-v2jb
+    - datasetId: order_details-v2jk
+      name: Order Details
+      taskId: transform-v2jb
+    - datasetId: orders-v2jm
+      name: Orders
+      taskId: transform-v2jb
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - name: EmployeeID
+        nullable: true
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: employeeid
+        properties:
+          documentMetadata: true
+      - name: LastName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        id: lastname
+        properties:
+          documentMetadata: true
+      - name: FirstName
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: firstname
+        properties:
+          documentMetadata: true
+      - name: Title_edited
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 30
+          originalTypeFull: NVARCHAR(30)
+        id: title
+      - name: TitleOfCourtesy
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        id: titleofcourtesy
+      - name: BirthDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: birthdate
+      - name: HireDate
+        nullable: true
+        datatype:
+          type: DATETIME
+          precision: 3
+          originalTypeFull: TIMESTAMP_NTZ(3)
+        id: hiredate
+      - name: Address
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 60
+          originalTypeFull: NVARCHAR(60)
+        id: address
+      - name: City
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: city
+      - name: Region
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: region
+      - name: PostalCode
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 10
+          originalTypeFull: NVARCHAR(10)
+        id: postalcode
+      - name: Country
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        id: country
+      - name: HomePhone
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 24
+          originalTypeFull: NVARCHAR(24)
+        id: homephone
+      - name: Extension
+        nullable: true
+        datatype:
+          type: WSTRING
+          length: 4
+          originalTypeFull: NVARCHAR(4)
+        id: extension
+      - name: ReportsTo
+        nullable: true
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        id: reportsto
+  documentDataEntitySettings:
+    repeatedDataEntities:
+      - rootDataEntityId:
+          type: NONE
+          datasetId: order_details-v2jk
+          name: Order Details
+          taskId: transform-v2jb
+        entityRelationshipPath: orders_employees_relation-hx8r$_$order_details_orders_relation-hx8o
+        dimensionId: employees__order_details-wage
+      - rootDataEntityId:
+          type: NONE
+          datasetId: orders-v2jm
+          name: Orders
+          taskId: transform-v2jb
+        entityRelationshipPath: orders_employees_relation-hx8r
+        dimensionId: employees__orders-wagf
+    type: TYPE1
+    rootDataEntityId:
+      type: NONE
+      datasetId: employees-v2jg
+      name: Employees
+      taskId: transform-v2jb
+    entityRelationshipPath: []
+    mapping:
+      columns:
+        - columnName: EmployeeID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${EmployeeID}
+            alias:
+              - name: EmployeeID
+                value: EmployeeID
+        - columnName: LastName
+          type: NONE
+          expression:
+            expressionStatement: ${LastName}
+            alias:
+              - name: LastName
+                value: LastName
+        - columnName: FirstName
+          type: NONE
+          expression:
+            expressionStatement: ${FirstName}
+            alias:
+              - name: FirstName
+                value: FirstName
+        - columnName: Title_edited
+          type: NONE
+          expression:
+            expressionStatement: ${Title}
+            alias:
+              - name: Title
+                value: Title
+        - columnName: TitleOfCourtesy
+          type: NONE
+          expression:
+            expressionStatement: ${TitleOfCourtesy}
+            alias:
+              - name: TitleOfCourtesy
+                value: TitleOfCourtesy
+        - columnName: BirthDate
+          type: NONE
+          expression:
+            expressionStatement: ${BirthDate}
+            alias:
+              - name: BirthDate
+                value: BirthDate
+        - columnName: HireDate
+          type: NONE
+          expression:
+            expressionStatement: ${HireDate}
+            alias:
+              - name: HireDate
+                value: HireDate
+        - columnName: Address
+          type: NONE
+          expression:
+            expressionStatement: ${Address}
+            alias:
+              - name: Address
+                value: Address
+        - columnName: City
+          type: NONE
+          expression:
+            expressionStatement: ${City}
+            alias:
+              - name: City
+                value: City
+        - columnName: Region
+          type: NONE
+          expression:
+            expressionStatement: ${Region}
+            alias:
+              - name: Region
+                value: Region
+        - columnName: PostalCode
+          type: NONE
+          expression:
+            expressionStatement: ${PostalCode}
+            alias:
+              - name: PostalCode
+                value: PostalCode
+        - columnName: Country
+          type: NONE
+          expression:
+            expressionStatement: ${Country}
+            alias:
+              - name: Country
+                value: Country
+        - columnName: HomePhone
+          type: NONE
+          expression:
+            expressionStatement: ${HomePhone}
+            alias:
+              - name: HomePhone
+                value: HomePhone
+        - columnName: Extension
+          type: NONE
+          expression:
+            expressionStatement: ${Extension}
+            alias:
+              - name: Extension
+                value: Extension
+        - columnName: ReportsTo
+          type: NONE
+          expression:
+            expressionStatement: ${ReportsTo}
+            alias:
+              - name: ReportsTo
+                value: ReportsTo
+    fullyType2Sources: false
+    checkedTreeNodesForDisplay:
+      - orders_employees_relation-hx8r$_$order_details_orders_relation-hx8o$_$order_details_products_relation-hx8p$_$products_categories_relation-hx8t
+      - orders_employees_relation-hx8r$_$order_details_orders_relation-hx8o$_$order_details_products_relation-hx8p
+      - orders_employees_relation-hx8r$_$order_details_orders_relation-hx8o
+      - orders_employees_relation-hx8r
+    subtype: MODEL_BASED
+    materializedSource: false

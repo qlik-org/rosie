@@ -1,0 +1,16 @@
+scheduling:
+  - enabled: true
+    schedulingType: TIME_BASED
+    timeBasedScheduling:
+      schedule:
+        - RRULE:FREQ=WEEKLY;INTERVAL=3;BYDAY=MO,WE;BYHOUR=12;BYMINUTE=0;BYSECOND=0
+      startDateTime: 2026-06-25T12:00:00.0000000Z
+      endDateTime: 0001-01-01T00:00:00.0000000Z
+      timezone: Etc/UTC
+      fullloadInterval: 0
+    eventBasedScheduling:
+      eventSchedulingType: ANY_INPUT_TASK
+      triggerApps: []
+    runOnReconnect: ONSCHEDULED
+    description: ''
+    version: '1'
