@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "schedulingType": "TIME_BASED",
+  "timeBasedScheduling": {
+    "schedule": [
+      "RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=TU;BYHOUR=21;BYMINUTE=0;BYSECOND=0"
+    ],
+    "startDateTime": "2026-06-24T21:00:00.000Z",
+    "endDateTime": "0001-01-01T00:00:00.000Z",
+    "timezone": "Etc/UTC",
+    "fullloadInterval": 0
+  },
+  "eventBasedScheduling": {
+    "eventSchedulingType": "ANY_INPUT_TASK",
+    "triggerApps": []
+  },
+  "runOnReconnect": "ONSCHEDULED",
+  "id": "schedule-hx8v",
+  "name": "Schedule",
+  "description": "",
+  "version": "1"
+}

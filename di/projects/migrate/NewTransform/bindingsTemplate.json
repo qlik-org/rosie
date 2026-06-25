@@ -40,6 +40,19 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.data_mart-hx8u.databaseName": "{{task-type.datamart.databaseName}}",
+    "task.data_mart-hx8u.internalSchema": "",
+    "task.data_mart-hx8u.taskSchema": "",
+    "task.data_mart-hx8u.warehouseName": "{{task-type.datamart.warehouseName}}",
+    "task.knowledge_mart-waga.databaseName": "{{task-type.knowledgeMart.databaseName}}",
+    "task.knowledge_mart-waga.databricksVectorSearchEndpoint": "{{task-type.knowledgeMart.databricksVectorSearchEndpoint}}",
+    "task.knowledge_mart-waga.indexDatabase": "{{task-type.knowledgeMart.indexDatabase}}",
+    "task.knowledge_mart-waga.indexName": "",
+    "task.knowledge_mart-waga.indexSchema": "",
+    "task.knowledge_mart-waga.internalSchema": "",
+    "task.knowledge_mart-waga.maxNumberOfRecords": "",
+    "task.knowledge_mart-waga.taskSchema": "",
+    "task.knowledge_mart-waga.warehouseName": "{{task-type.knowledgeMart.warehouseName}}",
     "task.onboarding_landing-v2i4.databaseName": "{{task-type.landing.databaseName}}",
     "task.onboarding_landing-v2i4.sourceConnection": "",
     "task.onboarding_landing-v2i4.taskSchema": "",
@@ -54,6 +67,8 @@
     "task.transform-v2jb.warehouseName": "{{task-type.transform.warehouseName}}"
   },
   "idToNameMap": {
+    "data_mart-hx8u": "Data mart",
+    "knowledge_mart-waga": "Knowledge mart",
     "onboarding_landing-v2i4": "Onboarding_Landing",
     "onboarding_storage-v2i5": "Onboarding_Storage",
     "transform-v2jb": "Transform"

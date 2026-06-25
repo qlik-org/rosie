@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "products-v2jo",
+    "name": "Products",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v2jb"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "categories-v2jj",
+    "name": "Categories",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v2jb"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CategoryID",
+      "targetColumn": "CategoryID",
+      "sourceColumnId": "categoryid",
+      "targetColumnId": "categoryid"
+    }
+  ],
+  "name": "Products_Categories_relation",
+  "description": "",
+  "id": "products_categories_relation-hx8t"
+}

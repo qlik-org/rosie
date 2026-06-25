@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "schedulingType": "EVENT_BASED",
   "timeBasedScheduling": {
     "schedule": [],

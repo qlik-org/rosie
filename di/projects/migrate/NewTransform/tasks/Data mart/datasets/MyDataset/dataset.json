@@ -1,0 +1,333 @@
+{
+  "id": "mydataset-hx81",
+  "name": "MyDataset",
+  "type": "DIMENSION",
+  "inputDatasets": [
+    {
+      "type": "NONE",
+      "datasetId": "mydataset-v2js",
+      "name": "MyDataset",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-v2jb"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "ON",
+    "watermarkIncrementalSettings": "INHERIT",
+    "createExternalArtifacts": "INHERIT"
+  },
+  "tableDef": {
+    "name": "MyDataset",
+    "columns": [
+      {
+        "name": "EmployeeID",
+        "ordinal": 1,
+        "nullable": true,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "employeeid",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "MyColumn",
+        "ordinal": 2,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 50,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(50)"
+        },
+        "id": "MyColumn-b51c",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "ReportsTo",
+        "ordinal": 3,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "INT4",
+          "length": 0,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "INTEGER"
+        },
+        "id": "reportsto",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "LastName",
+        "ordinal": 4,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 20,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(20)"
+        },
+        "id": "lastname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "FirstName",
+        "ordinal": 5,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 10,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(10)"
+        },
+        "id": "firstname",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "Title",
+        "ordinal": 6,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 30,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(30)"
+        },
+        "id": "title",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "TitleOfCourtesy",
+        "ordinal": 7,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "WSTRING",
+          "length": 25,
+          "precision": 0,
+          "scale": 0,
+          "originalTypeFull": "NVARCHAR(25)"
+        },
+        "id": "titleofcourtesy",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "BirthDate",
+        "ordinal": 8,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "birthdate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      },
+      {
+        "name": "HireDate",
+        "ordinal": 9,
+        "nullable": true,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "DATETIME",
+          "length": 0,
+          "precision": 3,
+          "scale": 0,
+          "originalTypeFull": "TIMESTAMP_NTZ(3)"
+        },
+        "id": "hiredate",
+        "flags": "NONE",
+        "properties": {
+          "documentMetadata": false
+        }
+      }
+    ],
+    "entityId": "",
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "dimensionDatasetSettings": {
+    "type": "TYPE2",
+    "rootDataEntityId": {
+      "type": "NONE",
+      "datasetId": "mydataset-v2js",
+      "name": "MyDataset",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "transform-v2jb"
+    },
+    "mapping": {
+      "columns": [
+        {
+          "columnName": "EmployeeID",
+          "type": "ROOT_PK",
+          "expression": {
+            "expressionStatement": "${EmployeeID}",
+            "alias": [
+              {
+                "name": "EmployeeID",
+                "value": "EmployeeID"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "ReportsTo",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${ReportsTo}",
+            "alias": [
+              {
+                "name": "ReportsTo",
+                "value": "ReportsTo"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "LastName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${LastName}",
+            "alias": [
+              {
+                "name": "LastName",
+                "value": "LastName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "FirstName",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${FirstName}",
+            "alias": [
+              {
+                "name": "FirstName",
+                "value": "FirstName"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "Title",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${Title}",
+            "alias": [
+              {
+                "name": "Title",
+                "value": "Title"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "TitleOfCourtesy",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${TitleOfCourtesy}",
+            "alias": [
+              {
+                "name": "TitleOfCourtesy",
+                "value": "TitleOfCourtesy"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "BirthDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${BirthDate}",
+            "alias": [
+              {
+                "name": "BirthDate",
+                "value": "BirthDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "HireDate",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "${HireDate}",
+            "alias": [
+              {
+                "name": "HireDate",
+                "value": "HireDate"
+              }
+            ]
+          }
+        },
+        {
+          "columnName": "MyColumn",
+          "type": "NONE",
+          "expression": {
+            "expressionStatement": "$CONCAT(${X}, ${Y})",
+            "alias": [
+              {
+                "name": "X",
+                "value": "LastName"
+              },
+              {
+                "name": "Y",
+                "value": "FirstName"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullyType2Sources": false,
+    "subtype": "MODEL_BASED",
+    "materializedSource": false
+  },
+  "virtualDataset": false,
+  "description": ""
+}

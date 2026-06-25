@@ -1,0 +1,27 @@
+{
+  "sourceEntity": {
+    "type": "NONE",
+    "datasetId": "orders-v2jm",
+    "name": "Orders",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v2jb"
+  },
+  "targetEntity": {
+    "type": "NONE",
+    "datasetId": "customers-v2jf",
+    "name": "Customers",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "transform-v2jb"
+  },
+  "columnRelationships": [
+    {
+      "sourceColumn": "CustomerID",
+      "targetColumn": "CustomerID",
+      "sourceColumnId": "customerid",
+      "targetColumnId": "customerid"
+    }
+  ],
+  "name": "Orders_Customers_relation",
+  "description": "",
+  "id": "orders_customers_relation-hx8q"
+}
