@@ -17,3 +17,9 @@ explicitlySelected:
   - sourceTask: onboarding_storage-h2em
     name: Suppliers
     sourceTableId: suppliers-h2er
+  - sourceTask: onboarding_reload_t1_storage-h2ef
+    name: Shippers
+    sourceTableId: shippers-h2ek
+  - sourceTask: onboarding_storage-h2em
+    name: Order Details
+    sourceTableId: order_details-h2ep

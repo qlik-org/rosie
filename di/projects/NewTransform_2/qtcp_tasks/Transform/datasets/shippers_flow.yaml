@@ -1,0 +1,12 @@
+properties:
+  id: shippers_flow-h2fs
+  name: shippers_flow
+  inputDatasets:
+    - datasetId: shippers-h2ek
+      taskId: onboarding_reload_t1_storage-h2ef
+  datasetAttributes:
+    hasHistory: OFF
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, shippers_flow)}}'
+    targetId: '1e13578a-ca15-40ff-adbd-e481fb84dc0b'
+    dataflowTargetState: NOT_VALID

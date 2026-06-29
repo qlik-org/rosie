@@ -1,0 +1,13 @@
+properties:
+  id: shippers_sql-h2fr
+  name: shippers_sql
+  inputDatasets:
+    - datasetId: shippers-h2ek
+      name: Shippers
+      taskId: onboarding_reload_t1_storage-h2ef
+  datasetAttributes:
+    materialized: OFF
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Shippers}
+      alias: []
