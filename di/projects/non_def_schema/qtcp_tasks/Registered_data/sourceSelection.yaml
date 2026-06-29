@@ -1,13 +1,13 @@
 explicitlySelected:
-  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.database}}'
+  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.database}}'
     name: Categories
-    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.schema}}'
+    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.database}}'
+  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.database}}'
     name: Products
-    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.schema}}'
+    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.schema}}'
     type: TABLE
-  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.database}}'
+  - database: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.database}}'
     name: Suppliers
-    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$nondefscema_landing.schema}}'
+    schema: '{{task.registered_data-h2gb:ROSIE_DB$_$non_def_schema_b1_landing.schema}}'
     type: TABLE
