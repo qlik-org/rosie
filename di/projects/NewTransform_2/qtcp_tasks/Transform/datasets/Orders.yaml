@@ -5,6 +5,8 @@ properties:
     - datasetId: orders-h2ej
       name: Orders
       taskId: onboarding_reload_t1_storage-h2ef
+  datasetAttributes:
+    materialized: OFF
   tableDef:
     columns:
       - name: OrderID

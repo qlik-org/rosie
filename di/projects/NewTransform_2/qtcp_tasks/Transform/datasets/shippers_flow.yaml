@@ -9,4 +9,4 @@ properties:
   dataflowDatasetSettings:
     dataflowId: '{{id(dataflow, shippers_flow)}}'
     targetId: '1e13578a-ca15-40ff-adbd-e481fb84dc0b'
-    dataflowTargetState: NOT_VALID
+    dataflowTargetState: VALID

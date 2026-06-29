@@ -7,7 +7,106 @@ properties:
       taskId: onboarding_storage-h2em
   datasetAttributes:
     hasHistory: OFF
+  tableDef:
+    columns:
+      - name: SupplierID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: NUMERIC
+          precision: 38
+          originalType: NUMBER
+          originalTypeFull: NUMBER(38,0)
+        id: supplierid
+      - name: CompanyName
+        datatype:
+          type: STRING
+          length: 40
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(40)
+        id: companyname
+      - name: ContactName
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contactname
+      - name: ContactTitle
+        nullable: true
+        datatype:
+          type: STRING
+          length: 30
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(30)
+        id: contacttitle
+      - name: Address
+        nullable: true
+        datatype:
+          type: STRING
+          length: 60
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(60)
+        id: address
+      - name: City
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: city
+      - name: Region
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: region
+      - name: PostalCode
+        nullable: true
+        datatype:
+          type: STRING
+          length: 10
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(10)
+        id: postalcode
+      - name: Country
+        nullable: true
+        datatype:
+          type: STRING
+          length: 15
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(15)
+        id: country
+      - name: Phone
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: phone
+      - name: Fax
+        nullable: true
+        datatype:
+          type: STRING
+          length: 24
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(24)
+        id: fax
+      - name: HomePage
+        nullable: true
+        datatype:
+          type: STRING
+          length: 8388608
+          originalType: VARCHAR
+          originalTypeFull: VARCHAR(8388608)
+        id: homepage
   customDatasetSettings:
     customSql:
       expressionStatement: select * from ${Suppliers}
-      alias: []
+      alias:
+        - name: Suppliers
+          value: '{{ref(project.current.projectId)}}$_$onboarding_storage-h2em$_$suppliers-h2er'

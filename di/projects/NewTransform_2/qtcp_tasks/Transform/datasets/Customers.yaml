@@ -7,7 +7,7 @@ properties:
       taskId: onboarding_reload_t1_storage-h2ef
   datasetAttributes:
     materialized: ON
-    hasHistory: ON
+    hasHistory: OFF
   tableDef:
     columns:
       - name: CustomerID
