@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-h2gy
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-h2gy.taskSchema}}'
+      database: '{{task.landing-h2gy.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

@@ -1,0 +1,9 @@
+properties:
+  name: Registered_data
+  id: registered_data-h2gb
+  type: REGISTERED_DATA
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data-h2gb.internalSchema}}'
+    taskSchema: '{{task.registered_data-h2gb.taskSchema}}'
+    databaseName: '{{task.registered_data-h2gb.databaseName}}'

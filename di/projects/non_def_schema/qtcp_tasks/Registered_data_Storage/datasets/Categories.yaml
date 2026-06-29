@@ -1,0 +1,6 @@
+properties:
+  id: categories-h2ge
+  name: Categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: registered_data-h2gb

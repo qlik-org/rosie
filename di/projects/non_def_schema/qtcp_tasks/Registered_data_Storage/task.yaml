@@ -1,0 +1,13 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-h2gc
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-h2gc.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-h2gc.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-h2gc.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-h2gc.warehouseName}}'
