@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_Storage
+  id: onboarding_storage-h2em
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_storage-h2em.internalSchema}}'
+    taskSchema: '{{task.onboarding_storage-h2em.taskSchema}}'
+    databaseName: '{{task.onboarding_storage-h2em.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_storage-h2em.warehouseName}}'

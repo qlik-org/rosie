@@ -1,0 +1,12 @@
+properties:
+  name: Onboarding_reload_t1_Landing
+  id: onboarding_reload_t1_landing-h2ee
+  type: LANDING
+settings:
+  fullLoadOnly: true
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_reload_t1_landing-h2ee.taskSchema}}'
+      database: '{{task.onboarding_reload_t1_landing-h2ee.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

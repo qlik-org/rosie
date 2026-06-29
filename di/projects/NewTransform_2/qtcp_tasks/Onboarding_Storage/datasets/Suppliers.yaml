@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-h2er
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: onboarding_landing-h2el

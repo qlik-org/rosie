@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-h2el
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-h2el.taskSchema}}'
+      database: '{{task.onboarding_landing-h2el.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

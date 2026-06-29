@@ -1,0 +1,14 @@
+properties:
+  name: Onboarding_reload_t1_Storage
+  id: onboarding_reload_t1_storage-h2ef
+  type: STORAGE
+settings:
+  artifactsSettings:
+    historyEnabled: false
+  artifactsLocation:
+    internalSchema: '{{task.onboarding_reload_t1_storage-h2ef.internalSchema}}'
+    taskSchema: '{{task.onboarding_reload_t1_storage-h2ef.taskSchema}}'
+    databaseName: '{{task.onboarding_reload_t1_storage-h2ef.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.onboarding_reload_t1_storage-h2ef.warehouseName}}'

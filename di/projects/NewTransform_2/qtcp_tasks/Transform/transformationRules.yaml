@@ -1,0 +1,10 @@
+rules:
+  - actionType: RENAME_COLUMN
+    scopeType: COLUMN
+    scope:
+      whereColumnName: '%Date'
+    action:
+      renameType: ADD_SUFFIX
+      value: _a
+    name: Rule
+    description: add _a

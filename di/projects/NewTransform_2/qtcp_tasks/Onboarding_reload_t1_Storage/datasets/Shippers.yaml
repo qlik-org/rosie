@@ -1,0 +1,6 @@
+properties:
+  id: shippers-h2ek
+  name: Shippers
+  inputDatasets:
+    - datasetId: shippers
+      taskId: onboarding_reload_t1_landing-h2ee

@@ -1,0 +1,13 @@
+properties:
+  id: suppliers_sql-h2e2
+  name: suppliers_sql
+  inputDatasets:
+    - datasetId: suppliers-h2er
+      name: Suppliers
+      taskId: onboarding_storage-h2em
+  datasetAttributes:
+    hasHistory: OFF
+  customDatasetSettings:
+    customSql:
+      expressionStatement: select * from ${Suppliers}
+      alias: []

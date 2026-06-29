@@ -1,0 +1,10 @@
+properties:
+  id: products_flow-h2e3
+  name: products_flow
+  inputDatasets:
+    - datasetId: products-h2eq
+      taskId: onboarding_storage-h2em
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, products_flow)}}'
+    targetId: '15f4b968-92bf-45ab-8b98-d5e316e1d03f'
+    dataflowTargetState: NOT_VALID

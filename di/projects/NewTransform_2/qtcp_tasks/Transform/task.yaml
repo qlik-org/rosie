@@ -1,0 +1,14 @@
+properties:
+  name: Transform
+  id: transform-h2ew
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+  artifactsLocation:
+    internalSchema: '{{task.transform-h2ew.internalSchema}}'
+    taskSchema: '{{task.transform-h2ew.taskSchema}}'
+    databaseName: '{{task.transform-h2ew.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-h2ew.warehouseName}}'

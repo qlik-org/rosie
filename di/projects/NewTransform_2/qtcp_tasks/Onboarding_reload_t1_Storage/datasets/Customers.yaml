@@ -1,0 +1,6 @@
+properties:
+  id: customers-h2eh
+  name: Customers
+  inputDatasets:
+    - datasetId: customers
+      taskId: onboarding_reload_t1_landing-h2ee

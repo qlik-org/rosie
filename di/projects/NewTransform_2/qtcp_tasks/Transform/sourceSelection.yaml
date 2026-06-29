@@ -1,0 +1,19 @@
+explicitlySelected:
+  - sourceTask: onboarding_reload_t1_storage-h2ef
+    name: Customers
+    sourceTableId: customers-h2eh
+  - sourceTask: onboarding_reload_t1_storage-h2ef
+    name: Employees
+    sourceTableId: employees-h2ei
+  - sourceTask: onboarding_reload_t1_storage-h2ef
+    name: Orders
+    sourceTableId: orders-h2ej
+  - sourceTask: onboarding_storage-h2em
+    name: Categories
+    sourceTableId: categories-h2eo
+  - sourceTask: onboarding_storage-h2em
+    name: Products
+    sourceTableId: products-h2eq
+  - sourceTask: onboarding_storage-h2em
+    name: Suppliers
+    sourceTableId: suppliers-h2er

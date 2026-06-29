@@ -1,0 +1,57 @@
+properties:
+  id: categories-h2e4
+  name: Categories
+  inputDatasets:
+    - datasetId: categories-h2eo
+      name: Categories
+      taskId: onboarding_storage-h2em
+  datasetAttributes:
+    hasHistory: OFF
+  tableDef:
+    columns:
+      - name: CategoryID
+        primaryKeyOrdinal: 1
+        datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        expression:
+          expressionStatement: ${CategoryID}
+          alias:
+            - name: CategoryID
+              value: CategoryID
+        id: categoryid
+      - name: CategoryName
+        datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        expression:
+          expressionStatement: ${CategoryName}
+          alias:
+            - name: CategoryName
+              value: CategoryName
+        id: categoryname
+      - name: Description
+        nullable: true
+        datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        expression:
+          expressionStatement: ${Description}
+          alias:
+            - name: Description
+              value: Description
+        id: description
+      - name: Picture
+        nullable: true
+        datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        expression:
+          expressionStatement: ${Picture}
+          alias:
+            - name: Picture
+              value: Picture
+        id: picture
