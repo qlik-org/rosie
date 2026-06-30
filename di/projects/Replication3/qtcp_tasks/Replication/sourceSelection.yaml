@@ -9,3 +9,6 @@ explicitlySelected:
   - name: Suppliers
     schema: '{{task.replication-h2g5:null$_$dbo.schema}}'
     type: TABLE
+  - name: Customers
+    schema: '{{task.replication-h2g5:null$_$dbo.schema}}'
+    type: TABLE

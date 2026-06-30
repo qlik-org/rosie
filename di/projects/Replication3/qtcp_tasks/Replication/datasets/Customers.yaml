@@ -1,0 +1,10 @@
+properties:
+  id: customers
+  name: Customers
+  landingDatasetSettings:
+    loadOrder: LOWER
+    loadParallelSettings: {}
+sourceTable:
+  schema: '{{task.replication-h2g5:null$_$dbo.schema}}'
+  type: TABLE
+  name: Customers

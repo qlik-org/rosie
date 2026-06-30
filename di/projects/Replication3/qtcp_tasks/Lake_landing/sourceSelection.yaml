@@ -9,3 +9,6 @@ explicitlySelected:
   - name: Suppliers
     schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
     type: TABLE
+  - name: Customers
+    schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+    type: TABLE
