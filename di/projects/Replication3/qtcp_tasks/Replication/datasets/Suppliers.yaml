@@ -1,0 +1,29 @@
+properties:
+  id: suppliers
+  name: Suppliers
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: HomePage
+    - action: KEEP
+      columnName: Address
+      newColumnName: Address_edit
+      expression:
+        expressionStatement: ${Fax}
+        alias:
+          - name: Fax
+            value: fax
+      ordinal: 5
+    - action: KEEP
+      columnName: Country
+      newColumnName: Country_1
+      newDataType:
+        type: STRING
+        length: 22
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+sourceTable:
+  schema: '{{task.replication-h2g5:null$_$dbo.schema}}'
+  type: TABLE
+  name: Suppliers

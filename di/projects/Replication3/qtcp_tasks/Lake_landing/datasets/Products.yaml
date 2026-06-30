@@ -1,0 +1,20 @@
+properties:
+  id: products
+  name: Products
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  filter:
+    expressionStatement: ${ProductID} > 1
+    alias:
+      - name: ProductID
+        value: productid
+  columnTransformations:
+    - action: KEEP
+      columnName: UnitPrice
+      newColumnName: Unit_Price
+sourceTable:
+  schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+  type: TABLE
+  name: Products

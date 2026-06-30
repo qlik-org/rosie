@@ -1,0 +1,14 @@
+properties:
+  id: categories
+  name: Categories
+  landingDatasetSettings:
+    loadOrder: LOW
+    loadParallelSettings: {}
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: Picture
+sourceTable:
+  schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+  type: TABLE
+  name: Categories

@@ -1,0 +1,19 @@
+properties:
+  id: categories
+  name: Categories
+  landingDatasetSettings:
+    loadOrder: HIGHER
+    loadParallelSettings: {}
+transformations:
+  filter:
+    expressionStatement: ${CategoryID} > 1
+    alias:
+      - name: CategoryID
+        value: categoryid
+  columnTransformations:
+    - action: DROP
+      columnName: Picture
+sourceTable:
+  schema: '{{task.replication-h2g5:null$_$dbo.schema}}'
+  type: TABLE
+  name: Categories

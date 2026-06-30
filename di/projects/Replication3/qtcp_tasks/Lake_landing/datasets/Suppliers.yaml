@@ -1,0 +1,25 @@
+properties:
+  id: suppliers
+  name: Suppliers
+transformations:
+  columnTransformations:
+    - action: ADD
+      columnName: Contact
+      newDataType:
+        type: WSTRING
+        length: 66
+        precision: 0
+        scale: 0
+        originalTypeFull: ''
+      expression:
+        expressionStatement: $CONCAT(${X}, ${Y})
+        alias:
+          - name: X
+            value: contactname
+          - name: Y
+            value: contacttitle
+      addedColumnId: e72eaea3-7347-4775-9924-7d0bd26dd2a0
+sourceTable:
+  schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+  type: TABLE
+  name: Suppliers
