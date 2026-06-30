@@ -1,0 +1,12 @@
+properties:
+  name: Lake_landing_reload
+  id: lake_landing_reload-h2g7
+  type: LAKE_LANDING
+settings:
+  fullLoadOnly: true
+  targetEndpoint:
+    targetConnection: '{{task.lake_landing_reload-h2g7.targetConnection}}'
+  changeProcessingTuning:
+    transactionTuning:
+      offloadTransactions:
+        deleteAndInsertOnPkUpdate: false

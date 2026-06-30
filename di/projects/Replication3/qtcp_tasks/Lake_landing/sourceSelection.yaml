@@ -1,0 +1,11 @@
+sourceConnection: '{{task.lake_landing-h2g6.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Products
+    schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+    type: TABLE
+  - name: Suppliers
+    schema: '{{task.lake_landing-h2g6:null$_$dbo.schema}}'
+    type: TABLE

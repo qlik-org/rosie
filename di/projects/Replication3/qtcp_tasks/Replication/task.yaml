@@ -1,0 +1,12 @@
+properties:
+  name: Replication
+  id: replication-h2g5
+  type: REPLICATION
+settings:
+  targetEndpoint:
+    targetConnection: '{{task.replication-h2g5.targetConnection}}'
+    targetStorageConnection: '{{task.replication-h2g5.targetStorageConnection}}'
+  taskSettings:
+    fullLoad: true
+    applyChanges: true
+    storeChanges: true

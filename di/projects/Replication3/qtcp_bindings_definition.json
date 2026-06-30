@@ -2,7 +2,36 @@
   "variables": {
     "cloudStagingConnection": "",
     "platformConnection": "",
-    "projectName": ""
+    "projectName": "",
+    "task.lake_landing-h2g6.sourceConnection": "",
+    "task.lake_landing-h2g6.targetConnection": "",
+    "task.lake_landing-h2g6:null$_$dbo.schema": "",
+    "task.lake_landing_reload-h2g7.sourceConnection": "",
+    "task.lake_landing_reload-h2g7.targetConnection": "",
+    "task.lake_landing_reload-h2g7:null$_$dbo.schema": "",
+    "task.replication-h2g5.sourceConnection": "",
+    "task.replication-h2g5.targetConnection": "",
+    "task.replication-h2g5.targetStorageConnection": "",
+    "task.replication-h2g5:null$_$dbo.schema": ""
   },
-  "connectionProperties": {}
+  "connectionProperties": {
+    "task.lake_landing-h2g6.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing-h2g6.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.lake_landing_reload-h2g7.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.lake_landing_reload-h2g7.targetConnection": {
+      "type": "reptgt_qdis3"
+    },
+    "task.replication-h2g5.sourceConnection": {
+      "type": "repsrc_mssql"
+    },
+    "task.replication-h2g5.targetConnection": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
 }
