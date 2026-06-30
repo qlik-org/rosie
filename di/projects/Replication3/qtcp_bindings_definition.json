@@ -1,0 +1,8 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": ""
+  },
+  "connectionProperties": {}
+}
