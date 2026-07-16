@@ -1,0 +1,11 @@
+properties:
+  name: Onboarding_Landing
+  id: onboarding_landing-w37w
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.onboarding_landing-w37w.taskSchema}}'
+      database: '{{task.onboarding_landing-w37w.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

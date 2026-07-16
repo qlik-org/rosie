@@ -1,0 +1,81 @@
+relationships:
+  - sourceEntity:
+      datasetId: employees-w37g
+      name: Employees
+      taskId: transform_non_m-w37d
+    targetEntity:
+      datasetId: employees-w37g
+      name: Employees
+      taskId: transform_non_m-w37d
+    columnRelationships:
+      - sourceColumn: ReportsTo
+        targetColumn: EmployeeID
+        sourceColumnId: reportsto
+        targetColumnId: employeeid
+    name: Employees_Employees
+    description: ''
+    id: employees_employees-w37n
+  - sourceEntity:
+      datasetId: orders-w37h
+      name: Orders
+      taskId: transform_non_m-w37d
+    targetEntity:
+      datasetId: customers_flow-w373
+      name: Customers_flow
+      taskId: transform_non_m-w37d
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_flow_relation
+    description: ''
+    id: orders_customers_flow_relation-w374
+  - sourceEntity:
+      datasetId: orders-w37h
+      name: Orders
+      taskId: transform_non_m-w37d
+    targetEntity:
+      datasetId: customers-w37f
+      name: Customers
+      taskId: transform_non_m-w37d
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-w37l
+  - sourceEntity:
+      datasetId: orders-w37h
+      name: Orders
+      taskId: transform_non_m-w37d
+    targetEntity:
+      datasetId: employees-w37g
+      name: Employees
+      taskId: transform_non_m-w37d
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-w37m
+  - sourceEntity:
+      datasetId: orders-w37h
+      name: Orders
+      taskId: transform_non_m-w37d
+    targetEntity:
+      datasetId: employees_sql-w372
+      name: Employees_sql
+      taskId: transform_non_m-w37d
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_sql_relation
+    description: ''
+    id: orders_employees_sql_relation-w375

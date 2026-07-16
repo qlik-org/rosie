@@ -1,0 +1,12 @@
+properties:
+  name: Transform_non_2
+  id: transform_non_2-w376
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform_non_2-w376.internalSchema}}'
+    taskSchema: '{{task.transform_non_2-w376.taskSchema}}'
+    databaseName: '{{task.transform_non_2-w376.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_non_2-w376.warehouseName}}'

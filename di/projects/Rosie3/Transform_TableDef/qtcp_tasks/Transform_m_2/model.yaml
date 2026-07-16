@@ -1,0 +1,65 @@
+relationships:
+  - sourceEntity:
+      datasetId: orders-w38s
+      name: Orders
+      taskId: transform_m_2-w38l
+    targetEntity:
+      datasetId: customers_flow-w38z
+      name: Customers_flow
+      taskId: transform_m_2-w38l
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_flow_relation
+    description: ''
+    id: orders_customers_flow_relation-w38c
+  - sourceEntity:
+      datasetId: orders-w38s
+      name: Orders
+      taskId: transform_m_2-w38l
+    targetEntity:
+      datasetId: customers-w38t
+      name: Customers
+      taskId: transform_m_2-w38l
+    columnRelationships:
+      - sourceColumn: CustomerID
+        targetColumn: CustomerID
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: Orders_Customers_relation
+    description: ''
+    id: orders_customers_relation-w38b
+  - sourceEntity:
+      datasetId: orders-w38s
+      name: Orders
+      taskId: transform_m_2-w38l
+    targetEntity:
+      datasetId: employees-w38r
+      name: Employees
+      taskId: transform_m_2-w38l
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_relation
+    description: ''
+    id: orders_employees_relation-w38d
+  - sourceEntity:
+      datasetId: orders-w38s
+      name: Orders
+      taskId: transform_m_2-w38l
+    targetEntity:
+      datasetId: employees_sql-w38w
+      name: Employees_sql
+      taskId: transform_m_2-w38l
+    columnRelationships:
+      - sourceColumn: EmployeeID
+        targetColumn: EmployeeID
+        sourceColumnId: employeeid
+        targetColumnId: employeeid
+    name: Orders_Employees_sql_relation
+    description: ''
+    id: orders_employees_sql_relation-w38e

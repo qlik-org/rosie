@@ -1,0 +1,10 @@
+properties:
+  id: customers_flow-w373
+  name: Customers_flow
+  inputDatasets:
+    - datasetId: customers-w37z
+      taskId: onboarding_storage-w37x
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Customers_flow)}}'
+    targetId: a07c710a-819c-43e3-91cf-27e173a37ef0
+    dataflowTargetState: VALID

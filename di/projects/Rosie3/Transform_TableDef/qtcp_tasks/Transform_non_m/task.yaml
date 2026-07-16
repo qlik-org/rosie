@@ -1,0 +1,12 @@
+properties:
+  name: Transform_non_m
+  id: transform_non_m-w37d
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform_non_m-w37d.internalSchema}}'
+    taskSchema: '{{task.transform_non_m-w37d.taskSchema}}'
+    databaseName: '{{task.transform_non_m-w37d.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_non_m-w37d.warehouseName}}'
