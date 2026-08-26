@@ -1,0 +1,12 @@
+properties:
+  name: Storage
+  id: storage-8zee
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.storage-8zee.internalSchema}}'
+    taskSchema: '{{task.storage-8zee.taskSchema}}'
+    databaseName: '{{task.storage-8zee.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-8zee.warehouseName}}'

@@ -1,0 +1,9 @@
+properties:
+  id: categories_1
+  name: Categories_1
+transformations:
+  newTableName: Categories_1_renamed
+sourceTable:
+  schema: '{{task.landing-8zec:null$_$dbo1.schema}}'
+  type: TABLE
+  name: Categories

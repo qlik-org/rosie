@@ -1,0 +1,6 @@
+properties:
+  id: categories-8zeg
+  name: Categories
+  inputDatasets:
+    - datasetId: categories
+      taskId: landing-8zec

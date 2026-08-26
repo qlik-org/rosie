@@ -1,0 +1,13 @@
+explicitlySelected:
+  - database: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing.database}}'
+    name: Categories
+    schema: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing.database}}'
+    name: Products
+    schema: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing.schema}}'
+    type: TABLE
+  - database: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing_1.database}}'
+    name: Categories
+    schema: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing_1.schema}}'
+    type: TABLE

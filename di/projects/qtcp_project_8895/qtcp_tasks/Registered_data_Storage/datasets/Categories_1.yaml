@@ -1,0 +1,6 @@
+properties:
+  id: categories_1-8zes
+  name: Categories_1
+  inputDatasets:
+    - datasetId: categories_1
+      taskId: registered_data-8zeo

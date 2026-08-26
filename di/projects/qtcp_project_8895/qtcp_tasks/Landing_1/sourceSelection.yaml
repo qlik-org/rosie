@@ -1,0 +1,5 @@
+sourceConnection: '{{task.landing_1-8zej.sourceConnection}}'
+explicitlySelected:
+  - name: Categories
+    schema: '{{task.landing_1-8zej:null$_$dbo1.schema}}'
+    type: TABLE

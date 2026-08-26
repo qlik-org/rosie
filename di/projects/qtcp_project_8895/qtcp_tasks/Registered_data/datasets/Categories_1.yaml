@@ -1,0 +1,10 @@
+properties:
+  id: categories_1
+  name: Categories_1
+transformations:
+  newTableName: Categories_1_renamed
+sourceTable:
+  schema: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing_1.schema}}'
+  database: '{{task.registered_data-8zeo:ROSIE$_$qtcp_8895_landing_1.database}}'
+  type: TABLE
+  name: Categories

@@ -1,0 +1,6 @@
+properties:
+  id: products-8zet
+  name: Products
+  inputDatasets:
+    - datasetId: products
+      taskId: registered_data-8zeo
