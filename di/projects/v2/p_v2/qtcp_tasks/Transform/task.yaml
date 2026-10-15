@@ -1,0 +1,15 @@
+properties:
+  name: Transform
+  id: transform-8usb
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform-8usb.internalSchema}}'
+    taskSchema: '{{task.transform-8usb.taskSchema}}'
+    databaseName: '{{task.transform-8usb.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-8usb.warehouseName}}'

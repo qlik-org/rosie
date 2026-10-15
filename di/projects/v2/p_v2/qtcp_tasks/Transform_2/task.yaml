@@ -1,0 +1,15 @@
+properties:
+  name: Transform_2
+  id: transform_2-8usl
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    materialized: true
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform_2-8usl.internalSchema}}'
+    taskSchema: '{{task.transform_2-8usl.taskSchema}}'
+    databaseName: '{{task.transform_2-8usl.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_2-8usl.warehouseName}}'

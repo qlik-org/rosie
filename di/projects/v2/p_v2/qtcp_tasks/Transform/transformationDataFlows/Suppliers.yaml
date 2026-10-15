@@ -1,0 +1,151 @@
+name: Suppliers
+description: ''
+context:
+  projectId: '{{ref(project.current.projectId)}}'
+  dataAppId: transform-8usb
+graph: |-
+  {
+    "nodes": [
+      {
+        "type": "source",
+        "id": "736e972c-8b99-4ca8-9cc1-8f5a5528d3c0",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 80,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [],
+          "outgoing": [
+            {
+              "id": "96efbb74-e2df-4a7b-a13f-600bb57ccdac",
+              "type": "DEFAULT"
+            }
+          ]
+        },
+        "component": {
+          "type": "qcdiDataEntitySource",
+          "label": "Input dataset",
+          "properties": {
+            "dataEntity": {
+              "projectId": "{{ref(project.current.projectId)}}",
+              "dataAppId": "storage-8ur1",
+              "entityId": "suppliers-8ur5"
+            },
+            "configuration": {
+              "name": "Suppliers"
+            }
+          }
+        }
+      },
+      {
+        "type": "target",
+        "id": "71bc132a-9a07-4bf9-8a61-9b1e1e749185",
+        "label": "Suppliers",
+        "graphical": {
+          "position": {
+            "x": 360,
+            "y": 40
+          },
+          "icon": "dataset-icon"
+        },
+        "handles": {
+          "incoming": [
+            {
+              "id": "8d9cba7e-3582-431a-906a-59feafe44685",
+              "type": "DEFAULT"
+            }
+          ],
+          "outgoing": []
+        },
+        "component": {
+          "type": "qcdiDataEntityTarget",
+          "label": "Output dataset",
+          "properties": {
+            "configuration": {
+              "name": "Suppliers",
+              "settings": {
+                "materialized": "INHERIT",
+                "createConsumptionViews": "INHERIT",
+                "hasHistory": "INHERIT",
+                "incremental": false
+              },
+              "overridenColumnsConfiguration": [
+                {
+                  "name": "SupplierID",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 1
+                },
+                {
+                  "name": "CompanyName",
+                  "nullable": false,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactName",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "ContactTitle",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Address",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "City",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Region",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "PostalCode",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Country",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Phone",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "Fax",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                },
+                {
+                  "name": "HomePage",
+                  "nullable": true,
+                  "primaryKeyOrdinal": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "4862c677-d2cc-4dc3-afae-fd381753af37",
+        "sourceHandle": "96efbb74-e2df-4a7b-a13f-600bb57ccdac",
+        "targetHandle": "8d9cba7e-3582-431a-906a-59feafe44685"
+      }
+    ]
+  }
+modelVersion: '1.0.0'

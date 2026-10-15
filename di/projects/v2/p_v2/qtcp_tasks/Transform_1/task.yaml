@@ -1,0 +1,14 @@
+properties:
+  name: Transform_1
+  id: transform_1-8ush
+  type: TRANSFORM
+settings:
+  artifactsSettings:
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.transform_1-8ush.internalSchema}}'
+    taskSchema: '{{task.transform_1-8ush.taskSchema}}'
+    databaseName: '{{task.transform_1-8ush.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform_1-8ush.warehouseName}}'

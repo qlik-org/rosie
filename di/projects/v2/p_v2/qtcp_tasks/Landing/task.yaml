@@ -1,0 +1,11 @@
+properties:
+  name: Landing
+  id: landing-8urz
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.landing-8urz.taskSchema}}'
+      database: '{{task.landing-8urz.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

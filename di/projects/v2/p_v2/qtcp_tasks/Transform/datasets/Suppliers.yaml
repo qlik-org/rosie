@@ -1,0 +1,10 @@
+properties:
+  id: suppliers-8usg
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers-8ur5
+      taskId: storage-8ur1
+  dataflowDatasetSettings:
+    dataflowId: '{{id(dataflow, Suppliers)}}'
+    targetId: '71bc132a-9a07-4bf9-8a61-9b1e1e749185'
+    dataflowTargetState: VALID

@@ -1,0 +1,14 @@
+properties:
+  name: Storage
+  id: storage-8ur1
+  type: STORAGE
+settings:
+  artifactsSettings:
+    createConsumptionViews: false
+  artifactsLocation:
+    internalSchema: '{{task.storage-8ur1.internalSchema}}'
+    taskSchema: '{{task.storage-8ur1.taskSchema}}'
+    databaseName: '{{task.storage-8ur1.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.storage-8ur1.warehouseName}}'
