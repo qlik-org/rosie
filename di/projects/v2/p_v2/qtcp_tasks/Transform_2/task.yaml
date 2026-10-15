@@ -5,7 +5,6 @@ properties:
 settings:
   artifactsSettings:
     materialized: true
-    createConsumptionViews: false
   artifactsLocation:
     internalSchema: '{{task.transform_2-8usl.internalSchema}}'
     taskSchema: '{{task.transform_2-8usl.taskSchema}}'

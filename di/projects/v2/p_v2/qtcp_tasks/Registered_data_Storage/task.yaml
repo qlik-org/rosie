@@ -1,0 +1,13 @@
+properties:
+  name: Registered_data_Storage
+  id: registered_data_storage-e8mh
+  type: STORAGE
+settings:
+  fullLoadOnly: true
+  artifactsLocation:
+    internalSchema: '{{task.registered_data_storage-e8mh.internalSchema}}'
+    taskSchema: '{{task.registered_data_storage-e8mh.taskSchema}}'
+    databaseName: '{{task.registered_data_storage-e8mh.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.registered_data_storage-e8mh.warehouseName}}'

@@ -1,0 +1,20 @@
+properties:
+  id: employees__current
+  name: Employees__current
+transformations:
+  columnTransformations:
+    - action: DROP
+      columnName: hdr__from_timestamp
+    - action: DROP
+      columnName: hdr__batch_identifier
+    - action: DROP
+      columnName: hdr__deleted
+    - action: DROP
+      columnName: hdr__inserted_timestamp
+    - action: DROP
+      columnName: hdr__modified_timestamp
+sourceTable:
+  schema: '{{task.registered_data-e8mg:ROSIE_DB$_$Regv2_0_storage__internal.schema}}'
+  database: '{{task.registered_data-e8mg:ROSIE_DB$_$Regv2_0_storage__internal.database}}'
+  type: TABLE
+  name: Employees__current
