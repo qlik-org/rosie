@@ -1,0 +1,9 @@
+properties:
+  name: Registered_data
+  id: registered_data-e8mg
+  type: REGISTERED_DATA
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.registered_data-e8mg.internalSchema}}'
+    taskSchema: '{{task.registered_data-e8mg.taskSchema}}'
+    databaseName: '{{task.registered_data-e8mg.databaseName}}'

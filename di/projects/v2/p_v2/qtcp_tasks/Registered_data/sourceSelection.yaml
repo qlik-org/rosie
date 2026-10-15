@@ -1,0 +1,5 @@
+explicitlySelected:
+  - database: '{{task.registered_data-e8mg:ROSIE_DB$_$Regv2_0_storage__internal.database}}'
+    name: Employees__current
+    schema: '{{task.registered_data-e8mg:ROSIE_DB$_$Regv2_0_storage__internal.schema}}'
+    type: TABLE
