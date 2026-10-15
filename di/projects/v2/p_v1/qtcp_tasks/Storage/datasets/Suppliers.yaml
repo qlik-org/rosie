@@ -1,0 +1,6 @@
+properties:
+  id: suppliers-8ury
+  name: Suppliers
+  inputDatasets:
+    - datasetId: suppliers
+      taskId: landing-8urt

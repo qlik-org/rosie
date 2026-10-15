@@ -1,0 +1,12 @@
+properties:
+  name: Data mart
+  id: data_mart-aesh
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.data_mart-aesh.internalSchema}}'
+    taskSchema: '{{task.data_mart-aesh.taskSchema}}'
+    databaseName: '{{task.data_mart-aesh.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.data_mart-aesh.warehouseName}}'

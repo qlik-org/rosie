@@ -1,0 +1,33 @@
+relationships:
+  - sourceEntity:
+      datasetId: products-aer_
+      name: Products
+      taskId: transform-aer9
+    targetEntity:
+      datasetId: categories-aesa
+      name: Categories
+      taskId: transform-aer9
+    columnRelationships:
+      - sourceColumn: CategoryID
+        targetColumn: CategoryID
+        sourceColumnId: categoryid
+        targetColumnId: categoryid
+    name: Products_Categories_relation
+    description: ''
+    id: products_categories_relation-aesf
+  - sourceEntity:
+      datasetId: products-aer_
+      name: Products
+      taskId: transform-aer9
+    targetEntity:
+      datasetId: suppliers-aesb
+      name: Suppliers
+      taskId: transform-aer9
+    columnRelationships:
+      - sourceColumn: SupplierID
+        targetColumn: SupplierID
+        sourceColumnId: supplierid
+        targetColumnId: supplierid
+    name: Products_Suppliers_relation
+    description: ''
+    id: products_suppliers_relation-aesg

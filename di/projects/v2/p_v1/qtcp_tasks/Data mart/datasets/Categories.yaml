@@ -1,0 +1,87 @@
+properties:
+  id: categories-aesj
+  name: Categories
+  inputDatasets:
+    - datasetId: categories-aesa
+      name: Categories
+      taskId: transform-aer9
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: CategoryID
+        nullable: true
+        primaryKeyOrdinal: 1
+        id: categoryid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: CategoryName
+        nullable: true
+        id: categoryname
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        name: Description
+        nullable: true
+        id: description
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        name: Picture
+        nullable: true
+        id: picture
+        properties:
+          documentMetadata: false
+  dimensionDatasetSettings:
+    type: TYPE1
+    rootDataEntityId:
+      datasetId: categories-aesa
+      name: Categories
+      taskId: transform-aer9
+    mapping:
+      columns:
+        - columnName: CategoryID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: CategoryID
+        - columnName: CategoryName
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryName}
+            alias:
+              - name: CategoryName
+                value: CategoryName
+        - columnName: Description
+          type: NONE
+          expression:
+            expressionStatement: ${Description}
+            alias:
+              - name: Description
+                value: Description
+        - columnName: Picture
+          type: NONE
+          expression:
+            expressionStatement: ${Picture}
+            alias:
+              - name: Picture
+                value: Picture
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

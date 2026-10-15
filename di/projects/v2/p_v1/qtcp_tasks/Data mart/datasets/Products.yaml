@@ -1,0 +1,191 @@
+properties:
+  id: products-aesl
+  name: Products
+  inputDatasets:
+    - datasetId: products-aer_
+      name: Products
+      taskId: transform-aer9
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: ProductID
+        primaryKeyOrdinal: 1
+        id: productid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 40
+          originalTypeFull: NVARCHAR(40)
+        name: ProductName
+        id: productname
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: SupplierID
+        nullable: true
+        id: supplierid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: CategoryID
+        nullable: true
+        id: categoryid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 20
+          originalTypeFull: NVARCHAR(20)
+        name: QuantityPerUnit
+        nullable: true
+        id: quantityperunit
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 19
+          scale: 4
+          originalTypeFull: NUMBER(19,4)
+        name: UnitPrice
+        nullable: true
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: UnitsInStock
+        nullable: true
+        id: unitsinstock
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: UnitsOnOrder
+        nullable: true
+        id: unitsonorder
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: ReorderLevel
+        nullable: true
+        id: reorderlevel
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: BOOLEAN
+          originalTypeFull: BOOLEAN
+        name: Discontinued
+        id: discontinued
+        properties:
+          documentMetadata: false
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: products-aer_
+      name: Products
+      taskId: transform-aer9
+    factDimension:
+      - name: Categories
+        dimension:
+          type: NONE
+          datasetId: categories-aesj
+          taskId: data_mart-aesh
+        dimensionRelationshipPath: products_categories_relation-aesf
+        dimensionRelationshipPathDisplayName: Products_Categories_relation
+        dimensionRelationshipPathShortName: ''
+      - name: Suppliers
+        dimension:
+          type: NONE
+          datasetId: suppliers-aesk
+          taskId: data_mart-aesh
+        dimensionRelationshipPath: products_suppliers_relation-aesg
+        dimensionRelationshipPathDisplayName: Products_Suppliers_relation
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: ProductID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${ProductID}
+            alias:
+              - name: ProductID
+                value: ProductID
+        - columnName: ProductName
+          type: NONE
+          expression:
+            expressionStatement: ${ProductName}
+            alias:
+              - name: ProductName
+                value: ProductName
+        - columnName: SupplierID
+          type: NONE
+          expression:
+            expressionStatement: ${SupplierID}
+            alias:
+              - name: SupplierID
+                value: SupplierID
+        - columnName: CategoryID
+          type: NONE
+          expression:
+            expressionStatement: ${CategoryID}
+            alias:
+              - name: CategoryID
+                value: CategoryID
+        - columnName: QuantityPerUnit
+          type: NONE
+          expression:
+            expressionStatement: ${QuantityPerUnit}
+            alias:
+              - name: QuantityPerUnit
+                value: QuantityPerUnit
+        - columnName: UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${UnitPrice}
+            alias:
+              - name: UnitPrice
+                value: UnitPrice
+        - columnName: UnitsInStock
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsInStock}
+            alias:
+              - name: UnitsInStock
+                value: UnitsInStock
+        - columnName: UnitsOnOrder
+          type: NONE
+          expression:
+            expressionStatement: ${UnitsOnOrder}
+            alias:
+              - name: UnitsOnOrder
+                value: UnitsOnOrder
+        - columnName: ReorderLevel
+          type: NONE
+          expression:
+            expressionStatement: ${ReorderLevel}
+            alias:
+              - name: ReorderLevel
+                value: ReorderLevel
+        - columnName: Discontinued
+          type: NONE
+          expression:
+            expressionStatement: ${Discontinued}
+            alias:
+              - name: Discontinued
+                value: Discontinued
+    subtype: MODEL_BASED
+    materializedSource: false

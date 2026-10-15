@@ -1,0 +1,12 @@
+properties:
+  name: Transform
+  id: transform-aer9
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.transform-aer9.internalSchema}}'
+    taskSchema: '{{task.transform-aer9.taskSchema}}'
+    databaseName: '{{task.transform-aer9.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.transform-aer9.warehouseName}}'

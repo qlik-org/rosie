@@ -1,0 +1,55 @@
+properties:
+  id: categories-aesa
+  name: Categories
+  inputDatasets:
+    - datasetId: categories-8urw
+      name: Categories
+      taskId: storage-8uru
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: CategoryID
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${CategoryID}
+          alias:
+            - name: CategoryID
+              value: CategoryID
+        id: categoryid
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: CategoryName
+        expression:
+          expressionStatement: ${CategoryName}
+          alias:
+            - name: CategoryName
+              value: CategoryName
+        id: categoryname
+      - datatype:
+          type: NCLOB
+          length: 1073741823
+          originalTypeFull: NVARCHAR(8388608)
+        name: Description
+        nullable: true
+        expression:
+          expressionStatement: ${Description}
+          alias:
+            - name: Description
+              value: Description
+        id: description
+      - datatype:
+          type: BLOB
+          length: 2147483647
+          originalTypeFull: BINARY(8388608)
+        name: Picture
+        nullable: true
+        expression:
+          expressionStatement: ${Picture}
+          alias:
+            - name: Picture
+              value: Picture
+        id: picture
